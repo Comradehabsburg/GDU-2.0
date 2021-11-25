@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = 
+		owner = URU
 		buildings = {
 			infrastructure = 1
 		}
@@ -17,7 +17,7 @@ state={
 		victory_points = {
 			5064 1 
 		}
-		add_core_of = 
+		add_core_of = URU
 	}
 
 	provinces={
