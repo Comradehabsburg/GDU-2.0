@@ -11,12 +11,12 @@ state={
 	}
 
 	history={
-		owner = PAR
+		owner = 
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = PAR
-		add_core_of = BOL
+		add_core_of = 
+		add_core_of = 
 	}
 	
 	provinces={
