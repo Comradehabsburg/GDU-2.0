@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = 
+		owner = URG
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
@@ -27,7 +27,7 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = 
+		add_core_of = URG
 		victory_points = {
 			650 10
 		}
