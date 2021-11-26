@@ -65,6 +65,53 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ENG_victory_in_Libya
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = ENG_victory_in_Egypt }
+		
+		available = {
+			NOT = {
+
+				ITA = {
+				controls_state = 118
+				controls_state = 116
+				controls_state = 451
+				controls_state = 450
+				controls_state = 458
+				controls_state = 459
+				controls_state = 460
+				}
+			}
+			
+		}
+		
+		bypass = {
+	
+		}
+	
+		available_if_capitulated = yes
+	
+		x = 13
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+	
+		completion_reward = {
+	
+		ITA =  { swap_ideas = {
+	
+	remove_idea = med_control
+	add_idea = med_control_0
+	
+			} } 
+	
+		}
+	}
+
 
 
 

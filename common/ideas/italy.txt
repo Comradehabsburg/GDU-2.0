@@ -7,6 +7,23 @@ ideas = {
 	country = {
 	
 	
+
+med_control_0 = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+
+
 	med_control = {
 			
 			
