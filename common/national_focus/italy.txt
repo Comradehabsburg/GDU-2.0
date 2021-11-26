@@ -1,4 +1,58 @@
 ﻿focus_tree = {
+
+# TRIUMPH IN AFRICA
+
+focus = {
+	id = ITA_victory_in_Egypt
+	icon = GFX_goal_generic_propaganda
+	available = {
+		OR = {
+			controls_state = 446
+			controls_state = 447
+			controls_state = 452
+		}
+	}
+	
+	bypass = {
+		ETH = { exists = yes }
+		NOT = { has_war_with = ETH }
+	}
+
+	available_if_capitulated = yes
+
+	x = 13
+	y = 0
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}	
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
+
+	completion_reward = {
+
+
+
+	}
+}
+									   
+									   
+									
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	id = italian_focus
 
 	country = {
