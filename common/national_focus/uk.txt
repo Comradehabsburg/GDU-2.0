@@ -68,7 +68,6 @@ focus_tree = {
 	focus = {
 		id = ENG_victory_in_Libya
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ENG_victory_in_Egypt }
 		
 		available = {
 			NOT = {
