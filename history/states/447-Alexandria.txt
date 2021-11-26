@@ -11,14 +11,23 @@ state={
 
 	history={
 		owner = ENG
-		
+
 		victory_points = {
-			10 
+			4076 10 
+		}	
+
+		victory_points = {
+			4191 1 
 		}
-		
+
 		victory_points = {
-			1071 1 
-		}		
+			10884 1 
+		}
+
+		victory_points = {
+			12022 1 
+		}
+
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
