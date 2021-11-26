@@ -6,16 +6,15 @@ focus = {
 	id = ITA_victory_in_Egypt
 	icon = GFX_goal_generic_propaganda
 	available = {
-		OR = {
+
 			controls_state = 446
 			controls_state = 447
 			controls_state = 452
-		}
+		
 	}
 	
 	bypass = {
-		ETH = { exists = yes }
-		NOT = { has_war_with = ETH }
+
 	}
 
 	available_if_capitulated = yes
@@ -30,7 +29,12 @@ focus = {
 
 	completion_reward = {
 
+		swap_ideas = {
 
+remove_idea = med_control
+add_idea = med_control_2
+
+		}
 
 	}
 }
