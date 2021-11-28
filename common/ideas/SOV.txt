@@ -11,6 +11,35 @@ ideas = {
 
 	country= {
 
+		
+		
+		
+		SOV_NoStepBack = { 
+
+			name = SOV_NoStepBack
+
+			picture = tfv_can_conscription_crisis
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via event
+			}
+
+			allowed_civil_war = {
+				tag = SOV #Main SOV
+			}
+
+			modifier = {
+				consumer_goods_factor = -10
+				production_speed_arms_factory_factor = 0.5
+			}
+
+
+		}
+		
+		
+		
 		SOV_second_five_year_plan_fake_1936_ns = { #Only used for 1936 bookmark (dynamic modifiers don't show up there)
 			name = SOV_second_five_year_plan_dynamic_modifier
 
@@ -106,6 +135,7 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
+				consumer_goods_factor = -0.1
 			}
 			rule = {
 				can_create_factions = yes
@@ -1148,8 +1178,10 @@ ideas = {
 			}
 
 			modifier = {
-				mobilization_speed = 0.15
-				minimum_training_level = -0.15
+
+				mobilization_speed = 1
+				minimum_training_level = -1
+				industrial_capacity_factory = 0.50
 			}
 		}
 

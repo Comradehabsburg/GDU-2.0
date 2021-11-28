@@ -5918,7 +5918,15 @@ focus_tree = {
 			add_timed_idea = {
 				idea = SOV_desperate_measures_ns
 				days = 365
+
+				
+
 			}
+
+			add_idea = {  
+				idea = SOV_NoStepBack
+
+			 }
 
 			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
 		}
