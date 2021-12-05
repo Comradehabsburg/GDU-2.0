@@ -162,7 +162,6 @@ create_import = {
 		ludwig_beck
 		gerd_von_rundstedt
 		GER_autarky_idea
-		med_control_1
 
 		#laws
 		war_economy
@@ -363,6 +362,7 @@ add_to_faction = GER
 
 
 add_ideas = {
+	med_control
 	sour_loser
 	general_staff
 	limited_exports
