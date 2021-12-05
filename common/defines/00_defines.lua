@@ -8,11 +8,7 @@ NGame = {
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
 	LAG_DAYS_FOR_LOWER_SPEED = 400,					-- Days of client lag for decrease of gamespeed
 	LAG_DAYS_FOR_PAUSE = 720,						-- Days of client lag for pause of gamespeed.
-<<<<<<< HEAD
 	GAME_SPEED_SECONDS = { 2.0, 0.2, 0.1, 0.02, 0.0 }, -- game speeds for each level. Must be 5 entries with last one 0 for unbound
-=======
-	GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.03, 0.0 }, -- game speeds for each level. Must be 5 entries with last one 0 for unbound
->>>>>>> parent of 0b0df62 (makes 3 speed to 4 speed and 2 speed to 3 speed (keep secret)(gives illusion that the mod is faster))
 	MAJOR_PARTICIPANTS_FOR_MAJOR_WAR = 3,			-- Minimum number of major countries involved in a war to consider it major enough to not end the game even though the enddate has been reached.
 	COMBAT_LOG_MAX_MONTHS = 12,
 	MESSAGE_TIMEOUT_DAYS = 60,						-- Useful if running the handsoff game. The popup messages that doesn't require the player respond will automatically hide after some timeout.
