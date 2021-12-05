@@ -12,7 +12,7 @@ med_control_0 = {
 			
 			
 			allowed = {
-				original_tag = "ITA"
+
 			}
 
 			
@@ -28,7 +28,7 @@ med_control_0 = {
 			
 			
 			allowed = {
-				original_tag = "ITA"
+
 			}
 
 			

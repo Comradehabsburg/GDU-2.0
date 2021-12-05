@@ -155,6 +155,7 @@ create_import = {
 	
 	#adding ministers
 	add_ideas = {
+		med_control
 		henschel
 		ig_faben
 		heinrich_himmler
@@ -162,7 +163,6 @@ create_import = {
 		ludwig_beck
 		gerd_von_rundstedt
 		GER_autarky_idea
-		med_control_1
 
 		#laws
 		war_economy
