@@ -7,6 +7,7 @@
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
+
 	id = german_focus
 	
 	country = {
@@ -20,6 +21,12 @@ focus_tree = {
 	
 	default = no
 
+	
+	
+
+
+
+	
 	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
