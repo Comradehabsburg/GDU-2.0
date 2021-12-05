@@ -54,16 +54,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 	
 		completion_reward = {
-
-			GER =  { swap_ideas = {
-	
-				remove_idea = med_control_2
-				add_idea = med_control
-				
-						} } 
-
-
-
 	
 		ITA =  { swap_ideas = {
 	
@@ -107,15 +97,7 @@ focus_tree = {
 	
 		completion_reward = {
 	
-			GER =  { swap_ideas = {
-	
-				remove_idea = med_control
-				add_idea = med_control_0
-				
-						} } 
-	
-	
-			ITA =  { swap_ideas = {
+		ITA =  { swap_ideas = {
 	
 	remove_idea = med_control
 	add_idea = med_control_0
