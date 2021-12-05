@@ -27,7 +27,7 @@ state={
 			}
 		}
 		add_core_of = PER
-		add_claim_by = KUR
+		add_claim_by = URG
 	}
 
 	provinces={
