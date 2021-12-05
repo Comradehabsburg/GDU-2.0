@@ -29,6 +29,16 @@ focus = {
 
 	completion_reward = {
 
+
+
+		GER = { swap_ideas = {
+
+			remove_idea = med_control
+			add_idea = med_control_2
+			
+					}
+			}
+
 		swap_ideas = {
 
 remove_idea = med_control
