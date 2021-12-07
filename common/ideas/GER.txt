@@ -831,11 +831,9 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.30
-				defense_bonus_against = 0.15
-				terrain_penalty_reduction = 0.6
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.05
 			}
-
 
 		}
 		GER_dismantle_maginot = {
@@ -972,50 +970,7 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.2
-
-				
 			}
-			
-							equipment_bonus = {
-				fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-
-
-
-				CAS_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-				nav_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-
-
-				tac_bomber_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-
-
-				heavy_fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-
-				transport_plane_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-
-				scout_plane_equipment = {
-					instant = yes
-					build_cost_ic = -0.10	
-				}
-			}
-			
 		}
 
 		GER_mefo_bills_2 = {
@@ -1045,47 +1000,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.35
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
 			}
 		}
 
@@ -1116,49 +1030,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.5
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
 			}
 		}
 
@@ -1189,50 +1060,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.65
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
 			}
 		}
 
@@ -1263,50 +1090,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.8
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
 			}
 		}
 
@@ -1337,51 +1120,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.95
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
 			}
 		}
 
@@ -1412,52 +1150,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.1
-
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
 			}
 		}
 
@@ -1488,51 +1180,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.25
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
 			}
 		}
 
@@ -1563,52 +1210,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.4
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
 			}
 		}
 
@@ -1639,51 +1240,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.55
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
-
 			}
 		}
 
@@ -1714,51 +1270,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.7
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
 			}
 		}
 
@@ -1789,51 +1300,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.85
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
 			}
 		}
 
@@ -1864,53 +1330,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2
-
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
 			}
 		}
 
@@ -1941,51 +1360,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.15
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
 			}
 		}
 
@@ -2016,52 +1390,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.3
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
 			}
 		}
 
@@ -2092,53 +1420,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.45
-
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
-
 			}
 		}
 
@@ -2169,51 +1450,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.6
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
 			}
 		}
 
@@ -2244,52 +1480,6 @@ ideas = {
 				production_speed_fuel_silo_factor = 0.25
 				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.75
-
-
-				equipment_bonus = {
-					fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-	
-					CAS_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-					nav_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					tac_bomber_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-	
-					heavy_fighter_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					transport_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10
-					}
-	
-					scout_plane_equipment = {
-						instant = yes
-						build_cost_ic = -0.10	
-					}
-				}
-
-
-
-
-
 			}
 		}
 
