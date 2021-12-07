@@ -36,6 +36,7 @@ recruit_character = FIN_ake_henrik_gartz
 
 
 add_ideas = {
+	GER_autarky_idea
 	limited_conscription
 }
 
@@ -73,6 +74,7 @@ if = {
 set_convoys = 5
 
 add_ideas = {
+	GER_autarky_idea
 	limited_conscription
 }
 

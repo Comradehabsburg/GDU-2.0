@@ -130,8 +130,10 @@ if = {
 	give_guarantee = TUR
 	give_guarantee = YUG
 }
-add_ideas = neutrality_idea
-
+add_ideas = { 
+GER_autarky_idea
+neutrality_idea
+}
 #Kick off kings crazy life
 if = {
 	limit = {
