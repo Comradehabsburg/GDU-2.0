@@ -103,7 +103,7 @@ units = {
 	}
 	division = {
 		name = "XIX Brigada Internacionales"
-		location = 13233  # Bilbao
+		location = 8111  # Bilbao
 		division_template = "Brigada Internacionales"
 	}
 	division = {
