@@ -19,7 +19,7 @@ state=
 		add_claim_by = SPR
 	}
 	provinces={
-		4135 8035 5012
+		4135 13228 13236
 	}
 
 	local_supplies=0.0 
