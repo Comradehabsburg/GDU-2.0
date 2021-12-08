@@ -87,7 +87,7 @@ units = {
 	}
 	division = {
 		name = "13a Brigada Legionario"
-		location = 10779  # Valladolid
+		location = 13227  # Valladolid
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -192,7 +192,7 @@ units = {
 	}
 	division = {
 		name = "32a Brigada Legionario"
-		location = 10814  # Sevilla
+		location = 13231  # Sevilla
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -227,7 +227,7 @@ units = {
 	}
 	division = {
 		name = "39a Brigada Legionario"
-		location = 10725  # Burgos
+		location = 13220  # Burgos
 		division_template = "Brigada Legionario"
 	}
 	division = {
@@ -257,7 +257,7 @@ units = {
 	}
 	division = {
 		name = "45a Brigada Legionario"
-		location = 7939  # Leon
+		location = 13219  # Leon
 		division_template = "Brigada Legionario"
 	}
 	division = {
