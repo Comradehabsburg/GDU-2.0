@@ -87,6 +87,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
+	set_naval_oob = "GER_1936_naval"
 }
 if = {
 	limit = {
@@ -340,7 +341,7 @@ create_import = {
 			improved_heavy_battery = 1
 			basic_heavy_armor_scheme = 1
 		}
-		
+		set_naval_oob = "GER_1939_naval_mtg"
 	}
 }
 
