@@ -14,15 +14,6 @@ state={
 		owner = URG
 		buildings = {
 			infrastructure = 3 #was: 5
-			8222 = {
-				naval_base = 5
-			}
-			5121 = {
-				naval_base = 1
-			}
-			650 = {
-				bunker = 1
-			}
 		}
 		add_core_of = URG
 		victory_points = {
