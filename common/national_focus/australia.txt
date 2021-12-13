@@ -2824,7 +2824,7 @@
 		}
 
 		available = {
-
+			is_subject = no
 		}
 		
 		bypass = {
@@ -2837,11 +2837,8 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-		
-	research_speed_factor = 0.5
-
+			add_research_slot = 1
 		}
-		
 	}
 
 	############################
