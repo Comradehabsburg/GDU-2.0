@@ -2,6 +2,9 @@ state = {
 	id = 822
 	name = "STATE_822" #Chukotka
 
+	state_category = wasteland
+	impassable = yes
+
 	history = {
 		owner = SOV
 		victory_points = {
