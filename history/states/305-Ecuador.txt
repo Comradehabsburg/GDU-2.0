@@ -13,8 +13,17 @@ state={
 		owner = URG
 		buildings = {
 			infrastructure = 2
+			8252 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = URG
+		victory_points = {
+			12798 5
+		}
+		victory_points = {
+			8252 1
+		}
 
 	}
 
