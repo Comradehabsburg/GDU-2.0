@@ -2,15 +2,21 @@ state = {
 	id = 822
 	name = "STATE_822" #Chukotka
 
-	state_category = wasteland
-	impassable = yes
-
 	history = {
 		owner = SOV
+		victory_points = {
+			13063 1 
+		}
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
+			13204 ={
+				naval_base = 1
+			}
 		}
 		add_core_of = SOV
+		add_core_of = URG
+		add_core_of = URG
+
 	}
 
 	provinces = {
