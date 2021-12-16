@@ -1919,7 +1919,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 25
 
 		}
 	}
