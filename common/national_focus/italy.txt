@@ -1920,8 +1920,10 @@ add_idea = med_control_2
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-set_state_owner = 44 
-set_state_owner = 805
+                set_state_owner = 44 
+                set_state_owner = 805
+                set_state_controller = 44
+                set_state_controller = 805
 		}
 	}
 
