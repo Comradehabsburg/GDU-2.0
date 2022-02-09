@@ -89,11 +89,7 @@ MEX_category_military_issues = {
 					has_idea = MEX_cedillo_tension_4
 				}
 
-				remove_ideas = MEX_cedillo_tension_4
-
-				country_event = {
-					id = mexico.1
-				}
+				add_stability = -0.1
 			}
 			else_if = {
 				limit = {
@@ -164,7 +160,7 @@ MEX_category_military_issues = {
 		}
 
 		allowed = {
-			original_tag = MEX
+			always = no
 		}
 
 		fixed_random_seed = no
@@ -210,7 +206,7 @@ MEX_category_military_issues = {
 		days_remove = 150
 
 		allowed = {
-			original_tag = MEX
+			always = no
 		}
 
 		visible = {
@@ -287,7 +283,7 @@ MEX_category_military_issues = {
 		}
 
 		allowed = {
-			original_tag = MEX
+			always = no
 		}
 
 		fixed_random_seed = no
@@ -333,7 +329,7 @@ MEX_category_military_issues = {
 		days_remove = 150
 
 		allowed = {
-			original_tag = MEX
+			always = no
 		}
 
 		visible = {
@@ -512,14 +508,6 @@ MEX_category_military_issues = {
 			}
 		}
 
-		target_root_trigger = {
-			is_subject = no
-
-			has_completed_focus = MEX_focus_spanish_civil_war_refugees
-
-			NOT = { has_completed_focus = MEX_focus_falangist_veterans }
-		}
-
 		targets = { SPR SPD }
 		targets_dynamic = yes
 
@@ -543,15 +531,6 @@ MEX_category_military_issues = {
 			
 			has_equipment = {
 				infantry_equipment > 249
-			}
-			
-			any_other_country = {
-				original_tag = SPR
-				has_civil_war = yes
-			}
-			
-			hidden_trigger = {
-				NOT = { has_global_flag = scw_over }
 			}
 		}
 
@@ -623,14 +602,6 @@ MEX_category_military_issues = {
 				NOT = { has_war_with = ROOT }
 			}
 		}
-
-		target_root_trigger = {
-			is_subject = no
-
-			has_completed_focus = MEX_focus_spanish_civil_war_refugees
-
-			NOT = { has_completed_focus = MEX_focus_support_spains_loyalists }
-		}
 		
 		targets = { SPR }
 		targets_dynamic = yes
@@ -652,14 +623,6 @@ MEX_category_military_issues = {
 			
 			has_equipment = {
 				infantry_equipment > 249
-			}
-			
-			any_other_country = {
-				original_tag = SPR
-				has_civil_war = yes
-			}
-			hidden_trigger = {
-				NOT = { has_global_flag = scw_over }
 			}
 		}
 

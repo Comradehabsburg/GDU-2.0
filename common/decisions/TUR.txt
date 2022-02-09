@@ -7,11 +7,11 @@ political_actions = {
 			original_tag = TUR
 		}
 		available = {
-			has_country_leader = { ruling_only = yes character = TUR_mustafa_kemal_ataturk }
+			has_country_leader = { ruling_only = yes name = "Mustafa Kemal Atatürk" }
 			has_defensive_war = yes			
 		}
 		visible = {
-			has_country_leader = { ruling_only = yes character = TUR_mustafa_kemal_ataturk }
+			has_country_leader = { ruling_only = yes name = "Mustafa Kemal Atatürk" }
 		}
 		cost = 0
 		fire_only_once = yes
@@ -23,27 +23,29 @@ political_actions = {
 				limit = {
 					has_dlc = "Battle for the Bosporus"
 				}
-				add_field_marshal_role = {
-					character = TUR_mustafa_kemal_ataturk
+				create_field_marshal = {
+					name = "Mustafa Kemal Atatürk"
+					picture = "Portrait_Turkey_Mustafa_Kemal_Ataturk_Military.dds"
 					traits = { trait_TUR_kemalist_champion brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter }
 					skill = 4
+					id = 59
 					attack_skill = 4
 					defense_skill = 3
 					planning_skill = 4
 					logistics_skill = 2
-					legacy_id = 59
 				}
 			}
 			else = {
-				add_field_marshal_role = {
-					character = TUR_mustafa_kemal_ataturk
+				create_field_marshal = {
+					name = "Mustafa Kemal Atatürk"
+					picture = "Portrait_Turkey_Mustafa_Kemal_Ataturk_Military.dds"
 					traits = { brilliant_strategist war_hero infantry_officer trickster desert_fox hill_fighter }
 					skill = 4
+					id = 59
 					attack_skill = 4
 					defense_skill = 3
 					planning_skill = 4
 					logistics_skill = 2
-					legacy_id = 59
 				}
 			}
 			add_war_support = 0.1
@@ -86,7 +88,6 @@ TUR_the_constitutional_arrows_category = {
 		}
 		
 		fire_only_once = no
-		fixed_random_seed = yes
 		
 		visible = {
 			has_completed_focus = TUR_ratify_the_six_arrows
@@ -94,17 +95,17 @@ TUR_the_constitutional_arrows_category = {
 				OR = {
 					AND = { 
 						has_country_leader = {
-							character = TUR_adnan_menderes
+							name = "Adnan Menderes"
 							ruling_only = yes
 						}
 						NOT = { has_completed_focus = TUR_reconfigure_our_foreign_policy } 
 					}
 					has_country_leader = {
-						character = TUR_refet_pasha
+						name = "Refet Pasha"
 						ruling_only = yes
 					}
 					has_country_leader = {
-						character = TUR_abdulmejid_ii
+						name = "Abdulmejid II"
 						ruling_only = yes
 					}
 				}
@@ -158,24 +159,24 @@ TUR_the_constitutional_arrows_category = {
 			NOT = { 
 				OR = {
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 					has_country_leader = {
-						character = TUR_refet_pasha
+						name = "Refet Pasha"
 						ruling_only = yes
 					}
 					has_country_leader = {
-						character = TUR_abdulmejid_ii
+						name = "Abdulmejid II"
 						ruling_only = yes
 					}
 					has_country_leader = {
-						character = TUR_durrushehvar_i
+						name = "Dürrüşehvar I"
 						ruling_only = yes
 					}
 					AND = { 
 						has_country_leader = {
-							character = TUR_fevzi_cakmak
+							name = "Fevzi Çakmak"
 							ruling_only = yes
 						}
 						NOT = { has_completed_focus = TUR_loosen_the_laws_on_secularism } 
@@ -308,17 +309,17 @@ TUR_the_constitutional_arrows_category = {
 				OR = {
 					AND = { 
 						has_country_leader = {
-							character = TUR_adnan_menderes
+							name = "Adnan Menderes"
 							ruling_only = yes
 						}
 						NOT = { has_completed_focus = TUR_reconfigure_our_foreign_policy } 
 					}
 					has_country_leader = {
-						character = TUR_abdulmejid_ii
+						name = "Abdulmejid II"
 						ruling_only = yes
 					}
 					has_country_leader = {
-						character = TUR_durrushehvar_i
+						name = "Dürrüşehvar I"
 						ruling_only = yes
 					}
 				}
@@ -477,20 +478,20 @@ TUR_the_constitutional_arrows_category = {
 			NOT = { 
 				OR = {
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 					has_country_leader = {
-						character = TUR_abdulmejid_ii
+						name = "Abdulmejid II"
 						ruling_only = yes
 					}
 					has_country_leader = {
-						character = TUR_refet_pasha
+						name = "Refet Pasha"
 						ruling_only = yes
 					}
 					AND = { 
 						has_country_leader = {
-							character = TUR_fevzi_cakmak
+							name = "Fevzi Çakmak"
 							ruling_only = yes
 						}
 						NOT = { has_completed_focus = TUR_fatherland_first } 
@@ -588,16 +589,16 @@ TUR_the_constitutional_arrows_category = {
 		available = {
 			OR = {
 				has_country_leader = {
-					character = TUR_adnan_menderes
+					name = "Adnan Menderes"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_celal_bayar
+					name = "Celâl Bayar"
 					ruling_only = yes
 				}
 				AND = { 
 					has_country_leader = {
-						character = TUR_mustafa_kemal_ataturk
+						name = "Mustafa Kemal Atatürk"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_fully_integrate_the_is_bank
@@ -645,24 +646,24 @@ TUR_the_constitutional_arrows_category = {
 			has_completed_focus = TUR_ratify_the_six_arrows
 			OR = {
 				has_country_leader = {
-					character = TUR_adnan_menderes
+					name = "Adnan Menderes"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_refet_pasha
+					name = "Refet Pasha"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_abdulmejid_ii
+					name = "Abdulmejid II"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_durrushehvar_i
+					name = "Dürrüşehvar I"
 					ruling_only = yes
 				}
 				AND = { 
 					has_country_leader = {
-						character = TUR_fevzi_cakmak
+						name = "Fevzi Çakmak"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_loosen_the_laws_on_secularism
@@ -716,21 +717,21 @@ TUR_the_constitutional_arrows_category = {
 			OR = {
 				AND = { 
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 					NOT = { has_completed_focus = TUR_reconfigure_our_foreign_policy } 
 				}
 				has_country_leader = {
-					character = TUR_refet_pasha
+					name = "Refet Pasha"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_abdulmejid_ii
+					name = "Abdulmejid II"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_durrushehvar_i
+					name = "Dürrüşehvar I"
 					ruling_only = yes
 				}
 			}
@@ -778,11 +779,11 @@ TUR_the_constitutional_arrows_category = {
 			has_completed_focus = TUR_ratify_the_six_arrows
 			OR = { 
 				has_country_leader = {
-					character = TUR_abdulmejid_ii
+					name = "Abdulmejid II"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_durrushehvar_i
+					name = "Dürrüşehvar I"
 					ruling_only = yes
 				}
 			}
@@ -831,11 +832,11 @@ TUR_the_constitutional_arrows_category = {
 			has_completed_focus = TUR_ratify_the_six_arrows
 			OR = {
 				has_country_leader = {
-					character = TUR_mehmet_recep_peker
+					name = "Mehmet Recep Peker"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_fevzi_cakmak
+					name = "Fevzi Çakmak"
 					ruling_only = yes
 				}
 			}
@@ -885,16 +886,16 @@ TUR_the_constitutional_arrows_category = {
 			has_completed_focus = TUR_ratify_the_six_arrows
 			OR = {
 				has_country_leader = {
-					character = TUR_sevket_sureyya_aydemir
+					name = "Şevket Süreyya Aydemir"
 					ruling_only = yes
 				}
 				has_country_leader = {
-					character = TUR_sefik_husnu
+					name = "Şefik Hüsnü"
 					ruling_only = yes
 				}
 				AND = { 
 					has_country_leader = {
-						character = TUR_ismet_inonu
+						name = "İsmet İnönü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_kemalist_socialist_theory
@@ -951,7 +952,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1022,7 +1023,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1093,7 +1094,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1164,7 +1165,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1326,7 +1327,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1405,7 +1406,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1478,7 +1479,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1549,7 +1550,7 @@ TUR_industrial_projects_category = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Şefik Hüsnü"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_nationalise_all_private_industry
@@ -1952,7 +1953,7 @@ economy_decisions = {
 		icon = generic_construction
 
 		allowed = { 
-			original_tag = TUR
+			#original_tag = TUR
 		}
 
 		available = {
@@ -2037,7 +2038,7 @@ economy_decisions = {
 		}
 
 		target_trigger = {
-			tag = TUR
+			FROM = { tag = TUR }
 		}
 
 		days_remove = 60
@@ -2086,7 +2087,7 @@ economy_decisions = {
 							40 = {
 								add_building_construction = {
 									type = infrastructure
-									level = 1
+									level = 2
 									instant_build = yes
 								}
 							}
@@ -2131,7 +2132,7 @@ economy_decisions = {
 		}
 
 		target_trigger = {
-			tag = TUR
+			FROM = { tag = TUR }
 		}
 
 		days_remove = 90
@@ -2221,7 +2222,7 @@ economy_decisions = {
 		}
 
 		target_trigger = {
-			tag = TUR
+			FROM = { tag = TUR }
 		}
 
 		days_remove = 120
@@ -2416,14 +2417,12 @@ TUR_kurdish_state_management_category = {
 			has_full_control_of_state = 350
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { state = 350 }
-		}
+		highlight_states = { state = 350 }
 
 		on_map_mode = map_only
 
 		custom_cost_trigger = {
-			command_power > 14.9
+			command_power > 14
 		}
 
 		custom_cost_text = TUR_decision_cost_kurd_rebels
@@ -2473,7 +2472,6 @@ TUR_kurdish_state_management_category = {
 		}
 
 		complete_effect = {
-			add_command_power = -15
 			350 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -2589,14 +2587,12 @@ TUR_kurdish_state_management_category = {
 			has_full_control_of_state = 353
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { state = 353 }
-		}
+		highlight_states = { state = 353 }
 
 		on_map_mode = map_only
 
 		custom_cost_trigger = {
-			command_power > 14.9
+			command_power > 14
 		}
 		
 		custom_cost_text = TUR_decision_cost_kurd_rebels
@@ -2645,7 +2641,6 @@ TUR_kurdish_state_management_category = {
 		}
 
 		complete_effect = {
-			add_command_power = -15
 			353 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -2760,14 +2755,12 @@ TUR_kurdish_state_management_category = {
 			has_full_control_of_state = 800
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { state = 800 }
-		}
+		highlight_states = { state = 800 }
 
 		on_map_mode = map_only
 
 		custom_cost_trigger = {
-			command_power > 14.9
+			command_power > 14
 		}
 		
 		custom_cost_text = TUR_decision_cost_kurd_rebels
@@ -2816,7 +2809,6 @@ TUR_kurdish_state_management_category = {
 		}
 
 		complete_effect = {
-			add_command_power = -15
 			800 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -2931,14 +2923,12 @@ TUR_kurdish_state_management_category = {
 			has_full_control_of_state = 352
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { state = 352 }
-		}
+		highlight_states = { state = 352 }
 
 		on_map_mode = map_only
 
 		custom_cost_trigger = {
-			command_power > 14.9
+			command_power > 14
 		}
 		
 		custom_cost_text = TUR_decision_cost_kurd_rebels
@@ -2988,7 +2978,6 @@ TUR_kurdish_state_management_category = {
 
 
 		complete_effect = {
-			add_command_power = -15
 			352 = { save_global_event_target_as = TUR_kurdish_state_event_target }
 			random_list = {
 				55 = {
@@ -3108,6 +3097,8 @@ TUR_kurdish_state_management_category = {
 			}
 		}
 
+		#highlight_states =
+
 		#on_map_mode = map_only
 
 		cost = 120
@@ -3197,9 +3188,7 @@ TUR_kurdish_state_management_category = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = {
-				state = 350
-			}
+			state = 350
 		}
 
 		on_map_mode = map_only
@@ -3268,11 +3257,8 @@ TUR_kurdish_state_management_category = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = {
-				state = 352
-			}
+			state = 352
 		}
-
 
 		on_map_mode = map_only
 
@@ -3340,9 +3326,7 @@ TUR_kurdish_state_management_category = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = {
-				state = 353
-			}
+			state = 353
 		}
 
 		on_map_mode = map_only
@@ -3411,9 +3395,7 @@ TUR_kurdish_state_management_category = {
 		}
 
 		highlight_states = {
-			highlight_states_trigger = {
-				state = 800
-			}
+			state = 800
 		}
 
 		on_map_mode = map_only
@@ -3479,10 +3461,8 @@ TUR_fundamentalist_state_management_category = {
 			NOT = { has_completed_focus = TUR_pivot_to_the_past }
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_fundamentalist_state = yes
-			}
+		highlight_states = { 
+			TUR_is_fundamentalist_state = yes
 		}
 
 		cost = 100
@@ -3501,7 +3481,7 @@ TUR_fundamentalist_state_management_category = {
 					has_country_flag = TUR_acted_against_fundamentalists_recently_flag 
 					has_country_flag = TUR_ottoman_officers_invited_back
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_pivot_to_the_past
@@ -3567,10 +3547,8 @@ TUR_fundamentalist_state_management_category = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_fundamentalist_state = yes
-			}
+		highlight_states = { 
+			TUR_is_fundamentalist_state = yes
 		}
 
 		cost = 150
@@ -3638,10 +3616,8 @@ TUR_fundamentalist_state_management_category = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_fundamentalist_state = yes
-			}
+		highlight_states = { 
+			TUR_is_fundamentalist_state = yes
 		}
 
 		cost = 200
@@ -3652,7 +3628,7 @@ TUR_fundamentalist_state_management_category = {
 			}
 			OR = {
 				has_country_leader = {
-					character = TUR_adnan_menderes
+					name = "Adnan Menderes"
 					ruling_only = yes
 				}
 				has_completed_focus = TUR_pivot_to_the_past
@@ -3689,10 +3665,8 @@ TUR_fundamentalist_state_management_category = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_fundamentalist_state = yes 
-			}
+		highlight_states = { 
+			TUR_is_fundamentalist_state = yes 
 		}
 
 		cost = 200
@@ -3722,35 +3696,30 @@ TUR_fundamentalist_state_management_category = {
 						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
 				}
-				custom_effect_tooltip = TUR_acquiesce_to_fundamentalists_tt
 				save_global_event_target_as = TUR_fundamentalist_state
-				hidden_effect = {
-					TUR_downgrade_fundamentalist_defiance_effect = yes
-				}
+				TUR_downgrade_fundamentalist_defiance_effect = yes
 			}
-			hidden_effect = {
-				random_owned_controlled_state = {
-					limit = { 
-						OR = {
-							has_dynamic_modifier = { modifier = islamist_opposition }
-							has_dynamic_modifier = { modifier = islamist_sedition }
-							has_dynamic_modifier = { modifier = islamist_insurgency }
-						}
+			random_owned_controlled_state = {
+				limit = { 
+					OR = {
+						has_dynamic_modifier = { modifier = islamist_opposition }
+						has_dynamic_modifier = { modifier = islamist_sedition }
+						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
-					save_global_event_target_as = TUR_fundamentalist_state
-					TUR_downgrade_fundamentalist_defiance_effect = yes
 				}
-				random_owned_controlled_state = {
-					limit = { 
-						OR = {
-							has_dynamic_modifier = { modifier = islamist_opposition }
-							has_dynamic_modifier = { modifier = islamist_sedition }
-							has_dynamic_modifier = { modifier = islamist_insurgency }
-						}
+				save_global_event_target_as = TUR_fundamentalist_state
+				TUR_downgrade_fundamentalist_defiance_effect = yes
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					OR = {
+						has_dynamic_modifier = { modifier = islamist_opposition }
+						has_dynamic_modifier = { modifier = islamist_sedition }
+						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
-					save_global_event_target_as = TUR_fundamentalist_state
-					TUR_downgrade_fundamentalist_defiance_effect = yes
 				}
+				save_global_event_target_as = TUR_fundamentalist_state
+				TUR_downgrade_fundamentalist_defiance_effect = yes
 			}
 			if = {
 				limit = {
@@ -3781,10 +3750,8 @@ TUR_kemalist_state_management_category = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_kemalist_state = yes
-			}
+		highlight_states = { 
+			TUR_is_kemalist_state = yes
 		}
 
 		cost = 100
@@ -3793,7 +3760,7 @@ TUR_kemalist_state_management_category = {
 			OR = {
 				AND = { 
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_democratic_transition_focus
@@ -3852,10 +3819,8 @@ TUR_the_enemy_within = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_unaligned_state = yes
-			}
+		highlight_states = { 
+			TUR_is_unaligned_state = yes
 		}
 
 		days_mission_timeout = 90
@@ -3954,7 +3919,7 @@ TUR_the_enemy_within = {
 			NOT = {
 				OR = {
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 					has_completed_focus = TUR_pivot_to_the_past
@@ -3993,10 +3958,8 @@ TUR_the_enemy_within = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_unaligned_state = yes 
-			}
+		highlight_states = { 
+			TUR_is_unaligned_state = yes 
 		}
 
 		cost = 100
@@ -4007,7 +3970,7 @@ TUR_the_enemy_within = {
 			}
 			OR = {
 				has_country_leader = {
-					character = TUR_adnan_menderes
+					name = "Adnan Menderes"
 					ruling_only = yes
 				}
 				has_completed_focus = TUR_pivot_to_the_past
@@ -4058,10 +4021,8 @@ TUR_the_enemy_within = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_unaligned_state = yes 
-			}
+		highlight_states = { 
+			TUR_is_unaligned_state = yes 
 		}
 
 		days_mission_timeout = 45
@@ -4182,10 +4143,8 @@ TUR_the_enemy_within = {
 			}
 		}
 
-		highlight_states = {
-			highlight_states_trigger = { 
-				TUR_is_unaligned_state = yes 
-			}
+		highlight_states = { 
+			TUR_is_unaligned_state = yes 
 		}
 
 		cost = 100
@@ -5196,7 +5155,7 @@ TUR_the_fading_father_category = {
 		available = {
 			NOT = {
 				has_country_leader = {
-					character = TUR_mustafa_kemal_ataturk
+					name = "Mustafa Kemal Atatürk"
 					ruling_only = yes
 				}
 			}
@@ -5262,7 +5221,7 @@ TUR_the_fading_father_category = {
 
 		available = {
 			has_country_leader = {
-				character = TUR_mustafa_kemal_ataturk
+				name = "Mustafa Kemal Atatürk"
 				ruling_only = yes
 			}
 		}
@@ -5280,7 +5239,7 @@ TUR_the_fading_father_category = {
 		cancel_trigger = {
 			NOT = {
 				has_country_leader = {
-					character = TUR_mustafa_kemal_ataturk
+					name = "Mustafa Kemal Atatürk"
 					ruling_only = yes
 				}
 			}
@@ -5338,7 +5297,7 @@ TUR_the_fading_father_category = {
 
 		available = {
 			has_country_leader = {
-				character = TUR_mustafa_kemal_ataturk
+				name = "Mustafa Kemal Atatürk"
 				ruling_only = yes
 			}
 		}
@@ -5358,9 +5317,9 @@ TUR_the_fading_father_category = {
 				clr_country_flag = TUR_ataturk_getting_sickly 
 				if = {
 					limit = {
-						TUR_mustafa_kemal_ataturk = { is_unit_leader = yes }
+						has_unit_leader = 59
 					}
-					TUR_mustafa_kemal_ataturk = { remove_unit_leader_role = yes }
+					remove_unit_leader = 59
 				}
 				country_event = { id = bftb_turkey.135 days = 90 random = 60 }
 			}
@@ -5649,7 +5608,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -5701,7 +5660,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -5753,7 +5712,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -5811,7 +5770,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -5873,7 +5832,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -5923,7 +5882,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -5968,7 +5927,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -6008,7 +5967,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -6042,7 +6001,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -6083,7 +6042,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -6171,7 +6130,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -6259,7 +6218,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -6345,7 +6304,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 
@@ -6460,7 +6419,7 @@ category_faction_debug_decisions = {
 			}
 		}
 
-		#highlight_states_trigger =
+		#highlight_states =
 
 		#on_map_mode = map_only
 

@@ -1,6 +1,57 @@
 ideas = {
 
 	hidden_ideas = {
+	
+		stupid_ai = {
+
+			picture = FRA_factory_strikes
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                political_power_cost = 100
+                consumer_goods_factor = 1
+                conscription_factor = -100
+                industrial_capacity_factory = -10
+                industrial_capacity_dockyard = -10
+                line_change_production_efficiency_factor = -10
+                production_factory_efficiency_gain_factor = -10
+                #global_building_slots_factor = -10
+                production_factory_max_efficiency_factor = -10
+			}
+		}
+	
+	
+		CHI_ai_boost = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.2
+				supply_consumption_factor = -0.35
+				out_of_supply_factor = -0.30
+				pocket_penalty = -0.2
+				army_core_defence_factor = 0.25
+				dig_in_speed_factor = 0.5
+				industrial_capacity_factory = 0.3
+			}
+		}
 
 		continuous_naval_production = {
 			allowed = {
@@ -91,16 +142,52 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.10
 				}
-				scout_plane_equipment = {
-					instant = yes
-					build_cost_ic = -0.10	
-				}
 			}		
 		}
 	}
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
+	
+		allied_vic_plan = {
+				allowed = {
+				always = no
+			}
+			picture = man_five_year_plan_tank
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.05
+				local_resources_factor = 0.1
+			}
+		}
+	
+	
+		german_cooperation_focus = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = german_advisors
+	
+			research_bonus = {
+				armor = 0.10
+				air_equipment = 0.10
+			}
+			modifier = {
+				land_doctrine_cost_factor = -0.15
+			}
+		}
 	
 		nationalism = {
 			
@@ -235,91 +322,6 @@ ideas = {
 			modifier = {
 				neutrality_drift = 0.1
 				neutrality_acceptance = 85
-			}
-		}
-
-		#Weaker version
-		fascist_influence_weak = {
-			name = fascist_influence
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-			
-			modifier = {
-				fascism_drift = 0.1
-				fascism_acceptance = 35
-			}
-		}
-		
-		communist_influence_weak = {
-			name = communist_influence
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			removal_cost = -1
-
-			picture = generic_communism_drift_bonus
-			
-			modifier = {
-				communism_drift = 0.1
-				communism_acceptance = 35
-			}
-		}
-
-		democratic_influence_weak = {
-			name = democratic_influence
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			picture = generic_democratic_drift_bonus
-			
-			modifier = {
-				democratic_drift = 0.1
-				democratic_acceptance = 35
-			}
-		}
-
-		neutrality_influence_weak = {
-			name = neutrality_influence
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = neutrality
-			}
-
-			removal_cost = -1
-
-			picture = generic_pp_unity_bonus
-			
-			modifier = {
-				neutrality_drift = 0.1
-				neutrality_acceptance = 35
 			}
 		}
 		
@@ -532,7 +534,7 @@ ideas = {
 	
 			modifier = {
 				conscription = 0.05
-				resistance_damage_to_garrison = -0.1 
+				resistance_damage_to_garrison = -0.10
 			}
 		}
 	
@@ -578,7 +580,7 @@ ideas = {
 			picture = generic_infantry_bonus
 	
 			modifier = {
-				training_time_army_factor = -0.1
+				training_time_army_factor = -0.2
 			}
 		}
 	
@@ -678,6 +680,57 @@ ideas = {
 				ai_get_ally_desire_factor = -100
 			}
 		}
+
+		neutrality_idea2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = neutrality_idea
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				join_faction_tension = 10
+				send_volunteers_tension = 10
+				guarantee_tension = 10
+				ai_get_ally_desire_factor = -1000
+				enemy_justify_war_goal_time = 10
+				drift_defence_factor = 10
+				lend_lease_tension = 1000
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
+
+		no_surrender = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = neutrality_idea
+			
+			removal_cost = -1
+	
+			modifier = {
+				surrender_limit = 1
+				conscription = -1
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
 	
 		deterrence = {
 			
@@ -752,7 +805,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				stability_factor = 0.10
+				stability_factor = 0.1
 				war_support_factor = 0.1
 			}
 		}	
@@ -1101,6 +1154,87 @@ ideas = {
 				resistance_damage_to_garrison_on_our_occupied_states = 0.25 
 			}
 		}	
+		MTG_naval_treaty_adherent = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent
+			
+			modifier = {
+				production_cost_max_ship_hull_heavy = 12500
+				production_cost_max_ship_hull_carrier = 9750
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+		MTG_naval_treaty_adherent_reduced = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent_reduced
+			
+			modifier = {
+				production_cost_max_ship_hull_heavy = 15000
+				production_cost_max_ship_hull_carrier = 11000
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+		MTG_naval_treaty_cheating = {
+			name = MTG_naval_treaty_adherent
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent
+			
+			modifier = {
+				production_cost_max_ship_hull_heavy = 14000
+				production_cost_max_ship_hull_carrier = 10500
+				industrial_capacity_dockyard = -0.20
+			}
+		}
+		MTG_naval_treaty_cheating_reduced = {
+			name = MTG_naval_treaty_adherent_reduced
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = MTG_naval_treaty_adherent_reduced
+			
+			modifier = {
+				production_cost_max_ship_hull_heavy = 16000
+				production_cost_max_ship_hull_carrier = 12000
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+	}
 
 	# TECHNOLOGY
 	tank_manufacturer = { 
@@ -1135,12 +1269,6 @@ ideas = {
 					AND = {
 						OR = { tag = MEX }
 						has_dlc = "Man the Guns"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
 					}
 				}
 			}
@@ -1187,18 +1315,6 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
 			}
 			
 			cost = 150
@@ -1243,18 +1359,6 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR}
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
 			}
 			
 			cost = 150
@@ -1290,20 +1394,8 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = MEX tag = HOL }
+						OR = { tag = ALB tag = HOL }
 						has_dlc = "Man the Guns"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
 					}
 				}
 			}
@@ -1341,20 +1433,8 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = MEX tag = HOL }
+						OR = { tag = ALB tag = HOL }
 						has_dlc = "Man the Guns"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
 					}
 				}
 			}
@@ -1388,20 +1468,8 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = MEX tag = HOL }
+						OR = { tag = ALB tag = HOL }
 						has_dlc = "Man the Guns"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
 					}
 				}
 			}
@@ -1440,18 +1508,6 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
 			}
 			
 			cost = 150
@@ -1486,18 +1542,6 @@ ideas = {
 					AND = {
 						OR = { tag = HOL tag = MEX }
 						has_dlc = "Man the Guns"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
 					}
 				}
 			}
@@ -1538,18 +1582,6 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
 			}
 			
 			cost = 150
@@ -1581,18 +1613,6 @@ ideas = {
 					AND = {
 						OR = { tag = HOL }
 						has_dlc = "Man the Guns"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
 					}
 				}
 			}
@@ -1628,18 +1648,6 @@ ideas = {
 						has_dlc = "Man the Guns"
 					}
 				}
-				NOT = {
-					AND = {
-						OR = { tag = SPR tag = SPA tag = SPB tag = SPC tag = SPD tag = POR }
-						has_dlc = "La Resistance"
-					}
-				}
-				NOT = {
-					AND = {
-						OR = { tag = BUL tag = GRE tag = TUR }
-						has_dlc = "Battle for the Bosporus"
-					}
-				}
 			}
 			
 			cost = 150
@@ -1652,5 +1660,4 @@ ideas = {
 			traits = { artillery_manufacturer }
 		}
 	}
-
 }

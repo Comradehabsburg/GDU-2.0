@@ -1,7 +1,66 @@
 political_actions = {
 
 	
+	targeted_race_for_the_bomb = {
 
+		icon = generic_research
+
+		allowed = {
+			always = no
+		}
+
+		available = {
+			#Target is FROM
+			has_tech = atomic_research
+			NOT = { has_global_flag = first_nuke_dropped }
+			NOT = { has_idea = race_for_the_bomb }
+		}
+
+		target_root_trigger = {
+            has_tech = atomic_research
+            NOT = { has_global_flag = first_nuke_dropped }
+            NOT = { has_idea = race_for_the_bomb }
+		}
+
+		#If this trigger matches a country.
+		target_trigger = {
+			#Target is FROM
+			FROM = {
+        		NOT = { is_in_faction_with = ROOT }
+				has_tech = nuclear_reactor
+				any_owned_state = {
+					nuclear_reactor > 0
+				}
+			}
+		}
+
+		visible = {
+            #Target is FROM
+            has_tech = atomic_research
+            NOT = { has_global_flag = first_nuke_dropped }
+            NOT = { has_idea = race_for_the_bomb }
+            FROM = {
+        		NOT = { is_in_faction_with = ROOT }
+				has_tech = nuclear_reactor
+				any_owned_state = {
+					nuclear_reactor > 0
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = racing_for_the_bomb
+			add_ideas = race_for_the_bomb
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				any_other_country = { has_tech = nukes }
+			}
+		}
+	}
 
 	improved_worker_conditions = {
 
@@ -45,7 +104,6 @@ political_actions = {
 			modifier = {
 				add = 1
 				has_stability < 0.6
-				has_political_power > 155 #Spend on other things first
 			}
 			modifier = {
 				factor = 0
@@ -116,75 +174,277 @@ political_actions = {
 
 economy_decisions = {
 
+	dismantle_maginot = {
 
+		icon = generic_construction
 
-	restructure_supply_system = { #one time boost to get a few cheap supply hubs
-
-
-		visible = { 
-			OR = {
-				is_major = no
-				AND = {
-					is_faction_leader = yes
-					num_of_factories < 51 #would be a minor if it wasn't for faction leader status
-				}
-			}
+		allowed = {
+			NOT = { OR = { tag = GER tag = FRA original_tag = GER original_tag = FRA } }
 		}
+
+		cost = 50
 		fire_only_once = yes
 
-		days_remove = 120
+		days_remove = 200
 
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				num_of_factories < 30
-				factor = 0
+		available = {
+			controls_state = 28
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				controls_state = 18
+				controls_state = 29
 			}
+		}
+
+		visible = {
+			FRA = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+				}
+			}
+			NOT = { is_in_faction_with = FRA }
 		}
 
 		modifier = {
-			production_speed_supply_node_factor = 3
+			civilian_factory_use = 5
 		}
 
 		complete_effect = {
-			set_variable = { node_goal = num_of_supply_nodes }
-			add_to_variable = { node_goal = 3 } #maximum 3 additional nodes
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						level > 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				18 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+				29 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							level > 2
+						}
+					}
+				}
+			}
+		}
+	}		
+}
+
+propaganda_efforts = {
+
+	war_propaganda = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			threat > 0.5
+			has_war_support < 0.5
+			has_offensive_war = no
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
 		}
 
-		cancel_trigger = {
+		visible = {
 			
-			 check_variable = { node_goal < num_of_supply_nodes } #if the number of supply nodes exceeds the old number by +3, immediately cancel
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+		days_re_enable = 180
+
+		cost = 150
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			clr_country_flag = war_propaganda_campaign_running
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war_support < 0.4
+				has_war = yes
+			}
 		}
 	}
-	seize_some_trains_woo = { #repeating train seize
 
-		visible = { 
-			num_of_factories < 60
-		}
-		
+	#Propaganda campaign against a country in offensive that has caused a lot of tension and started a war
+	war_propaganda_against_warmonger = {
+
+		icon = generic_prepare_civil_war
+
 		available = {
-			has_equipment = { train_equipment < 101 }
-			has_tech = basic_train
+			NOT = { has_country_flag = war_propaganda_campaign_running }
+			FROM = {
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						has_war_with = ROOT
+						is_neighbor_of = ROOT
+					}
+					has_offensive_war = yes
+				}
+			}
+			if = {
+				limit = {
+					tag = SPR
+					has_dlc = "La Resistance"
+				}
+				NOT = {
+					has_idea = SPR_political_violence
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+					has_dlc = "La Resistance"
+				}
+				has_global_flag = scw_over
+			}
 		}
-		
-		days_remove = 180
+
+		visible = {
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				NOT = { is_in_faction_with = ROOT }
+				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_neighbor_of = ROOT
+					}
+					set_temp_variable = { war_propaganda_cost = 50 }
+				}
+			}
+		}
+
+		days_remove = 90
+		days_re_enable = 180
+
+		fire_only_once = yes
+
+		cost = var:war_propaganda_cost?75
+
+		modifier = {
+			war_support_weekly = 0.01
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_propaganda_against_warmonger"
+			set_country_flag = war_propaganda_campaign_running
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove war_propaganda_against_warmonger"
+			clr_country_flag = war_propaganda_campaign_running
+		}
 
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_stability < 0.56
 				factor = 0
+				has_war_support > 0.9
 			}
 		}
-
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = train_equipment
-				amount = 15
-			}
-			add_stability = -0.05
-		}
-	}			
+	}
 }
 
 operations = {
@@ -725,7 +985,8 @@ operations = {
 		visible = {
 			has_war = yes
 			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
-			any_controlled_state = {
+			any_state = {
+				is_controlled_by = ROOT
 				OR = {
 					region = 28
 					region = 128
@@ -857,7 +1118,8 @@ operations = {
 		visible = {
 			has_war = yes
 			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
-			any_controlled_state = {
+			any_state = {
+				is_controlled_by = ROOT
 				OR = {
 					region = 34
 					region = 124
@@ -966,7 +1228,7 @@ special_projects = {
 	
 		days_remove = 365
 	
-		cost = 120
+		cost = 75
 	
 		modifier = {
 			civilian_factory_use = 15
@@ -1043,10 +1305,10 @@ special_projects = {
 	
 		days_remove = 180
 	
-		cost = 400
+		cost = 75
 	
 		modifier = {
-			civilian_factory_use = 25
+			civilian_factory_use = 15
 		}
 	
 		remove_effect = {
@@ -1230,7 +1492,7 @@ war_measures = {
             }
         }
         modifier = {
-            conscription = 0.03
+            conscription = 0.01
             stability_factor = -0.05
         }
         ai_will_do = {
@@ -1371,7 +1633,59 @@ war_measures = {
     }
 }
 
+foreign_politics = {
+	object_to_attaches = {
 
+		allowed = {
+            has_dlc = "Waking the Tiger"
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        available = {
+        }
+
+        visible = {
+        	FROM = {
+        		NOT = { has_country_flag = rejected_withdrawing_attache }
+        		NOT = { has_country_flag = rejected_withdrawing_attache@ROOT }
+        		NOT = { has_country_flag = object_attache_going_on }
+        	}
+        	has_war = yes
+        	has_capitulated = no
+        	NOT = { has_war_with = FROM }
+        	any_enemy_country = {
+				has_attache_from = FROM
+			}
+		}
+
+		target_root_trigger = {
+			has_war = yes
+			has_capitulated = no
+		}
+
+		target_trigger = {
+			NOT = { has_war_with = FROM }
+			#FROM = { has_sent_attache = yes } # Make such trigger to optimize if it becomes a performance problem again.
+			any_enemy_country = {
+				has_attache_from = FROM
+			}			
+		}
+
+        complete_effect = {
+			FROM = { country_event = { id = generic.14 hours = 6 } }
+			hidden_effect = {
+				FROM = { set_country_flag = object_attache_going_on }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
 
 economy_decisions = {
 	infrastructure_building_slot = {
@@ -1413,6 +1727,7 @@ economy_decisions = {
 			random_owned_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
+					is_owned_by = ROOT
             		free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1477,7 +1792,7 @@ economy_decisions = {
 							include_locked = yes
 						}
 						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 4
+						infrastructure > 8
 					}
 				}
 				random_owned_state = {
@@ -1489,7 +1804,7 @@ economy_decisions = {
 							include_locked = yes
 						}
 						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 4
+						infrastructure > 8
 					}
 					add_extra_state_shared_building_slots = 1
 					set_state_flag = war_building_slot_flag
@@ -1505,7 +1820,7 @@ economy_decisions = {
 							include_locked = yes
 						}
 						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 2
+						infrastructure > 5
 					}
 				}
 				random_owned_state = {
@@ -1517,7 +1832,7 @@ economy_decisions = {
 							include_locked = yes
 						}
 						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 2
+						infrastructure > 5
 					}
 					add_extra_state_shared_building_slots = 1
 					set_state_flag = war_building_slot_flag
@@ -1533,7 +1848,7 @@ economy_decisions = {
 							include_locked = yes
 						}
 						NOT = { has_state_flag = war_building_slot_flag }
-						infrastructure > 4
+						infrastructure > 8
 					}
 					add_extra_state_shared_building_slots = 1
 					set_state_flag = war_building_slot_flag
@@ -1548,7 +1863,7 @@ economy_decisions = {
 			}
 			modifier = {
 				any_owned_state = {
-					infrastructure > 3
+					infrastructure > 5
 					free_building_slots = { building = industrial_complex size > 0 include_locked = no }
 				}
 				factor = 0
@@ -1640,9 +1955,10 @@ foreign_support = {
 					}
 				}
 			}
-			any_other_country = {
+			any_country = {
 				check_variable = { CHI_burma_road_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
+				NOT = { tag = ROOT }
 			}
 		}
 
@@ -1987,9 +2303,10 @@ foreign_support = {
 					}
 				}
 			}
-			any_other_country = {
+			any_country = {
 				check_variable = { CHI_ledo_road_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
+				NOT = { tag = ROOT }
 			}
 		}
 
@@ -2326,9 +2643,10 @@ foreign_support = {
 					}
 				}
 			}
- 			any_other_country = {
+ 			any_country = {
  				check_variable = { CHI_the_hump_current_level > 0 }
  				NOT = { is_in_faction_with = ROOT }
+ 				NOT = { tag = ROOT }
  			}
  		}
 
@@ -2626,9 +2944,10 @@ foreign_support = {
 					}
 				}
 			}
-			any_other_country = {
+			any_country = {
 				check_variable = { CHI_hanoi_route_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
+				NOT = { tag = ROOT }
 			}
 		}
 

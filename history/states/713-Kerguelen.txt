@@ -12,11 +12,10 @@ state={
 				naval_base = 1
 			}
 		}
+		add_core_of = MAD
 	}
 
 	provinces={
 		2165 
 	}
-
-	local_supplies=0.0 
 }

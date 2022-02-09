@@ -7,16 +7,24 @@ state={
 	state_category = enclave
 
 	history={
+		victory_points = {
+			1041 3
+		}
+		victory_points = {
+			4057 3
+		}
 		owner = ITA
 		buildings = {
-			infrastructure = 2
-		}
-		add_core_of = URG
+			infrastructure = 3
+		
+		4057 = {
+				naval_base = 1
+			}
+			}
+		add_core_of = LBA
 	}
 
 	provinces={
 		1041 1198 4047 4057 10046 10117 12088 
 	}
-
-	local_supplies=0.0 
 }

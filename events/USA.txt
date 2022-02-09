@@ -209,18 +209,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
-				country_event = { id = usa.32 days = 730 } # midterms
-			}
-			else = {
-				country_event = { id = usa.35 days = 730 } # midterms
-			}
+			country_event = { id = usa.35 days = 730 } # midterms
 		}
 	}
 
@@ -228,36 +217,14 @@ country_event = {
 		name = usa.6.a
 		ai_chance = {
 			factor = 75
-			modifier = {
-				OR = {
-					has_game_rule = {
-						rule = USA_ai_behavior
-						option = FASCIST
-					}
-					has_country_flag = USA_AI_RANDOM_FASCIST
-				}
-				has_dlc = "Man the Guns"
-				factor = 0
-			}
 		}		
-		add_ideas = new_deal
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
+		set_country_flag = USA_fdr_win
 	}
 
 	option = { 
@@ -296,14 +263,15 @@ country_event = {
 		create_country_leader = {
 			name = "Alf Landon"
 			desc = "POLITICS_ALF_LANDON_DESC"
-			picture = "portrait_USA_alf_landon.dds"
+			picture = GFX_portrait_Alf_Landon
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = liberalism
 			traits = {
 				staunch_constitutionalist
 			}
 		}
 		country_event = usa.31
+		set_country_flag = USA_alf_win
 	}
 }
 
@@ -321,23 +289,15 @@ country_event = {
 		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
-		has_idea = new_deal
+		OR = {
+			has_idea = new_deal
+			has_idea = new_deal2
+		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
-				country_event = { id = usa.32 days = 730 } # midterms
-			}
-			else = {
-				country_event = { id = usa.35 days = 730 } # midterms
-			}
+			country_event = { id = usa.35 days = 730 } # midterms
 		}
 	}
 	
@@ -346,23 +306,12 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 
 	option = {
@@ -376,6 +325,7 @@ country_event = {
 		}	
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 		remove_ideas = new_deal
+		remove_ideas = new_deal2
 		add_ideas = wilkies_new_deal
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
@@ -387,7 +337,7 @@ country_event = {
 		create_country_leader = {
 			name = "Wendell Wilkie"
 			desc = "POLITICS_WENDELL_WILKIE_DESC"
-			picture = "Portrait_USA_Wendell_Willkie.dds"
+			picture = GFX_portrait_Wendell_Wilkie
 			expire = "1965.1.1"
 			ideology = liberalism
 			traits = {
@@ -412,46 +362,24 @@ country_event = {
 		democratic > 0.5
 		date > 1940.1.1
 		date < 1941.1.1
-		NOT = { has_idea = new_deal }
+		has_idea = wilkies_new_deal
 	}
 
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
-				country_event = { id = usa.32 days = 730 } # midterms
-			}
-			else = {
-				country_event = { id = usa.35 days = 730 } # midterms
-			}
+			country_event = { id = usa.35 days = 730 } # midterms
 		}
 	}
 	
 	option = { 
 		name = usa.8.a
 		add_political_power = -40
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 
 	option = { 
@@ -480,18 +408,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
-				country_event = { id = usa.32 days = 730 } # midterms
-			}
-			else = {
-				country_event = { id = usa.35 days = 730 } # midterms
-			}
+			country_event = { id = usa.35 days = 730 } # midterms
 		}
 	}
 	trigger = {
@@ -499,8 +416,11 @@ country_event = {
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
-		has_idea = new_deal
-		has_war = no
+		OR = {
+			has_idea = new_deal
+			has_idea = new_deal2
+		}
+		NOT = { has_country_flag = macarthur_candidate }
 	}
 	
 	option = {
@@ -509,23 +429,12 @@ country_event = {
 			factor = 75
 		}
 		add_political_power = 10
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 
 	option = { 
@@ -549,7 +458,7 @@ country_event = {
 		create_country_leader = {
 			name = "Thomas E. Dewey"
 			desc = "POLITICS_THOMAS_DEWEY_DESC"
-			picture = "portrait_USA_thomas_dewey.dds"
+			picture = GFX_portrait_Thomas_E_Dewey
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -570,18 +479,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
-				country_event = { id = usa.32 days = 730 } # midterms
-			}
-			else = {
-				country_event = { id = usa.35 days = 730 } # midterms
-			}
+			country_event = { id = usa.35 days = 730 } # midterms
 		}
 	}
 	trigger = {
@@ -590,33 +488,23 @@ country_event = {
 		date > 1944.1.1
 		date < 1945.1.1
 		NOT = { has_idea = new_deal }
+		NOT = { has_idea = new_deal2 }
 	}
 	
 	option = { 
 		name = usa.10.a
 		add_political_power = 10
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 
 	option = { 
 		name = usa.10.b
-		add_ideas = new_deal
+		add_ideas = new_deal2
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		set_variable = { election_factor = random }
 		add_to_variable = { election_factor = -0.6 }
@@ -644,18 +532,7 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
-				country_event = { id = usa.32 days = 730 } # midterms
-			}
-			else = {
-				country_event = { id = usa.35 days = 730 } # midterms
-			}
+			country_event = { id = usa.35 days = 730 } # midterms
 		}
 	}
 	trigger = {
@@ -663,11 +540,11 @@ country_event = {
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
-		has_idea = new_deal
 		OR = {
-			has_war = no
-			has_country_flag = macarthur_candidate
+			has_idea = new_deal
+			has_idea = new_deal2
 		}
+		has_country_flag = macarthur_candidate
 	}
 	
 	option = {
@@ -676,23 +553,12 @@ country_event = {
 			factor = 25
 		}	
 		add_political_power = 10
-		if = {
-			limit = {
-				OR = {
-					has_completed_focus = USA_voter_registration_act
-					has_completed_focus = USA_union_representation_act
-				}
-			}
-			country_event = usa.32
-		}
-		else = {
-			set_variable = { election_factor = random }
-			add_to_variable = { election_factor = -0.5 }
-			USA_election_senate = yes
-			USA_election_house = yes
-			custom_effect_tooltip = usa_congress_elections_tt_bad
-			country_event = usa.30
-		}
+		set_variable = { election_factor = random }
+		add_to_variable = { election_factor = -0.5 }
+		USA_election_senate = yes
+		USA_election_house = yes
+		custom_effect_tooltip = usa_congress_elections_tt_bad
+		country_event = usa.30
 	}
 
 	option = { 
@@ -716,15 +582,15 @@ country_event = {
 		create_country_leader = {
 			name = "Douglas MacArthur"
 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
-			picture = "Portrait_USA_Douglas_MacArthur.dds"
+			picture = GFX_portrait_Douglas_MacArthur
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				
+				american_caesar
 			}
 		}
 		country_event = usa.31
-		USA_douglas_macarthur = { remove_unit_leader_role = yes }
+		remove_unit_leader = 57
 	}
 }
 
@@ -735,25 +601,31 @@ country_event = {
 	desc = usa.12.d
 	picture = GFX_report_event_usa_macarthur_speech
 
-	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 90
+	}
 
 	trigger = {
 		tag = USA
 		democratic > 0.5
 		date > 1944.1.1
 		date < 1945.1.1
-		has_idea = new_deal
+		OR = {
+			has_idea = new_deal
+			has_idea = new_deal2
+		}
 		has_war = yes
 	}
 	
-	option = { 
+	option = {
 		name = usa.12.a
-		country_event = { id = usa.9 }
 	}
 
-	option = { 
+	option = {
 		name = usa.12.b
-		country_event = { id = usa.11 }
+		set_country_flag = macarthur_candidate
 	}
 }
 
@@ -766,15 +638,18 @@ country_event = {
 
 	trigger = {
 		tag = USA
-		date > 1945.3.29
-		has_idea = new_deal
+		date > 1945.2.29
+		OR = {
+			has_idea = new_deal
+			has_idea = new_deal2
+		}
 		has_government = democratic
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		days = 365
+		days = 30
 	}
 	
 	option = {
@@ -784,7 +659,7 @@ country_event = {
 		create_country_leader = {
 			name = "Harry S. Truman"
 			desc = "POLITICS_HARRY_TRUMAN_DESC"
-			picture = "Portrait_USA_Harry_Truman.dds"
+			picture = GFX_portrait_Harry_S_Truman
 			expire = "1965.1.1"
 			ideology = liberalism
 			traits = {
@@ -1190,8 +1065,8 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		OR = {
-			has_completed_focus = USA_voter_registration_act
-			has_completed_focus = USA_union_representation_act
+			always = no
+			always = no
 		}
 	}
 
@@ -1212,34 +1087,21 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						has_completed_focus = USA_voter_registration_act
-						has_completed_focus = USA_union_representation_act
-					}
-				}
+		random_list = {
+			50 = {
+				set_variable = { election_factor = random }
+				add_to_variable = { election_factor = -0.6 }
+				USA_election_senate = yes
+				USA_election_house = yes
+				country_event = usa.30
 			}
-			random_list = {
-				50 = {
-					set_variable = { election_factor = random }
-					add_to_variable = { election_factor = -0.6 }
-					USA_election_senate = yes
-					USA_election_house = yes
-					country_event = usa.30
-				}
-				50 = {
-					set_variable = { election_factor = random }
-					add_to_variable = { election_factor = -0.3 }
-					USA_election_senate = yes
-					USA_election_house = yes
-					country_event = usa.30
-				}
+			50 = {
+				set_variable = { election_factor = random }
+				add_to_variable = { election_factor = -0.3 }
+				USA_election_senate = yes
+				USA_election_house = yes
+				country_event = usa.30
 			}
-		}
-		else = {
-			country_event = usa.32
 		}
 	}
 
@@ -1259,12 +1121,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1286,12 +1142,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1315,12 +1165,6 @@ country_event = {
 	
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1342,12 +1186,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1370,12 +1208,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1397,12 +1229,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1425,12 +1251,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1452,12 +1272,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	option = {
@@ -1477,12 +1291,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	immediate = {
@@ -1561,12 +1369,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	immediate = {
@@ -1649,12 +1451,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		tag = USA
-		NOT = {
-			OR = {
-				has_completed_focus = USA_voter_registration_act
-				has_completed_focus = USA_union_representation_act
-			}
-		}
 	}
 
 	immediate = {
@@ -1918,28 +1714,5 @@ country_event = {
 		}
 		ROOT = { clr_country_flag = USA_congress_investment }
 		clear_global_event_target = USA_congress_investment_state
-	}
-}
-
-country_event = {
-	id = usa.176 #Fire arsenal of democracy speech
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = USA
-		has_war = yes
-		has_war_with = GER
-		date > 1939.1.1
-	}
-	
-	mean_time_to_happen = {
-		days = 30
-	}
-	
-	hidden = yes
-
-	immediate = {
-		play_arsenal_of_democracy_effect = yes
 	}
 }

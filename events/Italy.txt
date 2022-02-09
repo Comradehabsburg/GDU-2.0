@@ -4,6 +4,28 @@
 
 add_namespace = italy
 
+
+country_event = {
+	id = italy.air
+	title = italy.air.t
+	desc = italy.air.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	
+	fire_only_once = yes
+	
+ 	immediate = {		
+ 	}
+
+	option = {
+		name = italy.air.a
+		add_ideas = ITA_outdated_industry
+	}
+}
+
+
 # Albania Yields
 country_event = {
 	id = italy.1
@@ -62,22 +84,16 @@ country_event = {
 		ai_chance = {
 			base = 40
 			modifier = {
-				factor = 0
-				OR = {			
-					any_other_country = {
-						OR = {
-							is_major = yes
-							tag = YUG
-						}
-						NOT = { tag = ITA }
-						OR = {
-							has_guaranteed = ROOT
-							is_in_faction_with = ROOT
-						}
+				factor = 0				
+				any_other_country = {
+					OR = {
+						is_major = yes
+						tag = YUG
 					}
-					AND = {
-						is_subject = yes
-						NOT = { is_subject_of = ITA }
+					NOT = { tag = ITA }
+					OR = {
+						has_guaranteed = ALB
+						is_in_faction_with = ALB
 					}
 				}
 			}
@@ -87,10 +103,6 @@ country_event = {
 					has_government = communism
 					has_government = fascism #glorious Albania will never yield!
 				}
-			}
-			modifier = {
-				factor = 5
-				is_subject_of = ITA
 			}
 		}
 		ITA = {
@@ -109,40 +121,17 @@ country_event = {
 						is_in_faction_with = ITA
 						ITA = { is_faction_leader = yes }
 					}
-					AND = {
-						any_other_country = {
-							OR = {
-								is_major = yes
-								tag = YUG
-							}
-							NOT = { tag = ITA }
-							OR = {
-								has_guaranteed = ROOT
-								is_in_faction_with = ROOT
-							}
-						}
-						is_historical_focus_on = yes
-					}
+					is_historical_focus_on = yes
 					AND = {
 						is_in_faction = no 
 						NOT = {
 							any_other_country = {
 								NOT = { tag = ITA }
-								has_guaranteed = ROOT
+								has_guaranteed = ALB
 							} 
 						}
 					}
 				}
-			}
-			modifier = {
-				add = 100
-				is_in_faction = yes
-				NOT = { is_in_faction_with = ITA }
-			}
-			modifier = {
-				add = 100
-				is_subject = yes
-				NOT = { is_subject_of = ITA }
 			}
 		}
 		ITA = {
@@ -229,7 +218,7 @@ country_event = {
 			technology = tech_mountaineers2
 		}
 		add_doctrine_cost_reduction = {
-			cost_reduction = 0.35
+			cost_reduction = 0.5
 			uses = 2
 			category = naval_doctrine
 		}
@@ -352,7 +341,7 @@ country_event = {
 	
 	option = {
 		name = italy.9.a
-		ITA = { country_event = { id = italy.10 } }
+		country_event = { id = italy.10 }
 		effect_tooltip = {
 			ITA = { transfer_state = 177 }
 			remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
@@ -365,7 +354,7 @@ country_event = {
 	option = {
 		name = italy.9.b
 		ai_chance = { factor = 0 }
-		ITA = { country_event = { id = italy.11 } }
+		country_event = { id = italy.11 }
 		effect_tooltip = {
 			ITA = { add_state_claim = 177 }
 		}
@@ -508,11 +497,7 @@ country_event = {
 		if = {
 			limit = { owns_state = 44 }
 			ITA = { transfer_state = 105 }
-		}
-		if = {
-			limit = { owns_state = 44 }
-			ITA = { transfer_state = 802 }
-		}
+		}		
 	}
 }
 
@@ -597,3 +582,58 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = italy.500
+	title = italy.500.t
+	desc = italy.500.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.500.a
+		give_resource_rights = { receiver = ITA state = 66 }
+		ITA = { add_timed_idea = { idea = ITA_german_payments days = 180 } }
+		set_global_flag = ITA_ger_steel
+	}
+	
+	option = {
+		name = italy.500.b
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = italy.501
+	title = italy.501.t
+	desc = italy.501.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.501.a
+		give_resource_rights = { receiver = ITA state = 81 }
+		ITA = { add_timed_idea = { idea = ITA_romanian_payments days = 180 } }
+		46 = {
+			add_resource = {
+				type = oil
+				amount = -200
+			}
+		}
+		81 = {
+			add_resource = {
+				type = oil
+				amount = 200
+			}
+		}
+		set_global_flag = ITA_rom_oil
+	}
+	
+	option = {
+		name = italy.501.b
+		add_political_power = -50
+	}
+}

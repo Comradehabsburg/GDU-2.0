@@ -194,7 +194,7 @@ YUG_peasant_uprisings = {
 					}
 				}
 			}
-			has_completed_focus = YUG_pan_balkan_workers_congress
+			always = no
 		}
 
 		cost = 25
@@ -269,7 +269,7 @@ YUG_peasant_uprisings = {
 					}
 				}
 			}
-			has_completed_focus = YUG_pan_balkan_workers_congress
+			always = no
 		}
 
 		cost = 25
@@ -344,7 +344,7 @@ YUG_peasant_uprisings = {
 					}
 				}
 			}
-			has_completed_focus = YUG_pan_balkan_workers_congress
+			always = no
 		}
 
 		cost = 25
@@ -419,9 +419,7 @@ YUG_peasant_uprisings = {
 					}
 				}
 			}
-			has_completed_focus = YUG_invite_greece
-			has_completed_focus = YUG_invite_hungary
-			has_completed_focus = YUG_invite_romania
+			always = no
 		}
 
 		cost = 25
@@ -811,15 +809,14 @@ YUG_crush_ustasa = {
 						fascism = 75
 						communism = 10
 					}
-					add_country_leader_role = {
-						character = CRO_nikola_mandic
-						country_leader = {
-							expire = "1965.1.1"
-							ideology = fascism_ideology
-							traits = {
-							}
+					create_country_leader = {
+						name = "Nikola Mandic"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							#
 						}
-						promote_leader = yes
 					}
 					set_temp_variable = { croatia_var = this }
 				}
@@ -829,7 +826,7 @@ YUG_crush_ustasa = {
 					limit = {
 						owns_state = 109
 					}
-					set_capital = { state = 109 }
+					set_capital =  { state = 109 }
 				}
 				hidden_effect = {
 					every_owned_state = {
@@ -1535,6 +1532,36 @@ YUG_progress_crushing_decisions = {
 		timeout_effect = {
 			clr_country_flag = YUG_arrest_ustasa_flag
 		}
+	}
+
+}
+
+operations = {
+	Yug_integrate_greece = {
+
+		priority = 10
+
+		icon = generic_nationalism
+
+		fire_only_once = yes
+		allowed = {
+		original_tag = YUG
+		}
+
+		visible = {
+		has_completed_focus = YUG_greater_yugoslavia
+		}
+
+		available = {
+			controls_state = 184
+			controls_state = 731
+		}
+		complete_effect = {
+			731 = { add_core_of = ROOT }
+			184 = { add_core_of = ROOT }
+		}
+
+
 	}
 
 }

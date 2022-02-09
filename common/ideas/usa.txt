@@ -1,6 +1,374 @@
 ideas = {
 
 	country = {
+	
+		USA_vic_plan = {
+			allowed = {
+				always = no
+			}
+			picture = man_five_year_plan_tank
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.2
+				local_resources_factor = 0.2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_synthetic_rubber_refinery_factor = 0.2
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_range = 0.1 instant = yes
+					build_cost_ic = -0.2 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				cv_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+	
+		USA_labour_relations = {
+			allowed = {
+				always = no
+			}
+			picture = generic_constitutional_guarantees
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+	
+		USA_dc47 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_air_bonus
+			
+			equipment_bonus = {
+				transport_plane_equipment = {
+					air_range = 0.1 instant = yes
+					build_cost_ic = -0.33 instant = yes
+				}
+			}
+		}
+	
+		USA_ford = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			equipment_bonus = {
+				mechanized_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		USA_sherman = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_license_production
+			
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		##### HOPPING #####
+		USA_island_hopping1 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				political_power_gain = -0.35
+				war_support_factor = -0.20
+				stability_factor = -0.20
+			}
+		}
+		USA_island_hopping2 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				political_power_gain = -0.35
+				war_support_factor = -0.20
+				stability_factor = -0.20
+			}
+		}
+		USA_island_hopping3 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.20
+				political_power_gain = -0.25
+				war_support_factor = -0.25
+				stability_factor = -0.25
+			}
+		}
+		USA_island_hopping4 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				political_power_gain = -0.20
+				war_support_factor = -0.2
+				stability_factor = -0.2
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.2 
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.1
+			}			
+		}
+		USA_island_hopping5 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.15
+				war_support_factor = -0.15
+				stability_factor = -0.15
+				army_core_attack_factor = -0.1
+				army_core_defence_factor = -0.1 
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.075
+			}			
+		}
+		USA_island_hopping6 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.025
+				political_power_gain = -0.1
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.05
+			}			
+		}
+		USA_island_hopping7 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+			    consumer_goods_factor = 0.01
+				political_power_gain = -0.05
+				war_support_factor = -0.05
+				stability_factor = -0.05
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.025
+			}
+		}
+		USA_island_hopping8 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0
+				war_support_factor = 0
+				stability_factor = 0
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+			}
+		}
+		USA_island_hopping9 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.01
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				army_core_attack_factor = 0.6
+				army_core_defence_factor = 0.6
+			}
+		}
+		USA_island_hopping10 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.02
+				political_power_gain = 0.10
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				army_core_attack_factor = 0.7
+				army_core_defence_factor = 0.7
+			}
+		}
+		USA_island_hopping11 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.15
+				war_support_factor = 0.15
+				stability_factor = 0.15
+				army_core_attack_factor = 0.8
+				army_core_defence_factor = 0.8
+			}
+		}
+		USA_island_hopping12 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.04
+				political_power_gain = 0.20
+				war_support_factor = 0.2
+				stability_factor = 0.2
+				army_core_attack_factor = 0.8
+				army_core_defence_factor = 0.8
+			}
+		}
+		USA_island_hopping13 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+			consumer_goods_factor = -0.05
+				political_power_gain = 0.25
+				war_support_factor = 0.25
+				stability_factor = 0.25
+				army_core_attack_factor = 0.8
+				army_core_defence_factor = 0.8
+			}
+		}
+		USA_island_hopping14 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.06
+				political_power_gain = 0.30
+				war_support_factor = 0.18
+				stability_factor = 0.18
+				army_core_attack_factor = 0.8
+				army_core_defence_factor = 0.8
+			}
+		}
+		USA_island_hopping15 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.07
+				political_power_gain = 0.35
+				war_support_factor = 0.20
+				stability_factor = 0.20
+				army_core_attack_factor = 0.8
+				army_core_defence_factor = 0.8
+			}
+		}
+	
 		great_depression = {
 			picture = usa_great_depression_3
 			
@@ -16,10 +384,12 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.25
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
-				local_resources_factor = -0.2
+				local_resources_factor = -0.25
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
 			}
 		}
 		great_depression_2 = {
@@ -37,10 +407,12 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.65
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.225
 				conscription_factor = -0.4
 				join_faction_tension = 0.20
-				local_resources_factor = -0.15
+				local_resources_factor = -0.20
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 		great_depression_3 = {
@@ -58,10 +430,35 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.25
-				consumer_goods_factor = 0.175
+				consumer_goods_factor = 0.20
 				conscription_factor = -0.2
 				join_faction_tension = 0.20
 				local_resources_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		great_depression_4 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.20
+				consumer_goods_factor = 0.15
+				conscription_factor = -0.2
+				join_faction_tension = 0.2
+				local_resources_factor = -0.1
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 		USA_limited_intervention = {
@@ -102,6 +499,27 @@ ideas = {
 				join_faction_tension = 0.25
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
+			}
+		}
+		USA_neutrality_idea = {
+			picture = neutrality_idea
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				command_power_gain_mult = -0.2
+				industrial_capacity_factory = -0.3
+			}
+			rule = {
+				can_join_factions = no
 			}
 		}
 		# version if player went down limited intervention
@@ -230,7 +648,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				special_forces_cap = 0.05	
+				special_forces_cap = 0.05
 			}
 		}
 		USA_womens_armed_service_integration_act = {
@@ -264,7 +682,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 20
+				max_command_power = 25	
 			}
 		}
 		USA_department_of_defense = {	
@@ -280,12 +698,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 30	
-				command_power_gain_mult = 0.1
+				max_command_power = 50	
 			}
 		}
 		USA_state_funds_refused = {
-			picture = MEX_callistas
+			picture = mex_callistas
 			allowed = {
 				always = no
 			}
@@ -313,7 +730,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				planning_speed = 0.1	
+				planning_speed = 0.1
+				max_planning = 0.05
 			}
 		}
 		USA_maritime_commission = {
@@ -343,9 +761,10 @@ ideas = {
 			}
 
 			removal_cost = -1
+			
 
 			modifier = {
-				air_doctrine_cost_factor = -0.10
+				air_doctrine_cost_factor = -0.15
 			}
 		}
 
@@ -358,9 +777,7 @@ ideas = {
 				always = no
 			}
 
-			removal_cost = -1
-
-			
+			removal_cost = -1	
 
 			modifier = {
 				army_core_defence_factor = 0.2
@@ -384,7 +801,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02	
+				conscription_factor = -0.2
 			}
 		}
 		USA_full_desegregation = {
@@ -403,7 +820,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.02	
+				conscription = 0.01
 				conscription_factor = 0.2
 			}
 		}
@@ -475,8 +892,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.05
-				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+				min_export = -0.1
 			}
 		}
 		USA_magic = {	
@@ -577,7 +994,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				mobilization_speed = 0.2
+				mobilization_speed = 0.5
 			}
 		}
 		new_deal = {
@@ -594,7 +1011,27 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_infrastructure_factor = 0.2
+				production_speed_infrastructure_factor = 0.3
+				stability_factor = 0.10
+			}
+		}
+		new_deal2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = new_deal
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.60
+				production_speed_industrial_complex_factor = 0.30
 				stability_factor = 0.10
 			}
 		}
@@ -614,8 +1051,8 @@ ideas = {
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
-				stability_factor = 0.05
-				drift_defence_factor = 0.2
+				political_power_gain = 0.2
+				stability_factor = 0.15
 			}
 		}
 		
@@ -651,10 +1088,17 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = generic_central_management
 
 			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.5
+				production_factory_start_efficiency_factor = 0.25
+				production_speed_arms_factory_factor = 0.3
+				conversion_cost_civ_to_mil_factor= -0.30
+				global_building_slots_factor = 0.3
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_synthetic_rubber_refinery_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.25
+				production_speed_dockyard_factor = 0.1
 			}
 		}
 	
@@ -782,7 +1226,7 @@ ideas = {
 			
 			equipment_bonus = {
 				strat_bomber_equipment = {
-					air_range = 0.5 instant = yes
+					air_range = 0.25 instant = yes
 				}	
 			}
 		}
@@ -921,6 +1365,9 @@ ideas = {
 				heavy_fighter_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				cv_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 
@@ -943,6 +1390,9 @@ ideas = {
 				tac_bomber_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
+				cv_CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 
@@ -960,6 +1410,12 @@ ideas = {
 			
 			equipment_bonus = {
 				strat_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				nav_bomber_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				flying_boat_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1200,8 +1656,7 @@ ideas = {
 		}
 	
 	}
-
-
+		
 	tank_manufacturer = { 
 	
 		designer = yes
@@ -1261,10 +1716,11 @@ ideas = {
 			
 			equipment_bonus = {
 				medium_tank_chassis = {
+					hard_attack = 0.1
 					build_cost_ic = -0.1
 				}
 				light_tank_chassis = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 			}
 
@@ -1293,17 +1749,17 @@ ideas = {
 				light_tank_destroyer_chassis = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
-					hard_attack = 0.25
+					hard_attack = 0.1
 				}
 				medium_tank_destroyer_chassis = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
-					hard_attack = 0.25
+					hard_attack = 0.1
 				}
 				heavy_tank_destroyer_chassis = {
 					build_cost_ic = -0.1
 					ap_attack = 0.1
-					hard_attack = 0.25
+					hard_attack = 0.1
 				}
 			}
 
@@ -1335,25 +1791,6 @@ ideas = {
 	naval_manufacturer = { 
 	
 		designer = yes
-		
-		norfolk_naval_yard = {
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
-			
-			modifier = {
-			}
-		}
 		
 		electric_boat_company = {
 			
@@ -1430,7 +1867,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { messerschmitt_manufacturer }
 			
 			modifier = {
 			}
@@ -1468,7 +1905,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { medium_aircraft_manufacturer }
+			traits = { lockheed_manufacturer }
 			
 			modifier = {
 			}
@@ -1492,7 +1929,6 @@ ideas = {
 			modifier = {
 			}
 		}
-
 		
 		boeing = {
 			
@@ -1677,8 +2113,9 @@ ideas = {
 			traits = { industrial_concern }
 			
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.075
 			}
 		}
 	}
+	
 }

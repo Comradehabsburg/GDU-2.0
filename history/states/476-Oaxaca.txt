@@ -7,13 +7,13 @@ state={
 	state_category = rural
 
 	resources={
-		oil=8
+		oil=280
 	}
 	
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 2
+			infrastructure = 5
 			air_base = 2
 			10889 = {
 				naval_base = 2
@@ -32,6 +32,4 @@ state={
 		2021 8236 10773 10889 12712 
 	}
 	
-
-	local_supplies=8.0 
 }

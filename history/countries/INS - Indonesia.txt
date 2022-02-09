@@ -1,7 +1,8 @@
 ﻿capital = 335 #Jakarta
 
+oob = "INS_1936"
 
-set_research_slots = 0
+set_research_slots = 2
 
 # Starting tech
 # clone of Holland
@@ -11,13 +12,10 @@ set_technology = {
 	tech_recon = 1
 	early_fighter = 1
 	early_bomber = 1
+	basic_train = 1
 	
 	transport = 1
 	fuel_silos = 1
-}
-
-add_ideas = {
-catatonic_great_depression
 }
 
 if = {
@@ -56,8 +54,9 @@ set_popularities = {
 	neutrality = 50
 }
 
-recruit_character = INS_sukarno
+
 recruit_character = INS_a_t_van_starkenborgh_stachouwer
+recruit_character = INS_sukarno
 recruit_character = INS_amir_sjarifuddin_harahap
 recruit_character = INS_suharto
 recruit_character = INS_sutan_sjahrir
@@ -90,8 +89,6 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 	complete_national_focus = production_effort
 	
 	set_technology = {
-		interwar_artillery = 1
-		interwar_antiair = 1
 		tech_recon = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
@@ -120,27 +117,6 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-	if = {
-		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
-		}
-		set_technology = {
-			gwtank = 1
-			basic_light_tank = 1
-		}
-	}
-	if = {
-		limit = {
-			
-			has_dlc = "No Step Back"
-			
-		}
-		set_technology = {
-			gwtank_chassis = 1
-			basic_light_tank_chassis = 1
-		}
-	}
+
 }
 

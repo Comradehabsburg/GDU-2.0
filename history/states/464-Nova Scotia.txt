@@ -12,11 +12,14 @@ state={
 			7361 3
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 4
+			steel_refinery = 3
 			air_base = 3
 			7361 = {
-				naval_base = 4
+				naval_base = 8
 
 			}
 		}
@@ -27,6 +30,4 @@ state={
 		1354 4360 4430 4623 7304 7361 7644 10244 
 	}
 	
-
-	local_supplies=11.0 
 }

@@ -220,18 +220,7 @@ country_event = {
 country_event = {
 	id = DOD_romania.30
 	title = DOD_romania.30.t
-	desc = {
-		text = DOD_romania.30.desc
-		trigger = {
-			SOV = { has_government = communism }
-		}
-	}
-	desc = {
-		text = DOD_romania.30.desc_alt
-		trigger = {
-			NOT = { SOV = { has_government = communism } }
-		}
-	}
+	desc = DOD_romania.30.desc
 	picture = GFX_report_event_aid_pact
 	
 	is_triggered_only = yes
@@ -243,10 +232,6 @@ country_event = {
 			factor = 70
 			modifier = {
 				ROM = { has_government = communism }
-				factor = 3
-			}
-			modifier = {
-				ROM = { has_completed_focus = ROM_appoint_soviet_friendly_government }
 				factor = 3
 			}
 		}
@@ -563,28 +548,6 @@ country_event = {
 				strength_ratio = { tag = ROM ratio < 0.1 } #less than 10% the strength of Romania
 			}
 			modifier = {
-				factor = 0
-				NOT = {
-					OR = {
-						GER = { has_country_flag = invited_to_split_yugo }
-						ITA = { has_country_flag = invited_to_split_yugo }
-						HUN = { has_country_flag = invited_to_split_yugo }
-					}
-				}
-			}
-			modifier = {
-				factor = 5
-				GER = { has_country_flag = invited_to_split_yugo } #Scared of Germany
-			}
-			modifier = {
-				factor = 5
-				ITA = { has_country_flag = invited_to_split_yugo } #Scared of Italy
-			}
-			modifier = {
-				factor = 2
-				HUN = { has_country_flag = invited_to_split_yugo } #Scared of Hungary
-			}
-			modifier = {
 				factor = 2
 				has_idea = YUG_idea_croatian_opposition
 				has_idea = YUG_idea_macedonian_opposition
@@ -605,40 +568,8 @@ country_event = {
 				factor = 5
 				strength_ratio = { tag = ROM ratio > 1.0 } #stronger than Romania
 			}
-			modifier = {
-				factor = 0.5
-				GER = { has_country_flag = invited_to_split_yugo } #Scared of Germany
-			}
-			modifier = {
-				factor = 0.5
-				ITA = { has_country_flag = invited_to_split_yugo } #Scared of Italy
-			}
 		}
 		ROM = { country_event = DOD_romania.62 }	
-	}
-
-}
-
-# Romania wants to split Yugoslavia - invitation from Romania to come help out
-country_event = {
-	id = DOD_romania.601
-	title = DOD_romania.601.t
-	desc = DOD_romania.601.desc
-	picture = GFX_report_event_yugoslavian_split
-	
-	is_triggered_only = yes
-	
-	option = { #sure
-		name = DOD_romania.601.a
-		ai_chance = {
-			factor = 10
-		}
-		set_country_flag = invited_to_split_yugo
-		unlock_decision_category_tooltip = ROM_dividing_yugo
-	}
-
-	option = { #no
-		name = DOD_romania.601.b
 	}
 
 }
@@ -654,124 +585,74 @@ country_event = {
 	
 	option = { #cool
 		name = DOD_romania.61.a
-		every_country = {
+		if = {
 			limit = {
-				is_subject_of = YUG
+				45 = { is_owned_by = YUG }
 			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_ROM
-						is_claimed_by = ROM
-					}
-				}
-				ROM = { transfer_state = PREV }
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_GER
-						AND = {
-							is_claimed_by = GER
-							GER = { has_country_flag = invited_to_split_yugo }
-						}
-					}
-				}
-				GER = { transfer_state = PREV }
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_ITA
-						AND = {
-							is_claimed_by = ITA
-							ITA = { has_country_flag = invited_to_split_yugo }
-						}
-					}
-				}
-				ITA = { transfer_state = PREV }
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_HUN
-						AND = {
-							is_claimed_by = HUN
-							HUN = { has_country_flag = invited_to_split_yugo }
-						}
-					}
-				}
-				HUN = { transfer_state = PREV }
-			}
+			SER = { transfer_state = 45 }
 		}
-		YUG = {
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_ROM
-						is_claimed_by = ROM
-					}
-				}
-				ROM = { transfer_state = PREV }
+		if = {
+			limit = {
+				764 = { is_owned_by = YUG }
 			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_GER
-						AND = {
-							is_claimed_by = GER
-							GER = { has_country_flag = invited_to_split_yugo }
-						}
-					}
-				}
-				GER = { transfer_state = PREV }
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_ITA
-						AND = {
-							is_claimed_by = ITA
-							ITA = { has_country_flag = invited_to_split_yugo }
-						}
-					}
-				}
-				ITA = { transfer_state = PREV }
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						has_state_flag = strongest_claimant_HUN
-						AND = {
-							is_claimed_by = HUN
-							HUN = { has_country_flag = invited_to_split_yugo }
-						}
-					}
-				}
-				HUN = { transfer_state = PREV }
-			}
-			hidden_effect = {
-				if = {
-					limit = { has_idea = YUG_idea_croatian_opposition }
-					remove_ideas = YUG_idea_croatian_opposition
-				}
-				if = {
-					limit = { has_idea = YUG_idea_macedonian_opposition }
-					remove_ideas = YUG_idea_macedonian_opposition
-				}
-				if = {
-					limit = { has_idea = YUG_idea_slovene_nationalism }
-					remove_ideas = YUG_idea_slovene_nationalism
-				}
-			}
+			SER = { transfer_state = 764 }
 		}
+		if = {
+			limit = {
+				107 = { is_owned_by = YUG }
+			}
+			SER = { transfer_state = 107 }
+		}
+		if = {
+			limit = {
+				108 = { is_owned_by = YUG }
+			}
+			SER = { transfer_state = 108 }
+		}
+		if = {
+			limit = {
+				106 = { is_owned_by = YUG }
+			}
+			SER = { transfer_state = 106 }
+		}
+		puppet = SER
+
+		if = {
+			limit = {
+				105 = { is_owned_by = YUG }
+			}
+			MNT = { transfer_state = 105 }
+		}
+		puppet = MNT
+
+
+		if = {
+			limit = {
+				103 = { is_owned_by = YUG }
+			}
+			CRO = { transfer_state = 103 }
+		}
+		if = {
+			limit = {
+				104 = { is_owned_by = YUG }
+			}
+			CRO = { transfer_state = 104 }
+		}
+		if = {
+			limit = {
+				109 = { is_owned_by = YUG }
+			}
+			CRO = { transfer_state = 109 }
+		}
+		if = {
+			limit = {
+				102 = { is_owned_by = YUG }
+			}
+			CRO = { transfer_state = 102 }
+		}
+		puppet = CRO
 		hidden_effect = {
-			every_country = {
-				limit = {
-					has_country_flag = invited_to_split_yugo
-				}
-				clr_country_flag = invited_to_split_yugo
-			}
+			annex_country = { target = YUG }
 		}
 		news_event = { id = news.324 days = 1 }
 	}
@@ -792,62 +673,44 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		declare_war_on = {
-			target = YUG
+		create_wargoal = {
 			type = annex_everything
-		}
-		every_country = {
-			limit = {
-				has_country_flag = invited_to_split_yugo
-				NOT = { tag = ROM }
-			}
-			declare_war_on = {
-				target = YUG
-				type = annex_everything
-			}
-		}
-		hidden_effect = {
-			every_country = {
-				limit = {
-					has_country_flag = invited_to_split_yugo
-				}
-				clr_country_flag = invited_to_split_yugo
-			}
+			target = YUG
 		}
 		news_event = { id = news.320 days = 1 }
 	}
 
-#	option = { # approach Germans and Italians for joint action
-#		name = DOD_romania.62.b
-#		trigger = {
-#			OR = {
-#				GER = {
-#					NOT = { owns_state = 102 }
-#				}
-#				ITA = {
-#					NOT = { owns_state = 103 }
-#				}
-#			}
-#		}
-#		ai_chance = {
-#			factor = 25
-#		}
-#		if = {
-#			limit = { GER = { NOT = { owns_state = 102 } } }
-#			GER = { country_event = DOD_romania.63 }	
-#		}
-#		if = {
-#			limit = { 
-#				ITA = { 
-#					NOT = { owns_state = 103 } 
-#				} 
-#				GER = { owns_state = 102 }
-#			}
-#			ITA = { country_event = DOD_romania.64 }
-#			
-#		}
-#		
-#	}
+	option = { # approach Germans and Italians for joint action
+		name = DOD_romania.62.b
+		trigger = {
+			OR = {
+				GER = {
+					NOT = { owns_state = 102 }
+				}
+				ITA = {
+					NOT = { owns_state = 103 }
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+		if = {
+			limit = { GER = { NOT = { owns_state = 102 } } }
+			GER = { country_event = DOD_romania.63 }	
+		}
+		if = {
+			limit = { 
+				ITA = { 
+					NOT = { owns_state = 103 } 
+				} 
+				GER = { owns_state = 102 }
+			}
+			ITA = { country_event = DOD_romania.64 }
+			
+		}
+		
+	}
 
 }
 
@@ -2522,7 +2385,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {# Select German Plane
-		name = DOD_hungary.151.a
+		name = DOD_hungary.152.a
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -2574,7 +2437,7 @@ country_event = {
 	}
 
 	option = {# select italian plane
-		name = DOD_hungary.151.b
+		name = DOD_hungary.152.b
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -2626,7 +2489,7 @@ country_event = {
 	}
 
 	option = {# select french plane
-		name = DOD_hungary.151.c
+		name = DOD_hungary.152.c
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -2678,7 +2541,7 @@ country_event = {
 		FRA = { country_event = DOD_romania.154 }	
 	}
 	option = {# select british plane
-		name = DOD_hungary.151.d
+		name = DOD_hungary.152.d
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -2729,7 +2592,7 @@ country_event = {
 		ENG = { country_event = DOD_romania.154 }	
 	}
 	option = {# select american plane
-		name = DOD_hungary.151.e
+		name = DOD_hungary.152.e
 		ai_chance = {
 			factor = 30
 			modifier = {
@@ -3054,227 +2917,56 @@ country_event = {
 
 }
 
-#Britain recieves Romania's request to change sides
+#rename city
 country_event = {
-	id = DOD_romania.16
-	title = DOD_romania.16.t
-	desc = DOD_romania.16.desc
+	id = DOD_romania.501
+	title = DOD_romania.501.t
+	desc = DOD_romania.501.desc
 	picture = GFX_report_event_german_reichstag_gathering
 
 	is_triggered_only = yes
-
-	immediate = {
-		FROM = { set_country_flag = ROM_switched_sides }
-		FROM = {
-			every_other_country = {
-				limit = {
-					is_in_faction_with = PREV
-					has_capitulated = no
-				}
-				set_country_flag = ROM_former_ally_still_standing #required for achievement
-			}
-		}
-	}
-
-	option = { #End hostilities with Romania
-		name = DOD_romania.16.a
+	
+	option = { #a great idea!
+		name = DOD_romania.501.a
 		ai_chance = {
 			base = 100
 		}
-		hidden_effect = {
-			#ensure Germany doesn't get randomly encircled
-			every_state = {
+		ROM = {
+			every_country = {
 				limit = {
-					controller = { tag = FROM }
-					owner = {
-						has_war_with = event_target:romania_former_ally_target
-						NOT = { has_war_with = event_target:romania_new_ally_target }
-					}
+					has_war_with = ROM
+					is_in_faction_with = SOV
 				}
-				event_target:romania_former_ally_target = {
-					set_state_controller = PREV
-				}
+				white_peace = ROM
 			}
-			FROM = {
-				# move our armies to back home
-				teleport_armies = {
-					to_state_array = owned_controlled_states
+			every_country = {
+				limit = {
+					has_war_with = ROM
+					is_in_faction_with = ENG
 				}
+				white_peace = ROM
 			}
-		}
-		white_peace = FROM
-		FROM = {
 			leave_faction = yes
 		}
-		hidden_effect = {
-			event_target:romania_former_ally_target = {
-				country_event = { id = DOD_romania.161 days = 1 }
-			}
-			FROM = { #essentially so the Soviets peace out with Romania, preventing England from being dragged into a war with the Soviets.
-				every_enemy_country = {
-					limit = {
-						NOT = { has_war_with = event_target:romania_new_ally_target }
-						has_war_with = event_target:romania_former_ally_target
-						is_faction_leader = yes
-					}
-					save_global_event_target_as = romania_third_party_target
-					if = { #creates a collab gov out of every Moldovan state they occupy
-						limit = {
-							any_controlled_state = {
-								owner = { tag = FROM }
-							}
-						}
-						if = {
-							limit = { MOL = { exists = no } }
-							release_puppet = MOL 
-							MOL = { save_event_target_as = released_nation_target }
-						}
-						else = {
-							create_dynamic_country = {
-								original_tag = MOL
-								save_event_target_as = released_nation_target
-							}
-						}
-						event_target:released_nation_target = {
-							every_state = {
-								limit = {
-									is_core_of = MOL
-									controller = { tag = event_target:romania_third_party_target }
-								}
-								PREV = { transfer_state = PREV }
-							}
-							PREV = {
-								puppet = PREV
-								if = {
-									limit = {
-										has_dlc = "La Resistance"
-									}
-									PREV = { set_variable = { collaboration_formed_by = PREV } }
-									set_autonomy = { target = PREV autonomy_state = autonomy_collaboration_government }
-								}
-								else = {
-									set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-								}
-							}
-						}
-					}
-					if = { #creates a collab gov out of every Romanian state they occupy
-						limit = {
-							any_controlled_state = {
-								owner = { tag = FROM }
-							}
-						}
-						create_dynamic_country = {
-							original_tag = FROM
-							
-							save_event_target_as = released_nation_target
-							every_state = {
-								limit = {
-									is_core_of = FROM
-									NOT = { is_core_of = MOL }
-									controller = { tag = event_target:romania_third_party_target }
-								}
-								PREV = { transfer_state = PREV }
-							}
-							PREV = {
-								puppet = PREV
-								if = {
-									limit = {
-										has_dlc = "La Resistance"
-									}
-									PREV = { set_variable = { collaboration_formed_by = PREV } }
-									set_autonomy = { target = PREV autonomy_state = autonomy_collaboration_government }
-								}
-								else = {
-									set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
-								}
-							}
-						}
-					}
-					white_peace = FROM
-				}
-			}
+		SOV = { 
+			add_to_faction = ROM 
+			transfer_state = 78
+			transfer_state = 766
+			transfer_state = 80
 		}
-	}
-}
-
-#change sides
-country_event = {
-	id = DOD_romania.161
-	title = DOD_romania.161.t
-	desc = DOD_romania.161.desc
-	picture = GFX_report_event_german_reichstag_gathering
-
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			FROM.FROM = {
-				leave_faction = yes
-				country_event = { id = DOD_romania.162 }
+		GER = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROM
 			}
 		}
 	}
 
-	option = { #time to abandon ship
-		name = DOD_romania.161.a
+	option = { #rather not
+		name = DOD_romania.501.b
 		ai_chance = {
-			base = 100
+			base = 0
 		}
 	}
-}
 
-#change sides
-country_event = {
-	id = DOD_romania.162
-	title = DOD_romania.162.t
-	desc = DOD_romania.162.desc
-	picture = GFX_report_event_german_reichstag_gathering
-
-	is_triggered_only = yes
-
-	immediate = {
-		
-	}
-
-	option = { #time to abandon ship
-		name = DOD_romania.162.a
-		ai_chance = {
-			base = 100
-		}
-		event_target:romania_new_ally_target = { 
-			add_to_faction = ROOT
-			ROOT = {
-				add_to_war = {
-					targeted_alliance = PREV
-					enemy = FROM
-					hostility_reason = asked_to_join
-				}
-			}
-		}
-	}
-}
-
-country_event = { #if Codreanu is still in power, kill him and replace with Goga, then change name of party
-	id = DOD_romania.163
-	title = DOD_romania.163.t
-	desc = DOD_romania.163.desc
-	picture = GFX_report_event_generic_funeral
-	fire_only_once = yes
-	is_triggered_only = yes
-	option = {
-		name = DOD_romania.163.a
-		add_stability = -0.05
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.05
-		}
-		kill_ideology_leader = fascism
-		promote_character = ROM_octavian_goga
-		set_party_name = { 
-		    ideology = fascism
-		    long_name = ROM_fascism_party2_long
-		    name = ROM_fascism_party2
-		}
-	}
 }

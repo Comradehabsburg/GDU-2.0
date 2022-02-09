@@ -6,10 +6,10 @@ state=
 	manpower = 12100
 	history=
 	{
+		set_state_flag = JAP_controls
 		owner = JAP
-		add_core_of = URG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 1
 			4357 = {
 				naval_base = 1
@@ -24,6 +24,4 @@ state=
 	provinces={
 		4357 12103
 	}
-
-	local_supplies=0.0 
 }

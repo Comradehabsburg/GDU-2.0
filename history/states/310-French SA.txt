@@ -4,13 +4,12 @@ state={
 	name="STATE_310"
 	manpower = 47341
 
-	state_category = pastoral
+	state_category = city
 
 	history={
 		owner = FRA
-		add_core_of = URG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			12885 = {
 				naval_base = 1
 			}
@@ -18,11 +17,10 @@ state={
 		victory_points = {
 			12885 1 
 		}
+		add_core_of = MAD
 	}
 
 	provinces={
 		4934 12885 
 	}
-
-	local_supplies=0.0 
 }

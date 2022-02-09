@@ -12,16 +12,21 @@ state={
 			11241 5
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
 			air_base = 5
+			6220 ={
+				bunker = 4
+			}
+			6326 ={
+				bunker = 4
+			}
 		}
 		add_core_of = SOV
-		add_core_of = URG
 	}
 
 	provinces={
 		323 3219 3331 6220 6249 6326 6371 9241 9323 11220 11241 
 	}
-
-	local_supplies=5.0 
 }

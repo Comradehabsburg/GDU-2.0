@@ -1,19 +1,18 @@
-
 state={
 	id=105
 	name="STATE_105"
 	resources={
-		chromium=20.000
-		aluminium=70.000
+		chromium=100.000
+		aluminium=400.000
 	}
 
 	history={
 		victory_points = {
-			9809 3 
+			9809 3
 		}
 		owner = YUG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 			9809 = {
 				naval_base = 1
@@ -31,6 +30,4 @@ state={
 	manpower=895500
 	buildings_max_level_factor=1.000
 	state_category=rural
-
-	local_supplies=3.0 
 }

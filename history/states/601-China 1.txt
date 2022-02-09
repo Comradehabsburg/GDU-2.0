@@ -2,24 +2,22 @@ state={
 	id=601
 	name="STATE_601"
 	resources={
-		oil=2.000
+		oil=100
 	}
 
 	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = URG
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
 		}
 		victory_points = {
-			10856 1
+			10856 5
 		}
 		1939.1.1 = {
 			buildings = {
-				infrastructure = 1
+				infrastructure = 2
 
 			}
 
@@ -33,6 +31,4 @@ state={
 	manpower=368200
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-
-	local_supplies=1.0 
 }

@@ -1,20 +1,107 @@
 ﻿capital = 9
 
+oob = "CZE_1936"
 
 set_technology = {
+	support_weapons = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1
+	support_weapons = 1
+	hq_1 = 1
 	tech_recon = 1
-	tech_mountaineers = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_maintenance_company = 1
+	tech_military_police = 1
+	tech_logistics_company = 1
+	tech_field_hospital = 1
+	tech_signal_company = 1
+	motorised_infantry = 1
+	marines = 1
+	ger_cze_tank_1 = 1
+	ger_cze_tank_2 = 1
 	gw_artillery = 1
-	interwar_antiair = 1
+	
 	early_fighter = 1
+	cv_early_fighter = 1	
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
+	
+	trench_warfare = 1
+
+	basic_machine_tools = 1
+	
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	mechanical_computing = 1
+	radio = 1
+	radio_detection = 1
 	fuel_silos = 1
+	fuel_refining = 1
 	basic_train = 1
 }
+
+add_equipment_to_stockpile = {
+
+type = infantry_equipment_0
+amount = 10000
+producer = CZE
+}
+
+add_equipment_to_stockpile = {
+
+type = anti_tank_equipment_1
+amount = 500
+producer = CZE
+}
+
+add_equipment_to_stockpile = {
+
+type = squad_equipment_0
+amount = 2500
+producer = CZE
+}
+
+add_equipment_to_stockpile = {
+
+type = horse_equipment_0
+amount = 5000
+producer = CZE
+}
+
+add_equipment_to_stockpile = {
+
+type = support_equipment_1
+amount = 1000
+producer = CZE
+}
+
+add_equipment_to_stockpile = {
+
+type = light_tank_chassis
+amount = 500
+producer = CZE
+}
+
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 65
+	neutrality = 20
+	fascism = 5
+	communism = 10
+}
+
 recruit_character = CZE_karl_albrecht
 recruit_character = CZE_edvard_benesh
 recruit_character = CZE_jaroslav_krejchi
@@ -44,41 +131,18 @@ recruit_character = CZE_konrad_henlein
 recruit_character = CZE_gustav_husak
 
 
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
+	
+create_equipment_variant = {
+	name = "LT-35"
+	type = ger_light_tank_chassis_p35
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_small_gun_1
+		turret_type_slot = tank_light_turret_1
+		armor_type_slot = tank_riveted_armor
+		engine_type_slot = tank_gasoline_engine
 	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-	}
-}
-
-set_research_slots = 0
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1935.5.19"
-	election_frequency = 60
-	elections_allowed = yes
-}
-
-set_popularities = {
-	democratic = 65
-	neutrality = 20
-	fascism = 5
-	communism = 10
+	icon = "gfx/interface/technologies/tanks/ger/ger_cze_tank_1.dds"
 }
 
 if = {
@@ -88,68 +152,9 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
-catatonic_great_depression
-
-}
+	}
 	give_guarantee = YUG
 	give_guarantee = ROM
-}
-
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Tancik vz. 33"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "LT vz. 35"
-		type = light_tank_chassis_1
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_high_velocity_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "TNH"
-		type = light_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_high_velocity_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 2
-			tank_nsb_armor_upgrade = 3
-		}
-	}
 }
 
 if = {

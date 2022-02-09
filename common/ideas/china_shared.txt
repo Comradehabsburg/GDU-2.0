@@ -16,7 +16,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 10
+				max_command_power = 5
 			}
 		}
 
@@ -111,7 +111,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_dig_in = 5
+				max_dig_in = 3
 			}
 		}
 
@@ -152,32 +152,6 @@ ideas = {
 				special_forces_cap = 0.02
 			}
 		}
-
-	}
-
-	political_advisor = {
-
-	}
-	
-	army_chief = {
-	
-	}
-	
-	navy_chief = {
-		
-
-	}
-	
-	air_chief = {
-	
-	}
-
-	high_command = {
-
-	
-	}
-
-	theorist = {
 
 	}
 
@@ -343,55 +317,7 @@ ideas = {
 			
 		}
 	}
-
-	tank_manufacturer = {
 		
-		designer = yes
-		
-		german_chinese_tank_designer = {
-
-			picture = porsche
-			
-			allowed = {
-				has_dlc = "Waking the Tiger"
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				}
-			}
-			
-			available = {
-				OR = {
-					has_completed_focus = CHI_chinese_panzers
-					has_idea = german_advisors
-				}
-				NOT = {
-					has_war_with = GER
-				}
-			}
-			
-			cost = 150
-			removal_cost = 10
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			traits = { heavy_tank_manufacturer }
-			
-			ai_will_do = {
-				factor = 1
-				
-				modifier = { # CHI might lose the advisors, don't want the AI wasting PP
-					factor = 0
-					NOT = {
-						has_completed_focus = CHI_chinese_panzers
-					}
-				}
-			}
-		}
-	}
-	
 	aircraft_manufacturer = { #
 			
 		designer = yes		
@@ -411,10 +337,7 @@ ideas = {
 
 			allowed = {
 				has_DLC = "Waking the Tiger"
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				}
+				is_literally_china = yes
 			}
 			
 			research_bonus = {
@@ -447,10 +370,7 @@ ideas = {
 
 			allowed = {
 				has_DLC = "Waking the Tiger"
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				}
+				is_literally_china = yes
 
 			}
 			
@@ -486,10 +406,7 @@ ideas = {
 
 			allowed = {
 				has_DLC = "Waking the Tiger"
-				OR = {
-					is_literally_china = yes
-					tag = MAN
-				}
+				is_literally_china = yes
 			}
 
 			equipment_bonus = {

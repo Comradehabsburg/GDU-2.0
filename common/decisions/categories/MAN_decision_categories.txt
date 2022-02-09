@@ -22,7 +22,13 @@ MAN_war_preparations = {
 	}
 
 	visible = {
-		has_completed_focus = MAN_assertiveness
+		always = no
 	}
 
+}
+
+MAN_intervene_in_china = {
+	allowed = {
+		original_tag = MAN
+	}
 }

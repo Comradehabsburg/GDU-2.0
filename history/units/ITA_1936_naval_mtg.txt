@@ -1,90 +1,5 @@
 ﻿
 units= {
-
-
-
-	##### NAVAL UNITS #####
-	
-	fleet = {
-		name = "Kriegsmarine"			
-		naval_base = 241  # Wilhemshaven
-		task_force = {				
-			name = "Hochseeflotte"
-			location = 241  # Wilhemshaven
-			ship = { name = "Deutschland" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
-			ship = { name = "Admiral Scheer" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-			ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } } 		
-			ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
-			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-			ship = { name = "Karlsruhe" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
-			ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-			ship = { name = "Emden" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
-			# 1. Torpedobootflottille
-			ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Leopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Luchs" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Tiger" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-		}
-		task_force = {
-			name = "Ostseeflotte"
-			location = 6332  # Konigsberg
-			ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-			ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }			
-			# 2. Torpedobootflottille
-			ship = { name = "Möwe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Albatros" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Seeadler" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Greif" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			# 3. Torpedobootflottille
-			ship = { name = "Falke" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Kondor" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Wolf" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-			ship = { name = "Iltis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
-		}
-		task_force = {
-			name = "Marineschule Kiel"
-			location = 6389 	# Kiel
-			ship = { name = "Brummer" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }			
-			ship = { name = "Bremse" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }
-		}
-	}
-	fleet = {
-		name = "Unterseeboots-Flotte "			
-		naval_base = 6389  # Kiel
-		task_force = {
-			name = "I. U-Boots Flottille Weddigen"
-			location = 6389  # Kiel
-			# 1. Unterseebootsflottille
-			ship = { name = "U-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			# 4. Unterseebootsflottille
-			ship = { name = "U-11" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-12" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-13" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-17" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-		}
-		task_force = {
-			name = "II. U-Boots-Ausbildungs-Gruppe"
-			location = 241  # Wilhemshaven
-			# 2. Unterseebootsflottille
-			ship = { name = "U-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			# 3. Unterseebootsflottille
-			ship = { name = "U-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-			ship = { name = "U-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
-		}
-	}
-
-
-
-
-
-
-
 	##### NAVAL UNITS #####
 	### ITALY ###
 	fleet = {
@@ -94,12 +9,17 @@ units= {
 			name = "I Squadra Navale" # Dipartimento Militare Marittimo 'Ionio e Basso Adriatico' / I Squadra
 			location = 11837 # Taranto, Italy
 			# V Divisione Corazzate
-			ship = { name = "RN Caio Duilio" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
-			ship = { name = "RN Andrea Doria" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RN Caio Duilio" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_0 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RN Andrea Doria" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_0 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } } 
+			ship = { name = "RN Lucia" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_0 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
+			ship = { name = "RN Carmella" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_0 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
+			ship = { name = "RN Mario" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_0 = { amount = 1 owner = ITA version_name = "Andrea Doria Class"  } } }
 			# I Divisione Incrociatori
 			ship = { name = "RI Zara" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			ship = { name = "RI Gorizia" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
 			ship = { name = "RI Fiume" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } } 
+			ship = { name = "RI Wario" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }
+			ship = { name = "RI Caesario" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Zara Class" } } }
 			# IV Divisione Incrociatori
 			ship = { name = "RI Luigi Cadorna" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
 			ship = { name = "RI Armando Diaz" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Giussano Class" } } } 
@@ -405,26 +325,26 @@ instant_effect = {
 		# BB: "RN Conte di Cavour" (Refitted & Recommissioned: 1-Jun, 1937)
 		add_equipment_production = { 
 			equipment = { 
-				type = ship_hull_heavy_1
+				type = ship_hull_heavy_0
 				creator = "ITA" 
 				version_name = "Conte Di Cavour Class" 
 			} 
 			name = "RN Conte di Cavour"
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.60 
 			amount = 1 
 		} 
 
 		# BB: "RN Giulio Cesare" (Refitted & Recommissioned: 3-Jun, 1937)
 		add_equipment_production = { 
 			equipment = { 
-				type = ship_hull_heavy_1 
+				type = ship_hull_heavy_0
 				creator = "ITA" 
 				version_name = "Conte Di Cavour Class" 
 			} 
 			name = "RN Giulio Cesare"
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.60 
 			amount = 1 
 		} 
 		# BB: "Littorio"
@@ -435,7 +355,7 @@ instant_effect = {
 				version_name = "Littorio Class" 
 			} 
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.50 
 			amount = 1 
 		} 
 		# BB: Vittoria Veneto
@@ -446,7 +366,53 @@ instant_effect = {
 				version_name = "Littorio Class" 
 			} 
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.50 
+			amount = 1 
+		}
+		# BB: Vittoria Veneto
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_heavy_2
+				creator = "ITA" 
+				version_name = "Littorio Class" 
+			} 
+			requested_factories = 2
+			progress = 0.30 
+			amount = 1 
+		}
+		
+
+		# CL: "RI Eugenio di Savoia" (Commissioned: 16-Jan, 1936)
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "ITA" 
+				version_name = "Montecuccoli Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.95 
+			amount = 1 
+		} 
+		# CL: "Duca degli Abruzzi"
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "ITA" 
+				version_name = "Duca degli Abruzzi Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.95 
+			amount = 1 
+		} 
+		# CL: Giuseppe Garibaldi
+		add_equipment_production = { 
+			equipment = { 
+				type = ship_hull_cruiser_2 
+				creator = "ITA" 
+				version_name = "Duca degli Abruzzi Class" 
+			} 
+			requested_factories = 1 
+			progress = 0.85 
 			amount = 1 
 		} 
 
@@ -469,18 +435,7 @@ instant_effect = {
 				version_name = "Duca degli Abruzzi Class" 
 			} 
 			requested_factories = 1 
-			progress = 0.5 
-			amount = 1 
-		} 
-		# CL: Giuseppe Garibaldi
-		add_equipment_production = { 
-			equipment = { 
-				type = ship_hull_cruiser_2 
-				creator = "ITA" 
-				version_name = "Duca degli Abruzzi Class" 
-			} 
-			requested_factories = 1 
-			progress = 0.45 
+			progress = 0.85 
 			amount = 1 
 		} 
 
@@ -515,7 +470,7 @@ instant_effect = {
 			} 
 			name = "RSmg Enrico Tazzoli"
 			requested_factories = 1 
-			progress = 0.50 
+			progress = 0.90 
 			amount = 1 
 		} 
 	} 

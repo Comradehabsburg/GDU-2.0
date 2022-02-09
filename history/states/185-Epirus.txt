@@ -4,11 +4,11 @@ state={
 	name="STATE_185"
 	manpower = 760900
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
-		chromium=14 # was: 20
-		steel = 14 # was: 20
+		chromium=140 # was: 20
+		steel = 170 # was: 20
 	}
 
 	history={
@@ -23,8 +23,7 @@ state={
 		}
 		owner = GRE
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 4
 			air_base = 3
 			9805 = {
 				naval_base = 1
@@ -36,6 +35,4 @@ state={
 	provinces = {
 		841 1106 1205 3914 3980 9805 9837 9916 10203 11786 11895 12001 
 	}
-
-	local_supplies=9.0 
 }

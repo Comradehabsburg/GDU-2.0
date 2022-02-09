@@ -4,12 +4,16 @@ state={
 	name="STATE_482"
 	manpower = 520751
 	
-	state_category = rural
+	state_category = town
 
+	resources={
+		rubber=50 
+	}
+	
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 		}
 		add_core_of = MEX
 
@@ -25,6 +29,4 @@ state={
 		2037 4898 7935 8097 10809 10830 10916 12745 12827 12850 12897 
 	}
 	
-
-	local_supplies=0.0 
 }

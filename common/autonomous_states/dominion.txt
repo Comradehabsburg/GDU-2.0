@@ -6,8 +6,6 @@ autonomy_state = {
 	manpower_influence = 0.2
 	
 	rule = {
-		desc = "RULE_DESC_IS_A_SUBJECT"
-	
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
 		can_be_spymaster = yes
@@ -45,17 +43,13 @@ autonomy_state = {
 			limit = {
 				original_tag = AST
 			}
-			OR = {
-				has_completed_focus = AST_adopt_westminster
-				has_completed_focus = AST_abandon_the_westminster_system
-				has_completed_focus = AST_sever_ties_with_uk
-			}
+			has_completed_focus = AST_adopt_westminster
 		}
 		if = {
 			limit = {
-				original_tag = SAF
+				original_tag = RAJ
 			}
-			has_completed_focus = SAF_abandon_westminster
+			has_completed_focus = RAJ_quit_india_movement
 		}
 	}
 

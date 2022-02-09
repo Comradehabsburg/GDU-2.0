@@ -6,9 +6,15 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	democratic_opposition
-	EST_vaps_idea_1
+	stupid_ai
 }
+# IF = {
+# 	limit = { has_dlc = "No Step Back" }
+# 	add_ideas = {
+# 		democratic_opposition
+# 		EST_vaps_idea_1
+# 	}
+# }
 
 recruit_character = EST_konstantin_pats
 recruit_character = EST_artur_sirk
@@ -44,23 +50,23 @@ IF = {
 	recruit_character = EST_otto_heinze
 }
 
-set_variable = {
-	var = vaps_days_var
-	value = 80
-}
+# set_variable = {
+# 	var = vaps_days_var
+# 	value = 80
+# }
 
-set_variable = {
-	var = vaps_crackdown_var
-	value = 360
-}
+# set_variable = {
+# 	var = vaps_crackdown_var
+# 	value = 360
+# }
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
-	interwar_antiair = 1
 	early_fighter = 1
 	tech_support = 1
+	support_weapons = 1
 	basic_train = 1
 }
 if = {
@@ -128,7 +134,6 @@ set_convoys = 5
 		early_bomber = 1
 		CAS1 = 1
 		naval_bomber1 = 1
-		interwar_artillery = 1
 		support_weapons = 1
 
 		#doctrines

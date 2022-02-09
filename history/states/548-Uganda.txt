@@ -4,18 +4,18 @@ state={
 
 	state_category = rural
 	resources={
-		rubber=3 # was: 4
+		rubber=50 # was: 4
 	}
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 
 		}
-		add_core_of = URG
 		victory_points = {
 			12989 1
 		}
+		add_core_of = ZIM
 	}
 
 	provinces={
@@ -23,6 +23,4 @@ state={
 	}
 	manpower=3515625
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

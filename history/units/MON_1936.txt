@@ -7,6 +7,12 @@
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
 	}
 }
 
@@ -20,8 +26,8 @@ units = {
 		}
 		location = 4801
 		division_template = "Morit Diviziin"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 
 	}
 	division = {
@@ -32,8 +38,8 @@ units = {
 		}
 		location = 4792
 		division_template = "Morit Diviziin"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division = {
 		#name = "3-p Morit Diviziin"
@@ -43,8 +49,8 @@ units = {
 		}
 		location = 12557
 		division_template = "Morit Diviziin"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division = {
 		#name = "4-p Morit Diviziin"
@@ -54,8 +60,8 @@ units = {
 		}
 		location = 1743
 		division_template = "Morit Diviziin"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division = {
 		#name = "5-p Morit Diviziin"
@@ -65,8 +71,8 @@ units = {
 		}
 		location = 4873
 		division_template = "Morit Diviziin"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	#division = {
 	#	name = "6-p Morit Diviziin"

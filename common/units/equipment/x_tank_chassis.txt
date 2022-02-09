@@ -10,11 +10,7 @@ duplicate_archetypes = {
 		type = { armor anti_air }
 
 		for_each = {
-			# For each duplicated equipment type (excluding the archetype), set variant_name by taking what would be
-			# used as the localization key (the name of the type) and run a find-and-replace on it.
-			# Example: light_tank_aa_chassis_1 gets variant_name light_tank_aa_equipment_1.
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.5 }
 		}
 	}
 
@@ -23,7 +19,6 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.5 }
 		}
 	}
 
@@ -40,11 +35,10 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.55 }
 		}
 	}
-
-	light_tank_flame_chassis = {
+	
+	light_assault_gun_chassis = {
 		archetype = light_tank_chassis
 		type = { armor flame }
 		for_each = {
@@ -59,7 +53,6 @@ duplicate_archetypes = {
 		type = { armor anti_air }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.65 }
 		}
 	}
 
@@ -68,7 +61,6 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.65 }
 		}
 	}
 
@@ -85,11 +77,10 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.7 }
 		}
 	}
 
-	medium_tank_flame_chassis = {
+	medium_assault_gun_chassis = {
 		archetype = medium_tank_chassis
 		type = { armor flame }
 		for_each = {
@@ -104,7 +95,6 @@ duplicate_archetypes = {
 		type = { armor anti_air }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
 		}
 	}
 
@@ -113,7 +103,6 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
 		}
 	}
 
@@ -130,11 +119,10 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
 		}
 	}
 
-	heavy_tank_flame_chassis = {
+	heavy_assault_gun_chassis = {
 		archetype = heavy_tank_chassis
 		type = { armor flame }
 		for_each = {
@@ -169,6 +157,15 @@ duplicate_archetypes = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
 	}
+	
+	super_heavy_assault_gun_chassis = {
+		archetype = super_heavy_tank_chassis
+		type = { armor flame }
+		for_each = {
+			variant_name = { find_and_replace = { "chassis" "equipment" } }
+			hardness = { set = 0.9 }
+		}
+	}
 
 	# modern tank
 
@@ -197,6 +194,7 @@ duplicate_archetypes = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
 		}
 	}
+
 }
 
 equipments = {
@@ -234,112 +232,15 @@ equipments = {
 		fuel_consumption = 1.0
 	}
 
-	light_tank_equipment_1 = {
-		year = 1934
-		
-		archetype = light_tank_chassis
-		parent = gw_tank_equipment
-		priority = 10
-		visual_level = 0
-		is_convertable = yes
-
-		#Misc Abilities
-		maximum_speed = 10
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 4
-		breakthrough = 26
-		hardness = 0.8
-		armor_value = 10
-
-		#Offensive Abilities
-		soft_attack = 13
-		hard_attack = 4
-		ap_attack = 10
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 10
-		
-		build_cost_ic = 8
-		resources = {
-			#oil = 1
-			steel = 2
-		}
-
-		fuel_consumption = 2.4
-	}
-
-	light_tank_equipment_2 = {
-		year = 1936
-		
-		archetype = light_tank_chassis
-		parent = light_tank_equipment_1
-		priority = 10
-		visual_level = 1
-		is_convertable = yes
-
-		#Misc Abilities
-		maximum_speed = 12
-
-		#Defensive Abilities
-		defense = 5
-		breakthrough = 36
-		armor_value = 15
-
-		#Offensive Abilities
-		soft_attack = 16
-		hard_attack = 6
-		ap_attack = 30
-		air_attack = 0		
-		
-		build_cost_ic = 9
-		resources = {
-			#oil = 1
-			steel = 3
-		}
-	}
-
-	light_tank_equipment_3 = {
-		year = 1941
-	
-		archetype = light_tank_chassis
-		parent = light_tank_equipment_2
-		priority = 10
-		visual_level = 2
-		is_convertable = yes
-
-		#Misc Abilities
-		maximum_speed = 14
-
-		#Defensive Abilities
-		defense = 6
-		breakthrough = 46
-		armor_value = 30
-
-		#Offensive Abilities
-		soft_attack = 22
-		hard_attack = 9
-		ap_attack = 50
-		air_attack = 0	
-		
-		build_cost_ic = 10 
-		resources = {
-			#oil = 2
-			steel = 4
-		}
-	}
-
 	light_tank_artillery_equipment_1 = {
 		year = 1934
 
 		archetype = light_tank_artillery_chassis
-#		family = light_tank_equipment_1
+#		family = light_tank_chassis_1
 		priority = 20
 		visual_level = 0
 		can_convert_from = { 
-			light_tank_equipment_1 
+			light_tank_chassis_1 
 		}
 
 		upgrades = {
@@ -379,12 +280,12 @@ equipments = {
 
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_1
-#		family = light_tank_equipment_2
+#		family = light_tank_chassis_2
 		priority = 20
 		visual_level = 1
 		can_convert_from = { 
-			light_tank_equipment_1 
-			light_tank_equipment_2
+			light_tank_chassis_1 
+			light_tank_chassis_2
 		}
 		
 		#Misc Abilities
@@ -412,12 +313,12 @@ equipments = {
 
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_2
-#		family = light_tank_equipment_3
+#		family = light_tank_chassis_3
 		priority = 20
 		visual_level = 2
 		can_convert_from = { 
-			light_tank_equipment_2
-			light_tank_equipment_3
+			light_tank_chassis_2
+			light_tank_chassis_3
 		}
 		
 		#Misc Abilities
@@ -444,11 +345,11 @@ equipments = {
 		year = 1934
 
 		archetype = light_tank_destroyer_chassis
-#		family = light_tank_equipment_1
+#		family = light_tank_chassis_1
 		priority = 40
 		visual_level = 0
 		can_convert_from = { 
-			light_tank_equipment_1 
+			light_tank_chassis_1 
 		}
 		upgrades = {
 			tank_reliability_upgrade
@@ -485,13 +386,13 @@ equipments = {
 		year = 1936
 
 		archetype = light_tank_destroyer_chassis
-		parent = light_tank_destroyer_equipment_1
-#		family = light_tank_equipment_2
+		parent = light_tank_destroyer_chassis_1
+#		family = light_tank_chassis_2
 		priority = 40
 		visual_level = 1
 		can_convert_from = { 
-			light_tank_equipment_1 
-			light_tank_equipment_2
+			light_tank_chassis_1 
+			light_tank_chassis_2
 		}
 		
 		#Misc Abilities
@@ -520,13 +421,13 @@ equipments = {
 		year = 1941
 
 		archetype = light_tank_destroyer_chassis
-		parent = light_tank_destroyer_equipment_2
-#		family = light_tank_equipment_3
+		parent = light_tank_destroyer_chassis_2
+#		family = light_tank_chassis_3
 		priority = 40
 		visual_level = 2
 		can_convert_from = { 
-			light_tank_equipment_2
-			light_tank_equipment_3
+			light_tank_chassis_2
+			light_tank_chassis_3
 		}
 
 		#Misc Abilities
@@ -554,11 +455,11 @@ equipments = {
 		year = 1934
 
 		archetype = light_tank_aa_chassis
-#		family = light_tank_equipment_1
+#		family = light_tank_chassis_1
 		priority = 30
 		visual_level = 0
 		can_convert_from = { 
-			light_tank_equipment_1 
+			light_tank_chassis_1 
 		}
 		upgrades = {
 			tank_reliability_upgrade
@@ -594,13 +495,13 @@ equipments = {
 		year = 1936
 
 		archetype = light_tank_aa_chassis
-		parent = light_tank_aa_equipment_1
-#		family = light_tank_equipment_2
+		parent = light_tank_aa_chassis_1
+#		family = light_tank_chassis_2
 		priority = 30
 		visual_level = 1
 		can_convert_from = { 
-			light_tank_equipment_1 
-			light_tank_equipment_2
+			light_tank_chassis_1 
+			light_tank_chassis_2
 		}
 		
 		#Misc Abilities
@@ -628,13 +529,13 @@ equipments = {
 		year = 1941
 
 		archetype = light_tank_aa_chassis
-		parent = light_tank_aa_equipment_2
-#		family = light_tank_equipment_3
+		parent = light_tank_aa_chassis_2
+#		family = light_tank_chassis_3
 		priority = 30
 		visual_level = 2
 		can_convert_from = { 
-			light_tank_equipment_2
-			light_tank_equipment_3
+			light_tank_chassis_2
+			light_tank_chassis_3
 		}
 		
 		#Misc Abilities
@@ -921,7 +822,7 @@ equipments = {
 		year = 1941
 
 		archetype = medium_tank_destroyer_chassis
-		parent = medium_tank_destroyer_equipment_1
+		parent = medium_tank_destroyer_chassis_1
 #		family = medium_tank_equipment_2
 		priority = 80
 		visual_level = 1
@@ -957,7 +858,7 @@ equipments = {
 		year = 1943
 
 		archetype = medium_tank_destroyer_chassis
-		parent = medium_tank_destroyer_equipment_2
+		parent = medium_tank_destroyer_chassis_2
 #		family = medium_tank_equipment_3
 		priority = 80
 		visual_level = 2
@@ -1034,7 +935,7 @@ equipments = {
 		year = 1941
 
 		archetype = medium_tank_aa_chassis
-		parent = medium_tank_aa_equipment_1
+		parent = medium_tank_aa_chassis_1
 #		family = medium_tank_equipment_2
 		priority = 70
 		visual_level = 1
@@ -1070,7 +971,7 @@ equipments = {
 		year = 1943
 
 		archetype = medium_tank_aa_chassis
-		parent = medium_tank_aa_equipment_2
+		parent = medium_tank_aa_chassis_2
 #		family = medium_tank_equipment_3
 		priority = 70
 		visual_level = 2
@@ -1360,7 +1261,7 @@ equipments = {
 		year = 1941
 
 		archetype = heavy_tank_destroyer_chassis
-		parent = heavy_tank_destroyer_equipment_1
+		parent = heavy_tank_destroyer_chassis_1
 		family = heavy_tank_equipment_2
 		can_convert_from = { 
 			heavy_tank_equipment_1
@@ -1395,7 +1296,7 @@ equipments = {
 		year = 1943
 
 		archetype = heavy_tank_destroyer_chassis
-		parent = heavy_tank_destroyer_equipment_2
+		parent = heavy_tank_destroyer_chassis_2
 		family = heavy_tank_equipment_3
 		can_convert_from = { 
 			heavy_tank_equipment_2
@@ -1876,7 +1777,7 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 		can_convert_from = { 
-			light_tank_equipment_2
+			light_tank_chassis_2
 		}
 
 		upgrades = {

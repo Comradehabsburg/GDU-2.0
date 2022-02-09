@@ -13,9 +13,18 @@ division_template = {
 		infantry = { x = 1 y = 0 } 
 		infantry = { x = 1 y = 1 } 
 		infantry = { x = 1 y = 2 } 
+		infantry = { x = 2 y = 0 } 
+		infantry = { x = 2 y = 1 } 
+		infantry = { x = 2 y = 2 } 
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
 	} 
 	support = { 
-		engineer = { x = 0 y = 0 } 
+		hq_company = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+		logistics_company  = { x = 0 y = 3 } 
 	} 
 } 
 
@@ -30,10 +39,15 @@ division_template = {
 		mountaineers = { x = 1 y = 0 } 
 		mountaineers = { x = 1 y = 1 } 
 		mountaineers = { x = 1 y = 2 } 
+
+		pack_artillery_brigade = { x = 2 y = 0 }
+		pack_artillery_brigade = { x = 2 y = 1 }
 	} 
 	support = { 
-		engineer = { x = 0 y = 0 } 
-		artillery = { x = 0 y = 1 } 
+		hq_company = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+		logistics_company  = { x = 0 y = 3 }
 	} 
 
 	priority = 2 
@@ -45,14 +59,20 @@ division_template = {
 
 	# Represents lesser-equipped colonial units
 	regiments = { 
-		infantry = { x = 0 y = 0 } 
-		infantry = { x = 0 y = 1 } 
-		infantry = { x = 0 y = 2 } 
-		infantry = { x = 1 y = 0 } 
-		infantry = { x = 1 y = 1 } 
-		infantry = { x = 1 y = 2 } 
+		militia = { x = 0 y = 0 } 
+		militia = { x = 0 y = 1 } 
+		militia = { x = 0 y = 2 } 
+		militia = { x = 1 y = 0 } 
+		militia = { x = 1 y = 1 } 
+		militia = { x = 1 y = 2 } 
+		
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
 	} 
-
+	support = { 
+		hq_company = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	} 
 	priority = 0 
 } 
 
@@ -85,6 +105,16 @@ division_template = {
 	} 
 } 
 
+division_template = { 
+	name = "Divisione Guarnigione" 
+	division_names_group = ITA_GAR_01 
+	regiments = { 
+		garrison = { x = 0 y = 0 } 
+		garrison = { x = 0 y = 1 } 
+		garrison = { x = 1 y = 0 } 
+		garrison = { x = 1 y = 1 } 
+	} 
+}
 
 ####### OOB #######
 units = { 
@@ -92,6 +122,51 @@ units = {
 	### Gruppo d'Armata Ovest ###
 	## 1a Armata ##
 	# II Corpo d'Armata #
+	division = {  
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = {  
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = {  
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = {   
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = { 
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = {  
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = {  
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = {   
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
+	division = { 
+		location = 11721 
+		division_template = "Divisione Guarnigione"	
+		start_experience_factor = 0.1
+	}
 	division = { # "4a Divisione di Fanteria 'Livorno'"  
 		division_name = {
 			is_name_ordered = yes
@@ -314,6 +389,23 @@ units = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
 		start_equipment_factor = 0.5 
 	}
+	division = { # 
+		name = "7a Divisione CC.NN. 'Cirene'" 
+		location = 1149 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment 
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.5 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		} #  "2a Divisione Coloniale 'Libia'" 
+		location = 1130 
+		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		start_equipment_factor = 0.5 
+	}
 
 	### Armata dell'Africa Orientale Italiana ###
 	# I Corpo d'Armata dell'A.O.I. #
@@ -471,6 +563,24 @@ units = {
 		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.2 
 	} 
+	division = { # 
+	name = "Lancieri di Aosta (6a)" 
+	location = 1964
+	division_template = "Reggimento di Cavalleria"
+	start_experience_factor = 0.4
+	}
+	division = {
+		name = "Regio Corpo di Truppe Coloniali" 
+		location = 1964 
+		division_template = "Divisione Coloniale" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+	}
+	division = {
+		name = "Regio Corpo di Truppe Coloniali" 
+		location = 1964 
+		division_template = "Divisione Coloniale" 
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+	} 
 }
 
 
@@ -511,12 +621,12 @@ air_wings = {
 	115 = { 
 		# 1a Divisione Aerea 'Aquila'
 		fighter_equipment_0 = { 
-			amount = 80 
+			amount = 100 
 			owner = "ITA" 
 		} 
 		# 3a Divisione Aerea 'Centauro'
 		tac_bomber_equipment_0 = { 
-			amount = 32 
+			amount = 50 
 			owner = "ITA" 
 		} 
 	} 
@@ -524,8 +634,8 @@ air_wings = {
 	# 4a Squadra Aerea - SQA4 (Bari)
 	156 = { 
 		# 9a Divisione Aerea 'Leone'
-		nav_bomber_equipment_1 = { 
-			amount = 48 
+		cv_nav_bomber_equipment_1 = { 
+			amount = 100 
 			owner = "ITA" 
 		} 
 	} 
@@ -533,8 +643,8 @@ air_wings = {
 	# Aeronautica della Sardegna - ASAR (Cagliari)
 	114 = { 
 		# 10a Brigata Aerea 'Marte'
-		nav_bomber_equipment_1 = { 
-			amount = 24 
+		cv_nav_bomber_equipment_1 = { 
+			amount = 50 
 			owner = "ITA" 
 		} 
 	} 
@@ -544,12 +654,12 @@ air_wings = {
 	448 = { 
 		# 14a Brigata Aerea 'Rex'
 		fighter_equipment_0 = { 
-			amount = 20 
+			amount = 100 
 			owner = "ITA" 
 		} 
 		# 13a Divisione Aerea 'Pegaso'
 		tac_bomber_equipment_0 = { 
-			amount = 32 
+			amount = 100 
 			owner = "ITA" 
 		} 
 	} 
@@ -557,11 +667,11 @@ air_wings = {
 	# Aeronautica dell'Africa Orientale (Eritrea)
 	550 = { 
 		fighter_equipment_0 = { 
-			amount = 40 
+			amount = 100 
 			owner = "ITA" 
 		} 
 		tac_bomber_equipment_0 = { 
-			amount = 32 
+			amount = 100 
 			owner = "ITA" 
 		} 
 		CAS_equipment_1 = { 
@@ -586,7 +696,7 @@ instant_effect = {
 
 			requested_factories = 4 
 			progress = 0.1 
-			efficiency = 50 
+			efficiency = 90 
 		} 
 
 		add_equipment_production = { 
@@ -597,9 +707,66 @@ instant_effect = {
 
 			requested_factories = 1 
 			progress = 0.3 
-			efficiency = 50 
+			efficiency = 90 
 		} 
-
+		add_equipment_production = {
+			equipment = {
+				type = artillery_equipment_1
+				creator = "ITA"
+			}
+			requested_factories = 2
+			progress = 0.1
+			efficiency = 90
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = pack_artillery_equipment_1
+				creator = "ITA"
+			}
+			requested_factories = 2
+			progress = 0.1
+			efficiency = 90
+		}
+		add_equipment_production = {
+			equipment = {
+				type = horse_equipment_0
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.3
+			efficiency = 90
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = radio_equipment_0
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.3
+			efficiency = 50
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = squad_equipment_0
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.3
+			efficiency = 75
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = sf_equipment_0
+				creator = "ITA" 
+			}
+			requested_factories = 1
+			progress = 0.3
+			efficiency = 50
+		}
 		add_equipment_production = { 
 			equipment = { 
 				type = light_tank_chassis_1 
@@ -633,5 +800,21 @@ instant_effect = {
 			progress = 0.2 
 			efficiency = 50 
 		} 
+		
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 15000
+			producer = ITA
+		}
+		add_equipment_to_stockpile = {
+			type = squad_equipment_0
+			amount = 3000
+			producer = ITA
+		}
+		add_equipment_to_stockpile = {
+			type = horse_equipment_0
+			amount = 2000
+			producer = ITA
+		}
 	}
 } 

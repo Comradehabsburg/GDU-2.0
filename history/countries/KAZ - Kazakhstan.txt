@@ -26,28 +26,7 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
+
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -87,7 +66,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Nikolay Aleksandrovich Skvortsov"
 	desc = ""
-	picture = "gfx/leaders/KAZ/portrait_kaz_nikolay_skvortsov.dds"
+	picture = GFX_portrait_Nikolay_Aleksandrovich_Skvortsov
 	expire = "1953.3.1"
 	ideology = stalinism
 	traits = {
@@ -98,7 +77,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Ilyas Zhansugurov"
 	desc = ""
-	picture = "gfx/leaders/KAZ/portrait_kaz_ilyas_zhansugurov.dds"
+	picture = GFX_portrait_Ilyas_Zhansugurov
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {

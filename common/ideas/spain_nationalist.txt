@@ -1,9 +1,10 @@
 ideas = {
 
-	hidden_ideas = { # Used to prevent AI to hold outside of the Iberian Peninsula during the SCW
-		SPA_death_before_surrender_capitulation = {
+	country = {
+	
+		SPR_subjugate_por = {
 
-			name = SPR_death_before_surrender
+			picture = SPR_nationalist_remnants
 
 			allowed = {
 				original_tag = SPR
@@ -13,14 +14,55 @@ ideas = {
 				always = yes
 			}
 
+			modifier = { 
+					compliance_gain = 0.1
+					stability_factor = -0.1
+			}
+		
+		}	
+
+		SPA_axis_coop = {
+			picture = generic_license_production
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+			
 			modifier = {
-				surrender_limit = 1
-				max_surrender_limit_offset = 1
+				license_purchase_cost = -0.5
+				license_production_speed = 0.2
 			}
 		}
-	}
 
-	country = {
+		SPA_neutrality_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = neutrality_idea
+			
+			removal_cost = -1
+	
+			modifier = {
+				enemy_justify_war_goal_time = 10
+				ai_get_ally_desire_factor = -1000
+			}
+			rule = {
+				can_join_factions = no
+				can_create_factions = no
+			}
+		}
+	
 
 		SPA_death_before_surrender = {
 
@@ -38,7 +80,7 @@ ideas = {
 
 			modifier = {
 				surrender_limit = 1
-				max_surrender_limit_offset = 0.15
+				max_surrender_limit_offset = 0.10
 			}
 		}
 
@@ -55,7 +97,7 @@ ideas = {
 			}
 
 			targeted_modifier = {
-				tag = SPD
+				tag = SPC
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
 			}
@@ -74,7 +116,7 @@ ideas = {
 			}
 
 			targeted_modifier = {
-				tag = SPC
+				tag = SPD
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
 			}
@@ -118,16 +160,14 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -300
-				ai_join_ally_desire_factor = -300
-				join_faction_tension = 0.5
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_speed_buildings_factor = -0.1
 				consumer_goods_factor = 0.1
 			}
-
-			rule = { can_decline_call_to_war = yes }
+			rule = {
+				can_join_factions = no
+			}
 
 		}
 
@@ -150,16 +190,15 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -200
-				ai_join_ally_desire_factor = -200
-				join_faction_tension = 0.5
 				industrial_capacity_factory = -0.14
 				industrial_capacity_dockyard = -0.14
 				production_speed_buildings_factor = -0.07
 				consumer_goods_factor = 0.07
 			}
 
-			rule = { can_decline_call_to_war = yes }
+			rule = {
+				can_join_factions = no
+			}
 
 		}
 
@@ -188,7 +227,9 @@ ideas = {
 				consumer_goods_factor = 0.04
 			}
 
-			rule = { can_decline_call_to_war = yes }
+			rule = {
+				can_join_factions = no
+			}
 		}
 
 		SPA_awaiting_the_rebellion = {
@@ -740,7 +781,12 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.02
+				min_export = 0.2
+			}
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.25
 			}
 		}
 
@@ -757,7 +803,7 @@ ideas = {
 			}
 
 			modifier = {
-				max_planning = 0.1
+				max_planning = 0.2
 			}
 		}
 
@@ -793,9 +839,18 @@ ideas = {
 			}
 
 			modifier = {
-				send_volunteer_size = 3
+				send_volunteer_size = 6
 				send_volunteer_divisions_required = -0.25
 				send_volunteers_tension = -0.20
+				acclimatization_cold_climate_gain_factor = 0.25
+				army_morale_factor = 0.15
+				pocket_penalty = -0.15
+				army_infantry_defence_factor = 0.1
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
 			}
 		}
 

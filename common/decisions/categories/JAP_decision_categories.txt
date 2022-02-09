@@ -21,7 +21,7 @@ JAP_pacific_guardian = {
 
 	visible = {
 		is_puppet = no
-		has_completed_focus = JAP_pacific_guardian
+		always = no
 	}
 }
 
@@ -32,12 +32,27 @@ JAP_colonial_independence = {
 
 	visible = {
 		is_puppet = no
-		has_completed_focus = JAP_pacific_guardian
+		always = no
 	}
 }
 JAP_interservice_rivalry = {
 	allowed = {
 		original_tag = JAP
 		has_dlc = "Waking the Tiger"
+	}
+}
+
+JAP_propaganda_campaigns = {
+	priority = 100
+
+	icon = SOV_propaganda
+
+	scripted_gui = jap_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
 	}
 }

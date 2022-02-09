@@ -15,6 +15,7 @@
 		infantry = { x = 2 y = 2 }
 		infantry = { x = 3 y = 0 }
 		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
 	}
 }
 division_template = {
@@ -58,7 +59,7 @@ units = {
 		location = 1652 # Perth
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.66
 
 	}
 	division= {	
@@ -70,7 +71,7 @@ units = {
 		location = 7564 # Brisbane
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.66
 
 	}
 	# 2nd Military District -- New South Wales
@@ -83,7 +84,31 @@ units = {
 		location = 12406 # Sydney
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.66
+
+	}
+	division= {	
+		#name = "1st Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12406 # Sydney
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.66
+
+	}
+	division= {	
+		#name = "1st Infantry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12406 # Sydney
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.66
 
 	}
 	division= {	
@@ -95,7 +120,7 @@ units = {
 		location = 7859 # Canberra
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.66
 
 	}
 
@@ -109,7 +134,7 @@ units = {
 		location = 7798 # Melbourne
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.66
 
 	}
 	division= {	
@@ -121,7 +146,7 @@ units = {
 		location = 7798 # Melbourne
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.66
 
 	}
 	division= {	
@@ -133,7 +158,43 @@ units = {
 		location = 7798 # Melbourne
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.66
+
+	}
+	division= {	
+		#name = "2nd Cavalry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7798 # Melbourne
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.66
+
+	}
+	division= {	
+		#name = "2nd Cavalry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7798 # Melbourne
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.66
+
+	}
+	division= {	
+		#name = "2nd Cavalry Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7798 # Melbourne
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.66
 
 	}
 

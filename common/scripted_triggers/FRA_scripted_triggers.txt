@@ -251,11 +251,8 @@ FRA_controls_central_africa = {
 	}
 }
 FRA_has_inefficient_economy = {
-	if = {
-		limit = { has_idea = FRA_inefficient_economy_2 }
+	OR = {
 		has_idea = FRA_inefficient_economy_2
-	}
-	else = {
 		has_idea = FRA_inefficient_economy_1
 	}
 }

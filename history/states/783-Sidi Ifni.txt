@@ -12,7 +12,7 @@ state={
 		}
 
 		owner = SPR
-		add_core_of = URG
+		add_core_of = MOR
 		buildings = {
 			infrastructure = 1
 			12857 = {
@@ -24,6 +24,4 @@ state={
 	provinces={
 		12857
 	}
-
-	local_supplies=0.0 
 }

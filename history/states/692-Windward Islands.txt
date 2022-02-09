@@ -5,10 +5,9 @@ state={
 	state_category = small_island
 
 	history={
-		add_core_of = URG
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			11350 = {
 				naval_base = 1
 			}
@@ -16,11 +15,10 @@ state={
 		victory_points = {
 			11350 1
 		}
+		add_core_of = BAS
 	}
 	
 	provinces={
 		379 11106 11350 13009 
 	}
-
-	local_supplies=4.0 
 }

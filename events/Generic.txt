@@ -33,7 +33,7 @@ country_event = {
 			limit = {
 				FROM = {
 					tag = ENG
-					has_completed_focus = uk_china_focus
+					has_completed_focus = ENG_burma_road
 				}
 				tag = event_target:WTT_current_china_leader
 			}
@@ -51,7 +51,7 @@ country_event = {
 			limit = {
 				FROM = {
 					tag = ENG
-					has_completed_focus = uk_china_focus
+					has_completed_focus = ENG_burma_road
 				}
 				tag = event_target:WTT_current_china_leader
 			}
@@ -324,16 +324,6 @@ country_event = {
 					is_major = yes
 				}
 			}
-
-			modifier = {
-				factor = 10
-				FROM = {
-					OR = {
-						is_subject = yes
-						is_in_faction = yes
-					}
-				}
-			}
 		}
 		FROM = { 
 			country_event = { id = generic.4 hours = 6 }
@@ -444,18 +434,6 @@ country_event = {
 				has_government = fascism
 			}
 		}
-		if = {
-			limit = {
-				original_tag = LAT
-				FROM = { original_tag = GER }
-				has_completed_focus = LAT_alignment_with_germany
-			}
-			uncomplete_national_focus = {
-				focus = LAT_alignment_with_germany
-				uncomplete_children = yes
-			}
-			complete_national_focus = LAT_the_thunder_strikes_alone
-		}
 	}
 	option = {
 		name = generic.4.c
@@ -491,18 +469,6 @@ country_event = {
 					has_government = communism
 				}
 			}
-		}
-		if = {
-			limit = {
-				original_tag = LAT
-				FROM = { original_tag = GER }
-				has_completed_focus = LAT_alignment_with_germany
-			}
-			uncomplete_national_focus = {
-				focus = LAT_alignment_with_germany
-				uncomplete_children = yes
-			}
-			complete_national_focus = LAT_the_thunder_strikes_alone
 		}
 	}
 }
@@ -598,17 +564,9 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				is_in_faction_with = POL
-				POL = { has_completed_focus = POL_morges_pact }
-			}
 		}
-		FROM = {
-			faction_leader = {
-				add_to_faction = ROOT
-			}
+		FROM = { 
+			add_to_faction = ROOT
 			country_event = { id = generic.6 hours = 6 } 
 		}
 		add_ai_strategy = {
@@ -620,17 +578,6 @@ country_event = {
 			set_country_flag = alliance_applicant@ROOT
 			FROM = { set_country_flag = alliance_inviter@ROOT }
 			news_event = { id = news.289 hours = 12 }
-			if = {
-				limit = {
-					FROM = {
-						original_tag = GER
-						has_government = democratic
-						has_completed_focus = GER_pool_technical_know_how
-					}
-					NOT = { has_idea = GER_pool_technical_know_how }
-				}
-				add_ideas = GER_pool_technical_know_how
-			}
 		}
 	}
 	option = { #Agree / Both Fascist
@@ -675,12 +622,6 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				is_in_faction_with = POL
-				POL = { has_completed_focus = POL_morges_pact }
-			}
 		}
 		FROM = { 
 			add_to_faction = ROOT
@@ -746,19 +687,9 @@ country_event = {
 					is_major = no
 				}
 			}
-			
-			modifier = {
-				factor = 0
-				original_tag = FRA
-				is_in_faction_with = POL
-				POL = { has_completed_focus = POL_morges_pact }
-			}
 		}
 		FROM = { 
-			faction_leader = {
-				add_to_faction = ROOT
-			}
-			
+			add_to_faction = ROOT
 			country_event = { id = generic.6 hours = 6 }
 		}
 		if = {
@@ -777,17 +708,6 @@ country_event = {
 			set_country_flag = alliance_applicant@ROOT
 			FROM = { set_country_flag = alliance_inviter@ROOT }
 			news_event = { id = news.289 hours = 12 }
-			if = {
-				limit = {
-					FROM = {
-						original_tag = GER
-						has_government = democratic
-						has_completed_focus = GER_pool_technical_know_how
-					}
-					NOT = { has_idea = GER_pool_technical_know_how }
-				}
-				add_ideas = GER_pool_technical_know_how
-			}
 		}
 	}
 	
@@ -798,15 +718,6 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 50
-			
-			modifier = {
-				factor = 0
-				FROM = {
-					original_tag = YUG
-					has_government = communism
-				}
-				has_government = communism
-			}
 			
 			modifier = {
 				factor = 0.5
@@ -860,15 +771,6 @@ country_event = {
 				factor = 0.1
 				FROM = {
 					is_major = yes
-				}
-			}
-
-			modifier = {
-				factor = 0
-				tag = SPC
-				FROM = {
-					original_tag = SOV
-					has_completed_focus = SOV_covert_support_for_spanish_poum
 				}
 			}
 		}

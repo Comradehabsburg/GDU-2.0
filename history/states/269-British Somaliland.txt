@@ -8,23 +8,21 @@ state=
 	
 	history= {
 		victory_points = { 
-			10833 1
+			10833 5
 		}
 		victory_points = { 
-			5068 1
+			5068 5
 		}
 		owner = ENG
-		add_core_of = URG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			10833 = {
-				naval_base = 1
+				naval_base = 5
 			}
 		}
+		add_core_of = OMA
 	}
 	provinces={
 		1905 5068 8094 10777 10833 10921 12759 12814
 	}
-
-	local_supplies=0.0 
 }

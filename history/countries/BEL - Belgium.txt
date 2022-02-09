@@ -2,13 +2,9 @@
 
 oob = "BEL_1936"
 
-set_research_slots = 0
+set_research_slots = 3
 set_stability = 0.8
 set_war_support = 0.3 #we see what you are doing there Adolf
-
-add_ideas = {
-catatonic_great_depression
-}
 
 set_technology = {
 	infantry_weapons = 1
@@ -21,9 +17,58 @@ set_technology = {
 	trench_warfare = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	support_weapons = 1
 	basic_train = 1
 }
 
+add_ideas = {
+	neutrality_idea2
+	stupid_ai
+}
+
+add_equipment_to_stockpile = {
+
+type = infantry_equipment_1
+amount = 10000
+producer = BEL
+}
+
+add_equipment_to_stockpile = {
+
+type = horse_equipment_0
+amount = 5000
+producer = BEL
+}
+
+add_equipment_to_stockpile = {
+
+type = squad_equipment_0
+amount = 1250
+producer = BEL
+}
+
+add_equipment_to_stockpile = {
+
+type = motorized_equipment_1
+amount = 500
+producer = BEL
+}
+
+add_equipment_to_stockpile = {
+
+type = radio_equipment_0
+amount = 500
+producer = BEL
+}
+
+add_equipment_to_stockpile = {
+
+type = support_equipment_1
+amount = 500
+producer = BEL
+}
+
+add_manpower = 160000
 recruit_character = BEL_hubert_pierlot
 recruit_character = BEL_joseph_jacquemotte
 recruit_character = BEL_mcl_keyaerts
@@ -55,7 +100,7 @@ recruit_character = BEL_paul_van_zeeland
 
 	add_political_power = 1198
 	add_command_power = 100
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -66,14 +111,11 @@ recruit_character = BEL_paul_van_zeeland
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "BEL_1939"
 	set_technology = {
 		fighter1 = 1
 		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
 
@@ -133,5 +175,5 @@ set_popularities = {
 	}
 }
 
-set_convoys = 80
+set_convoys = 300
 set_stability = 0.75

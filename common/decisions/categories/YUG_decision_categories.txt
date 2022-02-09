@@ -11,7 +11,7 @@ YUG_peasant_uprisings = {
 	}
 
 	visible = {
-		has_completed_focus = YUG_pan_slavic_workers_congress
+		always = no
 	}
 }
 

@@ -4,8 +4,8 @@ state={
 	name="STATE_66"
 	manpower = 3052726
 	resources={
-		steel=50 # was: 110
-		aluminium=16 # was: 38
+		steel=500 # was: 110
+		aluminium=100
 	}
 	
 	state_category = large_city
@@ -22,12 +22,12 @@ state={
 		#	3545 1
 		#}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
 			air_base = 6
 		}
 		add_core_of = GER
-		add_core_of = URG
 
 		1939.1.1 = {
 			buildings = {
@@ -41,6 +41,4 @@ state={
 	provinces={
 		552 3283 3438 3485 3510 3545 6462 6534 6595 9470 9570 11517 
 	}
-
-	local_supplies=10.0 
 }

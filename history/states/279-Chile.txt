@@ -7,13 +7,17 @@ state={
 	state_category = large_city
 	
 	resources={
-		steel=16 # was: 24
+		steel=160 # was: 24
 	}
 
 	history={
-		owner = URG
+		owner = OBG
+		add_core_of = OBG
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 7
+			air_base = 3
 			8222 = {
 				naval_base = 5
 			}
@@ -24,7 +28,6 @@ state={
 				bunker = 1
 			}
 		}
-		add_core_of = URG
 		victory_points = {
 			650 10
 		}
@@ -34,6 +37,4 @@ state={
 	provinces={
 		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 
 	}
-
-	local_supplies=0.0 
 }

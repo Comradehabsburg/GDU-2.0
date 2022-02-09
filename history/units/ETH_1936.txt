@@ -6,6 +6,7 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
@@ -17,15 +18,17 @@
 }
 
 division_template = {
-	name = "Infantry Division"		
+	name = "Safari"		
 	division_names_group = ETH_INF_01
 
 	# Note: Represents both regular infantry and militia units
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
 	}
 }
 division_template = {
@@ -63,7 +66,7 @@ units = {
 	#		name_order = 2
 	#	}
 	#	location = 4954
-	#	division_template = "Infantry Division"		# Militia
+	#	division_template = "Safari"		# Militia
 	#	start_experience_factor = 0.1
 	#	start_equipment_factor = 0.5
 	#}
@@ -73,7 +76,7 @@ units = {
 	#		name_order = 3
 	#	}
 	#	location = 4954
-	#	division_template = "Infantry Division"		# Militia
+	#	division_template = "Safari"		# Militia
 	#	start_equipment_factor = 0.5
 	#	start_experience_factor = 0.1
 	#}
@@ -95,7 +98,7 @@ units = {
 			name_order = 5
 		}
 		location = 2072
-		division_template = "Infantry Division"		# Regular Infantry
+		division_template = "Safari"		# Regular Infantry
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -107,7 +110,7 @@ units = {
 			name_order = 6
 		}
 		location = 1984
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -118,7 +121,7 @@ units = {
 			name_order = 7
 		}
 		location = 1984
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -130,7 +133,7 @@ units = {
 			name_order = 10
 		}
 		location = 5041
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -141,7 +144,7 @@ units = {
 			name_order = 8
 		}
 		location = 5041
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -152,7 +155,7 @@ units = {
 			name_order = 9
 		}
 		location = 5041
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -165,7 +168,7 @@ units = {
 			name_order = 11
 		}
 		location = 12812
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -176,7 +179,7 @@ units = {
 			name_order = 12
 		}
 		location = 8062
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -188,7 +191,7 @@ units = {
 			name_order = 13
 		}
 		location = 8062
-		division_template = "Infantry Division"		# Militia
+		division_template = "Safari"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
@@ -199,7 +202,7 @@ units = {
 			name_order = 14
 		}
 		location = 4995
-		division_template = "Infantry Division"		# Regular Infantry
+		division_template = "Safari"		# Regular Infantry
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -210,7 +213,84 @@ units = {
 			name_order = 15
 		}
 		location = 4995
-		division_template = "Infantry Division"		# Regular Infantry
+		division_template = "Safari"		# Regular Infantry
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		location = 5010
+		division_template = "Safari"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 

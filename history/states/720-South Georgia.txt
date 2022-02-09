@@ -13,12 +13,10 @@ state={
 				naval_base = 1
 			}
 		}
-		add_claim_by = URG
+		add_core_of = ENG
 	}
 	
 	provinces={
 		10995 
 	}
-
-	local_supplies=0.0 
 }

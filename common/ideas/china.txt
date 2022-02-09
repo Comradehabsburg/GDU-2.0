@@ -85,8 +85,6 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
 
 			}
 
@@ -109,8 +107,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.3
-				army_defence_factor = -0.3
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
 				mobilization_speed = -0.3
 			}
 
@@ -133,8 +131,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 				mobilization_speed = -0.2
 			}
 
@@ -157,8 +155,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
 				mobilization_speed = -0.1
 			}
 
@@ -180,6 +178,7 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = -0.35
+				industrial_capacity_factory = -0.20
 			}
 
 		}
@@ -221,7 +220,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 0.05
+				surrender_limit = 1.0
+				max_surrender_limit_offset = 0.15
 			}
 
 		}
@@ -242,7 +242,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 0.1
+				surrender_limit = 1.0
+				max_surrender_limit_offset = 0.10
 			}
 
 		}
@@ -262,7 +263,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				surrender_limit = 0.15
+				surrender_limit = 1.0
+				max_surrender_limit_offset = 0.1
 			}
 
 		}
@@ -410,26 +412,6 @@ ideas = {
 			}
 		}
 
-		CHI_legislative_yuan = {
-
-			picture = generic_democratic_drift_bonus
-		
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				political_power_gain = 0.25
-				democratic_drift = 0.02
-			}
-		}
-
 		CHI_inter_party_coordination_council = {
 
 			picture = generic_neutrality_drift_bonus
@@ -464,7 +446,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_core_defence_factor = 0.15
+				army_core_defence_factor = 0.1
 			}
 		}
 
@@ -485,8 +467,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_core_defence_factor = 0.15
-				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
 			}
 		}
 
@@ -528,6 +510,58 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
+		
+		CHI_determination = {
+
+			picture = chi_chinese_support
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.20
+				out_of_supply_factor = -0.25
+				resistance_target_on_our_occupied_states = 0.1
+			}
+		}
+		
+		CHI_determination2 = {
+
+			picture = chi_chinese_support
+			
+			name = CHI_determination
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				army_morale_factor = 0.25
+				supply_consumption_factor = -0.85
+				out_of_supply_factor = -0.90
+				pocket_penalty = -0.5
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.25
+				dig_in_speed_factor = 0.5
+				resistance_target_on_our_occupied_states = 0.2
+			}
+		}
 
 		CHI_military_affairs_commission = {
 
@@ -544,7 +578,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 10
+				max_command_power = 5
 				experience_gain_army = 0.05
 			}
 		}
@@ -564,7 +598,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_leader_cost_factor = -0.3
+				army_leader_cost_factor = -0.5
 				army_leader_start_planning_level = 1
 			}
 		}
@@ -742,7 +776,31 @@ ideas = {
 				surrender_limit = -0.20
 			}
 		}
+
+		
 	}
+
+	hidden_ideas = {
+		CHI_diplo = {
+			allowed = {
+				always = no
+				original_tag = CHI
+			}
+			removal_cost = -1
+
+			rule = {
+				can_join_factions = no
+				can_send_volunteers = no
+			}
+
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 5
+				agency_upgrade_time = 20
+			}
+			
+		}
+	}
+
 
 	# TECHNOLOGY
 	
@@ -773,6 +831,7 @@ ideas = {
 		}
 	}
 
+
 	industrial_concern = {
 
 		CHI_mining_commission = {
@@ -788,10 +847,10 @@ ideas = {
 				original_tag = CHI
 			}
 
-			cost = 5 # ai doesnt like free ones. but lets fix this later
+			cost = 0
 			
 			ai_will_do = {
-				factor = 200
+				factor = 1
 			}
 
 			modifier = {

@@ -1,8 +1,6 @@
 ﻿capital = 266
 
-set_research_slots = 0
-
-add_ideas = { catatonic_great_depression }
+oob = "PER_1936"
 
 # Starting tech
 set_technology = {
@@ -11,6 +9,11 @@ set_technology = {
 	gw_artillery = 1
 	early_fighter = 1
 	CAS1 = 1
+	support_weapons = 1
+}
+
+add_ideas  = {
+	stupid_ai
 }
 
 recruit_character = PER_reza_shah_pahlavi
@@ -58,9 +61,6 @@ recruit_character = PER_ali_khan_mansour
 		infantry_weapons2 = 1
 		support_weapons = 1
 		gw_artillery = 1
-		interwar_antiair = 1
-		interwar_artillery = 1
-		gwtank = 1
 
 		#doctrines
 		air_superiority = 1

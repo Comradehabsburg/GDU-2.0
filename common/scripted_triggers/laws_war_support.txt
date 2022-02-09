@@ -4,21 +4,21 @@ has_unsupported_economic_law = {
 			has_idea = low_economic_mobilisation
 		}
 		has_idea = low_economic_mobilisation
-		has_war_support < 0.15
+		has_war_support < 0.25
 	}
 	else_if = {
 		limit = {
 			has_idea = partial_economic_mobilisation
 		}
 		has_idea = partial_economic_mobilisation
-		has_war_support < 0.25
+		has_war_support < 0.35
 	}
 	else_if = {
 		limit = {
 			has_idea = war_economy
 		}
 		has_idea = war_economy
-		has_war_support < 0.5
+		has_war_support < 0.55
 	}
 	else_if = {
 		limit = {
@@ -38,7 +38,6 @@ has_unsupported_manpower_law = {
 		}
 			has_idea = limited_conscription
 			has_war_support < 0.1
-			hidden_trigger = { NOT = { tag = TUR } }
 	}
 	else_if = {
 		limit = {

@@ -1,6 +1,254 @@
 ideas = {
 
 	country = {
+		ENG_tallboys = {
+
+			picture = generic_air_research
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				port_strike = 1
+			}
+		}
+	
+		ENG_great_depression_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = great_depression
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
+	
+		ENG_war_cabinet_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				high_command_cost_factor = -0.25
+				air_chief_cost_factor = -0.25
+				army_chief_cost_factor = -0.25
+				navy_chief_cost_factor = -0.25
+			}
+
+			picture = eng_guided_by_britain
+			
+			removal_cost = -1	
+
+		}
+	
+		ENG_watu_idea = {
+
+			picture = SPR_international_brigades
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				navy_submarine_detection_factor = 0.25
+				convoy_escort_efficiency = 0.25
+			}
+		}
+	
+		ENG_merchant_navy = {
+
+			picture = generic_naval_manufacturer_1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+	
+		ENG_refitting_yards = {
+
+			picture = generic_navy_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				navy_refit_ic_cost = -0.1
+				refit_speed = 0.2
+			}
+		}
+	
+		ENG_expand_army = {
+
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.2
+					mobilization_laws_cost_factor = -0.25
+			}
+		}
+	
+		ENG_raf_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			picture = raf
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.10
+				air_interception_attack_factor = 0.075
+				air_weather_penalty = -0.15
+				naval_strike_targetting_factor = 0.075
+				air_night_penalty = -0.15
+				air_range_factor = 0.10
+			}
+		}
+	
+		ENG_fighter_com = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = raf
+
+			removal_cost = -1
+			
+			modifier = {
+				army_bonus_air_superiority_factor = 0.05
+				air_interception_attack_factor = 0.05
+			}
+		}
+		
+		ENG_coastal_com = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = raf
+
+			removal_cost = -1
+			
+			modifier = {
+				air_weather_penalty = -0.10
+				naval_strike_targetting_factor = 0.05
+			}
+		}
+		
+		ENG_bomber_com = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = raf
+
+			removal_cost = -1
+			
+			modifier = {
+				air_night_penalty = -0.10
+				air_range_factor = 0.05
+			}
+		}
+	
+		ENG_shadow_scheme_idea2 = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			picture = man_five_year_plan_air
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+				industry_air_damage_factor = -0.2
+				industry_repair_factor = 0.1
+			}
+
+		}
+	
+		ENG_shadow_scheme_idea = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+			
+			picture = man_five_year_plan_air
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+
+		}
+	
 		george_v = {
 			
 			allowed = {
@@ -103,7 +351,7 @@ ideas = {
 				}
 			}
 
-			picture = george_vi
+			picture = george_vi_ns
 			
 			removal_cost = -1
 			
@@ -128,6 +376,7 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.30
 				#conscription = -0.006
+				war_support_factor = -0.05
 			}
 		}
 		
@@ -210,7 +459,28 @@ ideas = {
 			
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		
+		british_fighter_discount2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.10 instant = yes
 				}
 			}
 		}
@@ -303,8 +573,6 @@ ideas = {
 
 		ENG_special_air_service_idea = {
 
-			name = ENG_special_air_service
-
 			allowed = {
 				always = no
 			}
@@ -314,7 +582,7 @@ ideas = {
 			}
 
 			modifier = {
-				special_forces_cap = 0.05
+				special_forces_cap = 0.02
 				special_forces_training_time_factor = -0.1
 			}
 
@@ -337,7 +605,7 @@ ideas = {
 			}
 
 			modifier = {
-				max_command_power = 20
+				max_command_power = 25
 				command_power_gain_mult = 0.1
 				planning_speed = 0.1
 			}
@@ -533,7 +801,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
 				industrial_capacity_factory = 0.05
 			}
 
@@ -601,7 +869,7 @@ ideas = {
 			}
 
 			modifier = {
-				non_core_manpower = 0.1
+				non_core_manpower = 0.05
 			}
 
 			picture = eng_imperial_conscription
@@ -632,7 +900,7 @@ ideas = {
 
 		}
 
-		ENG_the_sun_never_sets_idea = {
+		ENG_the_sun_never_sets_idea_1 = {
 
 			name = ENG_the_sun_never_sets
 
@@ -644,19 +912,111 @@ ideas = {
 				always = yes
 			}
 
+			modifier = {
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+			}
+
 			equipment_bonus = {
 				screen_ship = {
-					naval_speed = 0.1 naval_range = 0.25
+				naval_range = 0.33 instant = yes
 				}
 				carrier = {
-					naval_speed = 0.1 naval_range = 0.25
+				naval_range = 0.33 instant = yes
 				}
 				capital_ship = {
-					naval_speed = 0.1 naval_range = 0.25
+				naval_range = 0.33 instant = yes
 				}
-				submarine = {
-					naval_speed = 0.1 naval_range = 0.25
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+		
+		ENG_the_sun_never_sets_idea_2 = {
+
+			name = ENG_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+				naval_range = 0.25 instant = yes
 				}
+				carrier = {
+				naval_range = 0.25 instant = yes
+				}
+				capital_ship = {
+				naval_range = 0.25 instant = yes
+				}
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+
+		
+		ENG_the_sun_never_sets_idea_3 = {
+
+			name = ENG_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+				naval_range = 0.1 instant = yes
+				}
+				carrier = {
+				naval_range = 0.1 instant = yes
+				}
+				capital_ship = {
+				naval_range = 0.1 instant = yes
+				}
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+		ENG_the_sun_never_sets_idea_4 = {
+
+			name = ENG_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
 			}
 
 			picture = eng_the_sun_never_sets
@@ -1207,10 +1567,11 @@ ideas = {
 			}
 			
 			modifier = {
-				acclimatization_hot_climate_gain_factor = 0.1
+				heat_attrition = -0.25
+				acclimatization_hot_climate_gain_factor = 0.50
 			}
 
-			picture = eng_service_overseas
+			picture = por_colonial_assimilation
 
 			removal_cost = -1
 		}
@@ -1289,8 +1650,8 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
 			}
 
 			picture = generic_war_preparation
@@ -1311,8 +1672,8 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
 			}
 
 			picture = generic_war_preparation
@@ -1321,6 +1682,28 @@ ideas = {
 		}
 
 		ENG_imperial_conference_defense_2 = {
+
+			name = ENG_imperial_conference_defense_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
+			}
+
+			picture = generic_war_preparation
+
+			removal_cost = -1
+		}
+
+		ENG_imperial_conference_defense_3 = {
 
 			name = ENG_imperial_conference_defense_dominion
 
@@ -1342,28 +1725,6 @@ ideas = {
 			removal_cost = -1
 		}
 
-		ENG_imperial_conference_defense_3 = {
-
-			name = ENG_imperial_conference_defense_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				industrial_capacity_factory = 0.09
-				industrial_capacity_dockyard = 0.09
-			}
-
-			picture = generic_war_preparation
-
-			removal_cost = -1
-		}
-
 		ENG_imperial_conference_defense_4 = {
 
 			name = ENG_imperial_conference_defense_dominion
@@ -1377,8 +1738,8 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.12
-				industrial_capacity_dockyard = 0.12
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
 			}
 
 			picture = generic_war_preparation
@@ -1399,8 +1760,8 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
 			}
 
 			picture = generic_war_preparation
@@ -1419,9 +1780,9 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
 			}
 
 			picture = generic_exploit_mines
@@ -1442,9 +1803,9 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.03
-				production_speed_arms_factory_factor = 0.03
-				production_speed_dockyard_factor = 0.03
+				production_speed_industrial_complex_factor = 0.02
+				production_speed_arms_factory_factor = 0.02
+				production_speed_dockyard_factor = 0.02
 			}
 
 			picture = generic_exploit_mines
@@ -1452,6 +1813,28 @@ ideas = {
 			removal_cost = -1
 		}
 		ENG_imperial_conference_economy_2 = {
+
+			name = ENG_imperial_conference_economy_dominion
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.04
+				production_speed_arms_factory_factor = 0.04
+				production_speed_dockyard_factor = 0.04
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+		}
+		ENG_imperial_conference_economy_3 = {
 
 			name = ENG_imperial_conference_economy_dominion
 
@@ -1473,28 +1856,6 @@ ideas = {
 
 			removal_cost = -1
 		}
-		ENG_imperial_conference_economy_3 = {
-
-			name = ENG_imperial_conference_economy_dominion
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			modifier = {
-				production_speed_industrial_complex_factor = 0.09
-				production_speed_arms_factory_factor = 0.09
-				production_speed_dockyard_factor = 0.09
-			}
-
-			picture = generic_exploit_mines
-
-			removal_cost = -1
-		}
 		ENG_imperial_conference_economy_4 = {
 
 			name = ENG_imperial_conference_economy_dominion
@@ -1508,9 +1869,9 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.12
-				production_speed_arms_factory_factor = 0.12
-				production_speed_dockyard_factor = 0.12
+				production_speed_industrial_complex_factor = 0.08
+				production_speed_arms_factory_factor = 0.08
+				production_speed_dockyard_factor = 0.08
 			}
 
 			picture = generic_exploit_mines
@@ -1531,9 +1892,9 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_arms_factory_factor = 0.15
-				production_speed_dockyard_factor = 0.15
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
 			}
 
 			picture = generic_exploit_mines
@@ -1651,8 +2012,8 @@ ideas = {
 			modifier = {
 				experience_gain_air = 0.05
 				experience_gain_air_factor = 0.1
-				air_mission_xp_gain_factor = 0.05
-				air_training_xp_gain_factor = 0.2
+				air_mission_xp_gain_factor = 0.1
+				air_training_xp_gain_factor = 0.25
 			}
 		}
 
@@ -1681,8 +2042,8 @@ ideas = {
 			modifier = {
 				experience_gain_air = 0.05
 				experience_gain_air_factor = 0.1
-				air_mission_xp_gain_factor = 0.1
-				air_training_xp_gain_factor = 0.2
+				air_mission_xp_gain_factor = 0.15
+				air_training_xp_gain_factor = 0.3
 			}
 		}
 
@@ -1701,8 +2062,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				experience_gain_destroyer_combat_factor = 0.1
-				experience_gain_destroyer_training_factor = 0.1
+				experience_gain_destroyer_combat_factor = 0.2
+				experience_gain_destroyer_training_factor = 0.2
 			}
 		}
 
@@ -1721,15 +2082,15 @@ ideas = {
 			removal_cost = -1
 						
 			equipment_bonus = {
-				ship_hull_cruiser = {
-					build_cost_ic = -0.1 instant = yes
+				ship_hull_light = {
+					build_cost_ic = -0.10 instant = yes
 				}
 			}
 		}
 
 		ENG_expand_the_repair_yards = {
 
-			picture = generic_coastal_defense_ships
+			picture = generic_coastal_navy
 			
 			allowed = {
 				always = no
@@ -1742,13 +2103,12 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				refit_ic_cost = -0.1
-				refit_speed = 0.1
-				repair_speed_factor = 0.1
+				repair_speed_factor = 0.20
 			}
 		}
 
 	}
+	
 	
 	naval_manufacturer = {
 		
@@ -1799,21 +2159,6 @@ ideas = {
 			
 			modifier = {
 			}
-		}
-		
-		john_brown_company = {
-			
-			allowed = {
-				original_TAG = ENG
-			}
-			
-
-			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
-			
-			traits = { coastal_defence_naval_manufacturer }
 		}	
 	}
 	
@@ -1921,13 +2266,17 @@ ideas = {
 				original_TAG = ENG
 			}
 			
-
+			cost = 75
+			
+			available = {
+				has_completed_focus = ENG_enfield
+			}
 			
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
 			
-			traits = { infantry_equipment_manufacturer }
+			traits = { enfield }
 			
 			modifier = {
 			}
@@ -2037,4 +2386,7 @@ ideas = {
 			}
 		}
 	}
+	
+
 }
+

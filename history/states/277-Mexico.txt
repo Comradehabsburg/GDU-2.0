@@ -4,18 +4,18 @@ state={
 	name="STATE_277"
 	manpower = 3424403
 	
-	state_category = city
+	state_category = large_city
 
 	resources={
-		steel=6 #was 2 before Mexican steel production was centralized to allow oil concessions
+		steel=200 #was 2 before Mexican steel production was centralized to allow oil concessions
 	}
 	
 	history={
 		owner = MEX
 		buildings = {
-			infrastructure = 3 #was: 5
-			arms_factory = 2
-			industrial_complex = 4
+			infrastructure = 6
+			arms_factory = 3
+			industrial_complex = 7
 			air_base = 3
 		}
 		add_core_of = MEX
@@ -31,6 +31,4 @@ state={
 		1965 2008 2011 7913 12755 
 	}
 	
-
-	local_supplies=0.0 
 }

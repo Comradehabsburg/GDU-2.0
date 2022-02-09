@@ -11,9 +11,15 @@ if = {
 
 add_ideas = {
 	limited_conscription
-	LAT_perkonkrust_idea
-	democratic_opposition
+	stupid_ai
 }
+# IF = {
+# 	limit = { has_dlc = "No Step Back" }
+# 	add_ideas = {
+# 		LAT_perkonkrust_idea
+# 		democratic_opposition
+# 	}
+# }
 
 recruit_character = LAT_gustavs_celminsh
 recruit_character = LAT_augusts_kirhensteins
@@ -36,9 +42,9 @@ recruit_character = LAT_vilhelms_munters
 recruit_character = LAT_janis_kaminskis
 recruit_character = LAT_fricis_menders
 recruit_character = LAT_alberts_kvesis
+recruit_character = LAT_karlis_ulmanis
 IF = { 
 	limit = { has_dlc = "No Step Back" }
-	recruit_character = LAT_karlis_ulmanis
 	recruit_character = LAT_janis_balodis
 	recruit_character = LAT_janis_sudrabkalns
 	recruit_character = LAT_emilija_veinberga
@@ -55,7 +61,6 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	early_fighter = 1
-	gw_artillery = 1
 	tech_support = 1
 	basic_train = 1
 }
@@ -120,8 +125,6 @@ set_convoys = 10
 
 	set_technology = {	
 		tech_engineers = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
 		support_weapons = 1
 
 		#doctrines

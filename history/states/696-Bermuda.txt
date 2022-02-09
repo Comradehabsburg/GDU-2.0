@@ -10,16 +10,15 @@ state={
 			13010 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			13010 = {
 				naval_base = 1
 			}
 		}
+		add_core_of = ENG
 	}
 	
 	provinces={
 		13010 
 	}
-
-	local_supplies=0.0 
 }

@@ -11,16 +11,15 @@ set_technology = {
 	early_fighter = 1
 	CAS1 = 1
 	fuel_silos = 1
+	support_weapons = 1
+	basic_train = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
+set_convoys = 50
 
-set_convoys = 5
+add_ideas = {
+	stupid_ai
+}
 
 recruit_character = IRQ_ghazi_i
 recruit_character = IRQ_rashid_ali_algaylani
@@ -43,7 +42,41 @@ recruit_character = IRQ_amir_al_illah
 recruit_character = IRQ_ali_abn_hussein
 recruit_character = IRQ_nuri_as_said
 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 20000
+	producer = GER
+}
 
+add_equipment_to_stockpile = {
+	type = horse_equipment_0
+	amount = 5000
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = squad_equipment_0
+	amount = 5000
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1000
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = radio_equipment_0
+	amount = 1000
+	producer = GER
+}
+
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 1500
+	producer = GER
+}
 
 1939.1.1 = {
 

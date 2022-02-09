@@ -5,14 +5,13 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=16 # was: 22.000
+		chromium=160 # was: 22.000
 	}
 
 	history={
 		owner = SOV
-		add_core_of = URG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 
 		}
 		add_core_of = SOV
@@ -26,6 +25,4 @@ state={
 	}
 	manpower=659223
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

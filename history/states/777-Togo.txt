@@ -4,19 +4,18 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of = URG
 		victory_points = {
 			1951 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			1951 = {
 				naval_base = 1
 
 			}
 
 		}
-
+		add_core_of = IVO
 	}
 
 	provinces={
@@ -25,6 +24,4 @@ state={
 	manpower=1101346
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-
-	local_supplies=0.0 
 }

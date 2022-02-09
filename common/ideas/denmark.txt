@@ -1,5 +1,20 @@
 ideas = {
 	
+	country = {
+		DEN_surrender = {
+
+			picture = SPR_disbanded_army
+
+			allowed = {
+				original_tag = DEN
+			}
+			
+			modifier = {
+				surrender_limit = -1.0
+			}
+		}
+	}
+	
 	aircraft_manufacturer = { 
 			
 		designer = yes

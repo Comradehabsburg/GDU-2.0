@@ -4,15 +4,14 @@ state={
 
 	history={
 		owner = ENG
-		add_core_of = URG
 		victory_points = {
 			12986 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 
 		}
-
+		add_core_of = ZIM
 	}
 
 	provinces={
@@ -21,6 +20,4 @@ state={
 	manpower=1603975
 	buildings_max_level_factor=1.000
 	state_category=pastoral
-
-	local_supplies=0.0 
 }

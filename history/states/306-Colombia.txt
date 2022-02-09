@@ -7,11 +7,14 @@ state={
 	state_category = city
 	
 	history={
-		owner = URG
+		owner = OBG
+		add_core_of = OBG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 2
 		}
-		add_core_of = URG
 		victory_points = {
 			10747 10
 		}
@@ -21,6 +24,4 @@ state={
 	provinces={
 		2079 7936 7991 7993 10747 10790 10846 
 	}
-
-	local_supplies=4.0 
 }

@@ -1,6 +1,7 @@
 ﻿capital = 41
 
 oob = "SPR_1936"
+set_rule = { can_send_volunteers = no }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SPR_1936_naval_mtg"
@@ -30,7 +31,7 @@ if = {
 	recruit_character = SPA_juan_yague
 	recruit_character = SPA_emilio_esteban_infantes
 	recruit_character = SPA_salvador_moreno_fernandez
-	recruit_character = SPR_vincente_rojo_lluch
+	recruit_character = SPR_vicente_rojo_lluch
 	recruit_character = SPR_miguel_buiza_fernandez_palacios
 	recruit_character = SPA_jose_enrique_varela
 	recruit_character = SPA_fransisco_moreno_fernandez
@@ -46,10 +47,11 @@ if = {
 	recruit_character = SPA_alfredo_kindelan_duany
 	recruit_character = SPR_antonio_azarola_y_gresillon
 	recruit_character = SPR_nicolas_molero
-	recruit_character = SPR_dolores_ibarruri_vanilla
-	recruit_character = SPR_diego_martinez_barrio_vanilla
-	recruit_character = SPR_augusto_barcia_trelles_vanilla
-	recruit_character = SPR_francisco_largo_caballero_vanilla
+	recruit_character = SPR_dolores_ibarruri
+	recruit_character = SPR_diego_martinez_barrio
+	recruit_character = SPR_augusto_barcia_trelles
+	recruit_character = SPR_francisco_largo_caballero
+
 	set_popularities = {
 		democratic = 47
 		fascism = 46
@@ -57,12 +59,13 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
+# Camerly Doesn't exist in TFB
+#if = {
+#	limit = {
+#		has_dlc = "Battle for the Bosporus"
+#	}
+#	set_technology = { camelry = 1 }
+#}
 
 if = {
 	limit = {
@@ -128,11 +131,10 @@ if = {
 	    set_state_flag = SPR_original_core
 	}
 	add_ideas = {
-		GER_autarky_idea
-		SPA_carlism_1
-		SPR_military_disloyalty
-		SPR_political_violence
-		SPR_national_strikes_3
+		SPA_carlism_1	
+		SPR_political_violence	
+		SPR_national_strikes_3	
+		SPA_neutrality_idea
 	}
 	recruit_character = SPR_niceto_alcala_zamora
 	recruit_character = SPR_jose_diaz
@@ -242,20 +244,22 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 5
 
 set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
+	early_bomber = 1	
+	naval_bomber1 = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	motorised_infantry = 1	
+	infantry_weapons = 1	
+	infantry_weapons1 = 1	
+	support_weapons = 1	
+	hq_1 = 1
 	gw_artillery = 1
-	interwar_antiair = 1
 	early_fighter = 1
-	early_bomber = 1
-	naval_bomber1 = 1
 	basic_train = 1
 }
 if = {
@@ -408,8 +412,6 @@ set_stability = 0.5
 		fighter1 = 1
 		CAS1 = 1
 		tactical_bomber1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
 		motorised_infantry = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
@@ -446,29 +448,6 @@ set_stability = 0.5
 		dispersed_industry3 = 1
 	}
 	if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
-	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
 			basic_light_battery = 1
@@ -480,17 +459,7 @@ if = {
 	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
 }
 
-if = {
-	limit = {
-		NOT = { has_dlc = "La Resistance" }
-	}
-}
 
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-}
 
 ### VARIANTS ###
 # 1936 Start #

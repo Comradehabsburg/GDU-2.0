@@ -2,18 +2,20 @@ state={
 	id=492
 	name="STATE_492"
 	resources={
-		tungsten=2 # was: 2.000
+		tungsten=20 # was: 2.000
 	}
 	
 	state_category = rural
 
 	history={
-		owner = URG
+		owner = OBG
+		add_core_of = OBG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
 
 		}
-		add_core_of = URG
 		victory_points = {
 			2210 1 
 		}
@@ -25,6 +27,4 @@ state={
 	}
 	manpower=1601278
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

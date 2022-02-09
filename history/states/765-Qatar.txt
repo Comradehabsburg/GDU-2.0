@@ -6,13 +6,13 @@ state={
 	state_category = pastoral
 
 	history={
-		add_core_of = URG
+		add_core_of = OMA
 		owner = ENG
 		victory_points = {
 			8051 1
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			8051 = {
 				naval_base = 2
 			}
@@ -22,6 +22,4 @@ state={
 	provinces={
 		8051
 	}
-
-	local_supplies=0.0 
 }

@@ -688,7 +688,6 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		remove_decision_on_cooldown = POL_purchase_madagascar
 	}
 }
 
@@ -810,7 +809,6 @@ country_event = {
 						state = 701
 					}
 				}
-				remove_decision_on_cooldown = POL_purchase_gambia
 			}
 			if = {
 				limit = {
@@ -818,7 +816,6 @@ country_event = {
 						state = 773
 					}
 				}
-				remove_decision_on_cooldown = POL_purchase_cheap_colony
 			}
 			if = {
 				limit = {
@@ -826,7 +823,6 @@ country_event = {
 						state = 546
 					}
 				}
-				remove_decision_on_cooldown = POL_purchase_cheap_colony
 			}
 			if = {
 				limit = {
@@ -834,7 +830,6 @@ country_event = {
 						state = 454
 					}
 				}
-				remove_decision_on_cooldown = POL_purchase_cheap_colony
 			}
 		}
 	}
@@ -1195,19 +1190,6 @@ country_event = {
 			}
 		}
 
-
-		ROM = {
-			ROM_king_michael = {
-				set_nationality = POL
-			}
-		}
-		POL = {
-			ROM_king_michael = {
-				promote_character = {
-					ideology = despotism 
-				} 
-			}	
-		}
 		set_party_name = { 
 			ideology = neutrality 
 			long_name = POL_hohenzollern_sigmaringen_long
@@ -1497,7 +1479,6 @@ country_event = {
 		ai_chance = {
 			base = 10
 		}
-		unlock_decision_category_tooltip = POL_fight_against_monarchy_in_LIT_cat
 	}
 }
 
@@ -1640,7 +1621,6 @@ country_event = {
 			set_country_flag = POL_banned_monarchy_flag
 			POL_set_attempted_royal_takeover_flag = yes
 		}
-		POL_monarchist_civil_war_effect = yes
 	}
 }
 
@@ -4171,39 +4151,6 @@ country_event = {
 		if = { #Switch to the Habsburg branch
 			limit = {
 				has_focus_tree = hungarian_focus
-			}
-			if = {
-				limit = {
-					has_completed_focus = HUN_economic_intervention
-				}
-				uncomplete_national_focus = {
-					focus = HUN_economic_intervention
-					uncomplete_children = yes
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = HUN_elect_a_democratic_king
-				}
-				uncomplete_national_focus = {
-					focus = HUN_elect_a_democratic_king
-					uncomplete_children = yes
-				}
-			}
-			if = {
-				limit = {
-					has_completed_focus = HUN_elect_a_fascist_king
-				}
-				uncomplete_national_focus = {
-					focus = HUN_elect_a_fascist_king
-					uncomplete_children = yes
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_completed_focus = HUN_balanced_budget }
-				}
-				complete_national_focus = HUN_balanced_budget
 			}
 			if = {
 				limit = {

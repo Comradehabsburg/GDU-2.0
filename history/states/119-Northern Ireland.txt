@@ -8,13 +8,10 @@ state={
 		victory_points = {
 			3379 5 
 		}
-		victory_points = {
-			385 1 # Londonderry
-		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 2
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
 			air_base = 1
 			dockyard = 2
 			3379 = {
@@ -22,8 +19,6 @@ state={
 			}
 		}
 		add_core_of = ENG
-		add_core_of = IRE
-		add_core_of = URG
 	}
 
 	provinces={
@@ -34,8 +29,6 @@ state={
 	state_category="city"
 	
 	resources={
-		aluminium=2
+		aluminium=20
 	}
-
-	local_supplies=0.0 
 }

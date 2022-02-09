@@ -3,7 +3,7 @@ ideas = {
 	mobilization_laws = { 
 		law = yes
 		use_list_view = yes
-		
+
 		disarmed_nation = {
 						
 			cost = 150
@@ -15,7 +15,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.01
+				conscription = 0.02
 			}
 			
 			cancel_if_invalid = no
@@ -50,7 +50,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.015
+				conscription = 0.03
 			}
 			
 			default = yes
@@ -88,7 +88,7 @@ ideas = {
 						original_tag = RAJ
 						has_dlc = "Together for Victory"
 					}
-					is_subject = no
+					has_autonomy_state = autonomy_dominion
 				}
 
 				if = {
@@ -98,32 +98,10 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
-				}
 			}
 
 			modifier = {
-				conscription = 0.025
+				conscription = 0.04
 			}
 
 			ai_will_do = {
@@ -184,7 +162,8 @@ ideas = {
 						original_tag = RAJ
 						has_dlc = "Together for Victory"
 					}
-					is_subject = no
+					has_autonomy_state = autonomy_dominion
+					surrender_progress > 0.2
 				}
 
 				if = {
@@ -194,41 +173,14 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
-				}
 			}
+
 			ai_will_do = {
    				factor = 1
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  800
-				}
-
-				modifier = {
-					tag = TUR
-					has_dlc = "Battle for the Bosporus"
-					factor = 50
 				}
 
 				modifier = { # china relies a lot on throwing bodies at the enemy
@@ -245,9 +197,9 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				conscription = 0.05
-				#industrial_capacity_factory = -0.1
-				#production_speed_buildings_factor = -0.1
+				conscription = 0.06
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 				training_time_factor = 0.1
 			}
 			
@@ -302,7 +254,8 @@ ideas = {
 						original_tag = RAJ
 						has_dlc = "Together for Victory"
 					}
-					is_subject = no
+					has_autonomy_state = autonomy_dominion
+					surrender_progress > 0.5
 				}
 
 				if = {
@@ -311,28 +264,6 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
 				}
 			}
 
@@ -382,7 +313,7 @@ ideas = {
 			level = 3
 
 			modifier = {
-				conscription = 0.1
+				conscription = 0.08
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				production_speed_buildings_factor = -0.1
@@ -444,28 +375,6 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
-				}
 			}
 
 			ai_will_do = {
@@ -506,12 +415,11 @@ ideas = {
 			level = 2
 			
 			modifier = {
-				conscription = 0.2
+				conscription = 0.12
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
-				#XP from reinforcement penalty (small)
-				training_time_factor = 0.3
+				training_time_factor = 0.4
 			}
 			
 			cancel_if_invalid = no
@@ -568,28 +476,6 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				if = {
-					limit = {
-						original_tag = ENG
-						has_dlc = "Man the Guns"
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
-				}
-				if = {
-					limit = {
-						original_tag = SPR
-						has_dlc = "La Resistance"
-					}
-					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
-				}
-				if = {
-					limit = {
-						original_tag = BUL
-						has_dlc = "Battle for the Bosporus"
-					}
-					NOT = { has_idea = BUL_army_restrictions }
-				}
 			}
 
 			ai_will_do = {
@@ -616,11 +502,12 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.25
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
-				production_speed_buildings_factor = -0.4
-				training_time_factor = 0.5
+				conscription = 0.15
+
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_speed_buildings_factor = -0.5
+				training_time_factor = 0.6
 			}
 			
 			cancel_if_invalid = no

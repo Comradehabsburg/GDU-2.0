@@ -115,7 +115,7 @@
 				name = VIC_long_term_economic_planning
 				category = industry
 				uses = 2
-				bonus = 1
+				bonus = 1.5
 			}
 		}
 	}
@@ -123,7 +123,7 @@
 		id = VIC_aid_small_businesses
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -149,20 +149,21 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			26 = {
+				
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
+					instant_build = yes
+				}
+			}
+			22 = {
+				
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -172,7 +173,7 @@
 		id = VIC_venerate_the_craftsman
 		icon = GFX_goal_generic_production
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -240,7 +241,7 @@
 		id = VIC_up_with_jean_darc
 		icon = GFX_focus_up_joan_of_arc
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -275,7 +276,7 @@
 		id = VIC_celebrate_motherhood
 		icon = GFX_goal_generic_propaganda
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -341,7 +342,7 @@
 		id = VIC_concessions_to_the_germans
 		icon = GFX_focus_chi_mission_to_germany
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -376,7 +377,7 @@
 		id = VIC_mandatory_work_service
 		icon = GFX_goal_generic_construction2
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -410,7 +411,7 @@
 		id = VIC_a_nation_reborn
 		icon = GFX_goal_support_fascism
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -454,6 +455,7 @@
 			x = 0
 			y = 0
 		}
+		will_lead_to_war_with = GER
 		prerequisite = { 
 			focus = VIC_a_nation_reborn
 		}
@@ -519,7 +521,7 @@
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -552,7 +554,7 @@
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -585,7 +587,7 @@
 		}
 		relative_position_id = VIC_the_legionary_service_order
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -620,7 +622,7 @@
 		}
 		relative_position_id = VIC_the_legionary_service_order
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -663,7 +665,7 @@
 		}
 		relative_position_id = VIC_emergency_powers_to_petain
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -671,14 +673,21 @@
 			
 		}
 		
-		bypass = {
-			num_of_military_factories > 34
-		}
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_rebuild_the_military }
+			20 = {
+				
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -695,7 +704,7 @@
 		}
 		relative_position_id = VIC_rebuild_the_military
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -712,20 +721,11 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			navy_experience = 50
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_core_of = ROOT
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
+			22 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -745,7 +745,7 @@
 		}
 		relative_position_id = VIC_rebuild_the_military
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -777,7 +777,7 @@
 		}
 		relative_position_id = VIC_hidden_materials
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -815,7 +815,7 @@
 		}
 		relative_position_id = VIC_rebuild_the_military
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -835,7 +835,7 @@
 				category = light_fighter
 				category = cas_bomber
 				category = tactical_bomber
-				bonus = 2
+				bonus = 0.5
 				uses = 2
 			}
 		}
@@ -854,7 +854,7 @@
 		}
 		relative_position_id = VIC_modernize_the_airforce
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -869,8 +869,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_to_tech_sharing_group = VIC_learn_from_the_enemy
-			GER = { add_to_tech_sharing_group = VIC_learn_from_the_enemy }
+			add_to_tech_sharing_group = axis_research
+			
 		}
 	}
 	focus = {
@@ -888,7 +888,7 @@
 		}
 		relative_position_id = VIC_learn_from_the_enemy
 		
-		cost = 10
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -904,6 +904,10 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_buy_from_the_enemy }
+			add_relation_modifier = {
+				target = GER
+				modifier = FRA_license_german_equipment
+			}
 		}
 	}
 

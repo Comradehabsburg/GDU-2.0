@@ -10,7 +10,6 @@ sub_units = {
 			any = {
 				ship_armor_bc_1 = 1
 				ship_armor_bc_2 = 1
-				ship_armor_bc_3 = 1
 			}
 		}
 

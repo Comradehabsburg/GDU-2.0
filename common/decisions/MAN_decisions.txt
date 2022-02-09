@@ -14,7 +14,7 @@ MAN_banditry_category = {
 		icon = generic_oppression
 		
 		available = {
-			has_completed_focus = MAN_pacify_the_countryside
+			has_completed_focus = MAN_crush_the_bandits
 			has_country_flag = MAN_northern_bandits
 			divisions_in_state = {
 				state = 714	
@@ -23,10 +23,8 @@ MAN_banditry_category = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 714
-		} 
-}
+		}
 
 		cost = 0
 
@@ -59,22 +57,21 @@ MAN_banditry_category = {
 		icon = generic_oppression
 
 		available = {
-			has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @MAN_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_completed_focus = MAN_treaty_with_the_bandits
 			has_country_flag = MAN_northern_bandits
 		}
 
-		cost = 0
+		cost = 100
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 714
-		} 
-}
+		}
 		visible = {
 			has_country_flag = MAN_northern_bandits
 		}
 		is_good = yes
+		
+		days_remove = 90
 
 		fire_only_once = yes
 
@@ -89,13 +86,13 @@ MAN_banditry_category = {
 			}
 		}
 
-		complete_effect = {
+		remove_effect = {
 			custom_effect_tooltip = MAN_hunt_down_northern_bandits_tt
-			add_manpower = -1000
+			add_manpower = 1000
 			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+				amount = 1000
 			}
 
 			army_experience = 10
@@ -109,6 +106,8 @@ MAN_banditry_category = {
 				}
 				remove_ideas = MAN_banditry
 			}
+			add_state_core = 761
+			add_state_core = 714
 		}
 	}
 
@@ -134,10 +133,8 @@ MAN_banditry_category = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 714
-		} 
-}
+		}
 
 		visible = {
 			
@@ -149,13 +146,8 @@ MAN_banditry_category = {
 			custom_effect_tooltip = MAN_hunt_down_northern_bandits_tt
 			army_experience = 10
 			clr_country_flag = MAN_northern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = MAN_eastern_bandits }
-					NOT = { has_country_flag = MAN_western_bandits }
-				}
-				remove_ideas = MAN_banditry
-			}
+			add_state_core = 761
+			add_state_core = 714
 		}
 	}
 
@@ -170,7 +162,7 @@ MAN_banditry_category = {
 		icon = generic_oppression
 		
 		available = {
-			has_completed_focus = MAN_pacify_the_countryside
+			has_completed_focus = MAN_crush_the_bandits
 			has_country_flag = MAN_eastern_bandits
 			divisions_in_state = {
 				state = 717
@@ -179,10 +171,8 @@ MAN_banditry_category = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 717
-		} 
-}
+		}
 
 		cost = 0
 
@@ -215,8 +205,7 @@ MAN_banditry_category = {
 		icon = generic_oppression
 
 		available = {
-			has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @MAN_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_completed_focus = MAN_treaty_with_the_bandits
 			has_country_flag = MAN_eastern_bandits
 		}
 
@@ -224,15 +213,15 @@ MAN_banditry_category = {
 			has_country_flag = MAN_eastern_bandits
 		}
 
-		cost = 0
+		cost = 100
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 717
-		} 
-}
+		}
 
 		is_good = yes
+		
+		days_remove = 90
 
 		fire_only_once = yes
 
@@ -247,13 +236,13 @@ MAN_banditry_category = {
 			}
 		}
 
-		complete_effect = {
+		remove_effect = {
 			custom_effect_tooltip = MAN_hunt_down_eastern_bandits_tt
-			add_manpower = -1000
+			add_manpower = 1000
 			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+				amount = 1000
 			}
 
 			army_experience = 10
@@ -267,6 +256,7 @@ MAN_banditry_category = {
 				}
 				remove_ideas = MAN_banditry
 			}
+			add_state_core = 717
 		}
 	}
 
@@ -292,10 +282,8 @@ MAN_banditry_category = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 717
-		} 
-}
+		}
 
 		visible = {
 			
@@ -314,6 +302,7 @@ MAN_banditry_category = {
 				}
 				remove_ideas = MAN_banditry
 			}
+			add_state_core = 717
 		}
 	}
 
@@ -328,7 +317,7 @@ MAN_banditry_category = {
 		icon = generic_oppression
 		
 		available = {
-			has_completed_focus = MAN_pacify_the_countryside
+			has_completed_focus = MAN_crush_the_bandits
 			has_country_flag = MAN_western_bandits
 			divisions_in_state = {
 				state = 610	
@@ -337,10 +326,8 @@ MAN_banditry_category = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 610
-		} 
-}
+		}
 
 		cost = 0
 
@@ -373,24 +360,23 @@ MAN_banditry_category = {
 		icon = generic_oppression
 
 		available = {
-			has_completed_focus = MAN_pacify_the_countryside
-			has_equipment = { infantry_equipment > @MAN_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_completed_focus = MAN_treaty_with_the_bandits
 			has_country_flag = MAN_western_bandits
 		}
 
-		cost = 0
+		cost = 100
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 610
-		} 
-}
+		}
 
 		visible = {
 			has_country_flag = MAN_western_bandits
 		}
 
 		is_good = yes
+		
+		days_remove = 90
 
 		fire_only_once = yes
 
@@ -405,16 +391,14 @@ MAN_banditry_category = {
 			}
 		}
 
-		complete_effect = {
+		remove_effect = {
 			custom_effect_tooltip = MAN_hunt_down_western_bandits_tt
-			add_manpower = -1000
+			add_manpower = 1000
 			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+				amount = 1000
 			}
-
-			army_experience = 10
 
 			remove_mission = MAN_maintain_western_control
 			clr_country_flag = MAN_western_bandits
@@ -425,6 +409,8 @@ MAN_banditry_category = {
 				}
 				remove_ideas = MAN_banditry
 			}
+			add_state_core = 610
+			add_state_core = 715
 		}
 	}
 
@@ -450,10 +436,8 @@ MAN_banditry_category = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 610
-		} 
-}
+		}
 
 		visible = {
 			
@@ -472,6 +456,8 @@ MAN_banditry_category = {
 				}
 				remove_ideas = MAN_banditry
 			}
+			add_state_core = 610
+			add_state_core = 715
 		}
 	}
 
@@ -498,6 +484,9 @@ MAN_banditry_category = {
 		fire_only_once = no
 
 		is_good = no
+		
+		complete_effect = {			
+		}
 
 		timeout_effect = {
 			random_list = {
@@ -516,615 +505,9 @@ MAN_banditry_category = {
 			}
 		}
 	}
-	MAN_recruit_bandits_north = {
-		icon = generic_civil_support
-
-		available = {
-			has_country_flag = MAN_northern_bandits
-			has_completed_focus = MAN_bolster_nationalism
-		}
-		visible = {
-			has_country_flag = MAN_northern_bandits
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 50
-		complete_effect = {
-			if = {
-				limit = {
-					not = {
-						has_country_flag = MAN_bandits_recruited
-					}
-				}
-				division_template = {
-					name = "Redemption Army"
-					priority = 1
-					is_locked = yes
-					division_names_group = MAN_CAV_01
-					regiments = {
-						cavalry = { x = 0 y = 0 }
-						cavalry = { x = 0 y = 1 }
-						cavalry = { x = 0 y = 2 }
-
-						cavalry = { x = 1 y = 0 }
-						cavalry = { x = 1 y = 1 }
-						cavalry = { x = 1 y = 2 }
-					}
-				}
-				set_country_flag = MAN_bandits_recruited
-			}
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 714 }
-				create_unit = {
-					division = "name = \"1. Northern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"2. Northern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-			}
-			clr_country_flag = MAN_northern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = MAN_eastern_bandits }
-					NOT = { has_country_flag = MAN_western_bandits }
-				}
-				remove_ideas = MAN_banditry
-			}
-		}
-	}
-	MAN_recruit_bandits_west = {
-		icon = generic_civil_support
-
-		available = {
-			has_country_flag = MAN_western_bandits
-			has_completed_focus = MAN_bolster_nationalism
-		}
-		visible = {
-			has_country_flag = MAN_western_bandits
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 50
-		complete_effect = {
-			if = {
-				limit = {
-					not = {
-						has_country_flag = MAN_bandits_recruited
-					}
-				}
-				division_template = {
-					name = "Redemption Army"
-					priority = 1
-					is_locked = yes
-					division_names_group = MAN_CAV_01
-					regiments = {
-						cavalry = { x = 0 y = 0 }
-						cavalry = { x = 0 y = 1 }
-						cavalry = { x = 0 y = 2 }
-
-						cavalry = { x = 1 y = 0 }
-						cavalry = { x = 1 y = 1 }
-						cavalry = { x = 1 y = 2 }
-					}
-				}
-				set_country_flag = MAN_bandits_recruited
-			}
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 610 }
-				create_unit = {
-					division = "name = \"1. Western Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"2. Western Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-			}
-			clr_country_flag = MAN_western_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = MAN_eastern_bandits }
-					NOT = { has_country_flag = MAN_northern_bandits }
-				}
-				remove_ideas = MAN_banditry
-			}
-		}
-	}
-	MAN_recruit_bandits_east = {
-		icon = generic_civil_support
-
-		available = {
-			has_country_flag = MAN_eastern_bandits
-			has_completed_focus = MAN_bolster_nationalism
-		}
-		visible = {
-			has_country_flag = MAN_eastern_bandits
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 50
-		complete_effect = {
-			if = {
-				limit = {
-					not = {
-						has_country_flag = MAN_bandits_recruited
-					}
-				}
-				division_template = {
-					name = "Redemption Army"
-					priority = 1
-					is_locked = yes
-					division_names_group = MAN_CAV_01
-					regiments = {
-						cavalry = { x = 0 y = 0 }
-						cavalry = { x = 0 y = 1 }
-						cavalry = { x = 0 y = 2 }
-
-						cavalry = { x = 1 y = 0 }
-						cavalry = { x = 1 y = 1 }
-						cavalry = { x = 1 y = 2 }
-					}
-				}
-				set_country_flag = MAN_bandits_recruited
-			}
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 717 }
-				create_unit = {
-					division = "name = \"1. Eastern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"2. Eastern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-			}
-			clr_country_flag = MAN_eastern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = MAN_western_bandits }
-					NOT = { has_country_flag = MAN_northern_bandits }
-				}
-				remove_ideas = MAN_banditry
-			}
-		}
-	}
-	MAN_recruit_bandits_generic = {
-		icon = generic_civil_support
-
-		available = {
-		}
-		visible = {
-			has_completed_focus = MAN_bolster_nationalism
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 50
-		fire_only_once = yes
-		complete_effect = {
-			if = {
-				limit = {
-					not = {
-						has_country_flag = MAN_bandits_recruited
-					}
-				}
-				division_template = {
-					name = "Redemption Army"
-					priority = 1
-					is_locked = yes
-					division_names_group = MAN_CAV_01
-					regiments = {
-						cavalry = { x = 0 y = 0 }
-						cavalry = { x = 0 y = 1 }
-						cavalry = { x = 0 y = 2 }
-
-						cavalry = { x = 1 y = 0 }
-						cavalry = { x = 1 y = 1 }
-						cavalry = { x = 1 y = 2 }
-					}
-				}
-				set_country_flag = MAN_bandits_recruited
-			}
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 328 }
-				create_unit = {
-					division = "name = \"1. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"2. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"3. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-			}
-		}
-	}
-	MAN_release_bandits = {
-		icon = generic_civil_support
-
-		available = {
-			
-		}
-		visible = {
-			has_country_flag = MAN_bandits_recruited
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					not = {
-						has_completed_focus = MAN_independence_war
-					}
-					has_war = yes	
-				}
-				factor = 0
-			}
-		}
-		cost = 0
-		
-		complete_effect = {
-			add_manpower = 10000
-			delete_unit_template_and_units = { division_template = "Redemption Army" }
-			clr_country_flag = MAN_bandits_recruited
-		}
-	}
 }
 
-MAN_war_preparations = {
-	MAN_raise_manchu_banner = {
-		available = {
-			has_war = yes
-		}
-		visible = {
-			has_completed_focus = MAN_five_people_armies
-			not = {
-				has_country_flag = MAN_manchu_banner_raised
-			}
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 10
-		}
-		complete_effect = {
-			division_template = {
-				name = "Manchu Banner"
-				priority = 1
-				is_locked = yes
-				division_names_group = MAN_INF_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
-					infantry = { x = 0 y = 4 }
 
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 1 y = 3 }
-					infantry = { x = 1 y = 4 }
-
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-					infantry = { x = 2 y = 3 }
-					infantry = { x = 2 y = 4 }
-				}
-				support = {
-					artillery = { x = 0 y = 0 }
-				}
-			}
-			set_country_flag = MAN_manchu_banner_raised
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 328 }
-				create_unit = {
-					division = "name = \"Yellow Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"Red Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"White Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"Blue Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-				create_unit = {
-					division = "name = \"Black Banner \" division_template = \"Manchu Banner\" start_experience_factor = 0.5" 
-					owner = MAN
-				}
-			}
-		}
-	}
-
-	MAN_disband_the_banners = {
-		available = { 
-
-		}
-		visible = {
-			has_country_flag = MAN_manchu_banner_raised
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war = yes
-				factor = 0
-			}
-		}
-		complete_effect = {
-			delete_unit_template_and_units = { division_template = "Manchu Banner" }
-			clr_country_flag = MAN_manchu_banner_raised
-		}
-	}
-	MAN_fund_underground_gun_shops = {
-		available = {
-			has_completed_focus = MAN_local_arms_procurement
-			has_completed_focus = MAN_purge_the_general_affairs_council
-			has_war_with = JAP
-		}
-		visible = {
-			OR = {
-				has_completed_focus = MAN_local_arms_procurement
-				has_completed_focus = MAN_purge_the_general_affairs_council		
-			}
-			NOT = {
-				has_completed_focus = MAN_five_equal_peoples
-			}
-			NOT = {
-				has_idea = MAN_underground_gun_shops
-			}
-			has_war_with = JAP
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 1
-		}
-		complete_effect = {
-			add_ideas = MAN_underground_gun_shops
-			add_offsite_building = { type = arms_factory level = 3 }
-		}
-	}
-	MAN_remove_underground_gun_shops = {
-		available = {
-			has_idea = MAN_underground_gun_shops
-		}
-		visible = {
-			has_idea = MAN_underground_gun_shops
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war = yes
-				factor = 0
-			}
-		}
-		complete_effect = {
-			remove_ideas = MAN_underground_gun_shops
-			add_offsite_building = { type = arms_factory level = -3 }
-		}
-	}
-	MAN_divert_machine_tools = {
-		available = {
-			
-		}
-		visible = {
-			has_completed_focus = MAN_request_control_of_the_railways
-			not = {
-				has_country_flag =  { 
-					flag = MAN_machine_tools 
-					value = 4
-				}
-			}
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 10
-		}
-		days_remove = 90
-		remove_effect = {
-			if = {
-				limit = {
-					not = {
-						has_country_flag = MAN_machine_tools
-					}
-				}
-				set_country_flag = {
-					flag = MAN_machine_tools
-					value = 1
-				}
-			}
-			else = {
-				modify_country_flag = {
-					flag = MAN_machine_tools
-					value = 1
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT 	
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	MAN_prepare_to_seize_arms = {
-		available = {
-			has_completed_focus = MAN_purge_the_general_affairs_council
-			command_power > 29
-		}
-		visible = {
-			has_completed_focus = MAN_purge_the_general_affairs_council
-			check_variable = { var = MAN_seize_arms_prep value = 50 compare = less_than }
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-		complete_effect = {
-			add_command_power = -30
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 50 compare = less_than_or_equals }
-				}
-				custom_effect_tooltip = MAN_can_prepare_more_tt
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 10 compare = less_than }
-				}
-				set_variable = { var = MAN_seize_arms_prep value = 10 }
-			}
-			else = {
-				add_to_variable = { var = MAN_seize_arms_prep value = 10 }
-			}
-		}
-	}
-	MAN_seize_arms = {
-		available = {
-			has_completed_focus = MAN_independence_war
-			has_war_with = JAP
-		}
-		visible = {
-			check_variable = { var = MAN_seize_arms_prep value = 0 compare = greater_than }
-		}
-		cost = 0
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 10
-		}
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 50 compare = less_than_or_equals }
-				}
-				custom_effect_tooltip = MAN_can_prepare_more_tt
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 10 compare = greater_than_or_equals }
-				}
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = JAP }
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 20 compare = greater_than_or_equals }
-				}
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 10000 producer = JAP }
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 30 compare = greater_than_or_equals }
-				}
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = JAP }
-				if = {
-					limit = {
-						JAP = {
-							has_tech = improved_infantry_weapons
-						}
-					}
-					add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 2000 producer = JAP }
-				}
-			}
-			if = { #TODO_GABRIEL: fix tanks for dlc/nondlc
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 40 compare = greater_than_or_equals }
-				}
-				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 50 producer = JAP }
-				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 5000 producer = JAP }
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 50 compare = greater_than_or_equals }
-				}
-				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = JAP }
-				if = {
-					limit = {
-						JAP = {
-							has_tech = fighter1
-						}
-					}
-					add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 25 producer = JAP }
-				}
-				add_equipment_to_stockpile = { type = CAS_equipment_1 amount = 50 producer = JAP }
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 10 compare = greater_than_or_equals }
-					check_variable = { var = MAN_seize_arms_prep value = 20 compare = less_than }
-				}
-				JAP = {
-					add_timed_idea = { idea = MAN_arms_seized_1 days = 30 }
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 20 compare = greater_than_or_equals }
-					check_variable = { var = MAN_seize_arms_prep value = 30 compare = less_than }
-				}
-				JAP = {
-					add_timed_idea = { idea = MAN_arms_seized_1 days = 60 }
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 30 compare = greater_than_or_equals }
-					check_variable = { var = MAN_seize_arms_prep value = 40 compare = less_than }
-				}
-				JAP = {
-					add_timed_idea = { idea = MAN_arms_seized_2 days = 60 }
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 40 compare = greater_than_or_equals }
-					check_variable = { var = MAN_seize_arms_prep value = 50 compare = less_than }
-				}
-				JAP = {
-					add_timed_idea = { idea = MAN_arms_seized_2 days = 90 }
-				}
-			}
-			if = {
-				limit = {
-					check_variable = { var = MAN_seize_arms_prep value = 50 compare = greater_than_or_equals }
-					check_variable = { var = MAN_seize_arms_prep value = 60 compare = less_than }
-				}
-				JAP = {
-					add_timed_idea = { idea = MAN_arms_seized_3 days = 90 }
-				}
-			}
-		}
-	}
-}
 
 prospect_for_resources = {
 
@@ -1140,13 +523,10 @@ prospect_for_resources = {
 			has_tech = excavation1
 		}
 		highlight_states = {
- highlight_state_targets = {
 			state = 328
-		} 
-}
+		}
 
 		visible = {
-			has_completed_focus = MAN_develop_aluminum_sources
 			controls_state = 328
 			328 = {
 				NOT = {
@@ -1172,7 +552,7 @@ prospect_for_resources = {
 			328 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 120
 				}
 			}
 		}	
@@ -1187,10 +567,8 @@ prospect_for_resources = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
 			state = 716
-		} 
-}
+		}
 
 		available = {
 			has_tech = construction2
@@ -1198,7 +576,6 @@ prospect_for_resources = {
 		}
 
 		visible = {
-			has_completed_focus = MAN_expand_showa_steel_works
 			controls_state = 716
 			716 = {
 				NOT = {
@@ -1221,13 +598,63 @@ prospect_for_resources = {
 			716 = {
 				add_resource = {
 					type = steel
-					amount = 16
+					amount = 160
 				}
 			}
 		}
 
 		ai_will_do = {
 			factor = 1
+		}
+	}
+}
+
+MAN_intervene_in_china = {
+
+	MAN_china_step_up_war_effort = {
+
+		icon = jap_conquer_china
+
+		available = {
+			OR = {
+				CHI = { has_capitulated = yes }
+				CHI = { is_subject_of = JAP }
+				NOT = { country_exists = CHI }
+			}
+			MAN_has_idea_MAN_intervene_in_china = no
+		}
+
+		activation = {
+			MAN_has_idea_MAN_intervene_in_china = yes
+			has_war_with = CHI
+		}
+
+		visible = {
+			MAN_has_idea_MAN_intervene_in_china = yes
+			any_enemy_country = {
+				is_literally_china = yes
+			}
+		}
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_war_with = USA
+				factor = 10 #screw it, kill everything
+			}
+		}
+
+		days_mission_timeout = 90
+
+		complete_effect = {
+			MAN_intervene_in_china_remove = yes
+		}
+
+		timeout_effect = {
+			MAN_intervene_in_china_level_down = yes
+			activate_mission = MAN_china_step_up_war_effort
 		}
 	}
 }

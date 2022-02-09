@@ -235,9 +235,6 @@ country_event = {
 		tag = ENG
 		has_war = yes
 		has_government = democratic
-		NOT = {
-			has_completed_focus = uk_scandinavian_focus
-		}
 		POL = { has_capitulated = yes }
 		OR = {
 			has_global_flag = fall_of_france
@@ -267,11 +264,18 @@ country_event = {
 	
 	option = {
 		name = britain.9.a
-		promote_character = ENG_winston_churchill
-		retire_character = ENG_neville_chamberlain
+		create_country_leader = {
+			name = "Winston Churchill"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = GFX_portrait_Winston_Churchill
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				british_bulldog
+			}
+		}
 		add_stability = 0.1
 		add_war_support = 0.1
-
 	}
 }
 
@@ -308,7 +312,7 @@ country_event = {
 		create_country_leader = {
 			name = "Winston Churchill"
 			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-			picture = "Portrait_Britain_Winston_Churchill.dds"
+			picture = GFX_portrait_Winston_Churchill
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -322,7 +326,7 @@ country_event = {
 		create_country_leader = {
 			name = "Lord Edward Halifax"
 			desc = "POLITICS_EDWARD_HALIFAX_DESC"
-			picture = "Portrait_Britain_Edward_Halifax.dds"
+			picture = GFX_portrait_Lord_Edward_Halifax
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
@@ -453,26 +457,10 @@ country_event = {
 	
 	option = { # Abandon Yugoalvia
 		name = britain.14.a
-		ai_chance = { 
-			factor = 90 
-			modifier = {
-				has_war_with = GER
-				factor = 0
-			}
-		}
+		ai_chance = { factor = 90 }
 		YUG = {
 			add_opinion_modifier = { target = ENG modifier = western_betrayal }
 		}		
-		if = {
-			limit = {
-				has_guaranteed = YUG
-			}
-			diplomatic_relation = {
-   				country = YUG
-   				relation = guarantee
-   				active = no
-  			}
-		}
 		if = {
 			limit = {
 				country_exists = FRA
@@ -483,8 +471,7 @@ country_event = {
 			if = {
 				limit = {
 					ITA = {
-						OR = {
-							NOT = { has_completed_focus = ITA_yugoslavia_friend }						
+						OR = {					
 							is_in_faction_with = GER
 							exists = no
 						}
@@ -494,16 +481,6 @@ country_event = {
 					add_opinion_modifier = { target = FRA modifier = western_betrayal }
 					country_event = { id = yugoslavia.5 hours = 6 }
 				}			
-			}
-			if = {
-				limit = { 
-					ITA = {
-						has_completed_focus = ITA_yugoslavia_friend
-						NOT = { is_in_faction_with = GER }
-						NOT = { has_war_with = YUG }
-					}
-				}
-				ITA = { country_event = { id = italy.12 } }
 			}
 		}
 	}
@@ -683,7 +660,7 @@ country_event = {
 		create_country_leader = {
 			name = "Edward VIII"
 			desc = "POLITICS_EDWARD_EDWARD_DESC"
-			picture = "Portrait_Britain_Edward_VIII.dds"
+			picture = GFX_portrait_Edward_VIII
 			expire = "1965.1.1"
 			ideology = fascism_ideology
 			traits = {
@@ -701,100 +678,6 @@ country_event = {
 	}
 }
 
-#Britain receives warning of the Indian National Army
-country_event = {
-	id = britain.19
-	title = britain.19.t
-	desc = britain.19.d
-	picture = GFX_report_event_indian_soldiers
-
-	is_triggered_only = yes
-
-	option = {
-		name = britain.19.a
-		effect_tooltip = {
-			RAJ = {
-				add_ideas = RAJ_azad_hind
-			}
-		}
-		custom_effect_tooltip = ENG_RAJ_azad_hind_tooltip 
-		hidden_effect = {
-			country_event = { id = britain.20 days = 500  random_days = 100 }
-		}
-	}
-}
-
-
-#Free India Government Leads Revolt
-country_event = {
-	id = britain.20
-	title = britain.20.t
-	desc = britain.20.d
-	picture = GFX_report_event_indian_soldiers
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = {
-			has_completed_focus = uk_free_india_focus
-		}
-		RAJ = {
-			is_puppet_of = ENG
-			fascism > 0.3
-			has_civil_war = no
-		}
-	}
-
-	option = {
-		name = britain.20.a
-		hidden_effect = {
-			if = {
-				limit = {
-					RAJ = {
-						has_idea = RAJ_azad_hind
-					}
-				}
-				RAJ = {
-					remove_ideas = RAJ_azad_hind
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					RAJ = {
-						has_government = fascism
-					}
-				}
-			}
-			RAJ = {
-				country_event = { id = britain.23 }
-			}
-		}
-		
-		if = {
-			limit = {
-				RAJ = {
-					has_government = fascism
-				}
-			}
-			end_puppet = RAJ
-			if = {
-				limit = {
-					RAJ = {
-						is_in_faction_with = ENG
-					}
-				}
-				remove_from_faction = RAJ
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = RAJ
-			}
-		}
-	}
-
-}
 
 country_event = {
 	id = britain.21
@@ -841,7 +724,7 @@ country_event = {
         create_country_leader = {
         	name = "Neville Chamberlain"
         	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-        	picture = "Portrait_Britain_Neville_Chamberlain.dds"
+        	picture = GFX_portrait_Neville_Chamberlain
         	expire = "1965.1.1"
         	ideology = conservatism
         	traits = {
@@ -951,4 +834,91 @@ country_event = {
 			set_state_flag = shadow_scheme_2AF
 		}
     }
+}
+
+### Anglo-Soviet Agreement
+country_event = {
+	id = britain.500
+	title = britain.500.t
+	desc = britain.500.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.500.a
+		add_political_power = 100
+		ENG = { add_political_power = 100 }
+	}
+	
+	option = {
+		name = britain.500.b
+		
+	}
+}
+
+### Operation Countenance
+country_event = {
+	id = britain.501
+	title = britain.501.t
+	desc = britain.501.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.501.a
+		ENG = { country_event = { id = britain.502 hours = 6 } }
+	}
+	
+	option = {
+		name = britain.501.b
+		ENG = { country_event = { id = britain.503 hours = 6 } }
+	}
+}
+
+country_event = {
+	id = britain.502
+	title = britain.502.t
+	desc = britain.502.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.502.a
+		SOV = {
+			transfer_state= 416
+			transfer_state= 418
+			transfer_state= 266
+			transfer_state= 420
+			transfer_state= 419
+		}
+		set_autonomy = {
+			target = PER
+			autonomous_state = autonomy_protectorate
+		}
+	}
+	
+}
+
+country_event = {
+	id = britain.503
+	title = britain.503.t
+	desc = britain.503.d
+	picture = GFX_report_event_indian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = britain.501.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = PER
+		}	
+	}
+	
+	option = {
+		name = britain.501.b
+	}
 }

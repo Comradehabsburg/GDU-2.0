@@ -1,14 +1,8 @@
-focus_tree = {
+﻿focus_tree = {
 	id = turkish_focus
 
 	country = {
 		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = TUR
-			has_dlc = "Battle for the Bosporus"
-		}
 	}
 	
 	default = no
@@ -199,7 +193,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader = {
-						character = TUR_celal_bayar
+						name = "Celâl Bayar"
 						ruling_only = yes
 					}
 				}
@@ -208,7 +202,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 				}
@@ -219,16 +213,15 @@ focus_tree = {
 						long_name = TUR_cakmak_party_long
 						name = TUR_cakmak_party
 					}
-					add_country_leader_role = {
-						character = TUR_fevzi_cakmak
-						country_leader = {
-							expire = "1965.1.1"
-							ideology = rexism
-							traits = {
-								maresal
-							}
+					create_country_leader = {
+						name = "Fevzi Çakmak"
+						desc = "POLITICS_FEVZI_CAKMAK_DESC"
+						picture = "GFX_portrait_tur_fevzi_cakmak"
+						expire = "1965.1.1"
+						ideology = rexism
+						traits = {
+							maresal
 						}
-						promote_leader = yes
 					}
 				}
 			}
@@ -464,7 +457,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 				}
@@ -665,7 +658,7 @@ focus_tree = {
 				has_completed_focus = TUR_halk_ve_devlet
 				NOT = { 
 					has_country_leader = {
-						character = TUR_mustafa_kemal_ataturk
+						name = "Mustafa Kemal Atatürk"
 						ruling_only = yes
 					}
 				}
@@ -706,7 +699,7 @@ focus_tree = {
 					has_completed_focus = TUR_fully_integrate_the_is_bank
 					NOT = { 
 						has_country_leader = {
-							character = TUR_adnan_menderes
+							name = "Adnan Menderes"
 							ruling_only = yes
 						}
 					}
@@ -717,7 +710,7 @@ focus_tree = {
 				limit = {
 					has_completed_focus = TUR_fully_integrate_the_is_bank
 					has_country_leader = {
-						character = TUR_adnan_menderes
+						name = "Adnan Menderes"
 						ruling_only = yes
 					}
 				}
@@ -797,7 +790,7 @@ focus_tree = {
 			TUR = { 
 				OR = { 
 					has_country_leader = {
-						character = TUR_ismet_inonu
+						name = "İsmet İnönü"
 						ruling_only = yes
 					}
 					has_idea = TUR_ismet_inonu
@@ -830,15 +823,15 @@ focus_tree = {
 		available = {
 			OR = { 
 				has_country_leader = {
-					character = TUR_ismet_inonu
+					name = "İsmet İnönü"
 					ruling_only = yes
 				}
 				has_idea = TUR_ismet_inonu
 				has_country_leader = {
-					character = TUR_fevzi_cakmak
+					name = "Fevzi Çakmak"
 					ruling_only = yes
 				}
-				has_idea = TUR_fevzi_cakmak_prime_minister
+				has_idea = TUR_fevzi_cakmak
 			}
 		}
 		x = 7
@@ -875,10 +868,6 @@ focus_tree = {
 			every_owned_state = {
 				limit = { 
 					has_dynamic_modifier = { modifier = kemalist_loyalties }
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -889,14 +878,10 @@ focus_tree = {
 			every_owned_state = {
 				limit = { 
 					is_core_of = KUR
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -921,10 +906,10 @@ focus_tree = {
 			if = {
 				limit = {
 					has_idea = TUR_ismet_inonu
-					NOT = { has_idea = TUR_fevzi_cakmak_prime_minister }
+					NOT = { has_idea = TUR_fevzi_cakmak_command }
 				}
 				remove_ideas = TUR_ismet_inonu
-				add_ideas = TUR_fevzi_cakmak_prime_minister
+				add_ideas = TUR_fevzi_cakmak
 			}
 			else_if = {
 				limit = {
@@ -933,15 +918,15 @@ focus_tree = {
 				}
 				remove_ideas = TUR_ismet_inonu
 				remove_ideas = TUR_fevzi_cakmak_command
-				add_ideas = TUR_fevzi_cakmak_prime_minister
+				add_ideas = TUR_fevzi_cakmak
 			}
 			else_if = {
 				limit = {
 					has_idea = TUR_celal_bayar
-					NOT = { has_idea = TUR_fevzi_cakmak_prime_minister }
+					NOT = { has_idea = TUR_fevzi_cakmak_command }
 				}
 				remove_ideas = TUR_celal_bayar
-				add_ideas = TUR_fevzi_cakmak_prime_minister
+				add_ideas = TUR_fevzi_cakmak
 			}
 			else_if = {
 				limit = {
@@ -950,7 +935,7 @@ focus_tree = {
 				}
 				remove_ideas = TUR_celal_bayar
 				remove_ideas = TUR_fevzi_cakmak_command
-				add_ideas = TUR_fevzi_cakmak_prime_minister
+				add_ideas = TUR_fevzi_cakmak
 			}
 			else = {
 				add_war_support = 0.1
@@ -1010,14 +995,14 @@ focus_tree = {
 					NOT = {
 						OR = {
 							has_idea = TUR_ismet_inonu
-							has_idea = TUR_fevzi_cakmak_prime_minister
+							has_idea = TUR_fevzi_cakmak
 						}
 						has_country_leader = {
-							character = TUR_fevzi_cakmak
+							name = "Fevzi Çakmak"
 							ruling_only = yes
 						}
 						has_country_leader = {
-							character = TUR_ismet_inonu
+							name = "İsmet İnönü"
 							ruling_only = yes
 						}
 					}
@@ -1030,7 +1015,7 @@ focus_tree = {
 			else_if = { 
 				limit = {
 					has_country_leader = {
-						character = TUR_fevzi_cakmak
+						name = "Fevzi Çakmak"
 						ruling_only = yes
 					}
 				}
@@ -1042,7 +1027,7 @@ focus_tree = {
 			else_if = { 
 				limit = {
 					has_country_leader = {
-						character = TUR_ismet_inonu
+						name = "İsmet İnönü"
 						ruling_only = yes
 					}
 				}
@@ -1053,7 +1038,7 @@ focus_tree = {
 			}
 			else_if = { 
 				limit = {
-					has_idea = TUR_fevzi_cakmak_prime_minister
+					has_idea = TUR_fevzi_cakmak
 				}
 				add_timed_idea = {
 					idea = TUR_second_five_year_plan_cakmak
@@ -1083,47 +1068,27 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			base = 10
-		} 
-
-		select_effect = {
-			random_owned_state = {
-				limit = {
-					has_state_flag = TUR_ideological_battleground_state
-					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
-				}
-				set_state_flag = TUR_kemalist_state_to_target_1
-			}
-			random_owned_state = {
-				limit = {
-					NOT = { has_state_flag = TUR_kemalist_state_to_target_1 }
-					has_state_flag = TUR_ideological_battleground_state
-					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
-				}
-				set_state_flag = TUR_kemalist_state_to_target_2
-			}
 		}
-		
 
 		search_filters = { FOCUS_FILTER_TUR_KEMALISM FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
 			add_war_support = 0.05
 			unlock_decision_tooltip = TUR_entrench_kemalism_in_state
-			custom_effect_tooltip = TUR_kemalist_state_targets_tt
 			random_owned_state = {
 				limit = {
-					has_state_flag = TUR_kemalist_state_to_target_1
+					has_state_flag = TUR_ideological_battleground_state
+					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
 				}
 				add_dynamic_modifier = { modifier = kemalist_loyalties }
-				
 				clr_state_flag = TUR_ideological_battleground_state
 			}
 			random_owned_state = {
 				limit = {
-					has_state_flag = TUR_kemalist_state_to_target_2
+					has_state_flag = TUR_ideological_battleground_state
+					NOT = { has_dynamic_modifier = { modifier = kemalist_loyalties } }
 				}
 				add_dynamic_modifier = { modifier = kemalist_loyalties }
 				clr_state_flag = TUR_ideological_battleground_state
-				
 			}	
 			hidden_effect = { 
 				set_variable = { var = TUR_kemalist_officers_loyalty value = 3 }
@@ -1140,10 +1105,10 @@ focus_tree = {
 		available = {
 			OR = { 
 				has_country_leader = {
-					character = TUR_fevzi_cakmak
+					name = "Fevzi Çakmak"
 					ruling_only = yes
 				}
-				has_idea = TUR_fevzi_cakmak_prime_minister
+				has_idea = TUR_fevzi_cakmak
 			}
 		}
 		x = 0
@@ -1181,15 +1146,15 @@ focus_tree = {
 					NOT = { 
 						OR = { 
 							has_country_leader = {
-								character = TUR_mustafa_kemal_ataturk
+								name = "Mustafa Kemal Atatürk"
 								ruling_only = yes
 							}
 							has_country_leader = {
-								character = TUR_mehmet_recep_peker
+								name = "Mehmet Recep Peker"
 								ruling_only = yes
 							}
 							has_country_leader = {
-								character = TUR_sevket_sureyya_aydemir
+								name = "Şevket Süreyya Aydemir"
 								ruling_only = yes
 							}
 						}
@@ -1378,14 +1343,15 @@ focus_tree = {
 				name = TUR_neutrality_party
 			}
 			retire_ideology_leader = communism
-			add_country_leader_role = {
-				character = TUR_sevket_sureyya_aydemir
-				country_leader = {
-				  ideology=marxism
-				  traits = { the_academic }
-				  expire="1965.1.1"
+			create_country_leader = {
+				name = "Şevket Süreyya Aydemir"
+				desc = "POLITICS_SEVKET_AYDEMIR_DESC"
+				picture = "GFX_portrait_tur_sevket_sureyya_aydemir"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+					the_academic
 				}
-				promote_leader = yes
 			}
 			add_timed_idea = {
 				idea = TUR_political_landscape_shifting
@@ -1448,7 +1414,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = TUR_recep_peker
 			set_party_name = { 
 				ideology = fascism
 				long_name = TUR_neutrality_party_long
@@ -1463,9 +1430,10 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					has_idea = TUR_fevzi_cakmak_prime_minister
+					has_idea = TUR_fevzi_cakmak
+					has_idea = TUR_fevzi_cakmak_command
 				}
-				remove_ideas = TUR_fevzi_cakmak_prime_minister
+				remove_ideas = TUR_ismet_inonu
 				add_ideas = TUR_recep_peker
 			}
 			else_if = {
@@ -1476,8 +1444,7 @@ focus_tree = {
 				add_ideas = TUR_recep_peker
 			}
 			else = {
-				custom_effect_tooltip = available_political_advisor
-				show_ideas_tooltip = TUR_recep_peker
+				add_political_power = 120
 			}
 		}
 	}
@@ -1577,22 +1544,21 @@ focus_tree = {
 				if = {
 					limit = {	
 						has_country_leader = {
-							character = TUR_mustafa_kemal_ataturk
+							name = "Mustafa Kemal Atatürk"
 							ruling_only = yes
 						}
 					}
 					retire_country_leader = yes
 					add_ideas = TUR_mustafa_kemal_ataturk_figurehead
-					add_country_leader_role = {
-						character = TUR_ismet_inonu
-						country_leader = {
-							expire = "1965.1.1"
-							ideology = centrism
-							traits = {
-								milli_sef
-							}
+					create_country_leader = {
+						name = "İsmet İnönü"
+						desc = "POLITICS_ISMET_INONU_DESC"
+						picture = "Portrait_Turkey_Ismet_Inonu.dds"
+						expire = "1965.1.1"
+						ideology = centrism
+						traits = {
+							milli_sef
 						}
-						promote_leader = yes
 					}
 				}
 			}
@@ -1602,7 +1568,7 @@ focus_tree = {
 					NOT = {
 						AND = {
 							has_country_leader = {
-								character = TUR_mehmet_recep_peker
+								name = "Mehmet Recep Peker"
 								ruling_only = yes
 							}
 							has_government = fascism
@@ -1620,7 +1586,7 @@ focus_tree = {
 					has_completed_focus = TUR_reinvigorate_turkish_nationalism
 					NOT = {
 						has_country_leader = {
-							character = TUR_fevzi_cakmak
+							name = "Fevzi Çakmak"
 							ruling_only = yes
 						}
 					}
@@ -1629,16 +1595,15 @@ focus_tree = {
 					ruling_party = fascism
 					elections_allowed = no
 				}
-				add_country_leader_role = {
-					character = TUR_fevzi_cakmak
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = rexism
-						traits = {
-							maresal
-						}
+				create_country_leader = {
+					name = "Fevzi Çakmak"
+					desc = "POLITICS_FEVZI_CAKMAK_DESC"
+					picture = "GFX_portrait_tur_fevzi_cakmak"
+					expire = "1965.1.1"
+					ideology = rexism
+					traits = {
+						maresal
 					}
-					promote_leader = yes
 				}
 			}
 			custom_effect_tooltip = TUR_fatherland_first_tt
@@ -1734,7 +1699,7 @@ focus_tree = {
 					}
 				}
 			}
-			354 = {
+			353 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					custom_effect_tooltip = TUR_pontic_redoubt_erzurum_tt
@@ -2259,132 +2224,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 120
-			if = {
-				limit = {
-					has_idea = TUR_celal_bayar
-				}
-				remove_ideas = TUR_celal_bayar
-				add_ideas = TUR_said_i_nursi
-			}
-			else_if = {
-				limit = {
-					has_idea = TUR_adnan_menderes
-				}
-				remove_ideas = TUR_adnan_menderes
-				add_ideas = TUR_said_i_nursi
-			}
-			else_if = {
-				limit = {
-					has_idea = TUR_fevzi_cakmak_prime_minister
-				}
-				remove_ideas = TUR_fevzi_cakmak_prime_minister
-				add_ideas = TUR_said_i_nursi
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						OR = {
-							has_idea = TUR_ismet_inonu
-							has_idea = TUR_fevzi_cakmak_prime_minister
-							has_idea = TUR_sukru_saracoglu_prime_minister
-							has_idea = TUR_celal_bayar
-							has_idea = TUR_sevket_sureyya_aydemir
-							has_idea = TUR_recep_peker
-							has_idea = TUR_adnan_menderes
-							has_idea = TUR_nuri_demirag_prime_minister
-							has_idea = TUR_sefik_husnu
-							has_idea = TUR_said_i_nursi
-							has_idea = TUR_nihal_atsiz
-						}
-					}
-				}
-				add_ideas = TUR_said_i_nursi
-			}
-			else = {
-				add_war_support = 0.05
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = GER
-				limit = {
-					has_completed_focus = GER_revive_the_kaiserreich
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = ENG
-				limit = {
-					has_completed_focus = ENG_the_kings_party
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = SPA
-				limit = {
-					has_completed_focus = SPA_restore_the_monarchy
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = FRA
-				limit = {
-					has_completed_focus = FRA_repeal_the_law_of_exile
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = POR
-				limit = {
-					has_completed_focus = POR_restoration_of_the_monarchy
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = GRE
-				limit = {
-					has_completed_focus = GRE_the_right_to_rule
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = HUN
-				limit = {
-					has_completed_focus = HUN_elect_a_king
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
-			every_country_with_original_tag = {
-				original_tag_to_check = ROM
-				limit = {
-					has_completed_focus = ROM_his_majestys_loyal_government
-				}
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_righteous_traditionalists
-				}
-			}
 		}
 	}
 
@@ -2465,10 +2304,6 @@ focus_tree = {
 		id = TUR_join_the_central_powers
 		icon = GFX_focus_ger_revive_kaiserreich
 		available = {
-			OR = {
-				GER = { has_completed_focus = GER_the_central_powers }
-				HUN = { has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary }
-			}
 		}
 		mutually_exclusive = { focus = TUR_press_the_austro_hungarian_claim }
 		prerequisite = { focus = TUR_reclaim_macedonia }
@@ -2486,47 +2321,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			if = {
-				limit = {
-					GER = { 
-						has_government = neutrality
-						has_completed_focus = GER_the_central_powers
-					}
-				}
-				GER = {
-					country_event = { id = generic.2 }
-				}
-			}
-			else_if = {
-				limit = {
-					GER = { 
-						has_government = neutrality
-						NOT = { has_completed_focus = GER_the_central_powers }
-					}
-				}
-				GER = {
-					set_rule = { can_create_factions = yes }
-					create_faction = "GER_central_powers_faction"
-					country_event = { id = generic.2 }
-				}
-			}
-			else_if = {
-				limit = {
-					HUN = { has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary }
-				}
-				set_rule = { can_create_factions = yes }
-				create_faction = "GER_central_powers_faction"
-				HUN = {
-					if = {
-						limit = { ROOT = { is_in_faction = yes } }
-						country_event = generic.5 
-					}
-					else = { 
-						custom_effect_tooltip = invite_to_faction_tt
-					}
-				}
-			}
-			set_rule = { can_create_factions = yes }
 		}
 	}
 
@@ -2534,9 +2328,6 @@ focus_tree = {
 		id = TUR_press_the_austro_hungarian_claim
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
 		available = {
-			NOT = {
-				HUN = { has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary }
-			}
 		}
 		mutually_exclusive = { focus = TUR_join_the_central_powers }
 		prerequisite = { focus = TUR_reclaim_macedonia }
@@ -2550,48 +2341,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			add_state_claim = 106
-			add_state_claim = 105
-			add_state_claim = 108
-			add_state_claim = 107
-			add_state_core = 104
-			create_wargoal = {
-				type = take_state_focus
-				target = YUG
-			}
-			add_state_claim = 46
-			add_state_claim = 79
-			add_state_claim = 77
-			create_wargoal = {
-				type = take_state_focus
-				target = ROM
-			}
-			if = {
-				limit = {
-					AUS = { exists = yes }
-				}
-				AUS = {
-					add_timed_idea = { idea = GER_rekindle_imperial_sentiment days = 1095 }
-				}
-			}
-			if = {
-				limit = {
-					HUN = { exists = yes }
-				}
-				HUN = {
-					add_timed_idea = { idea = GER_rekindle_imperial_sentiment days = 1095 }
-				}
-			}
-			if = {
-				limit = {
-					CZE = { exists = yes }
-				}
-				CZE = {
-					add_timed_idea = { idea = GER_rekindle_imperial_sentiment days = 1095 }
-				}
-			}
-			custom_effect_tooltip = GER_rekindle_imperial_sentiment_tt
-			set_rule = { can_create_factions = yes }
 		}
 	}
 
@@ -2641,7 +2390,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader = {
-						character = TUR_abdulmejid_ii
+						name = "Abdulmejid II"
 						ruling_only = yes
 					}
 				}
@@ -2650,7 +2399,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					has_country_leader = {
-						character = TUR_durrushehvar_i
+						name = "Dürrüşehvar I"
 						ruling_only = yes
 					}
 				}
@@ -2659,12 +2408,10 @@ focus_tree = {
 			else = { 
 				effect_tooltip = { add_country_leader_trait = caliph }
 			}
-			hidden_effect = {
-				set_country_flag = TUR_ott_unified_flag
-				TUR_set_appropriate_cosmetic_tag = yes
-			}
-			#Set appropriate cosmetic tag to work with dynamic 3D models
 
+			#Set appropriate cosmetic tag to work with dynamic 3D models
+			set_country_flag = TUR_ott_unified_flag
+			TUR_set_appropriate_cosmetic_tag = yes
 			unlock_decision_category_tooltip = form_ottoman_empire_category
 		}
 	}
@@ -2770,6 +2517,9 @@ focus_tree = {
 		bypass = {
 			ROOT = {
 				controls_state = 677
+				controls_state = 554
+				controls_state = 553
+				controls_state = 680
 			}
 		}
 
@@ -2777,7 +2527,14 @@ focus_tree = {
 		completion_reward = {
 			677 = {
 				controller = {
-					country_event = { id = bftb_turkey.102 }
+					if = {
+						limit = {
+							controls_state = 554
+							controls_state = 553
+							controls_state = 680
+						}
+						country_event = { id = bftb_turkey.102 }
+					}
 				}
 			}
 		}
@@ -2855,8 +2612,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = TUR_unlock_camelry_effect_tt
-			hidden_effect = { set_technology = { camelry = 1 } } 
 		}
 	}
 
@@ -4484,7 +4239,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
-						is_core_of = PREV
+						is_core_of = ROOT
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -4501,7 +4256,7 @@ focus_tree = {
 				}
 				random_owned_controlled_state = {
 					limit = {
-						is_core_of = PREV
+						is_core_of = ROOT
 						free_building_slots = {
 							building = industrial_complex
 							size > 0
@@ -4766,7 +4521,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = TUR_combined_operational_strategies
 		cost = 10
-		dynamic = yes 
 		ai_will_do = {
 			base = 10
 		}
@@ -4858,57 +4612,6 @@ focus_tree = {
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			ENG = {
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_regional_force_of_stability
-				}
-			}
-			FRA = {
-				add_opinion_modifier = {
-					target = TUR
-					modifier = TUR_regional_force_of_stability
-				}
-			}
-			ENG = {
-				diplomatic_relation = {
-					country = TUR
-					relation = guarantee
-					active = yes
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "No Step Back"
-					}
-				}
-				if = {
-					limit = {
-						NOT = {
-							has_tech = basic_medium_tank
-						}
-					}
-					hidden_effect = { set_technology = { basic_medium_tank = 1 } }
-					custom_effect_tooltip = TUR_add_medium_tank_technology_tt
-				}
-				add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 25 }
-			}
-			else = {
-				if = {
-					limit = {
-						NOT = {
-							has_tech = basic_medium_tank_chassis
-						}
-					}
-					hidden_effect = { set_technology = { basic_medium_tank_chassis = 1 } }
-					custom_effect_tooltip = TUR_add_medium_tank_technology_tt
-				}
-				#TODO Gabriel give them a free design?
-				add_equipment_to_stockpile = { type = medium_tank_chassis_1 amount = 25 }
-			}
-		}
 	}
 
 	focus = {
@@ -5090,7 +4793,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = TUR_bomber_schematics
-				cost_reduction = 0.5
+				cost_reduction = 0.75
 				uses = 1
 				category = air_doctrine
 			}
@@ -5104,14 +4807,6 @@ focus_tree = {
 		prerequisite = { focus = TUR_american_motor_factories }
 		prerequisite = { focus = TUR_bomber_schematics }
 		available = {
-			ENG = {
-				NOT = {
-					OR = {
-						has_completed_focus = ENG_the_kings_party
-						has_completed_focus = ENG_concessions_to_the_trade_unions
-					}
-				}
-			}
 		}
 		x = 0
 		y = 2
@@ -5191,7 +4886,7 @@ focus_tree = {
 			}
 			add_doctrine_cost_reduction = {
 				name = TUR_expanding_our_navy
-				cost_reduction = 0.35
+				cost_reduction = 0.75
 				uses = 3
 				category = naval_doctrine
 			}
@@ -5209,19 +4904,6 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			base = 10
-		}
-
-		bypass = {
-			OR = {
-				ENG = { has_completed_focus = ENG_revisit_colonial_policy }
-				ENG = {
-					NOT = {
-						controls_state = 455
-						controls_state = 454
-						controls_state = 453
-					}
-				}
-			}
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -5489,10 +5171,6 @@ focus_tree = {
 			base = 10
 		}
 
-		bypass = {
-			ENG = { has_completed_focus = ENG_revisit_colonial_policy }
-		}
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			ENG = {
@@ -5593,7 +5271,7 @@ focus_tree = {
 					limit = {
 						has_resources_amount = {
 							resource = chromium
-							amount > 64
+							amount > 640
 						}
 					}
 					add_extra_state_shared_building_slots = 2
@@ -5672,8 +5350,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			show_unit_leaders_tooltip = ITA_ferdinando_umberto_filippo_adalberto
-
+			create_navy_leader = {
+				name = "Ferdinando Umberto Filippo Adalberto"
+				gfx = "GFX_portrait_ITA_ferdinando_adalberto"
+				traits = { gentlemanly media_personality career_officer superior_tactician }
+				skill = 4 #13
+				id = 77
+				attack_skill = 3
+				defense_skill = 3
+				maneuvering_skill = 4
+				coordination_skill = 3
+			}
 			add_ideas = TUR_the_antalya_naval_academy
 		}
 	}
@@ -5694,8 +5381,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			show_unit_leaders_tooltip = GER_hans_von_luck
-			
+			create_corps_commander = {
+				name = "Hans von Luck"
+				gfx = "GFX_portrait_GER_hans_von_luck"
+				traits = { career_officer armor_officer brilliant_strategist trickster }
+				skill = 3 #10
+				id = 75
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
 			if = {
 				limit = {
 					OR = {
@@ -5705,7 +5401,17 @@ focus_tree = {
 						}
 					}
 				}
-				show_unit_leaders_tooltip = GER_wilhelm_ritter_von_thoma
+				create_corps_commander = {
+					name = "Wilhelm Ritter von Thoma"
+					gfx = "GFX_portrait_GER_wilhelm_ritter_von_thoma"
+					traits = { war_hero brilliant_strategist armor_officer hill_fighter }
+					skill = 4 #13
+					id = 76
+					attack_skill = 5
+					defense_skill = 2
+					planning_skill = 4
+					logistics_skill = 2
+				}
 			}
 			add_ideas = TUR_german_advisors
 		}
@@ -6396,8 +6102,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = TUR_tuz_golu_training_facility
-			custom_effect_tooltip = TUR_unlock_camelry_effect_tt
-			hidden_effect = { set_technology = { camelry = 1 } } 
 		}
 	}
 
@@ -6540,173 +6244,6 @@ focus_tree = {
 			base = 10
 		}
 
-		completion_reward = { 
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "No Step Back"
-					}
-				}
-				if = { 
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-						GER = { has_tech = advanced_medium_tank }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = medium_tank_equipment_3
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-						GER = { has_tech = improved_medium_tank }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = medium_tank_equipment_2
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-						GER = { has_tech = basic_medium_tank }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = medium_tank_equipment_1
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = light_tank_equipment_1
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = { has_dlc = "Death or Dishonor" }
-						TUR = { is_in_faction_with = GER }
-					}
-					add_tech_bonus = {
-						name = TUR_turkish_panzers
-						bonus = 0.75
-						uses = 2
-						category = armor
-					}
-				}
-			}
-			else = {
-				if = { 
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-						GER = { has_tech = advanced_medium_tank_chassis }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = medium_tank_chassis_3
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-						GER = { has_tech = improved_medium_tank_chassis }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = medium_tank_chassis_2
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-						GER = { has_tech = basic_medium_tank_chassis }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = medium_tank_chassis_1
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						TUR = { is_in_faction_with = GER }
-					}
-					GER = { 
-						create_production_license = {
-							target = TUR
-							equipment = {
-							    type = light_tank_chassis_1
-							}
-							cost_factor = 0
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						NOT = { has_dlc = "Death or Dishonor" }
-						TUR = { is_in_faction_with = GER }
-					}
-					add_tech_bonus = {
-						name = TUR_turkish_panzers
-						bonus = 0.75
-						uses = 2
-						category = armor
-					}
-				}
-			}
-			add_tech_bonus = {
-				name = TUR_turkish_panzers
-				bonus = 1.5
-				uses = 1
-				category = armor
-			}
-		}
 	}
 
 	focus = {
@@ -6785,12 +6322,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			base = 10
-		}
-		available = {
-			SOV = {
-				has_government = communism
-				has_civil_war = no
-			}
 		}
 
 		bypass = {
@@ -7032,7 +6563,7 @@ focus_tree = {
 				limit = { has_state_flag = TUR_baku_adana_highway }
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}	
 			}
@@ -7044,7 +6575,7 @@ focus_tree = {
 				229 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = TUR_baku_adana_highway
@@ -7052,7 +6583,7 @@ focus_tree = {
 				230 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					set_state_flag = TUR_baku_adana_highway
@@ -7061,7 +6592,7 @@ focus_tree = {
 			800 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = TUR_baku_adana_highway
@@ -7069,7 +6600,7 @@ focus_tree = {
 			352 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = TUR_baku_adana_highway
@@ -7077,7 +6608,7 @@ focus_tree = {
 			353 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = TUR_baku_adana_highway
@@ -7085,7 +6616,7 @@ focus_tree = {
 			350 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = TUR_baku_adana_highway
@@ -7093,7 +6624,7 @@ focus_tree = {
 			344 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = TUR_baku_adana_highway
@@ -7408,11 +6939,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_corps_commander_role = {
-				character = TUR_hazi_aslanov
+			create_corps_commander = {
+				name = "Hazi Aslanov"
+				gfx = "GFX_portrait_sov_hazi_aslanov"
 				traits = { war_hero inflexible_strategist armor_officer winter_specialist }
 				skill = 4 #13
-				legacy_id = 78
+				id = 78
 				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 2
@@ -7615,7 +7147,7 @@ focus_tree = {
 			if = {
 				limit = {
 					has_country_leader = {
-						character = TUR_sevket_sureyya_aydemir
+						name = "Şevket Süreyya Aydemir"
 						ruling_only = no
 					}
 				}
@@ -7624,7 +7156,7 @@ focus_tree = {
 			else_if = {
 				limit = {
 					has_country_leader = {
-						character = TUR_sefik_husnu
+						name = "Sefik Hüsnü"
 						ruling_only = yes
 					}
 				}
@@ -7693,7 +7225,7 @@ focus_tree = {
 		completion_reward = {
 			add_doctrine_cost_reduction = {
 				name = TUR_taking_responsibility_for_the_air_war
-				cost_reduction = 0.35
+				cost_reduction = 0.75
 				uses = 3
 				category = air_doctrine
 			}
@@ -7837,10 +7369,7 @@ focus_tree = {
 			news_event = { id = bftb_news.208 hours = 6 }
 			if = {
 				limit = {
-					TUR = { 
-						is_in_faction = yes 
-						is_faction_leader = no
-					}
+					TUR = { is_in_faction = yes }
 				}
 				var:faction_leader = {
 					country_event = { id = bftb_turkey.137 }
@@ -8740,7 +8269,6 @@ focus_tree = {
 				}
 				TUR = { leave_faction = yes }
 			}
-			unlock_decision_category_tooltip = form_turan_category
 		}
 	}
 
@@ -8758,45 +8286,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { HUN = { has_completed_focus = HUN_proclaim_the_restoration_of_austria_hungary } }
-				}
-				every_state = { 
-					limit = { 
-						OR = {
-							is_core_of = HUN 
-							is_claimed_by = HUN
-						}
-					}
-					add_claim_by = TUR
-				}
-			}
-			else = {
-				43 = { add_claim_by = TUR }
-				154 = { add_claim_by = TUR }
-				155 = { add_claim_by = TUR }
-				76 = { add_claim_by = TUR }
-				84 = { add_claim_by = TUR }
-				83 = { add_claim_by = TUR }
-				82 = { add_claim_by = TUR }
-				764 = { add_claim_by = TUR }
-				45 = { add_claim_by = TUR }
-				664 = { add_claim_by = TUR }
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = HUN
-			}
-			if = { 
-				limit = {
-					ROM = { any_owned_state = { is_core_of = HUN } }
-				}
-				create_wargoal = {
-					type = annex_everything
-					target = ROM
-				}
-			}
 		}
 	}
 
@@ -8988,8 +8477,8 @@ focus_tree = {
 
 		completion_reward = {
 			air_experience = 5
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = TUR_sabiha_gokcen
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = TUR_sabiha_gokcen_bftb
 			if = {
 				limit = {
 					NOT = { has_completed_focus = TUR_learning_from_the_great_war }
@@ -9340,9 +8829,9 @@ focus_tree = {
 				uses = 1
 				category = tactical_bomber
 			}
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = TUR_invoke_the_methods_of_mehmed_ii
-				cost_reduction = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -9383,9 +8872,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = TUR_turkish_air_defense_platforms
-				cost_reduction = 0.25
+				bonus = 0.75
 				uses = 1
 				category = air_doctrine
 			}
@@ -9529,13 +9018,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = TUR_the_path_of_the_wolf
-				bonus = 1.00
+				bonus = 0.8
 				uses = 1
 				category = ss_tech
 			}
 			add_doctrine_cost_reduction = {
 				name = TUR_the_path_of_the_wolf
-				cost_reduction = 0.35
+				cost_reduction = 0.75
 				uses = 2
 				category = trade_interdiction_tree
 			}

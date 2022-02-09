@@ -7,7 +7,8 @@ state={
 	state_category = town
 	
 	resources={
-		oil=4 # was: 6
+		oil=140 # was: 6
+		aluminium = 250
 	}
 
 	history={
@@ -19,17 +20,14 @@ state={
 			11561 1
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			industrial_complex = 2
 			air_base = 2
 		}
 		add_core_of = SOV
-		add_core_of = URG
 	}
 
 	provinces={
 		453 472 486 6423 9419 9433 9463 9479 11422 11437 11452 11561 
 	}
-
-	local_supplies=0.0 
 }

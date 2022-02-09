@@ -15,7 +15,7 @@ country_event = {
 	
 	option = { # Breaking point!
 		name = china.1.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 100 }
 		effect_tooltip = {
 			JAP = {
 				add_war_support = 0.05
@@ -47,60 +47,60 @@ country_event = {
 			}
 		}
 	}
-	option = { # Make more concessions
-		name = china.1.b
-		ai_chance = { factor = 10 }
-		JAP = {
-			set_truce = { target = ROOT days = 180 }
-			effect_tooltip = {
-				transfer_state = 608
-				transfer_state = 597
-				transfer_state = 614
-				add_state_claim = 613
-				if = {
-					limit = {
-						ROOT = { controls_state = 743 }
-					}
-					transfer_state = 743
-				}
-			}
-			country_event = { id = japan.2 }
-		}
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				OR = {
-					is_historical_focus_on = yes
-					has_country_flag = CHI_AI_RANDOM_HISTORICAL
-					has_game_rule = {
-						rule = CHI_ai_behavior
-						option = HISTORICAL
-					}
-				}
-				NOT = {
-					has_game_rule = { #used here instead of checking for default because people might not have WTT
-						rule = CHI_ai_behavior
-						option = ALTERNATE
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				JAP = {
-					has_war = yes
-				}
-			}
-			modifier = {
-				factor = 0.25
-				JAP = {
-					any_enemy_country = {
-						is_major = yes
-					}
-				}
-			}
-		}
-	}
+	# option = { # Make more concessions
+	# 	name = china.1.b
+	# 	ai_chance = { factor = 0 }
+	# 	JAP = {
+	# 		set_truce = { target = ROOT days = 180 }
+	# 		effect_tooltip = {
+	# 			transfer_state = 608
+	# 			transfer_state = 597
+	# 			transfer_state = 614
+	# 			add_state_claim = 613
+	# 			if = {
+	# 				limit = {
+	# 					ROOT = { controls_state = 743 }
+	# 				}
+	# 				transfer_state = 743
+	# 			}
+	# 		}
+	# 		country_event = { id = japan.2 }
+	# 	}
+	# 	ai_chance = {
+	# 		factor = 50
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				is_historical_focus_on = yes
+	# 				has_country_flag = CHI_AI_RANDOM_HISTORICAL
+	# 				has_game_rule = {
+	# 					rule = CHI_ai_behavior
+	# 					option = HISTORICAL
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_game_rule = { #used here instead of checking for default because people might not have WTT
+	# 					rule = CHI_ai_behavior
+	# 					option = ALTERNATE
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.5
+	# 			JAP = {
+	# 				has_war = yes
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0.25
+	# 			JAP = {
+	# 				any_enemy_country = {
+	# 					is_major = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 # Germany Withdraws Advisors
@@ -730,204 +730,6 @@ country_event = {
 	}
 }
 
-# Japan attacks - Chinese Popular Front forms
-country_event = {
-	id = china.100
-	title = china.100.t
-	desc = china.100.d
-	picture = GFX_report_event_chinese_officers
-
-	fire_only_once = yes
-
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		tag = CHI
-		has_war_with = JAP
-		JAP = { has_offensive_war = yes }
-		has_defensive_war = yes
-		NOT = { owns_state = 622 }		
-		NOT = { has_global_flag = CHI_unite }
-		NOT = { has_global_flag = CHI_no_national_front_flag }
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		ai_chance = { factor = 100 }
-		name = china.100.a
-		create_faction = chinese_united_front
-		#load_oob = "CHI_united_front"
-		set_global_flag = CHI_unite
-
-	}
-	#option = {
-	#	name = china.100.b
-	#	#Nothing
-	#}
-}
-
-# Japan attacks - Chinese Popular Front forms
-country_event = {
-	id = china.101
-	title = china.101.t
-	desc = china.101.d
-	picture = GFX_report_event_chinese_officers
-
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		NOT = { has_country_flag = china.101_fired }
-		has_global_flag = CHI_unite
-		OR = {
-			tag = GXC
-			tag = YUN
-			tag = XSM
-		}
-		CHI = {
-			has_war_with = JAP 
-			has_defensive_war = yes
-		}
-		JAP = { has_offensive_war = yes }
-
-		is_puppet = no
-		NOT = { has_war_with = CHI }
-		AND = {
-			has_war = no
-			is_in_faction = no
-		}
-	}
-
-	immediate = {
-		set_country_flag = china.101_fired
-	}
-
-	mean_time_to_happen = {
-		days = 14
-	}
-	
-	option = {
-		ai_chance = { factor = 100 }
-		name = china.101.a
-		effect_tooltip = {
-			CHI = { 
-				annex_country = { target = ROOT transfer_troops = yes }
-			}
-		}
-		custom_effect_tooltip = GAME_OVER_TT
-		hidden_effect = {
-			CHI = { country_event = china.103 }
-		}
-	}
-	option = {
-		ai_chance = { factor = 0 }
-		name = china.101.b
-		CHI = { 
-			add_to_faction = ROOT 
-			country_event = china.106
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = "CHI"
-			value = 200
-		}
-		#Nothing
-	}
-}
-
-# Japan attack - Sinkiang can join if they want to
-country_event = {
-	id = china.102
-	title = china.102.t
-	desc = china.102.d
-	picture = GFX_report_event_chinese_officers
-
-	fire_only_once = yes
-
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		has_global_flag = CHI_unite
-		tag = SIK
-		GER = { has_war_with = SOV }
-		CHI = {
-			has_war_with = JAP 
-			has_defensive_war = yes
-		}
-		NOT = { has_war_with = CHI }
-		JAP = { has_offensive_war = yes }
-		
-		is_puppet = no
-		AND = {
-			has_war = no
-			is_in_faction = no
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 7
-	}
-	
-	option = {
-		name = china.102.a
-		ai_chance = { 
-			base = 0
-			modifier = {
-				add = 50
-				SOV = {
-					has_war_with = GER
-				}
-				GER = {
-					is_in_faction_with = JAP
-				}
-			}
-		}
-		effect_tooltip = {
-			CHI = { 
-				annex_country = { target = ROOT transfer_troops = yes }				
-			}
-		}
-		custom_effect_tooltip = GAME_OVER_TT
-		hidden_effect = {
-			CHI = { country_event = china.103 }
-		}
-	}
-	option = {
-		name = china.102.b
-		ai_chance = { 
-			base = 0
-			modifier = {
-				add = 50
-				SOV = {
-					has_war_with = GER
-				}
-				GER = {
-					is_in_faction_with = JAP
-				}
-				is_in_faction = no
-			}
-		}
-		CHI = { add_to_faction = ROOT }
-		add_ai_strategy = {
-			type = alliance
-			id = "CHI"
-			value = 200
-		}
-	}
-	option = {
-		ai_chance = { 
-			factor = 10
-		}
-		name = china.102.c
-		#Nothing
-	}
-}
-
 # FROM joins China (annex)
 country_event = {
 	id = china.103
@@ -941,207 +743,6 @@ country_event = {
 		name = china.103.a
 		set_global_flag = CHI_unite_PRC
 		annex_country = { target = FROM transfer_troops = yes }
-	}
-}
-
-# PRC option to join China faction
-country_event = {
-	id = china.104
-	title = china.104.t
-	desc = china.104.d
-	picture = GFX_report_event_chinese_army_training
-
-	fire_only_once = yes
-
-	trigger = {
-		NOT = {
-			has_dlc = "Waking the Tiger"
-		}
-		has_global_flag = CHI_unite_PRC
-		tag = PRC
-		CHI = {
-			has_war_with = JAP 
-			has_defensive_war = yes
-		}
-		JAP = { has_offensive_war = yes }
-		CHI = { is_faction_leader = yes }
-		NOT = {
-			has_war_with = CHI
-			is_puppet = yes
-		}
-
-		NOT = {
-			AND = {
-				has_war = yes
-				is_in_faction = yes
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 10
-	}
-	
-	option = {
-		ai_chance = { factor = 100 }
-		name = china.104.a
-		set_country_flag = PRC_joined_CHI_against_JAP
-		CHI = {
-			country_event = china.106
-			add_to_faction = ROOT
-			PRC = { add_opinion_modifier = { target = CHI modifier = unstable_alliance } }
-			CHI = { add_opinion_modifier = { target = PRC modifier = unstable_alliance } }			
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = "CHI"
-			value = 200
-		}
-		add_to_war = {
-			targeted_alliance = CHI
-			enemy = JAP
-			hostility_reason = asked_to_join
-		}
-		if = {
-			limit = { 
-				NOT = { 
-					OR = {
-						SHX = { is_puppet_of = JAP } 
-						SHX = { is_in_faction_with = JAP}
-					}
-				} 
-			}
-			SHX = { country_event = china.105 }
-		}
-		if = {
-			limit = { NOT = { has_war_with = SOV } }
-			custom_effect_tooltip = china.104_PRC_SOV_reinforcements
-		}
-		hidden_effect = {
-			news_event = { id = news.288 hours = 6 }
-			if = {
-				limit = { 
-					NOT = { has_war_with = SOV }
-					any_country = {
-						OR = {
-							tag = ROOT
-							is_in_faction_with = ROOT
-						}
-						has_full_control_of_state = 621
-					}
-				}
-				load_oob = "PRC_SOV_reinforcements"
-			}
-		}
-	}
-
-	#Nothing
-	option = {
-		ai_chance = { factor = 0 }
-		name = china.104.b
-	}
-}
-
-# PRC annexs SHX (puppet option for player)
-country_event = {
-	id = china.105
-	title = china.105.t
-	desc = china.105.d
-	picture = GFX_report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-
-	option = {
-		ai_chance = { factor = 100 }
-		name = china.105.a
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
-		custom_effect_tooltip = GAME_OVER_TT
-	}
-
-	#Nothing
-	option = {
-		ai_chance = { factor = 0 }
-		FROM = { puppet = ROOT }
-		name = china.105.b
-	}
-}
-
-# China - Info that PRX has joined faction
-country_event = {
-	id = china.106
-	title = china.106.t
-	desc = china.106.d
-	picture = GFX_report_event_chinese_army_training
-
-	is_triggered_only = yes
-
-	option = {
-		name = china.106.a
-	}
-
-}
-
-# China and Japan no longer at war - Break up faction and Mao claims his part of China
-country_event = {
-	id = china.107
-	title = china.107.t
-	desc = {
-		text = china.107.d_PRC_joined
-		trigger = { 
-			PRC = { 
-				has_country_flag = PRC_joined_CHI_against_JAP 
-			} 
-		} 
-	}
-	desc = {
-		text = china.107.d_PRC_refused
-		trigger = { 
-			PRC = { 
-				NOT = { has_country_flag = PRC_joined_CHI_against_JAP } 
-			} 
-		}
-	}
-
-	picture = GFX_report_event_generic_sign_treaty1
-
-	fire_only_once = yes
-
-	trigger = {
-		is_subject = no
-		PRC = { is_subject = no }
-		tag = CHI
-		has_global_flag = CHI_unite
-		NOT = { has_war_with = JAP }		
-	}
-
-	mean_time_to_happen = {
-		days = 60
-	}
-
-	option = {
-		name = china.107.a
-		if = {
-			limit = { NOT = { PRC = { has_country_flag = PRC_joined_CHI_against_JAP } } }
-			dismantle_faction = yes
-			PRC = { remove_opinion_modifier = { target = CHI modifier = unstable_alliance } }
-			CHI = { remove_opinion_modifier = { target = PRC modifier = unstable_alliance } }			
-		}
-
-		if = {
-			limit = {
-				PRC = { has_country_flag = PRC_joined_CHI_against_JAP }
-			}
-			custom_effect_tooltip = china.107_tt
-			effect_tooltip = {
-				dismantle_faction = yes
-				PRC = { remove_opinion_modifier = { target = CHI modifier = unstable_alliance } }
-				CHI = { remove_opinion_modifier = { target = PRC modifier = unstable_alliance } }				
-			}
-		}
-		hidden_effect = {
-			PRC = { country_event = { id = china.111 } }
-			PRC = { country_event = { id = china.108 days = 90 } }
-		}
 	}
 }
 
@@ -1454,7 +1055,7 @@ country_event = {
 		trigger = {
 			owns_state = 608
 		}
-		set_capital = { state = 608 }
+		set_capital =  { state = 608 }
 	}
 
 	#Move to Nanjing
@@ -1472,7 +1073,7 @@ country_event = {
 		}
 		custom_effect_tooltip = CHI_nanjing_tt
 		hidden_effect = {
-			set_capital = { state = 613 }
+			set_capital =  { state = 613 }
 		}
 	}
 
@@ -1486,6 +1087,344 @@ country_event = {
 				NOT = { 608 = { is_controlled_by = PRC } }
 				NOT = { 613 = { is_controlled_by = PRC } }
 			}			
+		}
+	}
+}
+
+country_event = {
+	id = china.999
+	title = china.999.t
+	desc = china.999.d
+	picture = GFX_report_event_chinese_officers
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	trigger = {
+		tag = CHI
+		is_ai = yes
+	}
+	
+	option = {
+		name = china.5.a
+		add_ideas = CHI_ai_boost
+		army_experience = 100
+	}
+}
+
+country_event = {
+	id = china.1000
+	title = china.1000.t
+	desc = china.1000.d
+	picture = GFX_report_event_chinese_officers
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	trigger = {
+		tag = CHI
+		is_ai = yes
+		has_war_with = JAP
+		casualties > 500000
+		surrender_progress > 0.15
+		NOT = { JAP = { is_ai = yes } }
+	}
+	
+	option = {
+		name = china.5.a
+		division_template = {
+			name = "Juntuan"
+			priority = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+
+			}
+		}
+		every_state = {
+			limit = {	
+				NOT = {
+					state = 616
+				}
+				AND = {
+					any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+					is_controlled_by = CHI
+				}
+								
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+		}
+	}
+}
+
+country_event = {
+	id = china.1001
+	title = china.1001.t
+	desc = china.1001.d
+	picture = GFX_report_event_chinese_officers
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	trigger = {
+		tag = CHI
+		is_ai = yes
+		has_war_with = JAP		
+		casualties > 1250000
+		surrender_progress > 0.3
+		NOT = { JAP = { is_ai = yes } }
+	}
+	
+	option = {
+		name = china.5.a
+		division_template = {
+			name = "Juntuan"
+			priority = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+
+			}
+		}
+		every_state = {
+			
+			limit = {	
+				NOT = {
+					state = 616
+				}
+				AND = {
+					any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+					is_controlled_by = CHI
+				}
+				
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+		}
+	}
+}
+
+country_event = {
+	id = china.1002
+	title = china.1002.t
+	desc = china.1002.d
+	picture = GFX_report_event_chinese_officers
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	trigger = {
+		tag = CHI
+		is_ai = yes
+		has_war_with = JAP
+		OR = {
+			casualties > 3500000
+			surrender_progress > 0.6
+		}
+		NOT = { JAP = { is_ai = yes } }
+	}
+	
+	option = {
+		name = china.5.a
+		division_template = {
+			name = "Juntuan"
+			priority = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+
+			}
+		}
+		every_state = {
+			limit = {
+				NOT = {
+					state = 616
+				}	
+				AND = {
+					any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+					is_controlled_by = CHI
+				}
+				
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
+			create_unit = {
+				division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+				owner = CHI
+			}
 		}
 	}
 }

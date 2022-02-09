@@ -2,19 +2,20 @@ state={
 	id=431
 	name="STATE_431"
 	resources={
-		steel=13.000
-		# tungsten=11.000
+		steel=240.000
+		tungsten=210.000
 	}
 
 	history={
 		owner = RAJ
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
-			dockyard = 1
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 4
+			dockyard = 3
 			air_base = 2
 			4245 = {
-				naval_base = 6
+				naval_base = 9
 
 			}
 
@@ -31,6 +32,4 @@ state={
 	manpower=18778100
 	buildings_max_level_factor=1.000
 	state_category=city
-
-	local_supplies=0.0 
 }

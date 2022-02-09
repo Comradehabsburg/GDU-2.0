@@ -7,9 +7,12 @@ state={
 	state_category = rural
 
 	history={
-		owner = URG
+		owner = OBG
+		add_core_of = OBG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
 			12994 = {
 				naval_base = 1
 			}
@@ -17,7 +20,6 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = URG
 		victory_points = {
 			12994 1
 		}
@@ -27,6 +29,4 @@ state={
 	provinces={
 		5131 5146 5171 5192 5228 8217 8231 11000 12914 12994 
 	}
-
-	local_supplies=0.0 
 }

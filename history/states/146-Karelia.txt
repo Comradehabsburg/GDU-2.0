@@ -7,10 +7,10 @@ state={
 	history={
 		owner = FIN
 		add_core_of = FIN
-		add_core_of = URG
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			infrastructure = 2
+			industrial_complex = 5
+			arms_factory = 2
 
 			#Mannerheim Line
 			9100 = {
@@ -24,7 +24,10 @@ state={
 			}
 		}
 		victory_points = {
-			9206 3 
+			9206 5 
+		}
+		victory_points = {
+			3187 1
 		}
 		
 
@@ -35,6 +38,4 @@ state={
 	}
 	manpower=418635
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

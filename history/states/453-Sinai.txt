@@ -8,25 +8,20 @@ state={
 	
 	
 	history = {
+		set_state_flag = UK_controls
 		owner = ENG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 
+		add_core_of = EGY
 		victory_points = {
-			4161 3
+			1155  1
 		}
-		victory_points = {
-			10099 1
-		}
-
-		add_core_of = URG
 
 	}
 
 	provinces={
 		1112 1155 4161 9947 10002 10099 11922 11979 12073 
 	}
-
-	local_supplies=7.0 
 }

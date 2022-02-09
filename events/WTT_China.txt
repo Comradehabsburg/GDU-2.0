@@ -20,17 +20,6 @@ country_event = {
 				has_global_flag = CHI_xian_refused
 				factor = 0
 			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_war_with = PRC
-					has_war_with = YUN
-					has_war_with = SIK
-					has_war_with = XSM
-					has_war_with = GXC
-					has_war_with = CHI
-				}
-			}
 		}
 		FROM = {
 			puppet = ROOT
@@ -182,15 +171,16 @@ country_event = {
 
 	trigger = {
 		tag = event_target:WTT_current_china_leader
-		any_other_country = {
-			has_completed_focus = PRC_infiltration
+		any_country = {
+			always = no
 			has_government = communism
 		}
 	}
 	
 	immediate = {
-		every_controlled_state = { 
+		every_state = { 
 			limit = {
+				is_controlled_by = ROOT
 				has_any_PRC_infiltration_flag = yes
 				NOT = { has_state_flag = discovered_infiltration }
 			}
@@ -241,18 +231,6 @@ country_event = {
 					}
 
 					set_global_flag = new_infiltration_detected
-					if = {
-						limit = { 
-							ROOT = { NOT = { has_country_flag = CHI_first_infiltration_discovered } }
-						}
-						ROOT = { set_country_flag = CHI_first_infiltration_discovered }
-					}
-					if = {
-						limit = {
-							ROOT = { has_country_flag = CHI_clean_sweep }
-						}
-						ROOT = { clr_country_flag = CHI_clean_sweep }
-					}
 				}
 				90 = {
 					#Nothing happens
@@ -267,11 +245,7 @@ country_event = {
 			if = {
 				limit = { ROOT_any_state_infiltration_detected = yes }
 				country_event = wtt_infiltration.3
-				else_if = {
-					limit = { 
-						has_country_flag = CHI_first_infiltration_discovered 
-						NOT = { has_country_flag = CHI_clean_sweep }
-					}
+				else = {
 					#No infiltrations discovered
 					country_event = wtt_infiltration.4
 				}
@@ -454,12 +428,6 @@ country_event = {
 	picture = GFX_report_event_chinese_soldiers
 
 	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = CHI_clean_sweep
-		}
-	}
 	
 	option = {
 		name = wtt_infiltration.4.a
@@ -486,164 +454,6 @@ country_event = {
 #### # ##  #   #    #  # #### ##  #### # ##
 #  # #  #  #  ###    ##  #  # #   #  # #  #
 
-#Infiltration for MAN and MEN states
-#Hidden event that check for infiltration and successful detection approximately monthly
-country_event = {
-	id = wtt_infiltration.20
-
-	hidden = yes
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	trigger = {
-		OR = {
-			609 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			610 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			611 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			612 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			714 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-			715 = {
-				is_controlled_by_ROOT_or_subject = yes
-			}
-		}
-		any_other_country = {
-			has_completed_focus = PRC_anti_japanese_expedition
-			has_government = communism
-			not = { is_in_faction_with = ROOT }
-		}		
-	}
-	
-	immediate = {
-		every_state = { ##WTT_TODO_CD We have to do this per state atm. Can only have 1 instance of an event in window
-			limit = {
-				CONTROLLER = {
-					OR = {
-						is_subject_of = ROOT
-						tag = ROOT
-					}
-				}
-				has_any_PRC_infiltration_flag = yes
-				NOT = { has_state_flag = discovered_infiltration }
-			}
-			random_list = {
-				10 = { #TODO_WTT_CD change chance
-					set_state_flag = discovered_infiltration
-					save_event_target_as = infiltrated_state
-
-					if = {
-						limit = { state = 609 }
-						ROOT = {
-							if = {
-								limit = { is_subject = yes }
-								OVERLORD = { country_event = wtt_infiltration.609 }
-							}
-							else = { country_event = wtt_infiltration.609 }
-						}
-					} 
-					if = {
-						limit = { state = 610 }
-						ROOT = {
-							if = {
-								limit = { is_subject = yes }
-								OVERLORD = { country_event = wtt_infiltration.610 }
-							}
-							else = { country_event = wtt_infiltration.610 }
-						}
-					} 
-					if = {
-						limit = { state = 611 }
-						ROOT = {
-							if = {
-								limit = { is_subject = yes }
-								OVERLORD = { country_event = wtt_infiltration.611 }
-							}
-							else = { country_event = wtt_infiltration.611 }
-						}
-					} 
-					if = {
-						limit = { state = 612 }
-						ROOT = {
-							if = {
-								limit = { is_subject = yes }
-								OVERLORD = { country_event = wtt_infiltration.612 }
-							}
-							else = { country_event = wtt_infiltration.612 }
-						}
-					} 
-					if = {
-						limit = { state = 714 }
-						ROOT = {
-							if = {
-								limit = { is_subject = yes }
-								OVERLORD = { country_event = wtt_infiltration.714 }
-							}
-							else = { country_event = wtt_infiltration.714 }
-						}
-					} 
-					if = {
-						limit = { state = 715 }
-						ROOT = {
-							if = {
-								limit = { is_subject = yes }
-								OVERLORD = { country_event = wtt_infiltration.715 }
-							}
-							else = { country_event = wtt_infiltration.715 }
-						}
-					}
-					set_global_flag = new_infiltration_detected
-					if = {
-						limit = { 
-							ROOT = { 
-								NOT = { has_country_flag = PRC_anti_japanese_first_detection } 
-							} 
-						}
-						ROOT = { set_country_flag = PRC_anti_japanese_first_detection }
-					}
-					if = {
-						limit = { 
-							ROOT = { has_country_flag = PRC_anti_japanese_clean_sweep }
-						}
-						ROOT = { clr_country_flag = PRC_anti_japanese_clean_sweep }
-					}
-				}
-				0 = {
-					#Nothing happens
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				NOT = { has_global_flag = new_infiltration_detected }
-			}
-			if = {
-				limit = { ROOT_any_anti_JAP_state_infiltration_detected = yes }
-				country_event = wtt_infiltration.23
-				else_if = {
-					limit = { 
-						has_country_flag = PRC_anti_japanese_first_detection
-						NOT = { has_country_flag = PRC_anti_japanese_clean_sweep }
-					}
-					#No infiltrations discovered
-					country_event = wtt_infiltration.24
-				}
-			}
-		}
-		clr_global_flag = new_infiltration_detected
-	}
-}
-
 #No infiltration detected but still some detected in the country
 country_event = {
 	id = wtt_infiltration.23
@@ -666,16 +476,7 @@ country_event = {
 	picture = GFX_report_event_manchukuo_army_2
 
 	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = PRC_anti_japanese_clean_sweep }
-				}
-				set_country_flag = PRC_anti_japanese_clean_sweep
-			}
-		}
-	}
+	
 	option = {
 		name = wtt_infiltration.24.a
 	}
@@ -874,12 +675,6 @@ country_event = {
 				has_war_with = JAP
 			}
 			modifier = {
-				PRC = {
-					has_completed_focus = PRC_social_democracy
-				}
-				factor = 2 #Commies being nice to us
-			}
-			modifier = {
 				CHI_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
@@ -1026,7 +821,6 @@ country_event = {
 			NOT = {
 				has_country_flag = SOV_xian_refuse
 			}
-			SOV = { has_government = communism } # No point in asking a non-communist SOV
 		}
 		name = wtt_xian_incident.7.a #ask Soviets
 		ai_chance = {
@@ -1488,7 +1282,8 @@ country_event = {
 			}
 		}
 		set_country_flag = joseph_stilwell_sent_to_china
-		USA_douglas_macarthur = {
+		random_army_leader = { 
+			limit = { has_id = 57 }
 			set_nationality = FROM
 			save_event_target_as = CHI_USA_general
 		}
@@ -1507,7 +1302,8 @@ country_event = {
 			}
 		}
 		set_country_flag = joseph_stilwell_sent_to_china
-		USA_dwight_d_eisenhower = { 
+		random_army_leader = { 
+			limit = { has_id = 602 }
 			set_nationality = FROM
 			save_event_target_as = CHI_USA_general
 		}
@@ -1959,7 +1755,7 @@ country_event = {
 		trigger = {
 			owns_state = 608
 		}
-		set_capital = { state = 608 }
+		set_capital =  { state = 608 }
 	}
 
 	#Move to Nanjing
@@ -1973,7 +1769,7 @@ country_event = {
 		}
 		custom_effect_tooltip = CHI_nanjing_tt
 		hidden_effect = {
-			set_capital = { state = 613 }
+			set_capital =  { state = 613 }
 		}
 	}
 

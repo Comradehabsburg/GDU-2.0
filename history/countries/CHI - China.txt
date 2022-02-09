@@ -9,70 +9,25 @@ if = {
 	}
 }
 
-recruit_character = CHI_chiang_kaishek
-recruit_character = CHI_zhang_guotao
-recruit_character = CHI_wang_jingwei
-recruit_character = CHI_weng_wenhao
-recruit_character = CHI_tu_yuming
-recruit_character = CHI_hsueh_yueh
-recruit_character = CHI_tai_anlan
-recruit_character = CHI_wang_yaowu
-recruit_character = CHI_sun_li_jen
-recruit_character = CHI_hu_zongnan
-recruit_character = CHI_gu_zhutong
-recruit_character = CHI_wei_lihuang
-recruit_character = CHI_fu_zuoyi
-recruit_character = CHI_zhang_xueliang
-recruit_character = CHI_fang_zeyi
-recruit_character = CHI_zhu_de
-recruit_character = CHI_chen_cheng
-recruit_character = CHI_li_zongren
-recruit_character = CHI_bo_yibo
-recruit_character = CHI_huang_shen
-recruit_character = CHI_chen_jitang
-recruit_character = CHI_wang_shuming
-recruit_character = CHI_bai_chongxi
-recruit_character = CHI_zhou_zhirou
-recruit_character = CHI_xiao_yisu
-recruit_character = CHI_chen_shaokuan
-recruit_character = CHI_xiao_jinguang
-recruit_character = CHI_yu_hanmou
-recruit_character = CHI_he_yingqin
-recruit_character = CHI_gao_zhihang
-recruit_character = CHI_h_h_kung
-recruit_character = CHI_chen_guofu
-recruit_character = CHI_chiang_ching_kuo
-recruit_character = CHI_chen_yi
-recruit_character = CHI_soong_mei_ling
-recruit_character = CHI_random_prince_of_terror
-recruit_character = CHI_lin_sen
-
 set_stability = 0.2
 set_war_support = 0.5
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	gw_artillery = 1
-	interwar_antiair = 1
+	tech_support = 1
 	early_fighter = 1
 	early_bomber = 1
 	mass_assault = 1
 	fleet_in_being = 1
+	support_weapons = 1
+	tech_recon = 1
+	hq_1 = 1
+	gw_artillery = 1
+	motorised_infantry = 1
+	militia_tech = 1
 	basic_train = 1
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-	}
-	else = {
-		set_technology = {
-			gwtank = 1
-		}
-	}
-}
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -120,6 +75,7 @@ if = {
 		CHI_incompetent_officers
 		free_trade
 		CHI_hyper_inflation_1
+		CHI_diplo
 	}
 }
 save_global_event_target_as = WTT_current_china_leader
@@ -129,7 +85,6 @@ set_convoys = 40
 1939.1.1 = {
 
 	add_political_power = 1198
-	add_command_power = 100
 	set_stability = 0.5
 	set_war_support = 0.7
 	
@@ -255,17 +210,78 @@ set_convoys = 40
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 100
+	communism = 100
 }
 
-add_opinion_modifier = { target = PRC modifier = hostile_status }
+recruit_character = PRC_mao_zedong
+recruit_character = PRC_zhu_de
+recruit_character = PRC_chen_yi
+recruit_character = PRC_peng_dehuai
+recruit_character = PRC_lin_biao
+recruit_character = PRC_kwong_hu
+recruit_character = PRC_luo_zhao
+recruit_character = PRC_liang_ma
+recruit_character = PRC_ma_jin
+recruit_character = PRC_ziao_jingguang
+recruit_character = PRC_nie_rongzhen
+recruit_character = PRC_su_yu
+recruit_character = PRC_liu_bocheng
+recruit_character = PRC_chen_geng
+recruit_character = PRC_gao_qiu
+recruit_character = PRC_liang_shen
+recruit_character = PRC_otto_braun
+recruit_character = PRC_gao_gang
+recruit_character = PRC_fang_zeyi
+recruit_character = PRC_xu_xiangqian
+recruit_character = PRC_deng_ye_peng
+recruit_character = PRC_ye_jianying
+recruit_character = PRC_hsia_tian
+recruit_character = PRC_zhang_wei
+recruit_character = PRC_zhou_enlai
+recruit_character = PRC_liu_shaoqi
+recruit_character = PRC_lin_bojiu
+recruit_character = PRC_dong_biwu
+recruit_character = PRC_he_yuandang
+recruit_character = CHI_chiang_ching_kuo
+recruit_character = CHI_h_h_kung
+recruit_character = CHI_chen_yi
+recruit_character = CHI_random_prince_of_terror
+recruit_character = CHI_lin_sen
+recruit_character = CHI_chen_guofu
+recruit_character = CHI_soong_mei_ling
+recruit_character = CHI_bo_yibo
+recruit_character = CHI_fang_zeyi
+recruit_character = CHI_huang_shen
+recruit_character = CHI_zhu_de
+recruit_character = CHI_chen_jitang
+recruit_character = CHI_li_zongren
+recruit_character = CHI_he_yingqin
+recruit_character = CHI_xiao_jinguang
+recruit_character = CHI_bai_chongxi
+recruit_character = CHI_chen_shaokuan
+recruit_character = CHI_wang_shuming
+recruit_character = CHI_zhou_zhirou
+recruit_character = CHI_gao_zhihang
+recruit_character = CHI_xiao_yisu
+recruit_character = CHI_chen_cheng
+recruit_character = CHI_yu_hanmou
+recruit_character = CHI_tu_yuming
+recruit_character = CHI_tai_anlan
+recruit_character = CHI_wang_yaowu
+recruit_character = CHI_sun_li_jen
+recruit_character = CHI_hu_zongnan
+recruit_character = CHI_gu_zhutong
+recruit_character = CHI_wei_lihuang
+recruit_character = CHI_fu_zuoyi
+recruit_character = CHI_zhang_xueliang
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -286,9 +302,8 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = empty
+			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
 		}
 	}
 	# Light Cruisers #
@@ -305,7 +320,6 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -324,7 +338,6 @@ if = {
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -341,7 +354,6 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			mid_1_custom_slot = ship_torpedo_1
-			mid_2_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
 	}

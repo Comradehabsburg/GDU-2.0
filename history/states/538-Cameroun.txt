@@ -6,19 +6,17 @@ state={
 	
 	state_category = wasteland
 	resources={
-		rubber=5 # was: 5
+		rubber=80 # was: 5
 	}
 	history={
 		owner = BEL
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = COG
+		add_core_of = ZIM
 	}
 
 	provinces={
 		988 7219 7931 8016 8048 10071 10883 10951 12741 12775 12824 
 	}
-
-	local_supplies=1.0 
 }

@@ -1,7 +1,416 @@
 ideas = {
 	
 	country = {
-		MAN_exiled_imperial_family = {
+		MAN_banners = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription_factor = -0.5
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+	
+		MAN_five_peoples_army_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.02
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+	
+		MAN_general_staff = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = YUG_yugoslavian_general_staff
+			
+			modifier = {
+				army_leader_start_planning_level= 1
+				army_leader_start_logistics_level= 1
+			}
+		}
+	
+		MAN_japanese_loans = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+			
+			modifier = {
+				political_power_cost = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	
+		MAN_national_rebuilding_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industry_repair_factor = 1.0
+				production_factory_start_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+	
+		MAN_five_equal_peoples_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = 5_peoples
+			
+			modifier = {
+				stability_factor = 0.2
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		MAN_manchu_court = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = man_low_legitimacy5
+			
+			modifier = {
+				political_power_factor = 0.25
+				research_speed_factor = 0.1
+			}
+		}
+	
+		MAN_militarism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_militarism
+			
+			modifier = {
+				training_time_army_factor = 0.25
+				attrition = -0.1
+				supply_consumption_factor = -0.10
+				no_supply_grace = 12
+				experience_loss_factor = -0.1
+				army_attack_factor = 0.05
+				special_forces_cap = 0.2
+			}
+		}
+	
+		MAN_restore_order = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = generic_purge
+			
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		
+		MAN_reform_bureaucracy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = HUN_treaty_of_triannon
+			
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+	
+		MAN_slave_labour_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = indentured_labour
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				MONTHLY_POPULATION = -0.9
+			}
+		}
+	
+		MAN_slave_labour_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = indentured_labour
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				MONTHLY_POPULATION = -0.75
+			}
+		}
+	
+		MAN_slave_labour_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = indentured_labour
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				MONTHLY_POPULATION = -0.5
+			}
+		}
+	
+		MAN_puyi = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = puyi
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+	
+		MAN_yamato-damashii = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = warrior_traditions_idea
+			
+			modifier = {
+				conscription_factor = -0.9
+			}
+		}
+	
+		MAN_yakuza_thugs = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.2
+				political_power_cost = 0.1
+			}
+		}
+	
+		MAN_opium_plantations_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = prc_permit_opium_trade
+			
+			modifier = {
+				stability_factor = -0.3
+				consumer_goods_factor = -0.1
+				army_morale_factor = -0.15
+			}
+		}
+	
+		MAN_opium_plantations = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = prc_permit_opium_trade
+			
+			modifier = {
+				stability_factor = -0.2
+				consumer_goods_factor = -0.05
+				army_morale_factor = -0.1
+			}
+		}
+	
+		MAN_zaibatsu_investments = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_ally
+			
+			modifier = {
+				political_power_cost = 0.2
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+	
+		MAN_supply_empire = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+			
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+	
+		MAN_JAP_advisors = {
 
 			allowed = {
 				always = no
@@ -17,8 +426,14 @@ ideas = {
 			
 			modifier = {
 				army_morale_factor = 0.1
-				stability_factor = 0.1
-				war_support_factor = 0.05
+				stability_factor = 0.2
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = JAP
+				license_purchase_cost = -1
+				license_production_speed = 0.2
+				license_tech_difference_speed = 0.2
 			}
 		}
 
@@ -65,6 +480,7 @@ ideas = {
 			picture = generic_secret_police
 			
 			modifier = {
+				political_power_cost = 0.5
 				political_advisor_cost_factor = 0.25
 				trade_laws_cost_factor = 0.25
 				mobilization_laws_cost_factor = 0.25
@@ -90,7 +506,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.5
-				war_support_factor = -0.5
 			}
 		}
 		MAN_low_legitimacy_4 = {
@@ -111,7 +526,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.4
-				war_support_factor = -0.4
 			}
 		}
 		MAN_low_legitimacy_3 = {
@@ -132,7 +546,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.3
-				war_support_factor = -0.3
 			}
 		}
 		MAN_low_legitimacy_2 = {
@@ -153,7 +566,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.2
-				war_support_factor = -0.2
 			}
 		}
 		MAN_low_legitimacy_1 = {
@@ -174,7 +586,6 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
-				war_support_factor = -0.1
 			}
 		}
 
@@ -193,7 +604,7 @@ ideas = {
 			picture = generic_army_war_college
 			
 			modifier = {
-				max_command_power = 20
+				max_command_power = 25
 			}
 		}
 
@@ -294,11 +705,9 @@ ideas = {
 			removal_cost = -1
 
 			picture = man_five_year_plan_tank
-
-			research_bonus = { armor = 0.05 }
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 		MAN_five_year_plan_industry = {
@@ -317,9 +726,9 @@ ideas = {
 
 			picture = man_five_year_plan_industry
 			
-			research_bonus = { industry = 0.05 }
+			research_bonus = { industry = 0.1 }
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		MAN_underground_gun_shops = {
@@ -425,48 +834,140 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
-	}
 
-	political_advisor = {
+		MAN_intervene_in_china_1 = {
 
-		MAN_megata_toshiro = {
+			name = MAN_intervene_in_china
 
-			picture = generic_political_advisor_asia_2
-			
 			allowed = {
-				original_tag = MAN
+				always = no
 			}
-			
-			traits = { armaments_organizer }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+
+			modifier = {
+				experience_gain_factor = -0.1
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
 		}
 
-		MAN_nalan_kang_an = {
+		MAN_intervene_in_china_2 = {
 
-			picture = generic_political_advisor_asia_3
-				
+			name = MAN_intervene_in_china
+
 			allowed = {
-				original_tag = MAN
+				always = no
 			}
-			
-			traits = { fortification_engineer }
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+
+			modifier = {
+				experience_gain_factor = -0.2
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.10
+				defense_bonus_against = -0.10
+			}
 		}
 
-		MAN_songgotu_zhanshan = {
+		MAN_intervene_in_china_3 = {
 
-			picture = generic_political_advisor_asia_1
-			
+			name = MAN_intervene_in_china
+
 			allowed = {
-				original_tag = MAN
+				always = no
 			}
 
-			available = {
-				if = {
-					limit = { has_dlc = "Waking the Tiger" }
-					has_completed_focus = MAN_invite_japanese_investors
-				}
+			allowed_civil_war = {
+				always = yes
 			}
-			
-			traits = { captain_of_industry }
+
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+
+			modifier = {
+				experience_gain_factor = -0.3
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+		}
+
+		MAN_intervene_in_china_4 = {
+
+			name = MAN_intervene_in_china
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+
+			modifier = {
+				experience_gain_factor = -0.4
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.20
+				defense_bonus_against = -0.20
+			}
+		}
+
+		MAN_intervene_in_china_5 = {
+
+			name = MAN_intervene_in_china
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+
+			modifier = {
+				experience_gain_factor = -0.5
+			}
+
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
 		}
 	}
 
@@ -501,10 +1002,6 @@ ideas = {
 
 			picture = generic_air_manufacturer_1
 
-			available = {
-				has_completed_focus = MAN_mamc
-			}
-
 			allowed = {
 				original_tag = MAN
 				has_dlc = "Waking the Tiger"
@@ -526,10 +1023,6 @@ ideas = {
 
 			picture = generic_air_manufacturer_1
 
-			available = {
-				has_completed_focus = MAN_mamc
-			}
-
 			allowed = {
 				original_tag = MAN
 				has_dlc = "Waking the Tiger"
@@ -550,10 +1043,6 @@ ideas = {
 		MAN_mamc_heavy = {
 
 			picture = generic_air_manufacturer_1
-
-			available = {
-				has_completed_focus = MAN_mamc
-			}
 
 			allowed = {
 				original_tag = MAN
@@ -594,6 +1083,46 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 1
+			}
+		}
+	}
+
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		german_chinese_tank_designer = {
+
+			picture = porsche
+			
+			allowed = {
+				tag = MAN
+			}
+			
+			available = {
+			NOT = {
+					has_war_with = GER
+				}
+			}
+			
+			cost = 150
+			removal_cost = 10
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+				
+				modifier = { # CHI might lose the advisors, don't want the AI wasting PP
+					factor = 0
+					NOT = {
+						has_completed_focus = CHI_chinese_panzers
+					}
+				}
 			}
 		}
 	}

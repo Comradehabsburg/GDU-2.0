@@ -27,24 +27,6 @@ set_technology = {
 
 if = {
 	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
-if = {
-	limit = {
 		not = { has_dlc = "Man the Guns" }
 	}
 	set_technology = {
@@ -74,16 +56,13 @@ if = {
 	}
 }
 
-set_popularities = {
-	democratic = 20
-	fascism = 30
-	communism = 50
+set_popularities = {	democratic = 20	fascism = 30	communism = 50
 }
 
 create_country_leader = {
 	name = "Kost Levytsky"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = GFX_portrait_Kost_Levytsky
 	expire = "1953.3.1"
 	ideology = conservatism
 	traits = {
@@ -94,7 +73,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nikita Sergeyevich Khrushchyov"
 	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = GFX_portrait_Nikita_Sergeyevich_Khrushchyov
 	expire = "1953.3.1"
 	ideology = marxism
 	traits = {
@@ -105,7 +84,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Stepan Bandera"
 	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
+	picture = GFX_portrait_Stepan_Bandera
 	expire = "1953.3.1"
 	ideology = fascism_ideology
 	traits = {

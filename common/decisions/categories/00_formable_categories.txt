@@ -58,10 +58,7 @@ form_commonwealth_category = {
 	picture = GFX_decision_cat_generic_commonwealth
 
 	allowed = {
-		OR = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "No Step Back"
-		}
+		has_dlc = "Waking the Tiger"
 	}
 }
 
@@ -166,10 +163,7 @@ form_byzantine_empire_category = {
 	picture = GFX_decision_cat_generic_byzantine_empire
 
 	allowed = {
-		OR = {
-			has_dlc = "Waking the Tiger" 
-			has_dlc = "Battle for the Bosporus"
-		}
+		has_dlc = "Waking the Tiger"
 	}
 }
 
@@ -246,84 +240,9 @@ form_polynesia_category = {
 	picture = GFX_decision_cat_generic_arabia
 }
 
-form_greater_greece_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_picture_form_greater_greece
-
-	allowed = {
-	}
-}
-
-form_turan_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_picture_form_turan
-
-	allowed = {
-	}
-}
-
-form_macedonian_empire_category = {
+form_greater_yugo_category = {
 
 	icon = generic_formable_nations
 
 	picture = GFX_decision_cat_generic_byzantine_empire
-
-	allowed = {
-	}
-}
-
-form_turkestan_category = {
-
-	icon = generic_formable_nations
-
-	picture = GFX_decision_cat_picture_form_turan
-}
-
-
-form_mountainous_republic_category = {
-
-	icon = generic_formable_nations
-
-	#picture = GFX_decision_cat_picture_form_turan
-	
-	allowed = {
-		has_dlc = "No Step Back"
-	}
-}
-
-form_transcaucasus_category = {
-
-	icon = generic_formable_nations
-
-	#picture = GFX_decision_cat_picture_form_turan
-	
-	allowed = {
-		has_dlc = "No Step Back"
-	}
-}
-
-form_siberia_category = {
-
-	icon = generic_formable_nations
-
-	#picture = GFX_decision_cat_picture_form_turan
-	
-	allowed = {
-		has_dlc = "No Step Back"
-	}
-}
-
-form_idel_ural_category = {
-
-	icon = generic_formable_nations
-
-	#picture = GFX_decision_cat_picture_form_turan
-	
-	allowed = {
-		has_dlc = "No Step Back"
-	}
 }

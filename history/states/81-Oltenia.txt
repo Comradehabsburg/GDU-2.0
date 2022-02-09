@@ -4,7 +4,7 @@ state={
 	manpower=1519300
 	
 	
-	state_category = rural
+	state_category = metropolis
 	
 	history={
 		victory_points = {
@@ -12,14 +12,12 @@ state={
 		}
 		owner = ROM
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 6
+			industrial_complex = 7
 		}
 		add_core_of = ROM
 	}
 	provinces={
 		637 3630 3645 6652 6667 11588 11605 11657 
 	}
-
-	local_supplies=0.0 
 }

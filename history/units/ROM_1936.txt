@@ -16,8 +16,7 @@
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # 2x 100mm howitzer bns, on average
-		engineer = { x = 0 y = 1 }   
+		engineer = { x = 0 y = 0 }   
 	}
 }
 division_template = {
@@ -167,7 +166,6 @@ units = {
 		location = 9617
 		division_template = "Regimentul de Blindate"
 		start_experience_factor = 0.3
-		force_equipment_variants = { gw_tank_equipment = { owner = "ROM" creator = "FRA" amount = 72 } }
 
 	}
 
@@ -500,8 +498,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1
-			creator = "ROM" 
+			type = fra_light_tank_chassis_ft
 		}
 		requested_factories = 1
 		progress = 0.4

@@ -2,18 +2,22 @@ state={
 	id=302
 	name="STATE_302"
 	resources={
-		tungsten=60 # was: 102.000
-		steel=2 # was: 2.000
+		tungsten=600 # was: 102.000
+		steel=20 # was: 2.000
 	}
 	
 	state_category = city
 
 	history={
-		owner = URG
+		owner = OBG
+		add_core_of = OBG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 2
+
 		}
-		add_core_of = URG
 		victory_points = {
 			5230 5 
 		}
@@ -25,6 +29,4 @@ state={
 	}
 	manpower=2044500
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

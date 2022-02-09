@@ -5,13 +5,11 @@ state= {
 	
 	state_category = rural
 	resources={
-		chromium=3 # was: 4
+		chromium=50 # was: 4
 	}
 
-	history=
-	{
+	history={
 		owner = ENG
-		add_core_of = URG
 		victory_points = {
 			11984 5
 		}
@@ -19,15 +17,13 @@ state= {
 			7193 3
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			air_base = 1
 			7193 = {
 				naval_base = 2
 			}
 		}
-
+		add_core_of = EGY
 	}
 	provinces= { 7193 11984 }
-
-	local_supplies=0.0 
 }

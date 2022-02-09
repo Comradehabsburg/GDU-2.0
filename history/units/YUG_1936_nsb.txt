@@ -18,7 +18,6 @@
 	}
 	support = {
 		engineer = { x = 0 y = 0 } 
-		artillery = { x = 0 y = 1 }  
 	}
 }
 division_template = {
@@ -94,7 +93,6 @@ units = {
 		division_template = "Tenkovski Bataljon"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-		force_equipment_variants = { light_tank_chassis_0 = { owner = "YUG" creator = "FRA" version_name = "FT mod. 31"} }
 
 	}
 
@@ -350,22 +348,6 @@ units = {
 
 
 ###### Vazduhoplovstvo Vojske Kraljevine Jugoslavije (VVKJ) ######
-air_wings = {
-	107 = {
-		# 1. Vazduhoplovna Brigada -- Dewotine D.1/9/27 fighters
-		fighter_equipment_0 = {
-			owner = "YUG" 
-			amount = 48
-		}
-	}
-	104 = {
-		# 2. Vazduhoplovna Brigada  -- Hawker Fury and Ikarus IK-2 fighters
-		fighter_equipment_0 = {
-			owner = "YUG" 
-			amount = 48
-		}
-	}
-}
 
 ### Starting Production ###
 instant_effect = {

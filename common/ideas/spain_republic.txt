@@ -1,26 +1,5 @@
 ideas = {
 
-	hidden_ideas = { # Used to prevent AI to hold outside of the Iberian Peninsula during the SCW
-		SPR_death_before_surrender_capitulation = {
-
-			name = SPR_death_before_surrender
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				surrender_limit = 1
-				max_surrender_limit_offset = 1
-			}
-		}
-	}
-
 	economy = {
 		law = yes
 		SPR_collectivized_society = {
@@ -40,6 +19,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 				global_building_slots_factor = 0.1
+				industry_free_repair_factor = 0.5
 				industrial_capacity_factory = 0.7
 				industrial_capacity_dockyard = 0.7
 				research_speed_factor = -0.1
@@ -58,31 +38,13 @@ ideas = {
 
 	country = {
 
-		SPR_government_power_struggle = {
-
-			picture = generic_disjointed_gov
-
-			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			modifier = {
-				political_power_factor = -0.1
-			}
-		}
-
 		SPR_death_before_surrender = {
 
 			picture = SPA_maquis
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -91,7 +53,9 @@ ideas = {
 
 			modifier = {
 				surrender_limit = 1
-				max_surrender_limit_offset = 0.05
+				max_surrender_limit_offset = 0.10
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
 
@@ -355,7 +319,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -380,7 +344,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -404,7 +368,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -424,7 +388,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -446,7 +410,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -469,7 +433,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -492,7 +456,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -515,7 +479,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -539,7 +503,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -563,7 +527,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -586,7 +550,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -610,7 +574,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -634,7 +598,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -658,7 +622,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -683,7 +647,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -707,7 +671,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -732,7 +696,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -757,7 +721,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -782,7 +746,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -808,7 +772,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -834,7 +798,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -858,7 +822,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -878,7 +842,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -896,7 +860,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -914,7 +878,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -933,7 +897,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -955,7 +919,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -975,7 +939,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -997,7 +961,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1017,7 +981,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1038,7 +1002,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1059,7 +1023,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1077,7 +1041,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1096,7 +1060,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1114,7 +1078,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1132,7 +1096,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1152,7 +1116,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1175,7 +1139,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1199,7 +1163,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1221,7 +1185,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1242,7 +1206,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1262,7 +1226,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1281,7 +1245,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1301,7 +1265,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1326,7 +1290,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1350,7 +1314,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1375,7 +1339,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1398,7 +1362,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1416,7 +1380,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1434,7 +1398,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1454,7 +1418,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1474,7 +1438,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1494,7 +1458,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1513,7 +1477,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1533,7 +1497,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1554,7 +1518,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1575,7 +1539,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1596,7 +1560,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1617,7 +1581,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1635,7 +1599,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1654,7 +1618,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1674,7 +1638,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1705,7 +1669,6 @@ ideas = {
 
 			modifier = {
 				lend_lease_tension = -0.5
-				request_lease_tension = -0.5
 			}
 		}
 
@@ -1734,7 +1697,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				NOT = { has_government = fascism }
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1754,6 +1717,7 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
+				has_government = fascism
 			}
 
 			allowed_civil_war = {
@@ -1767,7 +1731,6 @@ ideas = {
 			}
 		}
 	}
-	
 	naval_manufacturer = { 			
 		
 		designer = yes

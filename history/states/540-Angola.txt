@@ -2,11 +2,11 @@ state={
 	id=540
 	name="STATE_540"
 	resources={
-		rubber=1.000
+		rubber=10.000
 	}
 
 	history={
-		owner = URG
+		owner = POR
 		buildings = {
 			infrastructure = 1
 			8248 = {
@@ -19,7 +19,7 @@ state={
 		victory_points = {
 			10966 1 
 		}
-		add_core_of = URG
+		add_core_of = ZIM
 	}
 
 	provinces={
@@ -28,6 +28,4 @@ state={
 	manpower=3200000
 	buildings_max_level_factor=1.000
 	state_category=rural
-
-	local_supplies=0.0 
 }

@@ -2923,45 +2923,11 @@ country_event = {
 				limit = {
 					HOL = { NOT = { has_country_flag = HOL_wilhelm_ii_died } }
 				}
-				GER = {
-					GER_wilhelm_ii = {
-						set_nationality = PREV.PREV
-					}
-				}
-				GER_wilhelm_ii = {
-					add_country_leader_role = {
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							anti_democrat
-							imperial_connections				}
-					}
-					promote_leader = yes
-					}
-				}
 			}
 			if = {
 				limit = {
 					HOL = { has_country_flag = HOL_wilhelm_ii_died }
-				}
-				GER = {
-					GER_wilhelm_iii = {
-						set_nationality = PREV.PREV
-					}
-				}
-				GER_wilhelm_iii = {
-					add_country_leader_role = {
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = despotism
-						traits = {
-							popular_figurehead2
-						}
-					}
-					promote_leader = yes
-					}
-				}				
+				}			
 			}
 		}
 	}
@@ -3051,7 +3017,6 @@ country_event = {
 						has_government = neutrality
 					}
 					load_focus_tree = { tree = german_focus keep_completed = no }
-					unlock_national_focus = GER_oppose_hitler
 					unlock_national_focus = GER_secure_the_new_state
 					unlock_national_focus = GER_revive_the_kaiserreich
 					unlock_national_focus = GER_return_of_the_kaiser

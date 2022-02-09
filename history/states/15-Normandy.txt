@@ -4,7 +4,7 @@ state={
 	name="STATE_15"
 	manpower = 2332100
 	resources={
-		steel=21 # was: 36
+		steel=210 # was: 36
 	}
 	
 	state_category = city
@@ -24,8 +24,9 @@ state={
 			485 3
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
+			infrastructure = 7
+			industrial_complex = 4
+			arms_factory = 3
 			air_base = 6
 			6449 = {
 				naval_base = 3
@@ -45,6 +46,4 @@ state={
 	provinces={
 		485 539 553 3534 3549 3579 6449 6569 6599 9434 9550 9578 11521 11535 11563 
 	}
-
-	local_supplies=0.0 
 }

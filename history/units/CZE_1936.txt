@@ -81,7 +81,6 @@ units = {
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
 	}
 	division = { # "4. divize"
 		division_name = {
@@ -137,7 +136,6 @@ units = {
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
 	}
 	division = { # "15. divize"
 		division_name = {
@@ -169,8 +167,7 @@ units = {
 		location = 9692  # Bratislava
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
+		start_equipment_factor = 0.5
 	}
 	division = { # "4. fast"
 		division_name = {
@@ -180,8 +177,7 @@ units = {
 		location = 9692  # Bratislava
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.1
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
+		start_equipment_factor = 0.5
 	}
 	### I Armáda ###
 	division = { # "18. divize"
@@ -415,13 +411,9 @@ instant_effect = {
 		progress = 0.48
 		efficiency = 100
 	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "CZE"
-		}
-		requested_factories = 2
-		progress = 0.48
-		efficiency = 100
+	add_equipment_to_stockpile = {
+		type = ger_light_tank_chassis_p35
+		amount = 1000
+		producer = CZE
 	}
 }

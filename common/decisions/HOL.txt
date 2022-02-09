@@ -187,7 +187,7 @@ HOL_obtain_foreign_colonial_investments = {
 			695 = {
 				add_resource = {
 					type = oil
-					amount = 2
+					amount = 20
 				}
 			}
 			if = {
@@ -283,19 +283,19 @@ HOL_obtain_foreign_colonial_investments = {
 			335 = {
 				add_resource = {
 					type = oil
-					amount = 1
+					amount = 10
 				}
 			}
 			672 = {
 				add_resource = {
 					type = oil
-					amount = 1
+					amount = 10
 				}
 			}
 			334 = {
 				add_resource = {
 					type = oil
-					amount = 1
+					amount = 10
 				}
 			}
 			if = {
@@ -494,6 +494,8 @@ HOL_prepare_the_inundation_lines = {
 
 		days_remove = 14
 
+
+
 		highlight_states = {
 			highlight_state_targets = { state = 7 }
 			highlight_provinces = {
@@ -503,7 +505,7 @@ HOL_prepare_the_inundation_lines = {
 				6241
 			}
 		}
-		
+
 		modifier = {
 		}
 
@@ -772,10 +774,6 @@ HOL_secret_staff_talks = {
 			}
 		}
 
-		target_root_trigger = {
-			has_completed_focus = HOL_secret_staff_talks
-		}
-
 		complete_effect = {
 			FROM = { country_event = { id = mtg_netherlands.29 hours = 6 } }
 			effect_tooltip = {
@@ -848,10 +846,6 @@ HOL_secret_staff_talks = {
 			}
 		}
 
-		target_root_trigger = {
-			has_completed_focus = HOL_secret_staff_talks
-		}
-
 		complete_effect = {
 			FROM = { country_event = { id = mtg_netherlands.32 hours = 6 } }
 			effect_tooltip = {
@@ -891,6 +885,7 @@ HOL_secret_staff_talks = {
 		fire_only_once = yes
 
 		visible = {
+			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
 			FROM = {
@@ -917,10 +912,6 @@ HOL_secret_staff_talks = {
 					}
 				}
 			}
-		}
-
-		target_root_trigger = {
-			has_completed_focus = HOL_secret_staff_talks
 		}
 
 		complete_effect = {
@@ -999,10 +990,6 @@ HOL_secret_staff_talks = {
 				is_in_faction = no 
 				is_in_faction_with = FROM
 			}
-		}
-
-		target_root_trigger = {
-			has_completed_focus = HOL_secret_staff_talks
 		}
 
 		complete_effect = {
@@ -1111,10 +1098,6 @@ HOL_gateway_to_europe_eng_category = {
 				factor = 0
 				has_country_flag = HOL_gateway_to_europe_ai_timer_flag
 				NOT = { date > 1940.01.01 }
-			}
-			modifier = {
-				factor = 0
-				has_completed_focus = ENG_a_change_in_course
 			}
 		}
 
@@ -1320,7 +1303,6 @@ HOL_gateway_to_europe_ger_category = {
 			}
 			modifier = {
 				factor = 0
-				has_completed_focus = GER_oppose_hitler
 			}
 		}
 
@@ -1556,7 +1538,6 @@ HOL_gateway_to_europe_hol_category = {
 			GER = {
 				exists = yes
 				has_government = fascism
-				NOT = { has_completed_focus = GER_oppose_hitler }
 			}
 		}
 
@@ -2063,11 +2044,6 @@ political_actions = {
 		complete_effect = {
 			remove_ideas = HOL_curtail_colonial_autonomy_overlord
 			INS = {
-				hidden_effect = {
-					country_event = { id = mtg_netherlands.22 }
-				}
-			}
-			INS = {
 				every_unit_leader = {
 					set_nationality = HOL
 				}
@@ -2076,14 +2052,19 @@ political_actions = {
 			    target = INS
 			    transfer_troops = yes
 			}
-			every_state = {
+			set_capital =  { state = 335 }
+			INS = {
+				hidden_effect = {
+					country_event = { id = mtg_netherlands.22 }
+				}
+			}
+			hidden_effect = { news_event = { id = mtg_news.46 days = 1 } }
+			every_owned_state = {
 				limit = {
 					is_core_of = INS
 				}
-				add_compliance = 70
+				add_compliance = 100
 			}
-			set_capital = { state = 335 }
-			hidden_effect = { news_event = { id = mtg_news.46 days = 1 } }
 		}
 	}
 

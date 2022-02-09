@@ -12,7 +12,7 @@ state={
 			5074 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 4
 			5074 = {
 				naval_base = 3
@@ -21,12 +21,10 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = YEM
+		add_core_of = OMA
 	}
 
 	provinces={
 		2029 4976 5074 8000 12821 12894 13079 
 	}
-
-	local_supplies=0.0 
 }

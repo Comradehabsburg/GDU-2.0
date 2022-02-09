@@ -12,13 +12,19 @@
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		hq_company = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+		logistics_company  = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -35,7 +41,10 @@ division_template = {
 		light_armor = { x= 2 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		hq_company = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }   
+		recon = { x = 0 y = 2 }
+		logistics_company  = { x = 0 y = 3 }
 	}
 }
 division_template = {
@@ -69,9 +78,8 @@ division_template = {
 		motorized = { x = 3 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		mot_recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -95,12 +103,12 @@ division_template = {
 	division_names_group = JAP_GAR_01
 										# Also represents (over-sized) IJN Base Defense Unit (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		garrison = { x = 0 y = 0 }
+		garrison = { x = 0 y = 1 }
+		garrison = { x = 0 y = 2 }
+		garrison = { x = 1 y = 0 }
+		garrison = { x = 1 y = 1 }
+		garrison = { x = 1 y = 2 }
 	}
 	priority = 0
 }
@@ -108,7 +116,51 @@ division_template = {
 
 ##### OOB #####
 units = {
-
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		location = 12421 
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
 	#Kita Homengun - North Japan Army
 	division = { # "7 'Kuma' Hohei Shidan"
 		division_name = {
@@ -656,22 +708,22 @@ air_wings = {
 		# 1 Hiko Rentai -- Kawasaki Ki-10
 		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 100
 		}
 		# 16 Hiko Rentai -- Kawasaki Ki-10
 		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 100
 		}
 		# 6 Hiko Rentai -- Mitsubishi Ki-2
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 100
 		}
 		# 9 Hiko Rentai -- Mitsubishi Ki-1
 		tac_bomber_equipment_0 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 400
 		}
 	}
 
@@ -680,12 +732,12 @@ air_wings = {
 		# 3 Hiko Rentai -- Kawasaki Ki-10
 		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 72
+			amount = 100
 		}
 		# 5 Hiko Rentai -- Kawasaki Ki-3
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 100
 		}
 	}
 
@@ -694,7 +746,7 @@ air_wings = {
 		# 10 Hiko Rentai -- Kawasaki Ki-3
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 54
+			amount = 100
 		}
 
 	}
@@ -705,12 +757,12 @@ air_wings = {
 		# Kizarazu Kokutai -- Aichi D1A2
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 60
+			amount = 100
 		}
 		# Kanoya Kokutai -- Aichi D1A2
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 60
+			amount = 100
 		}
 	}
 
@@ -781,6 +833,46 @@ instant_effect =
 		progress = 0.4
 		efficiency = 50
 	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = horse_equipment_0
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = radio_equipment_0
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = squad_equipment_0
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = sf_equipment_0
+			creator = "JAP" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
 
 	add_equipment_production = {
 		equipment = {
@@ -800,5 +892,15 @@ instant_effect =
 		requested_factories = 1
 		progress = 0.2
 		efficiency = 50
+	}
+	add_equipment_to_stockpile = {
+		type = jap_medium_tank_chassis_t89
+		amount = 150
+		producer = JAP
+	}
+	add_equipment_to_stockpile = {
+		type = jap_light_tank_chassis_t95
+		amount = 100
+		producer = JAP
 	}
 }

@@ -8,16 +8,15 @@ state={
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			13018 = {
 				naval_base = 1
 			}
 		}
+		add_core_of = BAS
 	}
 	
 	provinces={
 		13018 
 	}
-
-	local_supplies=0.0 
 }

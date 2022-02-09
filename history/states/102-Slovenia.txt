@@ -10,7 +10,9 @@ state=
 	{
 		owner = YUG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
 		}
 		victory_points = {
 			9627 3 
@@ -19,6 +21,4 @@ state=
 	}
 	provinces={
 		596 665 3631 3654 6650 6672 9596 9627 }
-	
-	local_supplies=5.0 
-}
+	}

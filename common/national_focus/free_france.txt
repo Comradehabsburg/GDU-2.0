@@ -15,7 +15,7 @@
 	focus = {
 		id = FRA_appeal_to_the_french_nation
 		icon = GFX_goal_generic_propaganda
-		x = 18
+		x = 15
 		y = 0
 		offset = {
 			x = 0
@@ -28,9 +28,6 @@
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			
-		}
 		
 		bypass = {
 
@@ -41,15 +38,47 @@
 		completion_reward = {
 			if = {
 				limit = { not = { has_dlc = "Man the Guns" } }
-				add_manpower = 10000
+				add_manpower = 150000
 			}
 			else = {
-				add_manpower = 10000
+				add_manpower = 150000
 				add_legitimacy = 15
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
+				amount = 20000
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
 				amount = 5000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = horse_equipment
+					amount = 2500
+			}
+			add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = radio_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 1000
+			}
+			add_equipment_to_stockpile = {
+					type = light_tank_chassis
+					amount = 560
+			}
+			add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+					amount = 280
 			}
 		}
 	}
@@ -86,7 +115,15 @@
 			custom_effect_tooltip = FRA_appeal_to_overseas_territories_tt
 			add_offsite_building = {
 				type = industrial_complex
-				level = 2
+				level = 12
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 12
+			}
+			add_offsite_building = {
+				type = dockyard
+				level = 6
 			}
 			hidden_effect = {
 				country_event = lar_appeal_to_overseas_territories.1
@@ -105,9 +142,12 @@
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
+		allow_branch = {
+			always = no
+		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -132,7 +172,7 @@
 	focus = {
 		id = FRA_intervention_in_west_africa
 		icon = GFX_goal_generic_position_armies
-		x = -3
+		x = -2
 		y = 1
 		offset = {
 			x = 0
@@ -143,7 +183,7 @@
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -161,15 +201,14 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_west_africa }
 			unlock_decision_tooltip = { decision = FRA_promise_independence_to_west_africa }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_west_africa }
+			
 		}
 	}
 	focus = {
 		id = FRA_intervention_in_syria
 		icon = GFX_goal_generic_position_armies
-		x = -1
+		x = 0
 		y = 1
 		offset = {
 			x = 0
@@ -180,13 +219,28 @@
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
 			NOT = {
 				FRA_controls_syria = yes
+			}
+			453 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			}
+			454 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			}
+			455 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
 			}
 		}
 		
@@ -198,7 +252,6 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_syria }
 			unlock_decision_tooltip = { decision = FRA_promise_independence_to_syria }
 			unlock_decision_tooltip = { decision = FRA_invasion_in_syria }
 		}
@@ -212,12 +265,15 @@
 			x = 0
 			y = 0
 		}
+		allow_branch = {
+			always = no
+		}
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -249,12 +305,15 @@
 			x = 0
 			y = 0
 		}
+		allow_branch = {
+			always = no
+		}
 		prerequisite = { 
 			focus = FRA_appeal_to_overseas_territories
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -280,7 +339,7 @@
 	focus = {
 		id = FRA_intervention_in_madagascar
 		icon = GFX_goal_generic_position_armies
-		x = 5
+		x = 2
 		y = 1
 		offset = {
 			x = 0
@@ -291,7 +350,7 @@
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -316,7 +375,6 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_madagascar }
 			unlock_decision_tooltip = { decision = FRA_promise_independence_to_madagascar }
 		}
 	}
@@ -324,7 +382,7 @@
 		id = FRA_form_the_national_committee
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
-		y = 3
+		y = 2
 		offset = {
 			x = 0
 			y = 0
@@ -332,14 +390,11 @@
 		prerequisite = { 
 			focus = FRA_intervention_in_madagascar
 			focus = FRA_intervention_in_syria
-			focus = FRA_intervention_in_indochina
-			focus = FRA_intervention_in_north_africa
 			focus = FRA_intervention_in_west_africa
-			focus = FRA_intervention_in_central_africa
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -365,13 +420,17 @@
 		completion_reward = {
 			add_war_support = 0.1
 			add_stability = 0.1
+			create_wargoal = {
+				type = annex_everything
+				target = VIC
+			}
 		}
 	}
 	focus = {
 		id = FRA_form_the_provisional_government_of_the_republic
 		icon = GFX_goal_tripartite_pact
 		x = 0
-		y = 3
+		y = 2
 		offset = {
 			x = 0
 			y = 0
@@ -381,7 +440,7 @@
 		}
 		relative_position_id = FRA_form_the_national_committee
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -405,7 +464,7 @@
 	focus = {
 		id = FRA_continue_the_fight
 		icon = GFX_goal_generic_major_war
-		x = 9
+		x = 7
 		y = 1
 		offset = {
 			x = 0
@@ -416,7 +475,7 @@
 		}
 		relative_position_id = FRA_appeal_to_the_french_nation
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -434,34 +493,34 @@
 		completion_reward = {
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 10
 			}
 			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
 				GFX = GFX_portrait_fra_marie_pierre_koenig
-				skill = 3
-				traits = {  }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
+				skill = 4
+				traits = {  organizer infantry_leader commando desert_fox }
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
 			}
 			create_corps_commander = {
 				name = "Georges Catroux"
 				GFX = GFX_portrait_fra_georges_catroux
-				skill = 3
+				skill = 4
 				traits = {  }
-				attack_skill = 3
-				defense_skill = 3
+				attack_skill = 1
+				defense_skill = 5
 				planning_skill = 2
-				logistics_skill = 2
+				logistics_skill = 5
 			}
 		}
 	}
 	focus = {
 		id = FRA_the_free_french_navy
 		icon = GFX_goal_generic_build_navy
-		x = -2
+		x = -3
 		y = 2
 		offset = {
 			x = 0
@@ -472,7 +531,7 @@
 		}
 		relative_position_id = FRA_continue_the_fight
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -489,7 +548,7 @@
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = convoy
-				amount = 50
+				amount = 250
 			}
 			create_navy_leader = {
 				name = "Emilie Muselier"
@@ -506,7 +565,7 @@
 	focus = {
 		id = FRA_colonial_recruitment
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
+		x = -1
 		y = 2
 		offset = {
 			x = 0
@@ -517,7 +576,7 @@
 		}
 		relative_position_id = FRA_continue_the_fight
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -544,7 +603,7 @@
 	focus = {
 		id = FRA_the_regiment_normandie
 		icon = GFX_focus_fra_regiment_normandie
-		x = 2
+		x = 1
 		y = 2
 		offset = {
 			x = 0
@@ -555,7 +614,7 @@
 		}
 		relative_position_id = FRA_continue_the_fight
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -575,15 +634,46 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			air_experience = 25
+			air_experience = 100
 			SOV = {
 				add_equipment_to_stockpile = {
 					type = fighter_equipment
-					amount = 150
-					producer = FRA
+					amount = 200
+					producer = ENG
 				}
 			}
 		}
+	}
+
+	focus = {
+		id = FRA_allied_equipment
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { 
+			focus = FRA_continue_the_fight
+		}
+		relative_position_id = FRA_continue_the_fight
+		x = 3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		cost = 5
+		completion_reward = {
+			add_relation_modifier = {
+				target = USA
+				modifier = FRA_license_allied_equipment
+			}
+			add_relation_modifier = {
+				target = CAN
+				modifier = FRA_license_allied_equipment
+			}
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
 	}
 
 	focus = {
@@ -599,7 +689,7 @@
 			
 		}
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -639,7 +729,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -660,10 +750,10 @@
 				limit = {
 					is_core_of = ROOT
 					not = { is_controlled_by = ROOT }
-					infrastructure < 3
+					infrastructure < 7
 				}
 				add_resistance_target = {
-					amount = 10
+					amount = 15
 					tooltip = FRA_the_maquis
 				}
 			}
@@ -683,7 +773,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -706,7 +796,7 @@
 		id = FRA_cooperation_with_the_communists
 		icon = GFX_focus_generic_soviet_politics
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -716,7 +806,7 @@
 		}
 		relative_position_id = FRA_reach_out_to_trade_unions
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -758,7 +848,7 @@
 		}
 		relative_position_id = FRA_refus_absurde
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -781,7 +871,7 @@
 		id = FRA_the_civil_and_military_organization
 		icon = GFX_goal_generic_military_deal
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -791,7 +881,7 @@
 		}
 		relative_position_id = FRA_connections_to_industrialists
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -817,7 +907,7 @@
 		id = FRA_national_council_of_the_resistance
 		icon = GFX_focus_focus_fra_national_resistance_council
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -833,7 +923,7 @@
 		}
 		relative_position_id = FRA_the_civil_and_military_organization
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -858,8 +948,8 @@
 	focus = {
 		id = FRA_national_uprising
 		icon = GFX_goal_generic_dangerous_deal
-		x = -2
-		y = 2
+		x = -1
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -869,7 +959,7 @@
 		}
 		relative_position_id = FRA_national_council_of_the_resistance
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -884,14 +974,14 @@
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_timed_idea = { idea = FRA_national_uprising days = 90 }
+			add_timed_idea = { idea = FRA_national_uprising days = 365 }
 		}
 	}
 	focus = {
 		id = FRA_french_forces_of_the_interior
 		icon = GFX_focus_prc_infiltration
-		x = 2
-		y = 2
+		x = 1
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -901,7 +991,7 @@
 		}
 		relative_position_id = FRA_national_council_of_the_resistance
 		
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

@@ -6,13 +6,13 @@ state={
 	impassable = yes
 
 	history={
-		owner = FRA
-		add_core_of = URG
+		owner = OBG
+		add_core_of = OBG
 		buildings = {
 			infrastructure = 1
 
 		}
-
+		
 	}
 
 	provinces={
@@ -20,6 +20,4 @@ state={
 	}
 	manpower=1456356
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

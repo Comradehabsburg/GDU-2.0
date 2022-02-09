@@ -2,7 +2,7 @@ state={
 	id=170
 	name="STATE_170"
 	resources={
-		tungsten=4.000
+		tungsten=400.000
 	}
 
 	history={
@@ -11,7 +11,7 @@ state={
 			6902 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			industrial_complex = 1
 
 		}
@@ -25,6 +25,4 @@ state={
 	manpower=1417652
 	buildings_max_level_factor=1.000
 	state_category=town
-
-	local_supplies=0.0 
 }

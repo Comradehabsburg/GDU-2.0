@@ -64,17 +64,17 @@ CHI_border_clashes = {
 
 				#Completed border war on opposition and other warlord has picked a side
 				AND = {
-					has_completed_focus = CHI_anti_opposition_campaigns
+					always = no 
 					OR = {
 						AND = {
-							has_completed_focus =   CHI_cooperation_with_the_nationalists
-							FROM = { has_completed_focus = CHI_cooperation_with_the_communists }
+							always = no 
+							FROM = { always = no  }
 							NOT = { is_subject_of = event_target:WTT_communist_china }
 							FROM = { NOT = { is_subject_of = event_target:WTT_current_china_leader } }
 						}
 						AND = {
-							has_completed_focus = CHI_cooperation_with_the_communists
-							FROM = { has_completed_focus = CHI_cooperation_with_the_nationalists }
+							always = no 
+							FROM = { always = no  }
 							NOT = { is_subject_of = event_target:WTT_current_china_leader }
 							FROM = { NOT = { is_subject_of = event_target:WTT_communist_china } }
 						}
@@ -85,7 +85,7 @@ CHI_border_clashes = {
 				AND = {
 					tag = event_target:WTT_communist_china
 					FROM = { 
-						has_completed_focus = CHI_cooperation_with_the_nationalists 
+						always = no 
 					}
 				}
 			}
@@ -236,11 +236,13 @@ CHI_border_clashes = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = var:defender_state_temp
-			state = var:ROOT.defender_state_vs_@FROM
-		} 
-}
+			highlight_states_trigger = {
+				OR = {
+					state = var:defender_state_temp
+					state = var:ROOT.defender_state_vs_@FROM
+				}
+			}
+		}
 
 		war_with_target_on_timeout = yes
 		ai_will_do = {
@@ -282,11 +284,13 @@ CHI_border_clashes = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = var:defender_state_temp
-			state = var:ROOT.defender_state_vs_@FROM
-		} 
-}
+			highlight_states_trigger = {
+				OR = {
+					state = var:defender_state_temp
+					state = var:ROOT.defender_state_vs_@FROM
+				}
+			}
+		}
 
 		war_with_target_on_timeout = yes
 		ai_will_do = {
@@ -332,10 +336,10 @@ CHI_border_clashes = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = var:FROM.attacker_state_vs_@ROOT			
-		} 
-}
+			highlight_states_trigger = {
+				state = var:FROM.attacker_state_vs_@ROOT		
+			}	
+		}
 
 		ai_will_do = {
 			base = 0
@@ -412,11 +416,13 @@ CHI_border_clashes = {
 		}
 		
 		highlight_states = {
- highlight_state_targets = {
-			state = var:defender_state_temp
-			state = var:FROM.defender_state_vs_@ROOT
-		} 
-}
+			highlight_states_trigger = {
+				OR = {
+					state = var:defender_state_temp
+					state = var:FROM.defender_state_vs_@ROOT
+				}
+			}
+		}
 
 		ai_will_do = {
 			base = 0
@@ -466,11 +472,13 @@ CHI_border_clashes = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = var:FROM.attacker_state_vs_@ROOT
-			state = var:ROOT.defender_state_vs_@FROM
-		} 
-}
+			highlight_states_trigger = {
+				OR = {
+					state = var:FROM.attacker_state_vs_@ROOT
+					state = var:ROOT.defender_state_vs_@FROM
+				}
+			}
+		}
 
 		cost = 200
 
@@ -532,11 +540,13 @@ CHI_border_clashes = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = var:FROM.defender_state_vs_@ROOT
-			state = var:ROOT.attacker_state_vs_@FROM
-		} 
-}
+			highlight_states_trigger = {
+				OR = {
+					state = var:FROM.defender_state_vs_@ROOT
+					state = var:ROOT.attacker_state_vs_@FROM
+				}
+			}
+		}
 
 		cost = 150
 
@@ -614,11 +624,11 @@ CHI_border_clashes = {
 		}
 
 		highlight_states = {
- highlight_state_targets = {
-			state = var:FROM.attacker_state_vs_@ROOT
-			state = var:ROOT.defender_state_vs_@FROM
-		} 
-}
+			highlight_states_trigger = {
+				state = var:FROM.attacker_state_vs_@ROOT
+				state = var:ROOT.defender_state_vs_@FROM
+			}
+		}
 
 		ai_will_do = {
 			base = 0

@@ -5,21 +5,18 @@ state=
 	manpower = 51000
 	
 	state_category = pastoral
-	history=
-	{
-		add_core_of = URG
+	history= {
 		owner = ENG
 		victory_points = {
 			2077 1 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			2077 = {
 				naval_base = 1
 			}
 		}
+		add_core_of = MEX
 	}
 	provinces= { 2077 }
-
-	local_supplies=0.0 
 }

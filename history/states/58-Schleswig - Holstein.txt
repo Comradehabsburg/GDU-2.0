@@ -14,9 +14,10 @@ state= {
 		}
 		owner = GER
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			dockyard = 6
+			infrastructure = 6
+			arms_factory = 5
+			industrial_complex = 1
+			dockyard = 10
 			air_base = 5
 			6389 ={
 				naval_base = 8
@@ -36,6 +37,4 @@ state= {
 	provinces= {
 		317 3231 3368 6257 6389 9320 9347 11331 11366
  	}
-
-	local_supplies=0.0 
 }

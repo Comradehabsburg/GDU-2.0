@@ -15,15 +15,16 @@ state={
 		}
 		owner = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
+			industrial_complex = 1
+			3759 = {
+				bunker = 4
+			}
 		}
 		add_core_of = SOV
-		add_core_of = URG
 	}
 
 	provinces={
 		304 331 360 386 3350 3759 6373 11313 
 	}
-
-	local_supplies=0.0 
 }

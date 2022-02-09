@@ -92,7 +92,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.2
+				industrial_capacity_factory = 0.1
 				stability_factor = -0.05
 			}
 		}
@@ -113,7 +113,7 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 		
@@ -319,6 +319,26 @@ ideas = {
 					soft_attack = 0.1
 					instant = yes
 				}
+				anti_tank_equipment = {
+					hard_attack = 0.1
+					instant = yes
+				}
+				anti_air_equipment = {
+					air_attack = 0.1
+					instant = yes
+				}
+				squad_equipment = {
+					soft_attack = 0.25
+					instant = yes
+				}
+				pack_artillery_equipment = {
+					soft_attack = 0.2
+					instant = yes
+				}
+				heavy_artillery_equipment = {
+					soft_attack = 0.1
+					instant = yes
+				}
 			}
 		}
 		
@@ -417,7 +437,7 @@ ideas = {
 			modifier = {
 				military_leader_cost_factor = 0.5
 				planning_speed = -0.2
-				max_command_power = 20
+				max_command_power = 25
 			}
 		}
 		
@@ -440,7 +460,7 @@ ideas = {
 			
 			modifier = {
 				military_leader_cost_factor = 0.5 
-				max_command_power = 20
+				max_command_power = 25
 				communism_drift = 0.1
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
@@ -466,7 +486,7 @@ ideas = {
 			
 			modifier = {
 				military_leader_cost_factor = 0.5
-				max_command_power = 20
+				max_command_power = 25
 				fascism_drift = 0.1
 				army_morale_factor = 0.15
 			}
@@ -571,8 +591,8 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.1
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = 0.25
 			}
 		}
 		
@@ -592,8 +612,8 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.2
-				production_speed_industrial_complex_factor = 0.2
-				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_infrastructure_factor = 0.4
 			}
 		}
 		
@@ -841,7 +861,8 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.01
+				conscription = 0.05
+				
 			}
 		}
 	}
@@ -1016,6 +1037,27 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+		
+		MEX_douglas_aircraft_company = {
+		
+			name = douglas_aircraft_company
+
+			allowed = {
+				original_tag = MEX
+			}
+			
+			available = {
+				has_completed_focus = MEX_focus_aztec_eagles
+			}
+
+			picture = douglas_aircraft_company
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { CAS_manufacturer }
 		}
 	}
 

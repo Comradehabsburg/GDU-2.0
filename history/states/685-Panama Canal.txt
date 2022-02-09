@@ -11,16 +11,16 @@ state={
 			7617 5 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			air_base = 6
 			7617 = {
 				naval_base = 3
 			}
+			4624 = {
+				naval_base = 1
+			}
 		}
-		add_core_of = URG
 	}
 	
-	provinces={ 7617 }
-
-	local_supplies=0.0 
+	provinces={ 7617 4624  }
 }

@@ -2,14 +2,13 @@ technologies = {
 
 
 	air_superiority = {
-		doctrine_name = "TITLE_STRATEGIC_DESTRUCTION"
-		
 		# EFFECT ########
 		air_superiority_detect_factor = 0.1
 		###########
 
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		
 		xor = { force_rotation formation_flying }
 		
@@ -63,6 +62,7 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 100
 		
+		
 		path = {
 			leads_to_tech = naval_strike_tactics
 			research_cost_coeff = 1
@@ -113,6 +113,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -163,6 +164,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -199,7 +201,7 @@ technologies = {
 
 		# EFFECT ########
 		air_intercept_efficiency = 0.2
-		air_mission_xp_gain_factor = 0.05
+		air_mission_xp_gain_factor = 0.1#
 		###########
 		
 		xor={
@@ -212,6 +214,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -248,7 +251,7 @@ technologies = {
 
 		# EFFECT ########
 		air_superiority_efficiency = 0.2
-		air_mission_xp_gain_factor = 0.05
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		xor={
@@ -261,6 +264,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -316,6 +320,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -366,6 +371,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -415,6 +421,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -472,6 +479,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -526,6 +534,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -571,6 +580,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -621,6 +631,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -657,11 +668,16 @@ technologies = {
 	offensive_formations = {
 
 		# EFFECT ########
-		army_bonus_air_superiority_factor = 0.15
+		air_bombing_targetting = 0.2
 		###########
+		
+		XOR = {
+			mass_destruction
+		}
 
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -697,10 +713,17 @@ technologies = {
 	mass_destruction = {
 
 		# EFFECT ########
-		air_strategic_bomber_bombing_factor = 0.2
+		air_strategic_bomber_bombing_factor = 0.5
+		air_bombing_targetting = -0.5
 		###########
+		
+		XOR = {
+			offensive_formations
+		}
+
 		xp_research_type = air
 		xp_unlock_cost = 100
+			
 		doctrine = yes	
 		research_cost = 3
 		
@@ -739,7 +762,6 @@ technologies = {
 	####################################
 
 	formation_flying = {
-		doctrine_name = "TITLE_BATTLEFIELD_SUPPORT"
 
 		xor = { force_rotation air_superiority }
 
@@ -747,7 +769,7 @@ technologies = {
 		
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
-		air_mission_xp_gain_factor = 0.05
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		path = {
@@ -756,6 +778,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 2.25
 		
@@ -811,6 +834,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -866,6 +890,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -907,7 +932,7 @@ technologies = {
 
 		# EFFECT ########
 		air_superiority_efficiency = 0.15
-		air_mission_xp_gain_factor = 0.05
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		xor = {
@@ -920,6 +945,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -960,7 +986,7 @@ technologies = {
 
 		# EFFECT ########
 		air_ace_generation_chance_factor = 0.25
-		air_mission_xp_gain_factor = 0.05
+		air_mission_xp_gain_factor = 0.1
 		###########
 
 		xor = {
@@ -973,6 +999,7 @@ technologies = {
 		}		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1021,6 +1048,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1083,6 +1111,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1133,6 +1162,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1181,6 +1211,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1227,6 +1258,7 @@ technologies = {
 		}		
 		xp_research_type = air
 		xp_unlock_cost = 100
+			
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1272,6 +1304,7 @@ technologies = {
 		}		
 		xp_research_type = air
 		xp_unlock_cost = 100
+			
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1318,6 +1351,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1346,10 +1380,16 @@ technologies = {
 	forward_interception = {
 
 		# EFFECT ########
-		air_interception_detect_factor = 0.15
+		category_fighter = {
+			air_agility = 0.1
+		}
+		category_heavy_fighter = {
+			air_agility = 0.1
+		}
 		###########
 		xp_research_type = air
 		xp_unlock_cost = 100
+				
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1379,15 +1419,14 @@ technologies = {
 	####################################
 
 	force_rotation = {
-		doctrine_name = "TITLE_OPERATIONAL_INTEGRITY"
-		
+
 		xp_research_type = air
 		
 		xor = { formation_flying air_superiority }	
 
 		# EFFECT ########
 		air_interception_detect_factor = 0.20
-		air_mission_xp_gain_factor = 0.05
+		air_mission_xp_gain_factor = 0.1
 		###########
 		
 		path = {
@@ -1396,6 +1435,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 2.25
 		
@@ -1441,6 +1481,7 @@ technologies = {
 		}
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1487,6 +1528,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1533,6 +1575,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1583,6 +1626,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1635,6 +1679,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1681,6 +1726,7 @@ technologies = {
 			
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1729,6 +1775,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1777,6 +1824,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1823,6 +1871,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1870,6 +1919,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		
@@ -1911,6 +1961,7 @@ technologies = {
 		
 		xp_research_type = air
 		xp_unlock_cost = 100
+		
 		doctrine = yes	
 		research_cost = 3
 		

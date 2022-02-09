@@ -13,13 +13,7 @@ country_event = {
 	option = {
 		name = wtt_germany.1.a
 		hidden_effect = {
-		
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-
-			set_capital = { state = 55 }
+			set_capital =  { state = 55 }
 			start_civil_war = {
 				ruling_party = neutrality
 				ideology = fascism
@@ -40,6 +34,10 @@ country_event = {
 			}
 			hidden_effect = { news_event = { id = wtt_news.1 hours = 6 } }
 			
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
 			add_popularity = {
 				ideology = communism
 				popularity = 0.2
@@ -68,18 +66,15 @@ country_event = {
 				has_government = fascism
 			}
 			set_cosmetic_tag = GER_civil_war
-			hidden_effect = { activate_mission = GER_mefo_bills_mission }
 		}
-		GER_august_von_mackensen = {
-			add_country_leader_role = {
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						great_war_hero
-					}
-				}
-				promote_leader = yes
+		create_country_leader = {
+			name = "August von Mackensen"
+			desc = "POLITICS_AUGUST_VON_MACKENSEN_DESC"
+			picture = GFX_portrait_ger_august_von_mackensen
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				great_war_hero
 			}
 		}
 		hidden_effect = {
@@ -240,22 +235,17 @@ country_event = {
 	option = {
 		name = wtt_germany.4.a
 		set_country_flag = kaiser_wilhelm_ii
-		GER_wilhelm_ii = {
-			add_country_leader_role = {
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					anti_democrat
-					imperial_connections				}
-			}
-			promote_leader = yes
+		create_country_leader = {
+			name = "Wilhelm II"
+			desc = "POLITICS_WILHELM_II_DESC"
+			picture = GFX_portrait_ger_wilhelm_ii
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				anti_democrat imperial_connections
 			}
 		}
-		hidden_effect = { 
-			news_event = { id = wtt_news.3 hours = 6 } 
-			set_cosmetic_tag = GER_neutrality
-		}
+		hidden_effect = { news_event = { id = wtt_news.3 hours = 6 } }
 	}
 }
 
@@ -288,16 +278,14 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = backed_down_netherlands_kaiser
 		}
-		GER_wilhelm_iii = {
-			add_country_leader_role = {
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					popular_figurehead2
-				}
-			}
-			promote_leader = yes
+		create_country_leader = {
+			name = "Wilhelm III"
+			desc = "POLITICS_WILHELM_III_DESC"
+			picture = GFX_portrait_ger_wilhelm_iii
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				popular_figurehead2
 			}
 		}
 		custom_effect_tooltip = wtt_germany.5_tt
@@ -318,22 +306,17 @@ country_event = {
 		clr_country_flag = germany_war_return_kaiser
 		HOL = { clr_country_flag = netherlands_refused_return_kaiser }
 		set_country_flag = kaiser_wilhelm_ii
-		GER_wilhelm_iii = {
-			add_country_leader_role = {
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					popular_figurehead2
-				}
-			}
-			promote_leader = yes
+		create_country_leader = {
+			name = "Wilhelm II"
+			desc = "POLITICS_WILHELM_II_DESC"
+			picture = GFX_portrait_ger_wilhelm_ii
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				anti_democrat imperial_connections
 			}
 		}
-		hidden_effect = { 
-			news_event = { id = wtt_news.4 hours = 6 } 
-			set_cosmetic_tag = GER_neutrality
-		}
+		hidden_effect = { news_event = { id = wtt_news.4 hours = 6 } }
 	}
 }
 
@@ -391,7 +374,7 @@ country_event = {
 		}
 		add_timed_idea = { idea = GER_preparing_ITA_coup days = 1095 }
 		GER = {
-			country_event = { id = wtt_germany.9 days = 1 random_days = 2 }
+			country_event = { id = wtt_germany.9 days = 1 random = 2 }
 		}
 	}
 
@@ -402,7 +385,7 @@ country_event = {
 			factor = 0
 		}
 		GER = {
-			country_event = { id = wtt_germany.10 days = 1 random_days = 2 }
+			country_event = { id = wtt_germany.10 days = 1 random = 2 }
 		}
 	}
 }
@@ -456,8 +439,15 @@ country_event = {
 			add_idea = GER_preparing_ITA_coup2
 		}
 		remove_ideas = victor_emmanuel
-		ITA_victor_emmanuel_iii = {
-			promote_character = { ideology = despotism }
+		create_country_leader = {
+			name = "Victor Emmanuel III"
+			desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+			picture = GFX_portrait_italy_victor_emmanuel_iii
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+
+			}
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -520,7 +510,6 @@ country_event = {
 		}
 		effect_tooltip = {
 			GER = { transfer_state = 85 }
-			GER = { transfer_state = 807 }
 			GER = { transfer_state = 86 }
 			GER = { transfer_state = 762 }
 			GER = { add_ideas = anti_soviet_pact }
@@ -574,7 +563,6 @@ country_event = {
 	option = {
 		name = wtt_germany.15.a
 		transfer_state = 85
-		transfer_state = 807
 		transfer_state = 86
 		transfer_state = 762
 		add_state_core = 85
@@ -680,10 +668,6 @@ country_event = {
 		add_stability = 0.05
 		add_popularity = { ideology = fascism popularity = -0.05 }
 		delete_unit_template_and_units = { division_template = "Landsturmregiment" }
-		if = { 
-			limit = { is_faction_leader = yes } 
-			leave_faction = yes
-		}
 	}
 
 	# Imprison head nazis for life
@@ -693,10 +677,6 @@ country_event = {
 		add_popularity = { ideology = fascism popularity = 0.05 }
 		set_country_flag = GER_imprisoned_fascist_leadership
 		delete_unit_template_and_units = { division_template = "Landsturmregiment" }
-		if = { 
-			limit = { is_faction_leader = yes } 
-			leave_faction = yes
-		}
 	}
 }
 
@@ -734,7 +714,7 @@ country_event = {
 			limit = {
 				has_idea = GER_the_great_red_menace
 			}
-			country_event = { id = wtt_germany.25 days = 1 random_days = 2 }
+			country_event = { id = wtt_germany.25 days = 1 random = 2 }
 			random_list = {
 				80 = {
 					# No effect
@@ -744,7 +724,7 @@ country_event = {
 				}
 			}
 		}
-		GER = { country_event = { id = wtt_germany.25 days = 1 random_days = 2 } }
+		GER = { country_event = { id = wtt_germany.25 days = 1 random = 2 } }
 	}
 
 	# Do nothing
@@ -996,16 +976,14 @@ country_event = {
 	option = {
 		name = wtt_germany.26.a
 		kill_country_leader = yes
-		GER_wilhelm_iii = {
-			add_country_leader_role = {
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					popular_figurehead2
-				}
-			}
-			promote_leader = yes
+		create_country_leader = {
+			name = "Wilhelm III"
+			desc = "POLITICS_WILHELM_III_DESC"
+			picture = GFX_portrait_ger_wilhelm_iii
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				popular_figurehead2
 			}
 		}
 	}
@@ -1036,16 +1014,14 @@ country_event = {
 		name = wtt_germany.26.a
 		kill_country_leader = yes
 		set_country_flag = GER_mackensen_dead
-		GER_wilhelm_iii = {
-			add_country_leader_role = {
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					popular_figurehead2
-				}
-			}
-			promote_leader = yes
+		create_country_leader = {
+			name = "Wilhelm III"
+			desc = "POLITICS_WILHELM_III_DESC"
+			picture = GFX_portrait_ger_wilhelm_iii
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				popular_figurehead2
 			}
 		}
 	}
@@ -1262,7 +1238,6 @@ country_event = {
 		name = germany.61.b
 		trigger = {
 			NOT = { GER = { has_country_flag = germany_war_return_kaiser } }
-			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		ai_chance = { 
 			factor = 10
@@ -1317,7 +1292,6 @@ country_event = {
 		name = germany.61.c
 		trigger = {
 			GER = { has_country_flag = germany_war_return_kaiser }
-			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		ai_chance = { 
 			factor = 10
@@ -1381,16 +1355,10 @@ country_event = {
 	
 	option = {
 		name = germany.62.a
-		trigger = { NOT = { has_completed_focus = ENG_a_change_in_course } }
 		add_opinion_modifier = { target = GER modifier = protest_action }
 		GER = {
 			add_war_support = 0.1
 		}
-	}
-
-	option = {
-		name = germany.62.b
-		trigger = { has_completed_focus = ENG_a_change_in_course }
 	}
 }
 
@@ -1579,14 +1547,14 @@ country_event = {
 			limit = {
 				has_country_flag = kaiser_wilhelm_ii
 			}
-			GER_wilhelm_iii = {
-				add_country_leader_role = {
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {}
-				}
-				promote_leader = yes
+			create_country_leader = {
+				name = "Wilhelm III"
+				desc = "POLITICS_WILHELM_III_DESC"
+				picture = GFX_portrait_ger_wilhelm_iii
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+	
 				}
 			}
 		}
@@ -1666,14 +1634,14 @@ country_event = {
 			limit = {
 				has_country_flag = kaiser_wilhelm_ii
 			}
-			GER_wilhelm_iii = {
-				add_country_leader_role = {
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {}
-				}
-				promote_leader = yes
+			create_country_leader = {
+				name = "Wilhelm III"
+				desc = "POLITICS_WILHELM_III_DESC"
+				picture = GFX_portrait_ger_wilhelm_iii
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+	
 				}
 			}
 		}
@@ -1950,11 +1918,11 @@ country_event = {
 			}
 		}
 		hidden_effect = { 
-			every_other_country = {
+			every_country = {
 				limit = {
-					has_character = CHI_alexander_von_falkenhausen
+					has_unit_leader = 602
 				}
-				retire_character = CHI_alexander_von_falkenhausen
+				remove_unit_leader = 602
 			}
 		}
 		set_global_flag = falkenhausen_recalled
@@ -2198,15 +2166,14 @@ country_event = {
 				has_government = fascism
 			}
 			kill_country_leader = yes
-			GER_heinrich_himmler = {
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = nazism
-						expire = "1965.1.1.1"
-						traits = {}
-					}
-				}		
+			create_country_leader = {
+				name = "Heinrich Himmler"
+				desc = "POLITICS_HEINRICH_HIMMLER_DESC"
+				picture = "Portrait_Germany_Heinrich_Himmler.dds"
+				expire = "1965.1.1"
+				ideology = nazism
+				traits = {
+				}
 			}
 		}
 		hidden_effect = {
@@ -2220,20 +2187,14 @@ country_event = {
 						}
 						ARG = {
 							add_timed_idea = { idea = fascism_drift_ARG days = 1460 }
-							country_event = { id = wtt_germany.1004 days = 1095 random_days = 365 }
+							country_event = { id = wtt_germany.1004 days = 1095 random = 365 }
 						}
 					}
 				}
 				1 = {
 					set_global_flag = MTG_flag_955
 				}
-				1 = { 
-					if = { 
-						limit = { has_dlc = "La Resistance" }
-						country_event = { id = wtt_germany.1005 days = 1095 random_days = 365 } 
-					} 
-				}
-				297 = {}
+				198 = {}
 			}
 		}
 	}
@@ -2295,13 +2256,13 @@ country_event = {
 		add_popularity = { ideology = fascism popularity = 0.05 }
 		custom_effect_tooltip = reinstate_nazi_leadership_TT
 		set_country_flag = GER_reinstated_nazi_leadership
-		if = {  #I'm leaving these guys in the old system for now because it would be a lot of trouble to make them work properly and need not sure if it's worth it right now. 
+		if = {
 			limit = {
 				has_country_flag = model_survived
 			}
-			create_field_marshal = { 
-				name = GER_walter_model
-				picture = "Portrait_Germany_Walter_Model.dds"
+			create_field_marshal = {
+				name = "Walter Model"
+				picture = GFX_portrait_GER_walter_model
 				traits = { defensive_doctrine brilliant_strategist trait_cautious }
 				skill = 3
 				id = 10
@@ -2318,7 +2279,7 @@ country_event = {
 			}
 			create_corps_commander = {
 				name = "Walter Krüger"
-				picture = "Portrait_Germany_Walter_Kruger.dds"
+				picture = GFX_portrait_Walter_Kruger
 				traits = { panzer_leader trait_reckless }
 				skill = 3
 				id = 15
@@ -2335,7 +2296,7 @@ country_event = {
 			}
 			create_corps_commander = {
 				name = "Paul Hausser"
-				picture = "Portrait_Germany_Paul_Hausser.dds"
+				picture = GFX_portrait_Paul_Hausser
 				traits = {  armor_officer }
 				skill = 4
 				id = 20
@@ -2348,11 +2309,11 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = dietrich_survived
+#				has_country_flag = dietrich_survived
 			}
 			create_corps_commander = {
 				name = "Sepp Dietrich"
-				picture = "Portrait_Germany_Josef_Dietrich.dds"
+				picture = GFX_portrait_Sepp_Dietrich
 				traits = { armor_officer brilliant_strategist trait_reckless }
 				skill = 4
 				id = 24
@@ -2441,7 +2402,7 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		AUS = { country_event = { id = wtt_germany.54 days = 1 random_days = 6 } }
+		AUS = { country_event = { id = wtt_germany.54 days = 1 random = 6 } }
 	}
 
 	# No
@@ -2470,7 +2431,7 @@ country_event = {
 			factor = 100
 		}
 		custom_effect_tooltip = GAME_OVER_TT
-		GER = { country_event = { id = wtt_germany.55 days = 1 random_days = 6 } }
+		GER = { country_event = { id = wtt_germany.55 days = 1 random = 6 } }
 	}
 
 	# No we will remain independent
@@ -2552,7 +2513,7 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		GER = { country_event = { id = wtt_germany.57 hours = 2 random_hours = 4 } }
+		GER = { country_event = { id = wtt_germany.57 hours = 2 random = 4 } }
 	}
 
 	# No
@@ -3089,9 +3050,16 @@ country_event = {
 			}
 			set_politics = { ruling_party = neutrality elections_allowed = no }
 		}
-		
-		promote_character = HUN_otto_von_habsburg #Already a country leader (Non-Aligned -> Despotism)
-
+		create_country_leader = {
+			name = "Otto von Habsburg"
+			desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
+			picture = GFX_Portrait_hungary_otto_von_hapsburg
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
 		if = {
 			limit = {
 				tag = AUS
@@ -3475,7 +3443,7 @@ country_event = {
 		add_political_power = -50
 		ENG = { add_opinion_modifier = { target = GER modifier = GER_aided_in_ceremony_preparations } }
 		hidden_effect = {
-			country_event = { id = wtt_germany.1001 days = 3 random_days = 4 }
+			country_event = { id = wtt_germany.1001 days = 3 random = 4 }
 		}
 	}
 	option = {
@@ -3483,7 +3451,7 @@ country_event = {
 		custom_effect_tooltip = wtt_germany.1000.b_tt
 		add_political_power = 50
 		hidden_effect = {
-			country_event = { id = wtt_germany.1002 days = 3 random_days = 4 }
+			country_event = { id = wtt_germany.1002 days = 3 random = 4 }
 		}
 	}
 }
@@ -3500,17 +3468,15 @@ country_event = {
 		name = wtt_germany.1001.a
 		add_stability = -0.1
 		kill_country_leader = yes
-		GER_victoria = {
-			add_country_leader_role = {
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-						kaiserin_of_the_people
-						victoria_iii # Third Victoria counting from Queen Victoria hurr durr
-					}
-				}
-				promote_leader = yes
+		create_country_leader = {
+			name = "Victoria"
+			desc = "POLITICS_VICTORIA_DESC"
+			picture = GFX_portrait_ger_victoria_louise
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				kaiserin_of_the_people
+				victoria_iii # Third Victoria counting from Queen Victoria hurr durr
 			}
 		}
 		hidden_effect = { set_global_flag = hindenburg_destroyed }
@@ -3557,52 +3523,16 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		set_politics = { 
-			ruling_party = fascism 
-			elections_allowed = no 
-		}
-		add_country_leader_role = {
-			character = ARG_senor_hitler
-			country_leader={
-				expire = "1965.1.1"
-				ideology = nazism
-				traits = {
-					dictator
-					incognito
-				}
-			}
-			promote_leader = yes
-		}
-	}
-}
-
-country_event = {
-	id = wtt_germany.1005
-
-	hidden = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		random_list = {
-			50 = {
-				create_operative_leader = {
-					name = "Achim Hund"
-					GFX = GFX_portrait_germany_agent_h_m
-					traits = { operative_natural_orator }
-					bypass_recruitment = no
-					available_to_spy_master = yes
-				}
-			}
-			50 = {
-				create_operative_leader = {
-					name = "Andrea Hund"
-					GFX = GFX_portrait_germany_agent_h_f
-					traits = { operative_seducer operative_natural_orator }
-					bypass_recruitment = no
-					available_to_spy_master = yes
-					female = yes
-				}
+		set_politics = { ruling_party = fascism elections_allowed = no }
+		create_country_leader = {
+			name = "Señor Hilter"
+			desc = "POLITICS_SENOR_HILTER_DESC"
+			picture = "portrait_south_america_generic_leader_1.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+				dictator
+				incognito
 			}
 		}
 	}

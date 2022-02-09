@@ -4,8 +4,6 @@ state={
 	name="STATE_280"
 	
 	state_category = pastoral
-	impassable = yes
-
 
 	history={
 		owner = BRA
@@ -22,6 +20,4 @@ state={
 	}
 	manpower=120000
 	buildings_max_level_factor=1.000
-
-	local_supplies=0.0 
 }

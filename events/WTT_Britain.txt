@@ -46,21 +46,21 @@ country_event = {
 	#accept
 	option = {
 		ai_chance = {
-			factor = 10
+			factor = 0
 			modifier = {
 				factor = 0
 				has_opinion = { target = ENG value < -99 }
 			}
 			modifier = {
-				factor = 1.5
+				factor = 2
 				has_opinion = { target = ENG value > -50 }
 			}
 			modifier = {
-				factor = 1.5
+				factor = 2
 				has_opinion = { target = ENG value > -25 }
 			}
 			modifier = {
-				factor = 2
+				factor = 3
 				has_opinion = { target = ENG value > 0 }
 			}
 		}
@@ -74,7 +74,7 @@ country_event = {
 	#decline
 	option = {
 		ai_chance = {
-			factor = 90
+			factor = 80
 		}
 		name = wtt_britain.25.b
 		ENG = { country_event = { id = wtt_britain.27 } }
@@ -112,7 +112,7 @@ country_event = {
 		}
 		name = wtt_britain.27.a
 		add_popularity = { ideology = democratic popularity = -0.05 }
-		add_war_support = 0.05
+		add_war_support = 0.10
 		random_other_country = {
 			limit = {
 				original_tag = FRA
@@ -149,11 +149,11 @@ country_event = {
 					}
 					destroy_ships = {
 						type = ship_hull_light
-						count = 1
+						count = 10
 					}
 					destroy_ships = {
 						type = ship_hull_heavy
-						count = 1
+						count = 3
 					}
 				}
 			}
@@ -165,11 +165,11 @@ country_event = {
 					}
 					destroy_ships = {
 						type = ship_hull_light
-						count = 2
+						count = 14
 					}
 					destroy_ships = {
 						type = ship_hull_heavy
-						count = 2
+						count = 4
 					}
 				}
 			}
@@ -181,11 +181,11 @@ country_event = {
 					}
 					destroy_ships = {
 						type = ship_hull_light
-						count = 4
+						count = 18
 					}
 					destroy_ships = {
 						type = ship_hull_heavy
-						count = 3
+						count = 4
 					}
 				}
 			}

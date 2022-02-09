@@ -6,14 +6,15 @@ state=
 	state_category = small_island
 	history=
 	{
+		set_state_flag = JAP_controls
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 1
 			13025 = {
-				naval_base = 1
-
+				naval_base = 2
+				coastal_bunker = 2
 			}
 		}
 		victory_points = {
@@ -24,6 +25,4 @@ state=
 	provinces={
 		13025
 	}
-
-	local_supplies=0.0 
 }
