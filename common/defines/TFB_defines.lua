@@ -269,6 +269,18 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0.05
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_DISRUPTION_MITIGATION = 6.0 -- Multiply Train Damage by (Smooth / (Smooth + (Disruption * Mitigation)))
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_DISRUPTION_SMOOTHING = 5.0
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0.003 -- Portion of train damage to additionally deal to railways
+NDefines.NAir.AIR_WING_XP_MAX = 0											--Per plane XP.
+NDefines.NAir.AIR_WING_XP_LEVELS = { 0, 0, 0, 0 }						--Experience needed to progress to the next level
+NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0									--if a plane dies, the game assumes that a pilot with this amount of xp died and recalcs average.
+NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 0									--Max average XP achieved with training.
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 0						--Daily gain when running training exercise mission
+NDefines.NAir.AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 0 							--Wings in combat gain extra XP
+NDefines.NAir.AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 0				--Bombers bombing, CAS cassing, NBs nbing, kamikazees kamikazeeing, etc.
+NDefines.NAir.AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0					--recon mission
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0					--Factor on country Air XP gained from wing training
+NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0			--Training exercises cause more accidents
+NDefines.NAir.AIR_WING_XP_LOSS_REDUCTION_OVER_FRIENDLY_TERRITORY_FACTOR = 0	--Reduction on XP loss over friendly territory
+
 
 NDefines.NNavy.BEST_CAPITALS_TO_SCREENS_RATIO = 0.50 							-- capitals / screens ratio used for creating FEX groups in naval combat
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.07									-- base chance for hit
