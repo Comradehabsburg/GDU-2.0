@@ -3,5 +3,8 @@ tags={
 	"Balance"
 }
 name="funnymodmp"
-supported_version="1.11.4"
-remote_file_id="2663179643"
+replace_path="common/countries"
+replace_path="history/countries"
+replace_path="common/country_tags"
+replace_path="common/decisions"
+supported_version="1.11.5"
