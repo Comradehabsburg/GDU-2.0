@@ -13,14 +13,14 @@ state={
 	state_category = pastoral
 
 	history= {
-		owner = ALB
+		owner = OBG
 		victory_points = {
 			914 3
 		}
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = ALB
+		add_core_of = OBG
 		add_claim_by = GRE
 		add_claim_by = ITA
 

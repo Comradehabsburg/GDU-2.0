@@ -7,7 +7,7 @@ state={
 	state_category = rural
 	
 	history={
-		owner = POR
+		owner = OBG
 		buildings = {
 			infrastructure = 3
 			8245 = {
