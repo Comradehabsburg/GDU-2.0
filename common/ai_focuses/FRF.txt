@@ -1,47 +1,14 @@
-ai_historical_focus_list_ITA = {
+ai_historical_focus_list_FRF = {
 	ai_national_focuses = {
-		ITA_ethiopian_war_logistics 
-		ITA_victoryinETH 
-		ITA_industrial_effort 
-		ITA_army_primacy 
-		ITA_mare_nostrum 
-		ITA_light_ship_effort 
-		ITA_industrial_effort_2 
-		ITA_modernized_artillery 
-		ITA_air_innovation 
-		ITA_slovenia_dalmatia_claims 
-		ITA_modernized_army 
-		ITA_fortification_effort 
-		ITA_extra_tech_slot 
-		ITA_special_forces 
-		ITA_capital_ships 
-		ITA_bulgaria_friend 
-		ITA_albania_war_goal 
-		ITA_pact_of_steel 
-		ITA_escort_effort 
-		ITA_submarine_effort 
-		ITA_italian_highways 
-		ITA_carrier_effort 
-		ITA_bomber_effort 
-		ITA_greece_war_goal  
-		ITA_german_rd_treaty 
-		ITA_german_millitary_cooperation 
-		ITA_naval_air_effort 
-		ITA_atlantic_fleet 
-		ITA_marines_and_landing_craft 
-		ITA_air_innovation_2 
-		ITA_armored_effort 
-		ITA_sea_wolves 
-		ITA_secret_weapons 
-		ITA_jet_engine_effort 
-		ITA_prospect_for_oil 
-		ITA_libyan_refineries 
-		ITA_libyan_infrastructure
+		FRA_france_libre
+		FRA_sway_west_africa
+		FRA_defend_dutch_american_colonies
+		FRA_take_Manda
 	}
 }
 
 
-ai_focus_defense_ITA = {
+ai_focus_defense_FRF = {
 	research = {
 		defensive = 5.0	
 		radar_tech = 1.0
@@ -50,7 +17,7 @@ ai_focus_defense_ITA = {
 	}
 }
 
-ai_focus_aggressive_ITA = {
+ai_focus_aggressive_FRF = {
 	research = {
 		offensive = 5.0
 		synth_resources = 1.0
@@ -59,7 +26,7 @@ ai_focus_aggressive_ITA = {
 	}
 }
 
-ai_focus_war_production_ITA = {
+ai_focus_war_production_FRF = {
 	research = {
 		industry = 10.0
 		construction_tech = 2.0
@@ -68,7 +35,7 @@ ai_focus_war_production_ITA = {
 	}
 }
 
-ai_focus_military_equipment_ITA = {
+ai_focus_military_equipment_FRF = {
 	research = {
 		infantry_weapons = 50.0
 		infantry_tech = 15.0
@@ -77,7 +44,7 @@ ai_focus_military_equipment_ITA = {
 	}
 }
 
-ai_focus_military_advancements_ITA = {
+ai_focus_military_advancements_FRF = {
 	research = {
 		armor = 15.0
 		jet_technology = 5.0
@@ -93,7 +60,7 @@ ai_focus_military_advancements_ITA = {
 	}
 }
 
-ai_focus_peaceful_ITA = {
+ai_focus_peaceful_FRF = {
 	research = {
 		industry = 15.0
 		construction_tech = 5.0
@@ -102,7 +69,7 @@ ai_focus_peaceful_ITA = {
 	}
 }
 
-ai_focus_naval_ITA = {
+ai_focus_naval_FRF = {
     research = {
         naval_equipment = 8.0
         naval_doctrine = 75.0
@@ -119,14 +86,14 @@ ai_focus_naval_ITA = {
     }
 }
 
-ai_focus_naval_air_ITA = {
+ai_focus_naval_air_FRF = {
 	research = {
 		naval_air = 4.0
 		naval_bomber = 3.0
 	}
 }
 
-ai_focus_aviation_ITA = {
+ai_focus_aviation_FRF = {
 	research = {
 		air_doctrine = 50.0
 		light_air = 4.0
