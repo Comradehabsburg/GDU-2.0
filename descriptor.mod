@@ -3,8 +3,5 @@ tags={
 	"Balance"
 }
 name="funnymodmp"
-replace_path="common/ai_equipment"
-replace_path="common/ai_strategy"
-replace_path="common/ai_strategy_plans"
-supported_version="1.11.x"
+supported_version="1.11.4"
 remote_file_id="2663179643"
