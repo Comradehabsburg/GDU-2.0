@@ -105,10 +105,68 @@ technology_folders = {
 	nsb_armour_folder = {
 		ledger = army
 		available = {
-
+			NOT = { 
+				original_tag = GER
+				original_tag = SOV
+				original_tag = MON
+				original_tag = USA 
+				original_tag = MEX
+				original_tag = BRA
+				original_tag = ENG 
+				original_tag = CAN
+				original_tag = RAJ 
+				original_tag = SAF
+				original_tag = AST
+				original_tag = NZL
+				original_tag = IRE
+		    }
 		}
 	}
-
+	armour_folder = {
+		ledger = army
+        available = {
+            always = no
+		}
+	}
+	ger_armour_folder = {
+		ledger = army
+        available = {
+			original_tag = GER
+		}
+	}
+	sov_armour_folder = {
+		ledger = army
+        available = {
+			OR = {
+				original_tag = SOV
+				original_tag = MON
+			}
+		}
+	}
+	eng_armour_folder = {
+		ledger = army
+        available = {
+			OR = {
+				original_tag = ENG
+				original_tag = CAN
+				original_tag = NZL
+				original_tag = AST
+				original_tag = RAJ
+				original_tag = SAF
+				original_tag = IRE
+			}
+		}
+	}
+	usa_armour_folder = {
+		ledger = army
+        available = {
+			OR = {
+				original_tag = USA
+				original_tag = MEX
+				original_tag = BRA
+			}
+		}
+	}
 	artillery_folder = {
 		ledger = army
 	}
