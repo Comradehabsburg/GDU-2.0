@@ -5,7 +5,7 @@ state={
 		chromium=200.000 #added due to portugal setup
 	}
 	history={
-		owner = POR
+		owner = OBG
 		victory_points = {
 			9869 1 
 		}
@@ -17,7 +17,7 @@ state={
 			industrial_complex = 2
 
 		}
-		add_core_of = POR
+		add_core_of = OBG
 		add_extra_state_shared_building_slots = 2
 
 	}

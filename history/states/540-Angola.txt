@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = POR
+		owner = OBG
 		buildings = {
 			infrastructure = 1
 			8248 = {
@@ -19,7 +19,7 @@ state={
 		victory_points = {
 			10966 1 
 		}
-		add_core_of = ZIM
+		add_core_of = OBG
 	}
 
 	provinces={

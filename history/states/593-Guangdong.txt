@@ -24,7 +24,7 @@ state= {
 		}
 
 		1938.10.25 = {		
-			remove_core_of = GXC
+			remove_core_of = OBG
 			owner = CHI
 			JAP = {
 				set_province_controller = 1202

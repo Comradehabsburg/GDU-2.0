@@ -7,7 +7,7 @@ state={
 	state_category = rural
 	
 	history={
-		owner = POR
+		owner = OBG
 		buildings = {
 			infrastructure = 3
 			8245 = {
@@ -20,7 +20,7 @@ state={
 		victory_points = {
 			8245 1 
 		}
-		add_core_of = ZIM
+		add_core_of = OBG
 	}
 
 	provinces={

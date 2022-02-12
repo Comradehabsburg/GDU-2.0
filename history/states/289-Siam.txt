@@ -14,7 +14,7 @@ state={
 	}
 
 	history={
-		owner = SIA
+		owner = OBG
 		buildings = {
 			infrastructure = 3
 			arms_factory = 5
@@ -34,7 +34,7 @@ state={
 		victory_points = {
 			10438 1 
 		}
-		add_core_of = SIA
+		add_core_of = OBG
 	}
 
 	provinces={

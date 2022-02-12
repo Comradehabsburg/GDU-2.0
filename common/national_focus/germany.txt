@@ -2487,7 +2487,7 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-			188 = { add_claim_by = GER }
+			transfer_state = 188
 			85 = { add_claim_by = GER }
 			86 = { add_claim_by = GER }
 			762 = { add_claim_by = GER }
@@ -4060,40 +4060,7 @@ focus_tree = {
 		}
 	}	
 
-	focus = {
-		id = GER_operation_tannenbaum
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = GER_danzig_or_war }
-		mutually_exclusive = { focus = GER_swiss_banks }
-		available = {
-			is_puppet = no
-			NOT = { is_in_faction_with = SWI }
-		}
-		bypass = {
-			NOT = { country_exists = SWI }
-			has_war_with = SWI
-		}
-		cancel_if_invalid = yes
-		will_lead_to_war_with = SWI
-		x = -3
-		y = 1
-		relative_position_id = GER_danzig_or_war
-		cost = 1
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		
-		completion_reward = {
-			declare_war_on = {
-				target = SWI
-				type = annex_everything
-			}
-		}
-	}
+
 	
 	focus = {
 		id = GER_swiss_banks
