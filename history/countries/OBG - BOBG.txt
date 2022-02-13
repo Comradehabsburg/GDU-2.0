@@ -18,6 +18,7 @@ add_ideas = {
 	neutrality_idea2 
 	stupid_ai
 	wasteland_economy
+	catatonic_great_depression
 }
 set_stability = 0.9
 set_war_support = 0.1

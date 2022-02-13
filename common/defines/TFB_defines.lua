@@ -5,7 +5,7 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.2, 0.1, 0.03, 0.0 } -- game speeds 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 15						-- Default days before an event times out if not scripted
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days before a mission is removed from the interface after having failed or completed
-NDefines.NGame.HANDS_OFF_START_TAG = "VEN"
+NDefines.NGame.HANDS_OFF_START_TAG = "OBG"
 
 NDefines.NDiplomacy.WARGOAL_WORLD_TENSION_REDUCTION = -0.25			-- Reduction of pp cost for wargoal at 100% world tension scales linearly
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.04			-- Each province owned by the target country contributes this amount of volunteers to the limit.

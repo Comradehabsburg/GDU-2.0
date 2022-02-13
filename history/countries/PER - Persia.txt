@@ -1,6 +1,8 @@
 ﻿capital = 266
 
-oob = "PER_1936"
+
+
+
 
 # Starting tech
 set_technology = {
@@ -13,6 +15,7 @@ set_technology = {
 }
 
 add_ideas  = {
+	catatonic_great_depression
 	stupid_ai
 }
 
