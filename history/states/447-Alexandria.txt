@@ -4,21 +4,32 @@ state={
 	name="STATE_447"
 	manpower = 3859239
 	resources={
-		oil=10 # was: 2
+		oil=1 # was: 2
 	}
 	
 	state_category = town
 
 	history={
 		owner = ENG
-		
+
 		victory_points = {
 			4076 10 
+		}	
+
+		victory_points = {
+			4191 1 
 		}
-		
-				
+
+		victory_points = {
+			10884 1 
+		}
+
+		victory_points = {
+			12022 1 
+		}
+
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			air_base = 6
 			4076 = {
@@ -26,10 +37,12 @@ state={
 			}
 		}
 
-		add_core_of = OBG
+		add_core_of = URG
 	}
 
 	provinces={
-		 4076  7091 7164 10073 11964  
+		 4076 7091 7164 10073 11964 1057 1140 4191 4962 5004 7985 10104 10754 10785 10884 12022 12866
 	}
+
+	local_supplies=0.0 
 }

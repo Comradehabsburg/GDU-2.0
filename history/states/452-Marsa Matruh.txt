@@ -2,28 +2,30 @@
 state={
 	id=452
 	name="STATE_452"
+	manpower = 52556
+	
+	state_category = wasteland
 
 	history={
 		owner = ENG
 		buildings = {
-			infrastructure = 3
-			
-
+			infrastructure = 2
 		}
+
 		victory_points = {
-			11967 1 
+			4145 3 
 		}
 		victory_points = {
 			7079 1
 		}
-		add_core_of = OBG
 
+	add_core_of = URG
 	}
 
 	provinces={
-		1143 5078 7079 7148 9989 10061  11967 12033 12091 12764 13242 13244 
+		7079 9989 10061 11910 11967 5078 12033 12091 7148 1143 2064 10127 10869 10907 12099 12733 12764 12816 4138 12836 1071 7117 992 4145 12082 8103 10900 
 	}
-	manpower=52556
-	buildings_max_level_factor=1.000
-	state_category=wasteland
+
+
+	local_supplies=9.0 
 }
