@@ -13111,7 +13111,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			POR = {
+			OBG = {
 				give_resource_rights = { receiver = SPR state = 181 }
 				give_resource_rights = { receiver = SPR state = 112 }
 				give_resource_rights = { receiver = SPR state = 795 }
