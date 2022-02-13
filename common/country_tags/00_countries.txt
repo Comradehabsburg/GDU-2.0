@@ -35,7 +35,6 @@ MON = "countries/Mongolia.txt"
 SLO = "countries/Slovakia.txt"
 RAJ = "countries/British Raj.txt"
 PRC = "countries/ComChina.txt"
-ICE = "countries/Iceland.txt"
 CSA = "countries/CSA.txt"
 USB = "countries/USB.txt"#neutral US bloc during civil war in MTG
 OBG = "countries/BOBG.txt"
