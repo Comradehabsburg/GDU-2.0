@@ -64,7 +64,11 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
-	add_ideas = AST_great_depression_1
+	add_ideas = { 
+		
+		AST_great_depression_1
+		commonwealth_protection
+	}
 
 	add_to_tech_sharing_group = commonwealth_research
 }

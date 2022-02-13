@@ -50,6 +50,17 @@ autonomous_state = {
 	state_production_speed_buildings_factor = -0.25
 }
 
+
+
+papua = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_sabotaged_resource
+	
+supply_factor = -0.40
+
+}
+
 semi_autonomous_state = {
 	enable = { always = yes }
 
