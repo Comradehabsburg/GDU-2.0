@@ -9,10 +9,6 @@ if = {
 	}
 }
 
-add_ideas = {
-		catatonic_great_depression
-}
-
 set_research_slots = 3
 
 # Starting tech
