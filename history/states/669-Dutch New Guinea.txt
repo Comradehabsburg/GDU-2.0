@@ -16,6 +16,111 @@ state={
 			12371 = {
 				naval_base = 2
 			}
+		
+		10505	= {
+				naval_base = 1
+	
+			}
+
+			12457 = {
+				naval_base = 1
+	
+			}
+
+			1629 = {
+				naval_base = 1
+	
+			}
+
+			7627 = {
+				naval_base = 1
+	
+			}
+
+			4593 = {
+				naval_base = 1
+	
+			}
+		
+		7269 = {
+			naval_base = 1
+
+		}
+
+		7585 = {
+			naval_base = 1
+
+		}
+
+		4468 = {
+			naval_base = 1
+
+		}
+
+		12315 = {
+			naval_base = 1
+
+		}
+
+		7512 = {
+			naval_base = 1
+
+		}
+
+		7487 = {
+			naval_base = 1
+
+		}
+
+		4524 = {
+			naval_base = 1
+
+		}
+
+		7542 = {
+			naval_base = 1
+
+		}
+
+		4509 = {
+			naval_base = 1
+
+		}
+
+		10369 = {
+			naval_base = 1
+
+		}
+
+		7529 = {
+			naval_base = 1
+
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		}
 	}
 	provinces={

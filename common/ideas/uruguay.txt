@@ -27,6 +27,30 @@ country = {
 				research_speed_factor = -20
 			}
 		}
+
+
+
+
+
+		commonwealth_protection = {
+			picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 3
+				army_core_defence_factor = 3
+			}
+		}
+
 		
 }
 		}

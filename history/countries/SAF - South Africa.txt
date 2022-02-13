@@ -2,6 +2,8 @@
 
 oob = "SAF_1936"
 
+add_ideas = { commonwealth_protection }
+
 set_stability = 0.6
 set_war_support = 0.2
 set_research_slots = 4

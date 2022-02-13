@@ -26,6 +26,148 @@ state={
 
 			}
 
+
+
+			10423 = {
+				naval_base = 1
+
+			}
+
+			12400 = {
+				naval_base = 1
+
+			}
+
+			1389 = {
+				naval_base = 1
+
+			}
+			4393 = {
+				naval_base = 1
+
+			}
+			7614 = {
+				naval_base = 1
+
+			}
+			12193 = {
+				naval_base = 1
+
+			}
+			7365 = {
+				naval_base = 1
+
+			}
+
+			10251 = {
+				naval_base = 1
+
+			}
+			4418 = {
+				naval_base = 1
+
+			}
+
+		10974 = {
+			naval_base = 1
+
+		}
+
+		7305 = {
+			naval_base = 1
+
+		}
+
+		7333 = {
+			naval_base = 1
+
+		}
+
+		10231 = {
+			naval_base = 1
+
+		}
+
+		10260 = {
+			naval_base = 1
+
+		}
+
+		12995 = {
+			naval_base = 1
+
+		}
+
+		4346 = {
+			naval_base = 1
+
+		}
+
+		12995 = {
+			naval_base = 1
+
+		}
+		4346 = {
+			naval_base = 1
+
+}
+
+		7349 = {
+			naval_base = 1
+
+		}
+
+		4289 = {
+			naval_base = 1
+
+		}
+
+		12135 = {
+			naval_base = 1
+
+		}
+
+
+		1242 = {
+			naval_base = 1
+
+		}
+
+		1222 = {
+			naval_base = 1
+
+		}
+
+		12123 = {
+			naval_base = 1
+
+		}
+
+		10147 = {
+			naval_base = 1
+
+		}
+
+		1283 = {
+			naval_base = 1
+
+		}
+
+		1310 = {
+			naval_base = 1
+
+		}
+
+		12484 = {
+			naval_base = 1
+
+		}
+
+		
+
+
+
+
 		}
 		victory_points = {
 			4329 3 
