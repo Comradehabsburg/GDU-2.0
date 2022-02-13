@@ -1,0 +1,31 @@
+political_actions = {
+    SOV_annex_mongolia = {
+		ai_will_do = { factor = 0 }
+		cost = 20
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+			MON = { is_ai = yes }
+			country_exists = MON
+		}
+
+		complete_effect = {
+			SOV = {
+				annex_country = { target = MON transfer_troops = yes }
+				add_state_core = 619
+				add_state_core = 287
+				add_state_core = 759
+				add_state_core = 617
+				add_state_core = 760
+				add_state_core = 618
+				add_state_core = 817
+				add_state_core = 818
+				add_state_core = 328
+				add_state_core = 820
+				add_state_core = 330
+				add_state_core = 819
+			}
+		}
+	}
+}
