@@ -47,6 +47,8 @@ if = {
 		RAJ_agrarian_society
 		RAJ_risk_of_famine
 		commonwealth_protection
+		RAJ_island_hopping3
+
 	}
 
 	add_to_tech_sharing_group = commonwealth_research
