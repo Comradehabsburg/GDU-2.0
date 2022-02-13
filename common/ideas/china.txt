@@ -86,6 +86,11 @@ ideas = {
 			
 			modifier = {
 
+				army_org_factor = -0.40
+				pocket_penalty = -100
+				army_speed_factor = -100
+				dig_in_speed = -100
+				supply_consumption_factor = -100
 			}
 
 		}
