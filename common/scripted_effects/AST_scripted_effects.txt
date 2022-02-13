@@ -1,0 +1,113 @@
+JAP_australia_island_hopping_level_up = {
+	
+
+	if = {
+		limit = { has_idea = JAP_australia_island_hopping3 }
+		swap_ideas = {
+			remove_idea = JAP_australia_island_hopping3
+			add_idea = JAP_australia_island_hopping4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = JAP_australia_island_hopping2 }
+		swap_ideas = {
+			remove_idea = JAP_australia_island_hopping2
+			add_idea = JAP_australia_island_hopping3
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_australia_island_hopping1 }
+		swap_ideas = {
+			remove_idea = JAP_australia_island_hopping1
+			add_idea = JAP_australia_island_hopping2
+		}
+	}
+}
+
+# Like the level up effect except it runs in reverse
+JAP_australia_island_hopping_level_down = {
+	if = {
+		limit = { has_idea = JAP_australia_island_hopping1 }
+		remove_ideas = JAP_australia_island_hopping1
+	}
+	else_if = {
+		limit = { has_idea = JAP_australia_island_hopping2 }
+		swap_ideas = {
+			remove_idea = JAP_australia_island_hopping2
+			add_idea = JAP_australia_island_hopping1
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_australia_island_hopping3 }
+		swap_ideas = {
+			remove_idea = JAP_australia_island_hopping3
+			add_idea = JAP_australia_island_hopping2
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_australia_island_hopping4 }
+		swap_ideas = {
+			remove_idea = JAP_australia_island_hopping4
+			add_idea = JAP_australia_island_hopping3
+		}
+	}
+	
+AST_island_hopping_level_up = {
+	
+
+	if = {
+		limit = { has_idea = AST_island_hopping3 }
+		swap_ideas = {
+			remove_idea = AST_island_hopping3
+			add_idea = AST_island_hopping4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = AST_island_hopping2 }
+		swap_ideas = {
+			remove_idea = AST_island_hopping2
+			add_idea = AST_island_hopping3
+		}
+	}
+	else_if = {
+		limit = { has_idea = AST_island_hopping1 }
+		swap_ideas = {
+			remove_idea = AST_island_hopping1
+			add_idea = AST_island_hopping2
+		}
+	}
+
+}
+
+# Like the level up effect except it runs in reverse
+AST_island_hopping_level_down = {
+	if = {
+		limit = { has_idea = AST_island_hopping1 }
+		remove_ideas = AST_island_hopping1
+	}
+	else_if = {
+		limit = { has_idea = AST_island_hopping2 }
+		swap_ideas = {
+			remove_idea = AST_island_hopping2
+			add_idea = AST_island_hopping1
+		}
+	}
+	else_if = {
+		limit = { has_idea = AST_island_hopping3 }
+		swap_ideas = {
+			remove_idea = AST_island_hopping3
+			add_idea = AST_island_hopping2
+		}
+	}
+	else_if = {
+		limit = { has_idea = AST_island_hopping4 }
+		swap_ideas = {
+			remove_idea = AST_island_hopping4
+			add_idea = AST_island_hopping3
+		}
+	}
+	
+}
+
+
+

@@ -3,9 +3,11 @@ state={
 	name="STATE_669"
 	manpower = 314300
 
+
 	state_category = pastoral
 
 	history= {
+		set_state_flag = AST_controls
 		owner = INS
 		add_core_of = INS
 		victory_points = {
