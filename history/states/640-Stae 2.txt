@@ -7,6 +7,7 @@ state={
 	state_category = town
 
 	history={
+		set_state_flag = RAJ_controls
 		add_core_of = OBG
 		owner = RAJ
 		buildings = {
