@@ -3,6 +3,8 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 400				-- Days of client lag for decre
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 720				-- Days of client lag for pause of gamespeed.
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.2, 0.1, 0.03, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
+NDefines.NGame.AIR_LOG_TIMEOUT_HOURS = 24 ---air combat log gets deleted after X hours
+NDefines.NGame.GARRISON_LOG_MAX_MONTHS = 1 ---garrison log gets delted after X months.
 NDefines.NGame.EVENT_TIMEOUT_DEFAULT = 15						-- Default days before an event times out if not scripted
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 15		-- Default days before a mission is removed from the interface after having failed or completed
 NDefines.NGame.HANDS_OFF_START_TAG = "OBG"
@@ -24,7 +26,13 @@ NDefines.NDiplomacy.POPULATION_YEARLY_GROWTH_BASE = 0               --Removed fo
 
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 40						-- Events are checked every X day per country or state (1 is ideal but CPU heavy)
 NDefines.NCountry.BASE_RESEARCH_SLOTS = 4						-- Base number of research slots per country.
+NDefines.NCountry.EVENT_PROCESS_OFFSET = 25 --how long events can get held for ?
+NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
+NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
+NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0.0						-- Based on number of planes (which is typically a lot).
+NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
+NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --score modifier that shows at end of game
 NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = -0.15				-- Default stability war factor
 NDefines.NCountry.BASE_STABILITY_PARTY_POPULARITY_FACTOR = 0.20	-- Default stability rulling party popularity factor
 NDefines.NCountry.WAR_SUPPORT_OFFNSIVE_WAR = -0.1				-- Impact of being in offensive war
@@ -428,3 +436,5 @@ NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 2
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 4
 NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 6
 
+---ReducedPopulationGrowth
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0 --Reduce Pop bloat and lag from late game HOI trying to calculate pops
