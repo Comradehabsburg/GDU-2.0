@@ -57,7 +57,7 @@ papua = {
 
 	icon = GFX_modifiers_sabotaged_resource
 	
-supply_factor = -0.80
+supply_factor = -0.40
 
 }
 
