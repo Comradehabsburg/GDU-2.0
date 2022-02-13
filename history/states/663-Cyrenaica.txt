@@ -1,21 +1,32 @@
+
 state={
 	id=663
 	name="STATE_663"
-	manpower = 8808
-	
-	state_category = wasteland
 
 	history={
 		owner = ITA
 		buildings = {
 			infrastructure = 1
+			4060 = {
+				bunker = 1
+			}
+			1060 = {
+				bunker = 1
+			}
+			13245 = {
+				bunker = 1
+			}
 		}
-		add_core_of = URG
+		add_core_of = OBG
+		victory_points = {
+			12079 5
+		}
 	}
 
 	provinces={
-	 1062 13237 4902 5136 4063 4133 11951 1060 7063 7139 7206 9977 10049 12025 12079 13078 1043 1095 1958 2049 4903 5035 5095 7041 8061 8077 8088 10731 10749 12842 
+		1060 1062 1186 4060 4063 4133 4200 7063 7139 7206 9977 10049 10785 11951 12025 12079 13078 13241 13245 13246 
 	}
-
-	local_supplies=0.0 
+	manpower=8808
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }
