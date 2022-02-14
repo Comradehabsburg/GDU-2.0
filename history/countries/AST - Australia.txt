@@ -68,6 +68,7 @@ if = {
 		
 		AST_great_depression_1
 		commonwealth_protection
+		AST_island_hopping3
 	}
 
 	add_to_tech_sharing_group = commonwealth_research

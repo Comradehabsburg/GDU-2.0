@@ -8,7 +8,7 @@ state={
 
 	history= {
 		set_state_flag = AST_controls
-		owner = INS
+		owner = AST
 		add_core_of = INS
 		victory_points = {
 			12371 1 
