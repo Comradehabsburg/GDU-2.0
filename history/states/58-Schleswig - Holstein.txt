@@ -15,7 +15,7 @@ state= {
 		owner = GER
 		buildings = {
 			infrastructure = 6
-			arms_factory = 3
+			arms_factory = 5
 			industrial_complex = 1
 			dockyard = 10
 			air_base = 5
@@ -29,7 +29,7 @@ state= {
 				synthetic_refinery = 3
 				anti_air_building = 5
 				dockyard = 7
-				arms_factory = 2
+				arms_factory = 4
 			}
 		}
 	}

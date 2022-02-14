@@ -16,8 +16,8 @@ state={
 		buildings = {
 			infrastructure = 8
 			air_base = 6
-			industrial_complex = 5
-			arms_factory = 4
+			industrial_complex = 10
+			arms_factory = 8
 			dockyard = 5
 			9998 = {
 				naval_base = 6
@@ -30,9 +30,9 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 2
+				arms_factory = 4
 				dockyard = 4
-				industrial_complex = 3
+				industrial_complex = 6
 			}
 		}
 

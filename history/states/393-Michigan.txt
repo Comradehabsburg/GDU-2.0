@@ -12,8 +12,8 @@ state={
 		owner = USA
 		buildings = {
 			infrastructure = 6
-			arms_factory = 4
-			industrial_complex = 5
+			arms_factory = 9
+			industrial_complex = 11
 			steel_refinery = 2
 			air_base = 4
 
@@ -24,7 +24,7 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 3
+				industrial_complex = 7
 
 			}
 

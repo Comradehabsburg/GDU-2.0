@@ -22,8 +22,8 @@ state={
 		owner = POL
 		buildings = {
 			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 1
+			arms_factory = 2
+			industrial_complex = 3
 		}
 		add_core_of = POL
 		add_extra_state_shared_building_slots = 5

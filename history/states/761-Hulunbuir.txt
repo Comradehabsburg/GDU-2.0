@@ -12,7 +12,7 @@ state={
 		add_core_of = OBG
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 3
 		}
 
 	}
