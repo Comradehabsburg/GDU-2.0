@@ -18,8 +18,8 @@ state={
 		victory_points = { 11531 5 }
 		buildings = {
 			infrastructure = 7
-			arms_factory = 10
-			industrial_complex = 9
+			arms_factory = 5
+			industrial_complex = 5
 			steel_refinery = 3
 		}
 		add_core_of = GER

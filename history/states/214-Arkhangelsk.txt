@@ -13,7 +13,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 			dockyard = 2
 			air_base = 3
 			3338 = {
@@ -23,7 +23,7 @@ state={
 		add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 2
+				industrial_complex = 1
 			}
 		}
 	}
