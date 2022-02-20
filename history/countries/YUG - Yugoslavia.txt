@@ -1,9 +1,5 @@
 ﻿capital = 107
 
-add_ideas = {
-		catatonic_great_depression
-}
-
 oob = "YUG_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

@@ -1,9 +1,5 @@
 ﻿capital = 6
 
-add_ideas = {
-		catatonic_great_depression
-}
-
 oob = "BEL_1936"
 
 set_research_slots = 3

@@ -1,9 +1,5 @@
 ﻿capital = 271
 
-add_ideas = {
-		catatonic_great_depression
-}
-
 oob = "ETH_1936"
 
 # Starting tech

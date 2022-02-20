@@ -1,9 +1,5 @@
 ﻿capital = 9
 
-add_ideas = {
-		catatonic_great_depression
-}
-
 oob = "CZE_1936"
 
 set_technology = {
