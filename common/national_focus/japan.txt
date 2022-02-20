@@ -875,94 +875,54 @@
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-
-		
-				transfer_state = 608 
-				transfer_state =  614 
-				transfer_state =  597 
-				transfer_state =  598 
-				transfer_state =  613 
-				transfer_state =  596 
-				transfer_state =  595 
-				transfer_state =  593 
-				transfer_state =  592 
-				transfer_state =  594 
-				transfer_state =  591 
-				transfer_state =  743 
-				transfer_state =  749 
-				transfer_state =  599 
-				transfer_state =  600 
-				transfer_state =  606
-
-				army_experience = 1000
-				air_experience = 1000
-				navy_experience = 1000
-		
-				SOV = {
-				army_experience = 600
-				air_experience  = 600
+			if = {
+				limit = {
+					CHI = { #if CHI owns one of these states, they get the event
+						OR = {
+							controls_state = 608
+							controls_state = 597
+							controls_state = 614
 						}
-				GER = {
-				air_experience  = 1000
-				army_experience = 600
-						}
-				ITA = {
-				air_experience  = 500
-				army_experience = 300
-						}
-			   BUL = {
-				army_experience = 125
-						}`
-				
-				
-				SIA = {
-				army_experience = 125
+					}
 				}
-				
-				SPR = {
-				army_experience = 125
+				CHI = {
+					country_event = china.1
+				}
+			}
+			if = {
+				limit = {
+					PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						AND = {
+							controls_state = 608
+							controls_state = 597
+							controls_state = 614
 						}
-				 ROM = {
-				army_experience = 125
+					}
+				}
+				PRC = {
+					country_event = china.1
+				}
+			}
+			if = {
+				limit = {
+					SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						AND = {
+							controls_state = 608
+							controls_state = 597
+							controls_state = 614
 						}
-				HUN = {
-				army_experience = 125
-						}
-				ENG = {
-				army_experience = 100
-						}
-				CAN = {
-				army_experience = 100
-						}
-				SAF = {
-				army_experience = 100
-						}
-				RAJ = {
-				army_experience = 100
-						}
-				AST = {
-				army_experience = 100
-						}
-				NZL = {
-				army_experience = 100
-						}
-				USA = {
-					army_experience = 100
-							}
-				
-				BRA = {
-					army_experience = 100
-							}
-
-				MEX = {
-					army_experience = 100
-							}
-
-				IRE = {
-					army_experience = 100
-							}
-				
-
+					}
+				}
+				SHX = {
+					country_event = china.1
+				}
+			}
+			add_named_threat = { threat = 5 name = JAP_intervene_in_china }
+			add_ideas = JAP_intervene_in_china_5
+			unlock_decision_tooltip = JAP_china_step_up_war_effort
+			hidden_effect = { USA = { add_ideas = isolation } }
+			MAN = { add_ideas = MAN_intervene_in_china_5 }
+			unlock_decision_tooltip = { decision = MAN_china_step_up_war_effort show_effect_tooltip = yes }
 		}
 	}
 	
@@ -992,19 +952,11 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			custom_effect_tooltip = JAP_pacify_china_tt
-			every_controlled_state = {
-				limit = {
-					is_core_of = CHI
-				}
-				add_compliance = 100
-			}
 			add_doctrine_cost_reduction = {
 				name = JAP_lessons
 				cost_reduction = 0.75
 				uses = 2
-				category = land_doctrine
-				
+				category = land_doctrine	
 			}
 			army_experience = -25
 		}
@@ -1227,9 +1179,9 @@
 		available = {
 			OR = {
 				GER = { has_war_with = ENG }
-				date < 1938.6.1
-
-
+				CHI = {
+					surrender_progress > 0.75
+				}
 			}
 		}
 
@@ -1240,7 +1192,9 @@
 		cancel_if_invalid = yes
 
 		completion_reward = {
-		annex_country = { target = CHI } 
+			add_named_threat = { threat = 15 name = JAP_secure_china }		
+			USA = { add_war_support = 0.10 }	
+			add_timed_idea = { idea = JAP_ichi_go days = 365 }
 		}
 	}
 
@@ -1347,7 +1301,66 @@
 					instant_build = yes
 				}
 			}
+			605 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
 
+			524 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+
+			745 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+
+			609 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+
+			747 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+
+			325 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+
+			620 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
 		}
 	}
 
