@@ -10,7 +10,7 @@ set_fuel_ratio = 1.0
 add_ideas = {
 	limited_exports
 	limited_conscription
-	war_economy
+	partial_economic_mobilisation
 
 	JAP_hirohito
 	JAP_zaibatsus
