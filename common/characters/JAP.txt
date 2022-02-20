@@ -41,12 +41,12 @@ characters={
 		}
 
 		corps_commander={
-			traits={ brilliant_strategist politically_connected trickster trait_engineer jungle_rat }
-			skill=6
-			attack_skill=6
+			traits={ brilliant_strategist politically_connected trickster trait_engineer }
+			skill=5
+			attack_skill=4
 			defense_skill=5
 			planning_skill=3
-			logistics_skill=6
+			logistics_skill=4
 			legacy_id=-1
 		}
 		advisor={
@@ -75,12 +75,12 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ politically_connected JAP_samurai_lineage offensive_doctrine infantry_leader jungle_rat }
-			skill=6
-			attack_skill=7
+			traits={ politically_connected JAP_samurai_lineage offensive_doctrine }
+			skill=4
+			attack_skill=4
 			defense_skill=4
 			planning_skill=3
-			logistics_skill=5
+			logistics_skill=2
 			legacy_id=-1
 		}
 		advisor={
@@ -177,12 +177,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer trickster engineer infantry_leader jungle_rat ranger invader }
-			skill=5
+			traits={ career_officer infantry_officer trickster }
+			skill=4
 			attack_skill=4
 			defense_skill=3
 			planning_skill=2
-			logistics_skill=7
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
