@@ -271,8 +271,8 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.025
-				production_speed_arms_factory_factor = 0.08			
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.15			
 
 			}
 		}
@@ -284,8 +284,8 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_arms_factory_factor = 0.16
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = 0.30
 			}
 		}
 		JAP_australia_island_hopping4 = {
@@ -317,61 +317,6 @@ country = {
 			}
 		}
 		AST_island_hopping2 = {
-			allowed = {
-				always = no
-			}
-			picture = usa_island_hopping
-			removal_cost = -1
-
-			modifier = {
-				consumer_goods_factor = 0.10
-				stability_factor = -0.07
-			}
-			targeted_modifier = {
-
-
-
-
-
-				tag = HUN
-				attack_bonus_against = -0.10
-			}
-			
-
-
-            targeted_modifier = { 
-				tag = ROM
-                attack_bonus_against = -0.10
-            }
-            targeted_modifier = { 
-				tag = FIN
-                attack_bonus_against = -0.10
-}            targeted_modifier = { 
-    tag = SPR
-    attack_bonus_against = -0.10
-}            targeted_modifier = { 
-    tag = BUL
-    attack_bonus_against = -0.10
-}            targeted_modifier = { 
-    tag = ITA
-    attack_bonus_against = -0.10
-}            targeted_modifier = { 
-    tag = GER
-    attack_bonus_against = -0.10
-}            targeted_modifier = { 
-    tag = JAP
-    attack_bonus_against = 0.05
-}            targeted_modifier = { 
-    tag = SIA
-    attack_bonus_against = 0.05
-}            targeted_modifier = { 
-    tag = MAN
-    attack_bonus_against = 0.05
-}
-
-			}
-		
-		AST_island_hopping1 = {
 			allowed = {
 				always = no
 			}
@@ -413,6 +358,61 @@ country = {
 }            targeted_modifier = { 
     tag = GER
     attack_bonus_against = -0.20
+}            targeted_modifier = { 
+    tag = JAP
+    attack_bonus_against = 0.05
+}            targeted_modifier = { 
+    tag = SIA
+    attack_bonus_against = 0.05
+}            targeted_modifier = { 
+    tag = MAN
+    attack_bonus_against = 0.05
+}
+
+			}
+		
+		AST_island_hopping1 = {
+			allowed = {
+				always = no
+			}
+			picture = usa_island_hopping
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.40
+				stability_factor = -0.25
+			}
+			targeted_modifier = {
+
+
+
+
+
+				tag = HUN
+				attack_bonus_against = -0.40
+			}
+			
+
+
+            targeted_modifier = { 
+				tag = ROM
+                attack_bonus_against = -0.40
+            }
+            targeted_modifier = { 
+				tag = FIN
+                attack_bonus_against = -0.40
+}            targeted_modifier = { 
+    tag = SPR
+    attack_bonus_against = -0.40
+}            targeted_modifier = { 
+    tag = BUL
+    attack_bonus_against = -0.40
+}            targeted_modifier = { 
+    tag = ITA
+    attack_bonus_against = -0.40
+}            targeted_modifier = { 
+    tag = GER
+    attack_bonus_against = -0.40
 }            targeted_modifier = { 
     tag = JAP
     attack_bonus_against = 0.10
