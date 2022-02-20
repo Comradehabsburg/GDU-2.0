@@ -826,12 +826,38 @@
 		cost = 2
 
 		available = { 
-			date > 1938.1.1
 			is_puppet = no 
 			NOT = { has_war_with = CHI }
 		}
 		
-
+		bypass = {
+			OR = {
+				AND = {
+					608 = {
+						NOT = {
+							is_controlled_by = CHI
+							is_controlled_by = PRC
+							is_controlled_by = SHX
+						}
+					}
+					597 = {
+						NOT = {
+							is_controlled_by = CHI
+							is_controlled_by = PRC
+							is_controlled_by = SHX
+						}
+					}
+					614 = {
+						NOT = {
+							is_controlled_by = CHI
+							is_controlled_by = PRC
+							is_controlled_by = SHX
+						}
+					}
+				}
+				has_war_with = CHI
+			}
+		}
 
 		will_lead_to_war_with = CHI
 
@@ -1201,7 +1227,7 @@
 		available = {
 			OR = {
 				GER = { has_war_with = ENG }
-				date < 1939.1.1
+				date < 1938.6.1
 
 
 			}
