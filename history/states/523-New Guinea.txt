@@ -3,7 +3,6 @@ state={
 	name="STATE_523"
 
 	history={
-		set_state_flag = AST_controls
 		owner = AST
 		add_core_of = OBG
 		buildings = {
