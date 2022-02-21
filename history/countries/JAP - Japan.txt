@@ -10,7 +10,11 @@ set_fuel_ratio = 1.0
 add_ideas = {
 	limited_exports
 	limited_conscription
+<<<<<<< HEAD
 	partial_economic_mobilisation
+=======
+	tot_economic_mobilisation
+>>>>>>> parent of d28b0e4 (japn fix)
 
 	JAP_hirohito
 	JAP_zaibatsus
