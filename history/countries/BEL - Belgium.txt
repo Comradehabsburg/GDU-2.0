@@ -7,7 +7,7 @@ set_stability = 0.8
 set_war_support = 0.3 #we see what you are doing there Adolf
 
 add_ideas = {
-catatonic_great_depression
+catatonic_great_depression_1
 }
 
 set_technology = {
