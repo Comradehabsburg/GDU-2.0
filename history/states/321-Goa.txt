@@ -7,7 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner = URG
+		
 		add_core_of = URG
 		victory_points = {
 			1273 1 
