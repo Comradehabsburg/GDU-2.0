@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		owner = URG
+		
 		buildings = {
 			infrastructure = 2
 		}
