@@ -1524,6 +1524,7 @@ technologies = {
 		}
 
 		enable_equipments = {
+			armored_car_chassis_2
 			motorized_equipment_1
 		}
 
