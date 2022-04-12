@@ -1,4 +1,4 @@
-# All equipment based on light tank chassis
+# All equipment based on light truck chassis
 
 equipments = {
 
@@ -15,33 +15,34 @@ equipments = {
 		
 		module_slots = {
 			main_armament_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					tank_armament_tier_1
+					truck_small_main_armament
+					truck_flamethrower
 				}
 			}
 			turret_type_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					tank_ac_turret_type
+					truck_light_turret_type
 				}
 			}
 			armor_type_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
-					tank_armor_type
+					truck_armor_type
 				}
 			}
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_engine_type
+					truck_engine_type
 				}
 			}
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_radio_module
+					truck_radio_module
 				}
 			}
 		}
