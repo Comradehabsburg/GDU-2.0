@@ -27,6 +27,7 @@ state={
 				naval_base = 4
 			}
 		}
+		owner = PER
 		add_core_of = URG
 		add_claim_by = ITA
 
