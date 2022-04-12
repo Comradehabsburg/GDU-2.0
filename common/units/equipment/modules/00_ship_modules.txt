@@ -131,7 +131,7 @@ equipment_modules = {
 	
 		add_stats = {
 			lg_attack = 3
-			anti_air_attack = 3
+			anti_air_attack = 1
 			build_cost_ic = 300
 		}
 		multiply_stats = {
@@ -645,7 +645,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 4.5
-			anti_air_attack = 2.5
+			anti_air_attack = 0.8
 			build_cost_ic = 290
 		}
 
@@ -680,7 +680,7 @@ equipment_modules = {
 		add_equipment_type = anti_air
 		
 		add_stats = {
-			anti_air_attack = 1.5
+			anti_air_attack = 0.5
 			build_cost_ic = 90
 		}
 		
@@ -704,7 +704,7 @@ equipment_modules = {
 		add_equipment_type = anti_air
 		
 		add_stats = {
-			anti_air_attack = 2
+			anti_air_attack = 0.7
 			build_cost_ic = 120
 		}
 		
@@ -731,7 +731,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 3
+			anti_air_attack = 1
 			build_cost_ic = 150
 		}
 		
@@ -759,7 +759,7 @@ equipment_modules = {
 
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 4
+			anti_air_attack = 1.2
 			build_cost_ic = 190
 		}
 		
@@ -1715,55 +1715,7 @@ equipment_modules = {
 
 
 
-	ship_mine_layer_1 = {
-		abbreviation = "scj"
-		category = ship_mine_layer
-		gui_category = ship_mine_warfare
-		gfx = ship_mine_layer
-		
-		add_stats = {
-			mines_planting = 1
-			build_cost_ic = 90
-		}
-		multiply_stats = {
-			naval_speed = -0.02			
-		}
-	}
 
-	ship_mine_layer_sub = {
-		abbreviation = "sck"
-		category = ship_mine_layer_sub
-		gfx = ship_mine_layer_sub
-		
-		add_stats = {
-			mines_planting = 1
-			build_cost_ic = 90
-		}
-	}
-
-
-#   # ### #  # ###      ## #   # ### ### ###  ### ###  
-## ##  #  ## # #       #   #   # #   #   #  # #   #  # 
-# # #  #  # ## ##       #  # # # ##  ##  ###  ##  ###  
-#   #  #  #  # #         # # # # #   #   #    #   #  # 
-#   # ### #  # ###     ##   # #  ### ### #    ### #  # 
-
-
-
-	ship_mine_sweeper_1 = {
-		abbreviation = "scl"
-		category = ship_mine_warfare
-		gfx = ship_mine_sweeper
-		
-		add_stats = {
-			mines_sweeping = 1
-			build_cost_ic = 30
-		}
-
-		multiply_stats = {
-			naval_speed = -0.02
-		}
-	}
 
 
 ###  ### ###  ### #  #      ##  #  #  ##  ###   ##  ### 
@@ -1968,19 +1920,7 @@ equipment_modules = {
 #   #  # #   #        #  #  # #  # # #   # 
 #    ##  ### ###      #  #  # #  # # # ##  
 
-	ship_extra_fuel_tank = {
-		abbreviation = "scv"
-		category = ship_extra_fuel_tank
-		
-		
-		add_stats = {
-			naval_range = 1000
-		}
-		multiply_stats = {
-			build_cost_ic = 0.05
-		}
-		dismantle_cost_ic = 700
-	}
+
  ##  ##  #  #  ##  ###  
 #   #  # ## # #  # #  # 
  #  #  # # ## #### ###  

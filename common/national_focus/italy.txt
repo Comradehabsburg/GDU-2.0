@@ -1907,9 +1907,7 @@ add_idea = med_control_2
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
 		
-		available = {
-			country_exists = ALB
-		}
+
 
 		cost = 10
 		ai_will_do = {
@@ -1922,19 +1920,10 @@ add_idea = med_control_2
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			if = {
-				limit = {
-					ALB = { has_war = no }
-				}
-				ALB = { country_event = { id = italy.3 } }
-			}
-			else = {
-				create_wargoal = {
-					type = take_state_focus
-					target = ALB
-					generator = { 44 }
-				}
-			}
+                set_state_owner = 44 
+                set_state_owner = 805
+                set_state_controller = 44
+                set_state_controller = 805
 		}
 	}
 

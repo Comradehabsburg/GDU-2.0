@@ -70,14 +70,19 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		
 		available = {
-			NOT = { ITA = { controls_state = 451 }}
+
+			controls_state = 446
+			controls_state = 447
+			controls_state = 452
+		
+		controls_state = 451
 			
 			
-			NOT = { ITA = { controls_state = 450 }}
+		controls_state = 450
 
-			NOT = { ITA = { controls_state = 448 }}
+		controls_state = 448
 
-			NOT = { ITA = { controls_state = 116 }}
+		controls_state = 116
 			
 		}
 		
@@ -11308,4 +11313,7 @@ focus_tree = {
 		}
 	}
 
-}
+
+
+
+

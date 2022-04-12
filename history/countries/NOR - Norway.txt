@@ -34,9 +34,11 @@ recruit_character = NOR_adolf_indrebo
 recruit_character = NOR_halvdan_koht
 recruit_character = NOR_trygve_halvdan_lie
 
-set_research_slots = 3
+set_research_slots = 0
 
 add_ideas = {
+catatonic_great_depression_1
+
 	limited_conscription
 }
 

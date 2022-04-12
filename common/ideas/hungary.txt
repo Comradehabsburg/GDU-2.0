@@ -321,19 +321,19 @@ ideas = {
 			}
 		}
 
-		HUN_indigenous_designs = {
+		HUN_powerplant_engineering = {
 			allowed = {
 				original_tag = HUN
 				always = no
 			}
-			picture = generic_air_research
+			picture = GFX_goal_generic_construct_mil_factory
 
 			allowed_civil_war = {
 				
 			}
 			
-			research_bonus = {
-				air_equipment = 0.15
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 
@@ -394,6 +394,30 @@ ideas = {
 		}
 	}
 	
+	tank_manufacturer = { 
+		
+		designer = yes
+	
+		hunhenschel = {
+
+            picture = generic_tank_manufacturer_3
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
 	aircraft_manufacturer = {
 			
 		designer = yes
@@ -411,7 +435,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = { fascist_demagogue }
 			
 			# made light bombers Weiss WM-21
 						

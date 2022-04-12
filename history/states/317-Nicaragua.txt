@@ -8,7 +8,7 @@ state={
 	state_category = town
 
 	history={
-		owner = URG
+		
 		buildings = {
 			infrastructure = 2
 			12738 = {

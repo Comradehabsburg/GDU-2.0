@@ -1,6 +1,32 @@
 ideas = {
 
 country = { 
+		catatonic_great_depression_1 = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 10
+				consumer_goods_factor = 100
+				conscription_factor = -100
+				min_export = 1
+				join_faction_tension = 0.20
+				local_resources_factor = 0
+				research_speed_factor = -20
+			}
+		}
+
+
+
 
 		catatonic_great_depression = {
 			picture = usa_great_depression_3

@@ -1,11 +1,6 @@
-version="funnymodmp"
+version="1.11.4"
 tags={
 	"Balance"
 }
-name="funnymodmp"
-replace_path="common/countries"
-replace_path="history/countries"
-replace_path="common/country_tags"
-replace_path="common/decisions"
-supported_version="1.11.2"
-remote_file_id="2663179643"
+name="crungus on my chungus"
+supported_version="1.11.4"

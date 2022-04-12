@@ -9,7 +9,7 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 # Starting tech
 set_technology = {
@@ -83,6 +83,7 @@ if = {
 		has_dlc = "Poland: United and Ready"
 	}
 	add_ideas = {
+		catatonic_great_depression_1
 		uncontrolled_exports
 		POL_april_constitution_1
 		POL_looming_peasants_strike

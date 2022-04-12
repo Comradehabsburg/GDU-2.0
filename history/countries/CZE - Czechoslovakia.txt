@@ -1,19 +1,5 @@
 ﻿capital = 9
 
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
-	set_oob = "CZE_1936"
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_oob = "CZE_1936_nsb"
-}
 
 set_technology = {
 	infantry_weapons = 1
@@ -79,7 +65,7 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 set_politics = {
 	ruling_party = democratic
@@ -102,6 +88,8 @@ if = {
 	add_ideas = {
 		CZE_skoda_works
 		CZE_divided_nation
+catatonic_great_depression
+
 }
 	give_guarantee = YUG
 	give_guarantee = ROM

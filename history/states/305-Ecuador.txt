@@ -10,7 +10,7 @@ state={
 	state_category = city
 
 	history={
-		owner = URG
+		
 		buildings = {
 			infrastructure = 2
 			8252 = {
