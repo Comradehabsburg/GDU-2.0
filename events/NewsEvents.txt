@@ -2879,6 +2879,7 @@ news_event = {
 	}
 	
 	immediate = {
+	sound_effect = rokossovsky_moscow_battle
 		set_global_flag = fall_of_moscow
 	}
 	
@@ -3831,6 +3832,7 @@ news_event = {
 	}
 	
 	immediate = {
+		sound_effect = untergang 
 		set_global_flag = fall_of_berlin_usa
 	}
 	
@@ -3874,6 +3876,7 @@ news_event = {
 	}
 	
 	immediate = {
+	sound_effect = untergang 
 		set_global_flag = fall_of_berlin_eng
 	}
 	
@@ -3917,6 +3920,7 @@ news_event = {
 	}
 	
 	immediate = {
+	sound_effect = untergang 
 		set_global_flag = fall_of_berlin_fra
 	}
 	
@@ -3960,6 +3964,7 @@ news_event = {
 	}
 	
 	immediate = {
+	sound_effect = untergang 
 		set_global_flag = fall_of_berlin_pol
 	}
 	
@@ -4119,6 +4124,7 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = liberation_of_paris
+		sound_effect = MacArthur
 	}
 	
 	option = {
@@ -4358,6 +4364,7 @@ news_event = {
 	}
 	
 	immediate = {
+	sound_effect = artillerieberlin 
 		set_global_flag = liberation_of_warsaw
 	}
 	
@@ -4399,6 +4406,7 @@ news_event = {
 	immediate = {
 		set_global_flag = fall_of_berlin_sov
 		play_victory_parade_effect = yes
+		sound_effect = untergang
 	}
 	
 	mean_time_to_happen = {
@@ -9588,6 +9596,8 @@ news_event = {
 	is_triggered_only = yes
 
 	major = yes
+	
+	immediate = { sound_effect = rokossovsky_moscow_battle }
 
 	option = {
 		name = news.236.a
