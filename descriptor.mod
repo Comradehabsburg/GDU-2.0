@@ -1,6 +1,6 @@
-version="1.11.4"
+version="1.11.*"
 tags={
 	"Balance"
 }
 name="crungus on my chungus"
-supported_version="1.11.4"
+supported_version="1.11.*"
