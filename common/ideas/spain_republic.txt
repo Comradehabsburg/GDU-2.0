@@ -21,6 +21,41 @@ ideas = {
 		}
 	}
 
+
+		economy = {
+		law = yes
+		SOV_collectivized_society = {
+
+			picture = SPR_collectivized_society		
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.3
+				conversion_cost_mil_to_civ_factor = -0.3
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				research_speed_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.3
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+
 	economy = {
 		law = yes
 		SPR_collectivized_society = {
