@@ -8,7 +8,6 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	GER_autarky_idea
 	state_shintoism
 	limited_exports
 	limited_conscription

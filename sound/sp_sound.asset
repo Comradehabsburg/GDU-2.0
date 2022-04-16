@@ -1,5 +1,11 @@
 sound =
 {
+	name = "eng_sealion"
+	file = "eng_sealion.wav"
+
+}
+sound =
+{
 	name = "sp_ger_wien"
 	file = "sp_ger_wien.wav"
 

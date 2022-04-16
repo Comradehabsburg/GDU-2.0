@@ -1685,6 +1685,7 @@ add_idea = med_control_2
 		}
 
 		available = {
+		NOT = { always = yes }
 			country_exists = YUG
 			NOT = {
 				has_war_with = YUG
@@ -2046,6 +2047,7 @@ add_idea = med_control_2
 		prerequisite = { focus = ITA_bulgaria_friend }
 		mutually_exclusive = { focus = ITA_pact_of_steel }
 		available = {
+		NOT = { always = yes }
 			is_subject = no
 			NOT = { has_war_with = BUL }
 			NOT = { is_in_faction_with = GER }

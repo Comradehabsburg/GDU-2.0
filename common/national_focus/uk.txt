@@ -2566,6 +2566,8 @@ focus_tree = {
 		}
 
 		available = { 
+		
+		NOT = { always = yes }
 			is_subject = no
 			OR = {
 				has_government = democratic
@@ -8540,7 +8542,7 @@ focus_tree = {
 		}
 
 		available = {
-
+NOT = { always = yes }
 		}
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 18

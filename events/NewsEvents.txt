@@ -2698,6 +2698,7 @@ news_event = {
 	}
 	
 	immediate = {
+		sound_effect = eng_sealion
 		set_global_flag = fall_of_london_ger
 	}
 	
@@ -3267,6 +3268,7 @@ news_event = {
 	}
 	
 	immediate = {
+		sound_effect = eng_sealion
 		set_global_flag = fall_of_london_ita
 	}
 	
@@ -4284,6 +4286,7 @@ news_event = {
 	}
 	
 	immediate = {
+		sound_effect = eng_sealion
 		set_global_flag = liberation_of_london
 	}
 	

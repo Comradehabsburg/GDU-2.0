@@ -36,6 +36,7 @@
 		}
 
 		available = {
+NOT = { always = yes }
 
 		}
 
@@ -966,6 +967,8 @@
 		}
 
 		available = {
+
+
 
 		}
 
@@ -2443,6 +2446,8 @@
 
 		available = {
 
+NOT = { always = yes }
+
 		}
 
 		bypass = {
@@ -3289,7 +3294,7 @@
 		}
 
 		available = {
-
+NOT = { always = yes }
 		}
 
 		bypass = {

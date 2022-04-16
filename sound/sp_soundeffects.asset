@@ -1,4 +1,12 @@
 soundeffect = {
+	name = "eng_sealion"
+	sounds = {
+		sound = 
+			eng_sealion
+	}
+	volume = 5
+}
+soundeffect = {
 	name = "sp_ger_wien"
 	sounds = {
 		sound = 

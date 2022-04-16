@@ -1173,6 +1173,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = USA_continue_the_new_deal }
 		available = {
+		NOT = { always = yes }
 			never
 			NOT = {
 				has_country_leader = { ruling_only = yes name = "Franklin Delano Roosevelt" }

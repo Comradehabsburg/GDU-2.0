@@ -4610,7 +4610,9 @@
 			factor = 1
 		}
 		available = {
-			
+		
+NOT = { always = yes }
+		
 		}
 		mutually_exclusive = { focus = FRA_form_the_popular_front }
 		bypass = {
