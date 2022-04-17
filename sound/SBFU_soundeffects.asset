@@ -1,0 +1,198 @@
+soundeffect = {
+	name = "winter_general_sound"
+	sounds = {
+		sound = winter_general_sound
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "bagration_sound"
+	sounds = {
+		sound = bagration_sound
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "order_227_sound"
+	sounds = {
+		sound = order_227_sound
+	}
+	max_audible = 1
+	volume = 2
+}
+
+soundeffect = {
+	name = "sbfu_gotterdammerung_sound"
+	sounds = {
+		sound = gotterdammerung_sound
+	}
+	max_audible = 1
+	volume = 2
+}
+
+soundeffect = {
+	name = "sbfu_afrikakorps_sound"
+	sounds = {
+		sound = afrikakorps_sound
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "sbfu_inno_a_roma_sound"
+	sounds = {
+		sound = inno_a_roma_sound
+	}
+	max_audible = 1
+	volume = 2
+}
+
+soundeffect = {
+	name = "sbfu_olympic_game"
+	sounds = {
+		sound = sbfu_olympic_games
+	}
+	max_audible = 1
+	volume = 2
+}
+
+soundeffect = {
+	name = "sbfu_order_227"
+	sounds = {
+		sound = sbfu_order_227
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "sbfu_italy_liberation"
+	sounds = {
+		sound = sbfu_italy_liberation
+	}
+	max_audible = 1
+	volume = 2
+}
+
+soundeffect = {
+	name = "sbfu_japan_war"
+	sounds = {
+		sound = sbfu_japan_war
+	}
+	max_audible = 1
+	volume = 2
+}
+
+soundeffect = {
+	name = "sbfu_italy_capitulation"
+	sounds = {
+		sound = sbfu_italy_capitulation
+	}
+	max_audible = 1
+	volume = 2
+}
+
+
+soundeffect = {
+	name = "SBFU_commando_duck"
+	sounds = {
+		sound = SBFU_commando_duck
+	}
+	max_audible = 1
+	volume = 2
+}
+
+soundeffect = {
+	name = "sbfu_anchluss"
+	sounds = {
+		sound = sbfu_anchluss
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "sbfu_ita_war"
+	sounds = {
+		sound = sbfu_ita_war
+	}
+	max_audible = 1
+	volume = 50
+}
+
+soundeffect = {
+	name = "SBFU_orderorder"
+	sounds = {
+		sound = SBFU_orderorder
+	}
+	max_audible = 1
+	volume = 50
+}
+
+soundeffect = {
+	name = "sbfu_total_war"
+	sounds = {
+		sound = sbfu_total_war
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "sbfu_ww2_chamberlain"
+	sounds = {
+		sound = sbfu_ww2_chamberlain
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "sbfu_munich_agreement"
+	sounds = {
+		sound = sbfu_munich_agreement
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "SBFU_great_patriotic_war"
+	sounds = {
+		sound = SBFU_great_patriotic_war
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "SBFU_german_marching"
+	sounds = {
+		sound = SBFU_german_marching
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "sbfu_greater_hungary"
+	sounds = {
+		sound = sbfu_greater_hungary
+	}
+	max_audible = 1
+	volume = 1
+}
+
+soundeffect = {
+	name = "sbfu_winter_war"
+	sounds = {
+		sound = sbfu_winter_war
+	}
+	max_audible = 1
+	volume = 2
+}
