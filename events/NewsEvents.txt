@@ -2838,6 +2838,7 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = fall_of_stalingrad
+		sound_effect = sbfu_order_227
 	}
 	
 	mean_time_to_happen = {
