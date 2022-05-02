@@ -1,0 +1,17 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 180 86 15 }
+monarch_names = {
+	"Almanch #1" = 10
+	"Baghatur #1" = 10
+	"Bator #1" = 10
+	"Bihar #1" = 10
+	"Böri #0" = 0
+	"Ezra #0" = 0
+	"Gunes #1" = -1
+	"Hanukkah #1" = 10
+	"Kashkar #2" = 10
+	"Kaydum #2" = 10
+	"Leopoldo #0" = 0
+	"Rogneda #0" = -1
+}

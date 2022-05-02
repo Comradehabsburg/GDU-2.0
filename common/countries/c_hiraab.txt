@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 238 114 43 }
+monarch_names = {
+	"Ali #1" = 10
+	"Asli #0" = -1
+	"Barakat #1" = 10
+	"Cawo #0" = -1
+	"Dhidhin #0" = 0
+	"Gedir #1" = 10
+	"Geesi #0" = -1
+	"Isman #0" = 0
+	"Kaariye #1" = 10
+	"Mansur #0" = 0
+	"Muqri #1" = 10
+	"Nahwi #2" = 10
+	"Nassir #1" = 10
+	"Sa'adaddin #0" = 0
+	"Sahra #0" = -1
+	"Ubah #0" = -1
+	"Zuber #0" = 0
+}

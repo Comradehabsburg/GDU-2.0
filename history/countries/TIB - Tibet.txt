@@ -1,80 +1,180 @@
-ï»¿capital = 757
-
-oob = "TIB_1936"
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-
-recruit_character = TIB_jamphel_yeshe_gyaltsen
-recruit_character = TIB_namgang_rinpoche
-recruit_character = TIB_penor_tashi
-recruit_character = TIB_tsepon_shatra
-recruit_character = TIB_gyato_wangdu
-recruit_character = TIB_lobsang_tenzin
-recruit_character = TIB_sampo_tsewang_rigzin
-recruit_character = TIB_chama_samphe
-recruit_character = TIB_lhalu_tsewang_dorje
-recruit_character = TIB_chodak_karma
-recruit_character = TIB_tenpa_jamyang
-recruit_character = TIB_sogyal_rinpoche
-recruit_character = TIB_bapa_yeshe
-recruit_character = TIB_jampal_rabgye_rinpoche
-recruit_character = TIB_chaghoe_namgyal_dorje
-recruit_character = TIB_jamyang_rabten
-recruit_character = TIB_khemey_sonam_wangdi
-recruit_character = TIB_jigme_taring
-recruit_character = TIB_reting_rimpoche
-recruit_character = TIB_taktra_rinpoche
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "TIB_1939"
-	set_technology = {
-		#doctrines
-		air_superiority = 1
-
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+government = republic
+add_government_reform = noble_elite_reform
+government_rank = 1
+technology_group = chinese
+religion = vajrayana
+primary_culture = tibetan
+capital = 677
+1391.1.1= {
+	monarch = {
+		name = "Gendun Drup"
+		adm = 1
+		dip = 2
+		mil = 1
 	}
 }
-
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+1399.1.1= { decision = monastic_education }
+1443.1.1= {
+	monarch = {
+		name = "Trakpa Chunge"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
 }
-set_popularities = {
-	neutrality = 100
+1465.1.1= {
+	monarch = {
+		name = "Sangye Gyantesen Pal"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+1481.1.1= {
+	monarch = {
+		name = "Dön-yö Dorje"
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}
+1522.1.1= {
+	monarch = {
+		name = "Ngawang Namgye"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+1550.1.1= {
+	monarch = {
+		name = "Töndap Tseten"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+1565.1.1= {
+	monarch = {
+		name = "Karma Tseten"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+1582.1.1= {
+	monarch = {
+		name = "Lhawang Dorje"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+1603.1.1= {
+	monarch = {
+		name = "Phüntso Namgye"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+1623.1.1= {
+	monarch = {
+		name = "Karma Tsen-Kyong"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+1642.1.1= {
+	government = theocracy
+	add_government_reform = leading_clergy_reform
+}
+1642.1.1= {
+	monarch = {
+		name = "Gursi"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+1655.1.1= {
+	monarch = {
+		name = "Dayan"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+1668.1.1= {
+	monarch = {
+		name = "Tenzin Dalai"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+1696.1.1= {
+	monarch = {
+		name = "Lhabzang"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+1717.1.1= {
+	monarch = {
+		name = "Tsewang Arabtan"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+1740.1.1= {
+	monarch = {
+		name = "Phola Sonam Tobgye"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+1747.3.13= {
+	monarch = {
+		name = "Gyurme Namgyal"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+1750.11.12= {
+	monarch = {
+		name = "Kezang Gyatso"
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+1758.1.1= {
+	monarch = {
+		name = "Jampel Gyatso"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+1805.1.1= {
+	monarch = {
+		name = "Luntok Gyatso"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+1815.1.1= {
+	monarch = {
+		name = "Tshultrin Gyatso"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
 }

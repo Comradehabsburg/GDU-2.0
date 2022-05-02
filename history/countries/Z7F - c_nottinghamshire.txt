@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = mercian
+capital = 1861
+fixed_capital = 1861
+1444.11.11= {
+	monarch = {
+		name = "Eormenred"
+		dynasty = "of Bolton"
+		adm = 1
+		dip = 3
+		mil = 2
+		birth_date = 1396.12.29
+		religion = catholic
+		culture = mercian
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Balthild"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = Z7F
+		birth_date = 1417.6.5
+		death_date = 1477.6.5
+		female = yes
+		religion = catholic
+		culture = anglo_saxon
+	}
+	add_queen_personality = well_connected_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Heahberht"
+		monarch_name = "Heahberht"
+		dynasty = "of Bolton"
+		adm = 5
+		dip = 6
+		mil = 6
+		birth_date = 1419.3.12
+		death_date = 1484.3.12
+		claim = 89
+		religion = catholic
+		culture = anglo_saxon
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 78
+	add_treasury = 52
+}

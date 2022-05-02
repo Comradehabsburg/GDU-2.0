@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 97 31 237 }
+monarch_names = {
+	"Boupha #0" = -1
+	"Hmauk #1" = 10
+	"Küntu #1" = 10
+	"Lhakyi #1" = 10
+	"Mengö #1" = 10
+	"Muzuk #1" = 10
+	"Nawang #1" = 10
+	"Nwe #0" = -1
+	"Pelzangpo #1" = 10
+	"Ramsha #0" = 0
+	"Ratnaprabha #0" = -1
+	"Sein #0" = 0
+	"Tagbu #1" = 10
+	"Tensung #0" = 0
+	"Thaun #0" = 0
+	"Thekchen #1" = -1
+	"Tsering #1" = 10
+}

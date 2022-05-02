@@ -1,0 +1,41 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = uralic
+capital = 1083
+1444.11.11= {
+	monarch = {
+		name = "Valdonya"
+		dynasty = "Mazars"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1382.12.6
+		female = yes
+		religion = orthodox
+		culture = uralic
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	heir = {
+		name = "Yamshan"
+		monarch_name = "Yamshan"
+		dynasty = "Mazars"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 1401.7.7
+		death_date = 1466.7.7
+		claim = 89
+		religion = orthodox
+		culture = uralic
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 86
+	add_treasury = 50
+}

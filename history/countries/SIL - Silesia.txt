@@ -1,208 +1,338 @@
-﻿capital = 66
-
-#oob = ""
-
-set_research_slots = 3
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	CAS1 = 1
-	trench_warfare = 1
-	fleet_in_being = 1
-	fuel_silos = 1
-	fuel_refining = 1
-}
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = schlesian
+capital = 263
+1399.7.12= {
+	monarch = {
+		name = "Henryk IX"
+		dynasty = "Piast"
+		birth_date = 1369.1.1
+		adm = 3
+		dip = 1
+		mil = 1
 	}
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		basic_battlecruiser = 1
-		early_carrier = 1
-		transport = 1
+1399.7.12= {
+	heir = {
+		name = "Ruprecht"
+		monarch_name = "Ruprecht II"
+		dynasty = "Piast"
+		birth_date = 1396.1.1
+		death_date = 1431.8.24
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 0
 	}
 }
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		basic_heavy_armor_scheme = 1
-		mtg_transport = 1
+1420.7.11= {
+	monarch = {
+		name = "Ruprecht II"
+		dynasty = "Piast"
+		birth_date = 1396.1.1
+		adm = 5
+		dip = 2
+		mil = 0
 	}
 }
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-		armored_car1 = 1
-	}
-}
-
-set_convoys = 20
-
-1939.1.1 = {
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	set_technology = {
-		fighter1 = 1
-		fighter2 = 1
-		heavy_fighter1 = 1
-		tactical_bomber2 = 1
-		strategic_bomber1 = 1
-		cv_fighter1 = 1
-		cv_CAS1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-
-		#doctrines
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-		
-			grand_battle_plan = 1
-
-		trench_warfare = 1
-		prepared_defense = 1
-		battlefleet_concentration = 1
-		subsidiary_carrier_role = 1
-		convoy_sailing = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_battleship = 1
-			basic_battlecruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			improved_ship_hull_light = 1
-			improved_ship_hull_heavy = 1
-			basic_ship_hull_carrier = 1
-			improved_heavy_armor_scheme = 1
-			improved_light_battery = 1
-			basic_heavy_battery = 1
-			improved_secondary_battery = 1
-			improved_ship_torpedo_launcher = 1
-		}
+1420.7.11= {
+	heir = {
+		name = "Ludwik"
+		monarch_name = "Ludwik III"
+		dynasty = "Piast"
+		birth_date = 1405.1.1
+		death_date = 1441.6.18
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
 	}
 }
-set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+1431.1.1= {
+	monarch = {
+		name = "Ludwik III"
+		dynasty = "Piast"
+		birth_date = 1405.1.1
+		adm = 3
+		dip = 1
+		mil = 2
+	}
 }
-set_popularities = {
-	democratic = 50
-	fascism = 5
-	communism = 35
-	neutrality = 10
+1431.1.1= {
+	heir = {
+		name = "Jan"
+		monarch_name = "Jan I"
+		dynasty = "Piast"
+		birth_date = 1425.1.1
+		death_date = 1453.11.21
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 0
+	}
 }
-
-create_country_leader = {
-	name = "Józef Biniszkiewicz"
-	desc = ""
-	picture = "GFX_portrait_SIL_Jozef_iniszkiewicz"
-	expire = "1953.3.1"
-	ideology = socialism
-	traits = {
-		
+1441.1.1= {
+	monarch = {
+		name = "Jan I"
+		dynasty = "Piast"
+		birth_date = 1425.1.1
+		adm = 4
+		dip = 2
+		mil = 0
+	}
+}
+1446.5.3= {
+	heir = {
+		name = "Fryderyk"
+		monarch_name = "Fryderyk I"
+		dynasty = "Piast"
+		birth_date = 1446.5.3
+		death_date = 1488.5.9
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+1453.11.1= {
+	monarch = {
+		name = "Fryderyk I"
+		dynasty = "Piast"
+		birth_date = 1446.5.3
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+1477.1.1= {
+	heir = {
+		name = "Jan"
+		monarch_name = "Jan II"
+		dynasty = "Piast"
+		birth_date = 1477.1.1
+		death_date = 1495.3.6
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+1488.5.10= {
+	monarch = {
+		name = "Jan II"
+		dynasty = "Piast"
+		birth_date = 1477.1.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+1488.5.10= {
+	heir = {
+		name = "Fryderyk"
+		monarch_name = "Fryderyk II"
+		dynasty = "Piast"
+		birth_date = 1480.2.12
+		death_date = 1547.9.17
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 0
+	}
+}
+1495.3.7= {
+	monarch = {
+		name = "Fryderyk II"
+		dynasty = "Piast"
+		birth_date = 1480.2.12
+		adm = 1
+		dip = 4
+		mil = 0
+	}
+}
+1520.2.22= {
+	heir = {
+		name = "Fryderyk"
+		monarch_name = "Fryderyk III"
+		dynasty = "Piast"
+		birth_date = 1520.2.22
+		death_date = 1570.12.15
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+1547.9.18= {
+	monarch = {
+		name = "Fryderyk III"
+		dynasty = "Piast"
+		birth_date = 1520.2.22
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+1547.9.18= {
+	heir = {
+		name = "Henryk"
+		monarch_name = "Henryk XI"
+		dynasty = "Piast"
+		birth_date = 1539.2.23
+		death_date = 1588.3.3
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+1570.12.16= {
+	monarch = {
+		name = "Henryk XI"
+		dynasty = "Piast"
+		birth_date = 1539.2.23
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+1570.12.16= {
+	heir = {
+		name = "Fryderyk"
+		monarch_name = "Fryderyk IV"
+		dynasty = "Piast"
+		birth_date = 1552.4.20
+		death_date = 1596.3.27
+		claim = 95
+		adm = 4
+		dip = 0
+		mil = 0
+	}
+}
+1588.3.4= {
+	monarch = {
+		name = "Fryderyk IV"
+		dynasty = "Piast"
+		birth_date = 1552.4.20
+		adm = 4
+		dip = 0
+		mil = 0
+	}
+}
+1588.3.4= {
+	heir = {
+		name = "Joachim Fryderyk"
+		monarch_name = "Joachim Fryderyk I"
+		dynasty = "Piast"
+		birth_date = 1550.9.29
+		death_date = 1602.3.25
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1596.3.28= {
+	monarch = {
+		name = "Joachim Fryderyk I"
+		dynasty = "Piast"
+		birth_date = 1550.9.29
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1596.3.28= {
+	heir = {
+		name = "Jan Krystian"
+		monarch_name = "Jan Krystian I"
+		dynasty = "Piast"
+		birth_date = 1591.8.28
+		death_date = 1639.12.25
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+1602.3.26= {
+	monarch = {
+		name = "Jan Krystian I"
+		dynasty = "Piast"
+		birth_date = 1591.8.28
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+1611.9.4= {
+	heir = {
+		name = "Jerzy Brzeski"
+		monarch_name = "Jerzy III"
+		dynasty = "Piast"
+		birth_date = 1611.9.4
+		death_date = 1664.7.4
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+1639.12.26= {
+	monarch = {
+		name = "Jerzy III"
+		birth_date = 1611.9.4
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+1639.12.26= {
+	heir = {
+		name = "Krystian"
+		monarch_name = "Krystian I"
+		dynasty = "Piast"
+		birth_date = 1618.4.1
+		death_date = 1672.2.28
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 0
+	}
+}
+1664.7.5= {
+	monarch = {
+		name = "Krystian I"
+		dynasty = "Piast"
+		birth_date = 1618.4.1
+		adm = 4
+		dip = 2
+		mil = 0
+	}
+}
+1664.7.5= {
+	heir = {
+		name = "Jerzy Wilhelm"
+		monarch_name = "Jerzy Wilhelm I"
+		dynasty = "Piast"
+		birth_date = 1660.9.29
+		death_date = 1675.11.21
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+1672.2.28= {
+	monarch = {
+		name = "Jerzy Wilhelm I"
+		dynasty = "Piast"
+		birth_date = 1660.9.29
+		adm = 1
+		dip = 3
+		mil = 1
 	}
 }

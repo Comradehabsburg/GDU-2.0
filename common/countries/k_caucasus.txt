@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 150 103 38 }
+monarch_names = {
+	"Akgul #0" = -1
+	"Alda #0" = -1
+	"BLOATER SUPERIMUS BLOATIUS #1" = 10
+	"Foulques #0" = 0
+	"Gunduz #0" = -1
+	"Hildebert #1" = 10
+	"Itakh #0" = 0
+	"Lamara #0" = -1
+	"Lärkka #1" = -1
+	"Shatana #0" = -1
+	"Simsam #0" = 0
+	"Tarmaç #1" = 10
+	"Yedidah #0" = -1
+	"Yeran #0" = -1
+	"Zaur #0" = 0
+	"Çorpan #1" = 10
+}

@@ -1,0 +1,78 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 97 102 135 }
+revolutionary_colors = { 10 0 5 }
+historical_idea_groups = {
+	administrative_ideas
+	trade_ideas
+	quantity_ideas
+	expansion_ideas
+	offensive_ideas
+	economic_ideas
+	defensive_ideas
+	religious_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Andyamo #0" = 0
+	"Burmort #0" = 0
+	"Chipaz #1" = 10
+	"Dilek #0" = -1
+	"Erdenebal #0" = 0
+	"Itakh #1" = 10
+	"Mala #1" = -1
+	"Nishkepaz #1" = 10
+	"Orqina #0" = -1
+	"Paksyut #1" = 10
+	"Potyava #0" = -1
+	"Purysho #1" = 10
+	"Sanal'ka #0" = -1
+	"Semetei #0" = 0
+	"Shumat #1" = 10
+	"Shypicha #0" = 0
+	"Uzhara #2" = 10
+	"Vokan #1" = 10
+}
+leader_names = {
+	"Cälil"
+	"Göbäydullina"
+	"Isxaqi"
+	"Märcani"
+	"Nasiri"
+	"Nigmät"
+	"Nurgäli"
+	"Näcmetdin"
+	"Qamay"
+	"Qol-Gäli"
+	"Qursawi"
+	"Tuqay"
+	"Yusupow"
+}
+ship_names = {
+	"Alat"
+	"Arca"
+	"Cöri"
+	"Ghiasetdin"
+	"Gärec"
+	"Nugay"
+	"Qazan"
+	"Qazansu"
+	"Qazgan"
+	"Qazi"
+	"Säyet"
+	"Säyex"
+	"Söyembikä"
+	"Tas Ayaq"
+}

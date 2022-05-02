@@ -1,0 +1,42 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = tuscan
+capital = 2980
+add_accepted_culture = lombard
+1444.11.11= {
+	monarch = {
+		name = "Plaisance"
+		dynasty = "di Parma"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1388.11.27
+		female = yes
+		religion = catholic
+		culture = tuscan
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	heir = {
+		name = "Ancel"
+		monarch_name = "Ancel"
+		dynasty = "Welf-Aquileia"
+		adm = 3
+		dip = 5
+		mil = 6
+		birth_date = 1411.4.8
+		death_date = 1476.4.8
+		claim = 89
+		religion = catholic
+		culture = cosmopolitan_french
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 63
+	add_treasury = 41
+}

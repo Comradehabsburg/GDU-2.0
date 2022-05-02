@@ -1,0 +1,43 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+technology_group = sub_saharan
+religion = shamanism
+primary_culture = kanuri
+capital = 2286
+fixed_capital = 2286
+1444.11.11= {
+	monarch = {
+		name = "Fasama II"
+		dynasty = "Askiya"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1382.9.7
+		female = yes
+		religion = shamanism
+		culture = kanuri
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	heir = {
+		name = "Bintou"
+		monarch_name = "Bintou"
+		dynasty = "Buduma"
+		adm = 6
+		dip = 4
+		mil = 6
+		birth_date = 1403.12.13
+		death_date = 1468.12.13
+		female = yes
+		claim = 89
+		religion = sunni
+		culture = kanuri
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 73
+	add_treasury = 51
+}

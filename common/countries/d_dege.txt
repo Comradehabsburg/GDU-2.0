@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 135 35 35 }
+monarch_names = {
+	"Chökyi #0" = 0
+	"Dechen #1" = -1
+	"Dongkar #0" = -1
+	"Garma #0" = -1
+	"Lharje Pelgyi Byamspa #1" = 10
+	"Michewa #2" = -1
+	"Nuba #0" = 0
+	"Numa #0" = -1
+	"Pelgyi Blama #1" = 10
+	"Pelgyi Krashis #1" = 10
+	"Pelgyi Phurbu #1" = 10
+	"Pelgyi Shesrab #1" = 10
+	"Pelgyi Yontan #1" = 10
+	"Pelgyis Yungnas #1" = 10
+	"Samdup #1" = 10
+	"Seupa #0" = 0
+	"Song'e #0" = -1
+	"Thayé #1" = 10
+	"Trashigön #0" = 0
+	"Tridü #2" = 10
+	"Yajnavati #0" = -1
+}

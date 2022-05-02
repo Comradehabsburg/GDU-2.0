@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 115 195 85 }
+monarch_names = {
+	"Aigidia #1" = -1
+	"Anatolios #1" = 10
+	"Antipatra #1" = -1
+	"Calògira #0" = -1
+	"Chasna #1" = -1
+	"Donald #0" = 0
+	"Elpidios #1" = 10
+	"Ibrahim #1" = 10
+	"Ioustinos #0" = 0
+	"Konstantin #0" = 0
+	"Konstantinos #1" = 10
+	"Mazigh #1" = 10
+	"Pavlina #0" = -1
+	"Petar #0" = 0
+	"Tiberios #0" = 0
+	"Tiresa #0" = -1
+	"Zenon #1" = 10
+}

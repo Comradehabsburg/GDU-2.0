@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 255 20 20 }
+monarch_names = {
+	"Achintya #0" = 0
+	"Adishree #0" = -1
+	"Babu #0" = 0
+	"Badrinath #2" = 10
+	"Bamadeva #0" = 0
+	"Brahmadeva #1" = 10
+	"Devabhuti #0" = 0
+	"Dhruvadevi #0" = -1
+	"Gokul #1" = 10
+	"Ishana #0" = -1
+	"Japa #0" = 0
+	"Jaya #1" = 10
+	"Nimbartadeva #1" = 10
+	"Rangraj #0" = 0
+	"Satya #0" = -1
+	"Shripad #0" = 0
+	"Shyamala #1" = -1
+	"Sridhar #1" = 10
+	"Subhi #0" = -1
+	"Suyog #0" = 0
+	"Vidya #0" = -1
+}

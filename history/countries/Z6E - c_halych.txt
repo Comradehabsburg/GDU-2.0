@@ -1,0 +1,42 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = kishinyov
+capital = 261
+fixed_capital = 261
+1444.11.11= {
+	monarch = {
+		name = "Yefimiy"
+		dynasty = "Morozov"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1427.1.10
+		religion = orthodox
+		culture = kishinyov
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	heir = {
+		name = "Sbyslava"
+		monarch_name = "Sbyslava"
+		dynasty = "Orsini"
+		adm = 4
+		dip = 6
+		mil = 5
+		birth_date = 1384.4.11
+		death_date = 1449.4.11
+		female = yes
+		claim = 89
+		religion = orthodox
+		culture = russian_culture
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 51
+	add_treasury = 47
+}

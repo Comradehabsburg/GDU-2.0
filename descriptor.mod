@@ -1,7 +1,12 @@
-version="1.11.*"
-tags={
-	"Balance"
-}
-name="KGFU - Kaiser Gaming Friends United"
-supported_version="1.11.*"
-remote_file_id="2794780129"
+name = "Converted - gumbischungus1234"
+path = "mod/gumbischungus1234"
+normal_or_historical_nations = yes
+supported_version = "1.33.*"
+replace_path = "history/countries/"
+replace_path = "history/provinces/"
+replace_path = "history/diplomacy/"
+replace_path = "history/wars/"
+replace_path = "common/countries/"
+replace_path = "common/country_tags/"
+replace_path = "common/bookmarks/"
+replace_path = "common/technologies/"

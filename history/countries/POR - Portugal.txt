@@ -1,340 +1,661 @@
-ï»¿capital = 112
-
-oob = "POR_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "POR_1936_naval_mtg"
-	else = {
-		set_naval_oob = "POR_1936_naval_legacy"
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = portugese
+capital = 227
+add_army_professionalism = 0.05
+historical_friend = CAS
+historical_friend = SPA
+national_focus = DIP
+1385.1.1= {
+	monarch = {
+		name = "João I"
+		dynasty = "de Avis"
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
-
-set_research_slots = 3
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	tech_support = 1		
-	tech_engineers = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
-	basic_train = 1
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		transport = 1
+1385.4.1= { leader = {	name = "Nuno Álvares Pereira"	type = general	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1423.1.1 } }
+1391.10.31= {
+	heir = {
+		name = "Duarte"
+		monarch_name = "Duarte"
+		dynasty = "de Avis"
+		birth_date = 1391.10.31
+		death_date = 1438.9.9
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 0
 	}
 }
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-		mtg_transport = 1
+1415.4.1= { leader = {	name = "Infantes"		type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1449.1.1 } }
+1417.1.1= { leader = {	name = "João Gonçalves Zarco"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+1417.1.1= { leader = {	name = "Tristão Vaz Teixeira"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1425.12.31 } }
+1418.1.1= { leader = {	name = "Bartolomeu Perestrelo"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
+1426.1.1= { leader = {	name = "Diogo de Silves"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
+1432.1.1= { leader = {	name = "Gonçalo Velho Cabral"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
+1433.1.1= {
+	monarch = {
+		name = "Duarte"
+		dynasty = "de Avis"
+		birth_date = 1391.10.31
+		adm = 1
+		dip = 3
+		mil = 0
 	}
 }
-
-if = {
-	limit = { has_dlc = "La Resistance" }	
-	add_ideas = POR_unreliable_army
-	add_ideas = POR_unstable_republic
-	set_stability = 0.60
-	set_war_support = 0.15	
-	set_research_slots = 2
-
-	ENG = {
-		add_opinion_modifier = {
-			target = POR 
-			modifier  = POR_anglo_portuguese_alliance
-		}
-	}
-
-	POR = {
-		add_opinion_modifier = {
-			target = ENG 
-			modifier  = POR_anglo_portuguese_alliance
-		}
-	}
-
-	GER = {
-		add_opinion_modifier = {
-			target = POR
-			modifier = fascism_leanings_good
-		}
-	}
-
-	ITA = {
-		add_opinion_modifier = {
-			target = POR
-			modifier = fascism_leanings_good
-		}
-	}
-	
-}
-
-
-1939.1.1 = {
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	if = {
-		limit = {
-			has_dlc = "La Resistance"
-		}
-
-		complete_national_focus = POR_estado_novo
-		unlock_national_focus = POR_support_the_spanish_nationalists
-		complete_national_focus = POR_portuguese_legion
-		complete_national_focus = POR_observation_mission
-		unlock_national_focus = POR_send_assistance
-		complete_national_focus = POR_army_reorganization
-		complete_national_focus = POR_metropolitan_army
-		complete_national_focus = POR_corpo_do_estado_maior
-		complete_national_focus = POR_second_navy_reequipment
-		complete_national_focus = POR_a_powerful_merchant_marine
-		complete_national_focus = POR_merchant_marine_protection
-		complete_national_focus = POR_arsenal_do_alfeite
-		complete_national_focus = POR_continue_the_public_works
-		complete_national_focus = POR_instituto_superior_tecnico
-		complete_national_focus = POR_roads_bridges_and_dams
-		complete_national_focus = POR_ogme
-		complete_national_focus = POR_food_industries
-		complete_national_focus = POR_textile_industry
-		complete_national_focus = POR_colonial_assimilation_policy
-
-		SPA = {
-			add_opinion_modifier = {
-				target = POR
-				modifier = POR_helped_in_civil_war
-			}
-		}
-		add_ideas = POR_volunteers_in_the_war_nationalist
-
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = large_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-		
-	oob = "POR_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "POR_1939_naval_mtg"
-		else = {
-			set_naval_oob = "POR_1939_naval_legacy"
-		}
-	}
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-		submarine_operations = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+1433.1.1= {
+	heir = {
+		name = "Afonso"
+		monarch_name = "Afonso V"
+		dynasty = "de Avis"
+		birth_date = 1432.1.15
+		death_date = 1481.8.28
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
 	}
 }
-
-set_convoys = 50
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.3.5"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	fascism = 10
-	communism = 10
-	neutrality = 60
-	democratic = 20
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.10.30"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		neutrality = 100
+1433.1.1= { leader = {	name = "Gonçalo Velho Cabral"	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
+1434.1.1= { leader = {	name = "Afonso Gonçalves Baldaia" type = explorer	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+1435.1.1= { leader = {	name = "Earl of Avranches"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
+1438.9.10= {
+	monarch = {
+		name = "Infante Pedro"
+		dynasty = "de Avis"
+		birth_date = 1392.1.1
+		regent = yes
+		adm = 4
+		dip = 2
+		mil = 1
 	}
 }
-
-set_convoys = 100
-set_stability = 0.75
-
-if = {
-	limit = {
-		has_dlc = "La Resistance"
+1438.9.10= {
+	heir = {
+		name = "Afonso"
+		monarch_name = "Afonso V"
+		dynasty = "de Avis"
+		birth_date = 1432.1.15
+		death_date = 1481.8.28
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+		leader = {	name = "Afonso V"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
-
-	recruit_character = POR_antonio_de_oliveira_salazar
-	recruit_character = POR_bento_goncalves
-	recruit_character = POR_rolao_preto
-	recruit_character = POR_jose_norton_de_matos
-	recruit_character = POR_jose_vicente_de_freitas
-	recruit_character = POR_luis_augusto_ferreira_martins
-	recruit_character = POR_raul_augusto_esteves
-	recruit_character = POR_jose_mendes_cabecadas
-	recruit_character = POR_julio_botelho_moniz
-	recruit_character = POR_humberto_delgado
-	recruit_character = POR_vieira_da_rocha
-	recruit_character = POR_manuel_ortins_torres_de_bettencourt
-	recruit_character = POR_antonio_oscar_carmona
-	recruit_character = POR_manuel_quintao_meireles
-	recruit_character = POR_jaime_afreixo
-	recruit_character = POR_americo_tomas
-	recruit_character = POR_domingos_oliveira
-	recruit_character = POR_manuel_gouveia
-	recruit_character = POR_jose_filipe_de_barros_rodrigues
-	recruit_character = POR_francisco_da_costa_gomes
-	recruit_character = POR_jose_manuel_sarmento_de_beires
-	recruit_character = POR_francisco_craveiro_lopes
-	recruit_character = POR_alvaro_cunhal
-	recruit_character = POR_francisco_da_cunha_leal
-	recruit_character = POR_bento_de_jesus_caraca
-	recruit_character = POR_jaime_cortesao
-	recruit_character = POR_alberto_monsaraz
-	recruit_character = POR_maria_lamas
-	recruit_character = POR_joao_de_azevedo_coutinho
-	recruit_character = POR_duarte_jose_pacheco
-	recruit_character = POR_manuel_goncalves_cerejeira
-	recruit_character = POR_jose_adriano_pequito_rebelo
-	recruit_character = POR_jose_hipolito_raposo
-	recruit_character = POR_joao_francisco_de_barbosa_azevedo
-	recruit_character = POR_alfredo_da_silva
-	recruit_character = POR_fernando_dos_santos_costa
-	recruit_character = POR_augusto_de_vasconcelos
+	clear_scripted_personalities = yes
+	add_heir_personality = expansionist_personality
 }
-
-if = {
-	limit = {
-		NOT = { has_dlc = "La Resistance" }
+1443.1.1= { leader = {	name = "Diogo Gomes"		type = explorer	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
+1448.6.9= {
+	monarch = {
+		name = "Afonso V"
+		dynasty = "de Avis"
+		birth_date = 1432.1.15
+		adm = 3
+		dip = 2
+		mil = 2
+		leader = {	name = "Afonso V"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
-
-	recruit_character = POR_antonio_de_oliveira_salazar
-	recruit_character = POR_bento_goncalves
-	recruit_character = POR_rolao_preto
-	recruit_character = POR_jose_norton_de_matos
-	recruit_character = POR_jose_vicente_de_freitas
-	recruit_character = POR_jose_manuel_sarmento_de_beires
-	recruit_character = POR_manuel_ortins_torres_de_bettencourt
-	recruit_character = POR_humberto_carmona
-	recruit_character = POR_lobato_guerra
-	recruit_character = POR_humberto_delgado
-	recruit_character = POR_manuel_gouveia
-	recruit_character = POR_jaime_afreixo
-	recruit_character = POR_americo_tomas
-	recruit_character = POR_manuel_quintao_meireles
-	recruit_character = POR_jose_filipe_de_barros_rodrigues
-	recruit_character = POR_jose_adriano_rebelo_pequito
-	recruit_character = POR_francisco_craveiro_lopes
-	recruit_character = POR_jaime_cortesao
-	recruit_character = POR_raul_brandao
-	recruit_character = POR_augusto_de_vasconcelos
-	recruit_character = POR_jose_hipolito_raposo
+	queen = {
+		country_of_origin = POR
+		name = "Isabella"
+		dynasty = "de Avis"
+		birth_date = 1432.3.1
+		death_date = 1455.12.2
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = expansionist_personality
 }
-
-### VARIANTS ###
-# 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
+1450.1.1= { decision = act_of_uniformity decision = blasphemy_act }
+1454.1.1= { leader = { name = "Alvise Ca' da Mosto"	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1457.1.1 } }
+1455.3.3= {
+	heir = {
+		name = "João"
+		monarch_name = "João II"
+		dynasty = "de Avis"
+		birth_date = 1455.3.3
+		death_date = 1495.10.25
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 4
+	}
 }
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Delfim Class"				
-		type = ship_hull_submarine_2
-		name_group = POR_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
+1459.1.1= { leader = { name = "Diogo Gomes"		type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1463.1.1 } }
+1460.1.1= { leader = { name = "Pedro de Sintra"	type = explorer	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1463.1.1 } }
+1469.1.1= { leader = {	name = "Fernando Pó"          	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1481.1.1 } }
+1471.1.1= { leader = { name = "Rui de Sequeira"	type = explorer	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1475.1.1 } }
+1475.5.30= {
+	queen = {
+		country_of_origin = CAS
+		name = "Joanna"
+		dynasty = "de Trastámara"
+		birth_date = 1462.2.21
+		death_date = 1530.2.12
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Guadiana Class"					
-		type = ship_hull_light_1
-		name_group = POR_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
+}
+1480.1.1= { leader = {	name = "Diogo Cão"             	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
+1481.1.1= { government = monarchy
+add_government_reform = autocracy_reform }
+1481.8.29= {
+	monarch = {
+		name = "João II"
+		dynasty = "de Avis"
+		birth_date = 1455.3.3
+		adm = 2
+		dip = 5
+		mil = 4
 	}
-	create_equipment_variant = {
-		name = "Douro Class"	
-		type = ship_hull_light_1
-		name_group = POR_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
+	queen = {
+		country_of_origin = POR
+		name = "Eleanor"
+		dynasty = "de Avis"
+		birth_date = 1458.5.2
+		death_date = 1525.11.17
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+1481.8.29= {
+	heir = {
+		name = "Manuel"
+		monarch_name = "Manuel I"
+		dynasty = "de Avis"
+		birth_date = 1469.5.31
+		death_date = 1521.12.13
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+1482.1.1= { leader = { name = "Diogo de Azambuja"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1486.1.1 } }
+1487.1.1= { leader = {	name = "Bartolomeu Dias"       	type = explorer	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1500.5.29 } }
+1487.5.7= { leader = {	name = "Pêro da Covilhã"       	type = conquistador	fire = 3	shock = 3	manuever = 6	siege = 0	death_date = 1530.1.1 } }
+1495.10.17= {
+	monarch = {
+		name = "Manuel I"
+		dynasty = "de Avis"
+		birth_date = 1469.5.31
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+1497.7.8= { leader = {	name = "Vasco da Gama"         	type = explorer	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1510.1.1 } }
+1497.9.30= {
+	queen = {
+		country_of_origin = ARA
+		name = "Isabella"
+		dynasty = "de Trastámara"
+		birth_date = 1470.10.2
+		death_date = 1498.8.23
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+1500.1.1= { leader = { name = "Rui Lourenço Ravasco"	type = conquistador	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1506.1.1 } }
+1500.3.9= { leader = {	name = "Pedro Álvares Cabral"  	type = explorer	fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1502.1.1 } }
+1500.5.12= { leader = { name = "Gaspar Corte-Real" 	type = explorer	fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
+1500.5.12= { leader = { name = "Miguel Corte-Real"  	type = explorer	fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
+1500.10.30= {
+	queen = {
+		country_of_origin = ARA
+		name = "Maria"
+		dynasty = "de Trastámara"
+		birth_date = 1482.6.29
+		death_date = 1517.3.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1501.1.1= { leader = { name = "Amerigo Vespucci"	type = explorer	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+1502.1.1= { leader = { name = "Gaspar de Lemos"	type = explorer	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+1502.1.1= { leader = { name = "Gonçalo Coelho"		type = explorer	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+1502.6.7= {
+	heir = {
+		name = "João"
+		monarch_name = "João III"
+		dynasty = "de Avis"
+		birth_date = 1502.6.7
+		death_date = 1557.6.11
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 1
+	}
+}
+1503.1.1= { leader = {	name = "Francisco de Almeida"	type = conquistador	fire = 4	shock = 5	manuever = 6	siege = 2	death_date = 1510.3.1 } }
+1509.1.1= { leader = {	name = "Caramuru"		type = conquistador	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1527.1.1 } }
+1518.7.16= {
+	queen = {
+		country_of_origin = HAB
+		name = "Leonor"
+		dynasty = "von Habsburg"
+		birth_date = 1498.1.15
+		death_date = 1558.2.25
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+1521.12.17= {
+	monarch = {
+		name = "João III"
+		dynasty = "de Avis"
+		birth_date = 1502.6.7
+		adm = 1
+		dip = 5
+		mil = 1
+	}
+}
+1525.2.10= {
+	queen = {
+		country_of_origin = HAB
+		name = "Catherine"
+		dynasty = "von Habsburg"
+		birth_date = 1507.1.14
+		death_date = 1578.2.12
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+1530.1.1= { leader = {	name = "Martim de Sousa"       	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1564.1.1 } }
+1534.8.15= { decision = join_the_counter_reformation }
+1540.1.1= { decision = institute_the_societas_jesu }
+1554.1.20= {
+	heir = {
+		name = "Sebastião"
+		monarch_name = "Sebastião I"
+		dynasty = "de Avis"
+		birth_date = 1554.1.20
+		death_date = 1578.8.4
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+1556.1.1= { leader = {	name = "Mem de Sá"             	type = conquistador	fire = 4	shock = 5	manuever = 5	siege = 2	death_date = 1560.1.1 } }
+1557.6.13= {
+	monarch = {
+		name = "Sebastião I"
+		dynasty = "de Avis"
+		birth_date = 1554.1.20
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Joanna"
+		dynasty = "von Habsburg"
+		birth_date = 1535.6.24
+		death_date = 1573.9.7
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+1557.6.13= {
+	heir = {
+		name = "Henrique"
+		monarch_name = "Henrique I o Cardeal-Rei"
+		dynasty = "de Avis"
+		birth_date = 1512.1.31
+		death_date = 1580.1.31
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1578.1.1= { leader = {	name = "António, Prior do Crato"     	type = general	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1580.2.1 } }
+1578.8.6= {
+	monarch = {
+		name = "Henrique I o Cardeal-Rei"
+		dynasty = "de Avis"
+		birth_date = 1512.1.31
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1578.8.6= {
+	heir = {
+		name = "António"
+		monarch_name = "António I"
+		dynasty = "de Avis"
+		birth_date = 1531.1.1
+		death_date = 1595.8.26
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+		leader = {	name = "António I"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+	}
+}
+1580.2.1= {
+	monarch = {
+		name = "António I"
+		dynasty = "de Avis"
+		birth_date = 1531.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+		leader = {	name = "António I"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Anna"
+		dynasty = "Barbosa"
+		birth_date = 1530.1.1
+		death_date = 1590.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+1585.1.1= { leader = { name = "Afonso de Castro"		type = admiral	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1607.6.3 } }
+1595.1.1= { leader = {	name = "Pedro Fernandes Queiróz"	type = explorer	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1615.1.1 } }
+1602.1.1= { leader = {	name = "António Fernandes"     	type = explorer	fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1624.1.1 } }
+1606.1.1= { leader = {	name = "D. Álvaro de Meneses"   type = admiral	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1620.1.1 } }
+1624.1.1= { leader = {	name = "Nuno Álvares Botelho"	type = admiral	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1650.1.1 } }
+1637.1.1= { leader = {	name = "Pedro Teixeira"        	type = conquistador	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1640.1.1 } }
+1640.12.1= {
+	monarch = {
+		name = "João IV"
+		dynasty = "de Bragança"
+		birth_date = 1604.3.19
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+	queen = {
+		country_of_origin = SPA
+		name = "Luisa"
+		dynasty = "de Medina-Sidonia"
+		birth_date = 1631.10.31
+		death_date = 1666.2.27
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+1643.8.21= {
+	heir = {
+		name = "Afonso"
+		monarch_name = "Afonso VI"
+		dynasty = "de Bragança"
+		birth_date = 1643.8.21
+		death_date = 1683.9.12
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+1655.1.1= { leader = {	name = "Álvares Botelho"       	type = admiral	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1680.1.1 } }
+1656.11.7= { set_legacy_government = administrative_monarchy }
+1656.11.7= {
+	monarch = {
+		name = "Afonso VI"
+		dynasty = "de Bragança"
+		birth_date = 1643.8.21
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+1656.11.7= {
+	heir = {
+		name = "Pedro"
+		monarch_name = "Pedro II"
+		dynasty = "de Bragança"
+		birth_date = 1648.4.26
+		death_date = 1706.12.9
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+1659.1.1= { leader = {	name = "F. von Schomberg"	type = general	fire = 3	shock = 2	manuever = 5	siege = 1	death_date = 1668.1.1 } }
+1666.8.2= {
+	queen = {
+		country_of_origin = SAV
+		name = "Maria Francisca"
+		dynasty = "di Savoia"
+		birth_date = 1646.9.12
+		death_date = 1683.12.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+1667.11.24= {
+	monarch = {
+		name = "Pedro II"
+		dynasty = "de Bragança"
+		birth_date = 1648.4.26
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+	queen = {
+		country_of_origin = SAV
+		name = "Maria Francisca"
+		dynasty = "di Savoia"
+		birth_date = 1646.9.12
+		death_date = 1683.12.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+1685.12.1= { leader = { name = "Francisco da Silva"	type = admiral	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1720.2.28 } }
+1687.8.11= {
+	queen = {
+		country_of_origin = PAL
+		name = "Maria Sophia"
+		dynasty = "von Wittelsbach"
+		birth_date = 1666.8.6
+		death_date = 1699.8.4
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+1689.10.22= {
+	heir = {
+		name = "João"
+		monarch_name = "João V"
+		dynasty = "de Bragança"
+		birth_date = 1689.10.22
+		death_date = 1750.7.31
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+1700.1.1= { leader = {	name = "António Luís de Sousa"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1720.1.1 } }
+1706.12.11= { government = monarchy
+add_government_reform = autocracy_reform }
+1706.12.11= {
+	monarch = {
+		name = "João V"
+		dynasty = "de Bragança"
+		birth_date = 1689.10.22
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Anna"
+		dynasty = "von Habsburg"
+		birth_date = 1683.9.7
+		death_date = 1754.8.14
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+1708.10.27= {
+	queen = {
+		country_of_origin = HAB
+		name = "Maria Anna"
+		dynasty = "von Habsburg"
+		birth_date = 1683.9.7
+		death_date = 1754.8.14
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+1714.6.6= {
+	heir = {
+		name = "José"
+		monarch_name = "José I"
+		dynasty = "de Bragança"
+		birth_date = 1714.6.6
+		death_date = 1777.2.24
+		claim = 95
+		adm = 6
+		dip = 3
+		mil = 3
+	}
+}
+1750.8.2= { government = monarchy
+# add_government_reform = letat_cest_moi_reform 
+}
+1750.8.2= {
+	monarch = {
+		name = "José I"
+		dynasty = "de Bragança"
+		birth_date = 1714.6.6
+		adm = 6
+		dip = 3
+		mil = 3
+	}
+	queen = {
+		country_of_origin = SPA
+		name = "Maria Victoria"
+		dynasty = "de Bourbon"
+		birth_date = 1718.3.31
+		death_date = 1781.1.17
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+1750.8.2= {
+	heir = {
+		name = "Maria"
+		monarch_name = "Maria I"
+		dynasty = "de Bragança"
+		birth_date = 1734.12.17
+		death_date = 1816.3.20
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+		female = yes
+	}
+}
+1761.1.1= { leader = { name = "Conde de Lippe"  	type = general	fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1770.1.1 } }
+1777.2.23= {
+	monarch = {
+		name = "Maria I"
+		dynasty = "de Bragança"
+		birth_date = 1734.12.17
+		adm = 0
+		dip = 1
+		mil = 0
+		female = yes
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Pedro"
+		dynasty = "de Bragança"
+		birth_date = 1717.7.5
+		death_date = 1786.5.25
+		female = no
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+1777.2.23= {
+	heir = {
+		name = "Joao"
+		monarch_name = "João VI"
+		dynasty = "de Bragança"
+		birth_date = 1767.5.13
+		death_date = 1826.3.10
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+1790.2.27= { leader = { name = "B. Freire de Andrade"  	type = general	fire = 5	shock = 3	manuever = 4	siege = 1	death_date = 1809.3.17 } }
+1794.4.25= { leader = { name = "M. Pereira Forjaz"  		type = general	fire = 4	shock = 5	manuever = 3	siege = 1	death_date = 1827.11.6 } }
+1800.5.4= { leader = { name = "M.J. Dias Azedo"  		type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1821.2.11 } }
+1803.3.14= { leader = { name = "Conde de Amarante"  		type = general	fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1821.5.27 } }
+1808.1.1= { capital = 763 }
+1809.1.1= { leader = { name = "F. Furtado de Castro"  		type = general	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1854.3.11 } }
+1816.3.20= {
+	monarch = {
+		name = "João VI"
+		dynasty = "de Bragança"
+		birth_date = 1767.5.13
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+	queen = {
+		country_of_origin = SPA
+		name = "Carlota"
+		dynasty = "de Bourbon"
+		birth_date = 1775.4.25
+		death_date = 1830.1.7
+		female = yes
+		adm = 1
+		dip = 0
+		mil = 0
 	}
 }

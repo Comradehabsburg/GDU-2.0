@@ -1,0 +1,26 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 38 43 209 }
+monarch_names = {
+	"Abiodun #1" = -1
+	"Adebowale #0" = 0
+	"Adeyemi #1" = -1
+	"Asi #1" = -1
+	"Chidimma #1" = -1
+	"Chizoba #1" = 10
+	"Emwinghare #0" = 0
+	"Esosa #1" = -1
+	"Fíne #0" = -1
+	"Idehen #0" = 0
+	"Imokhai #0" = 0
+	"Kayin #0" = 0
+	"Keche e-basa #0" = 0
+	"Kow #1" = 10
+	"Kwasiba #1" = -1
+	"Maram #0" = -1
+	"Mojisola #0" = -1
+	"Monifa #1" = -1
+	"Ogun #1" = 10
+	"Osaze #0" = 0
+	"Osilama #0" = 0
+}

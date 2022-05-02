@@ -1,0 +1,24 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 209 73 44 }
+monarch_names = {
+	"Abdale #0" = 0
+	"Ahmed #0" = 0
+	"Alaso #0" = -1
+	"Awrala #0" = -1
+	"Balad #0" = 0
+	"Barakat #0" = 0
+	"Beydaan #0" = -1
+	"Canab #0" = -1
+	"Ciise #0" = 0
+	"Fawzia #0" = -1
+	"Geesi #0" = -1
+	"Hantale #0" = 0
+	"Hibaaq #0" = -1
+	"Jamal #1" = 10
+	"Nusetor #3" = 10
+	"Sa'ad #1" = 10
+	"Sabir #0" = 0
+	"Sabraddin #1" = 10
+	"Umar #0" = 0
+}

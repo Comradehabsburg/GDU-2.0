@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 45 112 100 }
+monarch_names = {
+	"Aldar #1" = 10
+	"Artish #1" = 10
+	"Belek-kis #0" = -1
+	"Chadzakh #0" = -1
+	"Dalay-ool #1" = 10
+	"Dash-demir #1" = 10
+	"Kaigal-ool #0" = 0
+	"Kizil-ool #0" = 0
+	"Kongar-ool #1" = 10
+	"Mannay-ool #0" = 0
+	"Mongun #0" = 0
+	"Namzila #0" = -1
+	"Sainkho #0" = -1
+	"Samdar #0" = -1
+	"Sildis #1" = 10
+	"Tsyrma #0" = -1
+	"Tyulgyu #1" = 10
+	"Tyulyush #1" = 10
+	"Umay #0" = -1
+	"Uyanmas #0" = 0
+	"Xoptak #0" = -1
+	"Yasar #0" = -1
+}

@@ -1,99 +1,305 @@
-﻿capital = 831 #Khiva
-
-#oob = "KHI_1936"
-
-set_research_slots = 2
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_recon = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_military_police = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	paratroopers = 1
-	gw_artillery = 1
-
-
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	mass_assault = 1
-	fleet_in_being = 1
-}
-if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+technology_group = muslim
+religion = sunni
+primary_culture = turkmeni
+capital = 1973
+fixed_capital = 1973
+religious_school = hanafi_school
+historical_rival = BUK
+historical_rival = SHY
+1511.1.1= {
+	monarch = {
+		name = "Ilbars I"
+		dynasty ="Arabshahid"
+		dip = 1
+		adm = 1
+		mil = 3
 	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
+	add_piety = 0.25
+}
+1518.1.1= {
+	monarch = {
+		name = "Hadji"
+		dynasty ="Arabshahid"
+		dip = 1
+		adm = 1
+		mil = 2
 	}
 }
-if = {
-	limit = {
-		
-		has_dlc = "No Step Back"
-		
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
+1519.1.1= {
+	monarch = {
+		name = "Hassan Quli"
+		dynasty ="Arabshahid"
+		dip = 1
+		adm = 0
+		mil = 1
 	}
 }
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
+1522.1.1= {
+	monarch = {
+		name = "Budjuga"
+		dynasty ="Arabshahid"
+		dip = 1
+		adm = 1
+		mil = 1
 	}
 }
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
+1529.1.1= {
+	monarch = {
+		name = "Sufyan"
+		dynasty ="Arabshahid"
+		dip = 2
+		adm = 0
+		mil = 2
 	}
 }
-set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
+1538.1.1= {
+	monarch = {
+		name = "Kal"
+		dynasty ="Arabshahid"
+		dip = 1
+		adm = 2
+		mil = 1
+	}
 }
-
-set_popularities = {
-	democratic = 60
-	fascism = 10
-	communism = 20
-	neutrality = 10
+1547.1.1= {
+	monarch = {
+		name = "Agatay"
+		dynasty ="Arabshahid"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
 }
-
-recruit_character = KHI_nedirbay_aytakov
-recruit_character = KHI_junaid_khan
-
-
-
+1557.1.1= {
+	monarch = {
+		name = "Dost"
+		dynasty ="Arabshahid"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+1558.1.1= {
+	monarch = {
+		name = "Hadji Muhammad"
+		dynasty ="Arabshahid"
+		dip = 3
+		adm = 1
+		mil = 3
+	}
+}
+1598.1.1= { capital = 441 }
+1603.3.1= {
+	monarch = {
+		name = "Arab Muhammad"
+		dynasty = "Arabshahid"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+1623.8.1= {
+	monarch = {
+		name = "Isfandiyar"
+		dynasty = "Arabshahid"
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+1643.7.1= {
+	monarch = {
+		name = "Abu'l-Ghazi I"
+		dynasty = "Arabshahid"
+		dip = 3
+		adm = 4
+		mil = 0
+	}
+}
+1663.1.1= {
+	monarch = {
+		name = "Anusha"
+		dynasty = "Arabshahid"
+		dip = 2
+		adm = 4
+		mil = 3
+	}
+}
+1686.1.1= {
+	monarch = {
+		name = "Khudaydad"
+		dynasty = "Arabshahid"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+1689.1.1= {
+	monarch = {
+		name = "Arang"
+		dynasty = "Arabshahid"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+1694.10.27= {
+	monarch = {
+		name = "Juchi"
+		dynasty = "Genghisid"
+		dip = 1
+		adm = 1
+		mil = 0
+	}
+}
+1697.1.1= {
+	monarch = {
+		name = "Vali"
+		dynasty = "Genghisid"
+		dip = 2
+		adm = 0
+		mil = 3
+	}
+}
+1698.1.1= {
+	monarch = {
+		name = "Niyaz"
+		dynasty = "Genghisid"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+1704.1.1= {
+	monarch = {
+		name = "Yadgar"
+		dynasty = "Genghisid"
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+1714.1.1= {
+	monarch = {
+		name = "Isim"
+		dynasty = "Genghisid"
+		dip = 1
+		adm = 1
+		mil = 0
+	}
+}
+1715.1.1= {
+	monarch = {
+		name = "Sher Ghazi"
+		dynasty = "Genghisid"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+1728.1.1= {
+	monarch = {
+		name = "Ilbars II"
+		dynasty = "Genghisid"
+		dip = 1
+		adm = 2
+		mil = 2
+	}
+}
+1740.1.1= {
+	monarch = {
+		name = "Abu'l-Ghazi Muhammad"
+		dynasty = "Genghisid"
+		dip = 1
+		adm = 0
+		mil = 0
+	}
+	government_rank = 1
+}
+1745.1.1= {
+	monarch = {
+		name = "Abu'l-Ghazi II"
+		dynasty = "Genghisid"
+		dip = 1
+		adm = 0
+		mil = 0
+	}
+}
+1746.1.1= {
+	monarch = {
+		name = "Ghaip Khan I"
+		dynasty = "Tuqaitimurid"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+1747.6.19= {
+	government_rank = 2
+}
+1757.1.1= {
+	monarch = {
+		name = "Abdullah Qarabay"
+		dynasty = "Tuqaitimurid"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+1757.7.1= {
+	monarch = {
+		name = "Timur Ghazi"
+		dynasty = "Tuqaitimurid"
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+}
+1763.1.1= {
+	monarch = {
+		name = "Tawke"
+		dynasty = "Tuqaitimurid"
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+1764.1.1= {
+	monarch = {
+		name = "Shah Ghazi"
+		dynasty = "Tuqaitimurid"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+1767.1.1= {
+	monarch = {
+		name = "Abu'l-Ghazi III"
+		dynasty = "Tuqaitimurid"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+1804.1.1= {
+	monarch = {
+		name = "Iltazar"
+		dynasty = "Qongirat"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+1806.6.1= {
+	monarch = {
+		name = "Muhammad Rahim I"
+		dynasty = "Qongirat"
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}

@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 146 47 130 }
+monarch_names = {
+	"Akakios #0" = 0
+	"Araslan #0" = 0
+	"Chariton #1" = 10
+	"Chrysanthos #1" = 10
+	"Damianos #1" = 10
+	"Devorah #0" = -1
+	"Dorothea #1" = -1
+	"Ioannikios #0" = 0
+	"Manasseh #2" = 10
+	"Mänäs #1" = 10
+	"Samuel #1" = 10
+	"Symvatios #2" = 10
+	"Taxiarches #1" = 10
+	"Çat'n #1" = 10
+}

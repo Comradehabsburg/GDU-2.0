@@ -1,0 +1,77 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 138 22 59 }
+revolutionary_colors = { 0 8 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quantity_ideas
+	religious_ideas
+}
+historical_units = {
+	african_dragoon
+	african_hill_warfare
+	african_hussar
+	african_mandelaku
+	african_mossi_horsemen
+	african_spearmen
+	african_tuareg_cavalry
+	african_western_franchise_warfare
+	mali_tribal_warfare
+	niger_kongolese_gunpowder_warfare
+	westernized_niger_kongolese
+}
+monarch_names = {
+	"Adja #1" = -1
+	"Aliyah #1" = -1
+	"Amita #0" = -1
+	"Awa #1" = -1
+	"Barakissa #0" = -1
+	"Bassi #1" = 10
+	"Bayajidda #1" = 10
+	"Chukwudi #1" = 10
+	"Demba #0" = 0
+	"Karbo #1" = 10
+	"Lighimi #0" = -1
+	"Mahmud #1" = 10
+	"Malika #1" = -1
+	"Mamadi #0" = 0
+	"Morobani #0" = 0
+	"Nintasanay #1" = 10
+	"Safiya #0" = -1
+	"Tib #0" = 0
+	"Yama #0" = 0
+	"Youma #1" = -1
+}
+leader_names = {
+	"Aluko"
+	"Bakara"
+	"Balewa"
+	"Bandele"
+	"Diore"
+	"Kanu"
+	"Kountché"
+	"Kuti"
+	"Mamami"
+	"Saibou"
+}
+ship_names = {
+	"babban dutse"
+	"fure"
+	"gajimare"
+	"hazo"
+	"iska"
+	"itace"
+	"rairayi"
+	"rana"
+	"ruwa"
+	"saiwa"
+	"sama"
+	"tauraro"
+	"teku"
+	"wata"
+}

@@ -1,0 +1,18 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 113 195 113 }
+monarch_names = {
+	"Akodu #0" = -1
+	"Awa #0" = -1
+	"Fatima #1" = -1
+	"Gawalambo #0" = -1
+	"Gumsu #0" = -1
+	"Labidiedo #1" = 10
+	"Mariam #1" = -1
+	"Shango #0" = 0
+	"So #0" = 0
+	"Tebunnu #1" = -1
+	"Ya #1" = -1
+	"Yim #0" = 0
+	"Zala #0" = -1
+}

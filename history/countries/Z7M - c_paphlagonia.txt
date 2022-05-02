@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = anatolian
+capital = 325
+fixed_capital = 325
+1444.11.11= {
+	monarch = {
+		name = "Photios"
+		dynasty = "Machetarios"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1393.2.11
+		religion = catholic
+		culture = anatolian
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Nonna"
+		dynasty = "Maleinos-Charsianon"
+		adm = 2
+		dip = 4
+		mil = 3
+		country_of_origin = Z7M
+		birth_date = 1396.8.25
+		death_date = 1456.8.25
+		female = yes
+		religion = catholic
+		culture = greek
+	}
+	add_queen_personality = well_connected_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Theodotos"
+		monarch_name = "Theodotos"
+		dynasty = "Machetarios"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1442.8.14
+		death_date = 1507.8.14
+		claim = 89
+		religion = catholic
+		culture = greek
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 60
+}

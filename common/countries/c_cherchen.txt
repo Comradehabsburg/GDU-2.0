@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 80 125 200 }
+monarch_names = {
+	"Alysanna #0" = 0
+	"Ekasrinke #1" = 10
+	"Kalodaye #1" = 10
+	"Khivyaina #0" = -1
+	"Kimatcuna #0" = 0
+	"Samgalaka #0" = 0
+	"Shrimitradevi #1" = -1
+	"Tohkem #2" = 10
+	"Uddharandeva #1" = 10
+	"Vasudev #1" = 10
+	"Vidaram #0" = 0
+	"Visaram #1" = 10
+	"Yavalac #0" = -1
+	"Yugaraje #1" = 10
+}

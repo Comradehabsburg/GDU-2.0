@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+technology_group = nomad_group
+religion = sunni
+primary_culture = sogdian
+capital = 446
+religious_school = hanafi_school
+add_accepted_culture = tajik
+1444.11.11= {
+	monarch = {
+		name = "Artivan"
+		dynasty = "Kamyarid"
+		adm = 1
+		dip = 3
+		mil = 2
+		birth_date = 1415.9.5
+		religion = sunni
+		culture = sogdian
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Rafiqa"
+		dynasty = "Nadjafid"
+		adm = 4
+		dip = 3
+		mil = 4
+		country_of_origin = Z2A
+		birth_date = 1415.11.15
+		death_date = 1475.11.15
+		female = yes
+		religion = sunni
+		culture = afghani
+	}
+	add_queen_personality = well_connected_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Nanaifarn"
+		monarch_name = "Nanaifarn II"
+		dynasty = "Kamyarid"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1440.11.21
+		death_date = 1505.11.21
+		claim = 89
+		religion = sunni
+		culture = sogdian
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 59
+	add_treasury = 0
+}

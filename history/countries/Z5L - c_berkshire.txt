@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = essexian
+capital = 237
+fixed_capital = 237
+1444.11.11= {
+	monarch = {
+		name = "Æthelhere"
+		dynasty = "of Reading"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1393.5.8
+		religion = catholic
+		culture = essexian
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Seaxburh"
+		dynasty = "of Reading"
+		adm = 1
+		dip = 3
+		mil = 1
+		country_of_origin = Z5L
+		birth_date = 1402.7.5
+		death_date = 1462.7.5
+		female = yes
+		religion = catholic
+		culture = anglo_saxon
+	}
+	add_queen_personality = well_connected_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Æthelhere"
+		monarch_name = "Æthelhere"
+		dynasty = "of Reading"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1423.2.23
+		death_date = 1488.2.23
+		claim = 89
+		religion = catholic
+		culture = anglo_saxon
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 66
+	add_treasury = 57
+}

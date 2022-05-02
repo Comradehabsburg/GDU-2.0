@@ -1,0 +1,13 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = nomad_group
+religion = orthodox
+primary_culture = chuvash
+capital = 2415
+fixed_capital = 2415
+add_accepted_culture = dynamic-chuvash-mordvin-culture-num1
+1444.11.11= {
+	add_prestige = 71
+	add_treasury = 45
+}

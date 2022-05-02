@@ -1,0 +1,71 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 143 222 169 }
+revolutionary_colors = { 1 0 10 }
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	trade_ideas
+	administrative_ideas
+	offensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Abdul-Qadir #1" = 10
+	"Abdul-Wahab #1" = 10
+	"Akin #0" = 0
+	"Faruk #0" = 0
+	"Gagiki #1" = 10
+	"Ibrahim #1" = 10
+	"Isa #2" = 10
+	"Ismat #1" = 10
+	"Jibril #0" = 0
+	"Khaireddin #1" = 10
+	"Murad #0" = 0
+	"Qamara #0" = -1
+	"Qatan #1" = 10
+	"Sahba #0" = -1
+	"Shahzadah #0" = -1
+	"Shameem #0" = -1
+	"Zeyd #0" = 0
+}
+leader_names = {
+	"Al-Wa'ili"
+	"Al-doughman"
+	"Al-frrejah"
+	"Al-ga' 'a' 'gaah"
+	"Al-kwakbah"
+	"Al-murre"
+	"Banu Bakr"
+	"Banu Hanifa"
+	"Rabi`ah"
+	"Ruwallah"
+}
+ship_names = {
+	"Ad-Dahna"
+	"Ad-Dilam"
+	"Al-Armah"
+	"Al-Bayad"
+	"Ar-Riyad"
+	"Jabal Tuwayo"
+	"Nafüd Ad-Dahy"
+	"Nafüd As-Sirrah"
+	"Nafüd Qunayfidahah"
+	"Nafüd Shuqayyiqah"
+	"Shaqra"
+}

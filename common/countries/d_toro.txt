@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 153 153 50 }
+monarch_names = {
+	"Cammue #0" = 0
+	"Fädazu #1" = 10
+	"Garteh #0" = 0
+	"Gborlormenh #0" = -1
+	"Gbwe #0" = 0
+	"Igoumou #1" = 10
+	"Mamadi #1" = 10
+	"Namandjé #1" = -1
+	"Ndoffene #1" = 10
+	"Salman #1" = 10
+	"Sogolon #0" = -1
+	"Teenesee #0" = -1
+	"Togar #1" = 10
+	"Welleh #0" = 0
+}

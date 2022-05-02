@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+technology_group = muslim
+religion = sunni
+primary_culture = moroccan
+capital = 2460
+fixed_capital = 2460
+religious_school = hanbali_school
+1444.11.11= {
+	monarch = {
+		name = "Ammuc"
+		dynasty = "Ammucid"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1388.8.29
+		religion = sunni
+		culture = moroccan
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Timmi"
+		dynasty = "Zakidid"
+		adm = 4
+		dip = 4
+		mil = 3
+		country_of_origin = Z8D
+		birth_date = 1389.2.19
+		death_date = 1449.2.19
+		female = yes
+		religion = sunni
+		culture = berber
+	}
+	add_queen_personality = well_connected_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Haidar"
+		monarch_name = "Haidar"
+		dynasty = "Ammucid"
+		adm = 4
+		dip = 6
+		mil = 5
+		birth_date = 1422.10.23
+		death_date = 1487.10.23
+		claim = 89
+		religion = sunni
+		culture = berber
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 50
+}

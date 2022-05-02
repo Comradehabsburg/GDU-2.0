@@ -1,0 +1,103 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 185 172 208 }
+revolutionary_colors = { 6 9 6 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	administrative_ideas
+	offensive_ideas
+	quality_ideas
+	quantity_ideas
+}
+historical_units = {
+	ali_bey_reformed_infantry
+	mamluk_archer
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_cavalry_archers
+	muslim_dragoon
+	muslim_mass_infantry
+}
+monarch_names = {
+	"Aaliyah #0" = -1
+	"Afaghis #0" = 0
+	"Agama #0" = 0
+	"Akzer #0" = 0
+	"Bghnat #0" = -1
+	"Dinara #0" = -1
+	"Fariza #0" = -1
+	"Fer'r'udja #0" = -1
+	"Gaia #0" = 0
+	"Keraja #0" = 0
+	"Khadija #0" = -1
+	"Mamma #0" = -1
+	"Masgava #0" = 0
+	"Sammer #0" = 0
+	"T'ar'iq #4" = 10
+	"Tacfin #0" = 0
+	"Talakakin #0" = 0
+	"Tasa #0" = -1
+	"Taszellayt #0" = -1
+	"Tawenza #0" = -1
+	"Tiziri #0" = -1
+	"Touran #0" = -1
+	"Tudert #0" = -1
+	"Yabid #1" = 10
+	"Yahya #3" = 10
+	"Yeften #0" = 0
+	"Youkhanna #0" = 0
+	"Zaghlin #1" = 10
+}
+leader_names = {
+	"Atfayyish"
+	"Beni Isguen"
+	"Beni Mthar"
+	"Lemliki"
+	"Mzabi"
+	"Tabghurin"
+	"al-Afdali"
+	"al-Malshuti"
+	"al-Mus'abi"
+	"bin Yakhlaf"
+}
+ship_names = {
+	"Akhir"
+	"Awwal"
+	"Ba'ith"
+	"Barr"
+	"Batin"
+	"Beni Isguen"
+	"Beriane"
+	"Bou Noura"
+	"El-Ateuf"
+	"Ghardaia"
+	"Hamid"
+	"Haqq"
+	"Hayy"
+	"Majid"
+	"Matin"
+	"Melika"
+	"Mu'akhkhir"
+	"Mu'id"
+	"Mubdi"
+	"Muhsi"
+	"Muhyi"
+	"Mumit"
+	"Muqaddim"
+	"Muqtadir"
+	"Muta'al"
+	"Qadir"
+	"Qawiyy"
+	"Qayyum"
+	"Samad"
+	"Shahid"
+	"Wahid"
+	"Wajed"
+	"Wakil"
+	"Wali"
+	"Waliyy"
+	"Zahir"
+}

@@ -1,0 +1,20 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 242 223 22 }
+monarch_names = {
+	"Bakr #0" = 0
+	"Dramane #1" = 10
+	"Drissa #1" = 10
+	"Gassama #0" = 0
+	"Hawa #0" = -1
+	"Kodama #1" = 10
+	"Konaté #1" = 10
+	"Mayan Dyabe #1" = 10
+	"Nintasanay #1" = 10
+	"Sakho #2" = 10
+	"Seydou #1" = 10
+	"Sirman #2" = 10
+	"Soumaoro #2" = 10
+	"Tabouri #0" = 0
+	"Zeinab #0" = -1
+}

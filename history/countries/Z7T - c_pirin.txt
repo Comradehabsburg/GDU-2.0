@@ -1,0 +1,42 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = bulgarian
+capital = 4703
+fixed_capital = 4703
+1444.11.11= {
+	monarch = {
+		name = "Soimir"
+		dynasty = "Radomir"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1399.10.11
+		religion = orthodox
+		culture = bulgarian
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	heir = {
+		name = "Snezhana"
+		monarch_name = "Snezhana II"
+		dynasty = "Radomir"
+		adm = 5
+		dip = 3
+		mil = 3
+		birth_date = 1433.9.14
+		death_date = 1498.9.14
+		female = yes
+		claim = 89
+		religion = orthodox
+		culture = bulgarian
+	}
+	add_heir_personality = well_connected_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 76
+	add_treasury = 48
+}

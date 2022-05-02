@@ -1,0 +1,86 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 131 202 12 }
+revolutionary_colors = { 15 0 9 }
+historical_idea_groups = {
+	administrative_ideas
+	trade_ideas
+	quantity_ideas
+	expansion_ideas
+	offensive_ideas
+	economic_ideas
+	defensive_ideas
+	religious_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Burmort #0" = 0
+	"Chuga #0" = 0
+	"Ispahdost #0" = 0
+	"Kyldysin #0" = 0
+	"Lysko #0" = 0
+	"Mokci #0" = 0
+	"Odeg #1" = 10
+	"Oshama #0" = -1
+	"Putyayka #0" = -1
+	"Rayda #0" = 0
+	"Shukshtoroyka #0" = -1
+	"Siyamka #0" = -1
+	"Tikshayka #0" = -1
+	"Toyaksha #0" = -1
+	"Tundya #0" = -1
+	"Valdava #0" = -1
+	"Vechkas #0" = 0
+	"Viryas #0" = 0
+	"Vokan #1" = 10
+	"Çiltanesi #0" = -1
+}
+leader_names = {
+	"Arinin"
+	"Aven"
+	"Balna"
+	"Kanin"
+	"Maimbava"
+	"Ravna"
+	"Salmiianov"
+	"Taiborey"
+	"Tsoy"
+	"Vylka"
+}
+ship_names = {
+	"Baraq"
+	"Bayan"
+	"Chimtai"
+	"Devlat Berdi"
+	"Ghengis Khan"
+	"Ilbasan"
+	"Jabbar Berdi"
+	"Jalal Ad-Din"
+	"Karim Berdi"
+	"Kebek"
+	"Kochu"
+	"Mubarrak Kwaja"
+	"Orda"
+	"Pulad"
+	"Sasibuga"
+	"Sayyid Ahmad"
+	"Shadi Beg"
+	"Timur Malik"
+	"Timur Qutlugh"
+	"Toqtamish"
+	"Tuqtaqiya"
+	"Ulugh Muhammad"
+	"Urus"
+}
