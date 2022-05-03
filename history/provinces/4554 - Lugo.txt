@@ -1,5 +1,5 @@
-owner = Z1E
-controller = Z1E
+owner = ASU
+controller = ASU
 capital = "Lugo"
 is_city = yes
 culture = leonese
@@ -9,8 +9,7 @@ base_tax = 3
 base_production = 1
 base_manpower = 1
 add_core = LON
-add_core = Z1E
-add_permanent_claim = ASU
+add_core = ASU
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

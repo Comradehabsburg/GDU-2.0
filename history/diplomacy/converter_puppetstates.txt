@@ -117,14 +117,6 @@ dependency=
 
 vassal=
 {
-	first="ASU"
-	second="Z1E"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal=
-{
 	first="Z01"
 	second="AMG"
 	start_date="1444.11.11"
@@ -342,7 +334,31 @@ vassal=
 vassal=
 {
 	first="SWI"
-	second="Z50"
+	second="Z50"`
+	start_date="1444.11.11"`
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="ASU"
+	second="NAV"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="ASU"
+	second="ARA"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="VAL"
+	second="MJO"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

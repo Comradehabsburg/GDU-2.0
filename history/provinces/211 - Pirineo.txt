@@ -1,5 +1,5 @@
-owner = Z67
-controller = Z67
+owner = ARA
+controller = ARA
 capital = "Huesca"
 is_city = yes
 culture = aragonese
@@ -9,7 +9,6 @@ base_tax = 1
 base_production = 2
 base_manpower = 1
 add_core = ARA
-add_core = Z67
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

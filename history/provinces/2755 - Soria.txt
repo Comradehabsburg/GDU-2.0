@@ -1,5 +1,5 @@
-owner = Z1E
-controller = Z1E
+owner = ASU
+controller = ASU
 capital = "Soria"
 is_city = yes
 culture = castillian
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 add_core = CAS
-add_core = Z1E
+add_core = ASU
 add_permanent_claim = ADU
 discovered_by = eastern
 discovered_by = indian

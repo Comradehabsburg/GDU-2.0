@@ -1,5 +1,5 @@
-owner = Z1E
-controller = Z1E
+owner = ASU
+controller = ASU
 capital = "Santander"
 is_city = yes
 culture = castillian
@@ -12,8 +12,7 @@ base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
 add_core = CAS
-add_core = Z1E
-add_permanent_claim = ASU
+add_core = ASU
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

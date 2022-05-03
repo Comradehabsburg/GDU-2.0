@@ -1,6 +1,6 @@
-owner = Z4T
-controller = Z4T
-capital = "Logroño"
+owner = NAV
+controller = NAV
+capital = "Logroï¿½o"
 is_city = yes
 culture = basque
 religion = sunni
@@ -9,7 +9,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 add_core = NAV
-add_core = Z4T
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

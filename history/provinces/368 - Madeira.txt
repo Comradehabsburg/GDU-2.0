@@ -1,5 +1,5 @@
-owner = KOI
-controller = KOI
+owner = POR
+controller = POR
 capital = "Funchal"
 is_city = yes
 culture = berber
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = KOI
+add_core = POR
 add_core = TLC
 add_permanent_claim = MOR
 discovered_by = eastern

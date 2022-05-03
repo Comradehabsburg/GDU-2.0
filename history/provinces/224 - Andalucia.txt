@@ -1,5 +1,5 @@
-owner = ASU
-controller = ASU
+owner = ADU
+controller = ADU
 capital = "Sevilla"
 is_city = yes
 culture = andalucian
@@ -10,7 +10,7 @@ base_production = 3
 base_manpower = 1
 extra_cost = 26
 center_of_trade = 2
-add_core = ASU
+add_core = ADU
 add_permanent_claim = ADU
 discovered_by = eastern
 discovered_by = indian
