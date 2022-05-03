@@ -1,5 +1,5 @@
-owner = FRA
-controller = FRA
+owner = ENG
+controller = ENG
 capital = "Calais"
 is_city = yes
 culture = normand
@@ -10,8 +10,7 @@ base_production = 2
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = FRA
-add_core = NRM
+add_core = ENG
 add_permanent_claim = FRA
 discovered_by = eastern
 discovered_by = indian

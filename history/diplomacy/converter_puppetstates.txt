@@ -125,6 +125,14 @@ vassal=
 
 vassal=
 {
+	first="Z01"
+	second="AMG"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
 	first="EGY"
 	second="Z1M"
 	start_date="1444.11.11"
@@ -183,14 +191,6 @@ vassal=
 {
 	first="KOI"
 	second="GUY"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal=
-{
-	first="LOT"
-	second="BAR"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -295,6 +295,54 @@ vassal=
 {
 	first="FRA"
 	second="NRM"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="FRA"
+	second="NEV"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="FRA"
+	second="ORL"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="FRA"
+	second="NEV"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="FRA"
+	second="BAR"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="SWI"
+	second="GNV"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="SWI"
+	second="Z50"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

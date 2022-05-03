@@ -1,5 +1,5 @@
-owner = FLA
-controller = FLA
+owner = BUR
+controller = BUR
 capital = "Lyon"
 is_city = yes
 culture = normand
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 1
 extra_cost = 16
 center_of_trade = 2
-add_core = FLA
+add_core = BUR
 add_core = NRM
 add_permanent_claim = BUR
 discovered_by = eastern

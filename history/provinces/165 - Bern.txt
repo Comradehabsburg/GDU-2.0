@@ -1,5 +1,5 @@
-owner = BUR
-controller = BUR
+owner = SWI
+controller = SWI
 capital = "Bern"
 is_city = yes
 culture = swiss
@@ -10,7 +10,6 @@ base_production = 1
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = BUR
 add_core = SWI
 discovered_by = eastern
 discovered_by = indian

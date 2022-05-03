@@ -1,6 +1,6 @@
 owner = Z73
 controller = Z73
-capital = "Luçon"
+capital = "Luï¿½on"
 is_city = yes
 culture = dynamic-basque-occitain-culture-num1
 religion = catholic
@@ -11,6 +11,7 @@ base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
 add_core = Z73
+add_permanent_claim = FRA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

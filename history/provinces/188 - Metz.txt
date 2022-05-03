@@ -1,5 +1,5 @@
-owner = BAR
-controller = BAR
+owner = LOR
+controller = LOR
 capital = "Metz"
 is_city = yes
 culture = dynamic-franconian-cosmopolitan_french-culture-num1
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = BAR
+add_core = LOR
 add_permanent_claim = LOT
 discovered_by = eastern
 discovered_by = indian

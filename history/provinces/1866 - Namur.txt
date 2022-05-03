@@ -1,5 +1,5 @@
-owner = BRI
-controller = BRI
+owner = LOT
+controller = LOT
 capital = "Namur"
 is_city = yes
 culture = dynamic-franconian-cosmopolitan_french-culture-num1
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 4
 base_production = 3
 base_manpower = 1
-add_core = BRI
+add_core = LOT
 add_permanent_claim = LOT
 discovered_by = eastern
 discovered_by = indian

@@ -1,6 +1,6 @@
 owner = GUY
 controller = GUY
-capital = "Angoulême"
+capital = "Angoulï¿½me"
 is_city = yes
 culture = dynamic-basque-occitain-culture-num1
 religion = catholic
@@ -9,6 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 add_core = GUY
+add_permanent_claim = FRA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim
