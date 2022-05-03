@@ -1,5 +1,5 @@
-owner = BRI
-controller = BRI
+owner = NRM
+controller = NRM
 capital = "Rouen"
 is_city = yes
 culture = normand
@@ -10,7 +10,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 2
 extra_cost = 10
-add_core = BRI
+add_core = FRA
 add_core = NRM
 add_permanent_claim = FRA
 discovered_by = eastern

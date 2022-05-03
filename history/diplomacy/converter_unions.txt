@@ -169,14 +169,6 @@ union=
 union=
 {
 	first="FRA"
-	second="BRI"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="FRA"
 	second="LOT"
 	start_date="1444.11.11"
 	end_date="1836.1.1"

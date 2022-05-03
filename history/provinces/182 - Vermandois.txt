@@ -1,5 +1,5 @@
-owner = HSC
-controller = HSC
+owner = FRA
+controller = FRA
 capital = "Soissons"
 is_city = yes
 culture = normand
@@ -8,6 +8,7 @@ trade_goods = livestock
 base_tax = 3
 base_production = 2
 base_manpower = 1
+add_core = FRA
 add_core = HSC
 add_core = NRM
 add_permanent_claim = FRA
