@@ -1,5 +1,5 @@
-owner = Z2E
-controller = Z2E
+owner = Z5P
+controller = Z5P
 capital = "Saluzzo"
 is_city = yes
 culture = piedmontese
@@ -11,6 +11,7 @@ base_production = 1
 base_manpower = 1
 add_core = SAV
 add_core = Z2E
+add_core = Z5P
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

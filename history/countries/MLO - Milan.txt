@@ -1,9 +1,10 @@
-government = monarchy
-add_government_reform = english_monarchy
+government = republic
+add_government_reform = ambrosian_republic
 government_rank = 1
 technology_group = eastern
 religion = catholic
 primary_culture = greek
+elector = yes
 capital = 104
 fixed_capital = 104
 add_accepted_culture = lombard

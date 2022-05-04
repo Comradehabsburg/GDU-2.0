@@ -1,5 +1,5 @@
-owner = Z51
-controller = Z51
+owner = ROM
+controller = ROM
 capital = "Bari"
 is_city = yes
 culture = neapolitan
@@ -11,6 +11,7 @@ base_production = 3
 base_manpower = 1
 add_core = NAP
 add_core = Z51
+add_core = ROM
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

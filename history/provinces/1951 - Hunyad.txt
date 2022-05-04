@@ -1,5 +1,5 @@
-owner = Z3A
-controller = Z3A
+owner = TRA
+controller = TRA
 capital = "Alba Iulia"
 is_city = yes
 culture = romanian
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = Z3A
+add_core = TRA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

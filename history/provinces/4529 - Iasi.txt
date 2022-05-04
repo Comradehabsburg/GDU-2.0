@@ -10,6 +10,7 @@ base_production = 2
 base_manpower = 1
 add_core = VOL
 add_core = Z6H
+hre = yes
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

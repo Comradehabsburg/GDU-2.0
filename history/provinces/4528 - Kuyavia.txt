@@ -1,5 +1,5 @@
-owner = POL
-controller = POL
+owner = Z0T
+controller = Z0T
 capital = "Brzesc Kujawski"
 is_city = yes
 culture = polish
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = POL
+add_core = Z0T
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z7H
-controller = Z7H
+owner = BYZ
+controller = BYZ
 capital = "Ohrid"
 is_city = yes
 culture = bulgarian
@@ -11,6 +11,7 @@ base_production = 1
 base_manpower = 3
 add_core = BUL
 add_core = Z7H
+add_core = BYZ
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

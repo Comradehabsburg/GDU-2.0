@@ -1,5 +1,5 @@
-owner = Z1D
-controller = Z1D
+owner = SIC
+controller = SIC
 capital = "Mdina"
 is_city = yes
 culture = magnagreek
@@ -10,8 +10,7 @@ hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = BYZ
-add_core = Z1D
+add_core = SIC
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

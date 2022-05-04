@@ -253,6 +253,22 @@ vassal=
 
 vassal=
 {
+	first="MLO"
+	second="PAR"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="MLO"
+	second="Z5N"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
 	first="Z0N"
 	second="SMO"
 	start_date="1444.11.11"
@@ -269,7 +285,7 @@ vassal=
 
 vassal=
 {
-	first="Z0S"
+	first="MVA"
 	second="TRA"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -295,6 +311,14 @@ vassal=
 {
 	first="FRA"
 	second="NEV"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="Z0T"
+	second="SIL"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

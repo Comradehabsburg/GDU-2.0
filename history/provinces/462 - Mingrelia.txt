@@ -1,5 +1,5 @@
-owner = Z06
-controller = Z06
+owner = IME
+controller = IME
 capital = "Zugdidi"
 is_city = yes
 culture = georgian
@@ -13,7 +13,7 @@ extra_cost = 8
 center_of_trade = 1
 add_core = GEO
 add_core = Z06
-add_permanent_claim = IME
+add_core = IME
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z64
-controller = Z64
+owner = Z0S
+controller = Z0S
 capital = "Negroponte"
 is_city = yes
 culture = anatolian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = BYZ
+add_core = Z0S
 add_core = Z64
 add_permanent_claim = ATH
 discovered_by = eastern

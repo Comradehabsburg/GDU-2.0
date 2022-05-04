@@ -1,5 +1,5 @@
-owner = Z0S
-controller = Z0S
+owner = TRA
+controller = TRA
 capital = "Nagybecskerek"
 is_city = yes
 culture = hungarian
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 1
 base_manpower = 1
 add_core = HUN
-add_core = Z0S
+add_core = TRA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

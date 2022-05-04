@@ -1,5 +1,5 @@
-owner = SAR
-controller = SAR
+owner = ROM
+controller = ROM
 capital = "Cagliari"
 is_city = yes
 culture = roman
@@ -8,6 +8,7 @@ trade_goods = copper
 base_tax = 4
 base_production = 1
 base_manpower = 2
+hre = yes
 add_core = ROM
 add_core = SAR
 discovered_by = eastern

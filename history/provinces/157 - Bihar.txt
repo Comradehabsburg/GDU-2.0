@@ -1,5 +1,5 @@
-owner = Z0S
-controller = Z0S
+owner = TRA
+controller = TRA
 capital = "Oradea"
 is_city = yes
 culture = transylvanian
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = Z0S
+add_core = TRA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

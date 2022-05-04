@@ -1,5 +1,5 @@
-owner = Z0T
-controller = Z0T
+owner = POL
+controller = POL
 capital = "Plock"
 is_city = yes
 culture = polish
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 2
 base_production = 1
 base_manpower = 2
-add_core = Z0T
-add_permanent_claim = POL
+add_core = POL
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

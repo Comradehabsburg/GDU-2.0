@@ -1,5 +1,5 @@
-owner = Z2T
-controller = Z2T
+owner = POL
+controller = POL
 capital = "Checiny"
 is_city = yes
 culture = polish
@@ -8,8 +8,7 @@ trade_goods = cloth
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z2T
-add_permanent_claim = POL
+add_core = POL
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

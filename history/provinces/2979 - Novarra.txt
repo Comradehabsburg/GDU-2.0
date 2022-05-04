@@ -1,5 +1,5 @@
-owner = COR
-controller = COR
+owner = MLO
+controller = MLO
 capital = "Novara"
 is_city = yes
 culture = lombard
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = COR
+add_core = MLO
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

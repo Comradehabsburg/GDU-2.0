@@ -105,8 +105,8 @@ union=
 
 union=
 {
-	first="Z0N"
-	second="UKR"
+	first="UKR"
+	second="Z0N"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -127,13 +127,6 @@ union=
 	end_date="1836.1.1"
 }
 
-union=
-{
-	first="Z50"
-	second="GNV"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
 
 union=
 {
@@ -179,14 +172,6 @@ union=
 {
 	first="LOT"
 	second="FRI"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z50"
-	second="Z5P"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

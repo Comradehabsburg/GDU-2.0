@@ -1,5 +1,5 @@
-owner = Z5K
-controller = Z5K
+owner = Z1D
+controller = Z1D
 capital = "Avellino"
 is_city = yes
 culture = neapolitan
@@ -10,7 +10,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 1
 add_core = NAP
-add_core = Z5K
+add_core = Z1D
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

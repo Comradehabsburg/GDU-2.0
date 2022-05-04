@@ -1,5 +1,5 @@
-owner = CRT
-controller = CRT
+owner = Z0S
+controller = Z0S
 capital = "Heraklion"
 is_city = yes
 culture = dynamic-greek-culture-num1
@@ -10,6 +10,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 1
 add_core = CRT
+add_core = Z0S
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

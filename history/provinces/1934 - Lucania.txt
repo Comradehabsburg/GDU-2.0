@@ -1,5 +1,5 @@
-owner = Z5O
-controller = Z5O
+owner = ROM
+controller = ROM
 capital = "Potenza"
 is_city = yes
 culture = neapolitan
@@ -11,6 +11,7 @@ base_production = 1
 base_manpower = 1
 add_core = NAP
 add_core = Z5O
+add_core = ROM
 add_permanent_claim = Z3L
 discovered_by = eastern
 discovered_by = indian

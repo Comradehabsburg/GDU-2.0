@@ -1,5 +1,5 @@
-owner = Z3N
-controller = Z3N
+owner = Z0T
+controller = Z0T
 capital = "Memel"
 is_city = yes
 culture = old_prussian
@@ -11,6 +11,7 @@ base_manpower = 2
 extra_cost = 10
 add_core = PRT
 add_core = Z3N
+add_core = Z0T
 add_permanent_claim = LIT
 discovered_by = eastern
 discovered_by = indian

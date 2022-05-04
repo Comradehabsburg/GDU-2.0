@@ -1,5 +1,5 @@
-owner = ACH
-controller = ACH
+owner = Z0S
+controller = Z0S
 capital = "Corinth"
 is_city = yes
 culture = dynamic-greek-culture-num1
@@ -10,6 +10,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 2
 add_core = ACH
+add_core = Z0S
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

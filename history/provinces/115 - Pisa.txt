@@ -1,5 +1,5 @@
-owner = SCO
-controller = SCO
+owner = LAN
+controller = LAN
 capital = "Pisa"
 is_city = yes
 culture = tuscan
@@ -12,7 +12,7 @@ base_production = 1
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = SCO
+add_core = LAN
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

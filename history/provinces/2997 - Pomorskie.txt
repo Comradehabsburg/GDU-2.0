@@ -1,5 +1,5 @@
-owner = Z2T
-controller = Z2T
+owner = Z0T
+controller = Z0T
 capital = "Tuchel"
 is_city = yes
 culture = old_pommeranian
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z2T
-add_permanent_claim = Z0T
+add_core = Z0T
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

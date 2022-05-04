@@ -1,5 +1,5 @@
-owner = Z2X
-controller = Z2X
+owner = Z7U
+controller = Z7U
 capital = "Visegrad"
 is_city = yes
 culture = bosnian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 3
 base_manpower = 2
-add_core = Z2X
+add_core = Z7U
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim
