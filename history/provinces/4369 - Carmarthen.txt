@@ -1,6 +1,4 @@
-owner = ENG 
-
-###WLS
+owner = WLS
 controller = ENG 
 
 ###WLS
@@ -13,9 +11,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = ENG 
-
-###WLS
+add_core = WLS
 add_permanent_claim = ENG
 discovered_by = eastern
 discovered_by = indian
