@@ -1,32 +1,31 @@
 government = monarchy
-add_government_reform = iqta
-government_rank = 1
-technology_group = muslim
-religion = sunni
-primary_culture = tunisian
+government_rank = 2
+technology_group = western
+religion = norse_pagan
+primary_culture = norse
 capital = 341
 fixed_capital = 341
 religious_school = maliki_school
 1435.9.18= {
 	monarch = {
 		name = "'Uthman"
-		dynasty = "Hafsid"
-		adm = 1
-		dip = 3
-		mil = 3
+		dynasty = "af Torgar"
+		adm = 5
+		dip = 5
+		mil = 5
 	}
 }
 1435.9.18= {
 	heir = {
 		name = "Yahyâ"
 		monarch_name = "Yahyâ III"
-		dynasty = "Hafsid"
+		dynasty = "af Torgar"
 		birth_date = 1435.9.18
 		death_date = 1489.1.1
 		claim = 95
-		adm = 2
-		dip = 0
-		mil = 1
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 }
 1488.1.1= {
