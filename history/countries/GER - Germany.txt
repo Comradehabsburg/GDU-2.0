@@ -1,8 +1,36 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 2
 technology_group = western
 religion = catholic
-primary_culture = prussian
-capital = 50
-1750.1.1= { set_legacy_government = constitutional_republic }
+primary_culture = dynamic-franconian-occitain-culture-num1
+capital = 1876
+1444.11.11= {
+	monarch = {
+		name = "Fredrick"
+		dynasty = "Von Gumbis"
+		adm = 4
+		dip = 5
+		mil = 5
+		birth_date = 1300.2.15
+		religion = catholic
+		culture = dynamic-franconian-occitain-culture-num1
+	}
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Victoria"
+		dynasty = "Comrade Von Habsburg"
+		adm = 4
+		dip = 3
+		mil = 5
+		country_of_origin = FRA
+		birth_date = 1418.1.26
+		death_date = 1478.1.26
+		female = yes
+		religion = orthodox
+		culture = dynamic-greek-norse-sorbian-culture-num1
+	}
+	add_queen_personality = well_connected_personality
+	add_queen_personality = zealot_personality
+}

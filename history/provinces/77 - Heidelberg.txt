@@ -1,5 +1,5 @@
-owner = PAP
-controller = PAP
+owner = SWA
+controller = SWA
 capital = "Heidelberg"
 is_city = yes
 culture = hessian
@@ -8,7 +8,7 @@ trade_goods = wine
 base_tax = 7
 base_production = 3
 base_manpower = 2
-add_core = PAP
+add_core = SWA
 add_permanent_claim = PAL
 discovered_by = eastern
 discovered_by = indian

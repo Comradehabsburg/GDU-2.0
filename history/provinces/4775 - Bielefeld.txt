@@ -1,5 +1,5 @@
-owner = DAN
-controller = DAN
+owner = BRG
+controller = BRG
 capital = "Bielefeld"
 is_city = yes
 culture = hannoverian
@@ -8,7 +8,7 @@ trade_goods = cloth
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = DAN
+add_core = BRG
 add_core = WES
 discovered_by = eastern
 discovered_by = indian

@@ -1,14 +1,14 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 2
 technology_group = western
 religion = catholic
 primary_culture = swabian
-capital = 1872
+capital = 1876
 1444.11.11= {
 	monarch = {
 		name = "Konrad"
-		dynasty = "Karling-Wiltberg"
+		dynasty = "Von Crumbis"
 		adm = 5
 		dip = 3
 		mil = 5

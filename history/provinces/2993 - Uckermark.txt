@@ -1,5 +1,5 @@
-owner = Z7X
-controller = Z7X
+owner = Z3I
+controller = Z3I
 capital = "Prenzlau"
 is_city = yes
 culture = dynamic-greek-norse-sorbian-culture-num1
@@ -8,7 +8,7 @@ trade_goods = cloth
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = Z7X
+add_core = Z3I
 add_permanent_claim = POM
 discovered_by = eastern
 discovered_by = indian

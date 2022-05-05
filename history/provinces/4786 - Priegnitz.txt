@@ -1,5 +1,5 @@
-owner = DAN
-controller = DAN
+owner = Z7X
+controller = Z7X
 capital = "Pankow"
 is_city = yes
 culture = dynamic-greek-norse-sorbian-culture-num1
@@ -8,8 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = DAN
-add_permanent_claim = POM
+add_core = Z7X
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

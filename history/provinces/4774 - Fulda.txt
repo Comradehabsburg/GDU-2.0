@@ -1,5 +1,5 @@
-owner = HES
-controller = HES
+owner = SWA
+controller = SWA
 capital = "Fulda"
 is_city = yes
 culture = dynamic-franconian-occitain-culture-num1
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = HES
+add_core = SWA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

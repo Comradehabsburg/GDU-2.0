@@ -1,5 +1,5 @@
-owner = BOH
-controller = BOH
+owner = SAX
+controller = SAX
 capital = "Wittenberg"
 is_city = yes
 culture = dynamic-sorbian-culture-num1
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = BOH
+add_core = SAX
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = HES
-controller = HES
+owner = NSA
+controller = NSA
 capital = "Wiesbaden"
 is_city = yes
 culture = dynamic-franconian-occitain-culture-num1
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 3
 base_manpower = 1
-add_core = HES
+add_core = NSA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

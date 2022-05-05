@@ -1,5 +1,5 @@
-owner = DAN
-controller = DAN
+owner = BRU
+controller = BRU
 capital = "Braunschweig"
 is_city = yes
 culture = lower_saxon
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = DAN
+add_core = BRU
 add_core = HAN
 discovered_by = eastern
 discovered_by = indian

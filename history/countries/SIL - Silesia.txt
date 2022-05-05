@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = western
-religion = muslim
+technology_group = eastern
+religion = catholic
 primary_culture = schlesian
 capital = 263
 1399.7.12= {

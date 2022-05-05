@@ -1,5 +1,5 @@
-owner = Z46
-controller = Z46
+owner = Z1N
+controller = Z1N
 capital = "Molde"
 is_city = yes
 culture = norwegian
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 3
 add_core = NOR
-add_core = Z46
+add_core = Z1N
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

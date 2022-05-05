@@ -1,5 +1,5 @@
-owner = DAN
-controller = DAN
+owner = SWA
+controller = SWA
 capital = "Kassel"
 is_city = yes
 culture = dynamic-franconian-occitain-culture-num1
@@ -8,7 +8,7 @@ trade_goods = glass
 base_tax = 4
 base_production = 3
 base_manpower = 1
-add_core = DAN
+add_core = SWA
 add_permanent_claim = HES
 discovered_by = eastern
 discovered_by = indian

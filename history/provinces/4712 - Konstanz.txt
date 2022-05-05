@@ -1,4 +1,4 @@
-owner = SWA
+ owner = SWA
 controller = SWA
 capital = "Konstanz"
 is_city = yes

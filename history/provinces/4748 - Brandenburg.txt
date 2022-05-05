@@ -1,5 +1,5 @@
-owner = ANH
-controller = ANH
+owner = Z7X
+controller = Z7X
 capital = "Brandenburg an der Havel"
 is_city = yes
 culture = sorbian
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = ANH
+add_core = Z7X
 add_core = SOR
 add_permanent_claim = POM
 discovered_by = eastern

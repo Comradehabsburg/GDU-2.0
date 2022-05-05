@@ -93,44 +93,42 @@ NED_ideas = {
 }
 
 DAN_ideas = {
-	trigger = {
-		OR = {
-			tag = DAN
-			AND = {
-				num_of_ports = 5
-				num_of_cities = 10
-				OR = {
-					government_rank = 2
-					government_rank = 3
-				}
-				primary_culture = danish
-			}
-		}
+	start = {
+		infantry_power = 0.2
+		merc_maintenance_modifier = -0.15
 	}
-}
 
-FRA_ideas = {
+	bonus = {
+		leader_land_shock = 1
+	}
+	
 	trigger = {
-		OR = {
-			tag = FRA
-			AND = {
-				num_of_ports = 5
-				num_of_cities = 15
-				is_subject = no
-				OR = {
-					government_rank = 2
-					government_rank = 3
-				}
-				OR = {
-					primary_culture = cosmopolitan_french
-					primary_culture = normand
-					primary_culture = occitain
-				}
-				NOT = {
-					tag = KOJ
-				}
-			}
-		}
+		tag = DAN
+	}
+	free = yes		#will be added at load.
+
+	kung_och_riksdag = {
+		legitimacy = 1
+		possible_policy = 1
+	}
+	swedish_steel = {
+		discipline = 0.05
+	}
+	hakkapelitta = {
+		cavalry_cost = -0.1
+	}
+	indelningsverket = {
+		manpower_recovery_speed = 0.2
+	}
+	swedish_absolutism = {
+		stability_cost_modifier = -0.1
+		yearly_absolutism = 1
+	}
+	produktplakatet = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	union_and_security_act = {
+		global_manpower_modifier = 0.20
 	}
 }
 

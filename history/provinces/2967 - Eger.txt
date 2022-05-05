@@ -1,5 +1,5 @@
-owner = Z0T
-controller = Z0T
+owner = BOH
+controller = BOH
 capital = "Eger"
 is_city = yes
 culture = dynamic-czech-norse-culture-num1
@@ -8,8 +8,7 @@ trade_goods = gold
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z0T
-add_permanent_claim = BOH
+add_core = BOH
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim
