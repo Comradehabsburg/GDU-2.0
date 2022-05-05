@@ -1,5 +1,5 @@
-owner = KOI
-controller = KOI
+owner = ICE
+controller = ICE
 capital = "Tenerife"
 is_city = yes
 culture = berber
@@ -8,7 +8,7 @@ trade_goods = unknown
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = KOI
+add_core = ICE
 add_core = TLC
 add_permanent_claim = MOR
 discovered_by = eastern

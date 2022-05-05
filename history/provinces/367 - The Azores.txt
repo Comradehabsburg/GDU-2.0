@@ -1,5 +1,5 @@
-owner = KOI
-controller = KOI
+owner = ICE
+controller = ICE
 capital = "The Azores"
 is_city = yes
 culture = berber
@@ -8,7 +8,7 @@ trade_goods = fish
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = KOI
+add_core = ICE
 add_core = TLC
 add_permanent_claim = MOR
 discovered_by = eastern

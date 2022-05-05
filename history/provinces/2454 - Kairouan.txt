@@ -1,5 +1,5 @@
-owner = KOI
-controller = KOI
+owner = TUN
+controller = TUN
 capital = "El Kef"
 is_city = yes
 culture = tunisian
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = KOI
+add_core = ICE
 add_core = TUN
 discovered_by = eastern
 discovered_by = indian

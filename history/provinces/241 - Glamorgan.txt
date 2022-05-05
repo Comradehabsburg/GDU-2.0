@@ -1,5 +1,9 @@
-owner = Z1S
-controller = Z1S
+owner = ENG 
+
+###WLS
+controller = ENG 
+
+###WLS
 capital = "Swansea"
 is_city = yes
 culture = welsh
@@ -8,8 +12,10 @@ trade_goods = iron
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = Z1S
-add_permanent_claim = WLS
+add_core = ENG 
+
+###WLS
+add_permanent_claim = ENG
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

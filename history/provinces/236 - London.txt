@@ -1,5 +1,5 @@
-owner = Z7A
-controller = Z7A
+owner = ENG
+controller = ENG
 capital = "London"
 is_city = yes
 culture = essexian
@@ -10,7 +10,7 @@ base_production = 6
 base_manpower = 2
 extra_cost = 26
 center_of_trade = 2
-add_core = Z7A
+add_core = ENG
 add_permanent_claim = ENG
 discovered_by = eastern
 discovered_by = indian
