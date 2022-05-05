@@ -1,5 +1,5 @@
-owner = KOI
-controller = KOI
+owner = ICE
+controller = ICE
 capital = "Las Palmas"
 is_city = yes
 culture = berber
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = KOI
+add_core = ICE
 add_core = TLC
 add_permanent_claim = MOR
 discovered_by = eastern

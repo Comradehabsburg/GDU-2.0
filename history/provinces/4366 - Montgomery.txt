@@ -1,5 +1,9 @@
-owner = WLS
-controller = WLS
+owner = ENG 
+
+###WLS
+controller = ENG 
+
+###WLS
 capital = "Montgomery"
 is_city = yes
 culture = welsh
@@ -8,7 +12,9 @@ trade_goods = iron
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = WLS
+add_core = ENG 
+
+###WLS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

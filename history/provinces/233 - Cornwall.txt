@@ -1,5 +1,5 @@
-owner = WLS
-controller = WLS
+owner = ENG
+controller = ENG
 capital = "Penryn"
 is_city = yes
 culture = cornish
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 3
 add_core = CRN
-add_core = WLS
+add_core = ENG
 add_permanent_claim = ENG
 discovered_by = eastern
 discovered_by = indian
