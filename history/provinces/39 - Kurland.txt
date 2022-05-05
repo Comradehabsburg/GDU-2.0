@@ -1,5 +1,5 @@
-owner = Z3N
-controller = Z3N
+owner = Z89
+controller = Z89
 capital = "Goldingen"
 is_city = yes
 culture = latvian
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 2
 add_core = KUR
 add_core = LVA
-add_core = Z3N
+add_core = Z89
 add_permanent_claim = LIT
 discovered_by = eastern
 discovered_by = indian

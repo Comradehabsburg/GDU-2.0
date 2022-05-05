@@ -1,5 +1,5 @@
 owner = WLS
-controller = ENG 
+controller = WLS 
 
 ###WLS
 capital = "Swansea"

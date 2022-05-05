@@ -1,5 +1,5 @@
-owner = ZAZ
-controller = ZAZ
+owner = KIE
+controller = KIE
 capital = "Poltava"
 is_city = yes
 culture = dynamic-norse-russian_culture-culture-num2
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = ZAZ
+add_core = KIE
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

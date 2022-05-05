@@ -1,5 +1,5 @@
-owner = ENG
-controller = ENG
+owner = CRN
+controller = CRN
 capital = "Plymouth"
 is_city = yes
 culture = cornish
@@ -9,7 +9,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = CRN
-add_core = ENG
 add_permanent_claim = ENG
 discovered_by = eastern
 discovered_by = indian

@@ -134,6 +134,22 @@ vassal=
 vassal=
 {
 	first="ENG"
+	second="WLS"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="ENG"
+	second="CRN"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="ENG"
 	second="Z2B"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -213,8 +229,16 @@ vassal=
 
 vassal=
 {
-	first="UKR"
+	first="KIE"
 	second="Z2K"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="KIE"
+	second="Z0N"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -269,7 +293,7 @@ vassal=
 
 vassal=
 {
-	first="Z0N"
+	first="KIE"
 	second="SMO"
 	start_date="1444.11.11"
 	end_date="1836.1.1"

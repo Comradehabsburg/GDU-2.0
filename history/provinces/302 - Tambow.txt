@@ -1,5 +1,5 @@
-owner = Z2N
-controller = Z2N
+owner = Z5B
+controller = Z5B
 capital = "Tambov"
 is_city = yes
 culture = mordvin
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 add_core = MDV
-add_core = Z2N
+add_core = Z5B
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

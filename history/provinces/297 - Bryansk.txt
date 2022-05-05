@@ -1,5 +1,5 @@
-owner = Z2K
-controller = Z2K
+owner = SMO
+controller = SMO
 capital = "Bryansk"
 is_city = yes
 culture = dynamic-norse-russian_culture-culture-num2
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 1
 base_manpower = 1
-add_core = Z2K
+add_core = SMO
 add_permanent_claim = UKR
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = Z0N
-controller = Z0N
+owner = KIE
+controller = KIE
 capital = "Ula"
 is_city = yes
 culture = dynamic-norse-russian_culture-culture-num2
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 4
 base_production = 1
 base_manpower = 1
-add_core = Z0N
+add_core = KIE
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

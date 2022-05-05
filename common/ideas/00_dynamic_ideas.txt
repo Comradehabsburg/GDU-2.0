@@ -621,7 +621,7 @@ dynamic-norse-russian_culture-culture-num1_ideas = {
 		 global_heretic_missionary_strength = 0.03
 	}
 	trigger = {
-		culture = dynamic-norse-russian_culture-culture-num1
+		culture = dynamic-norse-russian_culture-culture-num2
 	}
 	free = yes
 
@@ -1633,7 +1633,7 @@ dynamic-uralic-culture-num1_ideas = {
 		 all_estate_loyalty_equilibrium = 0.05
 	}
 	trigger = {
-		culture = dynamic-uralic-culture-num1
+		culture = russian
 	}
 	free = yes
 

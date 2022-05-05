@@ -1,5 +1,5 @@
-owner = Z1X
-controller = Z1X
+owner = Z04
+controller = Z04
 capital = "Okladnikova Sloboda"
 is_city = yes
 culture = karelian
@@ -8,8 +8,7 @@ trade_goods = fish
 base_tax = 1
 base_production = 1
 base_manpower = 3
-add_core = Z1X
-add_permanent_claim = Z04
+add_core = Z04
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

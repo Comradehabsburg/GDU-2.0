@@ -1,5 +1,5 @@
-owner = LIT
-controller = LIT
+owner = Z0T
+controller = Z0T
 capital = "Riga"
 is_city = yes
 culture = estonian
@@ -13,6 +13,7 @@ extra_cost = 18
 center_of_trade = 1
 add_core = EST
 add_core = LIT
+add_core = Z0T
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -28,7 +28,7 @@ capital = 310
 		death_date = 1483.5.22
 		female = yes
 		religion = orthodox
-		culture = dynamic-uralic-culture-num1
+		culture = russian
 	}
 	add_queen_personality = well_connected_personality
 	add_queen_personality = zealot_personality

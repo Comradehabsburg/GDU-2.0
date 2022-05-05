@@ -1,5 +1,5 @@
-owner = LIT
-controller = LIT
+owner = KRL
+controller = KRL
 capital = "Viborg"
 is_city = yes
 culture = karelian
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 3
 add_core = EST
 add_core = LIT
-add_permanent_claim = KRL
+add_core = KRL
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z2K
-controller = Z2K
+owner = KIE
+controller = KIE
 capital = "Minsk"
 is_city = yes
 culture = dynamic-norse-russian_culture-culture-num2
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 4
 base_production = 2
 base_manpower = 1
-add_core = Z2K
+add_core = KIE
 add_permanent_claim = Z0N
 discovered_by = eastern
 discovered_by = indian

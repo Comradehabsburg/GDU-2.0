@@ -1,5 +1,5 @@
-owner = Z25
-controller = Z25
+owner = Z04
+controller = Z04
 capital = "Kola"
 is_city = yes
 culture = sapmi
@@ -8,7 +8,7 @@ trade_goods = fur
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = Z25
+add_core = Z04
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

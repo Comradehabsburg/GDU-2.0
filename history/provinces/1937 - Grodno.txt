@@ -1,5 +1,5 @@
-owner = Z99
-controller = Z99
+owner = Z0N
+controller = Z0N
 capital = "Grodno"
 is_city = yes
 culture = dynamic-norse-russian_culture-culture-num2
