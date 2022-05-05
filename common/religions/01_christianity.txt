@@ -142,7 +142,6 @@ christian = {
 			diplomatic_reputation = 1
 			advisor_pool = 1
 		}
-		hre_religion = yes
 		
 		
 		on_convert = {
