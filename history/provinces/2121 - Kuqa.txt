@@ -1,5 +1,5 @@
-owner = TRS
-controller = TRS
+owner = KAS
+controller = KAS
 capital = "Kuqa"
 is_city = yes
 culture = dynamic-tocharian-uyghur-culture-num1
@@ -8,7 +8,7 @@ trade_goods = gold
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = TRS
+add_core = KAS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

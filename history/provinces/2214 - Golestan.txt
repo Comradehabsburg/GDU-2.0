@@ -1,5 +1,5 @@
-owner = TRS
-controller = TRS
+owner = KHO
+controller = KHO
 capital = "Asatarabad"
 is_city = yes
 culture = mazandarani
@@ -9,8 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = TAB
-add_core = TRS
-add_permanent_claim = KHO
+add_core = KHO
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

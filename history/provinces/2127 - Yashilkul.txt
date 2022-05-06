@@ -1,5 +1,5 @@
-owner = TRS
-controller = TRS
+owner = KAS
+controller = KAS
 capital = "Yashilkul"
 is_city = yes
 culture = afghani
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = AFG
-add_core = TRS
+add_core = KAS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

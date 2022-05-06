@@ -1,5 +1,5 @@
-owner = Z0D
-controller = Z0D
+owner = PER
+controller = PER
 capital = "Cannanore"
 is_city = yes
 culture = malayalam
@@ -13,6 +13,7 @@ center_of_trade = 1
 add_core = VND
 add_core = Z0D
 add_core = Z0L
+add_core = PER
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

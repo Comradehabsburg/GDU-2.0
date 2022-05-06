@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = KHO
+controller = KHO
 capital = "Nishapur"
 is_city = yes
 culture = tajik
@@ -8,8 +8,7 @@ trade_goods = gems
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = PER
-add_permanent_claim = KHO
+add_core = KHO
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

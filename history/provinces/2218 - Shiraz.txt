@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = FRS
+controller = FRS
 capital = "Shiraz"
 is_city = yes
 culture = kurdish
@@ -10,7 +10,7 @@ base_production = 3
 base_manpower = 1
 extra_cost = 16
 center_of_trade = 2
-add_core = PER
+add_core = FRS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

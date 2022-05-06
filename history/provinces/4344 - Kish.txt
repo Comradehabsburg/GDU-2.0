@@ -1,5 +1,5 @@
-owner = TRS
-controller = TRS
+owner = Z33
+controller = Z33
 capital = "Shahrisabz"
 is_city = yes
 culture = sogdian
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 2
 base_production = 6
 base_manpower = 1
-add_core = KOK
+add_core = Z33
 add_core = TRS
 discovered_by = eastern
 discovered_by = indian

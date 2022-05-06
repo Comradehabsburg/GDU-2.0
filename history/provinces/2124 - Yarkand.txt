@@ -1,5 +1,5 @@
-owner = TRS
-controller = TRS
+owner = KAS
+controller = KAS
 capital = "Yarkant"
 is_city = yes
 culture = saka
@@ -12,7 +12,6 @@ base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
 add_core = KAS
-add_core = TRS
 add_permanent_claim = Z09
 discovered_by = eastern
 discovered_by = indian

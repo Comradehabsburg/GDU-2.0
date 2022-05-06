@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = TAB
+controller = TAB
 capital = "Amol"
 is_city = yes
 culture = mazandarani
@@ -8,7 +8,6 @@ trade_goods = silk
 base_tax = 1
 base_production = 3
 base_manpower = 1
-add_core = PER
 add_core = TAB
 discovered_by = eastern
 discovered_by = indian

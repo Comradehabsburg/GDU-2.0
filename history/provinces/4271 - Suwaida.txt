@@ -1,5 +1,5 @@
-owner = Z1O
-controller = Z1O
+owner = KHO
+controller = KHO
 capital = "As-Suwayda"
 is_city = yes
 culture = al_suryah_arabic
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 add_core = SYR
-add_core = Z1O
+add_core = KHO
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

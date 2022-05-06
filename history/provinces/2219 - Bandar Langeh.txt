@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = FRS
+controller = FRS
 capital = "Bandar Langeh"
 is_city = yes
 culture = persian
@@ -8,7 +8,7 @@ trade_goods = spices
 base_tax = 3
 base_production = 2
 base_manpower = 1
-add_core = PER
+add_core = FRS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

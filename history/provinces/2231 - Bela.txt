@@ -1,5 +1,5 @@
-owner = SND
-controller = SND
+owner = BAL
+controller = BAL
 capital = "Bela"
 is_city = yes
 culture = baluchi
@@ -9,6 +9,7 @@ base_tax = 3
 base_production = 6
 base_manpower = 2
 add_core = SND
+add_core = BAL
 add_permanent_claim = BAL
 discovered_by = eastern
 discovered_by = indian

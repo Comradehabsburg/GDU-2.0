@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = YZD
+controller = YZD
 capital = "Ardakan"
 is_city = yes
 culture = persian
@@ -8,7 +8,7 @@ trade_goods = incense
 base_tax = 3
 base_production = 2
 base_manpower = 2
-add_core = PER
+add_core = YZD
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

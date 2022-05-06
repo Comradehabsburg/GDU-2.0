@@ -1,5 +1,5 @@
-owner = Z33
-controller = Z33
+owner = TAB
+controller = TAB
 capital = "Sari"
 is_city = yes
 culture = mazandarani
@@ -12,7 +12,6 @@ extra_cost = 16
 center_of_trade = 2
 add_core = TAB
 add_core = Z33
-add_permanent_claim = PER
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

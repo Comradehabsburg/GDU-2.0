@@ -1,5 +1,5 @@
-owner = TRS
-controller = TRS
+owner = Z33
+controller = Z33
 capital = "Balkh"
 is_city = yes
 culture = sogdian
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 3
 base_manpower = 1
 add_core = KOK
-add_core = TRS
+add_core = Z33
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

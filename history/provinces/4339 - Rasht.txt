@@ -1,5 +1,5 @@
-owner = KHO
-controller = KHO
+owner = BPI
+controller = BPI
 capital = "Rasht"
 is_city = yes
 culture = mazandarani
@@ -8,7 +8,7 @@ trade_goods = silk
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = KHO
+add_core = BPI
 add_core = TAB
 discovered_by = eastern
 discovered_by = indian

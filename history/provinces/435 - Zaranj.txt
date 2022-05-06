@@ -1,5 +1,5 @@
-owner = Z2A
-controller = Z2A
+owner = SIS
+controller = SIS
 capital = "Zaranj"
 is_city = yes
 culture = dynamic-afghani-culture-num1
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = Z2A
+add_core = SIS
 add_permanent_claim = BAL
 discovered_by = eastern
 discovered_by = indian

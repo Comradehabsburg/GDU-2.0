@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = FRS
+controller = FRS
 capital = "Fasa"
 is_city = yes
 culture = kurdish
@@ -8,7 +8,7 @@ trade_goods = silk
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = PER
+add_core = FRS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

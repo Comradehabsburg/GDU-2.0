@@ -1,5 +1,5 @@
-owner = TRS
-controller = TRS
+owner = Z2A
+controller = Z2A
 capital = "Ahangaran"
 is_city = yes
 culture = afghani
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = AFG
+add_core = Z2A
 add_core = TRS
 add_permanent_claim = KHO
 discovered_by = eastern
