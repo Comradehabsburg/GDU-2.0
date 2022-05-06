@@ -1,5 +1,5 @@
-owner = NBI
-controller = NBI
+owner = Z52
+controller = Z52
 capital = "Jiddah"
 is_city = yes
 culture = al_misr_arabic
@@ -11,7 +11,7 @@ base_manpower = 3
 extra_cost = 16
 center_of_trade = 2
 add_core = MAM
-add_core = NBI
+add_core = Z52
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

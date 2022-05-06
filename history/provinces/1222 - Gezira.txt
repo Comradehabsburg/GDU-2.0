@@ -1,5 +1,5 @@
-owner = ALO
-controller = ALO
+owner = BEJ
+controller = BEJ
 capital = "Wad Madani"
 is_city = yes
 culture = dynamic-beja-nubian-culture-num1
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 3
 base_production = 2
 base_manpower = 1
-add_core = ALO
+add_core = BEJ
 add_permanent_claim = NBI
 discovered_by = eastern
 discovered_by = indian

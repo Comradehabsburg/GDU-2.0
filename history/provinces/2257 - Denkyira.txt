@@ -1,5 +1,4 @@
-owner = Z19
-controller = Z19
+
 capital = "Dunkwa"
 is_city = yes
 culture = aka
@@ -8,7 +7,7 @@ trade_goods = coffee
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = Z19
+
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

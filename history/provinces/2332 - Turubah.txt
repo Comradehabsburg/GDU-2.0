@@ -1,5 +1,5 @@
-owner = NBI
-controller = NBI
+owner = Z52
+controller = Z52
 capital = "Truba"
 is_city = yes
 culture = hejazi_culture
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = HED
-add_core = NBI
+add_core = Z52
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

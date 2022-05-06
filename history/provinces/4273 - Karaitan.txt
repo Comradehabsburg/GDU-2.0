@@ -1,5 +1,5 @@
-owner = MDA
-controller = MDA
+owner = Z4M
+controller = Z4M
 capital = "Kariatan"
 is_city = yes
 culture = al_suryah_arabic
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 2
 base_production = 3
 base_manpower = 1
-add_core = MDA
+add_core = Z4M
 add_core = SYR
 discovered_by = eastern
 discovered_by = indian

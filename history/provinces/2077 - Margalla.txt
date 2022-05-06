@@ -1,5 +1,5 @@
-owner = KSH
-controller = KSH
+owner = PUN
+controller = PUN
 capital = "Rawalpindi"
 is_city = yes
 culture = kashmiri
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = KSH
+add_core = PUN
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

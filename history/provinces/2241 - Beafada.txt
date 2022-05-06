@@ -1,5 +1,3 @@
-owner = Z07
-controller = Z07
 capital = "Beafada"
 is_city = yes
 culture = senegambian
@@ -8,8 +6,6 @@ trade_goods = slaves
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = JOL
-add_core = Z07
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,4 @@
-owner = Z8O
-controller = Z8O
+
 capital = "Sherbro"
 is_city = yes
 culture = senegambian
@@ -8,8 +7,7 @@ trade_goods = unknown
 base_tax = 1
 base_production = 1
 base_manpower = 3
-add_core = JOL
-add_core = Z8O
+
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

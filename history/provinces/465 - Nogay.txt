@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = Z47
+controller = Z47
 capital = "Saraychik"
 is_city = yes
 culture = turkmeni
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = KHI
-add_core = PER
+add_core = Z47
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

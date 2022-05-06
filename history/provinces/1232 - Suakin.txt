@@ -1,5 +1,5 @@
-owner = Z16
-controller = Z16
+owner = BEJ
+controller = BEJ
 capital = "Suakin"
 is_city = yes
 culture = beja
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 2
 base_production = 1
 base_manpower = 2
-add_core = Z16
+add_core = BEJ
 add_permanent_claim = BEJ
 discovered_by = eastern
 discovered_by = indian

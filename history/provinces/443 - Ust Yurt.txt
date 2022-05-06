@@ -1,5 +1,5 @@
-owner = SRV
-controller = SRV
+owner = Z47
+controller = Z47
 capital = "Ust Yurt"
 is_city = yes
 culture = turkmeni
@@ -9,8 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = KHI
-add_core = SRV
-add_permanent_claim = Z47
+add_core = Z47
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

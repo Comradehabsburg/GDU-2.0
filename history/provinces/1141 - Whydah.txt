@@ -1,5 +1,4 @@
-owner = Z0P
-controller = Z0P
+
 capital = "Whydah"
 is_city = yes
 culture = fon
@@ -8,8 +7,7 @@ trade_goods = unknown
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = DAH
-add_core = Z0P
+
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

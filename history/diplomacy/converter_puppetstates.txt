@@ -125,14 +125,6 @@ vassal=
 
 vassal=
 {
-	first="EGY"
-	second="Z1M"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal=
-{
 	first="ENG"
 	second="WLS"
 	start_date="1444.11.11"
@@ -173,24 +165,8 @@ vassal=
 
 vassal=
 {
-	first="FRA"
-	second="Z4C"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal=
-{
 	first="GUG"
 	second="Z3J"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal=
-{
-	first="KHO"
-	second="Z33"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
@@ -253,8 +229,40 @@ vassal=
 
 vassal=
 {
-	first="Z02"
-	second="GRA"
+	first="BEJ"
+	second="Z60"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="BEJ"
+	second="Z65"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="BEJ"
+	second="NBI"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="BEJ"
+	second="ALO"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="BEJ"
+	second="Z16"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

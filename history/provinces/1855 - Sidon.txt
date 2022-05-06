@@ -1,5 +1,5 @@
-owner = Z4E
-controller = Z4E
+owner = KOJ
+controller = KOJ
 capital = "Sayda"
 is_city = yes
 culture = al_suryah_arabic
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 1
 add_core = SYR
-add_core = Z4E
+add_core = KOJ
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

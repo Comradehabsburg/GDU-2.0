@@ -1,8 +1,9 @@
 owner = FIN
 controller = FIN
-capital = "Messukylä"
+capital = "Messukylï¿½"
 is_city = yes
 culture = finnish
+add_core = FIN
 religion = finnish_pagan
 trade_goods = fur
 base_tax = 1

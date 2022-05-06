@@ -1,5 +1,4 @@
-owner = Z45
-controller = Z45
+
 capital = "Mesurado"
 is_city = yes
 culture = mali
@@ -9,7 +8,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 3
 add_core = MAL
-add_core = Z45
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

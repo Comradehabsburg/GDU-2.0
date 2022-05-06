@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = Z0D
+controller = Z0D
 capital = "Cannanore"
 is_city = yes
 culture = malayalam

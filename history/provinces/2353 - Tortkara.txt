@@ -1,5 +1,5 @@
-owner = BSH
-controller = BSH
+owner = Z8Q
+controller = Z8Q
 capital = "Tortkara"
 is_city = yes
 culture = turkmeni
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = BSH
+add_core = Z8Q
 add_core = KHI
 discovered_by = eastern
 discovered_by = indian

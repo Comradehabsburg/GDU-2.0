@@ -1,5 +1,4 @@
-owner = Z19
-controller = Z19
+
 capital = "Accra"
 is_city = yes
 culture = dynamic-aka-culture-num1
@@ -10,7 +9,7 @@ base_production = 1
 base_manpower = 3
 extra_cost = 8
 center_of_trade = 1
-add_core = Z19
+
 add_permanent_claim = ASH
 discovered_by = eastern
 discovered_by = indian

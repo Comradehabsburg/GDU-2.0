@@ -1,5 +1,5 @@
-owner = NBI
-controller = NBI
+owner = Z3O
+controller = Z3O
 capital = "Bishah"
 is_city = yes
 culture = yemeni_culture
@@ -8,7 +8,7 @@ trade_goods = coffee
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = ADE
+add_core = Z3O
 add_core = NBI
 discovered_by = eastern
 discovered_by = indian

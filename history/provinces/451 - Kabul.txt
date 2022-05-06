@@ -1,5 +1,5 @@
-owner = PUN
-controller = PUN
+owner = Z33
+controller = Z33
 capital = "Kabul"
 is_city = yes
 culture = afghani
@@ -11,7 +11,7 @@ base_manpower = 2
 extra_cost = 16
 center_of_trade = 2
 add_core = AFG
-add_core = PUN
+add_core = Z33
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = Z1M
-controller = Z1M
+owner = Z0I
+controller = Z0I
 capital = "Kawar"
 is_city = yes
 culture = zaghawa
@@ -10,6 +10,7 @@ base_production = 1
 base_manpower = 2
 add_core = AIR
 add_core = Z1M
+add_core = Z0I
 add_permanent_claim = Z0I
 discovered_by = eastern
 discovered_by = indian

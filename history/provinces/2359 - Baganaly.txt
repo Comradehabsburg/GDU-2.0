@@ -1,5 +1,5 @@
-owner = Z91
-controller = Z91
+owner = Z8Q
+controller = Z8Q
 capital = "Baganaly"
 is_city = yes
 culture = cuman
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = Z91
+add_core = Z8Q
 add_permanent_claim = CMN
 discovered_by = eastern
 discovered_by = indian

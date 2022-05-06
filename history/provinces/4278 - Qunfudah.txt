@@ -1,5 +1,5 @@
-owner = MDA
-controller = MDA
+owner = Z3O
+controller = Z3O
 capital = "Qunfudhah"
 is_city = yes
 culture = hejazi_culture
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 2
 base_manpower = 1
 add_core = HED
-add_core = MDA
+add_core = Z3O
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim
