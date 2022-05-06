@@ -11,6 +11,7 @@ base_manpower = 1
 extra_cost = 10
 add_core = FER
 add_core = PAP
+hre = yes
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

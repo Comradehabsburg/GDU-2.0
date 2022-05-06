@@ -6,7 +6,6 @@ religion = orthodox
 primary_culture = dynamic-anglo_saxon-norse-culture-num1
 capital = 126
 add_accepted_culture = neapolitan
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Gospatric"

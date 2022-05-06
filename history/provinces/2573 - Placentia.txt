@@ -1,7 +1,4 @@
 capital = "Placentia"
-controller = ICE
-owner = ICE
-core = ICE
 culture = icelandic
 religion = norse_pagan
 trade_goods = unknown

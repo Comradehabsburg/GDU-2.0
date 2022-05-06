@@ -11,6 +11,7 @@ base_production = 2
 base_manpower = 1
 add_core = Z5P
 add_core = PRO
+hre = yes
 add_permanent_claim = BUR
 discovered_by = eastern
 discovered_by = indian

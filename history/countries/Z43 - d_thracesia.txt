@@ -5,7 +5,6 @@ technology_group = eastern
 religion = catholic
 primary_culture = anatolian
 capital = 4309
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Gabrielia II"

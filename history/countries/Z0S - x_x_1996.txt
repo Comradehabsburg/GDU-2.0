@@ -5,6 +5,7 @@ technology_group = eastern
 religion = orthodox
 primary_culture = dynamic-greek-norse-sorbian-culture-num2
 capital = 151
+elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Eusebia"

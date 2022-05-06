@@ -1,5 +1,5 @@
-owner = SCO
-controller = SCO
+owner = LOI
+controller = LOI
 capital = "Skye"
 is_city = yes
 culture = highland_scottish
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 1
 base_manpower = 1
 add_core = SCO
-add_permanent_claim = SCO
+add_core = LOI
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

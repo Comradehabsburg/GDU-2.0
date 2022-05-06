@@ -293,6 +293,22 @@ vassal=
 
 vassal=
 {
+	first="IRE"
+	second="ULS"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="SCO"
+	second="LOI"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
 	first="KIE"
 	second="SMO"
 	start_date="1444.11.11"
@@ -315,13 +331,6 @@ vassal=
 	end_date="1836.1.1"
 }
 
-vassal=
-{
-	first="Z0T"
-	second="Z3I"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
 
 vassal=
 {
@@ -371,13 +380,6 @@ vassal=
 	end_date="1836.1.1"
 }
 
-vassal=
-{
-	first="Z0T"
-	second="SIL"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
 
 vassal=
 {

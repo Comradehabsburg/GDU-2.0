@@ -9,6 +9,7 @@ base_tax = 4
 base_production = 1
 base_manpower = 1
 add_core = PAP
+hre = yes
 add_core = SPL
 discovered_by = eastern
 discovered_by = indian

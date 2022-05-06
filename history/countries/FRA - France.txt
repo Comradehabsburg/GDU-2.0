@@ -5,6 +5,7 @@ technology_group = western
 religion = catholic
 primary_culture = normand
 capital = 183
+historical_rival = ENG
 1444.11.11= {
 	monarch = {
 		name = "Wymund III"

@@ -6,6 +6,7 @@ religion = orthodox
 primary_culture = greek
 capital = 151
 fixed_capital = 151
+elector = yes
 historical_rival = TUR
 1391.2.16= {
 	mashriq_region = {

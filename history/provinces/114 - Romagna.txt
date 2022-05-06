@@ -11,6 +11,7 @@ base_production = 4
 base_manpower = 2
 add_core = FER
 add_core = PAP
+hre = yes
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim
