@@ -1,11 +1,10 @@
 owner = Z4C
 controller = Z4C
-capital = "Besançon"
+capital = "Besanï¿½on"
 is_city = yes
 culture = burgundian
 religion = catholic
 trade_goods = salt
-hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1

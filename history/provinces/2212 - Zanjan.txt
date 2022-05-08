@@ -1,4 +1,5 @@
 owner = ARL
+add_permanent_claim = PER
 controller = ARL
 capital = "Zanjan"
 is_city = yes

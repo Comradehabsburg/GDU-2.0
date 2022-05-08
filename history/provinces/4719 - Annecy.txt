@@ -6,7 +6,6 @@ culture = cosmopolitan_french
 religion = catholic
 trade_goods = cloth
 fort_15th = yes
-hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1

@@ -1,4 +1,5 @@
 owner = FRS
+add_permanent_claim = PER
 controller = FRS
 capital = "Bushehr"
 is_city = yes

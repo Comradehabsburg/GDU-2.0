@@ -1,4 +1,5 @@
 owner = SIL
+add_permanent_claim = Z0T
 controller = SIL
 capital = "Ratibor"
 is_city = yes

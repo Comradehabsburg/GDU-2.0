@@ -1,6 +1,6 @@
 owner = Z3I
 controller = Z3I
-capital = "Berlin-Cölln"
+capital = "Berlin-Cï¿½lln"
 is_city = yes
 culture = dynamic-greek-norse-sorbian-culture-num1
 religion = catholic
@@ -12,6 +12,7 @@ extra_cost = 8
 center_of_trade = 1
 add_core = Z3I
 add_permanent_claim = POM
+add_permanent_claim = Z0T
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

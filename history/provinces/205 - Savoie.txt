@@ -1,11 +1,10 @@
 owner = BUR
 controller = BUR
-capital = "Chambéry"
+capital = "Chambï¿½ry"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
 trade_goods = cloth
-hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
