@@ -25,14 +25,6 @@ union=
 
 union=
 {
-	first="DAN"
-	second="POM"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="COR"
 	second="Z4Y"
 	start_date="1444.11.11"
@@ -113,22 +105,6 @@ union=
 
 union=
 {
-	first="HOL"
-	second="FRI"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="LOT"
-	second="GEL"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="LOT"
 	second="Z8J"
 	start_date="1444.11.11"
@@ -139,22 +115,6 @@ union=
 {
 	first="LOT"
 	second="LOR"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="LOT"
-	second="HOL"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="LOT"
-	second="FRI"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

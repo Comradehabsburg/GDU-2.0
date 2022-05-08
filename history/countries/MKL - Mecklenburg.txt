@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = western
-religion = catholic
+technology_group = eastern
+religion = paulician
 primary_culture = pommeranian
 capital = 46
 fixed_capital = 46

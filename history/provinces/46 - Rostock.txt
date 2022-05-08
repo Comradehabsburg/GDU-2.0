@@ -1,5 +1,5 @@
-owner = POM
-controller = POM
+owner = MKL
+controller = MKL
 capital = "Rostock"
 is_city = yes
 culture = dynamic-greek-norse-sorbian-culture-num1
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = POM
+add_core = MKL
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

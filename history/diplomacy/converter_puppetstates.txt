@@ -452,3 +452,36 @@ vassal=
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
+
+vassal=
+{
+	first="LOT"
+	second="HOL"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="PER"
+	second="YZD"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+
+vassal=
+{
+	first="LOT"
+	second="FRI"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="LOT"
+	second="GEL"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}

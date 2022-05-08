@@ -1,5 +1,5 @@
-owner = POM
-controller = POM
+owner = MKL
+controller = MKL
 capital = "Neubrandenburg"
 is_city = yes
 culture = dynamic-greek-norse-sorbian-culture-num1
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = POM
+add_core = MKL
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim
