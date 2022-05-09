@@ -701,7 +701,7 @@ dynamic-greek-norse-sorbian-culture-num1_ideas = {
 	trigger = {
 		culture = dynamic-greek-norse-sorbian-culture-num1
 	}
-	free = yes
+	free = no
 
 	tradition_roman_legacy = {
 		land_maintenence_modifier = -0.1
@@ -843,8 +843,8 @@ dynamic-mongol-culture-num1_ideas = {
 		discipline = 0.025
 	}
 	increase_taxation = {
-		global_tax_modifier = 0.05
-	}
+		global_tax_modifier = 0.05s
+	}`
 	bonus = {
 		merc_maintenance_modifier = -0.10
 	}
@@ -859,7 +859,7 @@ dynamic-greek-norse-sorbian-culture-num2_ideas = {
 	trigger = {
 		culture = dynamic-greek-norse-sorbian-culture-num2
 	}
-	free = yes
+	free = no
 
 	tradition_malleable_invaders = {
 		core_creation = -0.1

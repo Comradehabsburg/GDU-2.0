@@ -1,6 +1,6 @@
 government = republic
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = norse_pagan
 primary_culture = icelandic
 capital = 370

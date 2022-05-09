@@ -11,6 +11,7 @@ base_manpower = 1
 add_core = KOK
 add_core = Z33
 add_permanent_claim = KHO
+add_permanent_claim = TRS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

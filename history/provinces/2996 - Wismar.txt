@@ -1,4 +1,5 @@
 owner = MKL
+add_permanent_claim = DAN
 controller = MKL
 capital = "Wismar"
 is_city = yes

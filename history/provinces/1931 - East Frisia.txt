@@ -1,5 +1,5 @@
-owner = EFR
-controller = EFR
+owner = DAN
+controller = DAN
 capital = "Emden"
 is_city = yes
 culture = dynamic-greek-norse-sorbian-culture-num1
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 extra_cost = 10
-add_core = EFR
+add_core = DAN
 add_permanent_claim = FRI
 discovered_by = eastern
 discovered_by = indian
