@@ -1,0 +1,29 @@
+edict_encourage_development = {
+	potential = {
+		always = yes
+	}
+	
+	allow = {
+		if = {
+			limit = { ROOT = { ai = yes } }
+			ROOT = { 
+				is_at_war = no
+				has_country_modifier = xorme_ai_valid_nation 
+			}
+		}
+		else = {
+			always = yes
+		}
+	}
+	
+	modifier = {
+		local_development_cost = -0.1
+	}
+	
+	color = {  244 184 12  }
+	
+	
+	ai_will_do = {
+		factor = 10.0
+	}
+}

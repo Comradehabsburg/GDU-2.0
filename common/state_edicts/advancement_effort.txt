@@ -1,0 +1,21 @@
+edict_advancement_effort = {
+	potential = {
+		always = yes
+	}
+	
+	allow = {
+		ai = no
+	}
+	
+	modifier = {
+		local_institution_spread = 0.33
+	}
+	
+	color = { 50 173 192 }
+	
+	
+	ai_will_do = {
+		# has to be around at least 10 to be picked (depends on maintainance cost and general economy)
+		factor = 1000.0
+	}
+}
