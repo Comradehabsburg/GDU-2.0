@@ -350,11 +350,11 @@ pagan = {
 		icon = 58
 		color = { 0.6 0.1 0.1 } #153 25.5 25.5
 		country = {
+		development_cost = 0.1
 			tolerance_own = 1
-			development_cost = -0.1
 		}
 		country_as_secondary = {
-			development_cost = -0.1
+		development_cost = 0.1
 		}
 		
 		personal_deity = yes
@@ -366,10 +366,10 @@ pagan = {
 		color = { 190 32 32 }
 		country = {
 			tolerance_own = 1
-			development_cost = -0.1
+			development_cost = 0.1
 		}
 		country_as_secondary = {
-			development_cost = -0.1
+			development_cost = 0.1
 		}
 		
 		personal_deity = yes

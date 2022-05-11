@@ -1,0 +1,20 @@
+edict_protect_trade = {
+	potential = {
+		always = yes
+	}
+	
+	allow = {
+		ai = no
+	}
+	
+	modifier = {
+		province_trade_power_modifier = 0.50
+	}
+	
+	color = {  113 11 43 }
+	
+	
+	ai_will_do = {
+		factor = 10.0
+	}
+}
