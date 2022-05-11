@@ -350,7 +350,7 @@ vassal=
 
 vassal=
 {
-	first="SWA"
+	first="WES"
 	second="BAD"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -358,7 +358,7 @@ vassal=
 
 vassal=
 {
-	first="SWA"
+	first="WES"
 	second="NSA"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -366,7 +366,7 @@ vassal=
 
 vassal=
 {
-	first="SWA"
+	first="WES"
 	second="WBG"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -374,7 +374,7 @@ vassal=
 
 vassal=
 {
-	first="SWA"
+	first="WES"
 	second="BRG"
 	start_date="1444.11.11"
 	end_date="1836.1.1"

@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = WES
+controller = WES
 capital = "Marburg"
 is_city = yes
 culture = dynamic-franconian-occitain-culture-num1
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 3
 base_production = 3
 base_manpower = 1
-add_core = SWA
+add_core = WES
 add_permanent_claim = HES
 discovered_by = eastern
 discovered_by = indian

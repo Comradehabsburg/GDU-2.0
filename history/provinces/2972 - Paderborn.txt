@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = WES
+controller = WES
 capital = "Paderborn"
 is_city = yes
 culture = hannoverian
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 4
 base_production = 1
 base_manpower = 1
-add_core = SWA
+add_core = WES
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

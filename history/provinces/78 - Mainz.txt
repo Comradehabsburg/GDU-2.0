@@ -1,5 +1,5 @@
-owner = SWA
-controller = SWA
+owner = WES
+controller = WES
 capital = "Mainz"
 is_city = yes
 culture = dynamic-franconian-occitain-culture-num1
@@ -10,7 +10,7 @@ base_production = 3
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = SWA
+add_core = WES
 add_permanent_claim = PAL
 discovered_by = eastern
 discovered_by = indian
