@@ -1,5 +1,5 @@
-owner = UTS
-controller = UTS
+owner = TIB ### UTS
+controller = TIB ### UTS
 capital = "Shigatse"
 is_city = yes
 culture = tibetan
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 2
 base_manpower = 1
-add_core = UTS
+add_core = TIB ### UTS
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

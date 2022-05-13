@@ -1,5 +1,5 @@
-owner = MVA
-controller = MVA
+owner = TRA
+controller = TRA
 capital = "Kaposv�r"
 is_city = yes
 culture = slovak
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = SLO
-add_core = MVA
+add_core = TRA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

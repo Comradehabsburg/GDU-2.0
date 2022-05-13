@@ -1,5 +1,5 @@
-owner = Z2V
-controller = Z2V
+owner = TIB ### Z2V
+controller = TIB ### Z2V
 capital = "Garze"
 is_city = yes
 culture = dynamic-tibetan-culture-num1
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 3
 base_manpower = 1
-add_core = Z2V
+add_core = TIB ### Z2V
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

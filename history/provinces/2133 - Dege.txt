@@ -1,5 +1,5 @@
-owner = PHA
-controller = PHA
+owner = TIB ### PHA
+controller = TIB ### PHA
 capital = "Dege"
 is_city = yes
 culture = tibetan
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = PHA
+add_core = TIB ### PHA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

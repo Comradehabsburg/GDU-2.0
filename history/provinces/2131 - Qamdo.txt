@@ -1,5 +1,5 @@
-owner = Z2U
-controller = Z2U
+owner = TIB ### Z2U
+controller = TIB ### Z2U
 capital = "Qamdo"
 is_city = yes
 culture = tibetan
@@ -8,7 +8,7 @@ trade_goods = spices
 base_tax = 3
 base_production = 2
 base_manpower = 1
-add_core = Z2U
+add_core = TIB ### Z2U
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

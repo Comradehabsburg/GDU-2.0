@@ -1,5 +1,5 @@
-owner = Z1Y
-controller = Z1Y
+owner = TIB ### Z1Y
+controller = TIB ### Z1Y
 capital = "Markam"
 is_city = yes
 culture = nepali
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 1
 base_manpower = 3
-add_core = Z1Y
+add_core = TIB ### Z1Y
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

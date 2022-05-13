@@ -1,5 +1,5 @@
-owner = Z9G
-controller = Z9G
+owner = TIB ### Z9G
+controller = TIB ### Z9G
 capital = "Alxa"
 is_city = yes
 culture = dynamic-chihan-culture-num2
@@ -8,7 +8,7 @@ trade_goods = gems
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = Z9G
+add_core = TIB ### Z9G
 add_permanent_claim = Z0O
 discovered_by = eastern
 discovered_by = indian

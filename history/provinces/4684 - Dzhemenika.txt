@@ -1,5 +1,5 @@
-owner = Z0O
-controller = Z0O
+owner = MAM ### Z0O
+controller = MAM ### Z0O
 capital = "Dzhemenika"
 is_city = yes
 culture = dynamic-kirgiz-culture-num2
@@ -8,7 +8,7 @@ trade_goods = fish
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z0O
+add_core = MAM ### Z0O
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim

@@ -1,5 +1,5 @@
-owner = PHA
-controller = PHA
+owner = TIB ### PHA
+controller = TIB ### PHA
 capital = "Nedong"
 is_city = yes
 culture = tibetan
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 2
 base_manpower = 2
-add_core = PHA
+add_core = TIB ### PHA
 discovered_by = eastern
 discovered_by = indian
 discovered_by = muslim
