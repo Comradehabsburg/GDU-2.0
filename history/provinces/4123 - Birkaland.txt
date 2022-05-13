@@ -1,9 +1,9 @@
-owner = FIN
-controller = FIN
+owner = Z3Q
+controller = Z3Q
 capital = "Messukyl�"
 is_city = yes
 culture = finnish
-add_core = FIN
+add_core = Z3Q
 religion = finnish_pagan
 trade_goods = fur
 base_tax = 1

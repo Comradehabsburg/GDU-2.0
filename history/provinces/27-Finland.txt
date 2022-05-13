@@ -1,6 +1,6 @@
-owner = FIN
-controller = FIN
-capital = "Åbo"
+owner = SWE
+controller = SWE
+capital = "ï¿½bo"
 is_city = yes
 culture = swedish
 religion = norse_pagan

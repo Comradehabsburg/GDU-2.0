@@ -1,6 +1,6 @@
-owner = Z17
-controller = Z17
-capital = "Västerås"
+owner = SWE
+controller = SWE
+capital = "Vï¿½sterï¿½s"
 is_city = yes
 culture = swedish
 religion = norse_pagan
