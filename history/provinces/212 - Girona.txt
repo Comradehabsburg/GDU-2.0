@@ -1,4 +1,6 @@
 owner = CAT
+add_permanent_claim = ARA
+add_permanent_claim = ASU
 controller = CAT
 capital = "Girona"
 is_city = yes

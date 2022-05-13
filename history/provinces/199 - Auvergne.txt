@@ -1,4 +1,5 @@
 owner = AMG
+add_permanent_claim = FRA
 controller = AMG
 capital = "Clermont"
 is_city = yes

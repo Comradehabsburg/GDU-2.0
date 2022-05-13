@@ -1,4 +1,5 @@
 owner = Z1E
+add_permanent_claim = ASU
 controller = Z1E
 capital = "Toledo"
 is_city = yes
