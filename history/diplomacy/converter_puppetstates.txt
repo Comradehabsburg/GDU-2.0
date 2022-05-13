@@ -369,8 +369,8 @@ vassal=
 
 vassal=
 {
-	first="MVA"
-	second="TRA"
+	first="TRA"
+	second="MVA"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
