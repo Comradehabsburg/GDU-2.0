@@ -1,9 +1,9 @@
-owner = Z37
-controller = Z37
-capital = "Gävle"
+owner = SWE
+controller = SWE
+capital = "Gï¿½vle"
 is_city = yes
 culture = swedish
-religion = catholic
+religion = norse_pagan
 trade_goods = fish
 base_tax = 1
 base_production = 1

@@ -17,6 +17,15 @@ union=
 
 union=
 {
+	first="ASU"
+	second="ARA"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+
+union=
+{
 	first="Z8E"
 	second="Z5O"
 	start_date="1444.11.11"

@@ -1,4 +1,6 @@
 owner = Z01
+add_permanent_claim = FRA
+add_permanent_claim = FRA
 controller = Z01
 capital = "Rodez"
 is_city = yes

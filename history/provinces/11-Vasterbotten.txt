@@ -1,9 +1,9 @@
-owner = GOT
-controller = GOT
-capital = "Umeå"
+owner = SWE
+controller = SWE
+capital = "Umeï¿½"
 is_city = yes
 culture = swedish
-religion = catholic
+religion = norse_pagan
 trade_goods = fur
 base_tax = 1
 base_production = 1

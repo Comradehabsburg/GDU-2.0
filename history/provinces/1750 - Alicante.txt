@@ -1,4 +1,6 @@
 owner = VAL
+add_permanent_claim = ARA
+add_permanent_claim = ASU
 controller = VAL
 capital = "Al�cant"
 is_city = yes

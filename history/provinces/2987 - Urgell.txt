@@ -1,6 +1,8 @@
 owner = CAT
+add_permanent_claim = ARA
+add_permanent_claim = ASU
 controller = CAT
-capital = "Tàrrega"
+capital = "Tï¿½rrega"
 is_city = yes
 culture = catalan
 religion = catholic

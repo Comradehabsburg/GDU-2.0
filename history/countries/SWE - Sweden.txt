@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 2
 technology_group = western
-religion = catholic
+religion = norse_pagan
 primary_culture = swedish
 capital = 1
 unit_type = western
@@ -35,7 +35,7 @@ add_government_reform = noble_elite_reform
 set_legacy_government = noble_republic }
 1457.2.25= {
 	monarch = {
-		name = "Jöns Bengtsson"
+		name = "Jï¿½ns Bengtsson"
 		dynasty = "Oxenstierna"
 		birth_date = 1417.1.1
 		adm = 1
@@ -89,7 +89,7 @@ add_government_reform = noble_elite_reform
 set_legacy_government = noble_republic }
 1465.6.16= {
 	monarch = {
-		name = "Jöns Bengtsson"
+		name = "Jï¿½ns Bengtsson"
 		dynasty = "Oxenstierna"
 		adm = 1
 		dip = 1
@@ -333,7 +333,7 @@ add_government_reform = feudalism_reform }
 	add_accepted_culture = estonian
 }
 1551.1.1= { leader = {	name = "Klas Horn"             	type = admiral	fire = 5	shock = 5	manuever = 4	siege = 0	death_date = 1566.9.9 } }
-1560.1.1= { leader = {	name = "Hans Boije af Gennäs"  	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1573.1.1 } }
+1560.1.1= { leader = {	name = "Hans Boije af Gennï¿½s"  	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1573.1.1 } }
 1560.9.30= {
 	monarch = {
 		name = "Erik XIV"
@@ -367,7 +367,7 @@ add_government_reform = feudalism_reform }
 	queen = {
 		country_of_origin = SWE
 		name = "Karin"
-		dynasty = "Månsdotter"
+		dynasty = "Mï¿½nsdotter"
 		birth_date = 1550.11.6
 		death_date = 1612.9.13
 		female = yes
@@ -542,7 +542,7 @@ add_government_reform = feudalism_reform }
 		mil = 3
 	}
 }
-1630.1.1= { leader = {	name = "Johan Banér"		type = general	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1641.5.10 } }
+1630.1.1= { leader = {	name = "Johan Banï¿½r"		type = general	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1641.5.10 } }
 1630.1.1= { leader = {	name = "Lennart Torstensson"	type = general	fire = 5	shock = 4	manuever = 5	siege = 2	death_date = 1651.5.7 } }
 1630.7.1= {
 	join_league = protestant
@@ -564,8 +564,8 @@ add_government_reform = feudalism_reform }
 	add_ruler_personality = well_connected_personality
 }
 1634.1.1= { leader = {	name = "Arvid Wittenberg"	type = general	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1657.9.7 } }
-1635.1.1= { leader = {	name = "H.C. von Königsmarck"	type = general	fire = 2	shock = 4	manuever = 6	siege = 0	death_date = 1694.7.12 } }
-1639.1.1= { leader = {	name = "Johan P. Björnsson"	type = conquistador	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1663.5.3 } }
+1635.1.1= { leader = {	name = "H.C. von Kï¿½nigsmarck"	type = general	fire = 2	shock = 4	manuever = 6	siege = 0	death_date = 1694.7.12 } }
+1639.1.1= { leader = {	name = "Johan P. Bjï¿½rnsson"	type = conquistador	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1663.5.3 } }
 1648.10.24= {
 	leave_league = protestant
 }
@@ -735,7 +735,7 @@ add_government_reform = feudalism_reform }
 	}
 }
 1722.1.1= { leader = {	name = "Charles Lewenhaupt"	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1743.8.4 } }
-1747.1.1= { leader = {	name = "Agustin Ehrensvärd"	type = general	fire = 4	shock = 4	manuever = 3	siege = 2	death_date = 1772.10.4 } }
+1747.1.1= { leader = {	name = "Agustin Ehrensvï¿½rd"	type = general	fire = 4	shock = 4	manuever = 3	siege = 2	death_date = 1772.10.4 } }
 1750.1.1= { leader = {	name = "Fredrik von Fersen"	type = general	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1794.4.24 } }
 1751.3.27= {
 	monarch = {
@@ -808,7 +808,7 @@ add_government_reform = feudalism_reform }
 		mil = 2
 	}
 }
-1781.1.1= { leader = {	name = "Georg C. von Döbeln"	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1820.2.16 } }
+1781.1.1= { leader = {	name = "Georg C. von Dï¿½beln"	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1820.2.16 } }
 1789.1.1= { leader = {	name = "Carl J. Adlercreutz"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1815.8.21 } }
 1790.1.1= { leader = {	name = "Hans H. von Essen"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1824.7.28 } }
 1792.4.3= {
@@ -838,7 +838,7 @@ add_government_reform = feudalism_reform }
 	queen = {
 		country_of_origin = BAD
 		name = "Fredrika"
-		dynasty = "von Zähringen"
+		dynasty = "von Zï¿½hringen"
 		birth_date = 1781.3.12
 		death_date = 1800.4.3
 		female = yes

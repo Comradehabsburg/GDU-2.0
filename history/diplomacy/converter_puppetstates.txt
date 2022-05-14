@@ -475,14 +475,6 @@ vassal=
 
 vassal=
 {
-	first="ASU"
-	second="ARA"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal=
-{
 	first="VAL"
 	second="MJO"
 	start_date="1444.11.11"

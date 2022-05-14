@@ -1,9 +1,9 @@
-owner = Z17
-controller = Z17
+owner = SWE
+controller = SWE
 capital = "�rebro"
 is_city = yes
 culture = swedish
-religion = paulician
+religion = norse_pagan
 trade_goods = iron
 base_tax = 3
 base_production = 1
