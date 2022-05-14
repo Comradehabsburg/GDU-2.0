@@ -2180,12 +2180,12 @@ nubian_ideas = {
 
 french_culture_ideas = {
 	start = {
-		fort_maintenance_modifier = -0.1
-		cavalry_cost = -0.1
+		build_cost = -0.1
+		cavalry_power = 0.1
 	}
 	
 	bonus = {
-		global_tax_modifier = 0.1
+		production_efficiency = 0.1
 	}
 	
 	trigger = {
