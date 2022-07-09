@@ -1,5 +1,6 @@
 division_template = {
 	name = "US Army Mounted Cavalry Regiment"
+	is_locked = yes
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }

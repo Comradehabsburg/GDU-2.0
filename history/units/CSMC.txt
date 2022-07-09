@@ -1,5 +1,6 @@
 division_template = {
 	name = "Confederate States Marine Corps"
+	is_locked = yes
 
 		regiments = {
 		marine = { x = 0 y = 0 }

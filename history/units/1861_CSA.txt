@@ -1,5 +1,6 @@
 division_template = {
 	name = "PACS Volunteers"
+	is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -29,6 +30,7 @@ division_template = {
 
 division_template = {
 	name = "PACS Cavalry"
+	is_locked = yes
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -47,6 +49,7 @@ division_template = {
 
 division_template = {
 	name = "CS Militia"
+	is_locked = yes
 
 	regiments = {
 		Militia = { x = 0 y = 0 }
@@ -59,6 +62,7 @@ division_template = {
 
 division_template = {
 	name = "PACS Artillery"
+	is_locked = yes
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
