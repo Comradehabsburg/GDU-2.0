@@ -1,0 +1,270 @@
+characters={
+
+CSA_jefferson_davis={
+		name=CSA_jefferson_davis
+		portraits={
+			civilian={
+				large="gfx/leaders/CSA/JF1859.dds"
+			}
+		}
+		country_leader={
+			ideology = liberalism
+			desc = "CSA_jefferson_davis_desc"
+			traits = {
+			jeff_csa_leader
+			former_sec_of_war
+			}
+			expire="1865.4.14.1"
+			id=-1
+		}
+	}
+	CSA_alexander_stephens={
+		name=CSA_alexander_stephens
+		portraits={
+			civilian={
+				large="gfx/leaders/CSA/Alexander_H_Stephens_by_Vannerson_1859.dds"
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+		country_leader={
+			ideology = liberalism
+			desc = "CSA_alexander_stephens_desc"
+			traits = {
+			}
+			expire="1865.4.14.1"
+			id=-1
+		}
+			advisor={
+			slot = political_advisor
+			cost = 150
+			idea_token = CSA_alexander_stephens
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					 vice_president
+				}
+		}
+	}
+	CSA_robert_toombs={
+		name=CSA_robert_toombs
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			cost = 150
+			idea_token = CSA_robert_toombs
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					 secretary_of_state
+				}
+		}
+	}
+	CSA_Christopher_Memminger	={
+		name=CSA_Christopher_Memminger
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			cost = 150
+			idea_token = CSA_Christopher_Memminger
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					 secretary_of_treasury
+				}
+		}
+	}
+	CSA_John_Henninger_Reagan	={
+		name=CSA_John_Henninger_Reagan
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			cost = 150
+			idea_token = CSA_John_Henninger_Reagan
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					 Confederate_States_Postmaster_General
+				}
+		}
+	}
+	CSA_Robert_Hunter	={
+		name=CSA_Robert_Hunter
+		portraits={
+			civilian={
+				small="GFX_idea_generic_political_advisor_north_america_3"
+			}
+		}
+			advisor={
+			slot = political_advisor
+			cost = 150
+			idea_token = CSA_Robert_Hunter
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					 Senate_man
+				}
+		}
+	}
+	#Army
+	CSA_robert_lee = {
+	name=CSA_robert_lee
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/REL.dds"
+			}
+			army = {
+			large="gfx/leaders/CSA/Robert_Edward_Lee.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			cost = 150
+			idea_token = CSA_robert_lee
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					king_of_spades
+				}
+				ai_will_do = {
+					factor = 5.000
+				}
+		}
+		advisor={
+			slot = theorist
+			cost = 150
+			idea_token = CSA_robert_lee
+			ledger = army
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					mass_assault_expert
+				}
+				ai_will_do = {
+					factor = 5.000
+				}
+		}
+			corps_commander = {
+				traits = { trait_engineer     war_hero   skilled_staffer brilliant_strategist career_officer}
+				desc = "REL_desc"
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 2
+				legacy_id=2
+		}
+	}
+	CSA_stonewall_jackson = {
+	name=CSA_stonewall_jackson
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/stonewall.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/800px-Stonewall_Jackson.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			cost = 150
+			idea_token = CSA_stonewall_jackson
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					stonewall_jackson
+				}
+				ai_will_do = {
+					factor = 5.000
+				}
+		}
+		advisor={
+			slot = theorist
+			cost = 150
+			idea_token = CSA_stonewall_jackson
+			ledger = army
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					blitzkrieg_theorist
+				}
+				ai_will_do = {
+					factor = 5.000
+				}
+		}
+			corps_commander = {
+				traits = { hill_fighter     war_hero   guerilla_fighter inflexible_strategist}
+				desc = "TJ_desc"
+				skill = 3
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+		}
+	}
+}

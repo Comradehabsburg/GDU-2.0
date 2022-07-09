@@ -1,0 +1,21 @@
+###########################
+# Tutorial Events
+###########################
+
+add_namespace = tutorial
+
+#tutorial
+country_event = {
+ id = tutorial.1
+ title = tutorial.1.t
+ desc = tutorial.1.d
+ picture = GFX_report_event_german_parade_paris
+ mean_time_to_happen = { days = 1 } 
+ 
+ is_triggered_only = yes
+
+ option = {
+	name = tutorial.1.a
+	ai_chance = { factor = 100 }
+	}
+}

@@ -4,21 +4,21 @@ has_unsupported_economic_law = {
 			has_idea = low_economic_mobilisation
 		}
 		has_idea = low_economic_mobilisation
-		has_war_support < 0.25
+		has_war_support < 0.15
 	}
 	else_if = {
 		limit = {
 			has_idea = partial_economic_mobilisation
 		}
 		has_idea = partial_economic_mobilisation
-		has_war_support < 0.35
+		has_war_support < 0.25
 	}
 	else_if = {
 		limit = {
 			has_idea = war_economy
 		}
 		has_idea = war_economy
-		has_war_support < 0.55
+		has_war_support < 0.5
 	}
 	else_if = {
 		limit = {

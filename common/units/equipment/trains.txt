@@ -17,7 +17,7 @@ equipments = {
 
 		build_cost_ic = 70
 		resources = {
-			steel = 10
+			steel = 1
 		}
 	}
 	# regular trains
@@ -25,7 +25,6 @@ equipments = {
 		year = 1910
 
 		archetype = train_equipment
-		active = yes
 		type = {
 			train
 		}
@@ -34,9 +33,9 @@ equipments = {
 
 		priority = 10
 
-		build_cost_ic = 80
+		build_cost_ic = 70
 		resources = {
-			steel = 15
+			steel = 1
 		}
 	}
 	# cheap trains
@@ -50,9 +49,9 @@ equipments = {
 		}
 		priority = 20
 
-		build_cost_ic = 60
+		build_cost_ic = 50
 		resources = {
-			steel = 12
+			steel = 1
 		}
 	}
 	# armored trains
@@ -65,9 +64,9 @@ equipments = {
 		}
 		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
 		priority = 30
-		build_cost_ic = 115
+		build_cost_ic = 105
 		resources = {
-			steel = 25
+			steel = 2
 		}
 	}
 }

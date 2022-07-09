@@ -97,8 +97,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.025
-			army_fuel_capacity_factor = 0.025
-			army_fuel_consumption_factor = -0.025
 		}
 	}
 		
@@ -107,8 +105,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.05
-			army_fuel_capacity_factor = 0.05
-			army_fuel_consumption_factor = -0.05
 		}
 	}
 	
@@ -118,8 +114,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.075
-			army_fuel_capacity_factor = 0.075
-			army_fuel_consumption_factor = -0.075
 		}
 	}
 	
@@ -128,8 +122,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.1
-			army_fuel_capacity_factor = 0.1
-			army_fuel_consumption_factor = -0.1
 		}
 	}
 	
@@ -138,8 +130,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.125
-			army_fuel_capacity_factor = 0.125
-			army_fuel_consumption_factor = -0.125
 		}
 	}
 
@@ -148,8 +138,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.150
-			army_fuel_capacity_factor = 0.150
-			army_fuel_consumption_factor = -0.150
 		}
 	}
 
@@ -158,8 +146,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.175
-			army_fuel_capacity_factor = 0.175
-			army_fuel_consumption_factor = -0.175
 		}
 	}
 
@@ -168,8 +154,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.2
-			army_fuel_capacity_factor = 0.2
-			army_fuel_consumption_factor = -0.2
 		}
 	}
 
@@ -178,8 +162,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.225
-			army_fuel_capacity_factor = 0.225
-			army_fuel_consumption_factor = -0.225
 		}
 	}
 
@@ -188,8 +170,6 @@ leader_logistics_skills = {
 		type = corps_commander
 		modifier = {
 			supply_consumption_factor = -0.25
-			army_fuel_capacity_factor = 0.25
-			army_fuel_consumption_factor = -0.25
 		}
 	}
 	
@@ -199,8 +179,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.025
-			army_fuel_capacity_factor = 0.025
-			army_fuel_consumption_factor = -0.025
 		}
 	}
 		
@@ -209,8 +187,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.05
-			army_fuel_capacity_factor = 0.05
-			army_fuel_consumption_factor = -0.05
 		}
 	}
 	
@@ -220,8 +196,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.075
-			army_fuel_capacity_factor = 0.075
-			army_fuel_consumption_factor = -0.075
 		}
 	}
 	
@@ -230,8 +204,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.1
-			army_fuel_capacity_factor = 0.1
-			army_fuel_consumption_factor = -0.1
 		}
 	}
 	
@@ -240,8 +212,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.125
-			army_fuel_capacity_factor = 0.125
-			army_fuel_consumption_factor = -0.125
 		}
 	}
 
@@ -250,8 +220,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.150
-			army_fuel_capacity_factor = 0.150
-			army_fuel_consumption_factor = -0.150
 		}
 	}
 
@@ -260,8 +228,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.175
-			army_fuel_capacity_factor = 0.175
-			army_fuel_consumption_factor = -0.175
 		}
 	}
 
@@ -270,8 +236,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.2
-			army_fuel_capacity_factor = 0.2
-			army_fuel_consumption_factor = -0.2
 		}
 	}
 
@@ -280,8 +244,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.225
-			army_fuel_capacity_factor = 0.225
-			army_fuel_consumption_factor = -0.225
 		}
 	}
 
@@ -290,8 +252,6 @@ leader_logistics_skills = {
 		type = field_marshal
 		modifier = {
 			supply_consumption_factor = -0.25
-			army_fuel_capacity_factor = 0.25
-			army_fuel_consumption_factor = -0.25
 		}
 	}
 }

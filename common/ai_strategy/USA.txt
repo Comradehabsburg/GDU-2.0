@@ -1,0 +1,109 @@
+#USA - Invasion
+USA_Invasion_port = {
+	allowed = {
+		tag = USA
+	}
+	
+		enable = {
+		date > 1861.5.12
+		has_army_manpower > 220000
+		has_navy_size  = {
+    size > 4
+    type = capital_ship
+    archetype = ship_hull_heavy
+		}
+	}
+		ai_strategy = {
+		type = invade
+		id = CSA
+		value = 100
+	}
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 12 # perl harbor
+	}
+}
+#Capital defense
+USA_Washington_first = {
+	allowed = {
+		tag = USA
+	}
+		enable = {
+		date > 1861.5.12
+		controls_state = 58
+	}
+	ai_strategy = {
+        type = force_build_armies
+        value = 30
+    }
+		ai_strategy = {
+		type = conquer
+		id = CSA
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = VIR
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = CSA
+		value = 100
+	}	
+	ai_strategy = {
+		type = put_unit_buffers
+		
+		order_id = 2
+		
+		# Maryland
+		states = { 
+		58
+		}
+		
+		ratio = 0.01
+		area = USA_maryland
+		
+		subtract_invasions_from_need = no
+	}
+		ai_strategy = {
+		type = area_priority
+		id = USA
+		target = USA_maryland
+		value = 10
+	}	
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 100
+		mission_target = CSA
+		state = 64
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 100
+		mission_target = CSA
+		state = 65
+	}
+}
+USA_onto_the_beaches = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 55
+	}
+	
+		ai_strategy = {
+		type = strike_force_home_base
+		id = 12 # perl harbor
+	}
+}

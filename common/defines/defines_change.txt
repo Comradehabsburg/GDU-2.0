@@ -1,0 +1,15 @@
+SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 900.0,
+COMBAT_STACKING_START = 20,
+COMBAT_STACKING_EXTRA = 12,  
+FRONT_MIN_PATH_TO_REDEPLOY = 5,
+	VICTORY_POINT_MAP_ICON_AFTER = {0, 20}, -- After this amount of VP the map icon becomes bigger dot.
+	VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {850, 1400, 2500},  -- At what camera distance the VP name text disappears.
+	VICTORY_POINTS_DISTANCE_CUTOFF = {850, 1400, 2500}, -- At what distance VPs are hidden
+	RAILWAY_CAMERA_CUTOFF = 700.0, -- railways are cut off above this camera height
+	CAMERA_MIN_HEIGHT = 30.0,						-- Minimum camera height
+	CAMERA_MAX_HEIGHT = 3000.0,						-- Maximum camera height
+	ENGAGEMENT_WIDTH_PER_WIDTH = 4.0,	-- how much enemy combat width we are allowed to engage per width of our own
+	COMBAT_OVER_WIDTH_PENALTY = -1.5,					-- over combat width penalty per %.
+	COMBAT_OVER_WIDTH_PENALTY = -0.5,					-- over combat width penalty per %.
+	COMBAT_OVER_WIDTH_PENALTY_MAX = -0.25,			-- over combat width max (when you cant join no more).
+	AIRBASE_CAPACITY_MULT = 20,		-- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.

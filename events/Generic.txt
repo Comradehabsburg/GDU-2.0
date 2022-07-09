@@ -33,7 +33,7 @@ country_event = {
 			limit = {
 				FROM = {
 					tag = ENG
-					has_completed_focus = ENG_burma_road
+					has_completed_focus = uk_china_focus
 				}
 				tag = event_target:WTT_current_china_leader
 			}
@@ -51,7 +51,7 @@ country_event = {
 			limit = {
 				FROM = {
 					tag = ENG
-					has_completed_focus = ENG_burma_road
+					has_completed_focus = uk_china_focus
 				}
 				tag = event_target:WTT_current_china_leader
 			}
@@ -324,6 +324,16 @@ country_event = {
 					is_major = yes
 				}
 			}
+
+			modifier = {
+				factor = 10
+				FROM = {
+					OR = {
+						is_subject = yes
+						is_in_faction = yes
+					}
+				}
+			}
 		}
 		FROM = { 
 			country_event = { id = generic.4 hours = 6 }
@@ -434,6 +444,18 @@ country_event = {
 				has_government = fascism
 			}
 		}
+		if = {
+			limit = {
+				original_tag = LAT
+				FROM = { original_tag = GER }
+				has_completed_focus = LAT_alignment_with_germany
+			}
+			uncomplete_national_focus = {
+				focus = LAT_alignment_with_germany
+				uncomplete_children = yes
+			}
+			complete_national_focus = LAT_the_thunder_strikes_alone
+		}
 	}
 	option = {
 		name = generic.4.c
@@ -469,6 +491,18 @@ country_event = {
 					has_government = communism
 				}
 			}
+		}
+		if = {
+			limit = {
+				original_tag = LAT
+				FROM = { original_tag = GER }
+				has_completed_focus = LAT_alignment_with_germany
+			}
+			uncomplete_national_focus = {
+				focus = LAT_alignment_with_germany
+				uncomplete_children = yes
+			}
+			complete_national_focus = LAT_the_thunder_strikes_alone
 		}
 	}
 }
@@ -564,9 +598,17 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_in_faction_with = POL
+				POL = { has_completed_focus = POL_morges_pact }
+			}
 		}
-		FROM = { 
-			add_to_faction = ROOT
+		FROM = {
+			faction_leader = {
+				add_to_faction = ROOT
+			}
 			country_event = { id = generic.6 hours = 6 } 
 		}
 		add_ai_strategy = {
@@ -578,6 +620,17 @@ country_event = {
 			set_country_flag = alliance_applicant@ROOT
 			FROM = { set_country_flag = alliance_inviter@ROOT }
 			news_event = { id = news.289 hours = 12 }
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GER
+						has_government = democratic
+						has_completed_focus = GER_pool_technical_know_how
+					}
+					NOT = { has_idea = GER_pool_technical_know_how }
+				}
+				add_ideas = GER_pool_technical_know_how
+			}
 		}
 	}
 	option = { #Agree / Both Fascist
@@ -622,6 +675,12 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_in_faction_with = POL
+				POL = { has_completed_focus = POL_morges_pact }
+			}
 		}
 		FROM = { 
 			add_to_faction = ROOT
@@ -687,9 +746,19 @@ country_event = {
 					is_major = no
 				}
 			}
+			
+			modifier = {
+				factor = 0
+				original_tag = FRA
+				is_in_faction_with = POL
+				POL = { has_completed_focus = POL_morges_pact }
+			}
 		}
 		FROM = { 
-			add_to_faction = ROOT
+			faction_leader = {
+				add_to_faction = ROOT
+			}
+			
 			country_event = { id = generic.6 hours = 6 }
 		}
 		if = {
@@ -708,6 +777,17 @@ country_event = {
 			set_country_flag = alliance_applicant@ROOT
 			FROM = { set_country_flag = alliance_inviter@ROOT }
 			news_event = { id = news.289 hours = 12 }
+			if = {
+				limit = {
+					FROM = {
+						original_tag = GER
+						has_government = democratic
+						has_completed_focus = GER_pool_technical_know_how
+					}
+					NOT = { has_idea = GER_pool_technical_know_how }
+				}
+				add_ideas = GER_pool_technical_know_how
+			}
 		}
 	}
 	
@@ -718,6 +798,15 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 50
+			
+			modifier = {
+				factor = 0
+				FROM = {
+					original_tag = YUG
+					has_government = communism
+				}
+				has_government = communism
+			}
 			
 			modifier = {
 				factor = 0.5
@@ -771,6 +860,15 @@ country_event = {
 				factor = 0.1
 				FROM = {
 					is_major = yes
+				}
+			}
+
+			modifier = {
+				factor = 0
+				tag = SPC
+				FROM = {
+					original_tag = SOV
+					has_completed_focus = SOV_covert_support_for_spanish_poum
 				}
 			}
 		}
@@ -1438,7 +1536,7 @@ unit_leader_event = {
 }
 
 # Notification event that leader has been wounded
-country_event = {
+unit_leader_event = {
 	id = generic.18
 	title = generic.18.t
 	desc = generic.18.d
@@ -1459,23 +1557,65 @@ country_event = {
 		}
 	}	
 }
-
-# Notification event that FROM has sent industrial support
-country_event = {
-	id = generic.19
-	title = generic.19.t
-	desc = generic.19.d
+unit_leader_event = {
+	id = generic.25
+	title = generic.25.t
+	desc = generic.25.d
 	
-	picture = GFX_report_event_generic_factory
+	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
 
 	option = {
-		name = excellent
+		name = unfortunate
 		effect_tooltip = {
-			add_offsite_building = { type = arms_factory level = 2 }
+			FROM = {
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+			}
 		}
 	}	
+}
+
+# Notification event that FROM has sent industrial support
+#Death Gen NO use
+unit_leader_event = {
+	id = generic.19
+	title = generic.19.t
+	desc = generic.19.d
+	
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.19.a
+		effect_tooltip = {
+		FROM = {
+		retire = yes
+			}
+		}
+	}
+}
+unit_leader_event = {
+	id = generic.27
+	title = generic.27.t
+	desc = generic.27.d
+	
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.27.a
+		effect_tooltip = {
+		FROM = {
+		retire = yes
+			}
+		}
+	}
 }
 
 #Become a puppet
@@ -1688,128 +1828,40 @@ country_event = {
 
 }
 
-# generic event for demanding territory
-country_event = {
-	id = generic.23
-	title = generic.23.t
-	desc = generic.23.d
-	
-	picture = GFX_report_event_czech_soldiers_01
-
-	is_triggered_only = yes
-
-	option = {
-		name = generic.23.a
-		ai_chance = {
-			factor = 90
-			modifier = { # If they stand a chance they will fight
-				factor = 0
-				strength_ratio = {
-					tag = FROM
-					ratio > 0.75
-				}
-				NOT = {
-					any_neighbor_country = {
-						NOT = { tag = FROM }
-						is_in_faction_with = FROM
-					}
-				}
-			}
-			modifier = {
-				factor = 0 #if you lead a faction, fight
-				is_faction_leader = yes
-			}
-			modifier = {
-				factor = 0.5 #if you are in a faction, maybe fight
-				is_faction_leader = no
-				is_in_faction = yes
-			}
-			modifier = { # Increase it again if other bordering nations are in the enemy faction
-				any_neighbor_country = {
-					NOT = { tag = FROM }
-					is_in_faction_with = FROM
-				}
-				factor = 2.0
-			}
-		}
-		effect_tooltip = {
-			FROM = { transfer_state = event_target:demanded_prov_target }
-			if = {
-				limit = {
-					event_target:demanded_prov_target = { has_state_flag = give_core_to_state_flag }
-				}
-			event_target:demanded_prov_target = { add_core_of = FROM }
-			}
-		}
-		hidden_effect = {
-			FROM = { country_event = generic.24 }
-		}
-	}
-
-	option = {
-		name = generic.23.b
-		ai_chance = { 
-			factor = 10 
-			modifier = {
-				factor = 0.5
-				strength_ratio = {
-					tag = FROM
-					ratio < 0.5
-				}
-			}
-		}
-		custom_effect_tooltip = maybe_war_tt
-		hidden_effect = {
-			FROM = { country_event = generic.25 }
-		}
-	}
-}
-
-# accepted demands
-country_event = {
-	id = generic.24
-	title = generic.24.t
-	desc = generic.24.d
-	
-	picture = GFX_report_event_czech_soldiers_01
-
-	is_triggered_only = yes
-
-	option = {
-		name = excellent
-		THIS = { transfer_state = event_target:demanded_prov_target }
-		if = {
-			limit = {
-				event_target:demanded_prov_target = { has_state_flag = give_core_to_state_flag }
-			}
-			event_target:demanded_prov_target = { 
-				add_core_of = THIS
-				clr_state_flag = give_core_to_state_flag
-			}
-		}
-		hidden_effect = { clear_global_event_target = demanded_prov_target }
-	}
-}
-
-# accepted demands
-country_event = {
+unit_leader_event = {
 	id = generic.25
 	title = generic.25.t
 	desc = generic.25.d
 	
-	picture = GFX_report_event_czech_soldiers_01
+	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
 
 	option = {
 		name = generic.25.a
-		ai_chance = {
-			factor = 90
+		effect_tooltip = {
+		FROM = {
+		retire = yes
+			}
 		}
-		create_wargoal = {
-			type = annex_everything 
-			target = FROM
 		}
-		hidden_effect = { clear_global_event_target = demanded_prov_target }
+	}
+unit_leader_event = {
+	id = generic.26
+	title = generic.26.t
+	desc = generic.26.d
+	
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.26.a
+		effect_tooltip = {
+		FROM = {
+		retire = yes
+			}
+		}
 	}
 }
+

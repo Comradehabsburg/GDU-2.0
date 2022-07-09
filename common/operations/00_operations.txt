@@ -34,7 +34,7 @@ operation_rescue_operative = { ### 0 1/35
 		
 	}
 	risk_chance = 0.1
-	experience = 4
+	experience = 2
 	cost_multiplier = 0 # we dont scale in cost for rescues
 
 	outcome_execute = { # SCOPE_OPERATION
@@ -412,7 +412,6 @@ operation_capture_cipher = { ### 3 1/55
 			target = FROM
 			value > 25
 		}
-		has_tech = mechanical_computing
 		has_done_agency_upgrade = upgrade_form_department
 		NOT = {
 			ROOT = { is_fully_decrypted = FROM }
@@ -1111,7 +1110,7 @@ operation_coup_government = { ### 7 1/70
 		}
 	}
 	risk_chance = 0.3
-	experience = 4.5
+	experience = 2.5
 	cost_modifiers = { operation_coup_cost }
 	outcome_execute = { # SCOPE_OPERATION
 		FROM = {
@@ -1303,13 +1302,13 @@ operation_boost_resistance = { ### 8 2/40
 		token_resistance_contacts
 	}
 	risk_chance = 0.2
-	experience = 3
-	outcome_extra_chance = 0.05
+	experience = 1.5
+	outcome_extra_chance = 0.25
 	outcome_modifiers = { boost_resistance_factor }
 	outcome_execute = {
 		FROM.FROM = {
 			add_resistance_target = {
-				amount = 15
+				amount = 10
 				tooltip = intelligency_agency_resistance_boost_tt
 			}
 			subtract_from_variable = { boost_resistance_chance = 10 }
@@ -1320,19 +1319,19 @@ operation_boost_resistance = { ### 8 2/40
 			33 = { #critical success
 				FROM.FROM = {
 					add_resistance_target = {
-						amount = 10
+						amount = 20
 						tooltip = intelligency_agency_resistance_boost_tt
 					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
 				}
 				FROM.FROM = {
-					add_compliance = -1
+					add_compliance = -10
 				}
 			}
 			67 = { #normal success
 				FROM.FROM = {
 					add_resistance_target = {
-						amount = 10
+						amount = 20
 						tooltip = intelligency_agency_resistance_boost_tt
 					}
 					subtract_from_variable = { boost_resistance_chance = 10 }
@@ -1585,7 +1584,7 @@ operation_collaboration_government = { ### 10 2/55
 	desc = operation_collaboration_government_desc
 	priority = 10
 
-	days = 120
+	days = 90
 	network_strength = 50
 	operatives = 2
 	
@@ -1599,10 +1598,10 @@ operation_collaboration_government = { ### 10 2/55
 	}
 
 	equipment = {
-		support_equipment = 100
-		infantry_equipment = 800
+		support_equipment = 200
+		infantry_equipment = 1000
 		civilian_factories = {
-			amount = 5
+			amount = 10
 			days = 60
 		}
 	}
@@ -1619,13 +1618,13 @@ operation_collaboration_government = { ### 10 2/55
 		}
 	}
 	risk_chance = 0.1
-	experience = 3
-	outcome_extra_chance = 0
+	experience = 1.5
+	outcome_extra_chance = 0.33
 	outcome_execute = { # SCOPE_OPERATION
 		ROOT = {
 			add_collaboration = {
 				target = FROM
-				value = 0.2
+				value = 0.3
 			}
 		}
 	}
@@ -1642,7 +1641,7 @@ operation_collaboration_government = { ### 10 2/55
 		ROOT = {
 			add_collaboration = {
 				target = FROM
-				value = 0.2
+				value = 0.3
 			}
 		}
 	}
@@ -1740,7 +1739,7 @@ operation_coordinated_strike = { ### 11 2/70
 	# Coordinated Strike will lead to a war with the target
 	will_lead_to_war_with = yes
 	risk_chance = 0.3
-	experience = 4
+	experience = 2
 	outcome_execute = { # SCOPE_OPERATION
 		ROOT = {
 			declare_war_on = { target = FROM type = annex_everything }
@@ -1838,7 +1837,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 		token_civilian
 	}
 	risk_chance = 0.2
-	experience = 4
+	experience = 2
 	outcome_extra_chance = 0.25
 	risk_modifiers = { operation_steal_tech_risk operation_risk }
 	outcome_modifiers = { operation_steal_tech_outcome operation_outcome }
@@ -1849,7 +1848,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 			steal_random_tech_bonus = {
 				folder = electronics_folder
 				folder = industry_folder
-				bonus = 0.75
+				bonus = 3.0
 				name = operation_steal_tech_civilian
 				target = FROM
 				dynamic = yes
@@ -1869,8 +1868,9 @@ operation_steal_tech_civilian = { ### 12 3/35
 					steal_random_tech_bonus = {
 						folder = electronics_folder
 						folder = industry_folder
-						bonus = 0.75
-						ahead_reduction = 0.5
+
+						bonus = 3.0
+						ahead_reduction = 2
 						dynamic = yes
 						instant = yes
 						name = operation_steal_tech_civilian
@@ -1884,8 +1884,9 @@ operation_steal_tech_civilian = { ### 12 3/35
 					steal_random_tech_bonus = {
 						folder = electronics_folder
 						folder = industry_folder
-						bonus = 0.75
-						ahead_reduction = 0.5
+
+						bonus = 3.0
+						ahead_reduction = 1
 						dynamic = yes
 						instant = yes
 						name = operation_steal_tech_civilian
@@ -1902,7 +1903,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 			steal_random_tech_bonus = {
 				folder = electronics_folder
 				folder = industry_folder
-				bonus = 0.75
+				bonus = 3.0
 				dynamic = yes
 				instant = yes
 				name = operation_steal_tech_civilian
@@ -2012,7 +2013,7 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 	}
 
 	risk_chance = 0.2
-	experience = 4
+	experience = 2
 	outcome_extra_chance = 0.25
 	outcome_modifiers = { target_sabotage_factor operation_risk }
 	risk_modifiers = { target_sabotage_risk operation_outcome }
@@ -2143,7 +2144,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 		
 	}
 	risk_chance = 0.2
-	experience = 4
+	experience = 2
 	outcome_extra_chance = 0.25
 	outcome_modifiers = { target_sabotage_factor operation_risk }
 	risk_modifiers = { target_sabotage_risk operation_outcome }
@@ -2275,7 +2276,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 		
 	}
 	risk_chance = 0.2
-	experience = 4
+	experience = 2
 	outcome_extra_chance = 0.25
 	outcome_modifiers = { target_sabotage_factor operation_outcome }
 	risk_modifiers = { target_sabotage_risk operation_risk }
@@ -2395,7 +2396,7 @@ operation_steal_tech_army = { ### 16 3/55
 		token_army
 	}
 	risk_chance = 0.2
-	experience = 4
+	experience = 2
 	risk_modifiers = { operation_steal_tech_risk operation_risk }
 	outcome_extra_chance = 0.25
 	outcome_modifiers = { operation_steal_tech_outcome operation_outcome }
@@ -2407,7 +2408,7 @@ operation_steal_tech_army = { ### 16 3/55
 				folder = artillery_folder
 				folder = infantry_folder
 				folder = support_folder
-				bonus = 0.75
+				bonus = 3.0
 				dynamic = yes
 				instant = yes
 				name = operation_steal_tech_army
@@ -2430,8 +2431,8 @@ operation_steal_tech_army = { ### 16 3/55
 						folder = infantry_folder
 						folder = support_folder
 
-						bonus = 0.75
-						ahead_reduction = 0.5
+						bonus = 3.0
+						ahead_reduction = 2
 						dynamic = yes
 						instant = yes
 						name = operation_steal_tech_army
@@ -2448,10 +2449,10 @@ operation_steal_tech_army = { ### 16 3/55
 						folder = infantry_folder
 						folder = support_folder
 
-						bonus = 0.5
+						bonus = 3.0
 						dynamic = yes
 						instant = yes
-						ahead_reduction = 0.5
+						ahead_reduction = 1
 						name = operation_steal_tech_army
 						target = FROM
 						uses = 1
@@ -2468,7 +2469,7 @@ operation_steal_tech_army = { ### 16 3/55
 				folder = artillery_folder
 				folder = infantry_folder
 				folder = support_folder
-				bonus = 0.75
+				bonus = 3.0
 				dynamic = yes
 				instant = yes
 				name = operation_steal_tech_army
@@ -2565,7 +2566,7 @@ operation_steal_tech_navy = { ### 17 3/55
 		token_navy
 	}
 	risk_chance = 0.2
-	experience = 4
+	experience = 2
 	outcome_extra_chance = 0.25
 	risk_modifiers = { operation_steal_tech_risk operation_risk }
 	outcome_modifiers = { operation_steal_tech_outcome operation_outcome }
@@ -2577,7 +2578,8 @@ operation_steal_tech_navy = { ### 17 3/55
   			ROOT = {
 				steal_random_tech_bonus = {
 					folder = mtgnavalfolder
-					bonus = 0.75
+
+					bonus = 3.0
 					dynamic = yes
 					instant = yes
 					name = operation_steal_tech_navy
@@ -2594,7 +2596,8 @@ operation_steal_tech_navy = { ### 17 3/55
 	  		ROOT = {
 				steal_random_tech_bonus = {
 					folder = naval_folder
-					bonus = 0.75
+
+					bonus = 3.0
 					dynamic = yes
 					instant = yes
 					name = operation_steal_tech_navy
@@ -2619,8 +2622,9 @@ operation_steal_tech_navy = { ### 17 3/55
   					ROOT = {
 						steal_random_tech_bonus = {
 							folder = mtgnavalfolder
-							bonus = 0.75
-							ahead_reduction = 0.5
+
+							bonus = 3.0
+							ahead_reduction = 2
 							dynamic = yes
 							instant = yes
 							name = operation_steal_tech_navy
@@ -2633,8 +2637,9 @@ operation_steal_tech_navy = { ### 17 3/55
 					ROOT = {
 						steal_random_tech_bonus = {
 							folder = naval_folder
-							bonus = 0.75
-							ahead_reduction = 0.5
+
+							bonus = 3.0
+							ahead_reduction = 2
 							dynamic = yes
 							instant = yes
 							name = operation_steal_tech_navy
@@ -2651,8 +2656,9 @@ operation_steal_tech_navy = { ### 17 3/55
 					ROOT = {
 						steal_random_tech_bonus = {
 							folder = mtgnavalfolder
-							bonus = 0.75
-							ahead_reduction = 0.5
+
+							bonus = 3.0
+							ahead_reduction = 1
 							dynamic = yes
 							instant = yes
 							name = operation_steal_tech_navy
@@ -2665,8 +2671,9 @@ operation_steal_tech_navy = { ### 17 3/55
 					ROOT = {
 						steal_random_tech_bonus = {
 							folder = naval_folder
-							bonus = 0.75
-							ahead_reduction = 0.5
+
+							bonus = 3.0
+							ahead_reduction = 1
 							dynamic = yes
 							instant = yes
 							name = operation_steal_tech_navy
@@ -2684,7 +2691,7 @@ operation_steal_tech_navy = { ### 17 3/55
 				folder = naval_folder
 				folder = mtgnavalfolder
 
-				bonus = 0.75
+				bonus = 3.0
 				dynamic = yes
 				instant = yes
 				name = operation_steal_tech_navy
@@ -2781,7 +2788,7 @@ operation_steal_tech_airforce = { ### 18 3/55
 		token_airforce
 	}
 	risk_chance = 0.2
-	experience = 4
+	experience = 2
 	outcome_extra_chance = 0.25
 	risk_modifiers = { operation_steal_tech_risk operation_risk }	
 	outcome_modifiers = { operation_steal_tech_outcome operation_outcome }
@@ -2790,7 +2797,7 @@ operation_steal_tech_airforce = { ### 18 3/55
 		ROOT = {
 			steal_random_tech_bonus = {
 				folder = air_techs_folder
-				bonus = 0.75
+				bonus = 3.0
 				dynamic = yes
 				instant = yes
 				name = operation_steal_tech_airforce
@@ -2809,8 +2816,8 @@ operation_steal_tech_airforce = { ### 18 3/55
 				ROOT = {
 					steal_random_tech_bonus = {
 						folder = air_techs_folder
-						bonus = 0.75
-						ahead_reduction = 0.5
+						bonus = 3.0
+						ahead_reduction = 2
 						dynamic = yes
 						instant = yes
 						name = operation_steal_tech_airforce
@@ -2823,8 +2830,8 @@ operation_steal_tech_airforce = { ### 18 3/55
 				ROOT = {
 					steal_random_tech_bonus = {
 						folder = air_techs_folder
-						bonus = 0.75
-						ahead_reduction = 0.5
+						bonus = 3.0
+						ahead_reduction = 1
 						dynamic = yes
 						instant = yes
 						name = operation_steal_tech_airforce
@@ -2840,7 +2847,7 @@ operation_steal_tech_airforce = { ### 18 3/55
 		ROOT = {
 			steal_random_tech_bonus = {
 				folder = air_techs_folder
-				bonus = 0.75
+				bonus = 3.0
 				dynamic = yes
 				instant = yes
 				name = operation_steal_tech_airforce

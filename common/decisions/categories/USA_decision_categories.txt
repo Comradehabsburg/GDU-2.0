@@ -30,21 +30,54 @@ USA_foreign_support = {
 	}
 	visible = {
 		OR = {
-			always = no
+			has_completed_focus = USA_invite_foreign_support
 			tag = CSA
 		}
 	}
 }
+USA_north_peace = {
 
-USA_congress = {
-	icon = usa_congress
+	icon = category_hol_war_on_pacifism
+	
 	allowed = {
 		original_tag = USA
 	}
+	scripted_gui = usa_peace_maker_ui
+	priority = 75
 
+}
+
+USA_1864_campaign = {
+
+	icon = category_hol_war_on_pacifism
+	
+	picture = GFX_decision_category_us_election
+	
+	scripted_gui = usa_election_gui
+	
+	priority = 1500
+
+}
+
+USA_1864_campaigning = {
+
+	icon = category_hol_war_on_pacifism
+
+	priority = 1250
+
+}
+
+USA_congress = {
+	icon = usa_congress
+	
+	picture = GFX_mtg_usa_congress
+	
+	allowed = {
+		original_tag = USA
+	}
 	scripted_gui = usa_congress_decision_ui	
 
-	priority = 85
+	priority = 1000
 }
 USA_war_plans = {
 	allowed = {
@@ -60,7 +93,11 @@ USA_intervention_mandate = {
 		original_tag = USA
 	}
 	visible = {
-		has_completed_focus = USA_reinforce_monroe_doctrine
+		OR = {
+			has_completed_focus = USA_focus_on_europe
+			has_completed_focus = USA_focus_on_asia
+			has_completed_focus = USA_reinforce_monroe_doctrine
+		}
 	}
 }
 USA_honor_the_confederacy = {
@@ -73,7 +110,7 @@ USA_honor_the_confederacy = {
 	}
 	visible = {
 		OR = {
-			always = no
+			has_completed_focus = USA_honor_the_confederacy
 			original_tag = CSA #for civil war in communist path. CSA shouldn't get focus tree
 			has_government = fascism
 		}
@@ -84,28 +121,6 @@ USA_decolonisation = {
 		original_tag = USA
 	}
 	visible = {
-		always = no
-	}
-}
-
-USA_special_research = {
-	
-	allowed = {
-		original_tag = USA
-	}
-}
-
-USA_propaganda_campaigns = {
-	priority = 100
-
-	icon = SOV_propaganda
-
-	scripted_gui = usa_propaganda_campaigns_ui
-
-	allowed = {
-		original_tag = USA
-	}
-
-	visible = {
+		has_completed_focus = USA_pacific_decolonisation
 	}
 }
