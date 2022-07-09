@@ -1,3 +1,9 @@
+version="1"
+tags={
+	"Ideologies"
+}
+name="civilwarMP"
+supported_version="1.11.12"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/units"
@@ -33,11 +39,3 @@ replace_path="common/units/terrain"
 replace_path="gfx/flags"
 replace_path="events"
 replace_path="music"
-supported_version="1.11.x"
-path="C:\Users\Jovan\Documents\Paradox Interactive\Hearts of Iron IV\mod\funnymodmp\GDU-2.0"
-remote_file_id="2663179643"
-version="1.11.4"
-tags={
-	"Balance"
-}
-name="funnymodmp"
