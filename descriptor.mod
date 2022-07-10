@@ -3,7 +3,6 @@ tags={
 	"Ideologies"
 }
 name="civilwarMP"
-supported_version="1.11.12"
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/units"
@@ -39,3 +38,5 @@ replace_path="common/units/terrain"
 replace_path="gfx/flags"
 replace_path="events"
 replace_path="music"
+supported_version="1.11.12"
+remote_file_id="2833094450"
