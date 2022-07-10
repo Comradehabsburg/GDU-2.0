@@ -1524,7 +1524,7 @@ id = usa_focus
 		icon = GFX_goal_generic_neutrality_focus
 		x = 23
 		y = 2
-		cost = 5
+		cost = 1
 		prerequisite = {
 		focus = USA_slavery_in_border
 		}
@@ -1532,11 +1532,12 @@ id = usa_focus
 			has_country_leader = {ruling_only = yes character = USA_abraham_lincoln }
 			OR={controls_state = 58 controls_state = 37}
 			date > 1861.8.6
-			CSA = {
-			surrender_progress > 0.1
-			}
 		}
 		completion_reward = {
+		swap_ideas = {
+			remove_idea = partial_economic_mobilisation 
+			add_idea = war_economy
+		}
 		custom_effect_tooltip = act_of_congress
 		unlock_decision_tooltip = USA_confiscation_act_1861_congress
 		}
@@ -1546,19 +1547,21 @@ id = usa_focus
 		icon = GFX_goal_generic_political_pressure
 		x = 23
 		y = 3
-		cost = 5
+		cost = 1
 		prerequisite = {
 		focus = USA_confiscation_act_1861
 		}
 		available = {
-		CSA = {
-			surrender_progress > 0.1
-			}
+
 			has_country_leader = {ruling_only = yes character = USA_abraham_lincoln }
 			OR={controls_state = 58 controls_state = 37}
-			date > 1861.8.6
+			date > 1862.8.6
 		}
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = war_economy
+				add_idea = tot_economic_mobilisation
+			}
 		custom_effect_tooltip = act_of_congress
 		unlock_decision_tooltip = USA_confiscation_act_1862_congress
 		}
