@@ -501,8 +501,10 @@ CSN_raiders= {
 			stability_factor = -0.1
 			communism_drift = 0.02
 			democratic_drift = 0.1
-			consumer_goods_factor = -0.08
-			production_factory_max_efficiency_factor = 0.1
+			consumer_goods_factor = -0.01
+			production_factory_max_efficiency_factor = 0.25
+			industrial_capacity_factory = 1
+			production_factory_efficiency_gain_factor = 0.50
 			}
 		}
 		american_slavery_reformed = {
