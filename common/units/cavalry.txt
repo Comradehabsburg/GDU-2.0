@@ -37,8 +37,8 @@ sub_units = {
 		weight = 0.5
 		casualty_trickleback = 0.03
 		supply_consumption = 0.35
-		soft_attack = 2
-		breakthrough = 16
+		soft_attack = 1.75
+		breakthrough = 20
 		defence = 0.5
 
 		#Offensive Abilities
