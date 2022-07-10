@@ -603,8 +603,8 @@ NMilitary = {
 	WAR_SCORE_AIR_WORTH_CAP = 1000,				-- the warscore limit we get from strategic bombing
 	WAR_SCORE_AIR_MONTHLY_FALLOFF = 10,			-- how much the warscore we got from the strategic bombing falls off every month.
 
-	CORPS_COMMANDER_DIVISIONS_CAP = 24,			-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
-	DIVISION_SIZE_FOR_XP = 8,                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff
+	CORPS_COMMANDER_DIVISIONS_CAP = 36,			-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+	DIVISION_SIZE_FOR_XP = 2,                   -- how many battalions should a division have to count as a full divisions when calculating XP stuff
 	CORPS_COMMANDER_ARMIES_CAP = -1,			-- how many armies a corps commander is limited to. 0 = inf, < 0 = blocked
 	FIELD_MARSHAL_DIVISIONS_CAP = 24,			-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
 	FIELD_MARSHAL_ARMIES_CAP = 5,				-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
@@ -613,18 +613,18 @@ NMilitary = {
 
 	RECON_SKILL_IMPACT = 5, -- how many skillpoints is a recon advantage worth when picking a tactic.
 
-	MAX_DIVISION_BRIGADE_WIDTH = 5,			-- Max width of regiments in division designer.
+	MAX_DIVISION_BRIGADE_WIDTH = 2,			-- Max width of regiments in division designer.
 	MAX_DIVISION_BRIGADE_HEIGHT = 5,		-- Max height of regiments in division designer.
 	MAX_DIVISION_SUPPORT_WIDTH = 1,			-- Max width of support in division designer.
 	MAX_DIVISION_SUPPORT_HEIGHT = 5,		-- Max height of support in division designer.
 
-	BASE_DIVISION_BRIGADE_GROUP_COST = 20, 	--Base cost to unlock a regiment slot,
-	BASE_DIVISION_BRIGADE_CHANGE_COST = 5,	--Base cost to change a regiment column.
-	BASE_DIVISION_SUPPORT_SLOT_COST = 10, 	--Base cost to unlock a support slot
+	BASE_DIVISION_BRIGADE_GROUP_COST = 0, 	--Base cost to unlock a regiment slot,
+	BASE_DIVISION_BRIGADE_CHANGE_COST = 0,	--Base cost to change a regiment column.
+	BASE_DIVISION_SUPPORT_SLOT_COST = 0, 	--Base cost to unlock a support slot
 
-	MAX_ARMY_EXPERIENCE = 500,			--Max army experience a country can store
-	MAX_NAVY_EXPERIENCE = 500,			--Max navy experience a country can store
-	MAX_AIR_EXPERIENCE = 500,				--Max air experience a country can store
+	MAX_ARMY_EXPERIENCE = 999,			--Max army experience a country can store
+	MAX_NAVY_EXPERIENCE = 999,			--Max navy experience a country can store
+	MAX_AIR_EXPERIENCE = 999,				--Max air experience a country can store
 
 	COMBAT_MINIMUM_TIME = 4,			-- Shortest time possible for a combat in hours
 	SPOTTING_QUALITY_DROP_HOURS = 4, 	-- Each X hours the intel quality drops after unit was spotted.
