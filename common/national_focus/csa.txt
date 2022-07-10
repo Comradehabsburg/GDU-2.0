@@ -123,9 +123,16 @@ id = csa_focus
 		}
 		add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 1500
+    amount = 75
     producer = USA
 		}
+		
+		
+		add_equipment_to_stockpile = {
+			type = train_equipment_1
+			amount = 1500
+			producer = USA
+				}
 		add_equipment_to_stockpile = {
     type = artillery_equipment 
     amount = 48
