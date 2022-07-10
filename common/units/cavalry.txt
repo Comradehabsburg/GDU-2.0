@@ -37,8 +37,8 @@ sub_units = {
 		weight = 0.5
 		casualty_trickleback = 0.03
 		supply_consumption = 0.35
-		soft_attack = 4
-		breakthrough = 8
+		soft_attack = 2
+		breakthrough = 16
 		defence = 0.5
 
 		#Offensive Abilities
@@ -48,7 +48,7 @@ sub_units = {
 			horse_mules
 		}
 		need = {
-			infantry_equipment = 2500
+			infantry_equipment = 300
 			horse_mules = 200
 		}
 
