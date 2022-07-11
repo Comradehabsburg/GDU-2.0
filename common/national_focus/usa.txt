@@ -105,6 +105,39 @@ id = usa_focus
 			custom_effect_tooltip = sumter_anderson
 		}
 	}
+
+	focus = {
+		id = USA_McClellan's_Campaign
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 2
+		y = 3
+		cost = 100
+		continue_if_invalid = yes
+		prerequisite = {
+		focus = USA_sumter_things
+		}
+		available = {
+			OR = {
+				controls_state = 64
+				AND = {
+					controls_state = 24
+					controls_state = 34 
+				}
+				
+				AND = {
+					controls_state = 65
+					controls_state = 56
+					controls_province = 1637
+				}
+				
+				
+						}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = USA_McClellan
+		}
+	}
 	#Abe Lincoln fouces
 	focus = {
 		id = USA_first_address

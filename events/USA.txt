@@ -1743,7 +1743,176 @@ country_event = {
 
 #set_variable of character
 country_event = {
- id = usa.18642
+	id = usa.1864201
+	title = usa.18642.t
+	desc = usa.18642.d
+	picture = GFX_report_event_german_parade_paris
+	mean_time_to_happen = { days = 1 } 
+	
+	trigger = {
+		OR = {
+controls_state = 64
+AND = {
+	controls_state = 24
+	controls_state = 34 
+}
+
+AND = {
+	controls_state = 65
+	controls_state = 56
+	controls_province = 1637
+}
+
+
+		}
+
+
+
+	   has_character = USA_abraham_lincoln
+	   has_character = USA_GEORGE_McClellan
+	   date > 1863.12.30
+	   country_exists = CSA
+
+	   }
+	   
+	   fire_only_once = yes
+	   
+	   option = {
+	   name = usa.1864201.a
+	   ai_chance = { 
+	   factor = 1 
+	   modifier = {
+			   factor = 2
+			   CSA = {
+			   surrender_progress > 0.33
+			   }
+		   }
+	   modifier = {
+			   factor = 5
+			   OR = {
+				   has_completed_focus = USA_emancipation_proclamation
+				   has_idea = reserved_emancipation_proclamation
+				   }
+		   }
+				   modifier = {
+		   factor = 5
+		   casualties_k > 100
+		   }
+		   modifier = {
+		   factor = 4
+		   casualties_k > 200
+		   }
+		   modifier = {
+		   factor = 3
+		   casualties_k > 300
+		   }
+		   modifier = {
+		   factor = 2
+		   casualties_k > 400
+		   }
+		   modifier = {
+		   factor = 1
+		   casualties_k > 500
+		   }
+	   }
+	   every_country = {
+	   set_global_flag = CM_SE_opened
+	   clear_array = CM_SE_event_id_array
+	   add_to_array = { CM_SE_event_id_array = 6 }	
+	   play_song = Abraham_Our_Abraham
+	   }
+	   custom_effect_tooltip = lincoln_1864_campaign
+	   add_political_power = 100
+	   set_variable = { var = usa.sponsor_numbers value = 0 }
+	   set_variable = { var = usa.supporters_numbers value = 0 }
+	   set_country_flag = support_lincoln
+	   set_country_flag = 1864_campaign_start
+	   unlock_decision_category_tooltip = USA_1864_campaign
+		#TotalMembers of electoral college
+		set_variable = { var = usa.MA_votes value = 12 }
+		set_variable = { var = usa.CT_votes value = 6 }
+		set_variable = { var = usa.VT_votes value = 5 }
+		set_variable = { var = usa.NH_votes value = 5 }
+		set_variable = { var = usa.RI_votes value = 4 }
+		set_variable = { var = usa.Maine_votes value = 7 }
+		set_variable = { var = usa.NY_votes value = 33 }
+		set_variable = { var = usa.PE_votes value = 26 }
+		set_variable = { var = usa.NJ_votes value = 7 }
+		set_variable = { var = usa.DE_votes value = 3 }
+		set_variable = { var = usa.MD_votes value = 7 }
+		set_variable = { var = usa.OH_votes value = 21 }
+		set_variable = { var = usa.MI_votes value = 8 }
+		set_variable = { var = usa.IN_votes value = 13 }
+		set_variable = { var = usa.IL_votes value = 16 }
+		set_variable = { var = usa.WS_votes value = 8 }
+		set_variable = { var = usa.MN_votes value = 4 }
+		set_variable = { var = usa.IO_votes value = 8 }
+		set_variable = { var = usa.KA_votes value = 3 }
+		set_variable = { var = usa.CA_votes value = 5 }
+		set_variable = { var = usa.OR_votes value = 3 }
+		set_variable = { var = usa.MO_votes value = 11 }
+		set_variable = { var = usa.KY_votes value = 11 }
+		#Vote Pool
+		set_variable = { var = usa.republican_votes_pool value = 0 }
+		set_variable = { var = usa.democrats_votes_pool value = 0 }
+		#Lincoln
+		set_variable = { var = 27.lincoln_support value = 1 }
+		set_variable = { var = 45.lincoln_support value = 1 }
+		set_variable = { var = 71.lincoln_support value = 1 }
+		set_variable = { var = 35.lincoln_support value = 1 }
+		set_variable = { var = 43.lincoln_support value = 1 }
+		set_variable = { var = 30.lincoln_support value = 1 }
+		set_variable = { var = 37.lincoln_support value = 1 }
+		set_variable = { var = 48.lincoln_support value = 1 }
+		set_variable = { var = 50.lincoln_support value = 1 }
+		set_variable = { var = 69.lincoln_support value = 1 }
+		set_variable = { var = 58.lincoln_support value = 1 }
+		set_variable = { var = 67.lincoln_support value = 1 }
+		set_variable = { var = 60.lincoln_support value = 1 }
+		set_variable = { var = 81.lincoln_support value = 1 }
+		set_variable = { var = 53.lincoln_support value = 1 }
+		set_variable = { var = 55.lincoln_support value = 1 }
+		set_variable = { var = 51.lincoln_support value = 1 }
+		set_variable = { var = 40.lincoln_support value = 1 }
+		set_variable = { var = 42.lincoln_support value = 1 }
+		set_variable = { var = 32.lincoln_support value = 1 }
+		set_variable = { var = 52.lincoln_support value = 1 }
+		set_variable = { var = 70.lincoln_support value = 1 }
+		set_variable = { var = 54.lincoln_support value = 1 }
+		set_variable = { var = 41.lincoln_support value = 1 }
+		set_variable = { var = 59.lincoln_support value = 1 }
+		#MCC
+		set_variable = { var = 27.mcclellan_support value = 1 }
+		set_variable = { var = 45.mcclellan_support value = 1 }
+		set_variable = { var = 71.mcclellan_support value = 1 }
+		set_variable = { var = 35.mcclellan_support value = 1 }
+		set_variable = { var = 43.mcclellan_support value = 1 }
+		set_variable = { var = 30.mcclellan_support value = 1 }
+		set_variable = { var = 37.mcclellan_support value = 1 }
+		set_variable = { var = 48.mcclellan_support value = 1 }
+		set_variable = { var = 50.mcclellan_support value = 1 }
+		set_variable = { var = 69.mcclellan_support value = 1 }
+		set_variable = { var = 58.mcclellan_support value = 1 }
+		set_variable = { var = 67.mcclellan_support value = 1 }
+		set_variable = { var = 60.mcclellan_support value = 1 }
+		set_variable = { var = 81.mcclellan_support value = 1 }
+		set_variable = { var = 53.mcclellan_support value = 1 }
+		set_variable = { var = 55.mcclellan_support value = 1 }
+		set_variable = { var = 51.mcclellan_support value = 1 }
+		set_variable = { var = 40.mcclellan_support value = 1 }
+		set_variable = { var = 42.mcclellan_support value = 1 }
+		set_variable = { var = 32.mcclellan_support value = 1 }
+		set_variable = { var = 52.mcclellan_support value = 1 }
+		set_variable = { var = 70.mcclellan_support value = 1 }
+		set_variable = { var = 54.mcclellan_support value = 1 }
+		set_variable = { var = 41.mcclellan_support value = 1 }
+		set_variable = { var = 59.mcclellan_support value = 1 }
+	   } 
+	
+   }
+
+country_event = {
+ id = usa.1864202
  title = usa.18642.t
  desc = usa.18642.d
  picture = GFX_report_event_german_parade_paris
@@ -1754,274 +1923,163 @@ country_event = {
 	has_character = USA_GEORGE_McClellan
 	date > 1863.12.30
 	country_exists = CSA
+
+NOT = {
+
+	OR = {
+		controls_state = 64
+		AND = {
+			controls_state = 24
+			controls_state = 34 
+		}
+		
+		AND = {
+			controls_state = 65
+			controls_state = 56
+			controls_province = 1637
+		}
+		
+		
+				}
+}
 	}
 	
 	fire_only_once = yes
 	
 	option = {
-	name = usa.18642.a
-	ai_chance = { 
-	factor = 1 
-	modifier = {
-			factor = 2
-			CSA = {
-			surrender_progress > 0.33
+		name = usa.1864202.a
+		ai_chance = { 
+		factor = 1 
+			modifier = {
+				factor = 2
+				CSA = {
+				surrender_progress < 0.33
+				}
 			}
-		}
-	modifier = {
+			modifier = {
 			factor = 5
-			OR = {
-				has_completed_focus = USA_emancipation_proclamation
-				has_idea = reserved_emancipation_proclamation
+			NOT = {
+				OR = {
+					has_completed_focus = USA_emancipation_proclamation
+					has_idea = reserved_emancipation_proclamation
+					}
 				}
-		}
-				modifier = {
-		factor = 5
-		casualties_k > 100
-		}
-		modifier = {
-		factor = 4
-		casualties_k > 200
-		}
-		modifier = {
-		factor = 3
-		casualties_k > 300
-		}
-		modifier = {
-		factor = 2
-		casualties_k > 400
-		}
-		modifier = {
-		factor = 1
-		casualties_k > 500
-		}
-	}
-	every_country = {
-	set_global_flag = CM_SE_opened
-	clear_array = CM_SE_event_id_array
-	add_to_array = { CM_SE_event_id_array = 6 }	
-	play_song = Abraham_Our_Abraham
-	}
-	custom_effect_tooltip = lincoln_1864_campaign
-	add_political_power = 100
-	set_variable = { var = usa.sponsor_numbers value = 0 }
-	set_variable = { var = usa.supporters_numbers value = 0 }
-	set_country_flag = support_lincoln
-	set_country_flag = 1864_campaign_start
-	unlock_decision_category_tooltip = USA_1864_campaign
-	 #TotalMembers of electoral college
-	 set_variable = { var = usa.MA_votes value = 12 }
-	 set_variable = { var = usa.CT_votes value = 6 }
-	 set_variable = { var = usa.VT_votes value = 5 }
-	 set_variable = { var = usa.NH_votes value = 5 }
-	 set_variable = { var = usa.RI_votes value = 4 }
-	 set_variable = { var = usa.Maine_votes value = 7 }
-	 set_variable = { var = usa.NY_votes value = 33 }
-	 set_variable = { var = usa.PE_votes value = 26 }
-	 set_variable = { var = usa.NJ_votes value = 7 }
-	 set_variable = { var = usa.DE_votes value = 3 }
-	 set_variable = { var = usa.MD_votes value = 7 }
-	 set_variable = { var = usa.OH_votes value = 21 }
-	 set_variable = { var = usa.MI_votes value = 8 }
-	 set_variable = { var = usa.IN_votes value = 13 }
-	 set_variable = { var = usa.IL_votes value = 16 }
-	 set_variable = { var = usa.WS_votes value = 8 }
-	 set_variable = { var = usa.MN_votes value = 4 }
-	 set_variable = { var = usa.IO_votes value = 8 }
-	 set_variable = { var = usa.KA_votes value = 3 }
-	 set_variable = { var = usa.CA_votes value = 5 }
-	 set_variable = { var = usa.OR_votes value = 3 }
-	 set_variable = { var = usa.MO_votes value = 11 }
-	 set_variable = { var = usa.KY_votes value = 11 }
-	 #Vote Pool
-	 set_variable = { var = usa.republican_votes_pool value = 0 }
-	 set_variable = { var = usa.democrats_votes_pool value = 0 }
-	 #Lincoln
-	 set_variable = { var = 27.lincoln_support value = 1 }
-	 set_variable = { var = 45.lincoln_support value = 1 }
-	 set_variable = { var = 71.lincoln_support value = 1 }
-	 set_variable = { var = 35.lincoln_support value = 1 }
-	 set_variable = { var = 43.lincoln_support value = 1 }
-	 set_variable = { var = 30.lincoln_support value = 1 }
-	 set_variable = { var = 37.lincoln_support value = 1 }
-	 set_variable = { var = 48.lincoln_support value = 1 }
-	 set_variable = { var = 50.lincoln_support value = 1 }
-	 set_variable = { var = 69.lincoln_support value = 1 }
-	 set_variable = { var = 58.lincoln_support value = 1 }
-	 set_variable = { var = 67.lincoln_support value = 1 }
-	 set_variable = { var = 60.lincoln_support value = 1 }
-	 set_variable = { var = 81.lincoln_support value = 1 }
-	 set_variable = { var = 53.lincoln_support value = 1 }
-	 set_variable = { var = 55.lincoln_support value = 1 }
-	 set_variable = { var = 51.lincoln_support value = 1 }
-	 set_variable = { var = 40.lincoln_support value = 1 }
-	 set_variable = { var = 42.lincoln_support value = 1 }
-	 set_variable = { var = 32.lincoln_support value = 1 }
-	 set_variable = { var = 52.lincoln_support value = 1 }
-	 set_variable = { var = 70.lincoln_support value = 1 }
-	 set_variable = { var = 54.lincoln_support value = 1 }
-	 set_variable = { var = 41.lincoln_support value = 1 }
-	 set_variable = { var = 59.lincoln_support value = 1 }
-	 #MCC
-	 set_variable = { var = 27.mcclellan_support value = 1 }
-	 set_variable = { var = 45.mcclellan_support value = 1 }
-	 set_variable = { var = 71.mcclellan_support value = 1 }
-	 set_variable = { var = 35.mcclellan_support value = 1 }
-	 set_variable = { var = 43.mcclellan_support value = 1 }
-	 set_variable = { var = 30.mcclellan_support value = 1 }
-	 set_variable = { var = 37.mcclellan_support value = 1 }
-	 set_variable = { var = 48.mcclellan_support value = 1 }
-	 set_variable = { var = 50.mcclellan_support value = 1 }
-	 set_variable = { var = 69.mcclellan_support value = 1 }
-	 set_variable = { var = 58.mcclellan_support value = 1 }
-	 set_variable = { var = 67.mcclellan_support value = 1 }
-	 set_variable = { var = 60.mcclellan_support value = 1 }
-	 set_variable = { var = 81.mcclellan_support value = 1 }
-	 set_variable = { var = 53.mcclellan_support value = 1 }
-	 set_variable = { var = 55.mcclellan_support value = 1 }
-	 set_variable = { var = 51.mcclellan_support value = 1 }
-	 set_variable = { var = 40.mcclellan_support value = 1 }
-	 set_variable = { var = 42.mcclellan_support value = 1 }
-	 set_variable = { var = 32.mcclellan_support value = 1 }
-	 set_variable = { var = 52.mcclellan_support value = 1 }
-	 set_variable = { var = 70.mcclellan_support value = 1 }
-	 set_variable = { var = 54.mcclellan_support value = 1 }
-	 set_variable = { var = 41.mcclellan_support value = 1 }
-	 set_variable = { var = 59.mcclellan_support value = 1 }
-	} 
-	option = {
-	name = usa.18642.b
-	ai_chance = { 
-	factor = 1 
-		modifier = {
+			}
+			modifier = {
+			factor = 1
+			casualties_k > 100
+			}
+			modifier = {
 			factor = 2
-			CSA = {
-			surrender_progress < 0.33
+			casualties_k > 200
+			}
+			modifier = {
+			factor = 3
+			casualties_k > 300
+			}
+			modifier = {
+			factor = 4
+			casualties_k > 400
+			}
+			modifier = {
+			factor = 5
+			casualties_k > 500
 			}
 		}
-		modifier = {
-		factor = 5
-		NOT = {
-			OR = {
-				has_completed_focus = USA_emancipation_proclamation
-				has_idea = reserved_emancipation_proclamation
-				}
-			}
+		custom_effect_tooltip = mcclellan_1864_campaign
+		add_political_power = 50
+		every_country = {
+		set_global_flag = CM_SE_opened
+		clear_array = CM_SE_event_id_array
+		add_to_array = { CM_SE_event_id_array = 5 }	
+		play_song = MTHOTN
 		}
-		modifier = {
-		factor = 1
-		casualties_k > 100
-		}
-		modifier = {
-		factor = 2
-		casualties_k > 200
-		}
-		modifier = {
-		factor = 3
-		casualties_k > 300
-		}
-		modifier = {
-		factor = 4
-		casualties_k > 400
-		}
-		modifier = {
-		factor = 5
-		casualties_k > 500
-		}
-	}
-	custom_effect_tooltip = mcclellan_1864_campaign
-	add_political_power = 50
-	every_country = {
-	set_global_flag = CM_SE_opened
-	clear_array = CM_SE_event_id_array
-	add_to_array = { CM_SE_event_id_array = 5 }	
-	play_song = MTHOTN
-	}
-	set_country_flag = support_mcclellan
-	set_country_flag = 1864_campaign_start
-	set_variable = { var = usa.sponsor_numbers value = 0 }
-	set_variable = { var = usa.supporters_numbers value = 0 }
-	unlock_decision_category_tooltip = USA_1864_campaign
-	 #TotalMembers of electoral college
-	 set_variable = { var = usa.MA_votes value = 12 }
-	 set_variable = { var = usa.CT_votes value = 6 }
-	 set_variable = { var = usa.VT_votes value = 5 }
-	 set_variable = { var = usa.NH_votes value = 5 }
-	 set_variable = { var = usa.RI_votes value = 4 }
-	 set_variable = { var = usa.Maine_votes value = 7 }
-	 set_variable = { var = usa.NY_votes value = 33 }
-	 set_variable = { var = usa.PE_votes value = 26 }
-	 set_variable = { var = usa.NJ_votes value = 7 }
-	 set_variable = { var = usa.DE_votes value = 3 }
-	 set_variable = { var = usa.MD_votes value = 7 }
-	 set_variable = { var = usa.OH_votes value = 21 }
-	 set_variable = { var = usa.MI_votes value = 8 }
-	 set_variable = { var = usa.IN_votes value = 13 }
-	 set_variable = { var = usa.IL_votes value = 16 }
-	 set_variable = { var = usa.WS_votes value = 8 }
-	 set_variable = { var = usa.MN_votes value = 4 }
-	 set_variable = { var = usa.IO_votes value = 8 }
-	 set_variable = { var = usa.KA_votes value = 3 }
-	 set_variable = { var = usa.CA_votes value = 5 }
-	 set_variable = { var = usa.OR_votes value = 3 }
-	 set_variable = { var = usa.MO_votes value = 11 }
-	 set_variable = { var = usa.KY_votes value = 11 }
-	 #Vote Pool
-	 set_variable = { var = usa.republican_votes_pool value = 0 }
-	 set_variable = { var = usa.democrats_votes_pool value = 0 }
-	 #Lincoln
-	 set_variable = { var = 27.lincoln_support value = 1 }
-	 set_variable = { var = 45.lincoln_support value = 1 }
-	 set_variable = { var = 71.lincoln_support value = 1 }
-	 set_variable = { var = 35.lincoln_support value = 1 }
-	 set_variable = { var = 43.lincoln_support value = 1 }
-	 set_variable = { var = 30.lincoln_support value = 1 }
-	 set_variable = { var = 37.lincoln_support value = 1 }
-	 set_variable = { var = 48.lincoln_support value = 1 }
-	 set_variable = { var = 50.lincoln_support value = 1 }
-	 set_variable = { var = 69.lincoln_support value = 1 }
-	 set_variable = { var = 58.lincoln_support value = 1 }
-	 set_variable = { var = 67.lincoln_support value = 1 }
-	 set_variable = { var = 60.lincoln_support value = 1 }
-	 set_variable = { var = 81.lincoln_support value = 1 }
-	 set_variable = { var = 53.lincoln_support value = 1 }
-	 set_variable = { var = 55.lincoln_support value = 1 }
-	 set_variable = { var = 51.lincoln_support value = 1 }
-	 set_variable = { var = 40.lincoln_support value = 1 }
-	 set_variable = { var = 42.lincoln_support value = 1 }
-	 set_variable = { var = 32.lincoln_support value = 1 }
-	 set_variable = { var = 52.lincoln_support value = 1 }
-	 set_variable = { var = 70.lincoln_support value = 1 }
-	 set_variable = { var = 54.lincoln_support value = 1 }
-	 set_variable = { var = 41.lincoln_support value = 1 }
-	 set_variable = { var = 59.lincoln_support value = 1 }
-	 #MCC
-	 set_variable = { var = 27.mcclellan_support value = 1 }
-	 set_variable = { var = 45.mcclellan_support value = 1 }
-	 set_variable = { var = 71.mcclellan_support value = 1 }
-	 set_variable = { var = 35.mcclellan_support value = 1 }
-	 set_variable = { var = 43.mcclellan_support value = 1 }
-	 set_variable = { var = 30.mcclellan_support value = 1 }
-	 set_variable = { var = 37.mcclellan_support value = 1 }
-	 set_variable = { var = 48.mcclellan_support value = 1 }
-	 set_variable = { var = 50.mcclellan_support value = 1 }
-	 set_variable = { var = 69.mcclellan_support value = 1 }
-	 set_variable = { var = 58.mcclellan_support value = 1 }
-	 set_variable = { var = 67.mcclellan_support value = 1 }
-	 set_variable = { var = 60.mcclellan_support value = 1 }
-	 set_variable = { var = 81.mcclellan_support value = 1 }
-	 set_variable = { var = 53.mcclellan_support value = 1 }
-	 set_variable = { var = 55.mcclellan_support value = 1 }
-	 set_variable = { var = 51.mcclellan_support value = 1 }
-	 set_variable = { var = 40.mcclellan_support value = 1 }
-	 set_variable = { var = 42.mcclellan_support value = 1 }
-	 set_variable = { var = 32.mcclellan_support value = 1 }
-	 set_variable = { var = 52.mcclellan_support value = 1 }
-	 set_variable = { var = 70.mcclellan_support value = 1 }
-	 set_variable = { var = 54.mcclellan_support value = 1 }
-	 set_variable = { var = 41.mcclellan_support value = 1 }
-	 set_variable = { var = 59.mcclellan_support value = 1 }
-	} 
+		set_country_flag = support_mcclellan
+		set_country_flag = 1864_campaign_start
+		set_variable = { var = usa.sponsor_numbers value = 0 }
+		set_variable = { var = usa.supporters_numbers value = 0 }
+		unlock_decision_category_tooltip = USA_1864_campaign
+		 #TotalMembers of electoral college
+		 set_variable = { var = usa.MA_votes value = 12 }
+		 set_variable = { var = usa.CT_votes value = 6 }
+		 set_variable = { var = usa.VT_votes value = 5 }
+		 set_variable = { var = usa.NH_votes value = 5 }
+		 set_variable = { var = usa.RI_votes value = 4 }
+		 set_variable = { var = usa.Maine_votes value = 7 }
+		 set_variable = { var = usa.NY_votes value = 33 }
+		 set_variable = { var = usa.PE_votes value = 26 }
+		 set_variable = { var = usa.NJ_votes value = 7 }
+		 set_variable = { var = usa.DE_votes value = 3 }
+		 set_variable = { var = usa.MD_votes value = 7 }
+		 set_variable = { var = usa.OH_votes value = 21 }
+		 set_variable = { var = usa.MI_votes value = 8 }
+		 set_variable = { var = usa.IN_votes value = 13 }
+		 set_variable = { var = usa.IL_votes value = 16 }
+		 set_variable = { var = usa.WS_votes value = 8 }
+		 set_variable = { var = usa.MN_votes value = 4 }
+		 set_variable = { var = usa.IO_votes value = 8 }
+		 set_variable = { var = usa.KA_votes value = 3 }
+		 set_variable = { var = usa.CA_votes value = 5 }
+		 set_variable = { var = usa.OR_votes value = 3 }
+		 set_variable = { var = usa.MO_votes value = 11 }
+		 set_variable = { var = usa.KY_votes value = 11 }
+		 #Vote Pool
+		 set_variable = { var = usa.republican_votes_pool value = 0 }
+		 set_variable = { var = usa.democrats_votes_pool value = 0 }
+		 #Lincoln
+		 set_variable = { var = 27.lincoln_support value = 1 }
+		 set_variable = { var = 45.lincoln_support value = 1 }
+		 set_variable = { var = 71.lincoln_support value = 1 }
+		 set_variable = { var = 35.lincoln_support value = 1 }
+		 set_variable = { var = 43.lincoln_support value = 1 }
+		 set_variable = { var = 30.lincoln_support value = 1 }
+		 set_variable = { var = 37.lincoln_support value = 1 }
+		 set_variable = { var = 48.lincoln_support value = 1 }
+		 set_variable = { var = 50.lincoln_support value = 1 }
+		 set_variable = { var = 69.lincoln_support value = 1 }
+		 set_variable = { var = 58.lincoln_support value = 1 }
+		 set_variable = { var = 67.lincoln_support value = 1 }
+		 set_variable = { var = 60.lincoln_support value = 1 }
+		 set_variable = { var = 81.lincoln_support value = 1 }
+		 set_variable = { var = 53.lincoln_support value = 1 }
+		 set_variable = { var = 55.lincoln_support value = 1 }
+		 set_variable = { var = 51.lincoln_support value = 1 }
+		 set_variable = { var = 40.lincoln_support value = 1 }
+		 set_variable = { var = 42.lincoln_support value = 1 }
+		 set_variable = { var = 32.lincoln_support value = 1 }
+		 set_variable = { var = 52.lincoln_support value = 1 }
+		 set_variable = { var = 70.lincoln_support value = 1 }
+		 set_variable = { var = 54.lincoln_support value = 1 }
+		 set_variable = { var = 41.lincoln_support value = 1 }
+		 set_variable = { var = 59.lincoln_support value = 1 }
+		 #MCC
+		 set_variable = { var = 27.mcclellan_support value = 1 }
+		 set_variable = { var = 45.mcclellan_support value = 1 }
+		 set_variable = { var = 71.mcclellan_support value = 1 }
+		 set_variable = { var = 35.mcclellan_support value = 1 }
+		 set_variable = { var = 43.mcclellan_support value = 1 }
+		 set_variable = { var = 30.mcclellan_support value = 1 }
+		 set_variable = { var = 37.mcclellan_support value = 1 }
+		 set_variable = { var = 48.mcclellan_support value = 1 }
+		 set_variable = { var = 50.mcclellan_support value = 1 }
+		 set_variable = { var = 69.mcclellan_support value = 1 }
+		 set_variable = { var = 58.mcclellan_support value = 1 }
+		 set_variable = { var = 67.mcclellan_support value = 1 }
+		 set_variable = { var = 60.mcclellan_support value = 1 }
+		 set_variable = { var = 81.mcclellan_support value = 1 }
+		 set_variable = { var = 53.mcclellan_support value = 1 }
+		 set_variable = { var = 55.mcclellan_support value = 1 }
+		 set_variable = { var = 51.mcclellan_support value = 1 }
+		 set_variable = { var = 40.mcclellan_support value = 1 }
+		 set_variable = { var = 42.mcclellan_support value = 1 }
+		 set_variable = { var = 32.mcclellan_support value = 1 }
+		 set_variable = { var = 52.mcclellan_support value = 1 }
+		 set_variable = { var = 70.mcclellan_support value = 1 }
+		 set_variable = { var = 54.mcclellan_support value = 1 }
+		 set_variable = { var = 41.mcclellan_support value = 1 }
+		 set_variable = { var = 59.mcclellan_support value = 1 }
+		} 
+
 }
 #great campaign-lincoln
 country_event = {
