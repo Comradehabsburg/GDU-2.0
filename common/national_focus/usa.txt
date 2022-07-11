@@ -1651,7 +1651,7 @@ id = usa_focus
 		icon = GFX_focus_border_state_slavery
 		x = 23
 		y = 1
-		cost = 5
+		cost = 1
 			prerequisite = {
 		focus = USA_slavery_in_usa
 		}
@@ -1829,7 +1829,7 @@ id = usa_focus
 		icon = GFX_focus_EMP
 		x = 25
 		y = 4
-		cost = 5
+		cost = 1
 		prerequisite = {
 		focus = USA_port_royal_experiment
 		}
@@ -2128,7 +2128,7 @@ id = usa_focus
 		icon = GFX_focus_slavery_in_native
 		x = 27
 		y = 1
-		cost = 5
+		cost = 1
 		prerequisite = {
 		focus = USA_slavery_in_usa
 		}
@@ -2146,7 +2146,7 @@ id = usa_focus
 		icon = GFX_focus_TUR_ratify_the_six_arrows
 		x = 27
 		y = 2
-		cost = 5
+		cost = 1
 		prerequisite = {
 		focus = USA_slavery_in_native
 		}
