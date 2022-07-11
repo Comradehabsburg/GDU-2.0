@@ -1727,6 +1727,7 @@ country_event = {
 
  option = {
 	name = usa.186534.a
+	complete_national_focus = USA_McClellan's_Campaign
 	add_political_power = 150
 	set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 	retire_character = USA_abraham_lincoln
@@ -1750,6 +1751,10 @@ country_event = {
 	mean_time_to_happen = { days = 1 } 
 	
 	trigger = {
+NOT = { 
+
+	has_completed_focus = USA_McClellan's_Campaign
+}
 		OR = {
 controls_state = 64
 AND = {
@@ -1823,6 +1828,7 @@ AND = {
 	   }
 	   custom_effect_tooltip = lincoln_1864_campaign
 	   add_political_power = 100
+	   complete_national_focus = USA_McClellan's_Campaign
 	   set_variable = { var = usa.sponsor_numbers value = 0 }
 	   set_variable = { var = usa.supporters_numbers value = 0 }
 	   set_country_flag = support_lincoln
@@ -1919,13 +1925,15 @@ country_event = {
  mean_time_to_happen = { days = 1 } 
  
  trigger = {
+	
 	has_character = USA_abraham_lincoln
 	has_character = USA_GEORGE_McClellan
 	date > 1863.12.30
 	country_exists = CSA
+	
 
 NOT = {
-
+	has_completed_focus = USA_McClellan's_Campaign
 	OR = {
 		controls_state = 64
 		AND = {
