@@ -23,7 +23,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Beriah Magoffin"
+	name = "Wigwom"
 	picture = "800px-Beriah_Magoffin_-_Brady-Handy.dds"
 	expire = "1865.5.1"
 	ideology = liberalism

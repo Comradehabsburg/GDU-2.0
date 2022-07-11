@@ -141,6 +141,16 @@ create_country_leader = {
 	}
 }
 			create_corps_commander = {
+				name = "Lord Fatass King of Freedom"
+				picture = "Lord_Fatass.dds"
+				traits = {     war_hero   }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
 				name = "Robert Anderson"
 				picture = "200px-Portrait_of_Maj._Robert_Anderson_(Brig._Gen._from_May_15,_1861),_officer_of_the_Federal_Army_LOC_cwpb.05635_(cropped).dds"
 				traits = {     war_hero   }
