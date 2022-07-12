@@ -123,3 +123,27 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "Sherman_Will March_to_the_Sea"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "Confederate_States_Dixies_Land"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "The_Battle_Cry_of_Freedom1"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
