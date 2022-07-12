@@ -1,5 +1,12 @@
 spriteTypes = {	
 
+	#Custom Polish
+	spriteType = {
+	name = "GFX_trait_polish"
+	texturefile = "gfx/interface/traits/personal/trait_polish.dds"
+	}
+	#Base Mod/Game
+
 	spriteType = {
 		name = "GFX_clip"
 		texturefile = "gfx/interface/clip.dds"

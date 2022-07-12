@@ -140,6 +140,7 @@ create_country_leader = {
 	traits = {
 	}
 }
+			#Custom
 			create_corps_commander = {
 				name = "Lord Fatass King of Freedom"
 				picture = "Lord_Fatass.dds"
@@ -150,6 +151,17 @@ create_country_leader = {
 				planning_skill = 2
 				logistics_skill = 3
 			}
+			create_corps_commander = {
+				name = "Włodzimierz Krzyżanowski"
+				picture = "Włodzimierz_Krzyżanowski.dds"
+				traits = {     polish   bearer_of_artillery   }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 1
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			#Base Mod
 			create_corps_commander = {
 				name = "Robert Anderson"
 				picture = "200px-Portrait_of_Maj._Robert_Anderson_(Brig._Gen._from_May_15,_1861),_officer_of_the_Federal_Army_LOC_cwpb.05635_(cropped).dds"

@@ -124,6 +124,7 @@ create_country_leader = {
 		
 	}
 }
+			#Custom
 			create_corps_commander = {
 				name = "Slavemasteryell"
 				picture = "Slavemasteryell.dds"
@@ -134,6 +135,17 @@ create_country_leader = {
 				planning_skill = 3
 				logistics_skill = 2
 			}
+			create_corps_commander = {
+				name = "Walerian Sulakowski"
+				picture = "Walerian_Sulakowski.dds"
+				traits = {   polish   infantry_officer   }
+				skill = 3
+				attack_skill = 1
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			#Base Mod
 			create_corps_commander = {
 				name = "James Longstreet"
 				id = 1949

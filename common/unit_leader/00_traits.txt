@@ -52,6 +52,16 @@
 #}
 leader_traits = {
 
+#Polish
+
+	polish = { 
+		type = personality_trait
+		
+		corps_commander_modifier = {
+			max_commander_army_size = -35
+		}
+	}
+
 	
 ##################################
 # Common Traits
