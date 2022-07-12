@@ -351,9 +351,15 @@
 			date > 1861.4.1
 		}
 		completion_reward = {
-		add_offsite_building = {
-		type = industrial_complex level = 60
-		}
+
+			71 = {
+				add_building_construction = {
+			type = industrial_complex
+			level = 8
+			instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 8
+				}
 		}
 	}
 	shared_focus   = {
@@ -375,10 +381,10 @@
 		37 = {
 		add_building_construction = {
     type = industrial_complex
-    level = 4
+    level = 8
     instant_build = yes
 		}
-		add_extra_state_shared_building_slots = 4
+		add_extra_state_shared_building_slots = 8
 		}
 		}
 	}
@@ -433,7 +439,7 @@
 		icon = GFX_goal_generic_construct_military
 		x = 35
 		y = 1
-		cost = 5
+		cost = 2
 			prerequisite = {
 		focus = USA_industry_civ
 		}
@@ -464,7 +470,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 35
 		y = 2
-		cost = 5
+		cost = 2
 		prerequisite = {
 		focus = USA_industry_fort
 		}
@@ -496,7 +502,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 37
 		y = 1
-		cost = 5
+		cost = 2
 			prerequisite = {
 		focus = USA_industry_civ
 		}
@@ -516,7 +522,7 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 37
 		y = 2
-		cost = 5
+		cost = 2
 		prerequisite = {
 		focus = USA_dockyard
 		}
