@@ -206,7 +206,7 @@ id = csa_focus
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 8
 		y = 3
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_civil_war
 		}
@@ -232,7 +232,7 @@ id = csa_focus
 		icon = GFX_focus_generic_manpower
 		x = 6
 		y = 3
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_civil_war
 		}
@@ -256,7 +256,7 @@ id = csa_focus
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		x = 10
 		y = 3
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_civil_war
 		}
@@ -302,7 +302,7 @@ id = csa_focus
 		icon = GFX_focus_csa_seal
 		x = 8
 		y = 4
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_regulars
 		focus = CSA_militia
@@ -324,7 +324,7 @@ id = csa_focus
 		icon = GFX_focus_choctaw_and_chickasaws_shine
 		x = 6
 		y = 5
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSWD
 		}
@@ -377,7 +377,7 @@ id = csa_focus
 		icon = GFX_focus_mexico
 		x = 6
 		y = 7
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_more_treaty_with_native
 		}
@@ -424,7 +424,7 @@ id = csa_focus
 		icon = GFX_focus_CSA_1862_Conscription_act
 		x = 4
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_import_Mexico_weapon
 		}
@@ -445,7 +445,7 @@ id = csa_focus
 		icon = GFX_focus_CSA_1862_Conscription_act_9_27
 		x = 6
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_import_Mexico_weapon
 		}
@@ -469,7 +469,7 @@ id = csa_focus
 		icon = GFX_focus_twenty_negro_law
 		x = 5
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_1862_Conscription_act_9_27
 		}
@@ -496,7 +496,7 @@ id = csa_focus
 		icon = GFX_goal_generic_position_armies
 		x = 10
 		y = 5
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSWD
 		}
@@ -516,7 +516,7 @@ id = csa_focus
 		icon = GFX_goal_generic_oil_refinery
 		x = 10
 		y = 6
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_Bureau_of_Engineers
 		}
@@ -536,7 +536,7 @@ id = csa_focus
 		icon = GFX_goal_generic_production2
 		x = 8
 		y = 5
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSWD
 		}
@@ -556,7 +556,7 @@ id = csa_focus
 		icon = GFX_focus_secret_rearmament
 		x = 8
 		y = 6
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CQGD
 		}
@@ -582,7 +582,7 @@ id = csa_focus
 		icon = GFX_focus_eng_the_sun_never_sets
 		x = 8
 		y = 7
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_Confederate_Home_Guard
 		}
@@ -628,7 +628,7 @@ id = csa_focus
 		icon = GFX_focus_POL_beck_ribbentrop
 		x = 8
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_import_england_weapon
 		}
@@ -657,7 +657,7 @@ id = csa_focus
 		icon = GFX_focus_CSMC
 		x = 8
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_PACS_recruit
 		}
@@ -677,7 +677,7 @@ id = csa_focus
 		icon = GFX_focus_CSA_1864_conscription
 		x = 8
 		y = 10
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSMC
 		}
@@ -706,7 +706,7 @@ id = csa_focus
 		icon = GFX_focus_local_weapon
 		x = 10
 		y = 7
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSLB
 		}
@@ -829,7 +829,7 @@ id = csa_focus
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 10
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_local_weapon_produce
 		}
@@ -849,7 +849,7 @@ id = csa_focus
 		icon = GFX_focus_spr_class_war
 		x = 11
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_Nitre_and_Mining_Bureau
 		}
@@ -873,7 +873,7 @@ id = csa_focus
 		icon = GFX_focus_csa_11_starsl
 		x = 3
 		y = 3
-		cost = 3
+		cost = 0
 		prerequisite = {
 		focus = CSA_civil_war
 		}
@@ -893,7 +893,7 @@ id = csa_focus
 		icon = GFX_focus_csa_13_stars
 		x = 2
 		y = 4
-		cost = 3
+		cost = 0
 		prerequisite = {
 		focus = CSA_11_stars
 		}
@@ -913,7 +913,7 @@ id = csa_focus
 		icon = GFX_focus_csa_white_flag
 		x = 4
 		y = 4
-		cost = 3
+		cost = 0
 		prerequisite = {
 		focus = CSA_11_stars
 		}
@@ -933,7 +933,7 @@ id = csa_focus
 		icon = GFX_focus_csa_blood
 		x = 3
 		y = 5
-		cost = 3
+		cost = 0
 		prerequisite = {
 		focus = CSA_13_stars
 		}
@@ -957,7 +957,7 @@ id = csa_focus
 		icon = GFX_focus_jeff
 		x = 15
 		y = 0
-		cost = 5
+		cost = 4
 		available = {
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
 			date > 1861.2.17
@@ -1057,7 +1057,7 @@ id = csa_focus
 		icon = GFX_goal_support_democracy
 		x = 14
 		y = 2
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_Dixie
 		focus = CSA_bonnie_blue_flag
@@ -1079,7 +1079,7 @@ id = csa_focus
 		icon = GFX_focus_spr_crush_the_revolution
 		x = 14
 		y = 3
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_constitution
 		}
@@ -1171,7 +1171,7 @@ id = csa_focus
 		icon = GFX_focus_spa_the_spanish_miracle
 		x = 13
 		y = 5
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_searching_for_weapon
 		}
@@ -1193,7 +1193,7 @@ id = csa_focus
 		icon = GFX_goal_generic_consumer_goods
 		x = 13
 		y = 6
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_offmap_company
 		}
@@ -1217,7 +1217,7 @@ id = csa_focus
 		icon = GFX_focus_csa_congress
 		x = 16
 		y = 2
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_Dixie
 		focus = CSA_bonnie_blue_flag
@@ -1243,7 +1243,7 @@ id = csa_focus
 		icon = GFX_focus_csa_congress
 		x = 16
 		y = 3
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_Provisional_Congress
 		}
@@ -1265,7 +1265,7 @@ id = csa_focus
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		x = 18
 		y = 3
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_Provisional_Congress
 		}
@@ -1305,7 +1305,7 @@ id = csa_focus
 		icon = GFX_goal_generic_military_sphere
 		x = 17
 		y = 5
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_confederate_secret_service
 		}
@@ -1373,7 +1373,7 @@ id = csa_focus
 		icon = GFX_focus_csa_congress
 		x = 15
 		y = 7
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_offmap_inplex
 		}
@@ -1397,7 +1397,7 @@ id = csa_focus
 		icon = GFX_focus_spr_no_pasaran
 		x = 15
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_2th_Congress
 		}
@@ -1417,7 +1417,7 @@ id = csa_focus
 		icon = GFX_focus_usa_voter_registration_act
 		x = 13
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_1864_Partisan_Ranger_Act
 		}
@@ -1441,7 +1441,7 @@ id = csa_focus
 		icon = GFX_goal_generic_CAS
 		x = 13
 		y = 10
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_1864_keep_slavery
 		}
@@ -1461,7 +1461,7 @@ id = csa_focus
 		icon = GFX_focus_generic_strike_at_democracy3
 		x = 15
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_1864_Partisan_Ranger_Act
 		}
@@ -1487,7 +1487,7 @@ id = csa_focus
 		icon = GFX_focus_csct
 		x = 15
 		y = 10
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_1864_consider_slavery
 		}
@@ -1673,7 +1673,7 @@ id = csa_focus
 		icon = GFX_focus_generic_africa_factory
 		x = 25
 		y = 0
-		cost = 5
+		cost = 4
 		available = {
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
 			date > 1861.7.10
@@ -1695,7 +1695,7 @@ id = csa_focus
 		icon = GFX_focus_POL_warsaw_main_station
 		x = 25
 		y = 1
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_industry_offshore_company
 		}
@@ -1722,7 +1722,7 @@ id = csa_focus
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 23
 		y = 0
-		cost = 5
+		cost = 4
 		available = {
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
 			date > 1861.7.10
@@ -1740,7 +1740,7 @@ id = csa_focus
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 23
 		y = 1
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_industry_offshore_arms
 		}
@@ -1765,7 +1765,7 @@ id = csa_focus
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 27
 		y = 0
-		cost = 5
+		cost = 4
 		available = {
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
 			date > 1861.7.10
@@ -1783,7 +1783,7 @@ id = csa_focus
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 27
 		y = 1
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_offshore_dockyard
 		}
@@ -1809,7 +1809,7 @@ id = csa_focus
 		icon = GFX_goal_generic_fortify_city
 		x = 25
 		y = 2
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_virginia_dockyard
 		}
@@ -1957,7 +1957,7 @@ id = csa_focus
 		icon = GFX_goal_generic_military_deal
 		x = 23
 		y = 4
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_fortress_at_southern_states
 		}
@@ -2048,7 +2048,7 @@ id = csa_focus
 		icon = GFX_focus_generic_little_entente
 		x = 25
 		y = 4
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_fortress_at_tennessee
 		}
@@ -2074,7 +2074,7 @@ id = csa_focus
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 27
 		y = 3
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_1862_industry
 		}
@@ -2101,7 +2101,7 @@ id = csa_focus
 		icon = GFX_goal_generic_build_tank
 		x = 27
 		y = 4
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_new_oreleans_port
 		}
@@ -2181,7 +2181,7 @@ id = csa_focus
 		icon = GFX_focus_generic_mine_warfare
 		x = 20
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSN
 		}
@@ -2205,7 +2205,7 @@ id = csa_focus
 		icon = GFX_focus_generic_mine_warfare
 		x = 20
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_mines
 		}
@@ -2229,7 +2229,7 @@ id = csa_focus
 		icon = GFX_goal_generic_navy_cruiser
 		x = 24
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSN
 		}
@@ -2250,7 +2250,7 @@ id = csa_focus
 		icon = GFX_goal_generic_navy_cruiser
 		x = 24
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_raiders
 		}
@@ -2380,7 +2380,7 @@ id = csa_focus
 		icon = GFX_goal_generic_navy_submarine
 		x = 22
 		y = 8
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_CSN
 		}
@@ -2415,7 +2415,7 @@ id = csa_focus
 		icon = GFX_goal_generic_navy_submarine
 		x = 22
 		y = 9
-		cost = 5
+		cost = 4
 		prerequisite = {
 		focus = CSA_submarines
 		}
