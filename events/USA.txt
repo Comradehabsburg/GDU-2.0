@@ -250,33 +250,12 @@ country_event = {
 	controls_state = 82
 	has_country_flag = Lincoln_elect
  }
- 
- 
- option = {
-	name = usa.999.a
-	ai_chance = { factor = 0 }
-	custom_effect_tooltip = usa_fort_sumter_abandon
-	SOC = {	transfer_state = 82 add_state_core = 82 	load_oob = fort_sumter_attack}
-	CSA = {
-	annex_country = {
-    target = SOC
-    transfer_troops = yes
-		}
-		
+	#should not allow the surrender of fort sumter anymore
+	option = {
+		name = usa.999.b
+		ai_chance = { factor = 1000 }
+		custom_effect_tooltip = usa_fort_sumter_hold
 	}
-		62 = {
-	set_demilitarized_zone = no
-	}
-	hidden_effect = {
-	add_stability = -0.2
-	add_war_support = -0.5
-	}
- }
-  option = {
-	name = usa.999.b
-	ai_chance = { factor = 1000 }
-	custom_effect_tooltip = usa_fort_sumter_hold
- }
 }
 
 #SC
@@ -748,7 +727,6 @@ country_event = {
 	}
 	}
  
- 
  option = {
 	name = usa.998.a
 	custom_effect_tooltip = USA_STAY_2
@@ -795,61 +773,8 @@ country_event = {
 	39 = {
 	set_demilitarized_zone = no
 	}
-		}
 	}
- option = {
-	name = usa.998.b
-	ai_chance = { factor = 0 }
-	ai_will_do = {
-  factor = 0
-  }
-	custom_effect_tooltip = USA_GO_CSA_2
-		CSA ={
-	add_threat = 10
-	}
-	every_country = {
-	set_global_flag = CM_SE_opened
-	clear_array = CM_SE_event_id_array
-	add_to_array = { CM_SE_event_id_array = 2 }	
-	play_song = VBS
-	}
-	set_country_flag = CIVIL_WAR
-	hidden_effect={
-	23 = {
-	set_demilitarized_zone = no
-	}
-	64 = {
-	set_demilitarized_zone = no
-	}
-	38 = {
-	set_demilitarized_zone = no
-	}
-	24 = {
-	set_demilitarized_zone = no
-	}
-	34 = {
-	set_demilitarized_zone = no
-	}
-	36 = {
-	set_demilitarized_zone = no
-	}
-	38 = {
-	set_demilitarized_zone = no
-	}
-	39 = {
-	set_demilitarized_zone = no
-	}
-	 	CSA = {
-		annex_country = {
-    target = SOC
-    transfer_troops = yes
-		}
-		add_state_core = 82
-		}
-		CSA = { change_tag_from = ROOT }
-		}
-	}
- }
+}
  
 #Robert Anderson Defend
 country_event = {
@@ -1486,24 +1411,12 @@ country_event = {
  
  fire_only_once = yes
  is_triggered_only = yes
- 
+ #Removed the option for the Union to switch to CSA through event
  option = {
 	name = usa.203.a
 	ai_chance = { factor = 100 }
 	custom_effect_tooltip = JEFF_LEAVE_USA
 
- }
- option = {
-	name = usa.203.b
-	ai_chance = { factor = 0 }
-	custom_effect_tooltip = JEFF_LEAVE_USA
- 	CSA = {
-	add_threat = 10
-	change_tag_from = ROOT
-	}
-	62 = {
-	set_demilitarized_zone = no
-	}
  }
 }
 #Andrew Johnson
