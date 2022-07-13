@@ -21,3 +21,11 @@ set_popularities = {
 	communism = 10
 	neutrality = 4
 }
+
+create_country_leader = {
+	name = "Vented's Puppet"
+	picture = "vented.dds"
+	expire = "1865.5.1"
+	ideology = liberalism
+	traits = {  rocket_scientist  silent_mule  baron_of_terror  war_profiteer  little_rocket_man  nuclear_enthusiast  anti_fascist_agent  the_council_on_the_management_of_turkish_debt  turkish_public_debt_administration }
+}

@@ -774,6 +774,7 @@ country_event = {
 	set_demilitarized_zone = no
 	}
 	}
+	}
 }
  
 #Robert Anderson Defend

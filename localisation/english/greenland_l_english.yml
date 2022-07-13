@@ -1,5 +1,8 @@
 ﻿l_english:
- CAN:0 "British Canada"
+ CAN:0 "Vented's Ice Kingdom"
+ CAN_democratic:0 "Vented's Ice Kingdom"
+ CAN_DEF:0 "Vented's Ice Kingdom"
+ CAN_ADJ:0 "Ventedanese""
  MEX:0 "Second Federal Republic of Mexico"
  CUB:0 "Cuba"
  VEN:0 "Venezuela"
