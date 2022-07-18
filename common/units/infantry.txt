@@ -37,7 +37,7 @@ sub_units = {
 		#Misc Abilities
 		training_time = 90
 		suppression = 1.5
-		weight = 0.5
+		weight = 0.8
 		
 		supply_consumption = 0.2
 		essential = {
@@ -77,12 +77,12 @@ sub_units = {
 		max_strength = 20
 		max_organisation = 40
 		default_morale = 0.25
-		manpower = 240
+		manpower = 200
 
 		#Misc Abilities
 		training_time = 60
 		suppression = 1.2
-		weight = 0.8
+		weight = 0.5
 		casualty_trickleback = 0.03
 		supply_consumption = 0.15
 		need = {
