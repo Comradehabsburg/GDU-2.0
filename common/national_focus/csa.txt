@@ -991,7 +991,7 @@ id = csa_focus
 		add_political_power = 50
 		add_ideas = CSA_popular_anthem
 		CSA = {
-		play_song = dixie
+		play_song = "Dixie's Land"
 		}
 		}
 	}
@@ -1019,7 +1019,7 @@ id = csa_focus
 		add_political_power = 50
 		add_ideas = CSA_popular_anthem
 		CSA = {
-		play_song = bonnie_blue_flag
+		play_song = "The Bonnie Blue Flag"
 		}
 		}
 	}
@@ -1047,7 +1047,7 @@ id = csa_focus
 		add_political_power = 50
 		add_ideas = CSA_popular_anthem
 		CSA = {
-		play_song = god_save_the_south
+		play_song = "God Save the South"
 		}
 		}
 	}

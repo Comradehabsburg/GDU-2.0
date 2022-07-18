@@ -1881,7 +1881,7 @@ id = usa_focus
 			set_global_flag = CM_SE_opened
 			clear_array = CM_SE_event_id_array
 			add_to_array = { CM_SE_event_id_array = 4 }	
-			play_song = father_abraham
+			play_song = "We Are Coming Father Abraham"
 			}
 		}
 	}
@@ -2054,25 +2054,25 @@ id = usa_focus
 			has_country_flag = events_trigger
 		}
 		completion_reward = {
-		custom_effect_tooltip = 13th_a_desc_congress
-		swap_ideas = {
-		remove_idea = emancipation_proclamation
-		add_idea = 13th_a
-		}
-		remove_ideas = border_slavery
-		remove_ideas = american_slavery_usa
-		add_popularity = {
-		ideology = democratic
-    popularity = 0.15
-		}
-		hidden_effect = {
-	every_country = {
-	set_global_flag = CM_SE_opened
-	clear_array = CM_SE_event_id_array
-	add_to_array = { CM_SE_event_id_array = 14 }	
-	play_song = battle_cry_of_freedom
+			custom_effect_tooltip = 13th_a_desc_congress
+			swap_ideas = {
+			remove_idea = emancipation_proclamation
+			add_idea = 13th_a
 			}
-		}
+			remove_ideas = border_slavery
+			remove_ideas = american_slavery_usa
+			add_popularity = {
+				ideology = democratic
+					popularity = 0.15
+			}
+			hidden_effect = {
+				every_country = {
+				set_global_flag = CM_SE_opened
+				clear_array = CM_SE_event_id_array
+				add_to_array = { CM_SE_event_id_array = 14 }	
+				play_song = "The Battle Cry of Freedom"
+				}
+			}
 		}
 	}
 		focus = {

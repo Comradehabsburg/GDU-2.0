@@ -621,8 +621,8 @@ USA_congress = {
 			remove_state_claim = 23
 		}
 	}
-	#需要单独修改改名地区的名称
-		USA_statehood_for_west_virginia = {
+	#Remove Chink speak
+	USA_statehood_for_west_virginia = {
 		icon = infiltrate_state
 		available = {
 			political_power_daily > 0.1
@@ -651,20 +651,20 @@ USA_congress = {
 			}			
 		}
 		remove_effect = {
-		custom_effect_tooltip = VA_TO_WVA
-			USA_congress_add_state = yes
-			USA_congress_remove_state = yes
-			set_cosmetic_tag = USA_35
-			60 = {
-			set_state_name = "西弗吉尼亚"
-			}
-			set_country_flag = wva_in_union
-			add_to_variable = { usa.total_electoral_members = 5 }
-	    add_to_variable = { usa.won_electoral_members = 5 }
-			set_variable = { var = usa.WVA_votes value = 5 }
+			custom_effect_tooltip = VA_TO_WVA
+				USA_congress_add_state = yes
+				USA_congress_remove_state = yes
+				set_cosmetic_tag = USA_35
+				60 = {
+				set_state_name = "West Virginia"
+				}
+				set_country_flag = wva_in_union
+				add_to_variable = { usa.total_electoral_members = 5 }
+				add_to_variable = { usa.won_electoral_members = 5 }
+				set_variable = { var = usa.WVA_votes value = 5 }
 		}
 	}
-		USA_statehood_for_neveda = {
+	USA_statehood_for_neveda = {
 		icon = infiltrate_state
 		available = {
 			political_power_daily > 0.1

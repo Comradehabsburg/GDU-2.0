@@ -284,7 +284,7 @@ country_event = {
 	set_global_flag = CM_SE_opened
 	clear_array = CM_SE_event_id_array
 	add_to_array = { CM_SE_event_id_array = 3 }	
-	play_song = Secession
+	play_song = "The Flag of Secession"
 	}
 	hidden_effect={
 	
@@ -696,7 +696,7 @@ country_event = {
 	set_global_flag = CM_SE_opened
 	clear_array = CM_SE_event_id_array
 	add_to_array = { CM_SE_event_id_array = 1 }	
-	play_song = lincoln_and_liberty
+	play_song = "Lincoln and Liberty"
 	}
 	hidden_effect={
 	set_country_flag = Lincoln_elect
@@ -738,7 +738,7 @@ country_event = {
 	set_global_flag = CM_SE_opened
 	clear_array = CM_SE_event_id_array
 	add_to_array = { CM_SE_event_id_array = 2 }	
-	play_song = VBS
+	play_song = "Virgina's Bloody Soil"
 	}
 	set_country_flag = CIVIL_WAR
 		hidden_effect={
@@ -1737,7 +1737,7 @@ AND = {
 	   set_global_flag = CM_SE_opened
 	   clear_array = CM_SE_event_id_array
 	   add_to_array = { CM_SE_event_id_array = 6 }	
-	   play_song = Abraham_Our_Abraham
+	   play_song = "Abraham Our Abraham"
 	   }
 	   custom_effect_tooltip = lincoln_1864_campaign
 	   add_political_power = 100
@@ -1913,7 +1913,7 @@ NOT = {
 		set_global_flag = CM_SE_opened
 		clear_array = CM_SE_event_id_array
 		add_to_array = { CM_SE_event_id_array = 5 }	
-		play_song = MTHOTN
+		play_song = "MTHOTN"
 		}
 		set_country_flag = support_mcclellan
 		set_country_flag = 1864_campaign_start
@@ -2948,7 +2948,7 @@ country_event = {
 	set_global_flag = CM_SE_opened
 	clear_array = CM_SE_event_id_array
 	add_to_array = { CM_SE_event_id_array = 8 }
-	play_song = hail_to_the_chief	
+	play_song = "Hail to the Chief"	
 	}
  }
 }
@@ -2976,7 +2976,7 @@ country_event = {
 	set_global_flag = CM_SE_opened
 	clear_array = CM_SE_event_id_array
 	add_to_array = { CM_SE_event_id_array = 8 }	
-	play_song = hail_to_the_chief
+	play_song = "Hail to the Chief"
 	}
  }
 }
@@ -3006,7 +3006,6 @@ country_event = {
 	set_global_flag = CM_SE_opened
 	clear_array = CM_SE_event_id_array
 	add_to_array = { CM_SE_event_id_array = 7 }
-	play_song = Booth_Killed_Lincoln	
 	}
 	country_event = {
 			id = usa.28653
@@ -3101,7 +3100,7 @@ country_event = {
 		set_global_flag = CM_SE_opened
 		clear_array = CM_SE_event_id_array
 		add_to_array = { CM_SE_event_id_array = 10 }	
-		play_song = DEATH_LINCOLN
+		play_song = "DEATH_LINCOLN"
 		}
 		country_event = {
 		id = usa.28667
@@ -3398,7 +3397,7 @@ country_event = {
 		set_global_flag = CM_SE_opened
 		clear_array = CM_SE_event_id_array
 		add_to_array = { CM_SE_event_id_array = 9 }	
-		play_song = With_Malice_Toward_None
+		play_song = hanging
 		}
 	}
  }
@@ -3420,7 +3419,7 @@ country_event = {
 		set_global_flag = CM_SE_opened
 		clear_array = CM_SE_event_id_array
 		add_to_array = { CM_SE_event_id_array = 11 }	
-		play_song = BLUE_AND_GRAY
+		play_song = "DEATH_LINCOLN"
 		}
 	}
  }
