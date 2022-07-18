@@ -27,18 +27,6 @@ music = {
 }
 
 music = {
-	song = "nothing"
-	chance = {
-		modifier = {
-			factor = 0
-		}
-			modifier = {
-			factor = -100
-		}			
-	}
-}
-
-music = {
 	song = "Lincoln and Liberty"
 	chance = {
 		modifier = {
