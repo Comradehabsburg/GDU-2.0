@@ -1664,6 +1664,8 @@ country_event = {
 	mean_time_to_happen = { days = 1 } 
 	
 	trigger = {
+		
+controls_state = 88
 NOT = { 
 
 	has_completed_focus = USA_McClellan's_Campaign
@@ -1845,26 +1847,24 @@ country_event = {
 	country_exists = CSA
 	
 
-NOT = {
-	has_completed_focus = USA_McClellan's_Campaign
-	OR = {
-		controls_state = 64
-		AND = {
-			controls_state = 24
-			controls_state = 34 
-		}
-		
-		AND = {
-			controls_state = 65
-			controls_state = 56
-			controls_province = 1637
-		}
-		
-		
+NOT = { has_completed_focus = USA_McClellan's_Campaign }
+
+	NOT = {
+		AND = { 
+			controls_state = 88
+			AND = {
+				controls_state = 64
+				OR = {
+					controls_state = 24
+					controls_state = 34 
 				}
-}
-	}
-	
+				
+				OR = {
+					controls_state = 65
+					controls_state = 56
+					controls_province = 1637
+}}}}}
+
 	fire_only_once = yes
 	
 	option = {
@@ -1916,7 +1916,12 @@ NOT = {
 		play_song = "MTHOTN"
 		}
 		set_country_flag = support_mcclellan
+<<<<<<< Updated upstream
 		set_country_flag = USA_1864_campaign_start
+=======
+		set_country_flag = 1864_campaign_start
+		complete_national_focus = USA_McClellan's_Campaign
+>>>>>>> Stashed changes
 		set_variable = { var = usa.sponsor_numbers value = 0 }
 		set_variable = { var = usa.supporters_numbers value = 0 }
 		unlock_decision_category_tooltip = USA_1864_campaign
@@ -2334,10 +2339,20 @@ country_event = {
  picture = GFX_report_event_german_parade_paris
  
 	trigger = {
+<<<<<<< Updated upstream
 		NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
 	date > 1864.11.25
 	has_country_flag = support_lincoln
 	has_country_flag = USA_1864_campaign_start
+=======
+
+	NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
+	date > 1864.11.1
+	NOT = { has_country_flag = support_lincoln }
+	has_country_flag = 1864_campaign_start
+
+	OR = { 	NOT = { controls_state = 88 }
+>>>>>>> Stashed changes
 OR = {
 
 			AND = {
@@ -2398,7 +2413,7 @@ OR = {
 				} }
 				
 				
-						}
+						} }
 
 
 
@@ -2446,11 +2461,19 @@ country_event = {
 	picture = GFX_report_event_german_parade_paris
 	
 	   trigger = {
+		controls_state = 88
 	NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
+<<<<<<< Updated upstream
 	   date > 1864.11.25
 	   has_country_flag = support_lincoln
 	   has_country_flag = USA_1864_campaign_start
   NOT { OR = {
+=======
+	   date > 1864.11.1
+	   has_country_flag = support_mcclellan
+  NOT = {
+  OR = {
+>>>>>>> Stashed changes
    
 			   AND = {
 	   controls_state = 64

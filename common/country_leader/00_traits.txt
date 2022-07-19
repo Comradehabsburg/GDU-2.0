@@ -90,7 +90,6 @@ leader_traits = {
 	lincoln_union_leader = {
 	random =  no	
 	production_speed_industrial_complex_factor = 2.85
-	production_speed_arms_factory_factor = 0.15
 	ai_focus_aggressive_factor = 5
 	ai_focus_defense_factor = 0.1
 	ai_desired_divisions_factor = 1
