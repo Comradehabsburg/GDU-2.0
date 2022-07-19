@@ -123,16 +123,16 @@ id = csa_focus
 		}
 		add_equipment_to_stockpile = {
     type = infantry_equipment
-    amount = 75
+    amount = 1500
     producer = USA
 		}
 		
 		
-		add_equipment_to_stockpile = {
+	add_equipment_to_stockpile = {
 			type = train_equipment_1
-			amount = 1500
+			amount = 100
 			producer = USA
-				}
+	}
 		add_equipment_to_stockpile = {
     type = artillery_equipment 
     amount = 48
@@ -143,6 +143,7 @@ id = csa_focus
     amount = 300
     producer = USA
 		}
+	
 		load_oob = 1861-7-21_CSA
 		set_capital = { state = 64 }
 		load_oob = 1861-msg

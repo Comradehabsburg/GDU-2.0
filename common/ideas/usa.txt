@@ -893,6 +893,29 @@ freedmen_bureau ={
 			land_night_attack = -0.8
 			}
 		}
+		lame_duck = {
+
+
+
+			picture = usa_war_department
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+army_attack_factor = -100
+army_defence_factor = -100
+			}
+		
+
+		}
 		USACE = {
 			picture = usa_war_department
 			

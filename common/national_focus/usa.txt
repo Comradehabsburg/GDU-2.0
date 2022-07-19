@@ -118,6 +118,8 @@ id = usa_focus
 		}
 		available = {
 			OR = {
+				controls_state = 88
+			OR = {
 				controls_state = 64
 				AND = {
 					controls_state = 24
@@ -132,7 +134,8 @@ id = usa_focus
 				
 				
 						}
-		}
+		} 
+	}
 
 		completion_reward = {
 			custom_effect_tooltip = USA_McClellan
@@ -183,6 +186,9 @@ id = usa_focus
 		focus =  USA_McClellan's_Campaign
 		}
 		available = {
+
+			OR = {
+				controls_state = 88
 
 
 
@@ -246,11 +252,11 @@ id = usa_focus
 					} }
 					
 					
-							}
+							} 
 	
 	
 	
-	}
+	} }
 
 		}
 
