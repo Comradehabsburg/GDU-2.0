@@ -1,5 +1,11 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 
+14980;14981;sea;7533;-1;-1;-1;-1;Mississippi_Canal_5;StLouis
+14978;14979;sea;7716;-1;-1;-1;-1;Mississippi_Canal_4;Cairo
+14976;14977;sea;4737;-1;-1;-1;-1;Mississippi_Canal_3;Memphis
+14973;14974;sea;8108;-1;-1;-1;-1;Mississippi_Canal_2;Vicksburg
+12095;14971;sea;8368;-1;-1;-1;-1;Mississippi_Canal_1;Lousiana
+
 7952;14954;sea;12943;-1;-1;-1;-1;;SUMTER
 7952;14958;sea;12943;-1;-1;-1;-1;;SUMTER
 5300;14955;sea;13454;-1;-1;-1;-1;;Monroe
