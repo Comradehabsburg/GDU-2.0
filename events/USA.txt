@@ -1616,6 +1616,7 @@ country_event = {
 
  option = {
 	name = usa.186412.a
+	add_ideas = lame_duck
 	add_political_power = -150
 	custom_effect_tooltip = Lame_duck
 	USA_congress_small_opposition = yes

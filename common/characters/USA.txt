@@ -225,6 +225,7 @@ USA_james_buchanan={
 			ideology= liberalism
 			desc = "USA_GEORGE_McClellan_desc"
 			traits={	
+				lame_duck
 			}
 			expire="1865.4.15.7"
 			id=-2
