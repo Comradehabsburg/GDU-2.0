@@ -2,14 +2,14 @@ border_states_race = {
 
 	Border_States_condition = {
 		visible = {
-				OR = {
-					tag = CSA
-					tag = USA
-					}
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			OR = {
+				tag = CSA
+				tag = USA
+			}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		fixed_random_seed = no
 		days_re_enable = 1
 		cost = 0
@@ -27,10 +27,10 @@ border_states_race = {
 			tag = USA
 			date > 1861.4.12
 			controls_state = 58
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 58
@@ -40,11 +40,11 @@ border_states_race = {
 		}
 		ai_will_do = {
 			factor = 1
-				modifier = {
+			modifier = {
 				has_political_power  < 200
 				factor = 0
 			}
-				modifier = {
+			modifier = {
 				has_political_power  > 250
 				factor = 3
 			}
@@ -59,26 +59,26 @@ border_states_race = {
 			}			
 		}
 		complete_effect = {
-		custom_effect_tooltip = increase_usa
-				add_to_variable = {
+			custom_effect_tooltip = increase_usa
+			add_to_variable = {
 				var = 58.usa_support
 				value = 5
-				}
-				subtract_from_variable = {
+			}
+			subtract_from_variable = {
 				var = 58.csa_support
 				value = 5
 			}
 		}
 	}
-		usa_growing_unionism_in_delaware = {
+	usa_growing_unionism_in_delaware = {
 		visible = {
 			tag = USA
 			date > 1861.4.12
 			controls_state = 81
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 81
@@ -88,11 +88,11 @@ border_states_race = {
 		}
 		ai_will_do = {
 			factor = 1
-				modifier = {
+			modifier = {
 				has_political_power  < 200
 				factor = 0
 			}
-				modifier = {
+			modifier = {
 				has_political_power  > 250
 				factor = 3
 			}
@@ -108,11 +108,11 @@ border_states_race = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = increase_usa
-				add_to_variable = {
+			add_to_variable = {
 				var = 81.usa_support
 				value = 5
-				}
-				subtract_from_variable = {
+			}
+			subtract_from_variable = {
 				var = 81.csa_support
 				value = 5
 			}
@@ -123,10 +123,10 @@ border_states_race = {
 			tag = USA
 			date > 1861.4.12
 			controls_state = 69
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 69
@@ -136,11 +136,11 @@ border_states_race = {
 		}
 		ai_will_do = {
 			factor = 1
-				modifier = {
+			modifier = {
 				has_political_power  < 200
 				factor = 0
 			}
-				modifier = {
+			modifier = {
 				has_political_power  > 250
 				factor = 3
 			}
@@ -156,11 +156,11 @@ border_states_race = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = increase_usa
-				add_to_variable = {
+			add_to_variable = {
 				var = 69.usa_support
 				value = 5
-				}
-				subtract_from_variable = {
+			}
+			subtract_from_variable = {
 				var = 69.csa_support
 				value = 5
 			}
@@ -171,10 +171,10 @@ border_states_race = {
 			tag = USA
 			date > 1861.4.12
 			controls_state = 60
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 60
@@ -184,11 +184,11 @@ border_states_race = {
 		}
 		ai_will_do = {
 			factor = 1
-				modifier = {
+			modifier = {
 				has_political_power  < 200
 				factor = 0
 			}
-				modifier = {
+			modifier = {
 				has_political_power  > 250
 				factor = 3
 			}
@@ -204,25 +204,25 @@ border_states_race = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = increase_usa
-				add_to_variable = {
+			add_to_variable = {
 				var = 60.usa_support
 				value = 5
-				}
-				subtract_from_variable = {
+			}
+			subtract_from_variable = {
 				var = 60.csa_support
 				value = 5
 			}
 		}
 	}
-		usa_growing_unionism_in_missouri = {
+	usa_growing_unionism_in_missouri = {
 		visible = {
 			tag = USA
 			date > 1861.4.12
 			controls_state = 67
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 67
@@ -252,11 +252,11 @@ border_states_race = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = increase_usa
-				add_to_variable = {
+			add_to_variable = {
 				var = 67.usa_support
 				value = 5
-				}
-				subtract_from_variable = {
+			}
+			subtract_from_variable = {
 				var = 67.csa_support
 				value = 5
 			}
@@ -268,10 +268,10 @@ border_states_race = {
 			tag = CSA
 			date > 1861.4.12
 			controls_state = 64
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 64
@@ -281,11 +281,11 @@ border_states_race = {
 		}
 		ai_will_do = {
 			factor = 1
-				modifier = {
+			modifier = {
 				has_political_power  < 150
 				factor = 0
 			}
-				modifier = {
+			modifier = {
 				has_political_power  > 250
 				factor = 3
 			}
@@ -301,25 +301,25 @@ border_states_race = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = increase_csa
-				add_to_variable = {
+			add_to_variable = {
 				var = 58.csa_support
 				value = 5
-				}
-				subtract_from_variable = {
+			}
+			subtract_from_variable = {
 				var = 58.usa_support
 				value = 5
 			}
 		}
 	}
-		csa_growing_unionism_in_delaware = {
+	csa_growing_unionism_in_delaware = {
 		visible = {
 			tag = CSA
 			date > 1861.4.12
 			controls_state = 64
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 64
@@ -329,11 +329,11 @@ border_states_race = {
 		}
 		ai_will_do = {
 			factor = 1
-				modifier = {
+			modifier = {
 				has_political_power  < 150
 				factor = 0
 			}
-				modifier = {
+			modifier = {
 				has_political_power  > 250
 				factor = 3
 			}
@@ -349,11 +349,11 @@ border_states_race = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = increase_csa
-				add_to_variable = {
+			add_to_variable = {
 				var = 81.csa_support
 				value = 5
-				}
-				subtract_from_variable = {
+			}
+			subtract_from_variable = {
 				var = 81.usa_support
 				value = 5
 			}
@@ -364,10 +364,10 @@ border_states_race = {
 			tag = CSA
 			date > 1861.4.12
 			controls_state = 64
-				USA = {
-					has_country_flag = CIVIL_WAR
-					}
-				}
+			USA = {
+				has_country_flag = CIVIL_WAR
+			}
+		}
 		available = {
 			date > 1861.4.12
 			controls_state = 64
@@ -377,11 +377,11 @@ border_states_race = {
 		}
 		ai_will_do = {
 			factor = 1
-				modifier = {
+			modifier = {
 				has_political_power  < 150
 				factor = 0
 			}
-				modifier = {
+			modifier = {
 				has_political_power  > 250
 				factor = 3
 			}
@@ -397,24 +397,17 @@ border_states_race = {
 		}
 		complete_effect = {
 			custom_effect_tooltip = increase_csa
-				add_to_variable = {	add_to_variable = {
+			add_to_variable = {	
 				var = 69.csa_support
-				value = 5
-				}
-				subtract_from_variable = {
-				var = 69.usa_support
 				value = 5
 			}
-				var = 69.csa_support
-				value = 5
-				}
-				subtract_from_variable = {
-				var = 69.usa_support
-				value = 5
+			subtract_from_variable = {
+					var = 69.usa_support
+					value = 5
 			}
 		}
 	}
-		csa_growing_unionism_in_wva = {
+	csa_growing_unionism_in_wva = {
 		visible = {
 			tag = CSA
 			date > 1861.4.12

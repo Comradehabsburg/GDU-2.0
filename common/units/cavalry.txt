@@ -39,7 +39,7 @@ sub_units = {
 		supply_consumption = 0.35
 		soft_attack = 1.75
 		breakthrough = 20
-		defence = 0.5
+		defense = 0.5
 
 		#Offensive Abilities
 		suppression = 2
