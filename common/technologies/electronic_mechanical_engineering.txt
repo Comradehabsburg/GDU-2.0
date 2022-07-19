@@ -211,11 +211,6 @@ technologies = {
 				factor = 3
 				date > "1861.1.1"
 			}
-
-			modifier = {
-				factor = 2
-				tag = GER
-			}
 		}
 		
 		categories = {
@@ -295,16 +290,6 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 1.5 # not a major
 			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -338,16 +323,7 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 1.5 # not a major
 			}
-			modifier = {
-				factor = 3
 
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -381,16 +357,6 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 1.5 # not a major
 			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -420,16 +386,7 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 1.5 # not a major
 			}
-			modifier = {
-				factor = 3
 
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {
@@ -458,16 +415,6 @@ technologies = {
 			modifier = {
 				num_of_military_factories < 50
 				factor = 1.5 # not a major
-			}
-			modifier = {
-				factor = 3
-
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
 			}
 		}
 		
@@ -498,16 +445,7 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 1.5 # not a major
 			}
-			modifier = {
-				factor = 3
 
-				tag = GER
-			}
-			modifier = {
-				factor = 3
-
-				tag = SOV
-			}
 		}
 		
 		categories = {

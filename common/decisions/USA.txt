@@ -12,7 +12,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = USA_1864_campaign_start
+			has_country_flag = USA_USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 				has_decision = count_on_pools
@@ -69,7 +69,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = USA_1864_campaign_start
+			has_country_flag = USA_USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 			has_decision = count_on_pools
@@ -125,7 +125,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 				has_decision = count_on_pools
@@ -181,7 +181,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 				has_decision = count_on_pools
@@ -240,7 +240,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 				has_decision = count_on_pools
@@ -298,7 +298,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 				has_decision = count_on_pools
@@ -356,7 +356,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 				has_decision = count_on_pools
@@ -414,7 +414,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_mcclellan
 			NOT = {
 				has_decision = count_on_pools
@@ -472,7 +472,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_mcclellan
 			NOT = {
 				has_decision = count_on_pools
@@ -530,7 +530,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_mcclellan
 			NOT = {
 			has_decision = count_on_pools
@@ -588,7 +588,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_mcclellan
 			NOT = {
 				has_decision = count_on_pools
@@ -646,7 +646,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_lincoln
 			NOT = {
 				has_decision = count_on_pools
@@ -707,7 +707,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		has_country_flag = support_mcclellan
 			NOT = {
 			has_decision = count_on_pools
@@ -764,7 +764,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_mcclellan
 			NOT = {
 				has_decision = count_on_pools
@@ -820,7 +820,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_mcclellan
 			NOT = {
 				has_decision = count_on_pools
@@ -877,7 +877,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			has_country_flag = support_mcclellan
 			NOT = {
 				has_decision = count_on_pools
@@ -935,7 +935,7 @@ USA_1864_campaign = {
 		}
 	
 		visible = {
-			has_country_flag = 1864_campaign_start
+			has_country_flag = USA_1864_campaign_start
 			OR ={
 				has_country_flag = support_lincoln
 				has_country_flag = support_mcclellan
@@ -1004,7 +1004,7 @@ campaign_of_enemy = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1021,7 +1021,7 @@ campaign_of_enemy = {
 	fixed_random_seed = no
 	
 	activation = { 
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 	} 
 	
 	days_mission_timeout = 40
@@ -1296,7 +1296,7 @@ campaign_on_new_england = {
 		}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1306,7 +1306,7 @@ campaign_on_new_england = {
 		}
 	}
 	available = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1493,7 +1493,7 @@ campaign_on_east_coast = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1503,7 +1503,7 @@ campaign_on_east_coast = {
 		}
 	}
 	available = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1656,7 +1656,7 @@ campaign_on_far_west = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1666,7 +1666,7 @@ campaign_on_far_west = {
 		}
 	}
 	available = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1819,7 +1819,7 @@ campaign_on_great_plains = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1829,7 +1829,7 @@ campaign_on_great_plains = {
 		}
 	}
 	available = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1982,7 +1982,7 @@ campaign_on_border_states = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -1992,7 +1992,7 @@ campaign_on_border_states = {
 		}
 	}
 	available = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -2167,7 +2167,7 @@ campaign_on_midwest = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -2177,7 +2177,7 @@ campaign_on_midwest = {
 		}
 	}
 	available = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR = {
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -2360,7 +2360,7 @@ count_on_new_england_rep = {
 	}
 	
 	visible = {
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -2374,7 +2374,7 @@ count_on_new_england_rep = {
 	is_good = yes
 	
 	activation = { 
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		controls_state = 27
 		controls_state = 45
 		controls_state = 71
@@ -2595,7 +2595,7 @@ count_on_east_coast_rep = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -2609,7 +2609,7 @@ count_on_east_coast_rep = {
 	is_good = yes
 	
 	activation = { 
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		controls_state = 37
 		controls_state = 48
 		controls_state = 50
@@ -2737,7 +2737,7 @@ count_on_great_plains_rep = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -2751,7 +2751,7 @@ count_on_great_plains_rep = {
 	is_good = yes
 	
 	activation = { 
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		controls_state = 37
 		controls_state = 48
 		controls_state = 50
@@ -2879,7 +2879,7 @@ count_on_far_west_rep = {
 	}
 	
 	visible = {
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -2893,7 +2893,7 @@ count_on_far_west_rep = {
 	is_good = yes
 	
 	activation = { 
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		controls_state = 54
 		controls_state = 59
 		controls_state = 41
@@ -3025,7 +3025,7 @@ count_on_border_state_rep = {
 	}
 	
 	visible = {
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -3039,7 +3039,7 @@ count_on_border_state_rep = {
 	is_good = yes
 	
 	activation = { 
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		controls_state = 58
 		controls_state = 69
 		controls_state = 67
@@ -3233,7 +3233,7 @@ count_on_midwest_state_rep = {
 	}
 	
 	visible = {
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
@@ -3247,7 +3247,7 @@ count_on_midwest_state_rep = {
 	is_good = yes
 	
 	activation = { 
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		controls_state = 55
 		controls_state = 51
 		controls_state = 53
@@ -3437,14 +3437,10 @@ count_on_pools = {
 	}
 	
 	visible = {
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 		OR ={
 			has_country_flag = support_lincoln
 			has_country_flag = support_mcclellan
-		}
-		NOT = {
-			has_decision = USA_38th_congress
-			has_decision = USA_37th_congress_de
 		}
 	}	
 	available = {
@@ -3456,7 +3452,7 @@ count_on_pools = {
 	
 	activation = { 
 		controls_state = 58
-		has_country_flag = 1864_campaign_start
+		has_country_flag = USA_1864_campaign_start
 		has_country_flag = border_count
 		has_country_flag = east_coast_count
 		has_country_flag = new_england_count

@@ -1577,11 +1577,11 @@ country_event = {
 	set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
 	add_political_power = 250
 	USA_abraham_lincoln = {
-	set_character_flag = 2nd_Presidency
+	set_character_flag = second_presidency
 	}
 	add_country_leader_trait = second_term
-	set_country_flag = 1864_election_ends
-	clr_country_flag = 1864_campaign_start
+	set_country_flag = USA_1864_election_ends
+	clr_country_flag = USA_1864_campaign_start
 	set_country_flag = REP_Wins_1864
 	retire_character = USA_GEORGE_McClellan
  }
@@ -1600,9 +1600,9 @@ country_event = {
 	name = usa.18641.a
 	set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 	add_political_power = 150
-	set_country_flag = 1864_election_ends
+	set_country_flag = USA_1864_election_ends
 	set_country_flag = Democrat_Wins_1864_2
-	clr_country_flag = 1864_campaign_start
+	clr_country_flag = USA_1864_campaign_start
  }
 }
 country_event = {
@@ -1621,7 +1621,7 @@ country_event = {
 	USA_congress_small_opposition = yes
 	USA_congress_medium_opposition = yes
 	USA_congress_large_opposition =  yes
-	clr_country_flag = 1864_campaign_start
+	clr_country_flag = USA_1864_campaign_start
  }
 }
 country_event = {
@@ -1745,7 +1745,7 @@ AND = {
 	   set_variable = { var = usa.sponsor_numbers value = 0 }
 	   set_variable = { var = usa.supporters_numbers value = 0 }
 	   set_country_flag = support_lincoln
-	   set_country_flag = 1864_campaign_start
+	   set_country_flag = USA_1864_campaign_start
 	   unlock_decision_category_tooltip = USA_1864_campaign
 		#TotalMembers of electoral college
 		set_variable = { var = usa.MA_votes value = 12 }
@@ -1916,7 +1916,7 @@ NOT = {
 		play_song = "MTHOTN"
 		}
 		set_country_flag = support_mcclellan
-		set_country_flag = 1864_campaign_start
+		set_country_flag = USA_1864_campaign_start
 		set_variable = { var = usa.sponsor_numbers value = 0 }
 		set_variable = { var = usa.supporters_numbers value = 0 }
 		unlock_decision_category_tooltip = USA_1864_campaign
@@ -2093,7 +2093,7 @@ country_event = {
  
 	trigger = {
 	has_country_flag = support_lincoln
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	has_character = USA_abraham_lincoln
 	}
 	
@@ -2151,7 +2151,7 @@ country_event = {
 	has_country_flag = support_lincoln
 	has_country_flag = support_mcclellan
 	}
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	}
 	
 	fire_only_once = yes
@@ -2197,7 +2197,7 @@ country_event = {
 	has_country_flag = support_lincoln
 	has_country_flag = support_mcclellan
 	}
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	}
 	
 	fire_only_once = yes
@@ -2233,7 +2233,7 @@ country_event = {
 	has_country_flag = support_lincoln
 	has_country_flag = support_mcclellan
 	}
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	}
 	
 	fire_only_once = yes
@@ -2272,7 +2272,7 @@ country_event = {
 	has_country_flag = support_lincoln
 	has_country_flag = support_mcclellan
 	}
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	}
 	
 	fire_only_once = yes
@@ -2301,7 +2301,7 @@ country_event = {
 	has_country_flag = support_lincoln
 	has_country_flag = support_mcclellan
 	}
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	}
 	
 	fire_only_once = yes
@@ -2337,7 +2337,7 @@ country_event = {
 		NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
 	date > 1864.11.25
 	has_country_flag = support_lincoln
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 OR = {
 
 			AND = {
@@ -2440,16 +2440,16 @@ OR = {
 }
 
 country_event = {
-	id = usa.18656
-	title = usa.18656.t
-	desc = usa.18656.d
+	id = usa.18675
+	title = usa.18675.t
+	desc = usa.18675.d
 	picture = GFX_report_event_german_parade_paris
 	
 	   trigger = {
 	NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
 	   date > 1864.11.25
 	   has_country_flag = support_lincoln
-	   has_country_flag = 1864_campaign_start
+	   has_country_flag = USA_1864_campaign_start
   NOT { OR = {
    
 			   AND = {
@@ -2520,7 +2520,7 @@ country_event = {
 	   fire_only_once = yes
 	   
 	   option = {
-	   name = usa.18656.a
+	   name = usa.18675.a
 	   ai_chance = { factor = 100 }
 	   add_to_variable = { 54.lincoln_support = 25 }
 	   add_to_variable = { 70.lincoln_support = 25 }
@@ -2561,7 +2561,7 @@ country_event = {
 	trigger = {
 	date > 1864.3.1
 	has_country_flag = support_lincoln
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	USA = {
 	controls_province = 346
 	}
@@ -2612,7 +2612,7 @@ country_event = {
 	has_country_flag = support_lincoln
 	has_country_flag = support_mcclellan
 	}
-	has_country_flag = 1864_campaign_start
+	has_country_flag = USA_1864_campaign_start
 	CSA = {
 			surrender_progress < 0.33
 		}
