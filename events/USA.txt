@@ -2337,36 +2337,32 @@ country_event = {
  title = usa.18656.t
  desc = usa.18656.d
  picture = GFX_report_event_german_parade_paris
+ mean_time_to_happen = { days = 1 } 
  
 	trigger = {
-<<<<<<< Updated upstream
-		NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
-	date > 1864.11.25
-	has_country_flag = support_lincoln
-	has_country_flag = USA_1864_campaign_start
-=======
 
 	NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
 	date > 1864.11.1
-	NOT = { has_country_flag = support_lincoln }
-	has_country_flag = 1864_campaign_start
 
 	OR = { 	NOT = { controls_state = 88 }
->>>>>>> Stashed changes
-OR = {
+NOT = { OR = {
 
-			AND = {
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	AND = {
 	controls_state = 64
 	AND = {
 		controls_state = 24
 		controls_state = 34 
-	}
-	
-	
-	
-			}
+	} }
 
-			AND = {
 				AND = {
 					controls_state = 24
 					controls_state = 34 
@@ -2378,7 +2374,7 @@ OR = {
 					controls_province = 1637
 				}
 
-				OR = {
+				AND = {
 					controls_state = 64
 					
 					AND = {
@@ -2399,7 +2395,7 @@ OR = {
 
 
 
-			OR = {
+			AND = {
 				controls_state = 64
 				AND = {
 					controls_state = 24
@@ -2410,14 +2406,14 @@ OR = {
 					controls_state = 65
 					controls_state = 56
 					controls_province = 1637
-				} }
+				} 
 				
 				
 						} }
 
 
 
-}
+} }
 	}
 	
 	fire_only_once = yes
@@ -2459,86 +2455,14 @@ country_event = {
 	title = usa.18675.t
 	desc = usa.18675.d
 	picture = GFX_report_event_german_parade_paris
+	mean_time_to_happen = { days = 1 } 
 	
 	   trigger = {
-		controls_state = 88
 	NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
-<<<<<<< Updated upstream
-	   date > 1864.11.25
-	   has_country_flag = support_lincoln
-	   has_country_flag = USA_1864_campaign_start
-  NOT { OR = {
-=======
-	   date > 1864.11.1
+	   date > 1864.11.5
 	   has_country_flag = support_mcclellan
-  NOT = {
-  OR = {
->>>>>>> Stashed changes
-   
-			   AND = {
-	   controls_state = 64
-	   AND = {
-		   controls_state = 24
-		   controls_state = 34 
-	   }
-	   
-	   
-	   
-			   }
-   
-			   AND = {
-				   AND = {
-					   controls_state = 24
-					   controls_state = 34 
-				   }
-				   
-				   AND = {
-					   controls_state = 65
-					   controls_state = 56
-					   controls_province = 1637
-				   }
-   
-				   OR = {
-					   controls_state = 64
-					   
-					   AND = {
-						   controls_state = 65
-						   controls_state = 56
-						   controls_province = 1637
-					   }
-				   }
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-			   OR = {
-				   controls_state = 64
-				   AND = {
-					   controls_state = 24
-					   controls_state = 34 
-				   } 
-				   
-				   AND = {
-					   controls_state = 65
-					   controls_state = 56
-					   controls_province = 1637
-				   } }
-				   
-				   
-						   }
-   
-   
-   
-   } }
-	   }
+
+ }
 	   
 	   fire_only_once = yes
 	   
