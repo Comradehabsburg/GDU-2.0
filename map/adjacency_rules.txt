@@ -10,3 +10,203 @@
 # Otherwise the neutral rule is used, unless is_neutral evaluates to false, then the enemy rule is used.
 #
 # The 'name' property is how you refer to the rule in adjacencies.csv
+
+#Mississippi Canal 1 New Orleans
+adjacency_rule =
+{
+	name = "Mississippi_Canal_1"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 2132 8368 8359 2292 }
+		
+	icon = 8368
+	offset = { 5 0 -6 }
+}
+
+#Mississippi Canal 2 Vicksburg
+adjacency_rule =
+{
+	name = "Mississippi_Canal_2"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 8108 4905 }
+		
+	icon = 8108
+	offset = { 5 0 -6 }
+}
+
+#Mississippi Canal 3 Menphis
+adjacency_rule =
+{
+	name = "Mississippi_Canal_3"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 4737 10 }
+		
+	icon = 5779
+	offset = { 5 0 -6 }
+}
+
+#Mississippi Canal 4 Cairo
+adjacency_rule =
+{
+	name = "Mississippi_Canal_4"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 5779 7716 }
+		
+	icon = 5779
+	offset = { 5 0 -6 }
+}
+
+#Mississippi Canal 5 St.Louis
+adjacency_rule =
+{
+	name = "Mississippi_Canal_5"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 7533 7556 }
+		
+	icon = 7556
+	offset = { 5 0 -6 }
+}
