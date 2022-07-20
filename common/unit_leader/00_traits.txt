@@ -54,11 +54,17 @@ leader_traits = {
 
 #Polish
 
-	polish = { 
+	polish = {
+		type = land	
 		type = personality_trait
+		
+		gain_xp = {
+			always = no # not gainable
+		}
 		
 		corps_commander_modifier = {
 			max_commander_army_size = -35
+			max_army_group_size = -4
 		}
 	}
 
