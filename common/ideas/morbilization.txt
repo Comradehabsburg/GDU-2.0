@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		morbilization = {
+			picture = morbilization
+			
+			allowed = {
+				tag = USA
+				tag = CSA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.5
+			}
+		}
+	}
+}

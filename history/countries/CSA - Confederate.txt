@@ -101,6 +101,7 @@ set_popularities = {
 }
 
 add_ideas = {
+morbilization
 american_slavery
 LeRoy_Pope_Walker
 cotton_is_king_trade

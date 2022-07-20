@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_morbilization"
+		texturefile = "gfx/interface/ideas/morbilization.dds"
+	}
+}
