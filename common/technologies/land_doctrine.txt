@@ -118,7 +118,7 @@ technologies = {
 		}
 		cavalry = {
 			max_organisation = 2
-			maximum_speed = 0.1
+			maximum_speed = 0.03
 		}
 		
 	
@@ -182,7 +182,7 @@ technologies = {
 			maximum_speed = 0.05
 		}
 		cavalry = {
-			maximum_speed = 0.1
+			maximum_speed = 0.02
 			default_morale = 0.1
 		}
 		
@@ -1143,7 +1143,7 @@ technologies = {
 		xp_unlock_cost = 50
 		
 		artillery_brigade = {
-			soft_attack = 0.15
+			soft_attack = 0.05
 			breakthrough = 0.05
 		}
 		coordination_bonus = 0.05
@@ -1839,8 +1839,8 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
-		max_dig_in = 20
-		dig_in_speed_factor = 0.3
+		max_dig_in = 15
+		dig_in_speed_factor = 0.15
 		
 		
 		path = {
@@ -1888,7 +1888,7 @@ technologies = {
 		}
 		
 		#planning max bonus increase
-		max_planning = 0.20
+		max_planning = 0.10
 		command_power_gain = 0.30
 
 		doctrine = yes	
@@ -2178,9 +2178,10 @@ technologies = {
 		}
 		cavalry = {
 			max_organisation = 2
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}
 		coordination_bonus = 0.1
 		
@@ -2287,7 +2288,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 50
 		
-		max_planning = 0.2
+		max_planning = 0.1
 		max_command_power = 50
 		
 		path = {
@@ -2339,19 +2340,19 @@ technologies = {
 		land_reinforce_rate = 0.02
 		
 		militia = {
-			default_morale = 0.15
+			default_morale = 0.05
 			max_organisation = 5
 		}
 		infantry = {
-			default_morale = 0.15
+			default_morale = 0.05
 			max_organisation = 15
 		}
 		cavalry = {
-			default_morale = 0.15
+			default_morale = 0.05
 			max_organisation = 3
 		}
 		artillery_brigade = {
-			default_morale = 0.15
+			default_morale = 0.05
 		}
 
 		doctrine = yes	
@@ -3400,14 +3401,6 @@ technologies = {
 		}
 		infantry = {
 			max_organisation = 15
-			soft_attack = 0.1
-		}
-		cavalry = {
-			max_organisation = 3
-			soft_attack = 0.1
-			breakthrough = 0.05
-		}
-		category_artillery = {
 			soft_attack = 0.1
 		}
 		
