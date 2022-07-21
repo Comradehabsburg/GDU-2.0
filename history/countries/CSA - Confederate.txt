@@ -529,9 +529,9 @@ create_country_leader = {
 				logistics_skill = 1
 			}
 			create_corps_commander = {
-				name = "Lawrence branch"
+				name = "Lawrence Branch"
 				id = 1902
-				picture = "Lawrence_branch.dds"
+				picture = "lawrence_branch.dds"
 				traits = {   }
 				skill = 1
 				attack_skill = 1
