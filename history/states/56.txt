@@ -14,6 +14,12 @@ state={
 		add_core_of = USA
 		add_core_of = ARK
 		buildings = {
+			2004 = {
+				naval_base = 1
+			}
+			2410 = {
+				naval_base = 3
+			}
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 2
