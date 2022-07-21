@@ -148,6 +148,92 @@ CSA_jefferson_davis={
 		}
 	}
 	#Army
+	
+	CSA_joseph_johnston = {
+	name = CSA_joseph_johnston
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/joseph_johnston.dds"
+			}
+			army = {
+				large="gfx/leaders/CSA/220px-Joseph_Johnston.dds"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			cost = 150
+			idea_token = CSA_joseph_johnston
+			ledger = army
+			allowed  = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			visible = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			traits  = {
+				grand_battle_plan_expert
+			}
+			ai_will_do = {
+			factor = 5.000
+			}
+		}
+		
+		corps_commander = {
+			traits = { war_hero trait_engineer }
+			desc = "JJ_desc"
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	CSA_samuel_copper = {
+	name = CSA_samuel_copper
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/samuel_copper.dds"
+			}
+			army = {
+				large="gfx/leaders/CSA/220px-Samuel_Cooper_(général).dds"
+			}
+		}
+		
+		advisor={
+			slot = theorist
+			cost = 150
+			idea_token = CSA_samuel_copper
+			ledger = army
+			allowed  = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			visible = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			traits  = {
+				superior_firepower_expert
+			}
+			ai_will_do = {
+			factor = 5.000
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_engineer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
 	CSA_robert_lee = {
 	name=CSA_robert_lee
 		portraits={
@@ -208,6 +294,7 @@ CSA_jefferson_davis={
 				legacy_id=2
 		}
 	}
+	
 	CSA_stonewall_jackson = {
 	name=CSA_stonewall_jackson
 		portraits={
