@@ -420,9 +420,9 @@ leader_traits = {
 		sprite = 14
 		
 		equipment_bonus = {
-			cavalry/motorized = {
+			cavalry = {
 				instant = yes
-				maximum_speed = 0.10
+				maximum_speed = 0.03
 			}
 		}
 		cat_mobile_warfare_cost_factor = -0.15

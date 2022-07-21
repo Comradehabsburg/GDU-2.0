@@ -1029,9 +1029,6 @@ id = usa_focus
 
 		completion_reward = {
 		load_oob = us_mountaineers_1861
-		add_ideas = {
-		free_west_virginia
-		}
 		}
 	}
 	focus = {

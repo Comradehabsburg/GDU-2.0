@@ -13,6 +13,8 @@ recruit_character = CSA_Christopher_Memminger
 recruit_character = CSA_robert_toombs
 recruit_character = CSA_alexander_stephens
 recruit_character = CSA_stonewall_jackson
+recruit_character = CSA_samuel_copper
+recruit_character = CSA_joseph_johnston
 
 #CSA CONGRESS
 set_variable = { var = CSA_senators_support value = 0 }
@@ -101,6 +103,7 @@ set_popularities = {
 }
 
 add_ideas = {
+morbilization
 american_slavery
 LeRoy_Pope_Walker
 cotton_is_king_trade
@@ -273,16 +276,6 @@ create_country_leader = {
 				logistics_skill = 1
 			}
 			create_corps_commander = {
-				name = "Samuel Cooper"
-				picture = "220px-Samuel_Cooper_(général).dds"
-				traits = { trait_engineer }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
 				name = "J.E.B. Stuart"
 				id = 4
 				picture = "J.EB. Stuart.dds"
@@ -344,18 +337,6 @@ create_country_leader = {
 				skill = 3
 				attack_skill = 1
 				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "Joseph Johnston"
-				id = 0202
-				picture = "220px-Joseph_Johnston.dds"
-				traits = { war_hero trait_engineer       }
-				desc = "JJ_desc"
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
 				planning_skill = 1
 				logistics_skill = 1
 			}
@@ -548,9 +529,9 @@ create_country_leader = {
 				logistics_skill = 1
 			}
 			create_corps_commander = {
-				name = "Lawrence branch"
+				name = "Lawrence Branch"
 				id = 1902
-				picture = "Lawrence_branch.dds"
+				picture = "lawrence_branch.dds"
 				traits = {   }
 				skill = 1
 				attack_skill = 1

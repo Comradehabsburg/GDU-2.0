@@ -51,6 +51,8 @@
  american_slavery:0 "American Slavery"
  american_slavery_reformed:0 "Reformed slavery"
  run_away_slaves:0 "Fugitive Slaves"
+ CSA_samuel_copper:0 "Samuel Copper"
+ CSA_joseph_johnston:0 "Joseph Johnston"
  #USA
  pay_for_new_yorkers:0 "Promise to support New York Tammany Hall"
  freedmen_bureau:0 "Freedmen bureau"
