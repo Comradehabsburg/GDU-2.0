@@ -658,21 +658,6 @@ freedmen_bureau ={
 				org_loss_when_moving = -0.2
 			}
 		}
-		free_west_virginia = {
-			picture = usa_desegregation_1
-				allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			modifier = {
-			special_forces_no_supply_grace = 240
-			}
-		}
 		love_usa_sumter = {	
 		picture = generic_usa_conflict
 				allowed = {
@@ -774,7 +759,6 @@ freedmen_bureau ={
 
 			removal_cost = -1
 			modifier = {
-			extra_marine_supply_grace = 240
 			amphibious_invasion = 0.1
 			amphibious_invasion_defence = 0.1
 			}
