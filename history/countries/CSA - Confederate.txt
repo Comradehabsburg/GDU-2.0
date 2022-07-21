@@ -16,6 +16,9 @@ recruit_character = CSA_stonewall_jackson
 recruit_character = CSA_samuel_copper
 recruit_character = CSA_joseph_johnston
 recruit_character = CSA_slavemasteryell
+recruit_character = CSA_Walerian_Sulakowski
+recruit_character = CSA_george_pickett
+recruit_character = CSA_nathan_bedford_forrest
 #CSA CONGRESS
 set_variable = { var = CSA_senators_support value = 0 }
 set_variable = { var = CSA_senators_total value = 0 }
@@ -127,17 +130,6 @@ create_country_leader = {
 		
 	}
 }
-			#Custom
-			create_corps_commander = {
-				name = "Walerian Sulakowski"
-				picture = "Walerian_Sulakowski.dds"
-				traits = {   polish   infantry_officer   }
-				skill = 3
-				attack_skill = 1
-				defense_skill = 4
-				planning_skill = 3
-				logistics_skill = 3
-			}
 			#Base Mod
 			create_corps_commander = {
 				name = "James Longstreet"
@@ -298,18 +290,6 @@ create_country_leader = {
 				logistics_skill = 1
 			}
 			create_corps_commander = {
-				name = "Nathan Bedford Forrest"
-				id = 5555
-				picture = "Nathan_B._Forrest_-_LOCc.dds"
-				desc = "NBF_desc"
-				traits = {       }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 1
-			}
-			create_corps_commander = {
 				name = "Joseph Fighting Joe Wheeler"
 				picture = "220px-JWheelerCSAGenseated.dds"
 				traits = {        desert_fox}
@@ -361,18 +341,6 @@ create_country_leader = {
 				skill = 3
 				attack_skill = 3
 				defense_skill = 3
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "George Pickett"
-				id = 5553
-				picture = "800px-GeorgePickett.dds"
-				desc = "GP_desc"
-				traits = { war_hero       commando}
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
 				planning_skill = 1
 				logistics_skill = 1
 			}

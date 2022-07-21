@@ -1,6 +1,21 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_idea_CSA_nathan_bedford_forrest.dds"
+		texturefile = "gfx/interface/ideas/nathan_bedford_forrest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CSA_Walerian_Sulakowski.dds"
+		texturefile = "gfx/interface/ideas/walerian_Sulakowski.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_CSA_george_pickett.dds"
+		texturefile = "gfx/interface/ideas/george_pickett.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_CSA_slavemasteryell.dds"
 		texturefile = "gfx/interface/ideas/slavemasteryell.dds"
 	}
