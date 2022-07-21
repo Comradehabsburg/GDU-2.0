@@ -15,7 +15,7 @@ recruit_character = CSA_alexander_stephens
 recruit_character = CSA_stonewall_jackson
 recruit_character = CSA_samuel_copper
 recruit_character = CSA_joseph_johnston
-
+recruit_character = CSA_slavemasteryell
 #CSA CONGRESS
 set_variable = { var = CSA_senators_support value = 0 }
 set_variable = { var = CSA_senators_total value = 0 }
@@ -128,16 +128,6 @@ create_country_leader = {
 	}
 }
 			#Custom
-			create_corps_commander = {
-				name = "Slavemasteryell"
-				picture = "Slavemasteryell.dds"
-				traits = {   substance_abuser   substance_addict   old_guard   }
-				skill = 2
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 3
-				logistics_skill = 2
-			}
 			create_corps_commander = {
 				name = "Walerian Sulakowski"
 				picture = "Walerian_Sulakowski.dds"

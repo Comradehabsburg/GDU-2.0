@@ -53,6 +53,7 @@
  run_away_slaves:0 "Fugitive Slaves"
  CSA_samuel_copper:0 "Samuel Copper"
  CSA_joseph_johnston:0 "Joseph Johnston"
+ CSA_slavemasteryell:0 "Slavemasteryell"
  #USA
  pay_for_new_yorkers:0 "Promise to support New York Tammany Hall"
  freedmen_bureau:0 "Freedmen bureau"

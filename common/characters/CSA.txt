@@ -354,4 +354,43 @@ CSA_jefferson_davis={
 				logistics_skill = 1
 		}
 	}
+	
+	CSA_slavemasteryell = {
+	name = CSA_slavemasteryell
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/slavemasteryell.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/Slavemasteryell.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			cost = 150
+			idea_token = CSA_slavemasteryell
+			allowed  = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			visible = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			traits = {
+				army_logistics_3
+			}
+			ai_will_do = {
+				factor = 5.000
+			}
+		}
+		corps_commander = {
+			traits = {   substance_abuser   substance_addict   old_guard   }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
 }
