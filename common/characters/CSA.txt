@@ -263,26 +263,6 @@ CSA_jefferson_davis={
 					factor = 5.000
 				}
 		}
-		advisor={
-			slot = theorist
-			cost = 150
-			idea_token = CSA_robert_lee
-			ledger = army
-			allowed  = {
-					original_tag  = CSA
-					has_character = CSA_jefferson_davis
-				}
-				visible = {
-				original_tag  = CSA
-					has_character = CSA_jefferson_davis
-				}
-				traits  = {
-					mass_assault_expert
-				}
-				ai_will_do = {
-					factor = 5.000
-				}
-		}
 			corps_commander = {
 				traits = { trait_engineer     war_hero   skilled_staffer brilliant_strategist career_officer}
 				desc = "REL_desc"
@@ -366,9 +346,49 @@ CSA_jefferson_davis={
 			}
 		}
 		advisor={
-			slot = high_command
+			slot = theorist
 			cost = 150
 			idea_token = CSA_slavemasteryell
+			ledger = army
+			allowed  = {
+					original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				visible = {
+				original_tag  = CSA
+					has_character = CSA_jefferson_davis
+				}
+				traits  = {
+					mass_assault_expert
+				}
+				ai_will_do = {
+					factor = 5.000
+				}
+		}
+		corps_commander = {
+			traits = {   substance_abuser   substance_addict   old_guard   }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	
+	CSA_Walerian_Sulakowski = {
+	name = CSA_Walerian_Sulakowski
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/walerian_Sulakowski.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/Walerian_Sulakowski.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			cost = 150
+			idea_token = CSA_Walerian_Sulakowski
 			allowed  = {
 				original_tag  = CSA
 				has_character = CSA_jefferson_davis
@@ -385,12 +405,90 @@ CSA_jefferson_davis={
 			}
 		}
 		corps_commander = {
-			traits = {   substance_abuser   substance_addict   old_guard   }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
+			traits = {   polish   infantry_officer   }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 4
 			planning_skill = 3
-			logistics_skill = 2
+			logistics_skill = 3
+		}
+	}
+	
+	CSA_george_pickett = {
+	name = CSA_george_pickett
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/george_pickett.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/george_pickett.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			cost = 150
+			idea_token = CSA_george_pickett
+			allowed  = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			visible = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			traits = {
+				army_cavalry_3
+			}
+			ai_will_do = {
+				factor = 5.000
+			}
+		}
+		corps_commander = {
+			traits = { war_hero commando }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
+	CSA_nathan_bedford_forrest = {
+	name = CSA_nathan_bedford_forrest
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/nathan_bedford_forrest.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/nathan_bedford_forrest.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			cost = 150
+			idea_token = CSA_nathan_bedford_forrest
+			allowed  = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			visible = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			traits = {
+				army_regrouping_3
+			}
+			ai_will_do = {
+				factor = 5.000
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
 		}
 	}
 }
