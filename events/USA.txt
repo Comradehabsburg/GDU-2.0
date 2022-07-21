@@ -1747,7 +1747,7 @@ AND = {
 	   complete_national_focus = USA_McClellan's_Campaign
 	   set_variable = { var = usa.sponsor_numbers value = 0 }
 	   set_variable = { var = usa.supporters_numbers value = 0 }
-	   set_country_flag = support_lincoln
+	   set_country_flag = USA_support_mcclellan
 	   set_country_flag = USA_1864_campaign_start
 	   unlock_decision_category_tooltip = USA_1864_campaign
 		#TotalMembers of electoral college
@@ -1916,13 +1916,10 @@ NOT = { has_completed_focus = USA_McClellan's_Campaign }
 		add_to_array = { CM_SE_event_id_array = 5 }	
 		play_song = "MTHOTN"
 		}
-		set_country_flag = support_mcclellan
-<<<<<<< Updated upstream
+		set_country_flag = USA_support_mcclellan
 		set_country_flag = USA_1864_campaign_start
-=======
-		set_country_flag = 1864_campaign_start
+		set_country_flag = USA_1864_campaign_start
 		complete_national_focus = USA_McClellan's_Campaign
->>>>>>> Stashed changes
 		set_variable = { var = usa.sponsor_numbers value = 0 }
 		set_variable = { var = usa.supporters_numbers value = 0 }
 		unlock_decision_category_tooltip = USA_1864_campaign
@@ -2098,7 +2095,7 @@ country_event = {
  mean_time_to_happen = { days = 1 } 
  
 	trigger = {
-	has_country_flag = support_lincoln
+	has_country_flag = USA_support_mcclellan
 	has_country_flag = USA_1864_campaign_start
 	has_character = USA_abraham_lincoln
 	}
@@ -2154,8 +2151,8 @@ country_event = {
 	has_full_control_of_state = 60
 	}
 	OR = {
-	has_country_flag = support_lincoln
-	has_country_flag = support_mcclellan
+	has_country_flag = USA_support_mcclellan
+	has_country_flag = USA_support_mcclellan
 	}
 	has_country_flag = USA_1864_campaign_start
 	}
@@ -2200,8 +2197,8 @@ country_event = {
 	}
 	}
 	OR = {
-	has_country_flag = support_lincoln
-	has_country_flag = support_mcclellan
+	has_country_flag = USA_support_mcclellan
+	has_country_flag = USA_support_mcclellan
 	}
 	has_country_flag = USA_1864_campaign_start
 	}
@@ -2236,8 +2233,8 @@ country_event = {
 	has_idea = reserved_emancipation_proclamation
 	}
 	OR = {
-	has_country_flag = support_lincoln
-	has_country_flag = support_mcclellan
+	has_country_flag = USA_support_mcclellan
+	has_country_flag = USA_support_mcclellan
 	}
 	has_country_flag = USA_1864_campaign_start
 	}
@@ -2275,8 +2272,8 @@ country_event = {
 	}
 	}
 	OR = {
-	has_country_flag = support_lincoln
-	has_country_flag = support_mcclellan
+	has_country_flag = USA_support_mcclellan
+	has_country_flag = USA_support_mcclellan
 	}
 	has_country_flag = USA_1864_campaign_start
 	}
@@ -2304,8 +2301,8 @@ country_event = {
 	trigger = {
 	date > 1864.2.10
 	OR = {
-	has_country_flag = support_lincoln
-	has_country_flag = support_mcclellan
+	has_country_flag = USA_support_mcclellan
+	has_country_flag = USA_support_mcclellan
 	}
 	has_country_flag = USA_1864_campaign_start
 	}
@@ -2461,7 +2458,7 @@ country_event = {
 	   trigger = {
 	NOT = { has_completed_focus = USA_McClellan's_Campaign1 }
 	   date > 1864.11.5
-	   has_country_flag = support_mcclellan
+	   has_country_flag = USA_support_mcclellan
 
  }
 	   
@@ -2508,7 +2505,7 @@ country_event = {
  
 	trigger = {
 	date > 1864.3.1
-	has_country_flag = support_lincoln
+	has_country_flag = USA_support_mcclellan
 	has_country_flag = USA_1864_campaign_start
 	USA = {
 	controls_province = 346
@@ -2557,8 +2554,8 @@ country_event = {
 	trigger = {
 	date > 1864.2.20
 	or = {
-	has_country_flag = support_lincoln
-	has_country_flag = support_mcclellan
+	has_country_flag = USA_support_mcclellan
+	has_country_flag = USA_support_mcclellan
 	}
 	has_country_flag = USA_1864_campaign_start
 	CSA = {
