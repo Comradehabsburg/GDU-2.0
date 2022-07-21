@@ -6,6 +6,15 @@ add_namespace = news
 
 #Take Richmond
 news_event = {
+	id = news.115
+	title = news.115.t
+	desc = news.115.d
+	picture = GFX_richmond
+	major = yes
+	trigger = { always = yes }
+	}
+	
+news_event = {
 	id = news.100 
 	title = news.100.t
 	desc = news.100.d
