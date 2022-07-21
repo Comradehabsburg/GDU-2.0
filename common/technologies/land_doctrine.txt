@@ -1839,7 +1839,7 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
-		max_dig_in = 20
+		max_dig_in = 15
 		dig_in_speed_factor = 0.15
 		
 		
@@ -3402,14 +3402,6 @@ technologies = {
 		infantry = {
 			max_organisation = 15
 			soft_attack = 0.1
-		}
-		cavalry = {
-			max_organisation = 3
-			soft_attack = 0.1
-			breakthrough = 0.05
-		}
-		category_artillery = {
-			soft_attack = 0.05
 		}
 		
 		
