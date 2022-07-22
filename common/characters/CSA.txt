@@ -187,8 +187,8 @@ CSA_jefferson_davis={
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 	
@@ -227,10 +227,10 @@ CSA_jefferson_davis={
 		corps_commander = {
 			traits = { trait_engineer }
 			skill = 2
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 	
@@ -266,11 +266,11 @@ CSA_jefferson_davis={
 			corps_commander = {
 				traits = { trait_engineer     war_hero   skilled_staffer brilliant_strategist career_officer}
 				desc = "REL_desc"
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 4
-				logistics_skill = 2
+				skill = 4
+				attack_skill = 6
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
 				legacy_id=2
 		}
 	}
@@ -311,7 +311,7 @@ CSA_jefferson_davis={
 			attack_skill = 4
 			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 3
 		}
 	}
 	
@@ -425,11 +425,11 @@ CSA_jefferson_davis={
 		}
 		corps_commander = {
 			traits = { war_hero commando }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
 		}
 	}
 	
@@ -465,10 +465,10 @@ CSA_jefferson_davis={
 		corps_commander = {
 			traits = { }
 			skill = 2
-			attack_skill = 1
+			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 3
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 	
@@ -506,8 +506,8 @@ CSA_jefferson_davis={
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 	
@@ -547,7 +547,7 @@ CSA_jefferson_davis={
 			attack_skill = 2
 			defense_skill = 3
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
 }

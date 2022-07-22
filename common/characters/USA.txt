@@ -155,10 +155,10 @@ USA_james_buchanan={
 			desc = "USA_U_S_Grant_desc"
 			skill=5
 			skill = 3
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 1
-			logistics_skill = 1
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id=6
 		}
 	}
@@ -274,8 +274,8 @@ USA_james_buchanan={
 			skill=3
 			attack_skill = 4
 			defense_skill = 5
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
 			legacy_id=5
 		}
 	}
@@ -319,9 +319,9 @@ USA_james_buchanan={
 		corps_commander={
 			traits = { war_hero   trait_engineer trait_cautious politically_connected }
 			skill=2
-			attack_skill = 1
+			attack_skill = 3
 			defense_skill = 1
-			planning_skill = 8
+			planning_skill = 6
 			logistics_skill = 1
 			legacy_id=101
 		}
@@ -415,7 +415,7 @@ USA_james_buchanan={
 			desc = "USA_george_thomas_desc"
 			traits = { harsh_leader bearer_of_artillery war_hero  }
 			skill=3
-			attack_skill = 5
+			attack_skill = 4
 			defense_skill = 5
 			planning_skill = 3
 			logistics_skill = 3
@@ -519,9 +519,9 @@ USA_james_buchanan={
 			traits = { cavalry_officer }
 			skill=3
 			attack_skill = 4
-			defense_skill = 5
+			defense_skill = 4
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id=9
 		}
 	}
@@ -603,10 +603,10 @@ USA_james_buchanan={
 		corps_commander={
 			traits = { war_hero trait_reckless }
 			skill = 2
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 1
-			logistics_skill = 1
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
 			legacy_id=00245
 		}
 	}
@@ -647,8 +647,8 @@ USA_james_buchanan={
 			skill = 2
 			attack_skill = 3
 			defense_skill = 3
-			planning_skill = 1
-			logistics_skill = 10
+			planning_skill = 3
+			logistics_skill = 7
 			legacy_id=01245
 		}
 	}
@@ -705,10 +705,10 @@ USA_james_buchanan={
 		corps_commander={
 			traits = { trait_engineer inspirational_leader }
 			skill = 3
-			attack_skill = 5
-			defense_skill = 5
-			planning_skill = 1
-			logistics_skill = 1
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
 			legacy_id=1551
 		}
 	}

@@ -1,4 +1,5 @@
 ﻿l_english:
+ GRN:0 "Sk8er Land"
  CAN:0 "Vented's Ice Kingdom"
  CAN_democratic:0 "Vented's Ice Kingdom"
  CAN_DEF:0 "Vented's Ice Kingdom"
@@ -22,7 +23,6 @@
  CSA_democratic:0 "Confederate States of America"
  CSA_DEF:0 "Confederate States of America"
  CSA_ADJ:0 "Confederate States of America"
- GRN:0 "Mini Canada"
  RUS:0 "Russian Empire"
  RUS_DEF:0 "Russian Empire"
  RUS_ADJ:0 "Russia"
