@@ -367,11 +367,11 @@ CSA_jefferson_davis={
 		}
 		corps_commander = {
 			traits = {   substance_abuser   substance_addict   old_guard   }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 3
-			logistics_skill = 2
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
 		}
 	}
 	
