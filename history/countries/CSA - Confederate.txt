@@ -19,6 +19,7 @@ recruit_character = CSA_slavemasteryell
 recruit_character = CSA_Walerian_Sulakowski
 recruit_character = CSA_george_pickett
 recruit_character = CSA_nathan_bedford_forrest
+recruit_character = CSA_james_longstreet
 #CSA CONGRESS
 set_variable = { var = CSA_senators_support value = 0 }
 set_variable = { var = CSA_senators_total value = 0 }
@@ -131,18 +132,6 @@ create_country_leader = {
 	}
 }
 			#Base Mod
-			create_corps_commander = {
-				name = "James Longstreet"
-				id = 1949
-				picture = "220px-James_Longstreet.dds"
-				traits = {     war_hero   guerilla_fighter skilled_staffer}
-				desc = "JL_desc"
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 1
-			}
 			create_corps_commander = {
 				name = "Earl Van Dorn"
 				id = 1900

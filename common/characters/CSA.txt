@@ -304,34 +304,14 @@ CSA_jefferson_davis={
 					factor = 5.000
 				}
 		}
-		advisor={
-			slot = theorist
-			cost = 150
-			idea_token = CSA_stonewall_jackson
-			ledger = army
-			allowed  = {
-					original_tag  = CSA
-					has_character = CSA_jefferson_davis
-				}
-				visible = {
-				original_tag  = CSA
-					has_character = CSA_jefferson_davis
-				}
-				traits  = {
-					blitzkrieg_theorist
-				}
-				ai_will_do = {
-					factor = 5.000
-				}
-		}
-			corps_commander = {
-				traits = { hill_fighter     war_hero   guerilla_fighter inflexible_strategist}
-				desc = "TJ_desc"
-				skill = 3
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 1
+		corps_commander = {
+			traits = { hill_fighter     war_hero   guerilla_fighter inflexible_strategist}
+			desc = "TJ_desc"
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 	
@@ -366,7 +346,7 @@ CSA_jefferson_davis={
 				}
 		}
 		corps_commander = {
-			traits = {   substance_abuser   substance_addict   old_guard   }
+			traits = {   substance_abuser   substance_addict   war_hero   }
 			skill = 3
 			attack_skill = 4
 			defense_skill = 3
@@ -488,6 +468,46 @@ CSA_jefferson_davis={
 			attack_skill = 1
 			defense_skill = 2
 			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	
+	CSA_james_longstreet = {
+	name = CSA_james_longstreet
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/james_longstreet.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/james_longstreet.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			cost = 150
+			idea_token = CSA_james_longstreet
+			ledger = army
+			allowed  = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			visible = {
+			original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			traits  = {
+				blitzkrieg_theorist
+			}
+			ai_will_do = {
+				factor = 5.000
+			}
+		}
+		corps_commander = {
+			traits = { war_hero guerilla_fighter skilled_staffer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
 			logistics_skill = 1
 		}
 	}
