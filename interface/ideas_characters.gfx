@@ -1,4 +1,9 @@
 spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_CSA_albert_sidney_johnston.dds"
+		texturefile = "gfx/interface/ideas/albert_sidney_johnston.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_idea_CSA_james_longstreet.dds"

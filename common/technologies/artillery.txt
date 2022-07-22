@@ -63,9 +63,6 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
 		
 		path = {
 			leads_to_tech = artillery1
@@ -164,9 +161,6 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
-		mot_artillery_brigade = {
-			soft_attack = 0.1
-		}
 		
 		path = {
 			leads_to_tech = artillery3
@@ -217,9 +211,6 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
 		
@@ -313,9 +304,6 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
-		}
-		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
 		

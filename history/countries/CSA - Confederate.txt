@@ -20,6 +20,7 @@ recruit_character = CSA_Walerian_Sulakowski
 recruit_character = CSA_george_pickett
 recruit_character = CSA_nathan_bedford_forrest
 recruit_character = CSA_james_longstreet
+recruit_character = CSA_albert_sidney_johnston
 #CSA CONGRESS
 set_variable = { var = CSA_senators_support value = 0 }
 set_variable = { var = CSA_senators_total value = 0 }
@@ -318,18 +319,6 @@ create_country_leader = {
 				skill = 2
 				attack_skill = 4
 				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "A.S.Johnston"
-				desc = "ASJ_desc"
-				id = 10
-				picture = "220px-ASJohnston.dds"
-				traits = { war_hero      }
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
 				planning_skill = 1
 				logistics_skill = 1
 			}

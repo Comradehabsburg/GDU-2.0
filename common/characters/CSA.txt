@@ -472,6 +472,45 @@ CSA_jefferson_davis={
 		}
 	}
 	
+	CSA_albert_sidney_johnston = {
+	name = CSA_albert_sidney_johnston
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/albert_sidney_johnston.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/albert_sidney_johnston.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			cost = 150
+			idea_token = CSA_albert_sidney_johnston
+			allowed  = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			visible = {
+				original_tag  = CSA
+				has_character = CSA_jefferson_davis
+			}
+			traits = {
+				army_chief_planning_3
+			}
+			ai_will_do = {
+				factor = 5.000
+			}
+		}
+		corps_commander = {
+			traits = { war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	
 	CSA_james_longstreet = {
 	name = CSA_james_longstreet
 		portraits={
