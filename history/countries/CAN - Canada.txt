@@ -27,5 +27,5 @@ create_country_leader = {
 	picture = "vented.dds"
 	expire = "1865.5.1"
 	ideology = liberalism
-	traits = { the_council_on_the_management_of_turkish_debt  turkish_public_debt_administration }
+	traits = { }
 }
