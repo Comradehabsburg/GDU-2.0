@@ -355,7 +355,7 @@ CSN_raiders= {
 			modifier = {
 			stability_factor = -0.1
 			war_support_factor = -0.1
-			conscription = 0.1
+			conscription = 0.05
 			weekly_manpower = -70
 			democratic_drift = -0.01
 			}
