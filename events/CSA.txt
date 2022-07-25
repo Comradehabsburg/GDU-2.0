@@ -13,18 +13,18 @@ country_event = {
  mean_time_to_happen = { days = 1 } 
  fire_only_once = yes
  
- trigger = {
-	date > 1861.2.12
-	USA ={
-		has_character = USA_abraham_lincoln
-	}
-	OR={
-	ALA = {
-	controls_state = 36
-	}
-	CSA = {
-	controls_state = 36
-	}
+	trigger = {
+		date > 1861.2.12
+		USA ={
+			has_character = USA_abraham_lincoln
+		}
+		OR={
+		ALA = {
+			controls_state = 36
+		}
+		CSA = {
+			controls_state = 36
+		}
 	}
  }
  option = {

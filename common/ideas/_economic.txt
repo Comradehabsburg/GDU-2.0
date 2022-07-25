@@ -242,6 +242,7 @@ ideas = {
 			controls_state = 36
 			controls_state = 34
 			controls_state = 66
+			controls_state = 86
 			}
 			}
 			visible  = {
@@ -276,11 +277,11 @@ ideas = {
 			controls_state = 58 
 			controls_state = 37
 			controls_state = 43
-			}
+				}
 			}
 			visible  = {
-			TAG = USA
-			date > 1860.1.1
+				TAG = USA
+				date > 1860.1.1
 			}
 			
 			modifier = {

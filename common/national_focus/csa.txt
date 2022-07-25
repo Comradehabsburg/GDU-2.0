@@ -17,6 +17,7 @@ id = csa_focus
 		cost = 3
 		available = {
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
+			date > 1861.2.12
 		}
 
 		completion_reward = {
