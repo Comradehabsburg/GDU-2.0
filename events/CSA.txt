@@ -31,6 +31,10 @@ country_event = {
 	name = csa.1.a
 	ai_chance = { factor = 100 }
 	#set_Support_for_border_states
+	CSA = {
+	set_research_slots = 2
+	remove_ideas = touched_by_greenguy
+	}
 	set_variable = {
 	var = 69.usa_support
 	value = 70

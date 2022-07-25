@@ -1,6 +1,6 @@
 ﻿capital = 36
 oob = "1861_CSA"
-set_research_slots = 2
+set_research_slots = 0
 set_stability = 0.50
 set_war_support = 0.80
 
@@ -50,7 +50,7 @@ set_technology = {
 	tech_mountaineers = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
-	dispersed_industry = 1
+	concentrated_industry = 1
 	construction1 = 1
 	excavation1 = 1
 	basic_train = 1
@@ -108,6 +108,7 @@ set_popularities = {
 }
 
 add_ideas = {
+touched_by_greenguy
 morbilization
 american_slavery
 LeRoy_Pope_Walker

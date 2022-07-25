@@ -17,7 +17,7 @@ id = csa_focus
 		cost = 3
 		available = {
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
-			date > 1861.2.12
+			date > 1861.2.22
 		}
 
 		completion_reward = {
@@ -962,7 +962,7 @@ id = csa_focus
 		cost = 4
 		available = {
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
-			date > 1861.2.17
+			date > 1861.2.27
 		}
 
 		completion_reward = {

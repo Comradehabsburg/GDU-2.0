@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_touched_by_greenguy"
+		texturefile = "gfx/interface/ideas/touched_by_greenguy.dds"
+	}
+}
