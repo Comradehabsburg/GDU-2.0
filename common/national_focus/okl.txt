@@ -25,7 +25,7 @@
 		}
 
 		available = {
-		date > 1861.7.11
+		date > 1862.1.1
 		}
 		
 		available_if_capitulated = no
