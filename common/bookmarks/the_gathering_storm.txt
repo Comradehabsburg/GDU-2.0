@@ -11,6 +11,7 @@ bookmarks = {
 			history = "USA_ACW_1861_DESC"
 			ideology = democratic
 			ideas = {
+			morbilization
 			secseed_crisis
 			american_slavery_usa
 			runaway_slave_law
@@ -20,7 +21,22 @@ bookmarks = {
 			USA_emancipation_proclamation
 			USA_end_of_us_slavery_13th_amd
 			}
-		}     
+		}
+		
+		"CSA"={
+			history = "CSA_ACW_1861_DESC"
+			ideology = democratic
+			ideas = {
+			touched_by_greenguy
+			morbilization
+			american_slavery
+			}
+			focuses = {
+			CSA_civil_war
+			CSA_twenty_negro_law
+			CSA_1865_slavery_keep_forever
+			}
+		}
 		
 		# minors from DLC ####
 
