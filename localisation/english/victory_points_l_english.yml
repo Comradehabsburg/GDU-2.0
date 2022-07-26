@@ -220,7 +220,8 @@
  VICTORY_POINTS_4612:0 "Amarillo"
  VICTORY_POINTS_1511:0 "San Antonio"
  VICTORY_POINTS_4661:0 "Galveston"
- VICTORY_POINTS_1637:0 "El Paso"
+ #El Nuso will rise again!
+ VICTORY_POINTS_1637:0 "El Nuso"
  #ILoveNYC
  VICTORY_POINTS_2340:0 "Albany"
  VICTORY_POINTS_6935:0 "Buffalo"

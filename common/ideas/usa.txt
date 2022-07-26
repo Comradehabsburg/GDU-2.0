@@ -213,30 +213,6 @@ country = {
 			army_core_attack_factor = 0.2
 			}
 		}
-		indian_civil_war = {
-		picture = generic_war_preparation
-			allowed = {
-			OR = {
-				tag = OKL
-				tag = INT
-				}
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-			surrender_limit = 0.5
-			weekly_manpower = 40
-			no_supply_grace = 120
-			supply_consumption_factor = -0.1
-			out_of_supply_factor = -0.2
-			supply_node_range = 0.25
-			}
-		}
 		party_split = {
 		picture = SPR_political_violence
 			allowed = {
