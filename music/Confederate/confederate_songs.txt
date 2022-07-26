@@ -83,3 +83,19 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "The Yellow Rose Of Texas"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
+music = {
+	song = "Jackson in the Valley"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
