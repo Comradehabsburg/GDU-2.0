@@ -48,11 +48,11 @@ technologies = {
 		enable_equipments = {
 			infantry_equipment_1
 		}
-				
+		
 		path = {
 			leads_to_tech = infantry_weapons2
 			research_cost_coeff = 1
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 1850
@@ -67,16 +67,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
-			modifier = {
-				factor = 10
-				tag = CHI
-				
-				OR = {
-					date > "1837.1.1"
-					JAP = { is_ai = no }
-				}
-			}
 			
 			modifier = {
 				factor = 10
@@ -434,11 +424,6 @@ technologies = {
 				factor = 3
 				tag = USA
 			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
 		}
 	}
 	
@@ -472,11 +457,6 @@ technologies = {
 				factor = 3
 				tag = USA
 			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
-			}
 		}
 	}
 	
@@ -503,11 +483,6 @@ technologies = {
 			modifier = {
 				factor = 3
 				tag = USA
-			}
-			
-			modifier = {
-				factor = 3
-				tag = JAP
 			}
 		}
 	}	
@@ -612,7 +587,6 @@ technologies = {
 		#dependencies = {
 		#	OR = {
 		#		marines = 1
-		#		paratrooper = 1
 		#		mountaineer = 1
 		#	}
 		#}
@@ -833,14 +807,6 @@ technologies = {
 				movement = 0.1
 			}
 		}
-
-		paratrooper = {
-			jungle = {
-				attack = 0.05
-				movement = 0.1
-			}
-		}
-
 	}
 
 	HUN_light_infantry_tech = {
@@ -874,10 +840,6 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -886,23 +848,11 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		marine = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -927,16 +877,6 @@ technologies = {
 			factor = 1
 			modifier = {
 				factor = 15
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
 			}
 			modifier = {
 				factor = 2
@@ -965,10 +905,6 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -977,23 +913,11 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		marine = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -1019,16 +943,6 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
 			}
 			modifier = {
 				factor = 2
@@ -1062,10 +976,6 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -1074,23 +984,11 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		marine = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -1146,10 +1044,6 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
-		bicycle_battalion = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
@@ -1158,23 +1052,11 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
 		marine = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		marine = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		mechanized = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
