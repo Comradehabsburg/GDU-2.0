@@ -398,47 +398,35 @@ civil_war_in_indians_decisions = {
 		visible = { 
 		OR = {
 			TAG = USA
-			TAG = CSA
 		}
 		OR = {
 			country_exists = OKL
-			country_exists = INT
 		}
 		OR = { 
 			has_war_with = CSA
-			has_war_with = USA
 		} 
 		}
 		
 		available = {
 		OR = {
 			TAG = USA
-			TAG = CSA
 		}
 		OR = {
 			country_exists = OKL
-			country_exists = INT
 		}
-		OR = { 
+		OR = {
 			has_war_with = CSA
-			has_war_with = USA
 		} 
 		date > 1862.6.1
 		OR = {
-		OKL = {
-		surrender_progress > 0.70
-		}
-		INT = {
-		surrender_progress > 0.70
+			INT = {
+				surrender_progress > 0.70
 			}
-		OR = {
-		NOT = {
-		country_exists = INT
-		}
-		NOT = {
-		country_exists = OKL
-		}
-	}
+			OR = {
+				NOT = {
+				country_exists = INT
+				}
+			}
 		}
 	}
 		
@@ -460,42 +448,13 @@ civil_war_in_indians_decisions = {
 		complete_effect = {
 		if = {
 			limit = {
-					TAG = USA
-				}	
-				INT = {
-				declare_war_on = {
-				target = CSA
-				type = annex_everything
+				TAG = USA
 				}
-				}	
 				USA = {
 				declare_war_on = {
 				target = OKL
 				type = annex_everything
-				}
-				}	
-				INT = {
-				give_military_access = USA
-				}
-			}
-			if = {
-			limit = {
-					TAG = CSA
-				}	
-				OKL = {
-				declare_war_on = {
-				target = USA
-				type = annex_everything
-				}
-				}	
-				CSA = {
-				declare_war_on = {
-				target = INT
-				type = annex_everything
-				}
-				}	
-				OKL = {
-				give_military_access = CSA
+					}
 				}
 			}
 		}
@@ -503,41 +462,31 @@ civil_war_in_indians_decisions = {
 	annex_of_indian_territory = {
 		visible = { 
 		OR = {
-			TAG = USA
 			TAG = CSA
 		}
 		OR = {
 			country_exists = OKL
-			country_exists = INT
 		}
-		OR = { 
-			has_war_with = CSA
+		OR = {
 			has_war_with = USA
 		} 
 		}
 		
 		available = {
 		OR = {
-			TAG = USA
 			TAG = CSA
 		}
 		OR = {
 			country_exists = OKL
-			country_exists = INT
 		}
-		OR = { 
-			has_war_with = CSA
+		OR = {
 			has_war_with = USA
 			NOT = {
 			has_war = yes
 			}
-		} 
+		}
 			date > 1862.1.1
 			OR = {
-			INT = {
-			has_full_control_of_state = 87
-			has_full_control_of_state = 61
-			}
 			OKL = {
 			has_full_control_of_state = 87
 			has_full_control_of_state = 61
@@ -560,22 +509,13 @@ civil_war_in_indians_decisions = {
 			}
 		}
 		complete_effect = {
-		if = {
-			limit = {
-					TAG = USA
-				}	
-				annex_country = {
-				target = INT
-				transfer_troops = yes
-			}
-			}
 			if = {
-			limit = {
+				limit = {
 					TAG = CSA
-				}	
+					}	
 					annex_country = {
-				target = OKL
-				transfer_troops = yes
+					target = OKL
+					transfer_troops = yes
 					}
 				}	
 			}

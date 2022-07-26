@@ -331,12 +331,12 @@ CSN_raiders= {
 			removal_cost = -1
 			
 			modifier = {
-			conscription_factor = 0.05
-			stability_factor = -0.11
-			war_support_factor = -0.11
-			conscription = 0.1
+			conscription_factor = 0.08
+			stability_factor = -0.13
+			war_support_factor = -0.13
+			conscription = 0.06
 			weekly_manpower = -80
-			democratic_drift = -0.01
+			democratic_drift = -0.03
 			}
 		}
 		1862_conscription  = {
@@ -355,8 +355,8 @@ CSN_raiders= {
 			modifier = {
 			stability_factor = -0.1
 			war_support_factor = -0.1
-			conscription = 0.05
-			weekly_manpower = -70
+			conscription = 0.04
+			weekly_manpower = -50
 			democratic_drift = -0.01
 			}
 		}

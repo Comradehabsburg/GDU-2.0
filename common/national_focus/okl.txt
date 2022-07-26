@@ -26,6 +26,7 @@
 
 		available = {
 		date > 1862.1.1
+		tag = OKL
 		}
 		
 		available_if_capitulated = no
