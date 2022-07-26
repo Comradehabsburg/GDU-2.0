@@ -137,6 +137,6 @@ music = {
 
 music = {
 	name = "Anchors Aweigh"
-	file = "anchors_aweigh"
+	file = "anchors_aweigh.ogg"
 	volume = 0.65
 }
