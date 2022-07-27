@@ -232,13 +232,13 @@ CSN_raiders= {
 			removal_cost = -1
 			
 			modifier = {
-			conscription_factor = 0.08
+			conscription_factor = 0.1
 			stability_factor = -0.15
 			war_support_factor = -0.15
-			conscription = 0.2
+			conscription = 0.1
 			weekly_manpower = -120
-			democratic_drift = -0.03
-			}
+			democratic_drift = -0.05
+				}
 			}
 			CSA_BOFS = {
 			picture = new_deal
@@ -358,23 +358,6 @@ CSN_raiders= {
 			conscription = 0.04
 			weekly_manpower = -50
 			democratic_drift = -0.01
-			}
-		}
-		pay_for_guns = {
-			picture = disarmed_nation
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-			consumer_goods_factor = 0.08
 			}
 		}
 			war_department = {

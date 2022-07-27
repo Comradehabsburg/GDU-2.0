@@ -1454,6 +1454,10 @@ id = usa_focus
 		amount = 3000
 		producer = CAN
 		}
+		add_timed_idea = {
+		 idea = pay_for_guns
+		 days = 90
+		}
 		}
 	}
 	focus = {
@@ -1486,6 +1490,10 @@ id = usa_focus
 		type = support_equipment
 		amount = 2000
 		producer = USA
+		}
+		add_timed_idea = {
+		 idea = pay_for_guns
+		 days = 90
 		}
 		}
 	}
