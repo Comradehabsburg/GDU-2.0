@@ -36,7 +36,7 @@ CSN_raiders= {
 			modifier = {
 			convoy_raiding_efficiency_factor = 0.25
 			mines_planting_by_fleets_factor = 0.2
-			navy_enemy_fleet_size_ratio_penalty_factor = 0.1
+			naval_enemy_fleet_size_ratio_penalty_factor = 0.1
 			}
 		}
 		
