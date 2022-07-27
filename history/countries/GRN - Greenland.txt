@@ -19,3 +19,8 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+
+add_ideas = {
+nobodys_home
+girlfriend
+}
