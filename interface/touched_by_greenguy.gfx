@@ -1,6 +1,6 @@
 spriteTypes = {
 	SpriteType = {
-		name = "GFX_idea_touched_by_greenguy"
-		texturefile = "gfx/interface/ideas/touched_by_greenguy.dds"
+		name = "GFX_idea_CSA_unformed"
+		texturefile = "gfx/interface/ideas/CSA_unformed.dds"
 	}
 }

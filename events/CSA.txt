@@ -33,7 +33,7 @@ country_event = {
 	#set_Support_for_border_states
 	CSA = {
 	set_research_slots = 2
-	remove_ideas = touched_by_greenguy
+	remove_ideas = CSA_unformed
 	}
 	set_variable = {
 	var = 69.usa_support

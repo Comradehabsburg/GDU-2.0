@@ -108,8 +108,8 @@ set_popularities = {
 }
 
 add_ideas = {
-touched_by_greenguy
-morbilization
+CSA_unformed
+USA_mobilization_boost
 american_slavery
 LeRoy_Pope_Walker
 cotton_is_king_trade

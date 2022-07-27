@@ -11,7 +11,7 @@ bookmarks = {
 			history = "USA_ACW_1861_DESC"
 			ideology = democratic
 			ideas = {
-			morbilization
+			USA_mobilization_boost
 			secseed_crisis
 			american_slavery_usa
 			runaway_slave_law
@@ -27,8 +27,8 @@ bookmarks = {
 			history = "CSA_ACW_1861_DESC"
 			ideology = democratic
 			ideas = {
-			touched_by_greenguy
-			morbilization
+			CSA_unformed
+			USA_mobilization_boost
 			american_slavery
 			}
 			focuses = {

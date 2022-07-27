@@ -1,8 +1,8 @@
 ideas = {
 
 	country = {
-		morbilization = {
-			picture = morbilization
+		USA_mobilization_boost = {
+			picture = generic_manpower
 			
 			allowed = {
 				tag = USA

@@ -1,7 +1,7 @@
 ideas = {
 	country = {
-		touched_by_greenguy = {
-			picture = touched_by_greenguy
+		CSA_unformed = {
+			picture = usa_great_depression_3
 			
 			allowed = {
 				tag = CSA
