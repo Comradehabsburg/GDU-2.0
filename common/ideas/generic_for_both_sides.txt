@@ -19,4 +19,25 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		mobilization_against_our_brothers = {
+			picture = mobilization
+			
+			allowed = {
+				tag = USA
+				tag = CSA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.5
+			}
+		}
+	}
 }

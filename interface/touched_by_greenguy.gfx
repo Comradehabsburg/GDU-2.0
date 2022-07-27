@@ -1,6 +1,0 @@
-spriteTypes = {
-	SpriteType = {
-		name = "GFX_idea_CSA_unformed"
-		texturefile = "gfx/interface/ideas/CSA_unformed.dds"
-	}
-}

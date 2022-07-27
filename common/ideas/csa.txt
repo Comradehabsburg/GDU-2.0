@@ -1,5 +1,27 @@
 ideas = {
 country = {
+
+#PRE CHIMBUS
+	plotting = {
+		picture = plotting
+		
+		allowed = {
+			tag = CSA
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			political_power_factor = -2.0
+			command_power_gain_mult = -2.0
+		}
+	}
+
+#AFTER BLOBING
 CSN_raiders= {
 		allowed = {
 				tag = CSA

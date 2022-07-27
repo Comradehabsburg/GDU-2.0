@@ -1,6 +1,14 @@
-spriteTypes = {	
+spriteTypes = {
 
+	SpriteType = {
+		name = "mobilization_against_our_brothers"
+		texturefile = "gfx/interface/ideas/mobilization.dds"
+	}
 
+	SpriteType = {
+		name = "GFX_idea_plotting"
+		texturefile = "gfx/interface/ideas/plotting.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
@@ -6343,5 +6351,4 @@ spriteTypes = {
 		name = "GFX_idea_sov_blyukher"
 		texturefile = "gfx/interface/ideas/idea_sov_blyukher.dds"
 	}
-	
 }

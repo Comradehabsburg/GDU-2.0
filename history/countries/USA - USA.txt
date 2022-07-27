@@ -104,7 +104,7 @@ if = {
 	}
 }
 add_ideas = {
-USA_mobilization_boost
+mobilization_against_our_brothers
 secseed_crisis
 american_slavery_usa
 runaway_slave_law

@@ -123,7 +123,7 @@ guiTypes = {
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
-			web_link = "https://forum.paradoxplaza.com/forum/index.php?forums/hearts-of-iron-iv.844/"
+			web_link = "https://discord.gg/ZrB2wUkHha"
 		}
 		ButtonType = {
 			name = "facebook_button"

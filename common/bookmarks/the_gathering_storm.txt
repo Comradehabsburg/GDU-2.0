@@ -11,7 +11,7 @@ bookmarks = {
 			history = "USA_ACW_1861_DESC"
 			ideology = democratic
 			ideas = {
-			USA_mobilization_boost
+			mobilization_against_our_brothers
 			secseed_crisis
 			american_slavery_usa
 			runaway_slave_law
@@ -27,8 +27,8 @@ bookmarks = {
 			history = "CSA_ACW_1861_DESC"
 			ideology = democratic
 			ideas = {
-			CSA_unformed
-			USA_mobilization_boost
+			plotting
+			mobilization_against_our_brothers
 			american_slavery
 			}
 			focuses = {
