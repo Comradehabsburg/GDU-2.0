@@ -1,7 +1,7 @@
 spriteTypes = {
 
 	SpriteType = {
-		name = "mobilization_against_our_brothers"
+		name = "GFX_idea_mobilization_against_our_brothers"
 		texturefile = "gfx/interface/ideas/mobilization.dds"
 	}
 
