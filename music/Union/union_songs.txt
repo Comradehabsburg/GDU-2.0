@@ -107,6 +107,14 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "From the Halls of Montezuma"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}
+}
 
 music = {
 	song = "ainthatso"

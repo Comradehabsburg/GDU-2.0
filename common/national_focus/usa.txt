@@ -990,8 +990,10 @@ id = usa_focus
 
 		completion_reward = {
 		load_oob = us_marines_1861
-		add_ideas = {
+		add_ideas =
 		free_marines
+		USA = {
+		play_song = "From the Halls of Montezuma"
 		}
 		}
 	}
