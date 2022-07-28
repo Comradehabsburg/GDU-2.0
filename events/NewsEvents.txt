@@ -6,55 +6,52 @@ add_namespace = news
 
 #Take Richmond
 news_event = {
-	id = news.100 
-	title = news.100.t
-	desc = news.100.d
+	id = news.999
+	title = news.999.t
+	desc = news.999.d
 	picture = GFX_richmond
-
+	
 	major = yes
 	
 	trigger = {
-	
-	date > 1861.7.20
-	USA = {
-	controls_state = 64
-	controls_province = 7467
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = Richmond_fall
-	}
-	}
-	
- }
- immediate = {
- USA = {
- set_country_flag = Richmond_fall
- }
- }
-	option = {
-		name = news.100.a
-		trigger = {
-				TAG = CSA
-			}
-			add_war_support = -0.15
+		date > 1861.8.1
+		USA = {
+			controls_province = 7467
+			has_war_with = CSA
 		}
-	option = {
-		name = news.100.b
-		trigger = {
-				TAG = USA
-			}
-			add_war_support = 0.1
+		NOT = { has_global_flag = fall_of_richmond }
+		64 = { is_owned_by = CSA }
 	}
+	
+	immediate = {
+		set_global_flag = fall_of_richmond
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
 	option = {
-		name = news.100.c
+		name = news.999.a
+		trigger = { TAG = CSA }
+		add_war_support = -0.15
+	}
+	
+	option = {
+		name = news.999.b
+		trigger = { TAG = USA }
+		add_war_support = 0.1
+	}
+	
+	option = {
+		name = news.999.c
 		trigger = {
-		NOT = {
+			NOT = {
 				TAG = USA
 				TAG = CSA
-				}
 			}
+		}
 	}
 }
+
 #Take Appomattox
 news_event = {
 	id = news.101

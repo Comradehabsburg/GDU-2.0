@@ -1,6 +1,0 @@
-spriteTypes = {
-	SpriteType = {
-		name = "GFX_idea_the_pickle_offensive"
-		texturefile = "gfx/interface/ideas/the_pickle_offensive.dds"
-	}
-}
