@@ -19,11 +19,36 @@ country_event = {
 			has_character = USA_abraham_lincoln
 		}
 		OR={
+		date > 1861.2.12
 		ALA = {
 			controls_state = 36
 		}
 		CSA = {
 			controls_state = 36
+		}
+		MIS = {
+			controls_state = 34
+		}
+		CSA = {
+			controls_state = 34
+		}
+		FLO = {
+			controls_state = 23
+		}
+		CSA = {
+			controls_state = 23
+		}
+		GEA = {
+			controls_state = 39
+		}
+		CSA = {
+			controls_state = 39
+		}
+		LOU = {
+			controls_state = 24
+		}
+		CSA = {
+			controls_state = 24
 		}
 	}
  }
@@ -138,6 +163,35 @@ country_event = {
 		}
 	}
 }
+
+	#IF LOUISIANA EXIST
+	country_event = {
+	id = csa.lou
+	title = csa.lou.t
+	desc = csa.lou.d
+	picture = GFX_report_event_german_parade_paris
+	mean_time_to_happen = { days = 1 } 
+	fire_only_once = yes
+ 
+		trigger = {
+			date > 1861.2.12
+			LOU = {
+			controls_state = 24
+			}
+			country_exists = CSA
+		}
+		option = {
+			name = csa.lou.a
+			ai_chance = { factor = 100 }
+			CSA = {
+				annex_country = {
+				target = LOU
+				transfer_troops = yes
+				}
+			}
+		}
+	}
+
 #IF TEXAS IS EXIST,CSA EAT IT
 country_event = {
  id = csa.2
