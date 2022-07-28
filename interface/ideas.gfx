@@ -1,11 +1,6 @@
 spriteTypes = {
 
 	SpriteType = {
-		name = "GFX_idea_the_pickle_offensive"
-		texturefile = "gfx/interface/ideas/the_pickle_offensive.dds"
-	}
-
-	SpriteType = {
 		name = "GFX_idea_mobilization_against_our_brothers"
 		texturefile = "gfx/interface/ideas/mobilization.dds"
 	}

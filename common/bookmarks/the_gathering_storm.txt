@@ -11,6 +11,7 @@ bookmarks = {
 			history = "USA_ACW_1861_DESC"
 			ideology = democratic
 			ideas = {
+			mobilization_against_our_brothers
 			secseed_crisis
 			american_slavery_usa
 			runaway_slave_law
