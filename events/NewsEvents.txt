@@ -1,10 +1,12 @@
-###########################
-# News Events
-###########################
+#############
+#News Events#
+#############
 
 add_namespace = news
 
-#Take Richmond
+#CSA CITY NEWS EVENTS
+
+#FALL OF RICHMOND
 news_event = {
 	id = news.999
 	title = news.999.t
@@ -32,13 +34,13 @@ news_event = {
 	option = {
 		name = news.999.a
 		trigger = { TAG = CSA }
-		add_war_support = -0.15
+		add_war_support = -0.1
 	}
 	
 	option = {
 		name = news.999.b
 		trigger = { TAG = USA }
-		add_war_support = 0.1
+		add_war_support = 0.05
 	}
 	
 	option = {
@@ -52,123 +54,271 @@ news_event = {
 	}
 }
 
-#Take Appomattox
-news_event = {
-	id = news.101
-	title = news.101.t
-	desc = news.101.d
-	picture = GFX_Appomattox
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.8.1
-	USA = {
-	controls_province = 287
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	64 = {
-			is_fully_controlled_by = USA
-		}
-		has_country_flag = Appomattox_taken
-	}
-	}
-	CSA ={
-		surrender_progress > 0.8
-	}
- }
- 
-  immediate = {
-		USA = {
-		set_country_flag = Appomattox_taken
-		}
-	}
-	option = {
-		name = news.101.a
-		trigger = {
-				TAG = CSA
-			}
-			white_peace = USA
-			USA = {
-			annex_country = {
-			target = CSA
-			transfer_troops = no
-			}	
-			}
-		}
-	option = {
-		name = news.101.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.101.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-	option = {
-		name = news.101.e
-		trigger = {
-				TAG = CSA
-			}
-			add_war_support = 0.01
-		}
-}
-
-#TAKE Fredericksburg
+#FALL OF FREDERICKSBURG
 news_event = {
 	id = news.102
 	title = news.102.t
 	desc = news.102.d
 	picture = GFX_fredericksburg
-
+	
 	major = yes
 	
 	trigger = {
-	
-	date > 1861.8.1
-	USA = {
-	controls_province = 4701
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = Fredericksburg_taken
-	}
-	}
-	
- }
- immediate = {
+		date > 1861.8.1
 		USA = {
-		set_country_flag = Fredericksburg_taken
+			controls_province = 4701
+			has_war_with = CSA
 		}
+		NOT = { has_global_flag = fall_of_fredericksburg }
+		64 = { is_owned_by = CSA }
 	}
+	
+	immediate = {
+		set_global_flag = fall_of_fredericksburg
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
 	option = {
 		name = news.102.a
-		trigger = {
-				TAG = CSA
-			}
-		}
+		trigger = { TAG = CSA }
+		add_war_support = -0.05
+	}
+	
 	option = {
 		name = news.102.b
-		trigger = {
-				TAG = USA
-			}
+		trigger = { TAG = USA }
+		add_war_support = 0.05
 	}
+	
 	option = {
 		name = news.102.c
 		trigger = {
-		NOT = {
+			NOT = {
 				TAG = USA
 				TAG = CSA
-				}
 			}
+		}
 	}
 }
+
+
+
+#USA CITY NEWS EVENTS
+
+#FALL OF DC
+news_event = {
+	id = news.113
+	title = news.113.t
+	desc = news.113.d
+	picture = GFX_dixiedc
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.8.1
+		88 = { is_controlled_by = CSA }
+		88 = { is_owned_by = USA }
+		CSA = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_dc }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_dc
+		add_to_variable = {
+			var = 58.csa_support
+			value = 25
+		}
+		subtract_from_variable = {
+			var = 58.usa_support
+			value = 25
+		}
+		add_to_variable = {
+			var = 81.csa_support
+			value = 15
+		}
+		subtract_from_variable = {
+			var = 81.usa_support
+			value = 15
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.113.a
+		trigger = { TAG = CSA }
+		add_war_support = 0.1
+	}
+	
+	option = {
+		name = news.113.b
+		trigger = { TAG = USA }
+		add_war_support = -0.15
+	}
+	
+	option = {
+		name = news.113.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+
+
+#######################
+#SURRENDER NEWS Events#
+#######################
+
+#CSA SURRENDER
+news_event = {
+	id = news.101
+	title = news.101.t
+	desc = news.101.d
+	picture = GFX_Appomattox
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.8.1
+		USA = {
+			controls_province = 4701
+			controls_province = 7467
+			controls_province = 7774
+			controls_province = 3562
+			controls_province = 1637
+			controls_province = 7718
+			controls_province = 7689
+			controls_province = 2012
+			controls_province = 4694
+			controls_province = 7280
+			controls_province = 4737
+			has_war_with = CSA
+		}
+		64 = { is_fully_controlled_by = USA }
+		NOT = { has_global_flag = csa_surrender }
+		CSA = { surrender_progress > 0.8 }
+	}
+	
+	immediate = {
+		set_global_flag = csa_surrender
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.101.a
+		trigger = { TAG = CSA }
+		white_peace = USA
+		USA = {
+			annex_country = {
+				target = CSA
+				transfer_troops = no
+			}	
+		}
+	}
+	
+	option = {
+		name = news.101.b
+		trigger = { TAG = USA }
+		add_stability = 0.5
+		add_war_support = 0.25
+	}
+	
+	option = {
+		name = news.101.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#UNION SURRENDER
+news_event = {
+	id = news.666
+	title = news.666.t
+	desc = news.666.d
+	picture = GFX_dixiedc
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.8.1
+		CSA = {
+			controls_province = 7258
+			controls_province = 7281
+			controls_province = 5779
+			controls_province = 3408
+			controls_province = 7208
+			controls_province = 1741
+			controls_province = 7629
+			controls_province = 7332
+			controls_province = 7236
+			controls_province = 7233
+			controls_province = 7270
+			controls_province = 7243
+			has_war_with = USA
+		}
+		88 = { is_fully_controlled_by = CSA }
+		58 = { is_fully_controlled_by = CSA }
+		NOT = { has_global_flag = usa_surrender }
+		USA = { surrender_progress > 0.3 }
+	}
+	
+	immediate = {
+		set_global_flag = usa_surrender
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = news.666.a
+		trigger = { TAG = CSA }
+		white_peace = USA
+		CSA = {
+			transfer_state = 44
+			add_state_core = 44
+			transfer_state = 47
+			add_state_core = 47
+			transfer_state = 69
+			add_state_core = 69
+			transfer_state = 60
+			add_state_core = 60
+			transfer_state = 88
+			add_state_core = 88
+			transfer_state = 58
+			add_state_core = 58
+		}
+		add_stability = 0.5
+		add_war_support = 0.25
+	}
+	
+	option = {
+		name = news.666.b
+		trigger = { TAG = USA }
+		add_stability = -0.5
+		add_war_support = -0.75
+	}
+	
+	option = {
+		name = news.666.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#STILL NEED EDITED
 
 #TAKE Cold Harbor
 news_event = {
@@ -682,66 +832,6 @@ news_event = {
 		}
 	option = {
 		name = news.112.b
-		trigger = {
-				TAG = USA
-			}
-	}
-}
-#battle of washington
-news_event = {
-	id = news.113
-	title = news.113.t
-	desc = news.113.d
-	picture = GFX_dixiedc
-
-	major = yes
-	
-	trigger = {
-	date > 1861.7.14
-	CSA = {
-	controls_province = 7281
-	}
-	USA = {
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = battle_of_washington
-	}
-	}
-	USA = {
-	has_war_with = CSA
-	}
-	}
-	
-	immediate = {
-	USA = {
-		set_country_flag = battle_of_washington
-		}
-	add_to_variable = {
-	var = 58.csa_support
-	value = 25
-	}
-	subtract_from_variable = {
-	var = 58.usa_support
-	value = 25
-	}
-	add_to_variable = {
-	var = 81.csa_support
-	value = 15
-	}
-		subtract_from_variable = {
-	var = 81.usa_support
-	value = 15
-	}
-}
-	
-	option = {
-		name = news.113.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.113.b
 		trigger = {
 				TAG = USA
 			}
