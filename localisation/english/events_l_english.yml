@@ -154,7 +154,7 @@
  usa.1405.a:0"Damn!"
  USA_STAY_2:0"I will Protect Union From Rebel's Harm!"
  USA_GO_CSA_2:0"I Should Protect My Home State!"
- #1864 ELECTION 我太难了 哭了 都要重写
+ #1864 ELECTION #NO CHINK RETARD SPEAK PLS
  usa.186534.t:0 "President McClellan's Inauguration Day"
  usa.186534.d:0 "President McClellan's Inauguration Day - to be written"
  usa.186534.a:0 "Our Little Mac!"
@@ -557,3 +557,6 @@
  news.114.d:0 "Soldiers from [CSA.GetName] ring the Liberty Bell in old Philadelphia, the first capital of the United States and an important city, which now fell to the Confederate army as the Union army was losing ground. Many Confederate soldiers were excited to visit the relics of the American Revolution that they had only seen in their parents' and grandparents' legends, and to buy souvenirs of the fall of Philadelphia, which signaled that Pennsylvania was no longer a safe place either, and that the war had spread from Virginia to the northern states themselves, a shameful betrayal and insult to the Founding Fathers, according to the President of the United States [USA.GetLeader], while the Confederate President [CSA.GetLeader] shot back that it was another big step towards true freedom and independence for the Confederate States of America."
  news.114.a:0 "Ringing the Bell"
  news.114.b:0 "The Cause of Freedom is Falling"
+ csa.lou.t:0 "Annex the state of Louisiana"
+ csa.lou.d:0 "Louisiana is seeking to join our new Confederate States of America"
+ csa.lou.a:0 "Welcome the Great State of Louisiana"
