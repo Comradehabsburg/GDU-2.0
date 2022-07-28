@@ -520,56 +520,12 @@ country_event = {
  }
  
  
- option = {
-	name = usa.300.a
-	ai_chance = { factor = 100 }
-	create_intelligence_agency = yes
-	add_ideas = pinkerton
-		country_event = {
-    id = usa.301
-    days = 3
-    random = 3
-    random_days = 3
-		}
- }
-}
-country_event = {
- id = usa.301
- title = usa.301.t
- desc = usa.301.d
- picture = GFX_report_event_picture_secession
-	mean_time_to_happen = { days = 1 } 
-	fire_only_once = yes
-	timeout_days = 10
-	
-	is_triggered_only = yes
- 
- option = {
-	name = usa.301.a
-	ai_chance = { factor = 100 }
-	country_event = {
-    id = usa.302
-    days = 3
-    random = 3
-    random_days = 3
-		}
- }
-}
-country_event = {
- id = usa.302
- title = usa.302.t
- desc = usa.302.d
- picture = GFX_report_event_picture_secession
-	mean_time_to_happen = { days = 1 } 
-	fire_only_once = yes
-	timeout_days = 10
-	
-	is_triggered_only = yes
- 
- option = {
-	name = usa.302.a
-	ai_chance = { factor = 100 }
- }
+	option = {
+		name = usa.300.a
+		ai_chance = { factor = 100 }
+		create_intelligence_agency = yes
+		add_ideas = pinkerton
+	}
 }
 
 ##attack on fort sumter
@@ -1383,42 +1339,22 @@ country_event = {
  picture = GFX_report_event_german_parade_paris
  
  fire_only_once = yes
- trigger = {
- date > 1861.1.10
- country_exists = CSA
- NOT = {
- controls_state = 34
- }
- TAG = USA
- }
+	trigger = {
+		date > 1861.1.10
+		country_exists = CSA
+		NOT = {
+			controls_state = 34
+		}
+		TAG = USA
+	}
  
  option = {
 	name = usa.202.a
 	ai_chance = { factor = 100 }
-		country_event = {
-    id = usa.203
-    days = 2
-    random = 2
-    random_days = 2
-		}
- }
-}
-country_event = {
- id = usa.203
- title =usa.203.t
- desc = usa.203.d
- picture = GFX_report_event_german_parade_paris
- 
- fire_only_once = yes
- is_triggered_only = yes
- #Removed the option for the Union to switch to CSA through event
- option = {
-	name = usa.203.a
-	ai_chance = { factor = 100 }
 	custom_effect_tooltip = JEFF_LEAVE_USA
-
  }
 }
+
 #Andrew Johnson
 country_event = {
  id = usa.201

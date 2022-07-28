@@ -16,7 +16,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1861.8.1
+		date > 1861.7.20
 		USA = {
 			controls_province = 7467
 			has_war_with = CSA
@@ -102,7 +102,291 @@ news_event = {
 	}
 }
 
+#FALL OF COLD HARBOR
+news_event = {
+	id = news.103
+	title = news.103.t
+	desc = news.103.d
+	picture = GFX_cold_harbor
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.8.1
+		USA = {
+			controls_province = 3847
+			has_war_with = CSA
+		}
+		NOT = { has_global_flag = fall_of_cold_harbor }
+		64 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_cold_harbor
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.103.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.103.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.103.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
 
+#FALL OF PETERSBURG
+news_event = {
+	id = news.104
+	title = news.104.t
+	desc = news.104.d
+	picture = GFX_Petersburg
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.8.1
+		USA = {
+			controls_province = 2012
+			has_war_with = CSA
+		}
+		NOT = { has_global_flag = fall_of_petersburg }
+		64 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_petersburg
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.104.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.104.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.104.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#FALL OF PHILIPPI
+news_event = {
+	id = news.105
+	title = news.105.t
+	desc = news.105.d
+	picture = GFX_Philippi
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.21
+		USA = {
+			controls_province = 5920
+			has_war_with = CSA
+		}
+		NOT = { has_global_flag = fall_of_philippi }
+		60 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_philippi
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.105.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.105.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.105.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#FALL OF NASHVILLE
+news_event = {
+	id = news.109
+	title = news.109.t
+	desc = news.109.d
+	picture = GFX_nashville
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.21
+		USA = {
+			controls_province = 7774
+			has_war_with = CSA
+		}
+		NOT = { has_global_flag = fall_of_nashville }
+		65 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_nashville
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.109.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.109.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.109.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#FALL OF VICKSBURG
+news_event = {
+	id = news.110
+	title = news.110.t
+	desc = news.110.d
+	picture = GFX_vicksburg
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.21
+		USA = {
+			controls_province = 8108
+			has_war_with = CSA
+		}
+		NOT = { has_global_flag = fall_of_vicksburg }
+		34 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_vicksburg
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.110.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.110.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.110.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#FALL OF FORT HENRY AND DONELSON
+news_event = {
+	id = news.111
+	title = news.111.t
+	desc = news.111.d
+	picture = GFX_Donelson
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.21
+		USA = {
+			controls_province = 7759
+			controls_province = 3313
+			has_war_with = CSA
+		}
+		NOT = { has_global_flag = fall_of_henry_donelson }
+		65 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_henry_donelson
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.111.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.111.b
+		trigger = { TAG = USA }
+		65 = {
+			set_state_flag = usa_won_battle_of_fort_henry_and_donelson
+		}
+		state_event = {
+			id = usa.1790
+			days = 3
+			random = 20
+			random_days = 3
+		}
+	}
+	
+	option = {
+		name = news.111.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
 
 #USA CITY NEWS EVENTS
 
@@ -116,7 +400,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1861.8.1
+		date > 1861.7.14
 		88 = { is_controlled_by = CSA }
 		88 = { is_owned_by = USA }
 		CSA = { has_war_with = USA }
@@ -168,7 +452,250 @@ news_event = {
 	}
 }
 
+#FALL OF WILSON CREEK
+news_event = {
+	id = news.112
+	title = news.112.t
+	desc = news.112.d
+	picture = GFX_wilson_creek
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.14
+		CSA = {
+			controls_province = 7780
+			has_war_with = USA
+		}
+		67 = { is_owned_by = USA }
+		NOT = { has_global_flag = fall_of_wilson_creek }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_wilson_creek
+		add_to_variable = {
+			var = 67.csa_support
+			value = 9
+		}
+		subtract_from_variable = {
+			var = 67.usa_support
+			value = 9
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.112.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.112.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.112.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
 
+#FUCK PHILADELPHIA
+news_event = {
+	id = news.114
+	title = news.114.t
+	desc = news.114.d
+	picture = GFX_pldixie
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.14
+		CSA = {
+			controls_province = 2807
+			has_war_with = USA
+		}
+		48 = { is_owned_by = USA }
+		NOT = { has_global_flag = fall_of_philadelphia }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_philadelphia
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.114.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.114.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.114.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+###################
+#HARPSFERRY EVENTS#
+###################
+
+#HARPSFERRY 1
+news_event = {
+	id = news.106
+	title = news.106.t
+	desc = news.106.d
+	picture = GFX_harpers_Ferry
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.15
+		CSA = {
+			controls_province = 7258
+			has_war_with = USA
+		}
+		NOT = { has_global_flag = harpers_ferry_1 }
+		60 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = harpers_ferry_1
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.106.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.106.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.106.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#HARPSFERRY 2
+news_event = {
+	id = news.107
+	title = news.107.t
+	desc = news.107.d
+	picture = GFX_harpers_Ferry
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.15
+		USA = {
+			controls_province = 7258
+			has_war_with = CSA
+		}
+		has_global_flag = harpers_ferry_1
+		NOT = { has_global_flag = harpers_ferry_2 }
+		60 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = harpers_ferry_2
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.107.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.107.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.107.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
+
+#HARPSFERRY 3
+news_event = {
+	id = news.555
+	title = news.555.t
+	desc = news.555.d
+	picture = GFX_harpers_Ferry
+	
+	major = yes
+	
+	trigger = {
+		date > 1861.7.15
+		CSA = {
+			controls_province = 7258
+			has_war_with = USA
+		}
+		has_global_flag = harpers_ferry_1
+		has_global_flag = harpers_ferry_2
+		NOT = { has_global_flag = harpers_ferry_3 }
+		60 = { is_owned_by = CSA }
+	}
+	
+	immediate = {
+		set_global_flag = harpers_ferry_3
+	}
+	
+	mean_time_to_happen = { days = 1 } 
+	
+	option = {
+		name = news.555.a
+		trigger = { TAG = CSA }
+	}
+	
+	option = {
+		name = news.555.b
+		trigger = { TAG = USA }
+	}
+	
+	option = {
+		name = news.555.c
+		trigger = {
+			NOT = {
+				TAG = USA
+				TAG = CSA
+			}
+		}
+	}
+}
 
 #######################
 #SURRENDER NEWS Events#
@@ -184,7 +711,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1861.8.1
+		date > 1862.1.1
 		USA = {
 			controls_province = 4701
 			controls_province = 7467
@@ -250,7 +777,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1861.8.1
+		date > 1862.1.1
 		CSA = {
 			controls_province = 7258
 			controls_province = 7281
@@ -320,567 +847,6 @@ news_event = {
 
 #STILL NEED EDITED
 
-#TAKE Cold Harbor
-news_event = {
-
-	id = news.103
-	title = news.103.t
-	desc = news.103.d
-	picture = GFX_cold_harbor
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.8.1
-	USA = {
-	controls_province = 3847
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = cold_harbor_TAKEN
-	}
-	}
-	
- }
- 	immediate = {
-		USA = {
-		set_country_flag = cold_harbor_TAKEN
-		}
-	}
-	option = {
-		name = news.103.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.103.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.103.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-
-#TAKE Petersburg
-news_event = {
-
-	id = news.104
-	title = news.104.t
-	desc = news.104.d
-	picture = GFX_Petersburg
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.8.1
-	USA = {
-	controls_province = 2012
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = Petersburg_TAKEN
-	}
-	}
-	
- }
-	immediate = {
-		USA = {
-		set_country_flag = Petersburg_TAKEN
-		}
-	}
-	option = {
-		name = news.104.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.104.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.104.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of Philipi
-news_event = {
-
-	id = news.105
-	title = news.105.t
-	desc = news.105.d
-	picture = GFX_Philipi
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.7.21
-	USA = {
-	controls_province = 5920
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = battle_of_philipi
-	}
-	}
-	
- }	
- immediate = {
-	USA = {
-		set_country_flag = battle_of_philipi
-		}
-	}
- 
-	option = {
-		name = news.105.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.105.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.105.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of Harps Ferry,1st
-news_event = {
-
-	id = news.106
-	title = news.106.t
-	desc = news.106.d
-	picture = GFX_harpers_Ferry
-
-	major = yes
-	
-	trigger = {
-	date > 1861.7.15
-	CSA = {
-	controls_province = 7258
-	NOT = {
-	has_country_flag =HARPSFERRY_1ST_WIN
-	}
-	}
-	USA = {
-	has_country_flag = CIVIL_WAR
-	}
-	has_war = yes
- }
- 
-  immediate = {
-	 CSA = {
-		set_country_flag = HARPSFERRY_1ST_WIN
-		}
-	}
-	option = {
-		name = news.106.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.106.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.106.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of Harps Ferry,2nd
-news_event = {
-
-	id = news.107
-	title = news.107.t
-	desc = news.107.d
-	picture = GFX_harpers_Ferry
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.7.15
-	CSA = {
-	has_country_flag = HARPSFERRY_1ST_WIN
-	NOT = {
-	has_country_flag = HARPSFERRY_2ND_LOSE
-	}
-	}
-	USA = {
-	has_country_flag = CIVIL_WAR
-	controls_province = 7258
-	}
-	has_war = yes
- }
-
- immediate = {
-			CSA = {
-			set_country_flag = HARPSFERRY_2ND_LOSE
-			}
-	}
-	option = {
-		name = news.107.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.107.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.107.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of Harps Ferry,3rd
-news_event = {
-
-	id = news.108
-	title = news.108.t
-	desc = news.108.d
-	picture = GFX_harpers_Ferry
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.7.15
-	CSA = {
-	has_country_flag = HARPSFERRY_1ST_WIN
-	has_country_flag = HARPSFERRY_2ND_LOSE
-	controls_province = 7258
-	NOT = {
-	has_country_flag = HARPSFERRY_3rd_WIN
-	}
-	}
-	USA = {
-	has_country_flag = CIVIL_WAR
-	}
-	has_war = yes
- }
-
- immediate = {
-			CSA = {
-			set_country_flag = HARPSFERRY_3rd_WIN
-			}
-	}
-	option = {
-		name = news.108.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.108.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.108.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of Nashville_1862
-news_event = {
-
-	id = news.109
-	title = news.109.t
-	desc = news.109.d
-	picture = GFX_nashville
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.7.21
-	USA = {
-	controls_province = 7774
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = battle_of_nashville_1862
-	}
-	}
-	
- }	
- immediate = {
-	USA = {
-		set_country_flag = battle_of_nashville_1862
-		}
-	}
- 
-	option = {
-		name = news.109.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.109.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.109.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of Vicksburg
-news_event = {
-
-	id = news.110
-	title = news.110.t
-	desc = news.110.d
-	picture = GFX_vicksburg
-
-	major = yes
-	
-	trigger = {
-	
-	date > 1861.7.21
-	USA = {
-	controls_province = 8108
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = battle_of_vicksburg_1863
-	}
-	}
-	
- }	
- immediate = {
-	USA = {
-		set_country_flag = battle_of_vicksburg_1863
-		}
-	}
- 
-	option = {
-		name = news.110.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.110.b
-		trigger = {
-				TAG = USA
-			}
-	}
-	option = {
-		name = news.110.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of Fort Henry And Donelson
-news_event = {
-	id = news.111 
-	title = news.111.t
-	desc = news.111.d
-	picture = GFX_Donelson
-
-	major = yes
-	
-	trigger = {
-	date > 1861.7.21
-	USA = {
-	controls_province = 7759
-	controls_province = 3313
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = battle_of_fort_henry_and_donelson
-	}
-	}
-	}
-	
-	immediate = {
-	USA = {
-		set_country_flag = battle_of_fort_henry_and_donelson
-		}
-	}
-	
-	option = {
-		name = news.111.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.111.b
-		trigger = {
-				TAG = USA
-			}
-			65 = {
-			set_state_flag = usa_won_battle_of_fort_henry_and_donelson
-			}
-				state_event = {
-				id = usa.1790
-				days = 3
-				random = 20
-				random_days = 3
-			}
-	}
-	option = {
-		name = news.111.c
-		trigger = {
-		NOT = {
-				TAG = USA
-				TAG = CSA
-				}
-			}
-	}
-}
-#Battle of wilson's creek
-news_event = {
-	id = news.112 
-	title = news.112.t
-	desc = news.112.d
-	picture = GFX_wilson_creek
-
-	major = yes
-	
-	trigger = {
-	date > 1861.7.14
-	CSA = {
-	controls_province = 7780
-	}
-	USA = {
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = battle_of_wilson_creek
-	}
-	}
-	USA = {
-	has_war_with = CSA
-	}
-	}
-	
-	immediate = {
-	USA = {
-		set_country_flag = battle_of_wilson_creek
-		}
-	add_to_variable = {
-	var = 67.csa_support
-	value = 9
-	}
-	subtract_from_variable = {
-	var = 67.usa_support
-	value = 9
-	}
-}
-	
-	option = {
-		name = news.112.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.112.b
-		trigger = {
-				TAG = USA
-			}
-	}
-}
-#Battle of philadelphia
-news_event = {
-	id = news.114
-	title = news.114.t
-	desc = news.114.d
-	picture = GFX_pldixie
-
-	major = yes
-	
-	trigger = {
-	date > 1861.7.14
-	CSA = {
-	controls_province = 2807
-	}
-	USA = {
-	has_country_flag = CIVIL_WAR
-	NOT = {
-	has_country_flag = battle_of_philadelphia
-	}
-	}
-	USA = {
-	has_war_with = CSA
-	}
-	}
-	
-	immediate = {
-	USA = {
-		set_country_flag = battle_of_philadelphia
-		}
-}
-	
-	option = {
-		name = news.114.a
-		trigger = {
-				TAG = CSA
-			}
-		}
-	option = {
-		name = news.114.b
-		trigger = {
-				TAG = USA
-			}
-	}
-}
 #NO WAY
 news_event = {
 	id = news.2
