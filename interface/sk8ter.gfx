@@ -8,4 +8,9 @@ spriteTypes = {
 		name = "GFX_idea_girlfriend"
 		texturefile = "gfx/interface/ideas/girlfriend.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_bois_lie"
+		texturefile = "gfx/interface/ideas/bois_lie.dds"
+	}
 }

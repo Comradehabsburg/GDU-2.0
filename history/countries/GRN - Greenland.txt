@@ -23,4 +23,5 @@ set_popularities = {
 add_ideas = {
 nobodys_home
 girlfriend
+bois_lie
 }

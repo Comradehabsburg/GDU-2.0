@@ -45,5 +45,23 @@ ideas = {
 				operative_slot = 1
 			}
 		}
+		
+		bois_lie = {
+			picture = bois_lie
+			
+			allowed = {
+				tag = GRN
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				improve_relations_maintain_cost_factor = 1.0
+			}
+		}
 	}
 }

@@ -1475,6 +1475,9 @@ id = usa_focus
 			has_country_leader = {ruling_only = yes character = USA_abraham_lincoln }
 			OR={controls_state = 58 controls_state = 37}
 			date > 1862.6.1
+			NOT = {
+				has_idea = pay_for_guns
+			}
 		}
 
 		completion_reward = {
