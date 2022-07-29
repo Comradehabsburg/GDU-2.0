@@ -15,7 +15,6 @@ CSA_jefferson_davis={
 			former_sec_of_war
 			}
 			expire="1865.4.14.1"
-			id=-1
 		}
 	}
 	CSA_alexander_stephens={
@@ -32,7 +31,6 @@ CSA_jefferson_davis={
 			traits = {
 			}
 			expire="1865.4.14.1"
-			id=-1
 		}
 			advisor={
 			slot = political_advisor
@@ -271,7 +269,6 @@ CSA_jefferson_davis={
 				defense_skill = 5
 				planning_skill = 5
 				logistics_skill = 5
-				legacy_id=2
 		}
 	}
 	

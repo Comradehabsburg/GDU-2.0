@@ -12,7 +12,6 @@ USA_james_buchanan={
 			desc = "USA_james_buchanan_desc"
 			traits={ }
 			expire="1861.3.4.1"
-			id=-1
 		}
 	}
 	USA_andrew_johnson={
@@ -27,7 +26,6 @@ USA_james_buchanan={
 			desc = "USA_andrew_johnson_desc"
 			traits={ }
 			expire="1868.3.4.1"
-			id=-1
 		}
 			advisor={
 			slot = political_advisor
@@ -66,7 +64,6 @@ USA_james_buchanan={
 			lincoln_union_leader
 			}
 			expire="1865.4.15.7"
-			id=-2
 		}
 		advisor={
 			cost = 20
@@ -159,7 +156,6 @@ USA_james_buchanan={
 			defense_skill = 5
 			planning_skill = 4
 			logistics_skill = 4
-			legacy_id=6
 		}
 	}
 	USA_GEORGE_McClellan={
@@ -219,7 +215,6 @@ USA_james_buchanan={
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 4
-			legacy_id=1
 		}
 			country_leader={
 			ideology= liberalism
@@ -228,7 +223,6 @@ USA_james_buchanan={
 				
 			}
 			expire="1865.4.15.7"
-			id=-2
 		}
 	}
 	USA_william_sherman={
@@ -276,7 +270,6 @@ USA_james_buchanan={
 			defense_skill = 5
 			planning_skill = 2
 			logistics_skill = 3
-			legacy_id=5
 		}
 	}
 	USA_Henry_Halleck={
@@ -323,7 +316,6 @@ USA_james_buchanan={
 			defense_skill = 1
 			planning_skill = 6
 			logistics_skill = 1
-			legacy_id=101
 		}
 	}
 		USA_winfield_scott={
@@ -419,7 +411,6 @@ USA_james_buchanan={
 			defense_skill = 5
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id=00099
 		}
 	}
 	#High Command
@@ -462,7 +453,6 @@ USA_james_buchanan={
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id=8
 		}
 	}
 	USA_philip_sheridan={
@@ -522,7 +512,6 @@ USA_james_buchanan={
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id=9
 		}
 	}
 	USA_Winfield_S_Hancock = {
@@ -565,7 +554,6 @@ USA_james_buchanan={
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id=1880
 		}
 	}
 	USA_Joseph_Hooker = {
@@ -607,7 +595,6 @@ USA_james_buchanan={
 			defense_skill = 4
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id=00245
 		}
 	}
 	USA_Montegomery_meigs = {
@@ -649,7 +636,6 @@ USA_james_buchanan={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 7
-			legacy_id=01245
 		}
 	}
 		USA_William_Starke_Rosecrans = {
@@ -709,7 +695,6 @@ USA_james_buchanan={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id=1551
 		}
 	}
 		USA_JOHN_A_LOGAN={
@@ -727,7 +712,6 @@ USA_james_buchanan={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=-1
 		}
 	}
 	#Lincoln's Cabinet,1860

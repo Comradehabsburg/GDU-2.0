@@ -12,7 +12,6 @@ SIO_little_crow={
 			desc = "Little_crow_desc"
 			traits={ }
 			expire="1861.3.4.1"
-			id=-1
 		}
 	}
 	SIO_Wambditanka={
@@ -29,7 +28,6 @@ SIO_little_crow={
 			defense_skill = 4
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id=6
 		}
 	}
 	SIO_shakopee={
@@ -46,7 +44,6 @@ SIO_little_crow={
 			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id=6
 		}
 	}
 }
