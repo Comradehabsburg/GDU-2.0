@@ -142,7 +142,7 @@ music = {
 }
 
 music = {
-	song = "MTHOTN"
+	song = "McClellan the Hope of the Nation!"
 
 }
 
