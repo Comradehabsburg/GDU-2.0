@@ -1850,7 +1850,7 @@ NOT = { has_completed_focus = USA_McClellan's_Campaign }
 		set_global_flag = CM_SE_opened
 		clear_array = CM_SE_event_id_array
 		add_to_array = { CM_SE_event_id_array = 5 }	
-		play_song = "MTHOTN"
+		play_song = "McClellan the Hope of the Nation!"
 		}
 		set_country_flag = USA_support_mcclellan
 		set_country_flag = USA_1864_campaign_start
