@@ -635,7 +635,7 @@ id = csa_focus
 		focus = CSA_import_england_weapon
 		}
 		available = {
-		has_manpower > 150000
+		has_manpower > 50000
 		controls_province = 7892
 		controls_province = 1984
 		OR = {controls_state = 64 controls_state = 36}
@@ -650,7 +650,7 @@ id = csa_focus
     uses = 2
     category = land_doctrine
 		}
-		add_manpower = -40000
+		add_manpower = -50000
 		load_oob = CSA_PACS_1862
 		}
 	}

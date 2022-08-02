@@ -1368,7 +1368,7 @@ id = usa_focus
 			has_country_leader = {ruling_only = yes character = USA_abraham_lincoln }
 			OR={controls_state = 58 controls_state = 37}
 			date > 1861.7.1
-			has_manpower > 150000
+			has_manpower > 45000
 		}
 
 		completion_reward = {
@@ -1393,11 +1393,11 @@ id = usa_focus
 			has_country_leader = {ruling_only = yes character = USA_abraham_lincoln }
 			OR={controls_state = 58 controls_state = 37}
 			date > 1861.7.1
-			has_manpower > 100000
+			has_manpower > 50000
 		}
 
 		completion_reward = {
-		add_manpower = -12000
+		add_manpower = -6000
 		load_oob = USA_lincoln_volunteers_art
 		}
 	}
