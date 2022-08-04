@@ -2621,16 +2621,6 @@ leader_traits = {
 		trait_type = status_trait
 	}
 	
-	recently_promoted = {
-		type = all
-		trait_type = status_trait
-		
-		attack_skill = -1
-		defense_skill = -1
-		logistics_skill = -1
-		planning_skill = -1
-	}
-
 	# defective_geneseed = { #needs more code support, remove before launch
 	# 	type = all
 	# 	trait_type = status_trait
