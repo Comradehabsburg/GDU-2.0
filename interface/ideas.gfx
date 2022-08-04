@@ -4,6 +4,11 @@ spriteTypes = {
 		name = "GFX_idea_the_pickle_offensive"
 		texturefile = "gfx/interface/ideas/the_pickle_offensive.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_secession_in_the_dock_yards"
+		texturefile = "gfx/interface/ideas/secession_in_the_dock_yards.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_idea_mobilization_against_our_brothers"

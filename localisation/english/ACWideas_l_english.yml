@@ -5,6 +5,8 @@
 #Both sides
  mobilization_against_our_brothers:0 "Mobilization against our brothers"
  mobilization_against_our_brothers_desc:0 "This is a war of brothers we need all the men we can get our hands on as fast as we can, we must mobilize now!"
+ secession_in_the_dock_yards:0 "Dockers are Fighting"
+ secession_in_the_dock_yards_desc:0 "Something must be done maybe we should focus our nation for 7 days on fixing this"
 #PRE FORMED
  plotting:0 "Plotting Rebellion"
  plotting_desc:0 "Plotting a rebellion uses many resources for this one to work they need to use all the political power and military power they have for it to work."

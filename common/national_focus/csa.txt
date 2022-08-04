@@ -2160,7 +2160,7 @@ id = csa_focus
 		icon = GFX_goal_generic_navy_battleship
 		x = 22
 		y = 7
-		cost = 2
+		cost = 1
 		available = {
 		has_completed_focus = CSA_civil_war
 			has_country_leader = {ruling_only = yes character = CSA_jefferson_davis}
@@ -2173,6 +2173,7 @@ id = csa_focus
 		completion_reward = {
 		navy_experience = 50
 		load_oob = CSN_1861
+		remove_ideas = secession_in_the_dock_yards
 		add_tech_bonus = {
 		bonus = 0.5
 		uses = 2

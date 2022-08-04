@@ -40,4 +40,25 @@ ideas = {
 			}
 		}
 	}
+	
+	country = {
+		secession_in_the_dock_yards = {
+			picture = secession_in_the_dock_yards
+			
+			allowed = {
+				tag = USA
+				tag = CSA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = -999
+			}
+		}
+	}
 }

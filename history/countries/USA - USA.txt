@@ -106,6 +106,7 @@ if = {
 add_ideas = {
 mobilization_against_our_brothers
 secseed_crisis
+secession_in_the_dock_yards
 american_slavery_usa
 runaway_slave_law
 JB_FLOYD

@@ -108,6 +108,7 @@ set_popularities = {
 
 add_ideas = {
 plotting
+secession_in_the_dock_yards
 mobilization_against_our_brothers
 american_slavery
 LeRoy_Pope_Walker

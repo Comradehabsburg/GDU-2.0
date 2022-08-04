@@ -561,6 +561,7 @@
 		}
 		completion_reward = {
 		load_oob = USN_1861
+		remove_ideas = secession_in_the_dock_yards
 		navy_experience = 50
 		add_tech_bonus = {
 		bonus = 0.5
