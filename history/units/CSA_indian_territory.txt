@@ -3,6 +3,9 @@ division_template = {
 
 	regiments = {
 		militia = { x = 0 y = 0 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 3 y = 0 }
 	}
 	priority = 1
 }

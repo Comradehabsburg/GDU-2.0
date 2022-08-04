@@ -131,7 +131,7 @@ id = csa_focus
 		
 	add_equipment_to_stockpile = {
 			type = train_equipment_1
-			amount = 100
+			amount = 200
 			producer = USA
 	}
 		add_equipment_to_stockpile = {
@@ -148,6 +148,7 @@ id = csa_focus
 		load_oob = 1861-7-21_CSA
 		set_capital = { state = 64 }
 		load_oob = 1861-msg
+		load_oob = 1860-CSA.txt
 		load_oob = war_breakout_csa_units
 		add_state_core = 61
 		transfer_state = 61

@@ -15,42 +15,84 @@ division_template = {
 Units = {
 	division = {
 		name = "Washington D.C Guard"
-		location = 7281
+		location = 7745
 		division_template = "DC Guard"
 		start_experience_factor = 0
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Washington D.C Guard"
-		location = 7281
+		location = 7745
 		division_template = "DC Guard"
 		start_experience_factor = 0
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Washington D.C Guard"
-		location = 7281
+		location = 7745
 		division_template = "DC Guard"
 		start_experience_factor = 0
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Washington D.C Guard"
-		location = 7281
+		location = 7745
 		division_template = "DC Guard"
 		start_experience_factor = 0
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Washington D.C Guard"
-		location = 7281
+		location = 7745
 		division_template = "DC Guard"
 		start_experience_factor = 0
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "Washington D.C Guard"
-		location = 7281
+		location = 7745
+		division_template = "DC Guard"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+		division = {
+		name = "Washington D.C Guard"
+		location = 7745
+		division_template = "DC Guard"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Washington D.C Guard"
+		location = 7745
+		division_template = "DC Guard"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Washington D.C Guard"
+		location = 7745
+		division_template = "DC Guard"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Washington D.C Guard"
+		location = 7745
+		division_template = "DC Guard"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Washington D.C Guard"
+		location = 7745
+		division_template = "DC Guard"
+		start_experience_factor = 0
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "Washington D.C Guard"
+		location = 7745
 		division_template = "DC Guard"
 		start_experience_factor = 0
 		start_equipment_factor = 1
