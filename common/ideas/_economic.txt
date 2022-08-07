@@ -227,6 +227,30 @@ ideas = {
    			}
 		}
 		
+		closed_economy = {
+		
+			cost = 2000
+			removal_cost = -1
+			
+			modifier = {
+				min_export = 0.8
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+		
 		cotton_is_king_trade = {
 		
 			cost = 150

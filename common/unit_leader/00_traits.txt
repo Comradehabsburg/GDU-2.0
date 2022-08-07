@@ -2621,6 +2621,11 @@ leader_traits = {
 		trait_type = status_trait
 	}
 	
+	recently_promoted = {
+		type = all
+		trait_type = status_trait
+	}
+	
 	# defective_geneseed = { #needs more code support, remove before launch
 	# 	type = all
 	# 	trait_type = status_trait
