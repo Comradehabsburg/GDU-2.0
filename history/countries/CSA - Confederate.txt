@@ -15,12 +15,13 @@ recruit_character = CSA_alexander_stephens
 recruit_character = CSA_stonewall_jackson
 recruit_character = CSA_samuel_copper
 recruit_character = CSA_joseph_johnston
-recruit_character = CSA_slavemasteryell
 recruit_character = CSA_Walerian_Sulakowski
 recruit_character = CSA_george_pickett
 recruit_character = CSA_nathan_bedford_forrest
 recruit_character = CSA_james_longstreet
 recruit_character = CSA_albert_sidney_johnston
+recruit_character = CSA_slavemasteryell
+recruit_character = CSA_gmann
 #CSA CONGRESS
 set_variable = { var = CSA_senators_support value = 0 }
 set_variable = { var = CSA_senators_total value = 0 }

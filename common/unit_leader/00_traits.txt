@@ -67,7 +67,19 @@ leader_traits = {
 			max_army_group_size = -4
 		}
 	}
-
+	
+	kaiser_gaming = {
+		type = land	
+		type = personality_trait
+		
+		gain_xp = {
+			always = no # not gainable
+		}
+		
+		corps_commander_modifier = {
+			experience_gain_factor = 0.25
+		}
+	}
 	
 ##################################
 # Common Traits

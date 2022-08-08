@@ -5,6 +5,11 @@ spriteTypes = {
 	name = "GFX_trait_polish"
 	texturefile = "gfx/interface/traits/personal/trait_polish.dds"
 	}
+	
+	spriteType = {
+	name = "GFX_trait_kaiser_gaming"
+	texturefile = "gfx/interface/traits/personal/trait_kaiser_gaming.dds"
+	}
 	#Base Mod/Game
 
 	spriteType = {

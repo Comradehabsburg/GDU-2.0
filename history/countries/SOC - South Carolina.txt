@@ -22,8 +22,8 @@ set_popularities = {
 	neutrality = 4
 }
 create_country_leader = {
-	name = "Francis Wilkinson Pickens"
-	picture = "Francis_Wilkinson_Pickens.dds"
+	name = "Foreskin Procurement Officer"
+	picture = "foreskin_procurement_officer.dds"
 	expire = "1862.5.6"
 	ideology = fascism_ideology
 	traits = {

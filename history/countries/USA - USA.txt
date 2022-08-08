@@ -25,6 +25,8 @@ recruit_character = USA_caleb_blood_smith
 recruit_character = USA_Montgomery_Blair
 recruit_character = USA_gideon_welles
 recruit_character = USA_andrew_johnson
+recruit_character = USA_lord_fatass_king_of_freedom
+recruit_character = USA_fitza
 
 #US 36th Congress
 set_variable = { var = senators_support value = 42 }
@@ -143,16 +145,6 @@ create_country_leader = {
 	}
 }
 			#Custom
-			create_corps_commander = {
-				name = "Lord Fatass King of Freedom"
-				picture = "Lord_Fatass.dds"
-				traits = { war_hero }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 3
-			}
 			create_corps_commander = {
 				name = "Włodzimierz Krzyżanowski"
 				picture = "Włodzimierz_Krzyżanowski.dds"

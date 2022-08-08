@@ -895,4 +895,39 @@ USA_james_buchanan={
 				}
 		}
 	}
+	
+	#Custom
+	USA_lord_fatass_king_of_freedom = {
+	name = USA_lord_fatass_king_of_freedom
+		portraits={
+			army = {
+				large = "gfx/leaders/USA/Lord_Fatass.dds"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero kaiser_gaming }
+				skill = 2
+				attack_skill = 1
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+		}
+	}
+	
+	USA_fitza = {
+	name = USA_fitza
+		portraits={
+			army = {
+				large = "gfx/leaders/USA/fitza.dds"
+			}
+		}
+		corps_commander = {
+			traits = { kaiser_gaming }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+		}
+	}
 }

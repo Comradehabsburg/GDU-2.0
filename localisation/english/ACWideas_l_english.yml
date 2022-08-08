@@ -10,6 +10,12 @@
 #PRE FORMED
  plotting:0 "Plotting Rebellion"
  plotting_desc:0 "Plotting a rebellion uses many resources for this one to work they need to use all the political power and military power they have for it to work."
+ #Custom People
+ USA_lord_fatass_king_of_freedom:0 "Lord Fatass King of Freedom"
+ USA_fitza:0 "Fitza"
+ CSA_slavemasteryell:0 "Slavemasteryell"
+ CSA_gmann:0 "Gmann"
+ CSA_Walerian_Sulakowski:0 "Walerian Sulakowski"
 #Laws
  Simon_Cameron:0 "Simon Cameron"
  JB_FLOYD:0 "John B.Floyd"
@@ -64,8 +70,6 @@
  run_away_slaves:0 "Fugitive Slaves"
  CSA_samuel_copper:0 "Samuel Copper"
  CSA_joseph_johnston:0 "Joseph Johnston"
- CSA_slavemasteryell:0 "Slavemasteryell"
- CSA_Walerian_Sulakowski:0 "Walerian Sulakowski"
  CSA_george_pickett:0 "George Pickett"
  CSA_nathan_bedford_forrest:0 "Nathan Bedford Forrest"
  CSA_james_longstreet:0 "James Longstreet"
