@@ -3,11 +3,11 @@ state={
 	id=38
 	name="STATE_38"
 	resources={
-		steel=14.000
-		chromium=24
-		aluminium=44
-		tungsten = 2 
-		oil=34
+		steel = 20
+		chromium = 25
+		aluminium = 50
+		tungsten = 5
+		oil = 40
 		rubber = 40
 	}
 	history={
@@ -17,8 +17,8 @@ state={
 		add_core_of = CSA
 		buildings = {
 			infrastructure = 1
-			arms_factory = 4
-			industrial_complex = 2
+			arms_factory = 5
+			industrial_complex = 3
 			4661 = {
 				naval_base = 3
 			}
