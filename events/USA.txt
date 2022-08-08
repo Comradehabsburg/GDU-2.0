@@ -898,16 +898,11 @@ country_event = {
 	add_state_core = 60
 		country_event = {
     id = usa.12
-    days = 5		country_event = {
-    id = usa.12
     days = 5
     random = 22
     random_days = 5
-		}
-    random = 22
-    random_days = 5
-		}
-		country_event = {
+	}
+	country_event = {
     id = usa.17
     days = 5
     random = 22
@@ -2666,7 +2661,6 @@ country_event = {
  mean_time_to_happen = { days = 1 } 
 	
 	fire_only_once = yes
-	fixed_random_seed = no
 	is_triggered_only = yes
 	
  option = {
@@ -2719,7 +2713,6 @@ country_event = {
  mean_time_to_happen = { days = 1 } 
 	
 	fire_only_once = yes
-	fixed_random_seed = no
 	is_triggered_only = yes
 	
 	option = {
@@ -3307,11 +3300,11 @@ country_event = {
 ###########################
 ##STATE EVENTS
 ###########################
-state_event = { 
+state_event = {
     id = usa.1790
 		 title = usa.1790.t
 		desc = usa.1790.d
-    days = 5 
+    mean_time_to_happen = { days = 5 }
    	fire_only_once = yes
 	
 	is_triggered_only = yes
@@ -3379,4 +3372,3 @@ country_event = {
 			}
 	}
  }
-}

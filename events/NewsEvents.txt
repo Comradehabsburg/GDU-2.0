@@ -12,6 +12,7 @@ news_event = {
 	title = news.999.t
 	desc = news.999.d
 	picture = GFX_richmond
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -60,6 +61,7 @@ news_event = {
 	title = news.102.t
 	desc = news.102.d
 	picture = GFX_fredericksburg
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -108,6 +110,7 @@ news_event = {
 	title = news.103.t
 	desc = news.103.d
 	picture = GFX_cold_harbor
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -154,6 +157,7 @@ news_event = {
 	title = news.104.t
 	desc = news.104.d
 	picture = GFX_Petersburg
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -200,6 +204,7 @@ news_event = {
 	title = news.105.t
 	desc = news.105.d
 	picture = GFX_Philippi
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -246,6 +251,7 @@ news_event = {
 	title = news.109.t
 	desc = news.109.d
 	picture = GFX_nashville
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -292,6 +298,7 @@ news_event = {
 	title = news.110.t
 	desc = news.110.d
 	picture = GFX_vicksburg
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -338,6 +345,7 @@ news_event = {
 	title = news.111.t
 	desc = news.111.d
 	picture = GFX_Donelson
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -396,6 +404,7 @@ news_event = {
 	title = news.113.t
 	desc = news.113.d
 	picture = GFX_dixiedc
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -458,6 +467,7 @@ news_event = {
 	title = news.112.t
 	desc = news.112.d
 	picture = GFX_wilson_creek
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -512,6 +522,7 @@ news_event = {
 	title = news.114.t
 	desc = news.114.d
 	picture = GFX_pldixie
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -562,6 +573,7 @@ news_event = {
 	title = news.106.t
 	desc = news.106.d
 	picture = GFX_harpers_Ferry
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -608,6 +620,7 @@ news_event = {
 	title = news.107.t
 	desc = news.107.d
 	picture = GFX_harpers_Ferry
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -655,6 +668,7 @@ news_event = {
 	title = news.555.t
 	desc = news.555.d
 	picture = GFX_harpers_Ferry
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -707,6 +721,7 @@ news_event = {
 	title = news.101.t
 	desc = news.101.d
 	picture = GFX_Appomattox
+	fire_only_once = yes
 	
 	major = yes
 	
@@ -773,6 +788,7 @@ news_event = {
 	title = news.666.t
 	desc = news.666.d
 	picture = GFX_dixiedc
+	fire_only_once = yes
 	
 	major = yes
 	

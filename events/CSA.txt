@@ -231,13 +231,13 @@ country_event = {
  
  trigger = {
 	date > 1861.4.10
-	OR {
-	SOC = {
-	controls_state = 82
-	}
-	CSA ={
-	controls_state = 82
-	}
+	OR = {
+		SOC = {
+			controls_state = 82
+		}
+		CSA = {
+			controls_state = 82
+		}
 	}
 	country_exists = CSA
  }
