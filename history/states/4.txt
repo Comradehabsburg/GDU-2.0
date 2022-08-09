@@ -3,8 +3,8 @@ state={
 	id=4
 	name="STATE_4"
 	history={
-		owner = COS
-		add_core_of = COS
+		owner = ELS
+		add_core_of = ELS
 	}
 
 	provinces={

@@ -10,8 +10,8 @@ state={
 		rubber = 40
 	}
 	history={
-		owner = CAN
-		add_core_of = CAN
+		owner = RUS
+		add_core_of = RUS
 	}
 
 	provinces={
