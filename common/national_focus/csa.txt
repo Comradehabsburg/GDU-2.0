@@ -149,7 +149,6 @@ id = csa_focus
 		set_capital = { state = 64 }
 		load_oob = 1861-msg
 		load_oob = CSA_garrison
-		load_oob = 1860-CSA.txt
 		load_oob = war_breakout_csa_units
 		add_state_core = 61
 		transfer_state = 61

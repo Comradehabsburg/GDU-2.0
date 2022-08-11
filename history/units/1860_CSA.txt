@@ -1,5 +1,5 @@
 division_template = {
-	name = "Infantry Division"
+	name = "CSA Elite Infantry Division"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -119,49 +119,49 @@ Units ={
 		start_experience_factor = 1
 	}
 		division = {
-		name = "3rd U.S. Infantry Regiment (The Old Guard)"
+		name = "3rd CSA Infantry Regiment (The Old Guard)"
 		location = 346 ###7924
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
 	}
 	division = {
-		name = "4th U.S. Infantry Regiment"
+		name = "4th CSA Infantry Regiment"
 		location = 346 ###3891
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
 	}
 		division = {
-		name = "5th U.S. Infantry Regiment"
+		name = "5th CSA Infantry Regiment"
 		location = 346 ###2349
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
 	}
 	division = {
-		name = "6th U.S. Infantry Regiment"
+		name = "6th CSA Infantry Regiment"
 		location = 346 ###7201
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
 	}
 	division = {
-		name = "7th U.S. Infantry Regiment"
+		name = "7th CSA Infantry Regiment"
 		location = 346 ###7270
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
 	}
 		division = {
-		name = "8th U.S. Infantry Regiment"
+		name = "8th CSA Infantry Regiment"
 		location = 346 ###2816
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
 	}
 	division = {
-		name = "9th U.S. Infantry Regiment"
+		name = "9th CSA Infantry Regiment"
 		location = 346 ###7649
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
 	}
   division = {
-		name = "10th U.S. Infantry Regiment"
+		name = "10th CSA Infantry Regiment"
 		location = 346 ###3442
 		division_template = "CSA Army Regular Regiment"
 		start_experience_factor = 1
@@ -219,98 +219,4 @@ Units ={
 		location = 346 ###8069
 		division_template = "CSA Army Cavalry Regiment"
 		start_experience_factor = 1
-	}
-	fleet = {
-	name = "USS Norfolk Fleet"			
-		naval_base = 4694 # Manhattan
-		task_force = {		
-		name = "Norfolk Fleets"	
-		location = 346 ###4694
-		ship = { name = "USS Pennsylvania" definition = battleship start_experience_factor = 0.0 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "NO Class" } } }
-		ship = { name = "USS Delaware" definition = battleship start_experience_factor = 0.0 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "NO Class" } } }
-		ship = { name = "USS New York" definition = battleship start_experience_factor = 0.0 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "NO Class" } } }
-		ship = { name = "USS Columbus" definition = battleship start_experience_factor = 0.0 equipment = { ship_hull_heavy_1 = { amount = 1 owner = USA version_name = "NO Class" } } }
-		ship = { name = "USS Confederate" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "USS LIGHT Class" } } }
-		ship = { name = "USS Columbia" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "USS LIGHT Class" } } }
-		ship = { name = "USS Raritan" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = USA version_name = "USS LIGHT Class" } } }
-		ship = { name = "USS Plymouth" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "USS Des" } } }
-		ship = { name = "USS Germantown" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "USS Des" } } }
-		ship = { name = "USS Dolphin" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "USS Des" } } }
-		ship = { name = "USS Merrimack" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "USS Des" } } }
-		ship = { name = "USS Pensacola" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = USA version_name = "USS Des" } } }
-		}
-}
-}
-
-
-
-instant_effect = {
-    add_equipment_production = {
-        equipment = {
-	    type = horse_mules_1860
-	    creator = "USA"
-	}
-	requested_factories = 15
-	progress = 0.25
-	efficiency = 60
-    }
-	add_equipment_production = {
-     equipment = {
-	    type = train_equipment_1
-	    creator = "USA"
-	}
-	requested_factories = 5
-	progress = 0.15
-	efficiency = 50
-    }
-		    add_equipment_production = {
-        equipment = {
-	    type = infantry_equipment_1
-	    creator = "USA"
-	}
-	requested_factories = 20
-	progress = 0.25
-	efficiency = 58
-    }
-		    add_equipment_production = {
-        equipment = {
-	    type = support_equipment_1
-	    creator = "USA"
-	}
-	requested_factories = 15
-	progress = 0.25
-	efficiency = 38
-    }
-		    add_equipment_production = {
-        equipment = {
-	    type = artillery_equipment_1
-	    creator = "USA"
-	}
-	requested_factories = 15
-	progress = 0.25
-	efficiency = 40
-    }
-		   add_equipment_production = {
-      equipment = {
-	    type = ship_hull_light_1
-	    creator = "USA"
-			version_name = "USS Des"
-			
-	}
-	name = "USS"
-	requested_factories = 15
-	progress = 0.6
-	amount = 30
-	}
-	    add_equipment_production = {
-      equipment = {
-	    type = ship_hull_cruiser_2
-	    creator = "USA"
-			version_name = "USS LIGHT Class"	
-	}
-	name = "USS"
-	requested_factories = 5
-	progress = 0.5
-	amount = 4
-    }
-}
+	} }
