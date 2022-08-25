@@ -11,8 +11,8 @@ state={
 		rubber = 10
 	}
 	history={
-		owner = BAH
-		add_core_of = BAH
+		owner = CUB
+		add_core_of = CUB
 		buildings = {
 		2264 = {
 				naval_base = 3
