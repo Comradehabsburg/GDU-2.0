@@ -12,6 +12,11 @@ state={
 	history={
 		owner = RUS
 		add_core_of = RUS
+		buildings = {
+			4274 = {
+				naval_base = 3
+			}
+		}
 	}
 
 	provinces={
