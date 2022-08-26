@@ -1,3 +1,7 @@
+BAH = {
+	color = rgb { 60 52 203 }
+	color_ui = rgb { 60 52 203 }
+}
 CAN = {
 	color = rgb { 119 48 39 }
 	color_ui = rgb { 155 62 51 }
