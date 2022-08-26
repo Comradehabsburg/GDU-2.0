@@ -77,7 +77,7 @@ leader_traits = {
 		}
 		
 		corps_commander_modifier = {
-			experience_gain_factor = 0.25
+			experience_gain_factor = 0.05
 		}
 	}
 	
