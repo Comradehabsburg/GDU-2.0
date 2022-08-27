@@ -508,7 +508,7 @@ CSN_raiders= {
 			democratic_drift = 0.1
 			consumer_goods_factor = -0.01
 			production_factory_max_efficiency_factor = 0.25
-			industrial_capacity_factory = 1
+			industrial_capacity_factory = 0.50
 			production_factory_efficiency_gain_factor = 0.50
 			}
 		}

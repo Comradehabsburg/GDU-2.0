@@ -1336,10 +1336,6 @@ id = usa_focus
 		focus = USA_volunteers_army_3
 		}
 		available = {
-		OR={controls_state = 58 controls_state = 37}
-		controls_state = 67
-		controls_state = 69
-		controls_state = 60
 			has_country_leader = {ruling_only = yes character = USA_abraham_lincoln }
 			OR={controls_state = 58 controls_state = 37}
 			date > 1861.7.1
