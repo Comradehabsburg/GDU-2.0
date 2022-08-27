@@ -8,20 +8,11 @@
  CSA_democratic:0"Confederate States of America"
  CSA_DEF:0"Confederate States of America"
 CSA_ADJ:0"Confederate States of America"
-# Custom
- CAN:0 "Vented's Ice Kingdom"
- CAN_democratic:0 "Vented's Ice Kingdom"
- CAN_DEF:0 "Vented's Ice Kingdom"
-CAN_ADJ:0 "Ventedanese"
+#Custom
 #Unless Nations
- MEX:0 "Mexico"
  CUB:0 "Caribbean"
  COL:0 "Gran Colombia"
  ELS:0 "Central America"
- BAH:0 "Bahamas"
- RUS:0 "Russian Empire"
- RUS_DEF:0 "Russian Empire"
- RUS_ADJ:0 "Russia"
 #States
  FLO:0 "Florida"
  FLO_DEF:0 "Florida"

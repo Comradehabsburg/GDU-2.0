@@ -29,3 +29,42 @@ CSA_peace = {
 		}
 	}
 }
+
+#Counterfeiting
+
+	CSA_war_measures = {
+		csa_counterfeiting = {
+	
+			visible = {
+				original_tag = CSA
+				CSA = { has_war_with = USA }
+			}
+	
+			available = {
+				date > 1862.1.1
+				USA = { has_war_with = CSA }
+				OR = {
+					has_idea = CSA_counterfeiting_1
+					has_idea = CSA_counterfeiting_2
+					has_idea = CSA_counterfeiting_3
+					has_idea = CSA_counterfeiting_4
+					has_idea = CSA_counterfeiting_5
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+
+			days_remove = 50
+			cost = 25
+		
+			ai_will_do = {
+				factor = 1
+			}
+
+			remove_effect = {
+				CSA_counterfeiting_level_down = yes
+			}
+		}
+	}
