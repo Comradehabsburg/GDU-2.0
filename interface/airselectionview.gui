@@ -60,7 +60,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "base_name"
 			position = { x = 67 y = 11 }
-			font = "hoi_18"
+			font = "cg_18b"
 			maxWidth = 180
 			maxHeight = 23
 			text = "Super Maga Wing"
@@ -71,7 +71,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "capacity"
 			position = {x=208 y=13}
-			font = "hoi_16mbs"
+			font = "cg_16b"
 			maxWidth = 70
 			maxHeight = 23
 			format = left
@@ -90,7 +90,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "permission_wings_count"
 			position = { x=300 y=10 }
-			font = "hoi_16mbs"
+			font = "cg_16b"
 			text = "100/200"
 			maxWidth = 49
 			maxHeight = 20
@@ -183,7 +183,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "reinf_btn"
-			position = {x=61 y=1}
+			position = {x=95 y=1}
 			spriteType = "GFX_wing_reinforce_small_btn"
 		}
 		
@@ -202,8 +202,8 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "count"
-			position = {x=65 y=-3}   
-			font = "hoi_18mbs"
+			position = {x=99 y=-3}
+			font = "cg_18b"
 			maxWidth = 450
 			maxHeight = 23
 			format = left
@@ -213,7 +213,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "unit_name"
 			position = {x=183 y=8}
-			font = "hoi_16mbs"
+			font = "cg_16b"
 			maxWidth = 155
 			maxHeight = 23
 			text = "Super Maga Wing 1"
@@ -233,7 +233,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "armies_count_box"
 			position = { x = 296 y = 7 }
-			font = "hoi_16mbs"
+			font = "cg_16b"
 			maxWidth = 28
 			maxHeight = 23
 			fixedsize = yes
@@ -245,14 +245,14 @@ guiTypes = {
 		iconType = {
 			name = "xp_bar"
 			spriteType = "GFX_unit_xp_bar"
-			position = { x=9332 y=2334 }
+			position = { x=92 y=24 }
 			rotation = 1.5708
 		}
 
 		iconType = { 
 			name = "xp_level"
 			spriteType = "GFX_unit_level"
-			position = { x=5933 y=3323 }
+			position = { x=59 y=3 }
 		}
 		
 
@@ -280,7 +280,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "mission_state"
 			position = {x=345 y=1}
-			font = "hoi_16mbs"
+			font = "cg_16b"
 			maxWidth = 100
 			maxHeight = 23
 			text = "Standing by"
@@ -290,18 +290,19 @@ guiTypes = {
 		
 		iconType = {
 			name = "priority"
-			position = { x=98 y=7 }
+			position = { x=132 y=0 }
 			quadTextureSprite = "GFX_deploy_priority"
 			frame = 1
 		}
 
 		iconType = {
 			name = "reinforce_icon"
-			position = { x=6500 y=3500 }
+			position = { x=130 y=15 }
 			spriteType = "GFX_wing_prio_strip"
 			frame = 1
 			scale = 0.6
 		}
+		
 		iconType = {
 			name ="air_mission_efficiency_strip"
 			spriteType = "GFX_air_mission_efficiency_strip"
@@ -362,7 +363,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "wings_count"
 			position = {x=47 y=13}
-			font = "hoi_18mbs"
+			font = "cg_18b"
 			maxWidth = 150
 			maxHeight = 23
 			format = left
@@ -371,7 +372,7 @@ guiTypes = {
 		buttonType = {
 			name = "priority_1"
 			position = { x=355 y=13 }
-			buttonFont = "hoi_16mbs"
+			buttonFont = "cg_16b"
 			quadTextureSprite = "GFX_deploy_priority"
 			frame = 1
 			clicksound = click_default
@@ -379,7 +380,7 @@ guiTypes = {
 		buttonType = {
 			name = "priority_2"	
 			position = { x=377 y=13 }
-			buttonFont = "hoi_16mbs"
+			buttonFont = "cg_16b"
 			quadTextureSprite = "GFX_deploy_priority"
 			frame = 1
 			clicksound = click_default
@@ -387,21 +388,21 @@ guiTypes = {
 		buttonType = {
 			name = "priority_3"
 			position = { x=399 y=13 }
-			buttonFont = "hoi_16mbs"
+			buttonFont = "cg_16b"
 			quadTextureSprite = "GFX_deploy_priority"
 			frame = 1
 			clicksound = click_default
 		}
-
+		
 		buttonType = {
 			name = "copy_wing_btn"
-			position = {x=137 y=7}
+			position = {x=207 y=7}
 			spriteType = "GFX_air_base_copy_btn"
 			clicksound = click_default
 			shortcut = "f"
 			scale = 0.7
 		}
-		
+
 		buttonType = {
 			name = "split_wing_btn"
 			position = {x=240 y=7}
@@ -466,7 +467,6 @@ guiTypes = {
 			Orientation = upper_left
 
 			verticalScrollbar = "right_vertical_slider"
-			scroll_wheel_factor = 40
 
 			background = {
 				name = "Background"
@@ -497,7 +497,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "divisions_count"
 				position = {x=18 y=2}
-				font = "hoi_16mbs"
+				font = "cg_16b"
 				maxWidth = 370
 				maxHeight = 23 
 				format = center
@@ -710,7 +710,6 @@ guiTypes = {
 			spriteType = "GFX_strategicair_mission_btn_bg"
 			clicksound = "air_mission_select"
 			# shortcut = "j"
-			shortcut = "ctrl+r"
 		}		
 		iconType = {
 			name = "icon"
@@ -820,26 +819,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
-	containerWindowType = {
-		name = "air_mission_entry_14"
-		position = {x=0 y=0}
-		size = { width=47 height=34 }
-		Orientation = upper_left
-
-		buttonType = {
-			name = "btn"
-			position = {x=0 y=0}	
-			spriteType = "GFX_strategicair_mission_btn_bg"
-			clicksound = "air_mission_select"
-		}		
-		iconType = {
-			name = "icon"
-			position = {x=3 y=2}	
-			spriteType = "GFX_strategicair_mission_types"
-			frame = 15
-			alwaystransparent = yes
-		}
-	}
 
 	containerWindowType = {
 		name = "air_selection_view"
@@ -904,7 +883,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "strategic_priorities_label"
 					position = { x = 15 y = 7 }
-					font = "hoi_18mbs"
+					font = "cg_18b"
 					maxWidth = 380
 					maxHeight = 23
 					text = "AIR_STRATEGIC_PRIORITIES"
