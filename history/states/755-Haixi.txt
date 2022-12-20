@@ -4,8 +4,8 @@ state={
 	name="STATE_755"
 
 	history={
-
-	}
+		owner = ITA
+}
 
 	provinces={
 		4578 
