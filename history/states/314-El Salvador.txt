@@ -3,7 +3,8 @@ id=314
 name="STATE_314"
 manpower = 1
 state_category = wasteland
-history={
+	history={
+		owner = ITA
 }
 provinces={
 		1542 

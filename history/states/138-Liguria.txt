@@ -15,7 +15,7 @@ history={
 			6788 20
 		}
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			arms_factory = 4
 			dockyard = 2
 			6788 = {
