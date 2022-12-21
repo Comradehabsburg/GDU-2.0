@@ -111,7 +111,7 @@ guiTypes = {
 			editBoxType = {
 				position = { x = 475 y = 141  }
 				name = "filter_name"
-				font = "cg_18b"
+				font = "hoi_18b"
 				borderSize = {x = 16 y = 8}	
 				size = { x=216 y=32 }
 				text = "MATCHMAKING_SERVER_FILTER_NAME"
@@ -126,7 +126,7 @@ guiTypes = {
 			editBoxType = {
 				position = { x = 670 y = 141  }
 				name = "filter_tags"
-				font = "cg_18b"
+				font = "hoi_18b"
 				borderSize = {x = 16 y = 8}	
 				size = { x=216 y=32 }
 				text = "MATCHMAKING_SERVER_FILTER_SEARCH"
@@ -433,7 +433,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}				
 			maxWidth = 100
 			maxHeight = 18			
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = ""
 			fixedsize = yes
 			format = centre			
@@ -445,7 +445,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}				
 			maxWidth = 100
 			maxHeight = 18			
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "1.0.2"
 			fixedsize = yes			
 		}		
@@ -456,7 +456,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}				
 			maxWidth = 200
 			maxHeight = 18			
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = ""
 			fixedsize = yes
 			format = centre					
@@ -468,7 +468,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}				
 			maxWidth = 120
 			maxHeight = 18			
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "Sengoku"
 			fixedsize = yes		
 			format = centre				
@@ -480,7 +480,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}				
 			maxWidth = 128
 			maxHeight = 18			
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = ""
 			fixedsize = yes
 		}

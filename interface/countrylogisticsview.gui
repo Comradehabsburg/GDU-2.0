@@ -6,7 +6,7 @@ guiTypes = {
 		show_position = { x=-6 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0
+		animation_time = 300
 		size = { width=550 height=100%% }
 		
 		#hide_sound = menu_close_window
@@ -42,6 +42,8 @@ guiTypes = {
 			size = { width = 550 height = -98 }
 			margin = { top = 33 bottom = 123}
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
 			
 			background = {
 				name = "Background"
@@ -86,7 +88,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "equipment_type_label"
 				position = { x = 30 y = 0 }
-				font = "cg_18b"
+				font = "hoi_18mbs"
 				text = "LOGISTICS_EQUIPMENT_TYPE_LABEL"
 				maxWidth = 125
 				maxHeight = 20
@@ -104,7 +106,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "status_label"
 				position = { x = 183 y = 0 }
-				font = "cg_18b"
+				font = "hoi_18mbs"
 				text = "LOGISTICS_STATUS_LABEL"
 				maxWidth = 70
 				maxHeight = 20
@@ -136,7 +138,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "resources_label"
 				position = { x = 405 y = 0 }
-				font = "cg_18b"
+				font = "hoi_18mbs"
 				text = "LOGISTICS_RESOURCES_LABEL"
 				maxWidth = 100
 				maxHeight = 20
@@ -177,7 +179,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "label"
 				position = { x = 60 y = 7 }
-				font = "cg_18b"
+				font = "hoi_18mbs"
 				text = "LOGISTICS_FUEL_PRIORITIZATION"
 				maxWidth = 300
 				maxHeight = 20
@@ -198,7 +200,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "type_text"
 					position = { x=10 y=8 }
-					font = "cg_16b"
+					font = "hoi_16mbs"
 					text = "TOPBAR_ARMY"
 					maxWidth = 80
 					maxHeight = 20
@@ -209,7 +211,7 @@ guiTypes = {
 				buttonType = {
 					name = "low_prio"
 					position = { x = 7 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_LOW_PRIORITY_DESC"
 					frame = 1
@@ -219,7 +221,7 @@ guiTypes = {
 				buttonType = {
 					name = "medium_prio"
 					position = { x = 27 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_MEDIUM_PRIORITY_DESC"
 					frame = 3
@@ -229,7 +231,7 @@ guiTypes = {
 				buttonType = {
 					name = "high_prio"
 					position = { x = 47 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_HIGH_PRIORITY_DESC"
 					frame = 1
@@ -264,7 +266,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "type_text"
 					position = { x=10 y=8 }
-					font = "cg_16b"
+					font = "hoi_16mbs"
 					text = "TOPBAR_NAVY"
 					maxWidth = 80
 					maxHeight = 20
@@ -275,7 +277,7 @@ guiTypes = {
 				buttonType = {
 					name = "low_prio"
 					position = { x = 7 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_LOW_PRIORITY_DESC"
 					frame = 1
@@ -285,7 +287,7 @@ guiTypes = {
 				buttonType = {
 					name = "medium_prio"
 					position = { x = 27 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_MEDIUM_PRIORITY_DESC"
 					frame = 3
@@ -295,7 +297,7 @@ guiTypes = {
 				buttonType = {
 					name = "high_prio"
 					position = { x = 47 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_HIGH_PRIORITY_DESC"
 					frame = 1
@@ -331,7 +333,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "type_text"
 					position = { x=10 y=8 }
-					font = "cg_16b"
+					font = "hoi_16mbs"
 					text = "TOPBAR_AIR"
 					maxWidth = 80
 					maxHeight = 20
@@ -342,7 +344,7 @@ guiTypes = {
 				buttonType = {
 					name = "low_prio"
 					position = { x = 7 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_LOW_PRIORITY_DESC"
 					frame = 1
@@ -352,7 +354,7 @@ guiTypes = {
 				buttonType = {
 					name = "medium_prio"
 					position = { x = 27 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_MEDIUM_PRIORITY_DESC"
 					frame = 3
@@ -362,7 +364,7 @@ guiTypes = {
 				buttonType = {
 					name = "high_prio"
 					position = { x = 47 y = 25 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					quadTextureSprite = "GFX_deploy_priority"
 					pdx_tooltip = "FUEL_HIGH_PRIORITY_DESC"
 					frame = 1
@@ -398,7 +400,7 @@ guiTypes = {
 				buttonType = {
 					name = "expand_button"
 					position = { x = 7 y = 13 }
-					buttonFont = "cg_16b"
+					buttonFont = "hoi_16mbs"
 					buttonText = ""			
 					quadTextureSprite = "GFX_military_deployment_add_line_btn"
 					clicksound = click_default
@@ -407,7 +409,7 @@ guiTypes = {
 				instantTextboxType = {
 					name = "type_text"
 					position = { x=3 y=15 }
-					font = "cg_16b"
+					font = "hoi_16mbs"
 					text = "PRODUCTION_OUTPUT"
 					maxWidth = 80
 					maxHeight = 20
@@ -462,7 +464,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "military_factories_label"
 				position = { x=15 y=12 }
-				font = "cg_16b"
+				font = "hoi_16mbs"
 				text = "LOGISTICS_MILITARY_FACTORIES_LABEL"
 				maxWidth = 80
 				maxHeight = 20
@@ -501,7 +503,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "naval_factories_label"
 				position = { x=15 y=12 }
-				font = "cg_16b"
+				font = "hoi_16mbs"
 				text = "LOGISTICS_NAVAL_FACTORIES_LABEL"
 				maxWidth = 80
 				maxHeight = 20
@@ -541,7 +543,7 @@ guiTypes = {
 				name = "resources_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 50 height = 30 }
+				slotsize = { width = 50 height = 31 }
 				max_slots = { x = 3 y = 2 }
 				add_horizontal = no
 				format = "UPPER_LEFT"
@@ -552,7 +554,7 @@ guiTypes = {
 			name = "close_button"
 			position = { x = -43 y = 10 }
 			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
@@ -596,7 +598,7 @@ guiTypes = {
 			position = {x=230 y=39}
 			quadTextureSprite ="GFX_chart_history_level_button"
 			buttonText = "LINECHART_DETAILS_YEARS"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
 			
@@ -605,7 +607,7 @@ guiTypes = {
 			position = {x=154 y=39}
 			quadTextureSprite ="GFX_chart_history_level_button"
 			buttonText = "LINECHART_DETAILS_MONTHS"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
 			
@@ -614,19 +616,19 @@ guiTypes = {
 			position = {x=77 y=39}
 			quadTextureSprite ="GFX_chart_history_level_button"
 			buttonText = "LINECHART_DETAILS_DAYS"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
-	
+
 		iconType = {
 			name = "linechart_bg"
 			spriteType = "GFX_strategicair_details_linechart_bg"
 			position = {x=80 y=78}
 		}
-		
+
 		iconType = {
 			name = "linechart"
-			spriteType = "GFX_strategicair_linechart"
+			spriteType = "GFX_logistics_details_linechart"
 			position = {x=80 y=78}
 		}
 
@@ -645,7 +647,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "equipment_variant"
 			position = { x = 89 y = 13 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "PRODUCTION_OUTPUT"
 			maxWidth = 200
 			maxHeight = 20
@@ -656,7 +658,7 @@ guiTypes = {
 			name = "close_button"
 			position = { x = -35 y = 8 }
 			quadTextureSprite ="GFX_NV_btn_close"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
@@ -666,7 +668,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "max_value"
 			position = { x = 316 y = 78 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "0.0"
 			maxWidth = 60
 			maxHeight = 30
@@ -676,7 +678,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "avg_value"
 			position = { x = 316 y = 142 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "0.0"
 			maxWidth = 60
 			maxHeight = 30
@@ -686,7 +688,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "min_value"
 			position = { x = 316 y = 210 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "0.0"
 			maxWidth = 60
 			maxHeight = 30
@@ -696,7 +698,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "min_x_value"
 			position = { x = 79 y = 233 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "0"
 			maxWidth = 30
 			maxHeight = 30
@@ -705,7 +707,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "max_x_value"
 			position = { x = 278 y = 233 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "30"
 			maxWidth = 30
 			maxHeight = 30
@@ -715,7 +717,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "x_axis_type"
 			position = { x = 104 y = 233 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "LINECHART_DETAILS_DAYS"
 			maxWidth = 180
 			maxHeight = 30
@@ -736,7 +738,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "equipment_variant"
 				position = { x = 32 y = 9 }
-				font = "cg_16b"
+				font = "hoi_16mbs"
 				text = "LOGISTICS_EQUIPMENT_VARIANT_LABEL"
 				maxWidth = 200
 				maxHeight = 20
@@ -746,7 +748,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "in_stock"
 				position = { x = 210 y = 9 }
-				font = "cg_16b"
+				font = "hoi_16mbs"
 				text = "LOGISTICS_IN_STOCK_LABEL"
 				maxWidth = 50
 				maxHeight = 20
@@ -756,7 +758,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "in_need"
 				position = { x = 140 y = 9 }
-				font = "cg_16b"
+				font = "hoi_16mbs"
 				text = "LOGISTICS_NEEDS_LABEL"
 				maxWidth = 50
 				maxHeight = 20
@@ -766,7 +768,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "weekly_production"
 				position = { x = 267 y = 9 }
-				font = "cg_16b"
+				font = "hoi_16mbs"
 				text = "LOGISTICS_WEEKLY_PRODUCTION_LABEL"
 				maxWidth = 100
 				maxHeight = 20
@@ -781,6 +783,8 @@ guiTypes = {
 			size = { width=392 height=100%% }
 			margin = { top = 13 left = 13 bottom = 15 right = 25}			
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 38
+			smooth_scrolling = yes
 		
 			background = {
 				name = "Background"
@@ -832,7 +836,7 @@ guiTypes = {
 			position = {x=77 y=39}
 			quadTextureSprite ="GFX_chart_history_type_button"
 			buttonText = "LOGISTICS_FUEL_STORED"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
 	
@@ -841,7 +845,7 @@ guiTypes = {
 			position = {x=196 y=39}
 			quadTextureSprite ="GFX_chart_history_type_button"
 			buttonText = "LOGISTICS_FUEL_CONSUMED"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
 		
@@ -850,7 +854,7 @@ guiTypes = {
 			position = {x=234 y=69}
 			quadTextureSprite ="GFX_chart_history_level_button"
 			buttonText = "LINECHART_DETAILS_YEARS"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
 			
@@ -859,7 +863,7 @@ guiTypes = {
 			position = {x=156 y=69}
 			quadTextureSprite ="GFX_chart_history_level_button"
 			buttonText = "LINECHART_DETAILS_MONTHS"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
 			
@@ -868,7 +872,7 @@ guiTypes = {
 			position = {x=77 y=69}
 			quadTextureSprite ="GFX_chart_history_level_button"
 			buttonText = "LINECHART_DETAILS_DAYS"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
 	
@@ -880,7 +884,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "linechart"
-			spriteType = "GFX_strategicair_linechart"
+			spriteType = "GFX_logistics_details_linechart"
 			position = {x=85 y=105}
 		}
 
@@ -899,7 +903,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "equipment_variant"
 			position = { x = 89 y = 13 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "PRODUCTION_OUTPUT"
 			maxWidth = 200
 			maxHeight = 20
@@ -910,7 +914,7 @@ guiTypes = {
 			name = "close_button"
 			position = { x = -35 y = 8 }
 			quadTextureSprite ="GFX_NV_btn_close"
-			buttonFont = "cg_16b"
+			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
@@ -920,7 +924,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "max_value"
 			position = { x = 310 y = 104 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "0.0"
 			maxWidth = 90
 			maxHeight = 30
@@ -930,7 +934,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "min_value"
 			position = { x = 310 y = 245 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "0.0"
 			maxWidth = 90
 			maxHeight = 30
@@ -940,7 +944,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "min_x_value"
 			position = { x = 79 y = 263 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "0"
 			maxWidth = 30
 			maxHeight = 30
@@ -949,7 +953,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "max_x_value"
 			position = { x = 278 y = 263 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "30"
 			maxWidth = 30
 			maxHeight = 30
@@ -959,7 +963,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "x_axis_type"
 			position = { x = 104 y = 263 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "LINECHART_DETAILS_DAYS"
 			maxWidth = 180
 			maxHeight = 30
@@ -1012,7 +1016,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "equipment_type"
 			position = { x = 37 y = 6 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "name"
 			maxWidth = 115
 			maxHeight = 20
@@ -1045,7 +1049,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "needs"
 			position = { x = 244 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1055,7 +1059,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "produced"
 			position = { x = 151 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1065,7 +1069,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "balance"
 			position = { x = 290 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1075,7 +1079,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "in_stock"
 			position = { x = 347 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1113,7 +1117,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "equipment_type"
 			position = { x = 37 y = 6 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "name"
 			maxWidth = 115
 			maxHeight = 20
@@ -1147,7 +1151,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "needs"
 			position = { x = 244 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1157,7 +1161,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "produced"
 			position = { x = 151 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1167,7 +1171,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "balance"
 			position = { x = 290 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1177,7 +1181,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "in_stock"
 			position = { x = 347 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1215,7 +1219,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "equipment_type"
 			position = { x = 37 y = 6 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "name"
 			maxWidth = 115
 			maxHeight = 20
@@ -1248,7 +1252,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "in_stock"
 			position = { x = 347 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1258,7 +1262,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "needs"
 			position = { x = 244 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1268,7 +1272,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "produced"
 			position = { x = 151 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1278,7 +1282,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "balance"
 			position = { x = 290 y = 20 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1309,7 +1313,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 35 y = 9 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "LOGISTICS_LAND_OTHER_LABEL"
 			maxWidth = 200
 			maxHeight = 20
@@ -1340,7 +1344,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 37 y = 12 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "LOGISTICS_NAVAL_OTHER_LABEL"
 			maxWidth = 200
 			maxHeight = 20
@@ -1371,7 +1375,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 35 y = 9 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "LOGISTICS_AIR_OTHER_LABEL"
 			maxWidth = 200
 			maxHeight = 20
@@ -1403,7 +1407,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "value"
 			position = { x=-1 y=15 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "15"
 			maxWidth = 50
 			maxHeight = 20
@@ -1451,7 +1455,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 35 y = 7 }
-			font = "cg_18b"
+			font = "hoi_18mbs"
 			text = "name"
 			maxWidth = 154
 			maxHeight = 20
@@ -1475,7 +1479,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "equipment_variant"
 			position = { x = 22 y = 10 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "name"
 			maxWidth = 154
 			maxHeight = 20
@@ -1486,7 +1490,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "in_stock"
 			position = { x = 192 y = 10 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 63
 			maxHeight = 20
@@ -1496,7 +1500,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "weekly_production"
 			position = { x = 260 y = 10 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1506,7 +1510,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "request"
 			position = { x = 130 y = 9 }
-			font = "cg_16b"
+			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
@@ -1515,12 +1519,12 @@ guiTypes = {
 		
 		buttonType = {
 			name = "delete_button"
-			position = { x = -29 y = 6 }
+			position = { x = -2900 y = 6 }
 			quadTextureSprite = "GFX_NV_btn_delete"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_default
 			pdx_tooltip = "LOGISTICS_DELETE_EQUIPMENT"
-			scale = 0.9
+			scale = 0.0
 		}		
 	}
 }
