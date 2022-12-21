@@ -18,25 +18,23 @@
 # unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
 #             this option is available here mainly for a mods.
 #
-# ordered - Is a list of all historical names. 
-#           Numbers must start from 1 and up. 
+# ordered - Is a list of all historical names.
+#           Numbers must start from 1 and up.
 #           Numbers can't repeat in one scope.
 #           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
 #           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
-#           1st argument = The name. It must contain either: 
+#           1st argument = The name. It must contain either:
 #                          %d (for decimal number placement)
 #                          %s (for string number placement - ROMAN numbers like XIV).
 #           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-JAP_INF_01 = 
+JAP_INF_01 =
 {
 	name = "Infantry Division"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -45,7 +43,7 @@ JAP_INF_01 =
 
 	fallback_name = "%d Hohei Shidan"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -220,13 +218,11 @@ JAP_INF_01 =
 	}
 }
 
-JAP_CAV_01 = 
+JAP_CAV_01 =
 {
 	name = "Cavalry Division"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
@@ -235,7 +231,7 @@ JAP_CAV_01 =
 
 	fallback_name = "%d Kihei Shidan"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -262,13 +258,11 @@ JAP_CAV_01 =
 	}
 }
 
-JAP_MOT_01 = 
+JAP_MOT_01 =
 {
 	name = "Motorized Division"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
@@ -277,7 +271,7 @@ JAP_MOT_01 =
 
 	fallback_name = "%d Jidoushaka Shidan"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -446,13 +440,11 @@ JAP_MOT_01 =
 	}
 }
 
-JAP_MEC_01 = 
+JAP_MEC_01 =
 {
 	name = "Mechanized Division"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "mechanized" }
 
@@ -461,7 +453,7 @@ JAP_MEC_01 =
 
 	fallback_name = "%d Kikaika Shidan"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -630,22 +622,20 @@ JAP_MEC_01 =
 	}
 }
 
-JAP_ARM_01 = 
+JAP_ARM_01 =
 {
 	name = "Armored Division"
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
-
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "light_armor" "medium_armor" "heavy_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { JAP_INF_01 }
 
 	fallback_name = "Sensha Dai-%d Shidan"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -682,13 +672,11 @@ JAP_ARM_01 =
 	}
 }
 
-JAP_PAR_01 = 
+JAP_PAR_01 =
 {
 	name = "Paratrooper Division"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
@@ -697,7 +685,7 @@ JAP_PAR_01 =
 
 	fallback_name = "%d Kutei Shidan"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -724,13 +712,11 @@ JAP_PAR_01 =
 	}
 }
 
-JAP_MAR_01 = 
+JAP_MAR_01 =
 {
 	name = "Marine Division"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "marine" }
 
@@ -739,7 +725,7 @@ JAP_MAR_01 =
 
 	fallback_name = "%d Rikusentai"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -770,13 +756,11 @@ JAP_MAR_01 =
 	}
 }
 
-JAP_MNT_01 = 
+JAP_MNT_01 =
 {
 	name = "Mountain Division"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "mountaineers" }
 
@@ -785,7 +769,7 @@ JAP_MNT_01 =
 
 	fallback_name = "%d Mountain Division"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -815,13 +799,11 @@ JAP_MNT_01 =
 	}
 }
 
-JAP_GAR_01 = 
+JAP_GAR_01 =
 {
 	name = "Garrison Units"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -830,7 +812,7 @@ JAP_GAR_01 =
 
 	fallback_name = "%d Tokubetsu Keibitai"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
@@ -879,13 +861,11 @@ JAP_GAR_01 =
 }
 
 
-JAP_IMB_01 = 
+JAP_IMB_01 =
 {
 	name = "Mixed Brigade"
 
 	for_countries = { JAP }
-
-	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
@@ -894,7 +874,7 @@ JAP_IMB_01 =
 
 	fallback_name = "%d Dokuritsu Konsei Ryodan"
 
-	# Names with numbers (only one number per entry). 
+	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{

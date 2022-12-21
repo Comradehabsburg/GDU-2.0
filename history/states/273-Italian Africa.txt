@@ -3,9 +3,6 @@ state={
 	id=273
 	name="STATE_273"
 
-	history={
-		owner = ITA
-}
 	provinces={
 		1994
 	}

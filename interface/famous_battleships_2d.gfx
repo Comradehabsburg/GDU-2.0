@@ -1,0 +1,312 @@
+spriteTypes = {
+
+############## ENG Superheavy ##############
+
+	SpriteType = {
+		name = "GFX_ENG_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_battleship2.dds"
+	}
+############################################
+	SpriteType = {
+		name = "GFX_ENG_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/ENG_advanced_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_basic_battleship_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ENG_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/ENG_improved_battleship.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/FRA_advanced_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_basic_battleship_medium"
+		texturefile = "gfx/interface/technologies/FRA_basic_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/FRA_improved_battleship.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/GER_advanced_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GER_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/GER_improved_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ITA_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/ITA_advanced_battleship.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/ITA_improved_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_JAP_heavy_battleship_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_JAP_heavy_battleship2_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_battleship2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_heavy_battleship_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_heavy_battleship2_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_battleship2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_USA_advanced_battleship_medium"
+		texturefile = "gfx/interface/technologies/USA_advanced_battleship.dds"
+	}	
+
+	SpriteType = {	
+		name = "GFX_USA_improved_battleship_medium"
+		texturefile = "gfx/interface/technologies/USA_improved_battleship.dds"
+	}
+
+############## ENG BATTLESHIPS 2-4 ###################
+	SpriteType = {
+		name = "GFX_ENG_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ENG_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ENG_battleship2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ENG_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ENG_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_advanced_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_basic_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FRA_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_improved_battleship.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/GER_advanced_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_GER_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/GER_improved_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_ITA_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ITA_advanced_battleship.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ITA_improved_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_battleship.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_battleship.dds"
+	}		
+
+################ USA BATTLESHIPS 2-4 ###############
+
+	SpriteType = {
+		name = "GFX_USA_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/USA_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/USA_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/USA_battleship2.dds"
+	}
+
+############## USA Superheavy ##############
+
+	SpriteType = {
+		name = "GFX_USA_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/USA_heavy_battleship2.dds"
+	}
+
+################ JAP BATTLESHIPS 2-4 ###############
+
+	SpriteType = {
+		name = "GFX_JAP_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/JAP_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/JAP_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/JAP_battleship2.dds"
+	}
+
+################ ITA BATTLESHIPS 2-4 ###############
+
+	SpriteType = {
+		name = "GFX_ITA_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ITA_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ITA_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ITA_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/ITA_battleship2.dds"
+	}
+
+############## ITA Superheavy ##############
+
+	SpriteType = {
+		name = "GFX_ITA_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_battleship2.dds"
+	}
+
+################ GER BATTLESHIPS 2-4 ###############
+
+	SpriteType = {
+		name = "GFX_GER_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/GER_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/GER_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_GER_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/GER_battleship2.dds"
+	}
+
+############## GER Superheavy ##############
+
+	SpriteType = {
+		name = "GFX_GER_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_battleship2.dds"
+	}
+
+################ SOV BATTLESHIPS 2-4 ###############
+
+	SpriteType = {
+		name = "GFX_SOV_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/SOV_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/SOV_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/SOV_battleship2.dds"
+	}
+
+############## SOV Superheavy ##############
+
+	SpriteType = {
+		name = "GFX_SOV_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_battleship2.dds"
+	}
+
+################ FRA BATTLESHIPS 2-4 ###############
+
+	SpriteType = {
+		name = "GFX_FRA_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_battleship2.dds"
+	}
+
+############## FRA Superheavy ##############
+
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_battleship2.dds"
+	}
+
+################ FRF BATTLESHIPS 2-4 ###############
+
+	SpriteType = {
+		name = "GFX_FRF_advanced_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_battleship4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRF_improved_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_battleship3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRF_basic_ship_hull_heavy_medium"
+		texturefile = "gfx/interface/technologies/FRA_battleship2.dds"
+	}
+
+############## FRF Superheavy ##############
+
+	SpriteType = {
+		name = "GFX_FRF_ship_hull_super_heavy_1_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_battleship2.dds"
+	}
+
+}

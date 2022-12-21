@@ -1,7 +1,6 @@
 sub_units = {
 
 	light_sp_artillery_brigade = {
-		abbreviation = "LAR"
 		sprite = light_armor
 		map_icon_category = armored
 		priority = 1795
@@ -18,12 +17,13 @@ sub_units = {
 		categories = {
 			category_all_armor
 			category_army
+			category_non_support
 		}		
 
 		combat_width = 3
 
 		need = {
-			light_tank_artillery_chassis = 50
+			light_tank_artillery_equipment = 42
 		}
 		manpower = 500
 		max_organisation = 0
@@ -31,21 +31,26 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1
-		supply_consumption = 0.42
+		supply_consumption = 0.46
 
-		breakthrough = -0.42
-
-		suppression = 1.25
 
 		forest = {
 		    attack = -0.2
 			movement = -0.4
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.5
 		}
+		gibraltar = 	{
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.5
+		}		
 		jungle = {
 		    attack = -0.3
+			defence = -0.05 
 			movement = -0.4
 		}
 		marsh = {
@@ -63,10 +68,33 @@ sub_units = {
 		amphibious = { 
 			attack = -0.6
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.2
+			movement = -0.4
+		}
+		mountain_africa = 	{
+		    attack = -0.3
+			defence = -0.15
+			movement = -0.5
+		}
+		jungle_africa = {
+		    attack = -0.3
+			defence = -0.05 
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.4
+			defence = -0.1
+		}		
 	}
 	
 	medium_sp_artillery_brigade = {
-		abbreviation = "MAR"
 		sprite = medium_armor
 		map_icon_category = armored
 		priority = 1796
@@ -87,7 +115,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			medium_tank_artillery_chassis = 50
+			medium_tank_artillery_equipment = 36
 		}
 		manpower = 500
 		max_organisation = 0
@@ -95,25 +123,31 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.46
+		supply_consumption = 0.57
 
-		breakthrough = -0.25
-
-		suppression = 1.5
 
 		forest = {
-		    attack = -0.3
-			movement = -0.4
+		    attack = -0.2
+			movement = -0.2
 		}
 		hills = 	{
-		    attack = -0.1
+		   	attack = -0.15
+			defence = -0.1 
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.55
+			defence = -0.55 
+			movement = -0.8
 		}
+		gibraltar = 	{
+		    attack = -0.55
+			defence = -0.35 
+			movement = -0.8
+		}		
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.3
+			movement = -0.3
+			defence = -0.15 
 		}
 		marsh = {
 		    attack = -0.1 
@@ -130,10 +164,37 @@ sub_units = {
 		amphibious = { 
 			attack = -0.7
 		}
+		
+		
+		forest_africa = {
+		    attack = -0.2
+			movement = -0.2
+		}
+		hills_africa = 	{
+		   	attack = -0.15
+			defence = -0.1 
+		}
+		mountain_africa = 	{
+		    attack = -0.55
+			defence = -0.55 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.3
+			movement = -0.3
+			defence = -0.15 
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.4
+			defence = -0.1
+		}		
 	}
 	
 	heavy_sp_artillery_brigade = {
-		abbreviation = "HAR"
 		sprite = heavy_armor
 		map_icon_category = armored
 		priority = 1797
@@ -156,18 +217,15 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			heavy_tank_artillery_chassis = 40
+			heavy_tank_artillery_equipment = 29
 		}
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
 		max_strength = 0.6
 		weight = 1.5
-		supply_consumption = 0.6
+		supply_consumption = 0.73
 
-		breakthrough = -0.25
-
-		suppression = 1.5
 
 		forest = {
 		    attack = -0.40
@@ -175,12 +233,21 @@ sub_units = {
 		}
 		hills = {
 		    attack = -0.20
+			defence = -0.1			
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}		
 		jungle = {
 		    attack = -0.6
+			defence = -0.2 
 			movement = -0.4
 		}
 		marsh = {
@@ -198,10 +265,40 @@ sub_units = {
 		amphibious = { 
 			attack = -0.8 
 		}
+		fort = {
+			attack = 0.1
+		}
+		
+		
+		forest_africa = {
+		    attack = -0.40
+			movement = -0.40
+		}
+		hills_africa = {
+		    attack = -0.20
+			defence = -0.1 			
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.6
+			defence = -0.2 
+			movement = -0.4
+		}
+		marsh_africa = {
+		    attack = -0.4 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.5
+			defence = -0.2
+		}		
 	}
 	
 	super_heavy_sp_artillery_brigade = {
-		abbreviation = "SAR"
 		sprite = heavy_armor
 		map_icon_category = armored
 		priority = 1798
@@ -224,7 +321,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			super_heavy_tank_artillery_chassis = 40
+			super_heavy_tank_artillery_equipment = 15
 		}
 		manpower = 500
 		max_organisation = 0
@@ -232,11 +329,8 @@ sub_units = {
 		max_strength = 0.6
 		training_time = 180
 		weight = 1.75
-		supply_consumption = 0.8
+		supply_consumption = 0.99
 
-		breakthrough = -0.25
-
-		suppression = 1.25
 
 		forest = {
 		    attack = -0.5
@@ -244,10 +338,18 @@ sub_units = {
 		}
 		hills = {
 		    attack = -0.3
+			defence = -0.15			
 		}
 		mountain = 	{
-		    attack = -0.4
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8 
 		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}		
 		jungle = {
 		    attack = -0.7
 			movement = -0.4
@@ -258,7 +360,7 @@ sub_units = {
 		}
 		urban = {
 			attack = -0.6
-			defence = -0.2
+			defence = -0.35
 		}
 		river = { 
 			attack = -0.5
@@ -267,266 +369,32 @@ sub_units = {
 		amphibious = { 
 			attack = -1.0
 		}
-	}
-	
-	modern_sp_artillery_brigade = {
-		abbreviation = "OAR"
-		sprite = medium_armor
-		map_icon_category = armored
-		priority = 1796
-		ai_priority = 100
-		active = yes
 		
-		type = {
-			armor
-			artillery
+		
+		forest_africa = {
+		    attack = -0.5
+			movement = -0.4
 		}
-		
-		group = armor
-		
-		categories = {
-			category_all_armor
-			category_army
-		}
-
-		combat_width = 3
-
-		need = {
-			modern_tank_artillery_chassis = 50
-		}
-		manpower = 500
-		max_organisation = 0
-		default_morale = 0.1
-		max_strength = 0.6
-		training_time = 180
-		weight = 1.5
-		supply_consumption = 0.5
-		
-		breakthrough = -0.25
-
-		suppression = 1.5
-
-		forest = {
+		hills_africa = {
 		    attack = -0.3
+			defence = -0.15						
+		}
+		mountain_africa = 	{
+		    attack = -0.9
+			defence = -0.7 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.7
 			movement = -0.4
 		}
-		hills = 	{
-		    attack = -0.1
-		}
-		mountain = 	{
-		    attack = -0.2
-		}
-		jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.2 
+		marsh_africa = {
+		    attack = -0.5 
 			movement = -0.2
 		}
-		amphibious = { 
-			attack = -0.7
-		}
+		urban_africa = {
+			attack = -0.6
+			defence = -0.35
+		}		
 	}
-
-	# TEMP MODULAR ARMOR BELOW
-
-	#modular_light_sp_artillery_brigade = {
-	#	sprite = light_armor
-	#	map_icon_category = armored
-	#	priority = 1795
-	#	ai_priority = 0
-	#	active = yes
-	#	
-	#	type = {
-	#		armor
-	#		artillery
-	#	}
-	#	
-	#	group = armor
-#
-#	#	categories = {
-#	#		category_all_armor
-#	#		category_army
-#	#	}		
-#
-#	#	combat_width = 3
-#
-#	#	need = {
-#	#		light_tank_artillery_chassis = 36
-#	#	}
-#	#	manpower = 500
-#	#	max_organisation = 0
-#	#	default_morale = 0.1
-#	#	max_strength = 0.6
-#	#	training_time = 180
-#	#	weight = 1
-#	#	supply_consumption = 0.4
-#
-#	#	suppression = 1.25
-#
-#	#	forest = {
-#	#	    attack = -0.2
-#	#		movement = -0.4
-#	#	}
-#	#	mountain = 	{
-#	#	    attack = -0.1
-#	#	}
-#	#	jungle = {
-#	#	    attack = -0.3
-#	#		movement = -0.4
-#	#	}
-#	#	marsh = {
-#	#	    attack = -0.1 
-#	#		movement = -0.1
-#	#	}
-#	#	urban = {
-#	#		attack = -0.4
-#	#		defence = -0.1
-#	#	}
-#	#	river = { 
-#	#		attack = -0.2 
-#	#		movement = -0.2
-#	#	}
-#	#	amphibious = { 
-#	#		attack = -0.6
-#	#	}
-#	#}
-#	#
-#	#modular_medium_sp_artillery_brigade = {
-#	#	sprite = medium_armor
-#	#	map_icon_category = armored
-#	#	priority = 1796
-#	#	ai_priority = 0
-#	#	active = yes
-#	#	
-#	#	type = {
-#	#		armor
-#	#		artillery
-#	#	}
-#	#	
-#	#	group = armor
-#
-#	#	categories = {
-#	#		category_all_armor
-	#		category_army
-#		}		
-#		combat_width = 3
-#
-#		need = {
-#			medium_tank_artillery_chassis = 36
-#		}
-#		manpower = 500
-#		max_organisation = 0
-#		default_morale = 0.1
-#		max_strength = 0.6
-#		training_time = 180
-#		weight = 1.25
-#		supply_consumption = 0.44
-#
-#		suppression = 1.5
-#
-#		forest = {
-#		    attack = -0.3
-#			movement = -0.4
-#		}
-#		hills = 	{
-#		    attack = -0.1
-#		}
-#		mountain = 	{
-#		    attack = -0.2
-#		}
-#		jungle = {
-#		    attack = -0.4
-#			movement = -0.4
-#		}
-#		marsh = {
-#		    attack = -0.1 
-#			movement = -0.1
-#		}
-#		urban = {
-#			attack = -0.4
-#			defence = -0.1
-#		}
-#		river = { 
-#			attack = -0.2 
-#			movement = -0.2
-#		}
-#		amphibious = { 
-#			attack = -0.7
-#		}
-#	}
-#	
-#	modular_heavy_sp_artillery_brigade = {
-#		sprite = heavy_armor
-#		map_icon_category = armored
-#		priority = 1797
-#		ai_priority = 0
-#		active = yes
-#		training_time = 180
-#		
-#		type = {
-#			armor
-#			artillery
-#		}
-#		
-#		group = armor
-#		
-#		categories = {
-#			category_all_armor
-#			category_army
-#		}
-#
-#		combat_width = 3
-#
-#		need = {
-#			heavy_tank_artillery_chassis = 24
-#		}
-#		manpower = 500
-#		max_organisation = 0
-#		default_morale = 0.1
-#		max_strength = 0.6
-#		weight = 1.5
-#		supply_consumption = 0.6
-#
-#		suppression = 1.5
-#
-#		forest = {
-#		    attack = -0.40
-#			movement = -0.40
-#		}
-#		hills = {
-#		    attack = -0.20
-#		}
-#		mountain = 	{
-#		    attack = -0.3
-#		}
-#		jungle = {
-#		    attack = -0.6
-#			movement = -0.4
-#		}
-#		marsh = {
-#		    attack = -0.4 
-#			movement = -0.2
-#		}
-#		urban = {
-#			attack = -0.5
-#			defence = -0.2
-#		}
-#		river = { 
-#			attack = -0.4 
-#			movement = -0.4
-#		}
-#		amphibious = { 
-#			attack = -0.8 
-#		}
-#	}
 }
