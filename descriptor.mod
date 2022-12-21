@@ -75,7 +75,7 @@ replace_path="common/units/names_divisions"
 replace_path="common/units/names_ships"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
-
 replace_path="gfx/loadingscreens"
+
 supported_version="1.10.*"
 remote_file_id="1758094609"
