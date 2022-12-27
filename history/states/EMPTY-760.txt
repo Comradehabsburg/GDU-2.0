@@ -6,6 +6,6 @@ state_category = wasteland
 history={
 }
 provinces={
-8003
+8003 590
 }
 }
