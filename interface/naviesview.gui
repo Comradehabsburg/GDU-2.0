@@ -8,7 +8,7 @@ guiTypes = {
 		size = { width=435 height=60 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0  ## 300
+		animation_time = 300
 		Orientation = center_down
 		clipping = no
 
@@ -253,17 +253,9 @@ guiTypes = {
 			name = "hidden_btn_hold_h"
 			spriteType = "GFX_tiled_window_transparent_transparent"
 			shortcut = "h"
-			clicksound = click_default
-		}
-
-		# hidden shortcut button for the hold mission
-		buttonType = {
-			name = "hidden_btn_hold_ctrl_h"
-			spriteType = "GFX_tiled_window_transparent_transparent"
 			shortcut = "ctrl+h"
 			clicksound = click_default
 		}
-
 	}
 
 	containerWindowType = {
@@ -273,7 +265,7 @@ guiTypes = {
 		size = { width=500 height=86%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0  ## 300
+		animation_time = 300
 		Orientation = upper_left
 		clipping = no
 
@@ -1586,7 +1578,7 @@ guiTypes = {
 				show_position = { x = 10 y = 27 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 0  ## 150
+				animation_time = 150
 				size = { width=332 height=325 }
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 7 bottom = 7 right = 6 }
@@ -1983,7 +1975,7 @@ guiTypes = {
 		show_position = { x=500 y=78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0  ## 300
+		animation_time = 300
 		size = { width=375 height=70%% }
 
 		background = {
@@ -2033,7 +2025,7 @@ guiTypes = {
 		show_position = { x=510 y =81 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0  ## 300
+		animation_time = 300
 		size = { width=495 height=50%% }
 		click_to_front = yes
 

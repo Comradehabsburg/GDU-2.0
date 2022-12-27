@@ -1,45 +1,5 @@
 spriteTypes = {
 
-	spriteType = {
-		name = "GFX_idea_CSA_albert_sidney_johnston.dds"
-		texturefile = "gfx/interface/ideas/albert_sidney_johnston.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_CSA_james_longstreet.dds"
-		texturefile = "gfx/interface/ideas/james_longstreet.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_CSA_nathan_bedford_forrest.dds"
-		texturefile = "gfx/interface/ideas/nathan_bedford_forrest.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_CSA_Walerian_Sulakowski.dds"
-		texturefile = "gfx/interface/ideas/walerian_Sulakowski.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_CSA_george_pickett.dds"
-		texturefile = "gfx/interface/ideas/george_pickett.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_CSA_slavemasteryell.dds"
-		texturefile = "gfx/interface/ideas/slavemasteryell.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_CSA_joseph_johnston.dds"
-		texturefile = "gfx/interface/ideas/joseph_johnston.dds"
-	}
-	
-   spriteType = {
-		name = "GFX_idea_CSA_samuel_copper.dds"
-		texturefile = "gfx/interface/ideas/samuel_copper.dds"
-	}
-
 	### AFG
 
 	spriteType = {
@@ -1058,8 +1018,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_ITA_italo_balbo"
-		texturefile = "gfx/interface/ideas/idea_ITA_italo_balbo.dds"
+		name = "GFX_portrait_ITA_italo_balbo_small"
+		texturefile = "gfx/interface/ideas/portrait_ITA_italo_balbo_small.dds"
 	}
 
 	spriteType = {
@@ -1093,8 +1053,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_ITA_victor_emmanuel_iii"
-		texturefile = "gfx/interface/ideas/idea_ITA_victor_emmanuel_iii.dds"
+		name = "GFX_idea_ITA_vittorio_emanuele_iii"
+		texturefile = "gfx/interface/ideas/idea_ITA_vittorio_emanuele_iii.dds"
 	}
 
 	### JAP
@@ -1685,7 +1645,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_SOV_aleksandr_gorbatov"
-		texturefile = "gfx/interface/ideas/idea_SOV_aleksandr_gorbatov.dds"
+		texturefile = "gfx/interface/ideas/idea_SOV_alexander_gorbatov.dds"
 	}
 
 	spriteType = {
@@ -1811,7 +1771,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_SOV_nikolay_berzarin"
-		texturefile = "gfx/interface/ideas/idea_SOV_nikolay_berzarin.dds"
+		texturefile = "gfx/interface/ideas/idea_SOV_nikolai_berzarin.dds"
 	}
 
 	spriteType = {
@@ -1841,7 +1801,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_SOV_vasily_chuykov"
-		texturefile = "gfx/interface/ideas/idea_SOV_vasily_chuykov.dds"
+		texturefile = "gfx/interface/ideas/idea_SOV_vasily_chuikov.dds"
 	}
 
 	spriteType = {
@@ -2176,7 +2136,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_YUG_borivoje_mirkovic"
-		texturefile = "gfx/interface/ideas/GFX_idea_generic_air_europe_2.dds"
+		texturefile = "gfx/interface/ideas/idea_generic_air_europe_2.dds"
 	}
 
 	spriteType = {

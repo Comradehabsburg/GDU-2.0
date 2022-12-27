@@ -6,7 +6,7 @@ guiTypes = {
 		show_position = { x=-6 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0  ## 300
+		animation_time = 300
 		size = { width=550 height=100%% }
 		
 		#hide_sound = menu_close_window
@@ -34,7 +34,20 @@ guiTypes = {
 			maxHeight = 20
 			format = left	
 		}
-
+		
+		iconType = {
+			name = "viewing_flag"
+			quadTextureSprite ="GFX_flag_small2"
+			position = {  x= 445 y = 13 }
+			Orientation = "UPPER_LEFT"
+		}	
+		
+		iconType ={
+			name ="viewing_flag_border"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x= 440 y = 8 }
+			alwaystransparent = yes
+		}
 		
 		containerWindowType = {
 			name = "materiel"
@@ -571,7 +584,7 @@ guiTypes = {
 		show_position = { x=539 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0  ## 300
+		animation_time = 300
 		size = { width=395 height=70%% }
 		
 		background = {
@@ -584,7 +597,7 @@ guiTypes = {
 			position = { x=14 y=33}
 			show_animation_type = decelerated
 			hide_animation_type = accelerated
-			animation_time = 0  ## 300
+			animation_time = 300
 			size = { width=356 height=230 }
 			
 			background = {
@@ -809,7 +822,7 @@ guiTypes = {
 		show_position = { x=539 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 0  ## 300
+		animation_time = 300
 		size = { width=395 height=70%% }
 		
 		background = {
@@ -822,7 +835,7 @@ guiTypes = {
 			position = { x=14 y=33}
 			show_animation_type = decelerated
 			hide_animation_type = accelerated
-			animation_time = 0  ## 300
+			animation_time = 300
 			size = { width=356 height=260 }
 			
 			background = {
