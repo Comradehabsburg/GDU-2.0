@@ -22,8 +22,6 @@ recruit_character = CSA_james_longstreet
 recruit_character = CSA_albert_sidney_johnston
 recruit_character = CSA_slavemasteryell
 recruit_character = CSA_gmann
-recruit_character = CSA_heros_von_borcke
-recruit_character = CSA_bushrod_johnson
 #CSA CONGRESS
 set_variable = { var = CSA_senators_support value = 0 }
 set_variable = { var = CSA_senators_total value = 0 }

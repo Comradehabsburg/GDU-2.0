@@ -408,40 +408,6 @@ CSA_jefferson_davis={
 		}
 	}
 	
-	CSA_heros_von_borcke = {
-	name = CSA_heros_von_borcke
-		portraits={
-			army = {
-				large = "gfx/leaders/CSA/heros_von_borcke.dds"
-			}
-		}
-		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
-	
-	CSA_bushrod_johnson = {
-	name = CSA_bushrod_johnson
-		portraits={
-			army = {
-				large = "gfx/leaders/CSA/bushrod_johnson.dds"
-			}
-		}
-		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-	}
-	
 	CSA_george_pickett = {
 	name = CSA_george_pickett
 		portraits={

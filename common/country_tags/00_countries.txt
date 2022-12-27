@@ -1,5 +1,6 @@
 USA = "countries/USA.txt"
 
+BAH = "countries/Bahamas.txt"
 CAN = "countries/Canada.txt"
 COL = "countries/Colombia.txt"
 CUB = "countries/Cuba.txt"

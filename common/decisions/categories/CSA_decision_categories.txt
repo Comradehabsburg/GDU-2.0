@@ -1,14 +1,6 @@
 ################
 ##### CSA ######
 ################
-
-CSA_war_measures = {
-	
-	allowed = {
-		original_tag = CSA
-	}
-}
-
 CSA_congress = {
 	icon = usa_honor_the_confederacy
 	
