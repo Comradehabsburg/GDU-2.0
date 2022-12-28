@@ -1,6 +1,73 @@
 ideas = {
 country = {
 
+#Offensives
+
+CSA_Robert_Lee_offensive = {
+	picture = civil_war
+		
+	allowed = {
+		always = no
+	}
+
+	removal_cost = -1
+	
+	modifier = { 
+		army_speed_factor = 0.25
+		army_core_attack_factor = -0.40
+		army_core_defence_factor = -0.40
+		army_attack_factor = 0.20
+		army_defence_factor = 0.20
+	}
+}
+
+USA_Robert_Lee_offensive = {
+	picture = GFX_focus_attack_usa
+		
+	allowed = {
+		always = no
+	}
+
+	removal_cost = -1
+	
+	modifier = { 
+		army_core_attack_factor = -0.60
+		army_core_defence_factor = -0.60
+		army_attack_factor = 0.10
+		army_defence_factor = 0.10
+	}
+}
+
+CSA_Robert_Lee_defensive = {
+	picture = civil_war
+		
+	allowed = {
+		always = no
+	}
+
+	removal_cost = -1
+	
+	modifier = { 
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.10
+	}
+}
+
+USA_Robert_Lee_defensive = {
+	picture = GFX_focus_attack_usa
+		
+	allowed = {
+		always = no
+	}
+
+	removal_cost = -1
+	
+	modifier = { 
+		army_core_attack_factor = 0.60
+		army_core_defence_factor = 0.60
+	}
+}
+
 #Counterfeiting
 	
 	CSA_counterfeiting_none = {

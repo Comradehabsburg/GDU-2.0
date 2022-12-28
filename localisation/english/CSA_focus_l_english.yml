@@ -81,3 +81,7 @@
  CSA_privateers:0 "Issuing Privateering Letter of Marque"
  CSA_2th_Congress:0"Second Confederate Congress"
  2nd_congress:0 "A second Confederate Congress will be formed."
+ CSA_Robert_Lee:0 "Robert E. Lee's Grand Offensive!"
+ CSA_Robert_Lee_1:0 "Robert E. Lee's Guerilla Campaign!"
+ CSA_Lee_defensive:0 "A total focus on defending our homeland will make any incursions into Union territory infeasible"
+ CSA_Lee_offensive:0 "A total focus on a offensive into the Union will weaken the defenses in our homeland"

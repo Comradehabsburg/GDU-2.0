@@ -509,6 +509,7 @@ id = usa_focus
 		}
 
 		completion_reward = {
+		add_ideas = USA_core_defense
 		remove_ideas = secseed_crisis
 		add_timed_idea = { idea = love_usa_sumter days = 240 }
 		custom_effect_tooltip = Lincoln_75000

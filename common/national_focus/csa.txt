@@ -2435,4 +2435,51 @@ id = csa_focus
 		add_ideas = CSN_privateers
 		}
 	}
+
+	focus = {
+		id = CSA_Robert_Lee_1
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 0
+		cost = 0
+		continue_if_invalid = yes
+		mutually_exclusive = {
+			focus = CSA_Robert_Lee
+		}
+		prerequisite = {
+		}
+		available = {
+			date > 1863.1.1
+	}
+
+		completion_reward = {
+			add_timed_idea = { idea = CSA_Robert_Lee_defensive  days = 1000 }
+			USA = { add_timed_idea = {idea = USA_Robert_Lee_defensive  days = 1000 } }
+			custom_effect_tooltip = CSA_Lee_defensive
+		}
+	}
+
+	focus = {
+		id = CSA_Robert_Lee
+		icon = GFX_focus_slavery_forever
+		x = 2
+		y = 0
+		cost = 0
+		continue_if_invalid = yes
+		mutually_exclusive = {
+			focus = CSA_Robert_Lee_1
+		}
+		prerequisite = {
+		}
+		available = {
+			date > 1863.1.1
+	}
+
+		completion_reward = {
+			add_timed_idea = { idea = CSA_Robert_Lee_offensive  days = 30 }
+			USA = { add_timed_idea = {idea = USA_Robert_Lee_offensive  days = 30 } }
+			custom_effect_tooltip = CSA_Lee_offensive
+		}
+	}
+
 }
