@@ -1,0 +1,34 @@
+has_counterfeiting = {
+	if = {
+		limit = { has_idea = CSA_counterfeiting_1 }
+		has_idea = CSA_counterfeiting_1
+	}
+	if = {
+		limit = { has_idea = CSA_counterfeiting_2 }
+		has_idea = CSA_counterfeiting_2
+	}
+	if = {
+		limit = { has_idea = CSA_counterfeiting_3 }
+		has_idea = CSA_counterfeiting_3
+	}
+	if = {
+		limit = { has_idea = CSA_counterfeiting_4 }
+		has_idea = CSA_counterfeiting_4
+	}
+	if = {
+		limit = { has_idea = CSA_counterfeiting_5 }
+		has_idea = CSA_counterfeiting_5
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_idea = CSA_counterfeiting_1
+				has_idea = CSA_counterfeiting_2
+				has_idea = CSA_counterfeiting_3
+				has_idea = CSA_counterfeiting_4
+				has_idea = CSA_counterfeiting_5
+			}
+		}
+		has_idea = CSA_counterfeiting_1
+	}
+}

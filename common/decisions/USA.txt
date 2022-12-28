@@ -3516,6 +3516,39 @@ count_on_pools = {
 			}
 			custom_effect_tooltip = counting
 		}
-	}		
+	}
 }
+}
+
+#Counterfeiting
+
+	USA_war_measures = {
+		union_counterfeiting = {
+	
+		visible = {
+			original_tag = USA
+			CSA = { has_war_with = USA }
+		}
+		
+		available = {
+			date > 1862.1.1
+			USA = { has_war_with = CSA }
+			NOT = { CSA = { has_idea = CSA_counterfeiting_5 } }
+		}
+	
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+	
+		days_remove = 50
+		cost = 50
+	
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			CSA = { CSA_counterfeiting_level_up = yes }
+		}
+	}
 }

@@ -1,0 +1,34 @@
+﻿l_english:
+ #RUSSIA
+ #Country Name
+ RUS:0 "Milk outside a bag of milk"
+ RUS_DEF:0 "Milk outside a bag of milk"
+ RUS_ADJ:0 "Milk outside a bag of milk"
+ #Party Name
+ RUS_neutrality_party:0 "Please, forget it"
+ #Leader Name
+ RUS_Milk-chan:0 "Milk-chan"
+ RUS_Milk-chan_desc:0 "Help the girl buy milk, be the first not to disappoint her."
+ 
+ #CANADA
+ #Country Name
+ CAN:0 "Vented's Ice Kingdom"
+ CAN_DEF:0 "Vented's Ice Kingdom"
+ CAN_ADJ:0 "Ventedanese"
+ #Party Name
+ CAN_neutrality_party:0 "Unc Pack"
+ #Leader Name
+ CAN_Venteds_puppet:0 "Vented's Puppet"
+ CAN_Venteds_puppet_desc:0 "This leader is the puppet of Vented and would do whatever he wants for him to do."
+ 
+ #MEXICO
+ #Country Name
+ MEX:0 "Kingdom of Chungus"
+ MEX_DEF:0 "Kingdom of Chungus"
+ MEX_ADJ:0 "Big Chungus"
+ #Party Name
+ MEX_neutrality_party:0 "Big Chungus"
+ #Leader Name
+ MEX_Big_chungus:0 "Big Chungus"
+ MEX_Big_chungus_desc:0 "Big Big Chungus Big Chungus Big Chungus Big Big Chungus Big Chungus Big Chungus Big Big Chungus Big Chungus Big Chungus Big Big Chungus Big Chungus Big Chungus."
+

@@ -1,4 +1,5 @@
 capital = 22
+set_research_slots = 0
 
 oob = "standard_templates"
 
@@ -7,25 +8,15 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+recruit_character = CAN_Venteds_puppet
+
 set_convoys = 20
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 50
-	fascism = 36
-	communism = 10
-	neutrality = 4
+	ruling_party = neutrality
+	elections_allowed = no
 }
 
-create_country_leader = {
-	name = "Vented's Puppet"
-	picture = "vented.dds"
-	expire = "1865.5.1"
-	ideology = liberalism
-	traits = { }
+set_popularities = {
+	neutrality = 100
 }
