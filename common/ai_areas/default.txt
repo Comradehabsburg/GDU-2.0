@@ -1,14 +1,5 @@
 areas = {
-  CSA_Virginia = {
-	strategic_regions = {
-					15
-        }
-	}
-	 USA_maryland = {
-		strategic_regions = {
-					15
-        }
-	}
+
 	suez = {
         strategic_regions = {
             128
@@ -25,6 +16,31 @@ areas = {
             12 # Finland
             13
             #6 # Sorry Denmark, you are apparently part of Germany ¯\_(ツ)_/¯
+        }
+    }
+
+    italy = {
+        strategic_regions = {
+            23 # italy
+            21
+        }
+    }
+
+    UK = {
+        strategic_regions = {
+            1 
+            2
+            3
+            4
+        }
+    }
+
+    north_africa = {
+        strategic_regions = {
+            128 # egypt
+            225 # trippoli
+            126 # east maghreb
+            182 # west maghreb
         }
     }
 
@@ -133,6 +149,9 @@ areas = {
 			86  # Tasman Sea
 			98  # Great Australian Bight
 			81  # Coral Sea
+			194 #Easern Australia
+			84 #Gulf of Carpanteria
+			193 #Northern Australia
 		}
 	}
 	
@@ -159,5 +178,22 @@ areas = {
 			187
 		}
 	}
+	
+	burma = {
+		strategic_regions = {
+			189 #Burma
+			142 #Vietnam/Siam
+			141 #Bengal
+		}
+	}
+
+	horn_of_africa = {
+		strategic_regions = {
+			17 #Ethiopian Highlands
+			273 #Danakil
+			274 #Ogaden 
+		}
+	}
+	
 	
 }
