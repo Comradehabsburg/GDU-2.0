@@ -1,4 +1,5 @@
 capital = 80
+set_research_slots = 0
 
 oob = "standard_templates"
 
