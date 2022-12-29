@@ -1,6 +1,7 @@
 ideas = {
 country = {
 
+<<<<<<< HEAD
 #Offensives
 
 CSA_Robert_Lee_offensive = {
@@ -193,6 +194,8 @@ USA_Robert_Lee_defensive = {
 		}
 	}
 
+=======
+>>>>>>> parent of 86378e42 (Revert "Revert "counterfeiting/generals/nutiz larp"")
 #PRE CHIMBUS
 	plotting = {
 		picture = plotting

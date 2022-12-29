@@ -1,5 +1,4 @@
-capital = 22
-set_research_slots = 0
+capital = 76
 
 oob = "standard_templates"
 
@@ -21,12 +20,4 @@ set_popularities = {
 	fascism = 36
 	communism = 10
 	neutrality = 4
-}
-
-create_country_leader = {
-	name = "Vented's Puppet"
-	picture = "vented.dds"
-	expire = "1865.5.1"
-	ideology = liberalism
-	traits = { }
 }

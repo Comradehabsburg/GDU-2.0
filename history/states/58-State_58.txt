@@ -23,7 +23,7 @@ state={
 			}
 		}
 		owner = USA
-		add_core_of = USA
+		add_core_of = CAN
 		victory_points = {
 			7270 10 
 		}

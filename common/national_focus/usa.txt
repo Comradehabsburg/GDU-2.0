@@ -114,7 +114,6 @@ id = usa_focus
 		cost = 100
 		continue_if_invalid = yes
 		prerequisite = {
-		focus = USA_sumter_things
 		}
 		available = {
 			OR = {
@@ -1124,6 +1123,7 @@ id = usa_focus
 		}
 
 		completion_reward = {
+		load_oob = USA_volunteers_1861_after_sumter
 		add_manpower = -10000
 		swap_ideas = {
 		remove_idea = us_army_regular

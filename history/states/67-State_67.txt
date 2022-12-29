@@ -11,7 +11,7 @@ state={
 	}
 	history={
 		owner = USA
-		add_core_of = USA
+		add_core_of = CAN
 		victory_points = { 7556 50}
 		victory_points = { 7586 5}
 		victory_points = { 4573 3}

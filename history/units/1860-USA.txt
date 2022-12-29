@@ -220,6 +220,36 @@ Units ={
 		division_template = "US Army Cavalry Regiment"
 		start_experience_factor = 1
 	}
+	division = {
+		name = "6st Cavalry Regiment (United States)"
+		location = 7943
+		division_template = "US Army Cavalry Regiment"
+		start_experience_factor = 1
+	}
+		division = {
+		name = "7nd Cavalry Regiment (United States)"
+		location = 3037
+		division_template = "US Army Cavalry Regiment"
+		start_experience_factor = 1
+	}
+		division = {
+		name = "8rd Cavalry Regiment (United States)"
+		location = 7870
+		division_template = "US Army Cavalry Regiment"
+		start_experience_factor = 1
+	}
+		division = {
+		name = "9th Cavalry Regiment (United States)"
+		location = 2580
+		division_template = "US Army Cavalry Regiment"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "10th Cavalry Regiment (United States)"
+		location = 8069
+		division_template = "US Army Cavalry Regiment"
+		start_experience_factor = 1
+	}
 	fleet = {
 	name = "USS Norfolk Fleet"			
 		naval_base = 4694 # Manhattan
