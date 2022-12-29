@@ -911,7 +911,6 @@ country_event = {
 		}
 		CSA = {
 		add_state_core = 64
-		add_state_core = 60
 		}
 		65 = {
 		set_demilitarized_zone = yes
