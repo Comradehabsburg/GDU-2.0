@@ -2450,6 +2450,7 @@ id = csa_focus
 		}
 		available = {
 			date > 1863.1.1
+			surrender_progress > 0.05
 	}
 
 		completion_reward = {
@@ -2473,6 +2474,7 @@ id = csa_focus
 		}
 		available = {
 			date > 1863.1.1
+			surrender_progress > 0.05
 	}
 
 		completion_reward = {
