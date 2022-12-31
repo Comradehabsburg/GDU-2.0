@@ -2478,8 +2478,9 @@ id = csa_focus
 	}
 
 		completion_reward = {
-			add_timed_idea = { idea = CSA_Robert_Lee_offensive  days = 30 }
-			USA = { add_timed_idea = {idea = USA_Robert_Lee_offensive  days = 30 } }
+			add_timed_idea = { idea = CSA_Robert_Lee_offensive  days = 45 }
+			add_timed_idea = { idea = CSA_Robert_Lee_offensive_1  days = 180 }
+			USA = { add_timed_idea = {idea = USA_Robert_Lee_offensive  days = 45 } }
 			custom_effect_tooltip = CSA_Lee_offensive
 		}
 	}

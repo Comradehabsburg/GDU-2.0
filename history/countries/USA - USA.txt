@@ -109,6 +109,7 @@ american_slavery_usa
 runaway_slave_law
 JB_FLOYD
 corn_is_king_trade
+USA_core_defense
 USA_winfield_scott
 }
 set_politics = {
