@@ -978,7 +978,8 @@ guiTypes = {
 				name = "strategic_air_priorities_window"
 				position = {x=4 y=-75}
 				size = { width=600 height=280 }
-				#animation_time = 300
+				#animation_time = 0
+#300
 				#Orientation = center_down
 				#clipping = yes
 				fade_time = 300

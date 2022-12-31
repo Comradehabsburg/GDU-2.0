@@ -25,9 +25,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/social/social_friend_button_mask.dds"
 			animationtexturefile = "gfx/interface/social/social_friend_button_texture.dds"
 			animationrotation = 180.0
-			animationlooping = yes
-			animationtime = 60.0
-			animationdelay = 0.0
+			animationlooping = no
+			animationtime = 0.75
+#60.0
+			animationdelay = 0
+#0.0
 			animationblendmode = "overlay"	#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -45,9 +47,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/social/social_friendlist_button_mask.dds"
 			animationtexturefile = "gfx/interface/social/social_friend_button_texture.dds"
 			animationrotation = 180.0
-			animationlooping = yes
-			animationtime = 60.0
-			animationdelay = 0.0
+			animationlooping = no
+			animationtime = 0.75
+#60.0
+			animationdelay = 0
+#0.0
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }

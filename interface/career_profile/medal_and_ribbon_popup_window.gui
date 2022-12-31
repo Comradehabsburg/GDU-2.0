@@ -8,7 +8,8 @@ guiTypes = {
 
 		show_position = { x = -20 y = -260 }
 		show_animation_type = decelerated
-		animation_time = 600
+		animation_time = 0
+#600
 
 		fade_type = linear
 		fade_time = 400
@@ -93,7 +94,8 @@ guiTypes = {
 
 		show_position = { x = -20 y = -260 }
 		show_animation_type = decelerated
-		animation_time = 600
+		animation_time = 0
+#600
 
 		fade_type = linear
 		fade_time = 400
@@ -181,7 +183,8 @@ guiTypes = {
 
 		show_position = { x = -20 y = -260 }
 		show_animation_type = decelerated
-		animation_time = 600
+		animation_time = 0
+#600
 
 		fade_type = linear
 		fade_time = 400

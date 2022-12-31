@@ -480,7 +480,8 @@ guiTypes = {
 				position = { x=12 y=13}
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 300
+				animation_time = 0
+#300
 				size = { width=489 height=225 }
 				
 				background = {

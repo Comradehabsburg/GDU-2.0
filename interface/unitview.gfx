@@ -509,9 +509,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/unitcontrol/execute_btn_mask2.dds"
 			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture.dds"
 			animationrotation = 180.0
-			animationlooping = yes
-			animationtime = 2.0
-			animationdelay = 0.0
+			animationlooping = no
+			animationtime = 0.75
+#2.0
+			animationdelay = 0
+#0.0
 			animationblendmode = "overlay"       #add, multiply, overlay
 			animationtype = "pulsing"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -530,9 +532,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/unitcontrol/execute_btn_mask3.dds"
 			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture3.dds"
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 2.0				# in seconds
-			animationdelay = 0.2			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#2.0				# in seconds
+			animationdelay = 0
+#0.2			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }

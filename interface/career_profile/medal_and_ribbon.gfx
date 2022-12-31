@@ -39,8 +39,10 @@ spriteTypes = {
 			animationtexturefile = "gfx/interface/career_profile/shine_sharp.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 0.7				# in seconds - make this longer if there are more frames
-			animationdelay = 0				# in seconds
+			animationtime = 0.75
+#0.7				# in seconds - make this longer if there are more frames
+			animationdelay = 0
+#0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -61,8 +63,10 @@ spriteTypes = {
 			animationtexturefile = "gfx/interface/career_profile/shine_sharp.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 1.2				# in seconds - make this longer if there are more frames
-			animationdelay = 0				# in seconds
+			animationtime = 0.75
+#1.2				# in seconds - make this longer if there are more frames
+			animationdelay = 0
+#0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -83,8 +87,10 @@ spriteTypes = {
 			animationtexturefile = "gfx/interface/career_profile/shine_sharp.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 1			# in seconds - make this longer if there are more frames
-			animationdelay = 0				# in seconds
+			animationtime = 0.75
+#1			# in seconds - make this longer if there are more frames
+			animationdelay = 0
+#0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -138,8 +144,10 @@ spriteTypes = {
 			animationtexturefile = "gfx/interface/career_profile/shine_diffuse.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 0.7				# in seconds - make this longer if there are more frames
-			animationdelay = 0				# in seconds
+			animationtime = 0.75
+#0.7				# in seconds - make this longer if there are more frames
+			animationdelay = 0
+#0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -160,8 +168,10 @@ spriteTypes = {
 			animationtexturefile = "gfx/interface/career_profile/shine_diffuse.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 1				# in seconds - make this longer if there are more frames
-			animationdelay = 0				# in seconds
+			animationtime = 0.75
+#1				# in seconds - make this longer if there are more frames
+			animationdelay = 0
+#0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -182,8 +192,10 @@ spriteTypes = {
 			animationtexturefile = "gfx/interface/career_profile/shine_diffuse.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 1				# in seconds - make this longer if there are more frames
-			animationdelay = 0				# in seconds
+			animationtime = 0.75
+#1				# in seconds - make this longer if there are more frames
+			animationdelay = 0
+#0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -204,8 +216,10 @@ spriteTypes = {
 			animationtexturefile = "gfx/interface/career_profile/shine_sharp.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
-			animationtime = 1				# in seconds - make this longer if there are more frames
-			animationdelay = 0				# in seconds
+			animationtime = 0.75
+#1				# in seconds - make this longer if there are more frames
+			animationdelay = 0
+#0				# in seconds
 			animationblendmode = "add"		#add, multiply, overlay
 			animationtype = "scrolling"		#scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }

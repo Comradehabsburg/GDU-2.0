@@ -616,6 +616,7 @@ guiTypes = {
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
 				animation_time = 0
+#0
 				size = { width=230 height=420 }	
 				verticalScrollbar = "right_vertical_slider"
 				margin = { top = 7 bottom = 7 right = 6 }
@@ -930,7 +931,8 @@ guiTypes = {
 				margin = { left = 4 right = 4 top = 4 bottom = 4 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
-				animation_time = 300
+				animation_time = 0
+#300
 				clipping = yes
 
 				background = {

@@ -108,9 +108,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_force_attack.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -130,9 +132,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_siege_artillery.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -152,9 +156,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_glider_planes.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -174,9 +180,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_extra_supplies.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -196,9 +204,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_naval_assault_plan.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -218,9 +228,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_requisition_winter_gear.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -240,9 +252,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_probing_attack.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -262,9 +276,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_chi_force_attack.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -284,9 +300,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_last_stand.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -306,9 +324,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_last_stand.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -328,9 +348,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_staff_office_plan.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
@@ -350,9 +372,11 @@ spriteTypes = {
 			animationmaskfile = "gfx/interface/abilitylist/ability_makeshift_bridges.dds"
 			animationtexturefile = "gfx/interface/focus_completed_texture.dds" 	# <- the animated file
 			animationrotation = 0.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 26.0				# in seconds
-			animationdelay = 0.0			# in seconds
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75
+#26.0				# in seconds
+			animationdelay = 0
+#0.0			# in seconds
 			animationblendmode = "add"       #add, multiply, overlay
 			animationtype = "scrolling"      #scrolling, rotating, pulsing
 			animationrotationoffset = { x = 0.0 y = 0.0 }
