@@ -1096,6 +1096,10 @@ technologies = {
 			default_morale = 0.1
 			breakthrough = 0.1
 		}
+		mobile_artillery_brigade = {
+			default_morale = 0.1
+			breakthrough = 0.1
+		}
 		
 		path = {
 			leads_to_tech = overwhelming_firepower 
@@ -1145,6 +1149,10 @@ technologies = {
 		xp_unlock_cost = 50
 		
 		artillery_brigade = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}
+		mobile_artillery_brigade = {
 			soft_attack = 0.05
 			breakthrough = 0.05
 		}
@@ -1434,6 +1442,9 @@ technologies = {
 		artillery_brigade = {
              breakthrough = 0.1
         }
+		mobile_artillery_brigade = {
+			breakthrough = 0.1
+		}
 		cavalry = {
 			breakthrough = 0.10
 		}
@@ -1551,6 +1562,11 @@ technologies = {
 			default_morale = 0.05
 		}
 		artillery_brigade = {
+			max_organisation = 3
+			default_morale = 0.05
+			soft_attack = 0.1
+		}
+		mobile_artillery_brigade = {
 			max_organisation = 3
 			default_morale = 0.05
 			soft_attack = 0.1
@@ -1991,6 +2007,9 @@ technologies = {
 		artillery_brigade = {
 			breakthrough = 0.05
 		}
+		mobile_artillery_brigade = {
+	breakthrough = 0.05
+		}
 		
 		enable_tactic = tactic_planned_attack
 		
@@ -2180,6 +2199,9 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.05
 		}
+		mobile_artillery_brigade = {
+			soft_attack = 0.05
+				}
 		coordination_bonus = 0.1
 		
 		path = {
@@ -2351,6 +2373,9 @@ technologies = {
 		artillery_brigade = {
 			default_morale = 0.05
 		}
+		mobile_artillery_brigade = {
+			default_morale = 0.05
+				}
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -2579,6 +2604,9 @@ technologies = {
 		artillery_brigade = {
 			defense = 0.1
 		}
+		mobile_artillery_brigade = {
+			defense = 0.1
+				}
 	
 		path = {
 			leads_to_tech = attritional_containment 
@@ -2638,6 +2666,10 @@ technologies = {
 			soft_attack = 0.05
 			breakthrough = 0.05
 		}	
+		mobile_artillery_brigade = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+				}
 
 		path = {
 			leads_to_tech = infiltration_in_depth 
