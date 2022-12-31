@@ -57,7 +57,7 @@ country_event = {
 	ai_chance = { factor = 100 }
 	#set_Support_for_border_states
 	CSA = {
-	set_research_slots = 2
+	set_research_slots = 3
 	remove_ideas = plotting
 	}
 	set_variable = {

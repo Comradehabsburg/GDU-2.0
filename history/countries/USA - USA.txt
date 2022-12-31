@@ -1,7 +1,7 @@
-﻿capital = 88
+﻿capital = 64
 
 oob = "1860-USA"
-
+set_research_slots = 3
 #characters
 recruit_character = USA_james_buchanan
 recruit_character = USA_abraham_lincoln
@@ -61,7 +61,7 @@ set_technology = {
 	tech_mountaineers = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
-	basic_machine_tools = 1
+	basic_machine_tools = 0
 	concentrated_industry = 1
 	construction1 = 1
 	excavation1 = 1

@@ -19,7 +19,8 @@ technologies = {
 		}
 		
 		cavalry = {
-			breakthrough = 0.20
+			breakthrough = 0.15
+			soft_attack = 0.05
 		}
 		planning_speed = 0.5
 		army_speed_factor = 0.10
@@ -544,6 +545,7 @@ technologies = {
 		cavalry = {
 			default_morale = 0.05
 			max_organisation = 5
+			soft_attack = 0.05
 		}
 		# faster planning
 		planning_speed = 0.2
@@ -1839,8 +1841,8 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
-		max_dig_in = 15
-		dig_in_speed_factor = 0.15
+		max_dig_in = 5
+		dig_in_speed_factor = -0.05
 		
 		
 		path = {

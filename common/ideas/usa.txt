@@ -461,6 +461,7 @@ freedmen_bureau ={
 			removal_cost = -1
 			
 			modifier = {
+				research_speed_factor = -1.125
 				political_power_cost = 1
 				consumer_goods_factor = 10
 				local_resources_factor = -0.2
